@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="nl-NL" xml:lang="nl-NL" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="Configuratie" data-mc-conditions="flcts-alias.sc-alias-content,flcts-add-on.xp-tra-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Configure XProtect Transact in XProtect Smart Client to view and investigate transactions from PoS systems in combination with video." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Transact" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Beheerder" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Integrator" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Gebruiker" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>XProtect Transact (configuratie)</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#add-ons/add-on_transact/sc_configuringxprtransact.htm">Open onderwerp met navigatie</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>
+        <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span> (configuratie)</h1>
+      <div>
+        <h2>Aan de slag met <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span><a name="SC_GettingStarted_Transa.htm"></a></h2>
+        <p>Voordat u transacties in <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> kunt observeren en onderzoeken, moet u het volgende doen:</p>
+        <ol>
+          <li value="1">Controleren of uw basislicentie voor <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span> is geactiveerd tijdens de installatie van de VMS. Hiervoor opent u <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> en controleert u of het tabblad <span class="uitext">Transact</span> zichtbaar is. Als u geen basislicentie hebt, kunt u <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span> gebruiken met een proeflicentie. Raadpleeg <a href="#SC_XPrTransactTrial.htm" class="MCXref xref">
+        Proeflicentie voor XProtect Transact</a> voor meer informatie.</li>
+          <li value="2">Controleren of transacties juist worden weergegeven. Dit omvat de afzonderlijke transactieregels en betalingsbewijzen. Hiervoor klikt u op het tabblad <span class="uitext">Transact</span> en selecteert u een transactiebron en tijdsinterval. Bij een juiste configuratie wordt een lijst met transactieregels weergegeven. Als u op een van de regels klikt, wordt het bijbehorende stilstaande videobeeld weergegeven, één voor elke verbonden camera.</li>
+          <li value="3">Een weergave voor transacties instellen, als u realtimetransacties in het tabblad <span class="uitext">Live</span> wilt observeren of transacties in het tabblad <span class="uitext">Afspelen</span> wilt onderzoeken. Raadpleeg <a href="#SC_SetUpAViewForTransact.htm" class="MCXref xref">Weergaven voor transacties instellen</a> voor meer informatie.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+        Proeflicentie voor <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span><a name="SC_XPrTransactTrial.htm"></a></h2>
+        <p>Met een proeflicentie voor <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span> kunt u de functionaliteit van <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span> 30 dagen lang uitproberen. Alle gerelateerde functies zijn ingeschakeld en kunt één transactiebron toevoegen, bijvoorbeeld een kassa. Wanneer de proefperiode van 30 dagen verloopt, worden alle functies van <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span> gedeactiveerd, inclusief de werkruimte en transactieweergave-items van <span class="uitext">Transact</span>. Wanneer u een basislicentie voor <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span> en de benodigde transactiebronlicenties aanschaft en activeert, kunt u <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span> weer gebruiken en blijven uw instellingen en gegevens behouden.</p>
+        <p>U moet de proeflicentie verkrijgen van <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span>. De systeembeheerder moet de proeflicentie activeren in de configuratie.</p>
+      </div>
+      <div>
+        <h2>Weergaven voor transacties instellen<a name="SC_SetUpAViewForTransact.htm"></a></h2>
+        <p>Voordat u transacties kunt weergeven in het tabblad <span class="uitext">Live</span> of <span class="uitext">Afspelen</span>, moet u een weergave instellen waarin u voor elke transactiebron een transactieweergave-item toevoegt. In het geval van lopende transacties rollen de betalingsbewijzen over het scherm binnen het weergave-item wanneer u de instelmodus verlaat.</p>
+        <p>Volg deze stappen:</p>
+        <ol>
+          <li value="1">Klik in het tabblad <span class="uitext">Live</span> of <span class="uitext">Afspelen</span> op <span class="uitext">Instellingen</span> rechts bovenin om de instelmodus te openen.</li>
+          <li value="2">Maak een nieuwe weergave of selecteer een bestaande weergave.</li>
+          <li value="3">Vouw het deelvenster <span class="uitext">Systeemoverzicht</span> uit.</li>
+          <li value="4">
+            <p>Sleep het item <span class="uitext">Transact</span> naar het weergave-item waar u de transacties en videofeed wilt weergeven. Er wordt een pop-upvenster weergegeven. </p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/tra_set_up_a_view_for_tra.png" data-mc-popup-alt="Add transaction sources to views in XProtect Smart Client.">
+                <img class="MCPopupThumbnail img" data-mc-width="422" data-mc-height="369" src="../../../Images/tra_set_up_a_view_for_tra_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add transaction sources to views in XProtect Smart Client." tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="5">Selecteer een transactiebron, bijvoorbeeld een kassa, en klik op <span class="uitext">OK</span>. In het weergave-item wordt een voorbeeld van een betalingsbewijs weergegeven.</li>
+          <li value="6">
+            <p>Vouw <span class="uitext">Eigenschappen</span> uit en schakel het selectievakje <span class="uitext">Camera’s weergeven</span> in om camera’s toe te voegen die aan de transactiebron zijn gekoppeld. Standaard wordt de camera geselecteerd die als eerste aan de transactiebron is toegevoegd.<br /></p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/tra_set_up_a_view_for_tra_1.png" data-mc-popup-alt="Connect cash register with camera in XProtect Smart Client.">
+                <img class="MCPopupThumbnail img" data-mc-width="295" data-mc-height="238" src="../../../Images/tra_set_up_a_view_for_tra_1_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Connect cash register with camera in XProtect Smart Client." tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="7">Gebruik de vervolgkeuzelijsten <span class="uitext">Eerste camera</span> en <span class="uitext">Tweede camera</span> om op te geven welke camera’s in het weergave-item worden getoond. Standaard is geen tweede camera geselecteerd. Als u geen tweede camera wenst, laat u de instelling ongewijzigd.</li>
+          <li value="8">Als u de positie van de camera’s wilt wijzigen, selecteert u een waarde in de vervolgkeuzelijst <span class="uitext">Positie</span>, bijvoorbeeld links van het betalingsbewijs.</li>
+        </ol>
+        <p class="note">Herhaal stap 4 t/m 8 voor elk transactieweergave-item dat u aan de weergave wilt toevoegen.</p>
+      </div>
+      <div>
+        <h2>Instellingen voor transactieweergave-items aanpassen<a name="SC_AdjustSettingsForTran.htm"></a></h2>
+        <p>Wanneer u een weergave hebt gemaakt die een of meer transactieweergave-items bevat, kunt u het volgende doen:</p>
+        <ul>
+          <li>De geselecteerde camera’s en de weergavevolgorde wijzigen. U kunt maximaal twee camera’s per transactieweergave-item selecteren en alleen camera’s die aan de transactiebron zijn gekoppeld</li>
+          <li>Wijzigen hoe de camera’s zijn geplaatst ten opzichte van het betalingsbewijs</li>
+          <li>Transactieweergave-items toevoegen (of verwijderen)</li>
+        </ul>
+        <p>Volg deze stappen:</p>
+        <ol>
+          <li value="1">Klik in het tabblad <span class="uitext">Live</span> of <span class="uitext">Afspelen</span> op <span class="uitext">Instellingen</span> rechts bovenin om de instelmodus te openen.</li>
+          <li value="2">Selecteer de weergave en selecteer vervolgens het weergave-item dat u wilt aanpassen.</li>
+          <li value="3">
+            <p>Als u de geselecteerde camera’s of de positie ervan wilt wijzigen, vouwt u <span class="uitext">Eigenschappen</span> uit en controleert u of het selectievakje <span class="uitext">Camera’s weergeven</span> is ingeschakeld.<br /></p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/tra_set_up_a_view_for_tra_1.png" data-mc-popup-alt="Adjust settings for views in XProtect Smart Client that display transactions.">
+                <img class="MCPopupThumbnail img" data-mc-width="295" data-mc-height="238" src="../../../Images/tra_set_up_a_view_for_tra_1_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Adjust settings for views in XProtect Smart Client that display transactions." tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="4">Gebruik de vervolgkeuzelijst <span class="uitext">Positie</span> om op te geven hoe de camera of camera’s worden weergegeven ten opzichte van het betalingsbewijs, bijvoorbeeld onder het betalingsbewijs.</li>
+          <li value="5">Gebruik de vervolgkeuzelijsten <span class="uitext">Eerste camera</span> en <span class="uitext">Tweede camera</span> om te wijzigen welke camera’s in het weergave-item worden getoond.</li>
+          <li value="6">Als u een transactiebron aan de weergave wilt toevoegen, volgt u stap 3 t/m 8 in <a href="#SC_SetUpAViewForTransact.htm" class="MCXref xref">Weergaven voor transacties instellen</a>.</li>
+        </ol>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Conceptinformatie</p>
+        <p class="containerItem_container_0">
+          <a href="sc_workingwithtransact.htm">XProtect Transact (gebruik)</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

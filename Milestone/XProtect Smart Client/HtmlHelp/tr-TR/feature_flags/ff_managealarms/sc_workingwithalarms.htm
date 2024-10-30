@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="tr-TR" xml:lang="tr-TR" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="Operasyon" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Events are predefined incidents on the XProtect VMS system that can be set up to trigger an alarm. You can acknowledge and ignore alarms or print alarm reports." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Operatör" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Alarmlar ve olaylar (kullanm)</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#feature_flags/ff_managealarms/sc_workingwithalarms.htm">Open topic with navigation</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>Alarmlar ve olaylar (kullanm)</h1>
+      <div>
+        <h2>Alarmlar (açıklandı)<a name="SC_AboutAlarms.htm"></a></h2>
+        <div>
+          <p class="note">Bu özellik sadece <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VYY sistemlerinde kullanılabilir. Sisteminizdeki özellikler hakkında bilgi için, bkz. <a href="../../standard_features/sf_sc/sf_considerationsrequirements/sc_surveillancesystemdif.htm" class="MCXref xref">Gözetim sistemi farklılıkları</a>.</p>
+        </div>
+        <p>
+          <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VYY sunucusunda, neredeyse her türlü olay veya teknik sorun - olaylar - bir alarmı tetiklemek için oluşturulabilir. Alarmların ve olayların tümü <span class="uitext">Alarm Yöneticisi</span> sekmesinde görüntülenebilir; bu sekmde VYY olaylarınızın, durumunuzun ve olası teknik sorunların merkezi bir genel görünümünü sağlar.</p>
+        <p>
+          <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> içinde alarm tetikleyicilerini oluşturamaz. Sistem yöneticiniz <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VYY sistemini yapılandırdığında bunu yapar.</p>
+        <p class="note">
+          <span class="uitext">Alarm Yöneticisi</span> sekmesi, sistem yöneticiniz tarafından tanımlanan ayarlara bağlı olarak görüntülenir veya gizlenir.</p>
+        <p>
+          <span class="uitext">Alarm Yöneticisi</span> sekmesi, alarm veya olayları ele alabilmeniz için adanmış bir görünüm sağlamaktadır. Sekmenin kendisi etkin alarmların sayısını görüntüler. Dokuzdan fazla alarm bir <img src="../../../Images/about_alarms.png" alt="9+ alarm" /> ile gösterilir. <span class="uitext">Alarm Yöneticisi</span> sekmesi bir alarm listesini, bağımsız alarmlar veya olaylar ile ilişkili bir videonun önizlemesi için bir alarm önizlemesini ve muhtemelen alarmla ilişkili kameranın coğrafi konumunu görüntüleyen bir haritayı içerir. </p>
+      </div>
+      <div>
+        <h2>Alarm listesi (açıklandı)<a name="SC_TheAlarmList.htm"></a></h2>
+        <p>
+          <span class="uitext">Alarm Listesi</span> varsayılan olarak listenin üstünde en son alarmlar ile birlikte gelen alarmları görüntüler. Alternatif olarak alarm listesi ayrıca, <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term17">MIP<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>“Milestone Integration Platform" için kısaltma.</span></a>] eklentisinin ve analiz olayların bir listesini görüntüleyebilir; örneğin, erişim kontrolü veya plaka tanıma gibi. </p>
+        <p>Alarmlar veya olaylar ile ilişkili video bir simge <img src="../../../Images/sc_alarmorevent_withvideo_icon.png" alt="" /> ile görüntülenir. Alarm veya olay zamanından bir hareketsiz görüntüyü önizlemek için, simgenin üzerine gelin. Alarm veya olayla ilişkili kamera(lar)dan gelen kaydedilmiş videoyu görüntülemek amacıyla listeden alarm veya olayı seçin. Tekrar edin bir alarm sesini durdurmak için, listedeki ses ile ilişkili alarmı seçin.</p>
+        <p>Listenin nasıl görüneceğine karar verebilir, sütunları filtreleyebilir, sütunları farklı pozisyonlara sürükleyebilir ve belirli sütunları göstermek veya gizlemek için sağ tıklayabilirsiniz.</p>
+        <p class="note">Olay listesi, sistem veya kullanıcı tarafından oluşturulmuş olayları (örn. hareket algılama veya arşiv hatalarını) göstermez.</p>
+        <p>Liste her 3 saniyede bir güncellenir.</p>
+        <p>
+          <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/the_alarm_list.png" data-mc-popup-alt="The alarm list in XProtect Smart Client.">
+            <img class="MCPopupThumbnail img" data-mc-width="500" data-mc-height="173" src="../../../Images/the_alarm_list_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="The alarm list in XProtect Smart Client." tabindex="" />
+          </a>
+        </p>
+        <p class="tip">Bir olaylar listesini görmek için, kurulum moduna girin ve <span class="uitext">Özellikler</span> panosunda <span class="uitext">Olay</span> öğesini seçin. Ayrıca, bkz. <a href="sc_configuringalarmsandevents.htm#SC_AlarmListSettings.htm" class="MCXref xref">Alarm listesi ayarları</a>.</p>
+      </div>
+      <div>
+        <h2>Alarm listesindeki sunucular (açıklandı)<a name="SC_Servers.htm"></a></h2>
+        <p>Alarm listesinin sol tarafında, alarmların kaynaklandığı sunucuları görüntüleyebilirsiniz. Pek çok <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VYY sistemi sadece tek bir sunucuya sahiptir, ancak bazı sistemler bir hiyerarşide çok sayıda sunucudan oluşabilir. Erişmeniz gereken tüm sunucular listelenir ve sunuculara göre alarmları filtreleyebilirsiniz.</p>
+      </div>
+      <div>
+        <h2>Alarm durumları (açıklandı)<a name="SC_Filters.htm"></a></h2>
+        <p>Alarmlar aşağıdaki durumlardan birinde olabilir: Yeni, Devam ediyor, Beklemede veya Kapalı. Alarmların her birinin durumunu <span class="uitext">Alarm Listesinin</span><span class="uitext">Durum Adı</span> sütununda görebilirsiniz. <span class="uitext">Filtreler</span> panosu belirli kriterlere göre filtrelemenize izin verir. En başta tüm alarmlar <span class="uitext">Yeni</span> durumunda olur, ancak bir alarm ele alındığında durumu da güncellenir.</p>
+      </div>
+      <div>
+        <h2>Alarmları süz<a name="SC_FilterAlarms.htm"></a></h2>
+        <p>Alarm listesini filtrelemek için çok sayıda yol bulunur, böylece sadece ilgilendiğiniz alarmları veya olayları görüntüler.</p>
+        <p>Adımlar: </p>
+        <ol>
+          <li value="1">
+            <p>Alarm listesi araç çubuğunda, <span class="uitext">Özel (filtre uygulanmış)</span> veya <span class="uitext">Filtre yok</span> metnini tıklatın. Metin, seçilen filtreye bağlı olarak farklılık gösterebilir.<br /></p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/filter_alarms.png" data-mc-popup-alt="Filter alarms in XProtect Smart Client.">
+                <img class="MCPopupThumbnail img" data-mc-width="1217" data-mc-height="286" src="../../../Images/filter_alarms_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Filter alarms in XProtect Smart Client." tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="2">Filtrelemek istediğiniz sütunlarından birine filtreleme kriterlerini girin. Örneğin, <span class="uitext">Kimlik </span>alanına bir kullanıcı kimliği girerseniz, listede sadece o kullanıcıya atanmış olan alarmlar görüntülenir.</li>
+          <li value="3">Filtreleri, örneğin <span class="uitext">Durum adını</span> ve (atanmış) <span class="uitext">Sahibi </span>de birleştirebilirsiniz.</li>
+          <li value="4">Filtrelenmemiş alarm listesine dönmek için, <span class="uitext">Filtreyi temizle</span> düğmesini tıklatın.</li>
+          <li value="5">Alarm listesinin içeriğini sııralamak için, sütun başlığına tıklayın.</li>
+        </ol>
+        <p class="tip">Alarm işlem görünümleri harita içeriğine sahipse, alarm listesini haritada bir unsura (kamera, sunucu veya benzeri) sağ tıklayarak, ardından <span class="uitext">Alarmları göster</span> ögesini seçerek de filtreleyebilirsiniz. Bu işlem, alarm listesinde yalnızca seçili ögeden gelen alarmların gösterilmesini sağlayacaktır.</p>
+      </div>
+      <div>
+        <h2>Alarmlara yanıt verme<a name="SC_ResponsdingToAlarms.htm"></a></h2>
+        <div>
+          <h3>Bir alarmın ayrıntılarını görüntüleme ve düzenleme<a name="SC_ViewingAndEditingDeta.htm"></a></h3>
+          <p>Alarmlara farklı yollarla yanıt verebilirsiniz. <span class="uitext">Alarm Listesini</span> eklediğiniz herhangi bir görünüme gidebilir ve bir alarm çift tıklayabilirsiniz. Alarm ayrı bir pencerede açılır; burada, alarm olayını ve canlı videoyu ön izleyebilirsiniz. Ayrıca, aşağıdaki tablodaki alanları değiştirerek alarma da yanıt verebilirsiniz. </p>
+        </div>
+      </div>
+      <p>
+        <span class="mc-variable flvar-brand-company.XP variable">XProtect</span>
+        <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term50"> VYY<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>"Video Yönetim Yazılımı" kısaltması.</span></a> sisteminizin nasıl yapılandırıldığına bağlı olarak, masaüstü alarm bildirimleri de alabilirsiniz. Bu türdeki bildirimler 15 saniye boyunca ekranınızda kalır. Bir bildirime tıkladığınızda, bu sizi doğrudan <span class="uitext">Alarm Yöneticisi</span> sekmesine götürür ve alarm penceresini açar.</p>
+      <div>
+        <div>
+          <table cellspacing="3">
+            <col />
+            <col />
+            <thead>
+              <tr>
+                <th>Alan</th>
+                <th>Tanım</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">Durum</span>
+                  </p>
+                </td>
+                <td>
+                  <p>Alarmın durumu, herhangi birisinin olayı ele alıp almadığını gösterir. Alarmın durumunu değiştirebilirsiniz. Genellikle, durumu <span class="uitext">Yeni</span>'den <span class="uitext">İşlemde</span> durumuna alacak ve sonra <span class="uitext">Beklemede</span> veya <span class="uitext">Kapatıldı</span> olarak değiştireceksiniz. </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">Öncelik</span>
+                  </p>
+                </td>
+                <td>
+                  <p>Alarmın önceliğini değiştirebilmenizi sağlar.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">Atanan</span>
+                  </p>
+                </td>
+                <td>
+                  <p>Alarmı, kendiniz de dâhil olmak üzere kuruluşunuzdaki bir kullanıcıya atayabilmenizi sağlar. Alarmı atadığınız kişi alarmın sahibi haline gelir ve alarm listesinin <span class="uitext">Sahip</span> sütununda görünecektir.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">Yorum</span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    <span class="uitext">Faaliyetler</span> kısmına eklenen yorum ve açıklamaları yazın. Yorumlar genellikle yaptığınız eylemlerle ilgilidir. Örneğin, “Şüpheli Güvenlik tarafından gözaltına alındı”, “Şüpheli polise teslim edildi” veya “Yanlış alarm.” <span class="uitext">Yorum</span> alanı, pencerenin altında görünür.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">Faaliyetler</span>
+                  </p>
+                </td>
+                <td>
+                  <p>Faaliyetler, alarmı nasıl işlemiş olduğunuzu özetler. Siz veya iş arkadaşlarınızın alarm durumu veya önceliği üzerinde yaptığınız her türlü değişiklik, alarmların kullanıcılar arasındaki her türlü yeniden atanması ve eklenen her türlü yorum otomatik olarak <span class="uitext">Faaliyetler </span>kısmına dahil edilir.</p>
+                  <p class="note">
+                    <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VYY sunucusundaki yapılandırmaya bağlı olarak, alarm bir alarm alındığında neler yapılacağı hakkında talimatları içerebilir. Talimatlar, alarm tanımının parçası olarak sunucuda tanımlanır. Bu durumda, alarmı düzenlediğinizde faaliyetler otomatik olarak görüntülenir.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">Yazdır</span>
+                  </p>
+                </td>
+                <td>
+                  <p>Alarm hakkında, alarm geçmişi ve eğer varsa alarm zamanından <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term19">sabit görüntü<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Tek bir statik görüntü.</span></a> gibi bilgileri içeren bir rapor yazdırmanızı sağlar.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h3>Alarmları onayla<a name="SC_AcknowledgeAnAlarm.htm"></a></h3>
+          <p>Bir alarm aldığınızda, bunun hakkında bir şeyler yapacağınızı kaydetmek için onu onaylayabilirsiniz.</p>
+          <p>Adımlar:</p>
+          <ol>
+            <li value="1">
+              <p>Alarm listesi içerisinde, alarma sağ tıklayın ve <span class="uitext">Kabul et</span> seçeneğini seçin. Alarm durumu <span class="uitext">Devam etmekte</span> olarak değişir.</p>
+              <p class="note">Sadece yeni alarmları onaylayabilirsiniz.</p>
+            </li>
+            <li value="2">Birçok alarmı aynı anda onaylayabilirsiniz: <span class="uitext">CTRL</span> tuşuna basın ve basılı tutun, ardından onaylamak istediğiniz alarmları seçin.</li>
+            <li value="3">Alarmın ayrıntılarını düzenlemek için alarmı çift tıklatın, örneğin alarmı bir başkasına atama ve talimat ekleme.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>
+            <a name="Disable"></a>Seçilen olay türlerinde tüm yeni alarmları devredışı bırakın</h3>
+          <p>Bir olay, yanlış alarmları tetiklerse, bir süre bu olay türündeki tüm yeni alarmları devredışı bırakmak isteyebilirsiniz.</p>
+          <p>Örneğn, bir kamera etrafında çok fazla hareket varsa ve bu, çok sayıda yanlış alarma neden oluyorsa, bu kamera için 10 dakika boyunca hareket tespitine ilişkin alarmları devredışı bırakabilirsiniz. Ardından, kamera için hareket algılaması 10 dakika boyunca alarmları tetiklemeyecektir. Bu şekilde, yanlış alarmlar sizi rahatsız etmeyecek ve dikkatinizi gerektiren alarmlara odaklanabilirsiniz.</p>
+          <p class="important">Devredışı alarmlar sizin de bağlı olduğunuz <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VYY sistemine bağlı olan tüm operatörleri etkiler. </p>
+          <p>Tüm yeni alarmları <span class="uitext">Alarm Yöneticisi</span> veya bir harita kullanarak devredışı bırakabilirsiniz.</p>
+          <ol>
+            <li value="1">
+              <p>
+                <span class="uitext">Alarm Yöneticisini</span> kullanarak: alarm listesinde, bir alarma sağ tıklayıın ve <span class="uitext">Tüm yeni alarmları devredışı bırak</span> öğesini seçin.</p>
+              <p>Bir harita kullanarak, bir alarma sağ tıklayın ve <span class="uitext">Tüm yeni alarmları devredışı bırak</span> &gt; <span class="uitext">Devredışı bırak</span>.</p>
+              <p>
+                <span class="uitext">Tüm yeni alarmları devredışı bırakın</span> penceresi görünür.</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_disablealarmsoneventtypes.png" data-mc-popup-alt="Disable alarms based on event types in XProtect Smart Client.">
+                  <img class="MCPopupThumbnail img" data-mc-width="459" data-mc-height="790" src="../../../Images/sc_disablealarmsoneventtypes_thumb_200_0.png" style="max-width: 400px;mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Disable alarms based on event types in XProtect Smart Client." tabindex="" />
+                </a>
+              </p>
+            </li>
+            <li value="2">
+              <span class="uitext">Alarmları tetiklemeyecek olaylar</span> listesinde <img src="../../../Images/1.png" alt="" />, hangi türdeki olayların alarmları tetikleyeceğini seçin.</li>
+            <li value="3">Seçilen olay türlerinde <img src="../../../Images/2.png" alt="" /> alarmlarının ne zamana kadar veya ne kadar süreyle tetiklenmemesi gerektiğini belirtin.</li>
+            <li value="4">İsteğe bağlı olarak, seçilen olay türlerinde <img src="../../../Images/3.png" alt="" /> neden alarmları devredışı bıraktığınıza dair bir yorum ekleyin.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Haritalardaki alarmları yoksay<a name="SC_IgnoreAnAlarm.htm"></a></h3>
+          <p>Harita üstünde bir ögenin alarmını belli bir süreliğine yoksayabilirsiniz. Örneğin eğer bir kamera tamir edilmekte ve bu sebepten dolayı bağlı değilse, tamirat sırasında haritada görüntülenen uyarıyı görmek istemeyebilirsiniz. Eğer harita üstünde bir alarmı yoksayarsanız, alarm listeden kaldırılmaz; yalnızca haritadan kaldırılır.</p>
+          <p>
+            <img src="../../../Images/sc_ignorealarmonmap.png" alt="Ignore alarms on maps in XProtect Smart Client." />
+          </p>
+        </div>
+        <div>
+          <h3>Alarmları kapat<a name="SC_CloseAlarms.htm"></a></h3>
+          <p>Bir alarmı onayladıktan sonra, genellikle neler olup bittiğini araştıran birine atarsınız. Bu süre zarfında, alarm <span class="uitext">Devam ediyor</span> durumunda olacak. Alarmı kullandıktan sonra, kapatabilirsiniz.</p>
+          <p>Alarmı kapatmak için <span class="uitext">Alarm Listesi</span>, şunlardan birini yapın:</p>
+          <ul>
+            <li>Alarmı sağ tıklayın ve <span class="uitext">Kapat</span> ögesini seçin.</li>
+            <li>Alarmı çift tıklayın ve <span class="uitext">Durum</span> listesinde, <span class="uitext">Kapalı</span> ögesini seçin.</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <h2>Alarm raporlarını yazdır<a name="SC_PrintAReportWithAlarm.htm"></a></h2>
+        <p>Alarm geçmişi ve varsa, alarm saatinden bir sabit görüntü gibi, alarm hakkında bilgi içeren bir rapor yazdırabilirsiniz. Alarm listesinde birden fazla alarm seçtiyseniz, bu özelliği kullanamazsınız.</p>
+        <p>Adımlar:</p>
+        <ol>
+          <li value="1">Alarm listesinde alarmı sağ tıklatın.</li>
+          <li value="2">
+            <span class="uitext">Yazdır</span> seçeneğini seçin. Bir pencere görünür.</li>
+          <li value="3">Bir not eklemek için, metni <span class="uitext">Not </span>alanına girin.</li>
+          <li value="4">
+            <span class="uitext">Print</span> (Yazdır) düğmesini tıklatın.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_GetAlarmStatistics"></a>Alarmlar hakkında istatistikler alın</h2>
+        <p>
+          <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VYY sisteminizde tetiklenen alarmlar hakkında istatistiksel veri alın:</p>
+        <ul>
+          <li>
+            <span class="uitext">Son 24 saat</span>
+          </li>
+          <li>
+            <span class="uitext">Son 7 gün</span>
+          </li>
+          <li>
+            <span class="uitext">Son 30 gün</span>
+          </li>
+          <li>
+            <span class="uitext">Son 6 ay</span>
+          </li>
+          <li>
+            <span class="uitext">Geçen yıl</span>
+          </li>
+        </ul>
+        <p>
+          <span class="uitext">Alarm Raporu</span> penceresi kategorilere göre filtrelenen alarmların sayısını görüntüleyen iki grafiği gösterir, örneğin iki grafiği yanyana karşılaştırmanızı sağlayan <span class="uitext">Öncelik</span> veya <span class="uitext">Durum</span>. </p>
+        <p>Adımlar:</p>
+        <ol>
+          <li value="1">
+            <span class="uitext">Alarm Listesinde</span>, <span class="uitext">Raporlar</span> düğmesine tıklayın. Bir pencere görünür.</li>
+          <li value="2">Grafiklerin üzerinde, zaman aralığını seçin, örneğin <span class="uitext">Son 24 saat</span>. </li>
+          <li value="3">
+            <span class="uitext">Rapor seç</span> listesinde, bu kategorilerden birini seçin:<ul><li><span class="uitext">Kategori</span></li><li><span class="uitext">Durum</span></li><li><span class="uitext">Öncelik</span></li><li><span class="uitext">Kapatma nedenleri</span></li><li><span class="uitext">Sistem</span></li><li><span class="uitext">Yanıt süresi</span></li></ul></li>
+          <li value="4">Her bir grafik için, bir alt filtre seçin. Örneğin, <span class="uitext">Durum</span> seçilirse, birinci grafikte <span class="uitext">Yeni</span> öğesini ve ikinci grafikte <span class="uitext">İşlemde</span> öğesini seçebilirsiniz. Grafikler doldurulur.</li>
+          <li value="5">Grafikleri bir PDF raporu olarak yazdırmak için, <img src="../../../Images/sc_printalarmstatisticsicon.png" alt="" /> öğesine tıklayın.</li>
+        </ol>
+        <p>
+          <a name="SC_ViewAlarmReports.htm"></a>
+        </p>
+      </div>
+      <div>
+        <h2>Haritalardaki alarmlar (açıklandı)<a name="SC_AlarmsOnMaps.htm"></a></h2>
+        <p>Alarm işleme görünümünüzde bir ya da daha fazla harita konumu varsa alarmları haritalarda da görüntüleyebilirsiniz. Haritalar alarmları kameranın, sunucunun veya alarmı tetikleyen diğer cihazın coğrafi konumuna göre görüntüler ve siz de bu sayede alamın nereden kaynaklandığını anında görebilirsiniz. Alarmı sağ tıklatıp onaylayabilirsiniz, etkisizleştirebilirsiniz ve alarmı direkt haritadan bastırabilirsiniz.</p>
+        <p>Kamera ögeleri, farenizi üzerine getirdiğinizde videoyu küçük resim biçiminde görüntüler. Alarmlar ile birlikte kullanıldıklarında, haritalardaki grafik öğeleri, alarmların oluşması halinde etraflarında kırmızı daireleri görüntülerler. Örneğin, belirli bir kamera ile ilişkili bir alarm oluşursa, kamerayı temsil eden grafik öğesinin etrafında derhal kırmızı bir daire oluşacaktır ve ardından kamera öğesine tıklayabilir, sadece kameradan gelen videoyu görüntülemez, ayrıca görünen bir menü yoluyla alarmı da işleme alabilirsiniz.</p>
+        <p class="tip">Haritalarınızda alarmları belirtmek için kırmızı ideal bir renk değilse, bu rengi değiştirebilirsiniz.</p>
+        <p>Diyelim ki ilişkili bir alarmı olan bir kamera cadde seviyesindeki bir haritada bulunuyor, ancak siz şehir seviyesinde bir haritayı görüntülüyorsunuz. Alarmı nasıl fark edeceksiniz? Farklı harita hiyerarşi seviyelerini birbirine bağlayan grafik gösterimler olan Etkin alanlar sayesinde bu hiç sorun değildir. Cadde seviyesi haritasında bir alarm tespit edilirse, şehir seviyesi haritasındaki etkin bölge harita seviyeleri arasında başka seviyeler olsa bile, daha düşük seviyedeki bir haritada bir alarmı belirterek kırmızıya dönecektir.</p>
+        <p>İpucu:Birden fazla ögeden gelen alarmları görebileceğiniz bir alarm listesi moduna geri dönmek için, alarm listesinde bulunan gerekli sunucu, öncelik ya da durum ögesini tıklatın.</p>
+      </div>
+      <div>
+        <h2>
+          <a name="Alarms"></a>Akıllı haritalardaki alarmlar (açıklandı)</h2>
+        <p>Akıllı harita, bir aygıt tarafından tetiklenirlerse ve aygıt akıllı haritaya eklenirse, alarmları görüntüler. Ayrıca, bkz. <a href="../ff_map/sc_configuringmaps.htm#SC_AddingDeletingOrEditi_1.htm" class="MCXref xref">Akıllı haritaya aygıtların eklenmesi, silinmesi veya düzenlenmesi</a>.</p>
+      </div>
+      <p>Akıllı harita simgeleri hakkında daha fazla bilgi için, bkz. <a href="../../standard_features/sf_sc/sf_operation/sc_searchingadditionalinfo.htm#Camera" class="MCXref xref">Kamera simgeleri (açıklandı)</a>.</p>
+      <div>
+        <h2>Olaylar (açıklandı)<a name="SC_Events.htm"></a></h2>
+        <p>Bir olay, bir alarmın tetiklenmek üzere kurulumunun yapılabileceği <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VYY sisteminde önceden tanımlı bir olaydır. Olaylar ya önceden belirlenmiş ya da kullanıcı tarafından tanımlanmış olaylardır, örneğin, analitik olaylar veya genel olaylar. Olaylar illa bir alarm ile ilişkilendirilmiş olmak zorun değiller, ancak olabilirler de.</p>
+        <p>Genellikle, olaylar otomatik olarak ve arka planda etkinleşirler, örneğin harici sensörlerden gelen bir girdi, algılanan hareket sonucu veya diğer uygulamalardan gelen veriyle. Ancak, olaylar manuel olarak da etkinleştirilebilir. Olaylar, işlemleri tetiklemek için VYY sistemi tarafından kullanılır, örneğin kaydı başlatma veya durdurma, video ayarlarını değiştirme, <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term33">çıktıyı<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Bir bilgisayardan dışarı çıkan verilerdir. IP gözetim sistemlerinde çıkış çoğunlukla geçitler, sirenler, çakar lambalar ve daha birçoğu gibi cihazların etkinleştirilmesi için kullanılır.</span></a> veya işlemlerin bileşenlerini etkinleştirme. <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> içinden bir olayı etkinleştirdiğinizde, otomatik olarak VYY sistemide işlemleri tetikler, örneğin belirli bir zaman dönemi boyunca belirli bir <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term14">çerçeve hızıyla<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Hareketli videoda kapsanan bilgi miktarını gösteren bir ölçümdür. Genellikle FPS (Saniyedeki Çerçeve Sayısı) cinsinden ölçülür.</span></a> belirli kamerada kayıt.</p>
+        <p>Sistem yöneticiniz bir olayı manuel olarak etkinleştirdiğinizde ne olacağını belirler. </p>
+        <div>
+          <h3>Olayların manüel olarak etkinleştirilmesi<a name="SC_ManuallyActivateAnEve.htm"></a></h3>
+          <p>Seçilebilir <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term11">olayların<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Gözetim sisteminde meydana gelen önceden tanımlanmış bir durumdur. Eylemlerin tetiklenmesi için gözetim sistemi tarafından kullanılır. Gözetim sisteminin yapılandırmasına bağlı olarak olaylar harici sensörlerden gelen giriş, algılanan hareket, diğer uygulamalardan alınan veriler yüzünden veya kullanıcı girişi aracılığıyla manüel olarak meydana gelebilir. Bir olayın meydana gelişi; örneğin, çıkışların etkinleştirilmesi, e-posta gönderilmesi ve bunların bir arada yapılması için özel bir çerçeve hızı olan bir kamera kaydı oluşturmak amacıyla kullanılabilir.</span></a> listesi sunucu ve olayın ilişkili olduğu kamera veya cihaz tarafından gruplandırılır. Bir olayı manuel olarak etkinleştirebilirsiniz. Bir olayı etkinleştirdiğinizde hiçbir onay yoktur.</p>
+          <ol>
+            <li value="1">
+              <span class="uitext">Canlı</span> sekmesinde <span class="uitext">Olaylar</span> bölmesini genişletin.</li>
+            <li value="2">
+              <span class="uitext">Etkinleştir</span> ögesine tıklayın.</li>
+            <li value="3">Ayrıca, eğer kamera için mevcut ise, farenizi görüntünün üzerine getirdiğinizde beliren <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term34">katman düğmesini<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Fare imlecinizi Canlı sekmesindeki görünümlerde bağımsız kamera konumları üzerine götürdüğünüzde videonun üzerinde bir katman olarak görünen düğme. Katman düğmelerini hoparlörleri, olayları, çıkışı etkinleştirmek, PTZ kameralarını hareket ettirmek, kaydı başlatmak, kameralardan gelen sinyalleri temizlemek için kullanın.</span></a> tıklatın.</li>
+          </ol>
+          <p class="note">Hiyerarşik olarak genel olaylar ilgili sunucunun altında gösterilecektir. Bir sunucu kırmızı bir simgeyle listeleniyorsa, kullanılamaz ve üzerindeki olayları etkinleştiremezsiniz.</p>
+        </div>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Concept Information</p>
+        <p class="containerItem_container_0">
+          <a href="sc_configuringalarmsandevents.htm">Alarmlar ve olaylar (yapılandırma)</a>
+        </p>
+        <p class="referenceHeading_reference_0">Reference Materials</p>
+        <p class="referenceItem_reference_0">
+          <a href="sc_faq_alarms.htm">SSS: alarmlar</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

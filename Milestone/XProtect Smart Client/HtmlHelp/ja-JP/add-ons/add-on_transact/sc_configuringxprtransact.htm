@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="ja-JP" xml:lang="ja-JP" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="設定" data-mc-conditions="flcts-alias.sc-alias-content,flcts-add-on.xp-tra-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Configure XProtect Transact in XProtect Smart Client to view and investigate transactions from PoS systems in combination with video." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Transact" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=管理者" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=インテグレーター" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=オペレータ" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>XProtect Transact（設定）</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#add-ons/add-on_transact/sc_configuringxprtransact.htm">ナビ付きでトピックを開く</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="パンくず" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>
+        <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span>（設定）</h1>
+      <div>
+        <h2>入門：<span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span><a name="SC_GettingStarted_Transa.htm"></a></h2>
+        <p>
+          <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>でトランザクションの監視と調査を開始する前には、次の手順を実行する必要があります。</p>
+        <ol>
+          <li value="1">
+            <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span>基本ライセンスが監視カメラ管理ソフトウェアのインストール中にアクティベーションされたことを確認します。このためには、<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>を開き、<span class="uitext">[Transact]</span>タブが表示されていることを確認します。基本ライセンスがなくても、試用版ライセンスで<span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span>を使用できます。詳細については、「<a href="#SC_XPrTransactTrial.htm" class="MCXref xref">XProtect Transact試用版ライセンス</a>」を参照してください。</li>
+          <li value="2">トランザクションが正しく表示されていることを確認します。これには、個別のトランザクションラインとレシートがあります。このためには、<span class="uitext">トランザクション</span>タブをクリックし、トランザクションソースと時間間隔を選択します。正しく構成されていない場合は、トランザクションラインのリストが表示されます。行をクリックすると、接続されたカメラごとに1つの対応するビデオの静止フレームが表示されます。</li>
+          <li value="3">
+            <span class="uitext">ライブ</span>タブでリアルタイムのトランザクションを開始するか、<span class="uitext">再生</span>タブでトランザクションを調査する場合は、トランザクションのビューを設定します。詳細については、「<a href="#SC_SetUpAViewForTransact.htm" class="MCXref xref">トランザクションのビューを設定</a>」を参照してください。</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span>試用版ライセンス<a name="SC_XPrTransactTrial.htm"></a></h2>
+        <p>
+          <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span>試用版ライセンスを使用して、最大30日まで<span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span>の機能を試すことができます。すべての関連する機能が有効になり、キャッシュレジスターなどのトランザクションソースを1つ追加できます。30日間の試用期間が終了すると、<span class="uitext">トランスアクト</span>ワークスペースとトランザクション表示アイテムを含む、すべての<span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span>機能が無効になります。<span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span>基本ライセンスと必要なトランザクションソースライセンスを購入してアクティベートすると、設定とデータを維持したまま再び<span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span>を使用できます。</p>
+        <p>
+          <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span>から試用版ライセンスを取得する必要があります。 システム管理者は構成で試用版ライセンスをアクティベートする必要があります。</p>
+      </div>
+      <div>
+        <h2>トランザクションのビューを設定<a name="SC_SetUpAViewForTransact.htm"></a></h2>
+        <p>
+          <span class="uitext">ライブ</span>または<span class="uitext">再生</span>タブでトランザクションを表示する前に、各トランザクションソースのトランザクションが含まれる表示アイテムを設定する必要があります。実行中のトランザクションの場合、セットアップモードを終了すると、表示アイテム内の画面上をレシートが回転します。</p>
+        <p>手順：</p>
+        <ol>
+          <li value="1">
+            <span class="uitext">ライブ</span>タブまたは<span class="uitext">再生</span>タブで、右上端の<span class="uitext">セットアップ</span>をクリックし、セットアップモードに切り替えます。</li>
+          <li value="2">新しいビューを作成するか、既存のビューを選択します。</li>
+          <li value="3">
+            <span class="uitext">システム概要</span>ペインを展開します。</li>
+          <li value="4">
+            <p>トランザクションとビデオフィードを表示する表示アイテムまで、<span class="uitext">トランザクション</span>アイテムをドラッグします。ポップアップウィンドウが表示されます。</p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/tra_set_up_a_view_for_tra.png" data-mc-popup-alt="Add transaction sources to views in XProtect Smart Client.">
+                <img class="MCPopupThumbnail img" data-mc-width="422" data-mc-height="369" src="../../../Images/tra_set_up_a_view_for_tra_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add transaction sources to views in XProtect Smart Client." tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="5">キャッシュレジスタなどのトランザクションソースを選択し、<span class="uitext">OK</span>をクリックします。表示アイテム内にレシートプレビューが表示されます。</li>
+          <li value="6">
+            <p>
+              <span class="uitext">プロパティ</span>を展開し、<span class="uitext">カメラを表示する</span>チェックボックスを選択して、トランザクションソースに関連付けられたカメラを追加します。デフォルトでは、設定で最初にトランザクションソースに追加されるカメラが選択されます。<br /></p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/tra_set_up_a_view_for_tra_1.png" data-mc-popup-alt="Connect cash register with camera in XProtect Smart Client.">
+                <img class="MCPopupThumbnail img" data-mc-width="295" data-mc-height="238" src="../../../Images/tra_set_up_a_view_for_tra_1_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Connect cash register with camera in XProtect Smart Client." tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="7">
+            <span class="uitext">最初のカメラ</span>と<span class="uitext">2番目のカメラ</span>ドロップダウンリストを使用し、表示アイテムで表示されるカメラを指定します。デフォルトでは2番目のカメラは選択されません。2番目のカメラが必要ではない場合、そのままにします。</li>
+          <li value="8">カメラの位置を変更する場合は、たとえばレシートの左にある<span class="uitext">位置</span>ドロップダウンリストの値を選択します。</li>
+        </ol>
+        <p class="note">ビューに追加するトランザクション表示アイテムごとに、手順4～8を繰り返します。</p>
+      </div>
+      <div>
+        <h2>トランザクション表示アイテムの設定の調整<a name="SC_AdjustSettingsForTran.htm"></a></h2>
+        <p>1つ以上のトランザクション表示アイテムを含むビューを作成すると、次のことができます。</p>
+        <ul>
+          <li>選択したカメラと表示順を変更する トランザクション表示アイテムごとに最大2つのカメラを選択し、トランザクションソースに関連付けられたカメラのみを選択できます。</li>
+          <li>レシートに関連してカメラが配置される方法を変更する</li>
+          <li>トランザクション表示アイテムを追加または削除する</li>
+        </ul>
+        <p>手順：</p>
+        <ol>
+          <li value="1">
+            <span class="uitext">ライブ</span>タブまたは<span class="uitext">再生</span>タブで、右上端の<span class="uitext">セットアップ</span>をクリックし、セットアップモードに切り替えます。</li>
+          <li value="2">調整するビュー、表示アイテムの順に選択します。</li>
+          <li value="3">
+            <p>選択されたカメラまたはその位置を変更する場合は、<span class="uitext">プロパティ</span>を展開し、<span class="uitext">カメラを表示する</span>チェックボックスが選択されていることを確認します。<br /></p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/tra_set_up_a_view_for_tra_1.png" data-mc-popup-alt="Adjust settings for views in XProtect Smart Client that display transactions.">
+                <img class="MCPopupThumbnail img" data-mc-width="295" data-mc-height="238" src="../../../Images/tra_set_up_a_view_for_tra_1_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Adjust settings for views in XProtect Smart Client that display transactions." tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="4">
+            <span class="uitext">位置</span>ドロップダウンリストを使用し、レシートに関連してカメラが表示される方法（レシートの下など）を指定します。</li>
+          <li value="5">
+            <span class="uitext">最初のカメラ</span>と<span class="uitext">2番目のカメラ</span>ドロップダウンリストを使用し、表示アイテムで表示されるカメラを変更します。</li>
+          <li value="6">トランザクションソースをビューに追加したい場合は、<a href="#SC_SetUpAViewForTransact.htm" class="MCXref xref">トランザクションのビューを設定</a>のステップ3～8に従います。</li>
+        </ol>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">概念情報</p>
+        <p class="containerItem_container_0">
+          <a href="sc_workingwithtransact.htm">XProtect Transact（使用）</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="da-DK" xml:lang="da-DK" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="Fejlfinding" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Have any issues with exporting video in XProtect Smart Client? Troubleshoot here." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client – Player" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Administrator" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Supporter" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Operatør" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Eksport (fejlfinding)</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#standard_features/sf_sc/sf_troubleshooting/sc_scplayertroubleshooting.htm">Åbn emne med navigation</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Brødkrummer" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>Eksport (fejlfinding)</h1>
+      <div class="MCDropDown MCDropDown_Closed dropDown">
+        <span class="MCDropDownHead dropDownHead">
+          <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+            <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />
+          </a>
+          <a name="SC_Troubleshoot_OldExportOnFIPSEnabledSystem"></a>
+          <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Mindst en databasefil bruger ikke-understøttet krypteringsalgoritme</a>
+        </span>
+        <div class="MCDropDownBody dropDownBody">
+          <p>Hvis du ser denne advarsel, så bruger dit aktuelle <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS-system AES-256 til at kryptere eksporterede videodata for at overholde sikkerhedsstandarden <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term63">FIPS 140-2<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>En officiel amerikansk standard, som definerer, hvilke kritiske sikkerhedsparametre for kryptering, som forhandlere af software eller hardware skal anvende, for at kunne sælge til offentlige myndigheder i USA.</span></a>. Systemet, der blev brugt til at oprette eksporten, bruger imidlertid en anden krypteringsstandard.</p>
+          <p>For at løse problemet, skal du gøre en af de følgende:</p>
+          <ul>
+            <li>Geneksporter videodata med en opgraderet version af <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Versionen skal være den samme som eller nyere end din aktuelle version</li>
+            <li>Selvom <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> anbefaler altid at bruge den seneste version af <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>, kan du åbne eksporten med en ældre version af <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> i offline-tilstand</li>
+            <li>Åbn eksporten på en computer, hvor FIPS-tilstand er deaktiveret. Se også <a href="https://docs.microsoft.com/en-us/windows/security/threat-protection/fips-140-validation#using-windows-in-a-fips-140-2-approved-mode-of-operation" target="_blank">https://docs.microsoft.com/en-us/windows/security/threat-protection/fips-140-validation#using-windows-in-a-fips-140-2-approved-mode-of-operation</a></li>
+          </ul>
+          <p class="note">
+            <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> anbefaler, at du beskytter dine data med en adgangskode. For at gøre dette skal du markere afkrydsningsfeltet <span class="uitext">Krypter med adgangskode</span> i vinduet <span class="uitext">Eksportindstillinger</span> &gt; <span class="uitext"><span class="mc-variable flvar-brand-company.XP variable">XProtect</span>-format</span>.</p>
+        </div>
+      </div>
+      <div class="MCDropDown MCDropDown_Closed dropDown">
+        <span class="MCDropDownHead dropDownHead">
+          <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+            <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Kunne ikke validere dette projekts integritet... </a>
+        </span>
+        <div class="MCDropDownBody dropDownBody">
+          <p>Der er ikke inkluderet en manipuleringsnøgle i videoeksporten. Enten blev manipuleringsnøglen fjernet, eller også blev videoeksporten oprettet med en separat tredjeparts-applikation baseret på <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term0"><span class="mc-variable flvar-brand-company.SDK_short variable">MIP SDK</span><span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Begivenhed, der er defineret på overvågningssystemet til at udløse en alarm i XProtect Smart Client. Hvis din organisation bruger funktionen, vises udløste alarmer i visninger, der indeholder alarmlister eller kort.</span></a> 2020 R2 eller ældre. Hvis manipuleringsnøgle-filen mangler, er det ikke muligt at verificere om videoprojekt-filen er autentisk.</p>
+          <p>For at løse problemet kan du foretage en eller flere af følgende muligheder:</p>
+          <ul>
+            <li>Anmod om en ny videoeksport og sørg for, at der bliver inkluderet en manipuleringsnøgle</li>
+            <li>Geneksporter videodata med et tredjeparts-program, som er baseret på <span class="mc-variable flvar-brand-company.SDK_short variable">MIP SDK</span> 2020 R3 eller senere</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Konceptinformation</p>
+        <p class="containerItem_container_0">
+          <a href="../sf_configuration/sc_configuringxprscplayer.htm">XProtect Smart Client – Player (konfiguration)</a>
+        </p>
+        <p class="containerItem_container_0">
+          <a href="../sf_operation/sc_xprscpl_1.htm">XProtect Smart Client – Player (anvendelse)</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

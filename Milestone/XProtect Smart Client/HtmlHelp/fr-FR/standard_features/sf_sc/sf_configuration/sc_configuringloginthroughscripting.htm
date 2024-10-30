@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="fr-FR" xml:lang="fr-FR" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="Configuration" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Create scripts to control the login procudure and switch between views in XProtect Smart Client." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Développeur" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Responsable du développement" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Création de scripts</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#standard_features/sf_sc/sf_configuration/sc_configuringloginthroughscripting.htm">Ouvrir la rubrique avec les liens de navigation</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Pistes de navigation" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>Création de scripts</h1>
+      <div>
+        <h2>Script pour la connexion (explications)<a name="SC_StartupScripting.htm"></a></h2>
+        <p>Vous pouvez utiliser des scripts pour contrôler tout ou partie de la procédure de connexion du <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>.</p>
+        <ul>
+          <li>Si vous utilisez une <span class="uitext">authentification basique</span> ou une <span class="uitext">authentification Windows</span>, vous pouvez faire en sorte que la fenêtre de connexion du <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> s'ouvre, avec un formulaire pré-rempli avec l'adresse serveur et le nom d'utilisateur afin que les utilisateurs n'aient plus qu'à saisir leur mot de passe pour se connecter.</li>
+          <li>Si vous utilisez l’<span class="uitext">authentification Windows (utilisateur actuel)</span>, vous pouvez faire se connecter le <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> automatiquement au système de surveillance, sur la base de l'identifiant Windows utilisé.</li>
+        </ul>
+        <div class="important">
+          <p>L'utilisation de scripts pour contrôler la procédure de connexion selon l'<span class="uitext">authentification basique</span> ou l'<span class="uitext">authentification Windows</span> nécessite l'ajout d'informations non-cryptées sensibles à un fichier SCS stocké localement avec les fichiers du programme <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> :</p>
+          <ul>
+            <li>Nom de l'hôte</li>
+            <li>Nom d'utilisateur</li>
+            <li>Mot de passe</li>
+          </ul>
+          <p>Le stockage d'informations non-cryptées peut compromettre la sécurité de votre système ou sa conformité au RGPD. Les informations contenues dans le fichier SCS peuvent être lues :</p>
+          <ul>
+            <li>Par quiconque pouvant accéder au fichier</li>
+            <li>Dans l'empreinte mémoire de l'application <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> qui a été démarrée par le fichier SCS ou par une ligne de commandes qui fournit le nom d'utilisateur et le mot de passe</li>
+          </ul>
+          <p>
+            <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> vous recommande d'utiliser l'<span class="uitext">authentification Windows (utilisateur actuel)</span>. Dans le cas d'une <span class="uitext">authentification basique</span> ou d'une <span class="uitext">authentification Windows</span>, vous devez limiter l'accès au fichier SCS.</p>
+        </div>
+      </div>
+      <div>
+        <h2>Scripts pour la connexion - paramètres<a name="SC_Scripting_Parameters.htm"></a></h2>
+        <p>Vous pouvez utiliser ces paramètres :</p>
+        <p>AdresseServeur</p>
+        <p>Se rapporter à l'URL du serveur de gestion auquel <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> se connecte.</p>
+        <p>L'exemple suivant présente la fenêtre de connexion du <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> avec <span class="citationtext">http://ourserver</span> dans le champ <span class="uitext">Adresse du serveur</span> :</p>
+        <p class="codechunk">Client.exe -ServerAddress="http://ourserver"</p>
+        <p>Le type d'identification par défaut est <span class="uitext">l'authentification Windows (utilisateur actuel)</span>. À moins que vous ne changiez ce paramètre en utilisant le paramètre <span class="uitext">AuthenticationType</span> (décrit ci-dessous), la fenêtre de connexion affichera automatiquement le nom de l'utilisateur Windows actuel dans son champ <span class="uitext">Nom d'utilisateur</span>.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fermé" data-mc-alt2="Ouvert" />Nom d'utilisateur</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Se rapporte à un nom d'utilisateur spécifique.</p>
+            <p>L'exemple suivant présente la fenêtre de connexion du <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> avec <span class="citationtext">http://ourserver</span> défini dans le champ <span class="uitext">Adresse du serveur</span> et <span class="specialbold">Tommy</span> dans le champ <span class="uitext">Nom d’utilisateur</span> :</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -UserName="Tommy"</p>
+            <p class="note">Ce paramètre n'est pertinent que pour <span class="uitext">l'authentification Windows</span> et <span class="uitext">l'authentification de base</span>. Vous utilisez le paramètre <span class="uitext">AuthenticationType</span> pour définir la méthode d'authentification à employer.</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fermé" data-mc-alt2="Ouvert" />Mot de passe</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Se rapporte à un mot de passe spécifique.</p>
+            <p>L'exemple suivant présente la fenêtre de connexion du <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> avec <span class="citationtext">http://ourserver</span> défini dans le champ <span class="uitext">Adresse du serveur</span>, <span class="specialbold">Tommy</span> dans le champ <span class="uitext">Nom d'utilisateur</span> et <span class="specialbold">T0mMy5Pa55w0rD</span> dans le champ <span class="uitext">Mot de passe</span> :</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -UserName="Tommy" -Password="T0mMy5Pa55w0rD"</p>
+            <p class="note">Ce paramètre n'est pertinent que pour <span class="uitext">l'authentification Windows</span> et <span class="uitext">l'authentification de base</span>. Vous utilisez le paramètre <span class="uitext">AuthenticationType</span> pour définir la méthode d'authentification à employer.</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fermé" data-mc-alt2="Ouvert" />TypeAuthentification</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Se rapporte à l'une des trois méthodes d'authentification possibles pour <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> : <span class="uitext">Authentification Windows (utilisateur actuel)</span> (appelée <span class="uitext">WindowsDefault</span> dans les scripts de démarrage), <span class="uitext">Authentification Windows</span> (appelée <span class="uitext">Windows</span> dans les scripts de démarrage), ou <span class="uitext">Authentification basique</span> (appelée <span class="uitext">Simple</span> dans les scripts de démarrage).</p>
+            <p>L'exemple suivant présente la fenêtre de connexion du <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> avec <span class="citationtext">http://ourserver</span> défini dans le champ <span class="uitext">Adresse du serveur</span>, <span class="uitext">Authentification basique</span> sélectionnée dans le champ <span class="uitext">Authentification</span>, <span class="specialbold">Tommy</span> dans le champ <span class="uitext">Nom d'utilisateur</span> et <span class="specialbold">T0mMy5Pa55w0rD</span> (caché par des astérisques) dans le champ <span class="uitext">Mot de passe</span> :</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -UserName="Tommy" -Password="T0mMy5Pa55w0rD" -AuthenticationType="Simple"</p>
+            <p>Si vous utilisez <span class="uitext">l'authentification Windows</span>, l'exemple sera le suivant :</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -UserName="Tommy" -Password="T0mMy5Pa55w0rD" -AuthenticationType="Windows"</p>
+            <p>Si vous utilisez <span class="uitext">Authentification Windows (utilisateur actuel)</span>, les paramètres <span class="uitext">UserName (Identifiant)</span> et <span class="uitext">Password (Mot de passe)</span> ne sont plus nécessaires et l'exemple devient :</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -AuthenticationType="WindowsDefault"</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fermé" data-mc-alt2="Ouvert" />Script</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Se rapporte à une adresse complète vers un script .scs (un type de script destiné à contrôler le <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>).</p>
+            <p>L'exemple suivant utilise un script .scs pour la connexion :</p>
+            <p class="codechunk">Client.exe -Script=c:\startup.scs</p>
+            <p>Exemple d'un script .scs pour se connecter à <span class="citationtext">http://ourserver</span> avec l'utilisateur Windows actuel :</p>
+            <p class="codechunk">&lt;ScriptEngine&gt;</p>
+            <p class="codechunk"> &lt;Login&gt;</p>
+            <p class="codechunk">   &lt;ServerAddress&gt;http://ourserver&lt;/ServerAddress&gt;</p>
+            <p class="codechunk">   &lt;AuthenticationType&gt;WindowsDefault&lt;/AuthenticationType&gt;</p>
+            <p class="codechunk"> &lt;/Login&gt;</p>
+            <p class="codechunk">&lt;/ScriptEngine&gt;</p>
+            <p>Vous pouvez utiliser de nombreuses fonctions d'appel du <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> (voir Visionner une liste d'appels de fonction) pour ajouter encore plus de fonctionnalités aux scripts .scs. Dans l'exemple suivant, nous avons ajouté une ligne pour que le script .scs de l'exemple précédent réduise également l'application <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> :</p>
+            <p class="codechunk">&lt;ScriptEngine&gt;</p>
+            <p class="codechunk"> &lt;Login&gt;</p>
+            <p class="codechunk">   &lt;ServerAddress&gt;http://ourserver&lt;/ServerAddress&gt;</p>
+            <p class="codechunk">   &lt;AuthenticationType&gt;WindowsDefault&lt;/AuthenticationType&gt;</p>
+            <p class="codechunk"> &lt;/Login&gt;</p>
+            <p class="codechunk"> &lt;Script&gt;SCS. Application.Minimize();&lt;/Script&gt;</p>
+            <p class="codechunk">&lt;/ScriptEngine&gt;</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fermé" data-mc-alt2="Ouvert" />Format</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Les paramètres de format valides sont les suivants :</p>
+            <p class="codechunk">{-,/,--}param{ ,=,:}((".')value(",'))</p>
+            <p>Exemples :</p>
+            <p class="codechunk">-UserName Tommy</p>
+            <p class="codechunk">--UserName Tommy /UserName:"Tommy" /UserName=Tommy -Password 'Tommy'</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_UseAnHTMLPageForNavig.htm"></a>Script de la page HTML pour la navigation</h2>
+        <p>Vous pouvez utiliser des scripts pour créer des pages HTML qui vous permettent de basculer entre les vues. Vous pouvez ajouter ces pages HTML à vos vues afin qu'elles apparaissent avec la vidéo de vos caméras.</p>
+        <p>Exemple : Vous pouvez insérer dans une page HTML un plan de bâtiment accessible d'un clic qui permet aux opérateurs de simplement cliquer sur une partie de ce plan pour passer instantanément à une vue affichant la vidéo du lieu concerné. </p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fermé" data-mc-alt2="Ouvert" />Configuration</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <ul>
+              <li>Si votre système VMS <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> prend en charge les profils <span class="mc-variable flvar-product.SC variable">Smart Client</span>, vous devez activer les scripts HTML sur les profils <span class="mc-variable flvar-product.SC variable">Smart Client</span> requis dans <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>.</li>
+              <li>Si votre système VSM <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> ne prend pas en charge les profils <span class="mc-variable flvar-product.SC variable">Smart Client</span>, vous devez activer les scripts HTML dans le fichier <span class="uitext">Client.exe.config</span>.</li>
+            </ul>
+          </div>
+        </div>
+        <p>Les exemples suivants vous présentent des exemples de pages HTML pour la navigation dans le <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> :</p>
+        <ul>
+          <li> Une simple page HTML avec des boutons</li>
+          <li>Et une page HTML plus avancée avec une carte contenant des images sur lesquelles vous pouvez cliquer</li>
+          <li>Une liste des tâches pour les administrateurs de systèmes qui soulignent les tâches impliquées dans la création et la diffusion de pages HTML auprès des opérateurs du <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span></li>
+        </ul>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fermé" data-mc-alt2="Ouvert" />Exemple d'une page HTML avec bouton de navigation</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>La solution rapide consiste à créer une page HTML avec des boutons de navigation. Vous pouvez créer toute une série de boutons sur la page HTML. Dans l'exemple qui suit, nous n'allons créer que deux types de boutons :</p>
+            <ul>
+              <li>
+                <span class="specialbold">Boutons pour passer d'une vue <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> à une autre</span>
+                <p>Syntaxe HTML requise :</p>
+                <p class="codechunk">&lt;input type="button" value=" Buttontext" onclick="SCS. Views.SelectView('Viewstatus.Groupname. Viewname');"&gt;</p>
+                <p>Où <span class="uitext">Viewstatus</span> indique si la vue est partagée ou privée (si la page HTML doit être disponible pour plusieurs utilisateurs, la vue <span class="specialbold">doit</span> être partagée).</p>
+                <p>Exemple à partir d'un bouton réel :</p>
+                <p class="codechunk">&lt;input type="button" value="Go to Shared Group1 View2" onclick="SCS. Views.SelectView('Shared.Group1. View2');"&gt;</p>
+                <p>Ce bouton permettrait à des utilisateurs d'aller sur une vue nommée <span class="uitext">View2</span> dans un groupe partagé appelé <span class="uitext">Group1</span>.</p>
+                <p>
+                  <span class="specialbold">Boutons pour passer d'un onglet à un autre</span> : <span class="uitext">En direct</span> et <span class="uitext">Relecture</span> Rappelez-vous qu'un utilisateur, en fonction de ses droits, n'a peut-être pas accès à tous les onglets.</p>
+                <p>Syntaxe HTML requise :</p>
+                <p>
+                  <span class="uitext">Onglet En direct</span> : <code class="codesnippet">&lt;input type="button" value="Buttontext" onclick="SCS. Application.ShowLive();"&gt;</code></p>
+                <p>
+                  <span class="uitext">Onglet Relecture</span> : <span class="codesnippet">&lt;input type="button" value="Buttontext" onclick="SCS. Application.ShowBrowse();"&gt;</span></p>
+              </li>
+            </ul>
+            <p class="tip">Pour les utilisateurs confirmés, il est possible de créer plusieurs autres types de boutons, grâce à environ 100 de commandes de fonction disponibles pour <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. </p>
+            <p>Dans l'exemple suivant, nous avons créé deux groupes partagés dans le <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Nous les avons appelés <span class="uitext">Group1</span> et <span class="uitext">Group2</span>. Chacun de ces groupes contient deux vues, appelées <span class="uitext">View1</span> et <span class="uitext">View2</span>.</p>
+            <p>Nous avons aussi créé une page HTML avec des boutons qui permettent aux utilisateurs de passer entre nos quatre différentes vues et deux des onglets du <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>, <span class="uitext">En direct</span> et <span class="uitext">Relecture</span>. Quand elle est affichée dans un navigateur, notre page HTML ressemble à ce qui suit :</p>
+            <p>
+              <img src="../../../../Images/use_an_html_page_for_navigation.png" alt="" />
+            </p>
+            <p>Page HTML avec les boutons de navigation entre les vues et les onglets</p>
+            <p>Nous avons enregistré localement la page HTML, dans le cas présent su le lecteur C: de l'utilisateur. Quand la page HTML est utilisée pour naviguer, la page HTML devient nécessaire de l'enregistrer localement pour l'ouvrir en mode Compatibilité. Voir également <a href="sc_configuringviews.htm#Web" class="MCXref xref">Propriétés de la page Web </a>.</p>
+            <p>Quand on enregistre localement la page HTML, il faut le faire dans un emplacement sans ambiguïté, par exemple dans un dossier placé directement à la racine du lecteur C: (par exemple : C:\ myfolder\file.htm). Enregistrer la page HTML sur le bureau de l’utilisateur ou dans le dossier <span class="uitext">Mes documents</span> de l’utilisateur risque de mal fonctionner, à cause de la manière dont Windows crée les adresses de ce type d’emplacements.</p>
+            <p>Nous avons ensuite importé la page HTML dans les vues du <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> requises. </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fermé" data-mc-alt2="Ouvert" />Exemple d'une page HTML avec navigation d'image cartographiée</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Vous pouvez aussi créer une page HTML avec un contenu plus avancé, par exemple une image cartographiée qui permet aux utilisateurs de passer d'une vue à une autre.</p>
+            <p>Dans l'exemple qui suit, nous avons conservé les deux groupes et les deux vues de l'exemple précédent. Au lieu d'utiliser des boutons, nous avons créé une page HTML avec une image de plan et créé une cartographie en nous basant sur ce plan. Quand elle est affichée dans un navigateur, notre page HTML ressemble à ce qui suit :</p>
+            <p>
+              <img src="../../../../Images/use_an_html_page_for_navigation_2.png" alt="" />
+            </p>
+            <p>Page HTML avec l'image cartographiée pour passer d'une vue à l'autre</p>
+            <p>Pour cet exemple, nous avons divisé le plan en quatre zones de couleur définies. Les utilisateurs peuvent cliquer sur une zone pour accéder à la vue affichant les caméras de cette zone.</p>
+            <p>Par exemple, la zone rouge du plan correspond au bouton <span class="uitext">Aller sur la Vue2 du Groupe2 partagé</span> de l'exemple précédent : Si vous cliquez dans la zone rouge, vous vous rendez dans la <span class="uitext">Vue2</span> du <span class="uitext">Groupe2</span>.</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fermé" data-mc-alt2="Ouvert" />Importation de la page HTML</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>En principe, il n'y a aucune différence entre importer une page de navigation HTML dans une vue ou tout autre type de page HTML dans le <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Voir <a href="sc_configuringviews.htm#Add" class="MCXref xref">Ajouter des pages Web aux vues</a>. </p>
+            <div class="note">
+              <ul>
+                <li>La page HTML doit être installée localement sur l'ordinateur de l'opérateur</li>
+                <li>Pour que la navigation travaille correctement, vous devez importer la page HTML dans plusieurs vues</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fermé" data-mc-alt2="Ouvert" />Liste de vérification de l'administrateur système</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Pour créer et diffuser des pages HTML de navigation auprès des opérateurs <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>, procédez comme suit :</p>
+            <ol>
+              <li value="1">
+                <span class="specialbold">Créer</span> la page HTML voulue. Les commandes de navigation de la page HTML doivent correspondre aux vues que les utilisateurs peuvent voir dans le <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Par exemple, pour qu’un bouton menant à <span class="uitext">Vue1</span> fonctionne, une vue appelée <span class="uitext">Vue1</span> doit exister dans les installations <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> des utilisateurs. Si vous souhaitez distribuer la page HTML à un groupe d'utilisateurs, les vues dans lesquelles la page HTML sera utilisée doivent être placées dans des groupes partagés.</li>
+              <li value="2">
+                <span class="specialbold">Enregistrez</span> la page HTML localement sur chaque ordinateur sur lequel elle sera utilisée. Quand on enregistre localement la page HTML, il faut le faire dans un emplacement sans ambiguïté, par exemple dans un dossier placé directement à la racine du lecteur C: (par exemple : C:\ myfolder\file.htm). Enregistrer la page HTML sur le bureau de l’utilisateur ou dans le dossier <span class="uitext">Mes documents</span> de l’utilisateur risque de mal fonctionner, à cause de la manière dont Windows crée les adresses de ce type d’emplacements.</li>
+              <li value="3">
+                <span class="specialbold">Importez</span> la page HTML dans les vues requises dans <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Voir <a href="sc_configuringviews.htm#Add" class="MCXref xref">Ajouter des pages Web aux vues</a>. </li>
+              <li value="4">
+                <span class="specialbold">Vérifiez</span> que les commandes de navigation fonctionnent convenablement sur la page HTML importée.</li>
+            </ol>
+            <p class="note">Pour plus d'informations sur le dépannage, voir <a href="../sf_troubleshooting/sc_troubleshootinghtmlpages.htm" class="MCXref xref">Pages Web (dépannage)</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Informations du concept</p>
+        <p class="containerItem_container_0">
+          <a href="../sf_operation/sc_loggingin_366_.htm">Connexion</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

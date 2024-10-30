@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="zh-CN" xml:lang="zh-CN" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="故障排除" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Have any issues with exporting video in XProtect Smart Client? Troubleshoot here." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client – Player" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=管理员" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=支持人员" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=操作员" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>导出（故障排除）</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#standard_features/sf_sc/sf_troubleshooting/sc_scplayertroubleshooting.htm">用导航打开主题</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="痕迹" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>导出（故障排除）</h1>
+      <div class="MCDropDown MCDropDown_Closed dropDown">
+        <span class="MCDropDownHead dropDownHead">
+          <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+            <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="关闭" data-mc-alt2="打开" />
+          </a>
+          <a name="SC_Troubleshoot_OldExportOnFIPSEnabledSystem"></a>
+          <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">至少一个数据库文件正在使用不受支持的加密算法</a>
+        </span>
+        <div class="MCDropDownBody dropDownBody">
+          <p>如果您看到此警告，您当前的 <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> 视频管理软件系统使用 AES-256 加密导出的视频数据，以符合 <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term63">FIPS 140-2<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>一项美国政府标准，定义了供应商在向美国政府机构出售软件或硬件之前必须使用的关键安全参数。</span></a> 安全标准。但是，用于创建导出的系统使用不同的加密标准。</p>
+          <p>要解决此问题，请执行以下操作之一：</p>
+          <ul>
+            <li>使用 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 的升级版本重新导出视频数据。版本必须是您的当前版本或者更新</li>
+            <li>尽管 <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> 建议始终使用最新的 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 版本，但是您可以在离线模式下使用较旧的 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 版本打开导出</li>
+            <li>在禁用了 FIPS 模式的计算机上打开导出。另请参阅 <a href="https://docs.microsoft.com/en-us/windows/security/threat-protection/fips-140-validation#using-windows-in-a-fips-140-2-approved-mode-of-operation" target="_blank">https://docs.microsoft.com/en-us/windows/security/threat-protection/fips-140-validation#using-windows-in-a-fips-140-2-approved-mode-of-operation</a></li>
+          </ul>
+          <p class="note">
+            <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> 建议您使用密码保护您的数据。为此，请选中<span class="uitext">导出设置</span>窗口 &gt; <span class="uitext"><span class="mc-variable flvar-brand-company.XP variable">XProtect</span> 格式</span>中的<span class="uitext">使用密码加密</span>复选框。</p>
+        </div>
+      </div>
+      <div class="MCDropDown MCDropDown_Closed dropDown">
+        <span class="MCDropDownHead dropDownHead">
+          <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+            <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="关闭" data-mc-alt2="打开" />无法验证该项目的完整性...</a>
+        </span>
+        <div class="MCDropDownBody dropDownBody">
+          <p>视频导出中不包含篡改密钥。篡改密钥已被删除，或者视频导出是使用基于 <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term0"><span class="mc-variable flvar-brand-company.SDK_short variable">MIP SDK</span><span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>在监控系统中定义的事件，可用于在 XProtect Smart Client 中触发警报。如果组织使用该功能，触发的警报将显示在包含警报列表或地图的视图中。</span></a> 2020 R2 或更旧版本的独立第三方应用程序创建的。如果缺少篡改密钥，则无法对视频项目文件进行身份验证。</p>
+          <p>要解决此问题，请采用以下一种或多种方法：</p>
+          <ul>
+            <li>请求重新导出视频并确保包含篡改密钥</li>
+            <li>使用基于 <span class="mc-variable flvar-brand-company.SDK_short variable">MIP SDK</span> 2020 R3 或更高版本的第三方应用程序重新导出视频数据</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">概念信息</p>
+        <p class="containerItem_container_0">
+          <a href="../sf_configuration/sc_configuringxprscplayer.htm">XProtect Smart Client – Player（配置）</a>
+        </p>
+        <p class="containerItem_container_0">
+          <a href="../sf_operation/sc_xprscpl_1.htm">XProtect Smart Client – Player（使用率）</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

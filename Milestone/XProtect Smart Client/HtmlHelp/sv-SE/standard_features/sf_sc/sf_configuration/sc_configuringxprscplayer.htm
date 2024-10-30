@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="sv-SE" xml:lang="sv-SE" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="Konfiguration" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Hantera vyer i XProtect Smart Client – Player för att se videoexporter och verifiera digitala signaturer som används i videoexporter." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=Recording Server" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client – Player" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Administratör" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Operatör" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>XProtect Smart Client – Player (konfiguration)</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#standard_features/sf_sc/sf_configuration/sc_configuringxprscplayer.htm">Öppna ämne med navigering</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>
+        <span class="mc-variable flvar-product.SCplayer_XP variable">XProtect Smart Client – Player</span> (konfiguration)</h1>
+      <div>
+        <h2>Hantera vyer i <span class="mc-variable flvar-product.SCplayer_XP variable">XProtect Smart Client – Player</span><a name="SC_WorkWithViewsInTheXPr(1232).htm"></a></h2>
+        <p>Du skapar och hanterar vyer genom att klicka på <span class="uitext">Inställning</span> i verktygsfältet i <span class="mc-variable flvar-product.SCplayer_XP variable">XProtect Smart Client – Player</span>. Rutorna till vänster blir gula.</p>
+        <div>
+          <h3>Rutan Projekt (förklaring)<a name="SC_SCPlayerProjectPaneExpl.htm"></a></h3>
+          <p>Ett projekt i <span class="mc-variable flvar-product.SCplayer_XP variable">XProtect Smart Client – Player</span> är en samling filer som skapas när video exporteras i databasformat från <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Användarinställningarna, inklusive information om vyer, lagras som en del av projektet.</p>
+          <p>Rutan <span class="uitext">Projekt</span> visas när du klickar på <span class="uitext">Inställning</span>. I inställningsläget kan du:</p>
+          <ul>
+            <li>Ändra namnet på projektet.</li>
+            <li>Skapa eller öppna ett projekt</li>
+            <li>Tilldela lösenord till ett projekt - bara personer med rätt lösenord kan visa en video. Du kan också tilldela lösenord till enheter när du exporterar dem. För att slippa hantera en rad olika databaslösenord kan du välja ett enda lösenord för hela projektet. Om du inte väljer något lösenord och lösenordsskyddade databaser läggs till i projektet, ombeds du ange lösenord för varje databas när du öppnar projektet. Du kan inte ta bort ett lösenord som du tilldelat ett projekt. Du kan även byta lösenord eller skapa ett exakt likadant projekt i rutan <span class="uitext">Projekt</span>.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Vyer (förklaring)<a name="SC_SCPlayerViewsPaneExpl.htm"></a></h3>
+          <p>I rutan <span class="uitext">Vyer</span> i <span class="mc-variable flvar-product.SCplayer_XP variable">XProtect Smart Client – Player</span> kan du lägga till, redigera och radera vyer. Du kan också söka efter vyer och kameror.</p>
+          <p>
+            <img src="../../../../Images/scplayer_viewspane.jpg" alt="Rutan Vyer i XProtect Smart Client – Player." />
+          </p>
+        </div>
+        <div>
+          <h3>Rutan Översikt (förklaring)<a name="SC_SCPlayerOverviewPaneExpl.htm"></a></h3>
+          <p>Rutan <span class="uitext">Översikt</span> i <span class="mc-variable flvar-product.SCplayer_XP variable">XProtect Smart Client – Player</span> visar de kameror, mikrofoner, högtalare, webbsidor, bilder och plugins som tilldelats projektet. När du har valt en enhet kan du radera den och byta namn på den. Du kan länka högtalare och mikrofoner till kameror. Ljudet väljs då automatiskt när du visar inspelad video för en viss kamera.</p>
+          <p>Om du vill öppna en databas från ett arkiv eller tidigare exporterat material, klicka på knappen <img src="../../../../Images/sc_scplayeropendatabaseicon.jpg" alt="" />. Guiden <span class="uitext">Öppna databas</span> visas.</p>
+          <p class="note">När du tar bort en enhet tas inte själva databasfilerna bort. Du tar bara bort enheten från projektet.</p>
+        </div>
+      </div>
+      <div>
+        <h2>Digitala signaturer (förklaring)<a name="SC_VerifyingTheAuthentic.htm"></a></h2>
+        <div>
+          <p class="note">Denna funktionalitet är bara tillgänglig i vissa <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS-system. För information om funktionalitet i ditt system, se <a href="../sf_considerationsrequirements/sc_surveillancesystemdif.htm" class="MCXref xref">Skillnader mellan övervakningssystem</a>.</p>
+        </div>
+        <p>Du kan använda digitala signaturer för att bekräfta äktheten på din inspelade video. Detta är användbart om du vill kunna visa att videon inte har manipulerats.</p>
+        <p>Det finns två steg i verifieringen. Du kan verifiera:</p>
+        <ul>
+          <li>om videon har ändrats efter att den spelades in. Inspelningsservern skapar en digital signatur för inspelningen. När du senare visar den exporterade videon i <span class="mc-variable flvar-product.SCplayer_XP variable">XProtect Smart Client – Player</span> kan du jämföra inspelningens signatur med den som ursprungligen skapades av inspelningsservern.</li>
+          <li>om video som du exporterar i <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> har ändrats efter att den exporterades. Under exporten skapar <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> en signatur för exportfilen. När du senare granskar de exporterade bevisen i <span class="mc-variable flvar-product.SCplayer_XP variable">XProtect Smart Client – Player</span> kan du jämföra exportens signatur med den som skapades under exporten.</li>
+        </ul>
+        <p>Om du upptäcker att det finns en avvikelse, finns det anledning att ifrågasätta videobevisens tillförlitlighet.</p>
+        <p>De ursprungliga digitala signaturerna finns i <span class="specialbold">PublicKey.xml</span> och <span class="specialbold">Public Key Certificate.xml</span>-filerna i dessa kataloger:</p>
+        <ul>
+          <li>
+            <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> - <span class="specialbold">&lt;exportmålmapp&gt;\&lt;exportnamn&gt;\Client Files\Data\Mediadata\&lt;kameranamn&gt;\&lt;kameranamn&gt;\Export signatures</span></li>
+          <li>
+            <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> - <span class="specialbold">C:\Program Files\<span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span>\Management Server\Tools\CertificateIssuer</span></li>
+        </ul>
+        <p>Det finns två scenarion då digitala signaturer är exkluderade under exportprocessen:</p>
+        <ul>
+          <li>Om det finns områden med <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term55">integritetsmasker<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>En oskarp eller solid färg som täcker ett område av videon i kameravyn. De definierade områdena är oskarpa eller täckta i klienternas live-, uppspelnings-, hotspot-, karusell-, smartkarta-, smartsökning- och exportlägen.</span></a> kommer digitala signaturer för inspelningsservern att tas bort i exporten.</li>
+          <li>Om de data du exporterar är väldigt nära det aktuella datumet och den aktuella tiden kan det hända att den digitala signaturen för inspelningsservern inte inkluderas i hela sekvensen. I detta fall kommer endast delar av exporten att ha den digitala signaturen tillagd.</li>
+        </ul>
+        <p>Exportprocessen kommer att vara fullbordad, men när du verifierar signaturerna kommer du att se att de digitala signaturerna för inspelningsservern antingen är borttagna eller delvis OK.</p>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Konceptinformation</p>
+        <p class="containerItem_container_0">
+          <a href="../sf_operation/sc_xprscpl_1.htm">XProtect Smart Client – Player (användning)</a>
+        </p>
+        <p class="troubleshootingHeading_troubleshooting_0">Konceptinformation</p>
+        <p class="troubleshootingItem_troubleshooting_0">
+          <a href="../sf_troubleshooting/sc_scplayertroubleshooting.htm">Exporterar (felsökning)</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

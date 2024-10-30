@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LogMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <version>4.0.14</version>
+  <culture>en-US</culture>
+  <userfields>
+    <userfield type="string" uname="ResourceId" />
+    <userfield type="string" uname="ResourceName" />
+    <userfield type="enum" uname="ResourceType" />
+    <userfield uname="SourceType" type="enum" />
+    <userfield uname="ListType" type="enum" />
+    <userfield uname="EventType" type="string" />
+  </userfields>
+  <userEnums>
+    <userEnum uname = "SourceType" fieldname = "SourceType" fieldtype = "user">
+      <enum uname="LPRService" value = "LPR Server service"/>
+      <enum uname="LPRClient" value="LPR Client" />
+    </userEnum>
+    <userEnum fieldname="groupname" fieldtype="system" uname="group">
+      <enum uname="Audit" value="Audit" />
+    </userEnum>
+    <userEnum fieldname="ResourceType" fieldtype="user" uname="ResourceType">
+      <enum uname="LPR" value="LPR" />
+    </userEnum>
+    <userEnum uname="ListType" fieldname="ListType" fieldtype="system" >
+      <enum uname="Edit_LPR_license_plate_list" value="Edit license plate list" />
+      <enum uname="Search_LPR_events" value="Search LPR events" />
+    </userEnum>
+    <userEnum fieldname="category" fieldtype="system" uname="category">
+      <enum uname="LPRList" value="LPR list" />
+      <enum uname="LPRSearch" value="LPR search" />
+    </userEnum>
+  </userEnums>
+  <application uname="LPRService">
+    <component uname="Service">
+      <entries>
+        <group name="System" field1="SourceType" field3="EventType">
+          <entry uname="ServiceStarted" object_type="Service" status="Success" severity="Info">The LPR Server service has started.</entry>
+          <entry uname="ServiceStopped" object_type="Service" status="Success" severity="Info">The LPR Server service has stopped.</entry>
+          <entry uname="VideoSourceStateChangedToOK" object_type="Service" status="Success" severity="Info">The LPR camera state has been changed to 'OK'.</entry>
+          <entry uname="VideoSourceStateChangedToWarning" object_type="Service" status="Success" severity="Info">The LPR camera state has been changed to 'Warning'.</entry>
+          <entry uname="VideoSourceStateChangedToError" object_type="Service" status="Success" severity="Info">The LPR camera state has been changed to 'Error'.</entry>
+        </group>
+        </entries>
+    </component>
+  </application>
+  <application uname="LPRClient">
+    <component uname="Client">
+      <entries>
+        <group category="Edit_LPR_license_plate_list" field1="SourceType" field3="ListType" name="Audit">
+          <entry field1="SourceType" field3="ListType" uname="LPRListsAdd" object_type="LPR license plate list" severity="Info" status="Success">License plate: {plateName} added to LPR license plate list: {listName}.</entry>
+          <entry field1="SourceType" field3="ListType" uname="LPRListsDelete" object_type="LPR license plate list" severity="Info" status="Success">License plate: {plateName} deleted from LPR license plate list: {listName}.</entry>
+          <entry field1="SourceType" field3="ListType" uname="LPRListsSearch" object_type="LPR license plate list" severity="Info" status="Success">Searched license plate: {plateName} in LPR license plate list: {listName}.</entry>
+        </group>
+        <group category="LPRSearch" field1="SourceType" field2="ResourceName" field3="ListType" field4="ResourceType" name="Audit" value1="" value2="LPR event" value4="LPR">
+          <entry field1="SourceType" field3="ListType" uname="LPREventSearch" object_type="LPR event search" severity="Info" status="Success">Searched license plate event with filter: {searchFilter}.</entry>
+        </group>
+      </entries>
+    </component>
+  </application>
+</LogMessages>

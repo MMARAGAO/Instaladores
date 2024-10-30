@@ -1,0 +1,810 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="pt-BR" xml:lang="pt-BR" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="Configuração" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Configure smart map in XProtect Smart Client to get a geographical overview of your cameras, devices, and plug-in elements - in a one world experience." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=Recording Server" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Administrador" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Integrador" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Operador" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Mapa inteligente (configuração)</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#feature_flags/ff_map/sc_configuringmaps.htm">Abrir tópico na navegação</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Trilhos" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>Mapa inteligente (configuração)</h1>
+      <p>Antes que você possa tirar proveito dos recursos do mapa inteligente, você deve percorrer certas tarefas de configuração em <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>.</p>
+      <p>Só é possível visualizar seu mapa inteligente se ele tiver sido adicionado a uma visualização. Consulte também <a href="#SC_AddSmartMapToView.htm" class="MCXref xref">Adicionar mapa inteligente a visualizações</a>. </p>
+      <p class="note">Para obter mais informações, consulte <a href="sc_workingwithmap.htm#SC_SmartMapExplained.htm" class="MCXref xref">Mapa Inteligente (explicado)</a>.</p>
+      <div>
+        <h2>Diferenças entre mapas e mapas inteligentes (explicado)<a name="SC_DifferencesBetweenMap.htm"></a></h2>
+        <p>
+          <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> oferece funcionalidades de mapa que podem ajudá-lo a ver o sistema de monitoramento e a responder rapidamente a incidentes.</p>
+        <ul>
+          <li>
+            <span class="uitext">Mapas</span> – esses mapas são baseados em imagens estáticas que não contêm referências geográficas. Você pode adicionar dispositivos tais como câmeras, microfones e servidores de gravação. Você também pode adicionar recursos como alarmes, eventos e controles de acesso que permitam que você interaja com o seu sistema de monitoramento diretamente a partir do mapa. Você deve posicionar manualmente dispositivos e recursos de funcionalidade no mapa. Para obter mais informações, consulte <a href="../../standard_features/sf_sc/sf_operation/sc_workingwithmaps.htm#SC_IntroductionToMaps(796).htm" class="MCXref xref">Mapas (explicado)</a></li>
+          <li>
+            <span class="uitext">Mapa Inteligente</span> – este tipo de mapa utiliza um sistema de informação geográfica para refletir com precisão a geografia do mundo real. Isso pode dar a você uma visão geral mais exata de suas câmeras em vários locais. Também é possível:<ul><li>Use os serviços Bing Maps e Google Maps</li><li data-mc-conditions="flcts-features.oem-map-service-content">Use o <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> como fundos geográficos</li><li>Use o projeto do mapa OpenStreetMap como fundos geográficos</li><li>Adicionar design de desenhos, arquivos de formato e imagens como sobreposição auxiliados por computador (CAD)</li></ul><p> Para obter mais informações, consulte <a href="sc_workingwithmap.htm#SC_SmartMapExplained.htm" class="MCXref xref">Mapa Inteligente (explicado)</a></p></li>
+        </ul>
+        <p class="note">Os mapas e mapas inteligentes não são intercambiáveis. Se estiver usando mapas, você pode usar o arquivo de imagem como um mapa inteligente, mas você deve adicionar os dispositivos novamente. Você não pode transferir mapas com dispositivos para um mapa inteligente. No entanto, você pode associar um mapa inteligente aos mapas. Para obter mais informações, consulte <a href="#SC_AddingDeletingOrEditi_2.htm" class="MCXref xref">Adicionar, excluir ou editar câmeras em mapa inteligente</a>.</p>
+      </div>
+      <div>
+        <h2>Adicionar mapa inteligente a visualizações<a name="SC_AddSmartMapToView.htm"></a></h2>
+        <p>Comece a usar um <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">mapa inteligente<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Uma funcionalidade de mapa que usa um sistema de informações geográficas para visualizar dispositivos (como câmeras e microfones), estruturas e elementos topográficos de um sistema de monitoramento em imagens geograficamente precisas e reais. Mapas que usam elementos dessa funcionalidade são chamados de mapas inteligentes.</span></a> adicionando-o a uma visualização. Por padrão, o mapa do mundo básico é exibido. Depois de adicionar o Mapa Inteligente, você pode alterar a base geográfica.</p>
+        <p>Etapas:</p>
+        <ol>
+          <li value="1">Nas guias <span class="uitext">Ao vivo</span> ou <span class="uitext">Reprodução</span>, selecione a visualização à qual você deseja adicionar o mapa inteligente.</li>
+          <li value="2"> Clique em <span class="uitext">Configurações</span> para entrar no modo de configuração. </li>
+          <li value="3">Expanda o painel <span class="uitext">Visão geral do sistema</span> e arraste o item <span class="uitext">Mapa inteligente</span> para a posição relevante na visualização.</li>
+          <li value="4"> Clique em <span class="uitext">Configuração</span> novamente para sair do modo de configuração. Suas alterações foram salvas.</li>
+          <li value="5">Agora você pode alterar o contexto geográfico. </li>
+        </ol>
+      </div>
+      <div>
+        <h2>Alterar fundos geográficos em mapas inteligentes<a name="SC_ChangeTheGeographicBa.htm"></a></h2>
+        <p>Por padrão, o mapa-mundi básico é exibido quando você adiciona um Mapa Inteligente a uma visualização. Depois de adicionar o mapa inteligente a uma visualização, você pode selecionar um fundo geográfico diferente. Cada usuário que usa o Mapa Inteligente verá o novo plano de fundo a próxima vez que exibir a visualização.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fechado" data-mc-alt2="Aberto" />Requisitos</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>As bases geográficas Bing Maps e Google Maps estão disponíveis apenas se tiverem sido disponibilizadas pelo administrador no <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>.</p>
+          </div>
+        </div>
+        <p>Etapas:</p>
+        <ol>
+          <li value="1">Selecione a visualização que contém o mapa inteligente.</li>
+          <li value="2">Na barra de ferramentas, clique em <img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">Mostrar ou ocultar camadas e sobreposições personalizadas</span>.</li>
+          <li value="3">Sob <span class="uitext">Segundos planos geográficos</span>, selecione a base e o tipo de detalhe que deseja exibir. Por exemplo, se quiser ver informações topográficas, selecione <span class="uitext">Terreno</span>. Se quiser ver estradas, selecione <span class="uitext">Estrada</span>.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>Fundos geográficos (explicado)<a name="SC_GeographicBackgrounds.htm"></a></h2>
+        <p>Você pode usar os seguintes serviços como bases geográficas do seu <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">mapa inteligente<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Uma funcionalidade de mapa que usa um sistema de informações geográficas para visualizar dispositivos (como câmeras e microfones), estruturas e elementos topográficos de um sistema de monitoramento em imagens geograficamente precisas e reais. Mapas que usam elementos dessa funcionalidade são chamados de mapas inteligentes.</span></a>:</p>
+        <ul>
+          <li>Bing Maps</li>
+          <li>Google Maps</li>
+          <li data-mc-conditions="flcts-features.oem-map-service-content">
+            <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+          </li>
+          <li> OpenStreetMap </li>
+        </ul>
+        <p>Depois de selecionar o plano de fundo geográfico, você adiciona os dispositivos, por exemplo, câmeras e sobreposições personalizadas, como, por exemplo, shapefiles. Para obter mais informações, consulte <a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">Sobreposições personalizadas (explicado)</a>.</p>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Tipos de fundos geográficos (explicado)<a name="SC_TypesOfGeographicBack.htm"></a></h2>
+        <p>Depois de adicionar um <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">mapa inteligente<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Uma funcionalidade de mapa que usa um sistema de informações geográficas para visualizar dispositivos (como câmeras e microfones), estruturas e elementos topográficos de um sistema de monitoramento em imagens geograficamente precisas e reais. Mapas que usam elementos dessa funcionalidade são chamados de mapas inteligentes.</span></a> a uma visualização, você pode escolher um dos fundos geográficos a seguir:</p>
+        <ul>
+          <li>
+            <span class="uitext">Mapa-múndi básico</span> – usa o fundo geográfico padrão fornecido em <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Este mapa deve ser usado como referência geral e não contém elementos como fronteiras de países, cidades ou outros detalhes. No entanto, como os outros fundos geográficos, ele contém dados de georreferência</li>
+          <li>
+            <span class="uitext">Bing Maps</span> – conecte-se ao Bing Maps</li>
+          <li>
+            <span class="uitext">Google Maps</span> – conecte-se ao Google Maps <p class="note">As opções Bing Maps e Google Maps exigem acesso à Internet e você deverá adquirir uma chave da Microsoft ou do Google.</p></li>
+          <div data-mc-conditions="flcts-features.oem-map-service-content">
+            <li>
+              <span class="uitext">
+                <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+              </span> - conectar a um provedor de mapa gratuito. Após ativar o <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>, nenhuma outra etapa é necessária.</li>
+            <p>Consulte <a href="#Enable">Ativar o Milestone Map Service</a></p>
+          </div>
+          <div>
+            <li>
+              <p>
+                <span class="uitext">OpenStreetMap</span> - conectar a:</p>
+              <ul>
+                <li>Um servidor de bloco comercial de sua preferência.</li>
+                <li>
+                  <p>O seu próprio servidor de blocos, online ou local</p>
+                </li>
+              </ul>
+              <p>Consulte também <a href="#SC_ChangeOpenstreetmapTi.htm">Alterar servidores de blocos do OpenStreetMap</a></p>
+            </li>
+          </div>
+          <li>
+            <span class="uitext">Nenhum</span> - esta opção oculta o fundo geográfico. Observe que os dados de referência geográfica permanecem lá. Consulte também <a href="#SC_LayersOnSmartMapExpla.htm" class="MCXref xref">Camadas no mapa inteligente (explicado)</a></li>
+        </ul>
+        <p>Por padrão, o Bing Maps e o Google Maps exibem imagens de satélite. Você pode mudar as imagens, por exemplo, para aéreas e terrestres, para ver detalhes diferentes.</p>
+      </div>
+      <div data-mc-conditions="flcts-features.oem-map-service-content">
+        <h2>
+          <a name="Enable"></a>Ativar o <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span></h2>
+        <p>
+          <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> é um serviço online que permite que você se conecte a um servidor de blocos <span class="mc-variable flvar-brand-company.CompanyLong variable">Milestone Systems</span>. Este servidor de blocos usa um serviço de mapas gratuito, comercialmente disponível. </p>
+        <p>Após ativar o <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> no seu mapa inteligente, o mapa inteligente usa o <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> como seu fundo geográfico.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fechado" data-mc-alt2="Aberto" />Requisitos</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Se o campo <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> estiver esmaecido, você não tem os direitos de usuário necessários para ativar ou desativar o serviço. Entre em contato com o administrador do sistema para ajudá-lo a ativar o recurso no <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>.</p>
+            <p class="important">
+              <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> requer acesso à internet.</p>
+          </div>
+        </div>
+        <p>Etapas:</p>
+        <ol>
+          <li value="1">
+            <p>No canto superior direito, clique em <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> e depois em <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">Configurações</span> para abrir a janela <span class="uitext">Configurações</span>.</p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_configuringmaps_mmapserv.png" data-mc-popup-alt="Enable Milestone Map Service.">
+                <img class="MCPopupThumbnail img" data-mc-width="786" data-mc-height="593" src="../../../Images/sc_configuringmaps_mmapserv_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Enable Milestone Map Service." tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="2">Na seção da esquerda, clique em <span class="uitext">Mapa Inteligente</span>.</li>
+          <li value="3">No campo <span class="uitext mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>, selecione <span class="uitext">Disponível</span>.</li>
+          <li value="4">Clique em <span class="uitext">Fechar</span>. Da próxima vez que você carregar seu mapa inteligente, ele usará <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> como fundo geográfico.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>Servidor de blocos OpenStreetMap (explicado)<a name="SC_ChangingOpenstreetmap.htm"></a></h2>
+        <p>Se você usar o OpenStreetMap como fundo geográfico para o seu mapa inteligente, você precisa especificar um servidor de blocos. Você pode especificar um servidor de blocos local, por exemplo, se a sua organização possui os seus próprios mapas para áreas como aeroportos ou portos, ou pode usar um servidor de blocos comercial.</p>
+        <p class="note">Para usar um servidor de blocos local, você não precisa de acesso à internet.</p>
+        <p>O endereço de servidor de imagens pode ser especificado de duas formas:</p>
+        <ul>
+          <li>Em <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> – você define o endereço do servidor de imagens nos perfis <span class="mc-variable flvar-product.SC variable">Smart Client</span>. O endereço do servidor se aplica a todos os usuários do <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> atribuídos aos perfis <span class="mc-variable flvar-product.SC variable">Smart Client</span></li>
+          <li>No <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> – você define o endereço do servidor de imagens na caixa de diálogo <span class="uitext">Configurações</span>. O endereço do servidor aplica-se apenas a essa instalação</li>
+        </ul>
+        <div>
+          <h2>Alterar o servidor de imagens do OpenStreetMap<a name="SC_ChangeOpenstreetmapTi.htm"></a></h2>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fechado" data-mc-alt2="Aberto" />Requisitos</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>Se o lado do servidor especificado pelo servidor de blocos tiver sido bloqueado para edição, o campo aparece esmaecido e você não poderá alterar o endereço do servidor. Entre em contato com o administrador do sistema para obter ajuda para ativar o recurso no <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>.</p>
+            </div>
+          </div>
+          <p>Etapas:</p>
+          <ol>
+            <li value="1">
+              <p>No canto superior direito, clique em <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> e depois em <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">Configurações</span> para abrir a janela <span class="uitext">Configurações</span>.</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_mapsettings.png" data-mc-popup-alt="Specify alternative tile server for the smart map.">
+                  <img class="MCPopupThumbnail img" data-mc-width="786" data-mc-height="593" src="../../../Images/sc_mapsettings_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Specify alternative tile server for the smart map." tabindex="" />
+                </a>
+                <br />
+              </p>
+            </li>
+            <li value="2">Na seção da esquerda, clique em <span class="uitext">Mapa Inteligente</span>.</li>
+            <li value="3">No campo <span class="uitext">Servidor OpenStreetMap</span>, faça uma das ações seguintes: <ul><li>Inserir o endereço do servidor. Se o campo estiver esmaecido, ele terá sido bloqueado do lado do servidor</li><li>Para usar o servidor especificado do lado do servidor, se houver, marque a caixa de seleção <span class="uitext">Seguir servidor</span></li></ul></li>
+            <li value="4">Clique em <span class="uitext">Fechar</span>. Da próxima vez que você carregar seu mapa inteligente, ele usará o servidor OpenStreetMap que você especificou.</li>
+          </ol>
+          <p class="important">Se nenhum endereço de servidor estiver especificado, ou se o endereço do servidor estiver inválido, o OpenStreetMap não estará disponível como fundo geográfico.</p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Exibindo ou ocultando camadas no mapa inteligente<a name="SC_ShowingOrHidingLayers.htm"></a></h2>
+        <p>Você pode ativar ou desativar camadas em seu mapa inteligente dependendo do que você vê.</p>
+        <div>
+          <h3>Camadas no mapa inteligente (explicado)<a name="SC_LayersOnSmartMapExpla.htm"></a></h3>
+          <p>Use camadas para filtrar as informações que o <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">mapa inteligente<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Uma funcionalidade de mapa que usa um sistema de informações geográficas para visualizar dispositivos (como câmeras e microfones), estruturas e elementos topográficos de um sistema de monitoramento em imagens geograficamente precisas e reais. Mapas que usam elementos dessa funcionalidade são chamados de mapas inteligentes.</span></a> exibe. Existem três tipos de camadas em um mapa inteligente:</p>
+          <ul>
+            <li>
+              <span class="uitext">Elementos do sistema</span> – estes incluem câmeras, links e locais</li>
+            <li>
+              <span class="uitext">Sobreposições personalizadas</span> – estas são as imagens de bitmap, desenhos CAD, e shapefiles</li>
+            <li>
+              <span class="uitext">Bases geográficas</span> - o mapa-mundi básico ou um dos seguintes serviços:<ul><li>Bing Maps</li><li>Google Maps</li><li data-mc-conditions="flcts-features.oem-map-service-content"><span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span></li><li> OpenStreetMap </li></ul></li>
+          </ul>
+          <p class="note">Bing Maps e Google Maps estão disponíveis como bases geográficas somente se o administrador do sistema os tiver habilitado em <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. Para obter mais informações, consulte <a href="#SC_GeographicBackgrounds.htm" class="MCXref xref">Fundos geográficos (explicado)</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Ordem de camadas (explicado)<a name="SC_OrderOfLayersExplaine.htm"></a></h3>
+          <p>Todos os elementos do sistema de um tipo estão na mesma <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term26">camada<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>O fundo geográfico em um mapa inteligente, uma sobreposição personalizada ou um elemento do sistema, por exemplo, uma câmera. Camadas são todos os elementos gráficos que existem no mapa inteligente.</span></a>. Por exemplo, todas as câmeras estão na mesma camada. Se você ocultar a camada da câmera, todas as câmeras serão ocultadas. De cima para baixo, as camadas para elementos do sistema estão organizadas na seguinte ordem: locais, câmeras, links e bases geográficas. Você não pode alterar essa ordem.</p>
+          <p>A base geográfica é sempre a camada mais baixa em um mapa inteligente. Você pode alternar entre bases geográficas, mas você só pode selecionar uma base geográfica de cada vez.</p>
+          <p>Sobreposições personalizadas são adicionadas como camadas separadas e são empilhadas na ordem em que foram adicionados ao mapa inteligente. Você reorganiza a ordem delas configurando as definições padrão para o mapa. </p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fechado" data-mc-alt2="Aberto" />Exemplo</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>Um planejador urbano tem um shapefile que mostra as fronteiras da cidade e um shapefile que inclui todas as principais estradas da cidade. O planejador pode organizar a ordem das camadas de modo que as estradas sejam exibidas por cima das fronteiras da cidade. Isto dá uma visão geral de onde as câmeras estão na cidade e a capacidade de aumentar o zoom para ver o nome da rua em que uma determinada câmera está.</p>
+            </div>
+          </div>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Exibir ou ocultar camadas em um Mapa Inteligente<a name="SC_ShowOrHideLayersOnSma.htm"></a></h3>
+          <p>Você pode exibir ou ocultar camadas no seu mapa inteligente, incluindo o fundo geográfico. Por exemplo, isso é útil quando você deseja focar em um determinado elemento ou apenas simplificar o conteúdo que o mapa inteligente está exibindo.</p>
+          <p>Etapas:</p>
+          <ol>
+            <li value="1">Na barra de ferramentas, clique em <img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">Mostrar ou ocultar camadas e sobreposições personalizadas</span>.</li>
+            <li value="2">Para mostrar ou ocultar os elementos do sistema e sobreposições personalizadas, marque ou desmarque as caixas de seleção.</li>
+            <li value="3">Para ocultar o fundo geográfico, selecione <span class="uitext">Nenhuma</span>.</li>
+          </ol>
+          <p class="note">Selecionar <span class="uitext">Nenhuma</span> oculta o fundo geográfico, mas as georreferências ainda se aplicam ao mapa inteligente. Por exemplo, se você adicionar um arquivo de formato que contenha uma referência espacial, o sistema ainda usará a referência espacial para posicionar arquivo no mapa.</p>
+          <p class="note">Ocultar microfones ativará o mudo do microfone ativo no momento até que você mostre novamente seus microfones.</p>
+        </div>
+        <div>
+          <h3>Especificar as configurações padrão para o mapa inteligente<a name="SC_ManageDefaultSettings(65803).htm"></a></h3>
+          <p>Depois de adicionar um mapa inteligente para uma visualização e adicionar sobreposições, câmeras e links, você pode especificar as configurações padrão para as sobreposições personalizadas. Você também pode excluir sobreposições personalizadas para limpar.</p>
+          <p>Etapas:</p>
+          <ol>
+            <li value="1">Clique em <span class="uitext">Configurações</span>.</li>
+            <li value="2">Clique em <img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">Gerenciar configurações padrão</span>.</li>
+            <li value="3">Siga qualquer um dos procedimentos abaixo: <ul><li>Para mostrar ou ocultar uma sobreposição, marque ou desmarque a caixa de seleção</li><li>Para reorganizar a ordem, use a alavanca de arrasto na frente da sobreposição para arrastá-la para uma nova posição na lista. As camadas são ordenadas de cima para baixo na lista</li><li>Para excluir uma sobreposição, passe o ponteiro sobre a sobreposição e depois clique em <span class="uitext">Excluir</span></li></ul></li>
+            <li value="4">Clique em <span class="uitext">Salvar</span>.</li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Adicionar, excluir ou editar sobreposições personalizadas<a name="SC_AddingDeletingOrEditi.htm"></a></h2>
+        <div>
+          <h3>Sobreposições personalizadas (explicado)<a name="SC_CustomOverlaysExplain.htm"></a></h3>
+          <p>Você pode adicionar os seguintes tipos de arquivos como sobreposições personalizadas em um Mapa Inteligente no <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>:</p>
+          <ul>
+            <li>
+              <span class="uitext">Shapefile</span> – pode conter dados de vetor geoespacial, como pontos, linhas, polígonos e os atributos que representam objetos no mapa, como paredes, estradas, ou elementos geográficos como rios ou lagos. Por exemplo, escritórios de planejamento de cidade e de administração utilizam frequentemente shapefiles porque mantêm a escala quando você aumenta e diminui o zoom e o tamanho do arquivo é frequentemente menor do que os desenhos CAD ou imagens bitmap</li>
+            <li>
+              <span class="uitext">CAD</span> – um desenho assistido por computador (CAD) é útil como sobreposição para um Mapa Inteligente porque, assim como shapefiles, os dados CAD podem usar um sistema de coordenadas e referência espacial para fornecer informações precisas do contexto geográfico. Por exemplo, você pode usar um mapa aéreo detalhado ou um mapa das estradas de um local</li>
+            <li>
+              <span class="uitext">Imagem</span> – se você tiver um arquivo de imagem, tal como a planta de um edifício, você pode adicioná-lo como uma sobreposição no mapa inteligente. Você pode usar os seguintes tipos de arquivos de imagem: PNG, BMP, GIF, JPG, JPEG, PHG, TIF e TIFF</li>
+          </ul>
+          <p class="note">Para colocar sobreposições personalizadas em foco, você pode ocultar, temporariamente, outros tipos de camadas. Consulte <a href="#SC_LayersOnSmartMapExpla.htm" class="MCXref xref">Camadas no mapa inteligente (explicado)</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Sobreposições personalizadas e locais (explicado)<a name="SC_CustomOverlaysAndLoca.htm"></a></h3>
+          <p>Você pode pular rapidamente para sobreposições personalizadas que tenha adicionado ao seu mapa inteligente como descrito em <a href="sc_workingwithmap.htm#SC_FindLocationOfCustomO.htm" class="MCXref xref">Pule para sobreposições personalizadas no mapa inteligente.</a>. No entanto, nas configurações, você pode estabelecer uma conexão entre sobreposições personalizadas e locais. Isto significa que quando você adicionar uma nova sobreposição personalizada, o <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> criará um local com o mesmo nome da sobreposição no mesmo local exato no mapa. O local da sobreposição personalizada agora se torna disponível na lista <span class="uitext">Selecionar um local</span>.</p>
+          <p>
+            <img src="../../../Images/custom_overlays_and_locations.jpg" alt="" />
+          </p>
+          <p>A sobreposição e o local não estão vinculados. Por exemplo, você pode excluir ou renomear o local sem mudar a sobreposição e vice-versa.</p>
+          <p class="note">Para ativar este recurso, consulte <a href="#SC_AddLocationsToCustomO.htm" class="MCXref xref">Adicione locais a sobreposições personalizadas (mapa inteligente)</a>.</p>
+        </div>
+        <div>
+          <h3>Adicionar sobreposição personalizada no mapa inteligente<a name="SC_AddCustomOverlayOnSma.htm"></a></h3>
+          <p>Aumente o nível de detalhes em seu Mapa Inteligente adicionando sobreposições personalizadas. Quando você adiciona uma <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term8">sobreposição personalizada<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Um elemento gráfico definido pelo usuário que os usuários podem adicionar a um mapa inteligente para, por exemplo, ilustrar uma planta baixa em um edifício ou marcar limites entre regiões. Uma sobreposição personalizada pode ser uma imagem, um desenho CAD, ou um shapefile.</span></a>, <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> cria um local com o mesmo nome que a sobreposição.</p>
+          <p>Etapas:</p>
+          <ol>
+            <li value="1">Selecione a visualização que contém o mapa inteligente e depois clique em <span class="uitext">Configurações</span>.</li>
+            <li value="2">Clique em <img src="../../../Images/add_custom_overlay_on_1.png" alt="" /><span class="uitext">Adicionar uma sobreposição personalizada</span>: <ul><li>Se a sobreposição for georreferenciada, clique em qualquer lugar no Mapa Inteligente. O <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> utiliza as informações de georreferência para posicionar a sobreposição na localização geográfica correta. Além disso, o Mapa Inteligente se centralizará na sobreposição a um nível de zoom padrão</li><li>Se a sobreposição não for georreferenciada, vá para o ponto no mapa onde deseja adicionar o elemento e clique no ponto no Mapa Inteligente</li><p class="tip">Antes de adicionar uma sobreposição, é uma boa ideia ampliar o zoom sobre o local do mapa onde deseja posicioná-la. Isto torna mais fácil posicionar a sobreposição com precisão.</p></ul></li>
+            <li value="3">Digite o nome para a sobreposição.</li>
+            <li value="4">Dependendo do tipo de arquivo que você seleciona: <ul><li><span class="uitext">Imagem</span> – selecione o arquivo de imagem e clique em <span class="uitext">OK</span></li><li><span class="uitext">Shapefile</span> – selecione o arquivo SHP. Se você tiver um arquivo PRJ, o <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> o encontrará e você poderá apenas clicar em <span class="uitext">OK</span>. Se não tiver um arquivo PRJ, você pode reposicionar a sobreposição manualmente depois de adicioná-la. Você também pode aplicar uma cor. Por exemplo, adicionar uma cor pode fazer com que o shapefile se destaque mais no Mapa Inteligente</li><li><span class="uitext">CAD</span> – selecione o arquivo DWG. Se tiver um arquivo PRJ, clique em <span class="uitext">OK</span>. Se não tiver um arquivo PRJ e quiser usar o georreferenciamento para posicionar o arquivo no Mapa Inteligente, insira o identificador de referência espacial (SRID), e depois clique em <span class="uitext">OK</span>. Se você não tiver um arquivo PRJ nem um SRID, você pode reposicionar a sobreposição manualmente depois de adicioná-la</li><p class="note">Para mais informações sobre os tipos de sobreposição, consulte <a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">Sobreposições personalizadas (explicado)</a>.</p></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Adicione locais a sobreposições personalizadas (mapa inteligente)<a name="SC_AddLocationsToCustomO.htm"></a></h3>
+          <p>Você pode configurar o <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> para adicionar localizações automáticas às <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term8">sobreposições personalizadas<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Um elemento gráfico definido pelo usuário que os usuários podem adicionar a um mapa inteligente para, por exemplo, ilustrar uma planta baixa em um edifício ou marcar limites entre regiões. Uma sobreposição personalizada pode ser uma imagem, um desenho CAD, ou um shapefile.</span></a> no seu mapa inteligente. Isso permite pular para as sobreposições personalizadas através da lista <span class="uitext">Selecionar uma localização</span>. </p>
+          <p>Etapas:</p>
+          <ol>
+            <li value="1">Na barra de ferramentas do aplicativo, clique em <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> e depois em <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">Configurações</span> para abrir a janela <span class="uitext">Configurações</span>.</li>
+            <li value="2">Vá para a guia <span class="uitext">Mapa inteligente</span>.</li>
+            <li value="3">Na lista <span class="uitext">Crie local quando uma camada é adicionada</span>, selecione <span class="uitext">Sim</span>.</li>
+            <li value="4">Feche a caixa de diálogo para salvar as alterações.</li>
+          </ol>
+          <p class="note">Para obter mais informações, consulte <a href="#SC_CustomOverlaysAndLoca.htm" class="MCXref xref">Sobreposições personalizadas e locais (explicado)</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Exclua uma sobreposição personalizada em um mapa inteligente<a name="SC_DeleteCustomOverlayOn.htm"></a></h3>
+          <ol>
+            <li value="1">Selecione a visualização que contém o mapa inteligente e depois clique em <span class="uitext">Configurações</span>.</li>
+            <li value="2">Na barra de ferramentas, clique em <img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">Gerenciar configurações padrão</span>.</li>
+            <li value="3">Passe o ponteiro do mouse sobre a sobreposição personalizada e clique em <span class="uitext">Excluir</span>.</li>
+            <li value="4">Clique em <span class="uitext">Salvar</span> para excluir a sobreposição personalizada.</li>
+            <li value="5">Opcional: Se um local tiver sido criado para a sobreposição personalizada, é recomendável excluir também esse local. Para obter mais informações, consulte <a href="#SC_AddingDeletingOrEditi_3.htm" class="MCXref xref">Adicionar, excluir ou editar locais em mapa inteligente</a>.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Faça áreas em shapefiles mais visíveis (mapa inteligente)<a name="SC_MakeAreasInShapefiles.htm"></a></h3>
+          <p class="note">Este tópico é relevante apenas se você está usando shapefiles com polígonos.</p>
+          <p>Se quiser usar um shapefile em seu mapa inteligente que consiste de polígonos muito próximos, você conseguirá distinguir polígonos individuais uns dos outros. Você faz isso reduzindo a opacidade da cor que escolheu para o shapefile. As margens dos polígonos serão destacadas.</p>
+          <p>Etapas:</p>
+          <ol>
+            <li value="1">Siga as etapas descritas em <a href="#SC_AddCustomOverlayOnSma.htm" class="MCXref xref">Adicionar sobreposição personalizada no mapa inteligente</a>.</li>
+            <li value="2">
+              <p>Ao selecionar a cor, arraste o botão deslizante <span class="uitext">Opacidade </span> para a esquerda até o nível de transparência desejado.</p>
+              <p>
+                <img src="../../../Images/make_areas_in_shapefiles_more.jpg" alt="" />
+              </p>
+            </li>
+            <li value="3">Clique em <span class="uitext">Salvar</span>.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Ajuste posição, tamanho ou alinhamento de uma sobreposição personalizada<a name="SC_AdjustPositionSizeOrA.htm"></a></h3>
+          <p>Você pode mover uma sobreposição para um local diferente no mapa, aumentá-la ou diminuí-la e girá-la. Isso é útil, por exemplo, se sua sobreposição não for georreferenciada ou se a sobreposição for georreferenciada, mas por algum motivo não se alinhar exatamente com o fundo geográfico.</p>
+          <p>Etapas:</p>
+          <ol>
+            <li value="1">Selecione a visualização que contém o mapa inteligente e depois clique em <span class="uitext">Configurações</span>.</li>
+            <li value="2">Clique com o botão direito sobre a sobreposição e selecione <span class="uitext">Editar posição</span>.</li>
+            <li value="3">Para redimensionar ou girar a sobreposição: <ul><li>Clique e arraste uma alça de canto</li><li><p>Para girar a sobreposição ao redor de um ponto específico, mova o ponto de rotação para o aquele local no mapa. Então, clique e arraste uma alça de canto </p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/adjust_position_size_or_alignment.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="273" data-mc-height="261" src="../../../Images/adjust_position_size_or_alignment_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="" tabindex="" /></a></p></li></ul></li>
+            <li value="4">Para mover a sobreposição no mapa, clique na sobreposição e arraste-a.</li>
+            <li value="5">Para salvar a mudança, clique em <span class="uitext">Salvar</span>.</li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Adicionar, excluir ou editar dispositivos no mapa inteligente<a name="SC_AddingDeletingOrEditi_1.htm"></a></h2>
+        <p>Você pode adicionar dispositivos a um mapa inteligente em suas posições reais no seu ambiente. Isso lhe dará uma boa visão geral do sistema de monitoramento e poderá ajudá-lo a responder a uma situação. Por exemplo, se desejar seguir um suspeito durante um incidente em curso, você pode clicar em câmeras no mapa para ver as suas filmagens.</p>
+        <p>Depois de adicionar uma câmera a um mapa inteligente, você pode ajustar o campo de vista para o ícone da câmera para que ele reflita o campo de visão da câmera real. Isto faz com que seja mais fácil encontrar a câmera que está cobrindo uma área específica. Além disso, você pode selecionar um ícone para representar a câmera no mapa, o que pode ajudar você a identificar o tipo de câmera no mapa.</p>
+        <p>Você pode trabalhar com os seguintes tipos de dispositivos em mapas inteligentes:</p>
+        <ul>
+          <li>Câmeras</li>
+          <li>Dispositivos de entrada</li>
+          <li>Microfones</li>
+        </ul>
+        <div data-mc-conditions="">
+          <h3>Adicionar dispositivos ao mapa inteligente<a name="SC_AddCamerasToSmartMap.htm"></a></h3>
+          <p>Se as coordenadas geo da câmera tiverem sido especificadas no <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> pelo administrador do sistema, automaticamente elas serão posicionadas no mapa inteligente quando você adicioná-las. Caso contrário, você deve posicionar o dispositivo manualmente em seu local geográfico exato.</p>
+          <ol>
+            <li value="1">Selecione a visualização que contém o mapa inteligente e depois clique em <span class="uitext">Configurações</span>.</li>
+            <li value="2">Para adicionar um dispositivo ou um grupo de dispositivos: <p class="tip">Antes de você adicionar o dispositivo, é uma boa ideia usar o zoom e ampliar o mapa. Isto torna mais fácil posicionar o dispositivo com precisão.</p><ul><li>Expanda o painel <span class="uitext">Visão geral do sistema</span>, encontre o dispositivo ou grupo de dispositivos e arraste-o para o ponto no mapa inteligente onde deseja exibi-lo. Você pode arrastar os dispositivos depois para reposicioná-los</li><li>Na barra de ferramentas do mapa inteligente, selecione <img src="../../../Images/add-a-device-to-smart-map.png" alt="" /><span class="uitext">Adicionar um dispositivo</span> &gt; selecionar o tipo de dispositivo.<ul><li>Exemplo: No caso de uma câmera, selecione <img src="../../../Images/add_cameras_to_map.png" alt="" /><span class="uitext">Adicionar uma câmera</span> e depois selecione a câmera.</li></ul></li><li>Arraste o dispositivo para o mapa inteligente</li><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_adddevice.png" data-mc-popup-alt="Add a device to your smart map."><img class="MCPopupThumbnail img" data-mc-width="709" data-mc-height="823" src="../../../Images/sc_smap_adddevice_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add a device to your smart map." tabindex="" /></a><br /></ul></li>
+            <li value="3">Para salvar a alteração, clique em <span class="uitext">Configurações</span> para sair do modo de configuração.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Altere o campo de visualização e direção da câmera<a name="SC_ChangeFieldOfViewAndD.htm"></a></h3>
+          <p>Assim que a câmera tiver sido adicionada ao mapa inteligente, você pode mudar o campo de visualização e direção ajustando o ícone da câmera.</p>
+          <p class="tip">Se estiver com o mapa diminuído pode ter de aumentar o zoom até que o campo de visualização seja exibido.</p>
+          <ol>
+            <li value="1">Selecione a visualização que contém o mapa inteligente com o qual você deseja trabalhar.</li>
+            <li value="2">Clique em <span class="uitext">Configurações</span> para editar o ícone da câmera.</li>
+            <li value="3">
+              <p>Clique no ícone de câmera.</p>
+              <p>
+                <img src="../../../Images/change_field_of_view_and_direction.png" alt="" />
+              </p>
+            </li>
+            <li value="4">Use a alça de giro para apontar a câmera na direção certa.</li>
+            <li value="5">Para ajustar a largura, comprimento e ângulo do campo de visão, clique e arraste as alças na borda frontal do campo de visão.</li>
+            <li value="6">Para salvar suas alterações, clique em <span class="uitext">Configurações</span> para sair do modo de configuração.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Selecione ou altere o ícone do dispositivo<a name="SC_SelectOrChangeTheIcon.htm"></a></h3>
+          <p>Você pode escolher um ícone de dispositivo que corresponda ao tipo de dispositivo que está usando.</p>
+          <ol>
+            <li value="1">Selecione a visualização que contém o mapa inteligente com o qual você deseja trabalhar.</li>
+            <li value="2">
+              <p>Clique em <span class="uitext">Configurações</span> e em seguida clique duas vezes no ícone do dispositivo no mapa.</p>
+              <p>
+                <img src="../../../Images/select_or_change_the_icon.png" alt="" />
+              </p>
+            </li>
+            <li value="3">Clique em <span class="uitext">Selecionar ícone</span> e, em seguida, selecione o ícone para o dispositivo.</li>
+            <li value="4">Clique em <span class="uitext">Configurações</span> novamente para salvar as alterações.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Mostrar ou ocultar informações do dispositivo<a name="SC_ShowOrHideInformation.htm"></a></h3>
+          <p>Você pode mostrar ou ocultar informações sobre os dispositivos em um mapa inteligente. Isso é útil, por exemplo, quando você deseja aumentar ou reduzir a quantidade de conteúdo em seu mapa inteligente.</p>
+          <ol>
+            <li value="1">Selecione a visualização que contém o mapa inteligente com o qual você deseja trabalhar.</li>
+            <li value="2">Clique em <img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">Mostrar ou ocultar camadas e sobreposições personalizadas</span>.</li>
+            <li value="3">Marque ou desmarque as caixas de seleção para as informações serem exibidas ou ocultas.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Ouça áudio do microfone no mapa inteligente</h3>
+          <p>Após adicionar microfones a um mapa inteligente, você pode ouvir o áudio a partir de um microfone por vez na guia <span class="uitext">Ao vivo</span>. </p>
+          <p>Etapas:</p>
+          <ol>
+            <li value="1">
+              <p>Na guia <span class="uitext">Ao vivo</span>, navegue para o local no mapa inteligente onde o microfone está posicionado.</p>
+            </li>
+            <li value="2">
+              <p>Dê um clique duplo no microfone para ativar ou desativar o mudo.</p>
+              <p class="tip">Alternativamente, clique com o botão direito no microfone e selecione <span class="uitext">Microfone mudo</span> or <span class="uitext">Com som</span>.</p>
+            </li>
+          </ol>
+        </div>
+        <div>
+          <h3>Remover dispositivos do mapa inteligente<a name="SC_DeletingCamerasOnSmar.htm"></a></h3>
+          <p>Você pode remover dispositivos, por exemplo, se os dispositivos tiverem sido fisicamente removidos ou se foram adicionados por engano. Ao remover um dispositivo, as informações de posicionamento do dispositivo, por exemplo, as coordenadas geo, são totalmente removidas do seu sistema VMS.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fechado" data-mc-alt2="Aberto" />Requisitos</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>Esses direitos de usuário devem ser ativados no <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>:</p>
+              <ul>
+                <li>Edição de mapas inteligentes</li>
+                <li>Edição de dispositivos</li>
+              </ul>
+            </div>
+          </div>
+          <p>Etapas:</p>
+          <ol>
+            <li value="1">Navegue para o dispositivo que você deseja remover.</li>
+            <li value="2"> Clique em <span class="uitext">Configurações</span> para entrar no modo de configuração. </li>
+            <li value="3">
+              <p>Para remover um único dispositivo, clique com o botão direito no dispositivo e clique em <span class="uitext">Remover</span>.</p>
+              <p>Exemplo: No caso de uma câmera, clique em <span class="uitext">Remover câmera</span>.</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_removecamera.png" data-mc-popup-alt="Remove camera from your smart map.">
+                  <img class="MCPopupThumbnail img" data-mc-width="284" data-mc-height="209" src="../../../Images/sc_smap_removecamera_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: 0;" alt="Remove camera from your smart map." tabindex="" />
+                </a>
+              </p>
+            </li>
+            <li value="4">Para remover diversas câmeras:<ol><li value="1"><p>Na barra de ferramentas do mapa inteligente, clique em <img src="../../../Images/preview_videos_from_several.png" alt="" /><span class="uitext">Selecionar diversas câmeras</span>.</p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_cluster_multiselect.png" data-mc-popup-alt="Select multipe cameras on your smart map."><img class="MCPopupThumbnail img" data-mc-width="1056" data-mc-height="672" src="../../../Images/sc_smap_cluster_multiselect_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: 0;" alt="Select multipe cameras on your smart map." tabindex="" /></a><br /></p></li><li value="2">Clique e arraste para selecionar diversas câmeras. Outros tipos de dispositivos, por exemplo, dispositivos de entrada, não estão incluídos na seleção.</li><li value="3">Clique com o botão direito e selecione <span class="uitext">Remover câmeras</span>.</li></ol></li>
+            <li value="5">Para remover diversos dispositivos que não são câmeras:<ol><li value="1">No mapa inteligente, pressione e mantenha Ctrl pressionado. </li><li value="2">Enquanto mantém Ctrl pressionado, clique nos dispositivos que deseja remover.</li><li value="3">Clique com o botão direito em um dos dispositivos selecionados e selecione Remover.</li></ol></li>
+            <li value="6"> Clique em <span class="uitext">Configuração</span> novamente para sair do modo de configuração. Suas alterações foram salvas.</li>
+          </ol>
+          <p class="tip">Você também pode excluir um único dispositivo selecionando-o e pressionando <span class="uitext">DELETE</span> no teclado.</p>
+        </div>
+      </div>
+      <div>
+        <h2>Adicionar, excluir ou editar câmeras em mapa inteligente<a name="SC_AddingDeletingOrEditi_2.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Links no mapa inteligente (explicado)<a name="SC_LinksOnSmartMapExplai.htm"></a></h3>
+          <p>Você pode adicionar links que vão para locais no seu mapa inteligente ou ir para mapas em <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Isso permite visitar rapidamente locais ou exibir outro tipo de mapa sem mudar para outra visualização. Você não pode vincular a outro mapa inteligente. Para obter mais informações, consulte <a href="#SC_DifferencesBetweenMap.htm" class="MCXref xref">Diferenças entre mapas e mapas inteligentes (explicado)</a>.</p>
+          <p>Os links exibem mapas e lugares do seguinte modo:</p>
+          <ul>
+            <li>Um link para um lugar exibe a localização na visualização atual. Para retornar a um local que você tinha visualizado previamente, clique em <img src="../../../Images/backtracking_to_previous_locations.png" alt="" /><span class="uitext">Voltar</span> na barra de ferramentas do mapa inteligente</li>
+            <li>Um link para um mapa exibe o mapa em uma janela flutuante. Isso permite que você acesse os dois tipos de mapas ao mesmo tempo. Você pode visualizar e interagir com o mapa, mas não pode fazer alterações na janela flutuante como a adição de câmeras</li>
+          </ul>
+          <p class="note">Se tiver em um código de cores para os links ou desejar torná-los mais visíveis no mapa, pode especificar uma cor para o link. Por padrão, links para locais no mapa inteligente são azuis e links para mapas antigos são vermelhos. Se usar uma cor diferente, é uma boa ideia usar a mesma cor para cada tipo de link. Por exemplo, isso pode fazer com que seja mais fácil de distinguir entre links quando você usar camadas para filtrar itens no mapa.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Adicionar um link para um local em um mapa inteligente ou a um mapa<a name="SC_AddLinkToSmartMapLoca.htm"></a></h3>
+          <p>Adicionar links ao seu mapa inteligente permite visitar rapidamente locais ou exibir outro tipo de mapa sem mudar para outra visualização.</p>
+          <p>Etapas:</p>
+          <ol>
+            <li value="1">Selecione a visualização que contém o mapa inteligente e depois clique em <span class="uitext">Configurações</span>.</li>
+            <li value="2">Vá para o ponto do mapa onde pretende adicionar o link.</li>
+            <li value="3">Na barra de ferramentas do mapa, clique em <img src="../../../Images/add_link_to_map_location.png" alt="" /><span class="uitext">Adicionar um link</span>, e, em seguida, clique no ponto do mapa onde você deseja colocar o link.</li>
+            <li value="4">Especifique se você deseja associar o link a um local em um mapa inteligente ou a um mapa e depois clique em <span class="uitext">Adicionar</span>.</li>
+            <li value="5">
+              <p>Digite um nome para o link.</p>
+              <p class="tip">Você pode exibir o título do link no mapa inteligente se selecionar o <span class="uitext">Ícone e texto</span> como o estilo de exibição. Normalmente, nomes indicam aonde o link leva você.</p>
+            </li>
+            <li value="6">No campo <span class="uitext">Destino</span>, selecione o mapa ou localização aonde o link leva.</li>
+            <li value="7">No campo <span class="uitext">Estilo de Exibição</span>, especifique se deseja exibir o nome e o ícone do link, ou apenas o ícone do link no mapa.</li>
+            <li value="8">Opcional: Clique em <span class="uitext">Cor</span> para especificar uma cor para o seu link.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Editar ou excluir um link em um mapa inteligente<a name="SC_EditOrDeleteLinkOnSma.htm"></a></h3>
+          <p>Assim que tiver adicionado um link ao seu mapa inteligente, você pode editá-lo ou exclui-lo.</p>
+          <p>Etapas:</p>
+          <ol>
+            <li value="1"> Clique em <span class="uitext">Configurações</span> para entrar no modo de configuração. </li>
+            <li value="2">Para editar o link, clique com o botão direito no link e selecione <span class="uitext">Editar link</span>.</li>
+            <li value="3">Para deletar o link, faça um dos seguintes:<ul><li>Clique com o botão direito no link e selecione <span class="uitext">Excluir link</span></li><li>Selecione o link e pressione <span class="uitext">DELETE</span> no seu teclado</li></ul></li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Adicionar, excluir ou editar locais em mapa inteligente<a name="SC_AddingDeletingOrEditi_3.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Locais no mapa inteligente (explicado)<a name="SC_LocationsOnSmartMapEx.htm"></a></h3>
+          <p>Você pode criar locais sobre os pontos do mapa inteligente que são de interesse para você. Por exemplo, você pode criar locais para o seu escritório doméstico e escritórios satélite. Os locais não só lhe dão uma imagem completa do seu ambiente, mas também são úteis para navegar o mapa inteligente. </p>
+          <p class="note">Dependendo da sua configuração, quando você adiciona uma sobreposição personalizada, o <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> pode adicionar um local com o mesmo nome que a sobreposição. Isso faz com que seja mais fácil, por exemplo, encontrar a sobreposição no mapa inteligente quando você estiver com o zoom diminuído. Porém, a sobreposição e o local não estão vinculados. Por exemplo, você pode excluir ou renomear o local sem mudar a sobreposição e vice-versa. Para obter mais informações, consulte <a href="#SC_AddingDeletingOrEditi.htm" class="MCXref xref">Adicionar, excluir ou editar sobreposições personalizadas</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Locais de início no mapa inteligente (explicado)<a name="SC_HomeLocationsForSmart.htm"></a></h3>
+          <p>Locais de início são específicos ao item de visualização em que estão configurados. Você pode ter locais de início diferentes em itens de visualização diferentes. Se um local de início não estiver especificado para um item de visualização, o item de visualização exibirá o mundo inteiro, independentemente do tipo de fundo que você está usando. Este também é o caso se você exclui o local de início.</p>
+          <p>Enquanto você estiver trabalhando com o mapa inteligente, clique em <img src="../../../Images/home_locations_for_map.png" alt="" /><span class="uitext">Início</span> para voltar ao local de início. Isso é semelhante a reiniciar a visualização do mapa inteligente. Você retorna às configurações padrão para o item de visualização e o sistema exclui o histórico dos locais visitados.</p>
+          <p class="note">A seleção de um novo local de início afeta a todos os que usem o item de visualização. Se alguém definiu outro local como início, você estará alterando sua configuração.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Adicione a localização ao mapa inteligente<a name="SC_AddLocationToSmartMap.htm"></a></h3>
+          <p>Para monitorar os locais que lhe interessam, você pode adicionar locais que permitem navegar rapidamente para esses locais no mapa inteligente.</p>
+          <p>Etapas:</p>
+          <ol>
+            <li value="1">Selecione a visualização que contém o mapa inteligente e clique em <span class="uitext">Configurações</span>.</li>
+            <li value="2">Se necessário, ajuste o zoom para o ponto no mapa inteligente onde você deseja adicionar o local.</li>
+            <li value="3">Na barra de ferramentas, clique em <img src="../../../Images/add_location_to_map.png" alt="" /><span class="uitext">Adicionar um local</span>, e, em seguida, clique no ponto sobre o mapa inteligente.</li>
+            <li value="4">Dê um nome ao local e depois adicione os detalhes opcionais a seguir: <ul><li>Especifique um nível de zoom para ser aplicado quando alguém vai para o local no mapa inteligente</li><li>Selecione uma cor para o ícone do local. A codificação de cores dos locais é útil, por exemplo, para distinguir entre tipos de locais. Isso poderia ser baseado na função ou no tipo do local ou indicar a prioridade do local.</li><li>Opcional: Defina o local como local de início. O mapa inteligente se centralizará nesse local e aplicará o nível de zoom padrão configurado quando você clicar em <img src="../../../Images/home_locations_for_map.png" alt="" /><span class="uitext">Início</span></li></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Adicionar, editar ou excluir um local em um mapa inteligente<a name="SC_EditOrDeleteLocationO.htm"></a></h3>
+          <p>Assim que tiver adicionado locais em seu mapa inteligente, você pode exclui-los ou editar as configurações, por exemplo, excluindo o local inicial.</p>
+          <p>Etapas:</p>
+          <ol>
+            <li value="1"> Clique em <span class="uitext">Configurações</span> para entrar no modo de configuração. </li>
+            <li value="2">Para editar um local, clique com o botão direito no local e selecione <span class="uitext">Editar local</span>.</li>
+            <li value="3">Para excluir um local, faça um dos seguintes:<ul><li>Clique com o botão direito no local e selecione <span class="uitext">Excluir local</span></li><li>Selecione a localização e pressione <span class="uitext">DELETE</span> no seu teclado</li></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Vinculação entre locais (explicado)<a name="SC_LinkingBetweenLocatio.htm"></a></h3>
+          <p>Por exemplo, você pode criar uma rota de patrulha criando uma série de links entre os locais. Crie um link no local A que leve para o local B e um link no local B que leve para o local C e assim por diante. Para obter mais informações, consulte <a href="#SC_AddingDeletingOrEditi_2.htm" class="MCXref xref">Adicionar, excluir ou editar câmeras em mapa inteligente</a>.</p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Adicionar, excluir ou editar prédios no mapa inteligente<a name="SC_AddingDeletingOrEditi_4.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Prédios no mapa inteligente (explicado)<a name="SC_BuildingsOnSmartMapEx.htm"></a></h3>
+          <p>Prédios no <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">mapa inteligente<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Uma funcionalidade de mapa que usa um sistema de informações geográficas para visualizar dispositivos (como câmeras e microfones), estruturas e elementos topográficos de um sistema de monitoramento em imagens geograficamente precisas e reais. Mapas que usam elementos dessa funcionalidade são chamados de mapas inteligentes.</span></a> são descritos como polígonos com quatro bordas. Depois de adicionado, você pode ajustar as dimensões, ângulos e tamanho para corresponder ao formato real e posição do prédio.</p>
+          <p>Se o prédio tiver múltiplos andares, você pode começar adicionando andares e câmeras aos andares individuais. Isso permite que você navegue pelas câmeras dentro do prédio, por cada andar.</p>
+          <p>Para ajudar a ilustrar o interior de um nível, você pode adicionar sobreposições personalizadas aos níveis como, por exemplo, uma imagem ilustrando uma planta baixa. Para obter mais informações, consulte <a href="#SC_AddFloorPlansToLevels.htm" class="MCXref xref">Adicionar plantas baixas aos níveis (mapa inteligente)</a>.</p>
+          <p>Os prédios recebem um nome automaticamente; por exemplo <span class="uitext">Prédio 4</span>. <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> recomenda que você altere o nome. Isso facilita a distinção de prédios entre si.</p>
+          <p>
+            <img src="../../../Images/buildings_on_map_explained.jpg" alt="" />
+          </p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Adicionar prédios ao mapa inteligente<a name="SC_AddBuildingsToSmartMa.htm"></a></h3>
+          <p>Em vez de usar imagens ou shapefiles para ilustrar prédios, você pode adicionar um esboço de um prédio. Mais tarde, você pode alterar as dimensões, ângulos e tamanho para corresponder ao formato e posição real do prédio.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fechado" data-mc-alt2="Aberto" />Requisitos</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> A edição do mapa inteligente foi ativada em seu perfil <span class="mc-variable flvar-product.SC variable">Smart Client</span> no <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Etapas:</p>
+          <ol>
+            <li value="1"> Clique em <span class="uitext">Configurações</span> para entrar no modo de configuração. </li>
+            <li value="2">Navegue até o local no mapa inteligente, onde deseja posicionar o prédio.</li>
+            <li value="3">Clique <img src="../../../Images/add_buildings_to_map.jpg" alt="" /> e coloque o cursor na posição relevante no mapa inteligente.</li>
+            <li value="4">Clique novamente. Um retângulo é adicionado ao mapa inteligente. Se o zoom diminuir, o nível do zoom aumenta automaticamente.</li>
+            <li value="5">Se necessário, use as alças de canto para ajustar a forma e a posição real do prédio.</li>
+            <li value="6"> Clique em <span class="uitext">Configuração</span> novamente para sair do modo de configuração. Suas alterações foram salvas.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Editar prédios no mapa inteligente<a name="SC_EditBuildingsOnSmartM.htm"></a></h3>
+          <p>Assim que um prédio for adicionado ao mapa inteligente, você poderá alterar o nome dele e ajustar sua posição, tamanho, dimensões e ângulos. Você também pode adicionar, remover, ou reordenar andares.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fechado" data-mc-alt2="Aberto" />Requisitos</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> A edição do mapa inteligente foi ativada em seu perfil <span class="mc-variable flvar-product.SC variable">Smart Client</span> no <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Etapas:</p>
+          <ol>
+            <li value="1">Navegue até o prédio no seu mapa inteligente. Se necessário, amplie.</li>
+            <li value="2"> Clique em <span class="uitext">Configurações</span> para entrar no modo de configuração. </li>
+            <li value="3">
+              <p>Clique em qualquer lugar dentro do prédio. Uma borda rugosa azul indica que você pode editar o prédio.<br /></p>
+              <p>
+                <img src="../../../Images/buildings_on_map_explained.jpg" alt="" />
+              </p>
+            </li>
+            <li value="4">Para renomear o prédio, vá para a parte superior direita do painel e clique <img src="../../../Images/edit_buildings_on_map.jpg" alt="" />. Altere o nome e clique <img src="../../../Images/edit_buildings_on_map_1.jpg" alt="" />. Para cancelar, pressione <span class="uitext">Esc</span>.</li>
+            <li value="5">Para ajustar os cantos, clique e arraste-os para uma nova posição.</li>
+            <li value="6">Para adicionar ou remover níveis, consulte <a href="#SC_AddOrRemoveLevelsFrom.htm" class="MCXref xref">Adicione ou remova andares de um prédio (mapa inteligente)</a>.</li>
+            <li value="7"> Clique em <span class="uitext">Configuração</span> novamente para sair do modo de configuração. Suas alterações foram salvas.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Excluir prédios no mapa inteligente<a name="SC_DeleteBuildingsOnSmar.htm"></a></h3>
+          <p>Se um prédio não for mais necessário, você pode excluí-lo. Na próxima vez que alguém entrar no <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> ou recarregar, o prédio será excluído.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fechado" data-mc-alt2="Aberto" />Requisitos</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> A edição do mapa inteligente foi ativada em seu perfil <span class="mc-variable flvar-product.SC variable">Smart Client</span> no <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Etapas:</p>
+          <ol>
+            <li value="1">Abra o mapa inteligente.</li>
+            <li value="2"> Clique em <span class="uitext">Configurações</span> para entrar no modo de configuração. </li>
+            <li value="3">Faça um dos seguintes:</li>
+            <ul>
+              <li>Clique no prédio com o botão direito e selecione <span class="uitext">Excluir</span></li>
+              <li>Selecione o prédio e pressione <span class="uitext">EXCLUIR</span> no seu teclado </li>
+            </ul>
+          </ol>
+          <p class="tip">Uma forma alternativa para excluir um prédio: Em <img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">Gerenciar configurações padrão</span>, role para baixo para a seção <span class="uitext">Prédios</span>, passe o cursor do mouse sobre o prédio, clique em <span class="uitext">Excluir</span> e depois em <span class="uitext">Salvar</span>. </p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Gerenciamento de níveis e câmeras em prédios (mapa inteligente)<a name="SC_ManagingLevelsAndCame.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Dispositivos e níveis em prédios (explicado)<a name="SC_CamerasAndLevelsInBui.htm"></a></h3>
+          <p>Quando você adiciona um dispositivo a um prédio, por padrão, o dispositivo é associado ao nível padrão, se um tiver sido especificado. Caso contrário, o dispositivo será atribuído ao primeiro nível. No entanto, você pode modificar isso e associar o dispositivo a qualquer outro nível, ou diversos níveis ao mesmo tempo.</p>
+          <p>Mais fatos:</p>
+          <ul>
+            <li>Se nenhum nível estiver selecionado, o dispositivo ficará visível em todos os níveis</li>
+            <li>Se você adicionar um prédio a um dispositivo que já foi posicionado, por padrão, o dispositivo será associado a todos os níveis</li>
+            <li>Se você expandir os limites de um prédio, de modo que cubra um dispositivo já posicionado, o dispositivo será associado somente ao nível selecionado</li>
+          </ul>
+          <p class="note">Se você reajustar os limites do prédio, de modo que não cubra mais o dispositivo, o dispositivo não estará mais associado ao prédio.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>
+            <a name="SC_FloorPlansDevicesInBuildings"></a>Plantas baixas e dispositivos em prédios (explicado)</h3>
+          <p>Para ajudar a visualizar o interior dos níveis em um edifício, você pode adicionar plantas baixas como sobreposições personalizadas. Com uma planta baixa, é mais fácil posicionar o dispositivo com precisão. Para obter mais informações, consulte <a href="#SC_AddFloorPlansToLevels.htm" class="MCXref xref">Adicionar plantas baixas aos níveis (mapa inteligente)</a>.</p>
+          <p>Os dispositivos que você posicionou estão associados aos níveis, não às sobreposições personalizadas. Se você excluir um andar dentro de um prédio com dispositivos e uma sobreposição personalizada, os dispositivos permanecerão em sua posição geográfica, mas não estarão mais associados ao andar. Entretanto, a sobreposição personalizada é excluída junto com o andar.</p>
+          <p>Se você reordenar um andar, tanto os dispositivos quanto a sobreposição personalizada permanecerão associados ao andar. Os dispositivos mantêm sua posição geográfica.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Adicione ou remova andares de um prédio (mapa inteligente)<a name="SC_AddOrRemoveLevelsFrom.htm"></a></h3>
+          <p>Após adicionar um prédio ao seu mapa inteligente, você pode adicionar qualquer número de andares. O primeiro andar é atribuído o número <span class="uitext">1</span>, o próximo <span class="uitext">2</span>, e assim por diante. Posteriormente, você pode renomear e reordenar os andares individuais.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fechado" data-mc-alt2="Aberto" />Requisitos</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> A edição do mapa inteligente foi ativada em seu perfil <span class="mc-variable flvar-product.SC variable">Smart Client</span> no <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Etapas:</p>
+          <ol>
+            <li value="1">Navegue até o prédio no seu mapa inteligente. Se necessário, amplie.</li>
+            <li value="2">Selecione o prédio. Um painel aparecerá no lado direito.</li>
+            <li value="3">Clique no botão <span class="uitext">Configuração</span> para inserir o modo de configuração.</li>
+            <li value="4">Clique em <span class="uitext">Adicionar nível</span><img src="../../../Images/add_or_remove_levels_from.jpg" alt="" />.</li>
+            <li value="5">Para editar o nome do andar: <ol><li value="1">Clique nos pontos <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> e selecione <span class="uitext">Renomear</span>.</li><li value="2">Insira um novo nome.</li></ol></li>
+            <li value="6">Para excluir um andar, clique nos pontos <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> e selecione <span class="uitext">Excluir</span>. Os dispositivos nesse nível permanecem na sua posição geográfica, mas não estão mais associados ao andar.</li>
+            <li value="7">Clique em <span class="uitext">Configuração</span> para sair do modo de configuração.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Alterar ordem de andares em edifícios (mapa inteligente)<a name="SC_ChangeOrderOfLevels.htm"></a></h3>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fechado" data-mc-alt2="Aberto" />Requisitos</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> A edição do mapa inteligente foi ativada em seu perfil <span class="mc-variable flvar-product.SC variable">Smart Client</span> no <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Etapas:</p>
+          <ol>
+            <li value="1">Navegue até o prédio no seu mapa inteligente. Se necessário, amplie.</li>
+            <li value="2">Selecione o prédio. Um painel aparecerá no lado direito mostrando os andares do prédio.</li>
+            <li value="3"> Clique em <span class="uitext">Configurações</span> para entrar no modo de configuração. </li>
+            <li value="4">Clique e arraste a área pontilhada <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> para a posição correta. Quaisquer dispositivos associados e sobreposições personalizadas permanecerão associados ao andar.</li>
+            <li value="5"> Clique em <span class="uitext">Configuração</span> novamente para sair do modo de configuração. Suas alterações foram salvas.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Definir o andar padrão para prédios (mapa inteligente)<a name="SC_SetDefaultLevelForBui.htm"></a></h3>
+          <p>Se um determinado andar em um prédio for mais relevante do que outros, por exemplo, o piso térreo, você pode definir esse andar como o andar padrão. Quando você abre seu mapa inteligente e vai para o prédio, o andar padrão é selecionado automaticamente.</p>
+          <p>Se você navegar longe do prédio e voltar, <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> levará você ao nível de onde você parou.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fechado" data-mc-alt2="Aberto" />Requisitos</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> A edição do mapa inteligente foi ativada em seu perfil <span class="mc-variable flvar-product.SC variable">Smart Client</span> no <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Etapas:</p>
+          <ol>
+            <li value="1">Navegue até o prédio no seu mapa inteligente. Se necessário, amplie.</li>
+            <li value="2">Selecione o prédio. Um painel aparecerá no lado direito mostrando os andares do prédio. O andar padrão é destacado.</li>
+            <li value="3">Clique em <span class="uitext">Configurações</span> para entrar no modo de configuração. Observe o asterisco <img src="../../../Images/set_default_level_for_buildings.jpg" alt="" />. Ele indica onde o andar padrão atual se encontra.</li>
+            <li value="4">No andar que você deseja definir como padrão, clique nos pontos <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" />.</li>
+            <li value="5">Selecione <span class="uitext">Definir como padrão</span>.</li>
+            <li value="6"> Clique em <span class="uitext">Configuração</span> novamente para sair do modo de configuração. Suas alterações foram salvas.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Adicionar plantas baixas aos níveis (mapa inteligente)<a name="SC_AddFloorPlansToLevels.htm"></a></h3>
+          <p>Você pode adicionar sobreposições personalizadas, como, por exemplo, imagens de planta baixa, aos níveis de seu edifício para ajudar você a ilustrar o interior de um nível dentro de um edifício. Conforme você navega pelos níveis, as plantas baixas associadas são exibidas automaticamente.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fechado" data-mc-alt2="Aberto" />Requisitos</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> A edição do mapa inteligente foi ativada em seu perfil <span class="mc-variable flvar-product.SC variable">Smart Client</span> no <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Etapas:</p>
+          <ol>
+            <li value="1">Navegue até o prédio no seu mapa inteligente. Se necessário, amplie.</li>
+            <li value="2">Selecione o prédio. Um painel aparecerá no lado direito mostrando os andares do prédio.</li>
+            <li value="3"> Clique em <span class="uitext">Configurações</span> para entrar no modo de configuração. </li>
+            <li value="4">Selecione o andar onde você deseja adicionar a sobreposição personalizada.</li>
+            <li value="5">No canto superior esquerdo, clique em <img src="../../../Images/add_custom_overlay_on_1.png" alt="" /><span class="uitext">Adicionar uma sobreposição personalizada</span>, e então clique em qualquer lugar dentro do contorno do prédio. Uma janela aparece.</li>
+            <li value="6">Selecione o tipo de sobreposição personalizada. Para obter mais informações, consulte <a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">Sobreposições personalizadas (explicado)</a>.</li>
+            <li value="7">
+              <p>Selecione o local no seu computador onde o arquivo está armazenado e clique em <span class="uitext">Continuar</span>. A sobreposição personalizada é exibida como um contorno azul.<br /></p>
+              <p>
+                <img src="../../../Images/add_floorplans_to_levels.jpg" alt="" />
+              </p>
+            </li>
+            <li value="8">Arraste-o até o contorno do prédio e use o ponto de rotação e as alças dos cantos para girar e reposicionar a sobreposição personalizada.</li>
+            <li value="9">Na barra superior, clique em <span class="uitext">Salvar</span>.</li>
+            <li value="10"> Clique em <span class="uitext">Configuração</span> novamente para sair do modo de configuração. Suas alterações foram salvas.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Excluir plantas baixas de níveis (mapa inteligente)<a name="SC_DeleteFloorPlansOnLev.htm"></a></h3>
+          <p>Se uma planta baixa em um nível dentro de um edifício foi alterada, você pode precisar substituir a sobreposição personalizada que ilustra a planta baixa. <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> recomenda que você exclua a planta baixa antiga antes de adicionar uma nova.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fechado" data-mc-alt2="Aberto" />Requisitos</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> A edição do mapa inteligente foi ativada em seu perfil <span class="mc-variable flvar-product.SC variable">Smart Client</span> no <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Etapas:</p>
+          <ol>
+            <li value="1">Navegue até o prédio no seu mapa inteligente. Se necessário, amplie.</li>
+            <li value="2">Selecione o prédio. Um painel aparecerá no lado direito mostrando os andares do prédio.</li>
+            <li value="3"> Clique em <span class="uitext">Configurações</span> para entrar no modo de configuração. </li>
+            <li value="4">Selecione o andar onde se encontra a sobreposição personalizada.</li>
+            <li value="5">Clique com o botão direito em qualquer lugar na sobreposição personalizada e selecione <span class="uitext">Excluir sobreposição personalizada</span>.</li>
+            <li value="6"> Clique em <span class="uitext">Configuração</span> novamente para sair do modo de configuração. Suas alterações foram salvas.</li>
+          </ol>
+          <p class="tip">Para editar a posição ou o tamanho da planta baixa, clique com o botão direito na sobreposição personalizada e selecione <span class="uitext">Editar posição</span>. Agora você pode mover, girar e alterar o tamanho da sobreposição personalizada.</p>
+        </div>
+        <div>
+          <h3>Adicionar dispositivos a prédios (mapa inteligente)<a name="SC_AddCamerasToBuildings.htm"></a></h3>
+          <p>Após criar um prédio e adicionar níveis, você pode adicionar dispositivos ao prédio. Se um nível padrão tiver sido especificado, os dispositivos estarão associados a ele. Caso contrário, os dispositivos serão associados ao primeiro andar. Você pode alterar isso e associar o dispositivo com qualquer nível no prédio.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fechado" data-mc-alt2="Aberto" />Requisitos</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> A edição do mapa inteligente foi ativada em seu perfil <span class="mc-variable flvar-product.SC variable">Smart Client</span> no <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Etapas:</p>
+          <ol>
+            <li value="1">Navegue até o prédio no seu mapa inteligente. Se necessário, amplie.</li>
+            <li value="2"> Clique em <span class="uitext">Configurações</span> para entrar no modo de configuração. </li>
+            <li value="3">Para adicionar um dispositivo, clique em seu ícone. <p>Exemplo: No caso de uma câmera, clique em <img src="../../../Images/add_cameras_to_buildings.jpg" alt="" /><span class="uitext">Adicionar uma câmera</span>.</p></li>
+            <li value="4">Clique novamente no local onde deseja posicionar o dispositivo. Um diálogo é exibido.</li>
+            <li value="5">Selecione o dispositivo e clique em <span class="uitext">OK</span>. Para cada dispositivo que deseja adicionar, repita as etapas 3-5.</li>
+            <li value="6">Para associar um dispositivo com um ou mais níveis, clique com o botão direito na câmera e selecione os níveis necessários.</li>
+            <li value="7"> Clique em <span class="uitext">Configuração</span> novamente para sair do modo de configuração. Suas alterações foram salvas.</li>
+          </ol>
+          <p class="note">Se nenhum nível estiver selecionado, o dispositivo ficará visível em todos os níveis.</p>
+        </div>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Informações do conceito</p>
+        <p class="containerItem_container_0">
+          <a href="sc_workingwithmap.htm">Mapa inteligente (uso)</a>
+        </p>
+        <p class="referenceHeading_reference_0">Materiais de referência</p>
+        <p class="referenceItem_reference_0">
+          <a href="sc_map_faq.htm">Perguntas frequentes: mapa inteligente</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

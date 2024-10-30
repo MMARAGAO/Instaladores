@@ -1,0 +1,810 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="nl-NL" xml:lang="nl-NL" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="Configuratie" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Configure smart map in XProtect Smart Client to get a geographical overview of your cameras, devices, and plug-in elements - in a one world experience." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=Recording Server" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Beheerder" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Integrator" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Gebruiker" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Smart Map (configuratie)</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#feature_flags/ff_map/sc_configuringmaps.htm">Open onderwerp met navigatie</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>Smart Map (configuratie)</h1>
+      <p>Voordat u kunt profiteren van de Smart Map-functies, moet u eerst bepaalde configuratietaken dooropen in <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>.</p>
+      <p>U kunt de Smart Map alleen weergeven als deze is toegevoegd aan een weergave. Raadpleeg ook <a href="#SC_AddSmartMapToView.htm" class="MCXref xref">Smart Map toevoegen aan weergaven</a>. </p>
+      <p class="note">Raadpleeg <a href="sc_workingwithmap.htm#SC_SmartMapExplained.htm" class="MCXref xref">Smart Map (uitleg)</a> voor meer informatie.</p>
+      <div>
+        <h2>Verschillen tussen kaarten en Smart Maps (uitleg)<a name="SC_DifferencesBetweenMap.htm"></a></h2>
+        <p>
+          <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> biedt kaartfuncties waarmee u uw bewakingssysteem kunt visualiseren en snel kunt reageren op incidenten.</p>
+        <ul>
+          <li>
+            <span class="uitext">Kaarten</span>: deze kaarten zijn gebaseerd op stilstaande beelden die geen geografische referenties bevatten. U kunt apparaten toevoegen zoals camera’s, microfoons en opnameservers. Maar ook alarmen, gebeurtenissen en toegangscontroles, waardoor u rechtstreeks vanuit de kaart interactie met uw bewakingssysteem heeft. U moet apparaat- en functie-elementen handmatig op de kaart plaatsen. Ga voor meer informatie naar <a href="../../standard_features/sf_sc/sf_operation/sc_workingwithmaps.htm#SC_IntroductionToMaps(796).htm" class="MCXref xref">Kaarten (uitleg)</a>.</li>
+          <li>
+            <span class="uitext">Smart Map</span>: dit type kaart maakt gebruik van een geografisch informatiesysteem om geografische gegevens uit de echte wereld nauwkeurig weer te geven. Hiermee kunt u een preciezer overzicht krijgen van uw camera’s op meerdere locaties. U kunt ook het volgende doen:<ul><li>Gebruik de diensten van Bing Maps en Google Maps.</li><li data-mc-conditions="flcts-features.oem-map-service-content">Gebruik <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> als geografische achtergrond.</li><li>Gebruik het kaartproject van OpenStreetMap als geografische achtergrond.</li><li>CAD-tekeningen (computer-aided design), vormbestanden en afbeeldingen als overlay toevoegen</li></ul><p> Ga voor meer informatie naar <a href="sc_workingwithmap.htm#SC_SmartMapExplained.htm" class="MCXref xref">Smart Map (uitleg)</a>.</p></li>
+        </ul>
+        <p class="note">Kaarten en Smart Maps zijn niet uitwisselbaar. Als u de kaarten gebruikt kunt u het afbeeldingsbestand als een Smart Map gebruiken, maar moet u de apparaten opnieuw toevoegen. U kunt geen kaarten met apparaten overdragen naar een Smart Map. Wel kunt u links naar kaarten toevoegen aan een Smart Map. Raadpleeg <a href="#SC_AddingDeletingOrEditi_2.htm" class="MCXref xref">Links op Smart Map toevoegen, verwijderen of bewerken</a> voor meer informatie.</p>
+      </div>
+      <div>
+        <h2>Smart Map toevoegen aan weergaven<a name="SC_AddSmartMapToView.htm"></a></h2>
+        <p>Als u een <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">Smart Map<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Een kaartfunctionaliteit die gebruikmaakt van een geografisch informatiesysteem om apparaten (zoals camera’s en microfoons), structuren en topografische elementen van een bewakingssysteem te visualiseren in geografisch nauwkeurige, realistische beelden. Kaarten die elementen van deze functionaliteit gebruiken, worden Smart Maps genoemd.</span></a> wilt gebruiken, begint u door deze toe te voegen aan een weergave. Standaard wordt de basiswereldkaart weergegeven. Nadat u een Smart Map hebt toegevoegd, kunt u de geografische achtergrond wijzigen.</p>
+        <p>Volg deze stappen:</p>
+        <ol>
+          <li value="1">Selecteer in het tabblad <span class="uitext">Live</span> of <span class="uitext">Afspelen</span> de weergave die u aan de Smart Map wilt toevoegen.</li>
+          <li value="2"> Klik op <span class="uitext">Instellingen</span> om de instelmodus te openen. </li>
+          <li value="3">Vouw het deelvenster <span class="uitext">Systeemoverzicht</span> uit en sleep vervolgens het onderdeel <span class="uitext">Smart Map</span> naar de gewenste positie in de weergave.</li>
+          <li value="4"> Klik opnieuw op <span class="uitext">Instellingen</span> om de instelmodus af te sluiten. Uw wijzigingen worden opgeslagen.</li>
+          <li value="5">Nu kunt u de geografische achtergrond wijzigen. </li>
+        </ol>
+      </div>
+      <div>
+        <h2>De geografische achtergrond op een Smart Map wijzigen<a name="SC_ChangeTheGeographicBa.htm"></a></h2>
+        <p>Standaard wordt de basiswereldkaart getoond als u een Smart Map aan een weergave toevoegt. Nadat u de Smart Map aan een weergave hebt toegevoegd, kunt u een andere geografische achtergrond selecteren. Elke gebruiker die de Smart Map gebruikt, ziet de eerstvolgende keer de nieuwe achtergrond bij het tonen van deze weergave.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Gesloten" data-mc-alt2="Open" />Vereisten</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>De geografische achtergronden Bing Maps en Google Maps zijn alleen beschikbaar als de systeembeheerder deze beschikbaar heeft gemaakt in <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>.</p>
+          </div>
+        </div>
+        <p>Volg deze stappen:</p>
+        <ol>
+          <li value="1">Selecteer de weergave die de Smart Map bevat.</li>
+          <li value="2">Klik in de werkbalk op <img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">Lagen en aangepaste overlays weergeven of verbergen</span>.</li>
+          <li value="3">Selecteer onder <span class="uitext">Geografische achtergronden</span> de achtergrond en het type detail dat u wilt weergeven. Als u bijvoorbeeld topografische gegevens wilt zien, selecteert u <span class="uitext">Terrein</span>. Als u wegen wilt zien, selecteert u <span class="uitext">Weg</span>.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>Geografische achtergronden (uitleg)<a name="SC_GeographicBackgrounds.htm"></a></h2>
+        <p>U kunt de volgende diensten als de geografische achtergrond van uw <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">Smart Map<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Een kaartfunctionaliteit die gebruikmaakt van een geografisch informatiesysteem om apparaten (zoals camera’s en microfoons), structuren en topografische elementen van een bewakingssysteem te visualiseren in geografisch nauwkeurige, realistische beelden. Kaarten die elementen van deze functionaliteit gebruiken, worden Smart Maps genoemd.</span></a> gebruiken:</p>
+        <ul>
+          <li>Bing Maps</li>
+          <li>Google Maps</li>
+          <li data-mc-conditions="flcts-features.oem-map-service-content">
+            <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+          </li>
+          <li> OpenStreetMap </li>
+        </ul>
+        <p>Nadat u de geografische achtergrond hebt geselecteerd, voegt u de apparaten toe, bijvoorbeeld camera’s, en aangepaste overlays zoals vormbestanden. Raadpleeg <a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">Aangepaste overlays (uitleg)</a> voor meer informatie.</p>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Soorten geografische achtergronden (uitleg)<a name="SC_TypesOfGeographicBack.htm"></a></h2>
+        <p>Nadat u een <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">Smart Map<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Een kaartfunctionaliteit die gebruikmaakt van een geografisch informatiesysteem om apparaten (zoals camera’s en microfoons), structuren en topografische elementen van een bewakingssysteem te visualiseren in geografisch nauwkeurige, realistische beelden. Kaarten die elementen van deze functionaliteit gebruiken, worden Smart Maps genoemd.</span></a> aan een weergave hebt toegevoegd, kunt u een van de volgende geografische achtergronden gebruiken:</p>
+        <ul>
+          <li>
+            <span class="uitext">Basiswereldkaart</span>: hiermee gebruikt u de geografische standaardachtergrond van <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Deze kaart is bedoeld als algemene referentie en bevat geen kenmerken zoals landgrenzen, steden of andere details. De kaart bevat echter wel geografische referentiegegevens, net als de andere geografische achtergronden</li>
+          <li>
+            <span class="uitext">Bing Maps</span>: hiermee maakt u verbinding met Bing Maps.</li>
+          <li>
+            <span class="uitext">Google Maps</span>: hiermee maakt u verbinding met Google Maps. <p class="note">De opties Bing Maps en Google Maps vereisen toegang tot internet en u moet hiervoor een sleutel aanschaffen bij Microsoft of Google.</p></li>
+          <div data-mc-conditions="flcts-features.oem-map-service-content">
+            <li>
+              <span class="uitext">
+                <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+              </span>: maak verbinding met een gratis kaartleverancier. Nadat u <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> hebt ingeschakeld, zijn er geen verdere instellingen nodig.</li>
+            <p>Raadpleeg <a href="#Enable">Milestone Map Service inschakelen</a></p>
+          </div>
+          <div>
+            <li>
+              <p>
+                <span class="uitext">OpenStreetMap</span>: maak verbinding met:</p>
+              <ul>
+                <li>Een commerciële tegelserver naar keuze.</li>
+                <li>
+                  <p>Uw eigen online of lokale tegelserver</p>
+                </li>
+              </ul>
+              <p>Raadpleeg <a href="#SC_ChangeOpenstreetmapTi.htm">OpenStreetMap-tegelserver wijzigen</a>.</p>
+            </li>
+          </div>
+          <li>
+            <span class="uitext">Geen</span>: met deze optie verbergt u de geografische achtergrond. Houd er rekening mee dat de geografische referentiegegevens aanwezig blijven. Raadpleeg ook <a href="#SC_LayersOnSmartMapExpla.htm" class="MCXref xref">Lagen op Smart Map (uitleg)</a></li>
+        </ul>
+        <p>Bing Maps en Google Maps tonen standaard satellietbeelden. U kunt de beelden bijvoorbeeld wijzigen in lucht- of terreinweergave om andere details te tonen.</p>
+      </div>
+      <div data-mc-conditions="flcts-features.oem-map-service-content">
+        <h2>
+          <a name="Enable"></a>Inschakelen <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span></h2>
+        <p>
+          <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> is een online dienst waarmee u verbinding kunt maken met een tegelserver van <span class="mc-variable flvar-brand-company.CompanyLong variable">Milestone Systems</span>. Deze tegelserver gebruikt een gratis, in de handel verkrijgbare kaartdienst. </p>
+        <p>Nadat u <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> hebt ingeschakeld op de Smart Map, gebruikt de Smart Map <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> als geografische achtergrond.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Gesloten" data-mc-alt2="Open" />Vereisten</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Als het veld <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> grijs wordt weergegeven, hebt u niet de vereiste gebruikersrechten om de dienst in of uit te schakelen. Vraag de systeembeheerder om hulp bij het inschakelen van de functie in <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>.</p>
+            <p class="important">
+              <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> vereist internettoegang.</p>
+          </div>
+        </div>
+        <p>Volg deze stappen:</p>
+        <ol>
+          <li value="1">
+            <p>Klik in de rechterbovenhoek op <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> en vervolgens op <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">Instellingen</span> om het venster <span class="uitext">Instellingen</span> te openen.</p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_configuringmaps_mmapserv.png" data-mc-popup-alt="Enable Milestone Map Service.">
+                <img class="MCPopupThumbnail img" data-mc-width="786" data-mc-height="593" src="../../../Images/sc_configuringmaps_mmapserv_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Enable Milestone Map Service." tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="2">Klik in het linkergedeelte op <span class="uitext">Smart Map</span>.</li>
+          <li value="3">Selecteer <span class="uitext">Beschikbaar</span> in het veld <span class="uitext mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>.</li>
+          <li value="4">Klik op <span class="uitext">Sluiten</span>. De volgende keer dat u de Smart Map laadt, wordt <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> als geografische achtergrond gebruikt.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>OpenStreetMap-tegelserver (uitleg)<a name="SC_ChangingOpenstreetmap.htm"></a></h2>
+        <p>Als u OpenStreetMap gebruikt als geografische achtergrond voor uw Smart Map, moet u een tegelserver opgeven. U kunt een lokale tegelserver opgeven, bijvoorbeeld als uw organisatie eigen kaarten heeft voor gebieden zoals vliegvelden of havens, of u kunt een commerciële tegelserver gebruiken.</p>
+        <p class="note">Voor het gebruik van een lokale tegelserver is geen internettoegang nodig.</p>
+        <p>U kunt het adres van de tegelserver op twee manieren opgeven:</p>
+        <ul>
+          <li>In <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>: hier kunt u het adres van de tegelserver instellen in de <span class="mc-variable flvar-product.SC variable">Smart Client</span>-profielen. Het serveradres is van toepassing op alle <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>-gebruikers die aan de <span class="mc-variable flvar-product.SC variable">Smart Client</span>-profielen zijn toegewezen.</li>
+          <li>In <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>: hier kunt u het adres van de tegelserver instellen in het dialoogvenster <span class="uitext">Instellingen</span>. Het serveradres is alleen van toepassing op die installatie</li>
+        </ul>
+        <div>
+          <h2>OpenStreetMap-tegelserver wijzigen<a name="SC_ChangeOpenstreetmapTi.htm"></a></h2>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Gesloten" data-mc-alt2="Open" />Vereisten</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>Als de aan serverzijde opgegeven tegelserver is vergrendeld voor bewerking, wordt het veld grijs weergegeven en kunt u het serveradres niet wijzigen. Vraag de systeembeheerder om hulp bij het inschakelen van de functie in <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>.</p>
+            </div>
+          </div>
+          <p>Volg deze stappen:</p>
+          <ol>
+            <li value="1">
+              <p>Klik in de rechterbovenhoek op <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> en vervolgens op <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">Instellingen</span> om het venster <span class="uitext">Instellingen</span> te openen.</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_mapsettings.png" data-mc-popup-alt="Specify alternative tile server for the smart map.">
+                  <img class="MCPopupThumbnail img" data-mc-width="786" data-mc-height="593" src="../../../Images/sc_mapsettings_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Specify alternative tile server for the smart map." tabindex="" />
+                </a>
+                <br />
+              </p>
+            </li>
+            <li value="2">Klik in het linkergedeelte op <span class="uitext">Smart Map</span>.</li>
+            <li value="3">Voer een van de volgende stappen uit in het veld <span class="uitext">OpenStreetMap-server</span>: <ul><li>Voer het serveradres in. Als het veld grijs wordt weergegeven, is het aan serverzijde vergrendeld</li><li>Schakel het selectievakje <span class="uitext">Server volgen</span> in om de server te gebruiken die aan serverzijde is opgegeven, indien aanwezig.</li></ul></li>
+            <li value="4">Klik op <span class="uitext">Sluiten</span>. De volgende keer dat u de Smart Map laadt, wordt de opgegeven OpenStreetMap-server gebruikt.</li>
+          </ol>
+          <p class="important">Als geen serveradres is opgegeven of als het serveradres ongeldig is, is OpenStreetMap niet beschikbaar als geografische achtergrond.</p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Weergeven of verbergen van lagen op Smart Map<a name="SC_ShowingOrHidingLayers.htm"></a></h2>
+        <p>U kunt lagen op de Smart Map in- en uitschakelen, afhankelijk van wat uw wilt zien.</p>
+        <div>
+          <h3>Lagen op Smart Map (uitleg)<a name="SC_LayersOnSmartMapExpla.htm"></a></h3>
+          <p>Gebruik lagen om de informatie te filteren die op de <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">Smart Map<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Een kaartfunctionaliteit die gebruikmaakt van een geografisch informatiesysteem om apparaten (zoals camera’s en microfoons), structuren en topografische elementen van een bewakingssysteem te visualiseren in geografisch nauwkeurige, realistische beelden. Kaarten die elementen van deze functionaliteit gebruiken, worden Smart Maps genoemd.</span></a> wordt weergegeven. Er zijn drie soorten lagen op een Smart Map:</p>
+          <ul>
+            <li>
+              <span class="uitext">Systeemelementen</span>: deze omvatten camera’s, links en locaties</li>
+            <li>
+              <span class="uitext">Aangepaste overlays</span>: bitmapafbeeldingen, CAD-tekeningen en vormbestanden</li>
+            <li>
+              <span class="uitext">Geografische achtergronden</span>: de basiswereldkaart of een van de volgende diensten:<ul><li>Bing Maps</li><li>Google Maps</li><li data-mc-conditions="flcts-features.oem-map-service-content"><span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span></li><li> OpenStreetMap </li></ul></li>
+          </ul>
+          <p class="note">Bing Maps en Google Maps zijn alleen beschikbaar als geografische achtergrond als de systeembeheerder deze heeft ingeschakeld in <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. Raadpleeg <a href="#SC_GeographicBackgrounds.htm" class="MCXref xref">Geografische achtergronden (uitleg)</a> voor meer informatie.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Volgorde van lagen (uitleg)<a name="SC_OrderOfLayersExplaine.htm"></a></h3>
+          <p>Alle systeemelementen van elk type bevinden zich op dezelfde <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term26">laag<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>De geografische achtergrond op een Smart Map, een aangepaste overlay of een systeemelement, zoals een camera. Lagen zijn alle grafische elementen die op de Smart Map bestaan.</span></a>. Zo bevinden bijvoorbeeld alle camera’s zich op dezelfde laag. Dit houdt in dat wanneer u de cameralaag verwijdert, alle camera’s worden verborgen. Van boven naar onder worden lagen voor systeemelementen geordend in de volgende volgorde: locaties, camera’s, links en geografische achtergrond. U kunt deze volgorde niet wijzigen.</p>
+          <p>De geografische achtergrond is altijd de onderste laag op een Smart Map. U kunt schakelen tussen geografische achtergronden, maar u kunt slechts één geografische achtergrond tegelijk selecteren.</p>
+          <p>Aangepaste overlays worden toegevoegd als afzonderlijke lagen en worden gestapeld in de volgorde waarin ze zijn toegevoegd aan de Smart Map. U kunt de volgorde wijzigen door standaardinstellingen voor de kaart te configureren. </p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Gesloten" data-mc-alt2="Open" />Voorbeeld</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>Een stadsplanner heeft een vormbestand dat de stadsgrenzen aangeeft en een vormbestand dat alle belangrijke wegen in de stad bevat. De planner kan de volgorde van de lagen wijzigen zodat de wegen boven op de stadsgrenzen worden getoond. Dit geeft een algemeen beeld van waar de camera’s zich bevinden in de stad, en de mogelijkheid om in te zoomen om de naam te zien van de straat waar een bepaalde camera op is gericht.</p>
+            </div>
+          </div>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Lagen op een Smart Map weergeven of verbergen<a name="SC_ShowOrHideLayersOnSma.htm"></a></h3>
+          <p>U kunt lagen op de Smart Map weergeven of verbergen, inclusief de geografische achtergrond. Dit is bijvoorbeeld nuttig wanneer u zich op een bepaald element wilt richten of als u de inhoud die op de Smart Map wordt weergegeven wilt vereenvoudigen.</p>
+          <p>Volg deze stappen:</p>
+          <ol>
+            <li value="1">Klik in de werkbalk op <img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">Lagen en aangepaste overlays weergeven of verbergen</span>.</li>
+            <li value="2">Als u systeemelementen en aangepaste overlays wilt weergeven of verbergen, schakelt u de selectievakjes in of uit.</li>
+            <li value="3">Als u de geografische achtergrond wilt verbergen, selecteert u <span class="uitext">Geen</span>.</li>
+          </ol>
+          <p class="note">Als u <span class="uitext">Geen</span> selecteert, wordt de geografische achtergrond verborgen, maar blijven de geografische referentiegegevens van toepassing op de Smart Map. Als u bijvoorbeeld een nieuw vormbestand toevoegt dat ruimtelijke referentiegegevens bevat, gebruikt het systeem nog steeds de ruimtelijke referentiegegevens om het bestand op de kaart te plaatsen.</p>
+          <p class="note">Door microfoons te verbergen, wordt de huidige niet-gedempte microfoon gedempt totdat u microfoons weer weergeeft.</p>
+        </div>
+        <div>
+          <h3>Standaardinstellingen voor een Smart Map opgeven<a name="SC_ManageDefaultSettings(65803).htm"></a></h3>
+          <p>Nadat u een Smart Map aan een weergave hebt toegevoegd, en overlays, camera’s en links hebt toegevoegd, kunt u de standaardinstellingen voor de aangepaste overlays opgeven. U kunt ook aangepaste overlays verwijderen om op te ruimen.</p>
+          <p>Volg deze stappen:</p>
+          <ol>
+            <li value="1">Klik op <span class="uitext">Instellingen</span>.</li>
+            <li value="2">Klik op <img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">Standaardinstellingen beheren</span>.</li>
+            <li value="3">Voer een van de volgende stappen uit: <ul><li>Als u een overlay wilt weergeven of verbergen, schakelt u het selectievakje in of uit.</li><li>Als u de volgorde wilt wijzigen, kunt u de overlay naar een nieuwe positie in de lijst slepen met de greep ervoor. Lagen worden geordend van boven naar onder in de lijst</li><li>Als u een overlay wilt verwijderen, houdt u de muisaanwijzer boven de overlay en klikt u vervolgens op <span class="uitext">Verwijderen</span></li></ul></li>
+            <li value="4">Klik op <span class="uitext">Opslaan</span>.</li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Aangepaste overlays toevoegen, verwijderen of bewerken<a name="SC_AddingDeletingOrEditi.htm"></a></h2>
+        <div>
+          <h3>Aangepaste overlays (uitleg)<a name="SC_CustomOverlaysExplain.htm"></a></h3>
+          <p>U kunt de volgende soorten bestanden toevoegen als aangepaste overlays op een Smart Map in <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>:</p>
+          <ul>
+            <li>
+              <span class="uitext">Vormbestand</span>: kan georuimtelijke vectorgegevens bevatten, zoals punten, lijnen, veelhoeken en attributen die objecten op een kaart voorstellen zoals muren, wegen of geografische kenmerken zoals rivieren of meren. Kantoren voor stadsplanning en -beheer gebruiken bijvoorbeeld vaak vormbestanden omdat deze goed schaalbaar zijn bij het in- en uitzoomen. Bovendien zijn de bestanden vaak kleiner dan CAD-tekeningen of bitmapafbeeldingen.</li>
+            <li>
+              <span class="uitext">CAD</span>: een CAD-tekening (computer-aided design) is handig als Smart Map-overlay omdat, net als vormbestanden, CAD-gegevens gebruik kunnen maken van een coördinatenstelsel en ruimtelijke referentiegegevens om een nauwkeurige geografische context te bieden. U kunt bijvoorbeeld een gedetailleerde satellietkaart of wegenkaart van een locatie gebruiken</li>
+            <li>
+              <span class="uitext">Afbeelding</span>: als u een afbeeldingsbestand hebt, zoals de plattegrond van een gebouw, kunt u dit als overlay toevoegen aan de Smart Map. U kunt de volgende typen afbeeldingsbestanden gebruiken: PNG, BMP, GIF, JPG, JPEG, PHG, TIF en TIFF</li>
+          </ul>
+          <p class="note">Om de aangepaste overlays te benadrukken, kunt u andere soorten lagen tijdelijk verbergen. Raadpleeg <a href="#SC_LayersOnSmartMapExpla.htm" class="MCXref xref">Lagen op Smart Map (uitleg)</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Aangepaste overlays en locaties (uitleg)<a name="SC_CustomOverlaysAndLoca.htm"></a></h3>
+          <p>U kunt snel naar aangepaste overlays gaan die u aan uw Smart Map hebt toegevoegd, zoals beschreven in <a href="sc_workingwithmap.htm#SC_FindLocationOfCustomO.htm" class="MCXref xref">Naar aangepaste overlays op een Smart Map gaan</a>. In de instellingen kunt u echter een verbinding tot stand brengen tussen aangepaste overlays en locaties. Dit betekent dat wanneer u een nieuwe aangepaste overlay toevoegt, in <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> een locatie wordt gemaakt met dezelfde naam als de overlay en op precies dezelfde plek op de kaart. De locatie van de aangepaste overlay komt nu beschikbaar in de <span class="uitext">Selecteer een locatie</span>-lijst.</p>
+          <p>
+            <img src="../../../Images/custom_overlays_and_locations.jpg" alt="" />
+          </p>
+          <p>De overlay en locatie zijn echter niet aan elkaar gekoppeld. U kunt de locatie bijvoorbeeld verwijderen of hernoemen zonder de overlay te wijzigen, en omgekeerd.</p>
+          <p class="note">Raadpleeg <a href="#SC_AddLocationsToCustomO.htm" class="MCXref xref">Locaties toevoegen aan aangepaste overlays (Smart Map)</a> om deze functie in te schakelen.</p>
+        </div>
+        <div>
+          <h3>Aangepaste overlay toevoegen aan Smart Map<a name="SC_AddCustomOverlayOnSma.htm"></a></h3>
+          <p>Vergroot het detailniveau op uw Smart Map door aangepaste overlays toe te voegen. Wanneer u een <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term8">aangepaste overlay<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Een grafisch element dat gebruikers zelf definiëren en kunnen toevoegen aan een Smart Map, bijvoorbeeld om een plattegrond in een gebouw te laten zien of om randen tussen gebieden te markeren. Een aangepaste overlay kan een afbeelding, een CAD-tekening of een vormbestand zijn.</span></a> toevoegt, wordt in <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> een locatie gemaakt met dezelfde naam als de overlay.</p>
+          <p>Volg deze stappen:</p>
+          <ol>
+            <li value="1">Selecteer de weergave met de Smart Map en klik vervolgens op <span class="uitext">Instellingen</span>.</li>
+            <li value="2">Klik op <img src="../../../Images/add_custom_overlay_on_1.png" alt="" /><span class="uitext">Aangepaste overlay toevoegen</span>: <ul><li>Als de overlay die u toevoegt geografische referentiegegevens bevat, klikt u ergens op de Smart Map. <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> gebruikt de geografische referentiegegevens om de overlay op de juiste geografische locatie te plaatsen. Daarnaast wordt de Smart Map gecentreerd op de overlay met een standaardzoomniveau</li><li>Als de overlay geen geografische referentiegegevens bevat, gaat u naar het punt op de kaart waar u het element wilt toevoegen en klikt u vervolgens op het punt op de Smart Map</li><p class="tip">Voordat u een overlay toevoegt, is het raadzaam in te zoomen op de locatie op de kaart waar u deze wilt plaatsen. Op deze manier kunt u de overlay nauwkeuriger positioneren.</p></ul></li>
+            <li value="3">Voer een naam in voor de overlay.</li>
+            <li value="4">Afhankelijk van het type dat u selecteert: <ul><li><span class="uitext">Afbeelding</span>: selecteer het afbeeldingsbestand en klik vervolgens op <span class="uitext">OK</span>.</li><li><span class="uitext">Vormbestand</span>: selecteer het SHP-bestand. Als u een PRJ-bestand hebt, wordt dit gevonden in <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> en hoeft u alleen op <span class="uitext">OK</span> klikken. Als u geen PRJ-bestand hebt, kunt u de positie van de overlay handmatig aanpassen nadat u deze hebt toegevoegd. U kunt ook een kleur toepassen. Door het toevoegen van een kleur kunt u het vormbestand bijvoorbeeld beter laten uitkomen op de Smart Map.</li><li><span class="uitext">CAD</span>: selecteer het DWG-bestand. Als u een PRJ-bestand hebt, klikt u op <span class="uitext">OK</span>. Als u geen PRJ-bestand hebt en geografische referentiegegevens wilt gebruiken om het bestand op de Smart Map te positioneren, voert u de SRID (spatial reference identifier) in en klikt vervolgens op <span class="uitext">OK</span>. Als u geen PRJ-bestand of SRID hebt, kunt u de positie van de overlay handmatig aanpassen nadat u deze hebt toegevoegd</li><p class="note">Raadpleeg <a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">Aangepaste overlays (uitleg)</a> voor meer informatie over de soorten overlays.</p></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Locaties toevoegen aan aangepaste overlays (Smart Map)<a name="SC_AddLocationsToCustomO.htm"></a></h3>
+          <p>U kunt de <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> zodanig configureren dat locaties automatisch worden toegevoegd aan <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term8">aangepaste overlays<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Een grafisch element dat gebruikers zelf definiëren en kunnen toevoegen aan een Smart Map, bijvoorbeeld om een plattegrond in een gebouw te laten zien of om randen tussen gebieden te markeren. Een aangepaste overlay kan een afbeelding, een CAD-tekening of een vormbestand zijn.</span></a> op uw Smart Map. Hierdoor kunt u naar de aangepaste overlays gaan via de lijst <span class="uitext">Selecteer een locatie</span>. </p>
+          <p>Volg deze stappen:</p>
+          <ol>
+            <li value="1">Klik in de werkbalk van de toepassing op <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> en vervolgens op <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">Instellingen</span> om het venster <span class="uitext">Instellingen</span> te openen.</li>
+            <li value="2">Ga naar het tabblad <span class="uitext">Smart Map</span>.</li>
+            <li value="3">Selecteer <span class="uitext">Ja</span> in de lijst <span class="uitext">Maak locatie als laag wordt toegevoegd</span>.</li>
+            <li value="4">Sluit het venster om de wijzigingen op te slaan.</li>
+          </ol>
+          <p class="note">Raadpleeg <a href="#SC_CustomOverlaysAndLoca.htm" class="MCXref xref">Aangepaste overlays en locaties (uitleg)</a> voor meer informatie.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Aangepaste overlay op een Smart Map verwijderen<a name="SC_DeleteCustomOverlayOn.htm"></a></h3>
+          <ol>
+            <li value="1">Selecteer de weergave met de Smart Map en klik vervolgens op <span class="uitext">Instellingen</span>.</li>
+            <li value="2">Klik in de werkbalk op <img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">Standaardinstellingen beheren</span>.</li>
+            <li value="3">Houd de muisaanwijzer boven de aangepaste overlay en klik vervolgens op <span class="uitext">Verwijderen</span>.</li>
+            <li value="4">Klik op <span class="uitext">Opslaan</span> om de aangepaste overlay te verwijderen.</li>
+            <li value="5">Optioneel: Als voor de aangepaste overlay een locatie is gemaakt, wilt u deze mogelijk ook verwijderen. Raadpleeg <a href="#SC_AddingDeletingOrEditi_3.htm" class="MCXref xref">Locaties op Smart Map toevoegen, verwijderen of bewerken</a> voor meer informatie.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Maak gebieden in vormbestanden beter zichtbaar (Smart Map)<a name="SC_MakeAreasInShapefiles.htm"></a></h3>
+          <p class="note">Dit onderwerp is alleen relevant als u vormbestanden met veelhoeken gebruikt.</p>
+          <p>Als u op uw Smart Map een vormbestand wilt gebruiken dat uit dicht-opeenstaande veelhoeken bestaat, kan het nodig zijn de afzonderlijke veelhoeken van elkaar te onderscheiden. U kunt dit doen door de doorzichtigheid te verminderen van de kleur die u kiest voor het vormbestand. De grenzen van de veelhoeken vallen dan meer op.</p>
+          <p>Volg deze stappen:</p>
+          <ol>
+            <li value="1">Volg de stappen die worden beschreven in <a href="#SC_AddCustomOverlayOnSma.htm" class="MCXref xref">Aangepaste overlay toevoegen aan Smart Map</a>.</li>
+            <li value="2">
+              <p>Sleep bij het selecteren van de kleur de schuifregelaar <span class="uitext">Doorzichtigheid</span> naar links tot u tevreden bent met het transparantieniveau.</p>
+              <p>
+                <img src="../../../Images/make_areas_in_shapefiles_more.jpg" alt="" />
+              </p>
+            </li>
+            <li value="3">Klik op <span class="uitext">Opslaan</span>.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Positie, grootte of uitlijning van een aangepaste overlay wijzigen<a name="SC_AdjustPositionSizeOrA.htm"></a></h3>
+          <p>U kunt een overlay verplaatsen naar een andere positie op de kaart, de overlay groter of kleiner maken, en deze draaien. Dit is bijvoorbeeld nuttig als uw overlay geen geografische referentiegegevens bevat, of als de overlay wel geografische referentiegegevens bevat, maar niet precies wordt uitgelijnd met de geografische achtergrond.</p>
+          <p>Volg deze stappen:</p>
+          <ol>
+            <li value="1">Selecteer de weergave met de Smart Map en klik vervolgens op <span class="uitext">Instellingen</span>.</li>
+            <li value="2">Rechtsklik op de overlay en selecteer <span class="uitext">Positie bewerken</span>.</li>
+            <li value="3">De overlay roteren of het formaat aanpassen: <ul><li>Klik en sleep een hoekgreep</li><li><p>Om de overlay rond een bepaald punt te roteren, beweegt u het draaipunt naar die plaats op de kaart. Klik vervolgens en sleep een hoekgreep </p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/adjust_position_size_or_alignment.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="273" data-mc-height="261" src="../../../Images/adjust_position_size_or_alignment_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="" tabindex="" /></a></p></li></ul></li>
+            <li value="4">Als u de overlay op de kaart wilt verplaatsen, klikt en sleept u de overlay.</li>
+            <li value="5">Als u de wijziging wilt opslaan, klikt u op <span class="uitext">Opslaan</span>.</li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Apparaten op Smart Map toevoegen, verwijderen of bewerken<a name="SC_AddingDeletingOrEditi_1.htm"></a></h2>
+        <p>U kunt apparaten toevoegen aan een Smart Map in hun werkelijke posities in uw omgeving. Dit geeft een goed overzicht van het bewakingssysteem en kan u helpen te reageren op een situatie. Als u bijvoorbeeld een verdachte wilt volgen tijdens een actueel incident, kunt u klikken op de camera’s op de kaart om de bijbehorende beelden te bekijken.</p>
+        <p>Nadat u een camera hebt toegevoegd aan een Smart Map, kunt u het beeldveld voor het camerapictogram aanpassen zodat dit overeenkomt met het beeldveld van de werkelijke camera. Zo kunt u eenvoudig de camera vinden die een bepaald gebied bestrijkt. Daarnaast kunt u een pictogram selecteren dat de camera op de kaart vertegenwoordigt, zodat u gemakkelijker het type camera op de kaart kunt vaststellen.</p>
+        <p>U kunt op Smart Maps werken met de volgende apparaattypen:</p>
+        <ul>
+          <li>Camera’s</li>
+          <li>Invoerapparaten</li>
+          <li>Microfoons</li>
+        </ul>
+        <div data-mc-conditions="">
+          <h3>Apparaten toevoegen aan Smart Map<a name="SC_AddCamerasToSmartMap.htm"></a></h3>
+          <p>Als de geocoördinaten van het apparaat door uw systeembeheerder zijn opgegeven in <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>, wordt het apparaat automatisch op de Smart Map gepositioneerd zodra u de Smart Map toevoegt. Zo niet, dan moet u het apparaat zelf op de juiste geografische locatie positioneren.</p>
+          <ol>
+            <li value="1">Selecteer de weergave met de Smart Map en klik vervolgens op <span class="uitext">Instellingen</span>.</li>
+            <li value="2">U kunt als volgt een apparaat of groep apparaten toevoegen: <p class="tip">Voordat u het apparaat toevoegt, is het raadzaam in te zoomen op de locatie op de kaart. Op deze manier kunt u het apparaat nauwkeuriger positioneren.</p><ul><li>Vouw het deelvenster <span class="uitext">Systeemoverzicht</span> uit, zoek het apparaat of de apparaatgroep en sleep deze vervolgens naar het punt op de Smart Map waar u deze wilt weergeven. U kunt apparaten naderhand naar een andere positie slepen</li><li>Selecteer in de Smart Map-werkbalk <img src="../../../Images/add-a-device-to-smart-map.png" alt="" /><span class="uitext">Apparaat toevoegen</span> &gt; selecteer het apparaattype.<ul><li>Voorbeeld: In het geval van een camera selecteert u <img src="../../../Images/add_cameras_to_map.png" alt="" /><span class="uitext">Camera toevoegen</span> en selecteert u vervolgens de camera.</li></ul></li><li>Sleep het apparaat naar de Smart Map.</li><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_adddevice.png" data-mc-popup-alt="Add a device to your smart map."><img class="MCPopupThumbnail img" data-mc-width="709" data-mc-height="823" src="../../../Images/sc_smap_adddevice_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add a device to your smart map." tabindex="" /></a><br /></ul></li>
+            <li value="3">Klik op <span class="uitext">Instellingen</span> om de wijziging op te slaan en de instelmodus af te sluiten.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Wijzig beeldveld en richting van camera<a name="SC_ChangeFieldOfViewAndD.htm"></a></h3>
+          <p>Nadat de camera aan de Smart Map is toegevoegd, kunt u het blikveld en de richting wijzigen door het camerapictogram aan te passen.</p>
+          <p class="tip">Als u hebt uitgezoomd op de kaart moet u mogelijk inzoomen totdat het weergaveveld wordt weergegeven.</p>
+          <ol>
+            <li value="1">Selecteer de weergave die de Smart Map bevat waarmee u wilt werken.</li>
+            <li value="2">Klik op <span class="uitext">Instellingen</span> om het camerapictogram te bewerken.</li>
+            <li value="3">
+              <p>Klik op het camerapictogram.</p>
+              <p>
+                <img src="../../../Images/change_field_of_view_and_direction.png" alt="" />
+              </p>
+            </li>
+            <li value="4">Gebruik de draaigreep om de camera in de juiste richting te draaien.</li>
+            <li value="5">Als u de breedte, lengte en hoek van het weergaveveld wilt aanpassen, klikt en sleept u de grepen bij de voorste rand van het weergaveveld.</li>
+            <li value="6">Klik op <span class="uitext">Instellingen</span> om de wijzigingen op te slaan en de instelmodus af te sluiten.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Apparaatpictogram selecteren of wijzigen<a name="SC_SelectOrChangeTheIcon.htm"></a></h3>
+          <p>U kunt een apparaatpictogram kiezen dat past bij het type apparaat dat u gebruikt.</p>
+          <ol>
+            <li value="1">Selecteer de weergave die de Smart Map bevat waarmee u wilt werken.</li>
+            <li value="2">
+              <p>Klik op <span class="uitext">Instellingen</span> en dubbelklik vervolgens op het apparaatpictogram op de kaart.</p>
+              <p>
+                <img src="../../../Images/select_or_change_the_icon.png" alt="" />
+              </p>
+            </li>
+            <li value="3">Klik op <span class="uitext">Icoon selecteren</span> en selecteer het pictogram voor het apparaat.</li>
+            <li value="4">Klik opnieuw op <span class="uitext">Instellen</span> om de wijziging op te slaan.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Apparaatgegevens weergeven of verbergen<a name="SC_ShowOrHideInformation.htm"></a></h3>
+          <p>U kunt device gegevens over apparaten weergeven of verbergen op een Smart Map. Dit is bijvoorbeeld nuttig wanneer u de hoeveelheid inhoud op de Smart Map wilt vergroten of verkleinen.</p>
+          <ol>
+            <li value="1">Selecteer de weergave die de Smart Map bevat waarmee u wilt werken.</li>
+            <li value="2">Klik op <img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">Lagen en aangepaste overlays weergeven of verbergen</span>.</li>
+            <li value="3">Schakel de selectievakjes in of uit voor de informatie die u wilt tonen of verbergen.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Luisteren naar audio van microfoon op Smart Map</h3>
+          <p>Nadat u microfoons hebt toegevoegd aan een Smart Map, kunt u luisteren naar audio van één microfoon tegelijk op het tabblad <span class="uitext">Live</span>. </p>
+          <p>Volg deze stappen:</p>
+          <ol>
+            <li value="1">
+              <p>Navigeer in het tabblad <span class="uitext">Live</span> naar de locatie op de Smart Map waar de microfoon is geplaatst.</p>
+            </li>
+            <li value="2">
+              <p>Dubbelklik op de microfoon om deze te dempen of het dempen op te heffen.</p>
+              <p class="tip">U kunt ook rechtsklikken op de microfoon en <span class="uitext">Microfoon dempen</span> of <span class="uitext">Dempen opheffen</span> selecteren.</p>
+            </li>
+          </ol>
+        </div>
+        <div>
+          <h3>Apparaten verwijderen van Smart Map<a name="SC_DeletingCamerasOnSmar.htm"></a></h3>
+          <p>U kunt apparaten verwijderen, bijvoorbeeld als deze fysiek zijn verwijderd of per ongeluk zijn toegevoegd. Door een apparaat te verwijderen worden ook de positiegegevens van het apparaat, zoals de geocoördinaten, verwijderd uit uw VMS-systeem.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Gesloten" data-mc-alt2="Open" />Vereisten</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>De volgende gebruikersrechten moeten worden ingeschakeld in <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>:</p>
+              <ul>
+                <li>Smart Maps bewerken</li>
+                <li>Apparaten bewerken</li>
+              </ul>
+            </div>
+          </div>
+          <p>Volg deze stappen:</p>
+          <ol>
+            <li value="1">Navigeer naar het apparaat dat u wilt verwijderen.</li>
+            <li value="2"> Klik op <span class="uitext">Instellingen</span> om de instelmodus te openen. </li>
+            <li value="3">
+              <p>Als u een enkel apparaat wilt verwijderen, rechtsklikt u op het apparaat en klikt u op <span class="uitext">Verwijderen</span>.</p>
+              <p>Voorbeeld: In het geval van een camera klikt u op <span class="uitext">Camera verwijderen</span>.</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_removecamera.png" data-mc-popup-alt="Remove camera from your smart map.">
+                  <img class="MCPopupThumbnail img" data-mc-width="284" data-mc-height="209" src="../../../Images/sc_smap_removecamera_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: 0;" alt="Remove camera from your smart map." tabindex="" />
+                </a>
+              </p>
+            </li>
+            <li value="4">Meerdere camera’s verwijderen:<ol><li value="1"><p>Klik in de Smart Map-werkbalk op <img src="../../../Images/preview_videos_from_several.png" alt="" /><span class="uitext">Meerdere camera’s selecteren</span>.</p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_cluster_multiselect.png" data-mc-popup-alt="Select multipe cameras on your smart map."><img class="MCPopupThumbnail img" data-mc-width="1056" data-mc-height="672" src="../../../Images/sc_smap_cluster_multiselect_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: 0;" alt="Select multipe cameras on your smart map." tabindex="" /></a><br /></p></li><li value="2">Klik en sleep om meerdere camera’s te selecteren. Andere typen apparaten, bijvoorbeeld invoerapparaten, worden niet toegevoegd aan de selectie.</li><li value="3">Rechtsklik en selecteer <span class="uitext">Camera’s verwijderen</span>.</li></ol></li>
+            <li value="5">U kunt als volgt meerdere apparaten verwijderen die geen camera’s zijn:<ol><li value="1">Houd Ctrl ingedrukt op de Smart Map. </li><li value="2">Houd Ctrl ingedrukt en klik op de apparaten die u wilt verwijderen.</li><li value="3">Rechtsklik op een van de geselecteerde apparaten en selecteer Verwijderen.</li></ol></li>
+            <li value="6"> Klik opnieuw op <span class="uitext">Instellingen</span> om de instelmodus af te sluiten. Uw wijzigingen worden opgeslagen.</li>
+          </ol>
+          <p class="tip">U kunt een enkel apparaat ook verwijderen door dit te selecteren en vervolgens op <span class="uitext">Delete</span> op het toetsenbord te drukken.</p>
+        </div>
+      </div>
+      <div>
+        <h2>Links op Smart Map toevoegen, verwijderen of bewerken<a name="SC_AddingDeletingOrEditi_2.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Links op Smart Map (uitleg)<a name="SC_LinksOnSmartMapExplai.htm"></a></h3>
+          <p>U kunt links toevoegen in <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> die naar locaties op de Smart Map gaan of naar kaarten gaan. Zo kunt u snel locaties bezoeken of een ander type kaart bekijken zonder naar een andere weergave te schakelen. U kunt niet linken met een andere Smart Map. Raadpleeg <a href="#SC_DifferencesBetweenMap.htm" class="MCXref xref">Verschillen tussen kaarten en Smart Maps (uitleg)</a> voor meer informatie.</p>
+          <p>Links tonen locaties en kaarten als volgt:</p>
+          <ul>
+            <li>Een link naar een locatie toont de locatie in de huidige weergave. Als u wilt terugkeren naar een locatie die u eerder hebt bekeken, klikt u op <img src="../../../Images/backtracking_to_previous_locations.png" alt="" /><span class="uitext">Terug</span> in de Smart Map-werkbalk.</li>
+            <li>Een link naar een kaart toont de kaart in een zwevend venster. Zo kunt u beide soorten kaarten tegelijk openen. U kunt de kaart weergeven en er interactie mee hebben, maar u kunt in het zwevende venster geen wijzigingen aanbrengen, zoals camera’s toevoegen</li>
+          </ul>
+          <p class="note">Als u links met kleurcodes hebt, of wilt dat de links beter zichtbaar zijn op de kaart, kunt u een kleur voor de link opgeven. Standaard zijn links naar Smart Map-locaties blauw en links naar oudere kaarten rood. Als u een andere kleur gebruikt, is het raadzaam voor elk type link dezelfde kleur te gebruiken. Dit maakt het bijvoorbeeld eenvoudiger om onderscheid te maken tussen links wanneer u lagen gebruikt om onderdelen op de kaart te filteren.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Link naar Smart Map-locatie of kaart toevoegen<a name="SC_AddLinkToSmartMapLoca.htm"></a></h3>
+          <p>Door links aan uw Smart Map toe te voegen kunt u snel locaties bezoeken of een ander type kaart bekijken zonder naar een andere weergave te schakelen.</p>
+          <p>Volg deze stappen:</p>
+          <ol>
+            <li value="1">Selecteer de weergave met de Smart Map en klik vervolgens op <span class="uitext">Instellingen</span>.</li>
+            <li value="2">Ga naar het punt op de kaart waar u de link wilt toevoegen.</li>
+            <li value="3">Klik in de werkbalk van de kaart op <img src="../../../Images/add_link_to_map_location.png" alt="" /><span class="uitext">Een link toevoegen</span> en klik vervolgens op het punt op de kaart waar u de link wilt toevoegen.</li>
+            <li value="4">Geef aan of u een link naar een Smart Map-locatie of een kaart wilt toevoegen en klik vervolgens op <span class="uitext">Toevoegen</span>.</li>
+            <li value="5">
+              <p>Voer een naam in voor de link.</p>
+              <p class="tip">U kunt de titel van de link weergeven op de Smart Map als u <span class="uitext">Pictogram en tekst</span> als weergavestijl selecteert. Doorgaans geeft een naam aan waar de link naartoe gaat.</p>
+            </li>
+            <li value="6">Selecteer in het veld <span class="uitext">Doellocatie</span> de kaart of locatie waar de link naartoe gaat.</li>
+            <li value="7">Geef in het veld <span class="uitext">Weergavestijl</span> op of u de naam en het linkpictogram, of alleen het linkpictogram op de kaart wilt tonen.</li>
+            <li value="8">Optioneel: Klik op <span class="uitext">Kleur</span> om een kleur voor uw link op te geven.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Een link op een Smart Map bewerken of verwijderen<a name="SC_EditOrDeleteLinkOnSma.htm"></a></h3>
+          <p>Als u een link op uw Smart Map heeft toegevoegd, kunt u deze bewerken of verwijderen.</p>
+          <p>Volg deze stappen:</p>
+          <ol>
+            <li value="1"> Klik op <span class="uitext">Instellingen</span> om de instelmodus te openen. </li>
+            <li value="2">Om de link te bewerken, rechtsklikt u op de link en selecteert <span class="uitext">Link bewerken</span>.</li>
+            <li value="3">Om de link te verwijderen, doet u het volgende:<ul><li>Rechtsklik op de link en selecteer <span class="uitext">Link verwijderen</span>.</li><li>Selecteer de link en druk op <span class="uitext">Delete</span> op het toetsenbord</li></ul></li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Locaties op Smart Map toevoegen, verwijderen of bewerken<a name="SC_AddingDeletingOrEditi_3.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Locaties op Smart Map (uitleg)<a name="SC_LocationsOnSmartMapEx.htm"></a></h3>
+          <p>U kunt locaties maken op de punten op de Smart Map die voor u belang zijn. U kunt bijvoorbeeld locaties maken voor uw thuiskantoor en de overige kantoren. Locaties bieden u een volledig overzicht van uw omgeving en bovendien zijn ze nuttig voor navigatie op de Smart Map. </p>
+          <p class="note">Wanneer u een aangepaste overlay toevoegt wordt, afhankelijk van uw configuratie, in <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> een locatie toegevoegd met dezelfde naam als de overlay. Zo kunt u bijvoorbeeld eenvoudiger naar de overlay op de Smart Map gaan wanneer u hebt uitgezoomd. De overlay en locatie zijn echter niet aan elkaar gekoppeld. U kunt de locatie bijvoorbeeld verwijderen of hernoemen zonder de overlay te wijzigen, en omgekeerd. Raadpleeg <a href="#SC_AddingDeletingOrEditi.htm" class="MCXref xref">Aangepaste overlays toevoegen, verwijderen of bewerken</a> voor meer informatie.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Thuislocaties voor Smart Map (uitleg)<a name="SC_HomeLocationsForSmart.htm"></a></h3>
+          <p>Thuislocaties zijn specifiek voor het weergave-item waarin zij ingesteld zijn. U kunt verschillende thuislocaties in verschillende weergave-items hebben. Als geen thuislocatie is opgegeven voor een weergave-item, toont het weergave-item de gehele wereld, ongeacht het soort achtergrond dat u gebruikt. Dit is ook het geval als u de thuislocatie verwijdert.</p>
+          <p>Terwijl u werkt met de Smart Map kunt u klikken op <img src="../../../Images/home_locations_for_map.png" alt="" /><span class="uitext">Basiskaart</span> om terug te gaan naar de thuislocatie. Dit is hetzelfde als het opnieuw instellen van de Smart Map in de weergave. U keert terug naar de standaardinstellingen voor het weergave-item en de geschiedenis van de bezochte locaties wordt uit het systeem verwijderd.</p>
+          <p class="note">Als u een nieuwe thuislocatie selecteert, heeft dit invloed op iedereen die het weergave-item gebruikt. Als iemand anders een andere thuislocatie heeft ingesteld, wordt deze instelling door u gewijzigd.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Locatie toevoegen aan Smart Map<a name="SC_AddLocationToSmartMap.htm"></a></h3>
+          <p>Om een overzicht te houden van de plaatsen die u interesseren, kunt u locaties toevoegen waardoor u snel op de Smart Map naar die plaatsen kunt navigeren.</p>
+          <p>Volg deze stappen:</p>
+          <ol>
+            <li value="1">Selecteer de weergave met de Smart Map en klik op <span class="uitext">Instellingen</span>.</li>
+            <li value="2">Desgewenst kunt u pannen en inzoomen op het punt op de Smart Map waar u de locatie wilt toevoegen.</li>
+            <li value="3">Klik in de werkbalk op <img src="../../../Images/add_location_to_map.png" alt="" /><span class="uitext">Locatie toevoegen</span> en klik vervolgens op het punt op de Smart Map.</li>
+            <li value="4">Geef de locatie een naam en voeg vervolgens de volgende optionele details toe: <ul><li>Geef een zoomniveau op dat wordt toegepast wanneer iemand naar de locatie op de Smart Map gaat.</li><li>Selecteer een kleur voor het locatiepictogram. Het is handig om locaties van kleurcodes te voorzien, bijvoorbeeld om onderscheid te maken tussen verschillende soorten locaties. Dit kan zijn gebaseerd op de functie of het type van de locatie, of de prioriteit van de locatie.</li><li>Optioneel: Maak van de locatie uw thuislocatie. De Smart Map wordt op deze locatie gecentreerd met het standaardzoomniveau als u klikt op <img src="../../../Images/home_locations_for_map.png" alt="" /><span class="uitext">Basiskaart</span></li></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Bewerk of verwijder locatie op Smart Map<a name="SC_EditOrDeleteLocationO.htm"></a></h3>
+          <p>Zodra u locaties heeft toegevoegd aan uw Smart Map, kunt u deze verwijderen of de instellingen bewerken, bijvoorbeeld het verwijderen van de thuislocatie.</p>
+          <p>Volg deze stappen:</p>
+          <ol>
+            <li value="1"> Klik op <span class="uitext">Instellingen</span> om de instelmodus te openen. </li>
+            <li value="2">Om een locatie te bewerken, rechtsklikt u op de locatie en selecteert <span class="uitext">Locatie bewerken</span>.</li>
+            <li value="3">Om een locatie te verwijderen, doet u het volgende:<ul><li>Rechtsklik op de locatie en selecteer <span class="uitext">Locatie verwijderen</span>.</li><li>Selecteer de locatie en druk op <span class="uitext">Delete</span> op het toetsenbord</li></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Links tussen locaties (uitleg)<a name="SC_LinkingBetweenLocatio.htm"></a></h3>
+          <p>U kunt bijvoorbeeld een verkenningsroute maken door een serie links tussen locaties aan te brengen. Maak op locatie A een link die naar locatie B gaat, en op locatie B een link die naar locatie C gaat, enzovoort. Raadpleeg <a href="#SC_AddingDeletingOrEditi_2.htm" class="MCXref xref">Links op Smart Map toevoegen, verwijderen of bewerken</a> voor meer informatie.</p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Gebouwen op Smart Map toevoegen, verwijderen of bewerken<a name="SC_AddingDeletingOrEditi_4.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Gebouwen op Smart Map (uitleg)<a name="SC_BuildingsOnSmartMapEx.htm"></a></h3>
+          <p>Gebouwen op de <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">Smart Map<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Een kaartfunctionaliteit die gebruikmaakt van een geografisch informatiesysteem om apparaten (zoals camera’s en microfoons), structuren en topografische elementen van een bewakingssysteem te visualiseren in geografisch nauwkeurige, realistische beelden. Kaarten die elementen van deze functionaliteit gebruiken, worden Smart Maps genoemd.</span></a> worden afgebeeld als veelhoeken met vier randen. Nadat u een gebouw hebt toegevoegd, kunt u de afmetingen, hoeken en grootte aanpassen aan de werkelijke vorm en positie ervan.</p>
+          <p>Als het gebouw meerdere verdiepingen heeft, kunt u niveaus toevoegen en vervolgens camera’s toevoegen aan de afzonderlijke niveaus. Zo kunt u per niveau navigeren door de camera’s in het gebouw.</p>
+          <p>Om te laten zien hoe een niveau er vanbinnen uitziet, kunt u aan de niveaus aangepaste overlays toevoegen, bijvoorbeeld een afbeelding van een plattegrond. Raadpleeg <a href="#SC_AddFloorPlansToLevels.htm" class="MCXref xref">Plattegronden toevoegen aan niveaus (Smart Map)</a> voor meer informatie.</p>
+          <p>Gebouwen krijgen automatisch een naam, bijvoorbeeld <span class="uitext">Gebouw 4</span>. <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> raadt u aan deze naam te wijzigen. Op die manier kunt u gebouwen beter van elkaar onderscheiden.</p>
+          <p>
+            <img src="../../../Images/buildings_on_map_explained.jpg" alt="" />
+          </p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Gebouwen toevoegen aan Smart Map<a name="SC_AddBuildingsToSmartMa.htm"></a></h3>
+          <p>In plaats van gebouwen te verduidelijken met afbeeldingen of vormbestanden, kunt u een omtrek van het gebouw toevoegen. Daarna kunt u de afmetingen, hoeken en grootte aanpassen aan de vorm en positie van het werkelijke gebouw.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Gesloten" data-mc-alt2="Open" />Vereisten</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Bewerken van Smart Map is ingeschakeld in uw <span class="mc-variable flvar-product.SC variable">Smart Client</span>-profiel in <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Volg deze stappen:</p>
+          <ol>
+            <li value="1"> Klik op <span class="uitext">Instellingen</span> om de instelmodus te openen. </li>
+            <li value="2">Navigeer naar de plaats op de Smart Map waar u het gebouw wilt positioneren.</li>
+            <li value="3">Klik op <img src="../../../Images/add_buildings_to_map.jpg" alt="" /> en plaats de cursor in de betreffende positie op de Smart Map.</li>
+            <li value="4">Klik opnieuw. Aan de Smart Map wordt een rechthoek toegevoegd. Als u uitzoomt, neemt het zoomniveau automatisch toe.</li>
+            <li value="5">Desgewenst kunt u de vorm en positie van het werkelijke gebouw aanpassen met de hoekgrepen.</li>
+            <li value="6"> Klik opnieuw op <span class="uitext">Instellingen</span> om de instelmodus af te sluiten. Uw wijzigingen worden opgeslagen.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Gebouwen op Smart Map bewerken<a name="SC_EditBuildingsOnSmartM.htm"></a></h3>
+          <p>Nadat een gebouw is toegevoegd aan de Smart Map, kunt u de naam ervan wijzigen en de positie, afmetingen, hoeken en grootte aanpassen. U kunt niveaus ook toevoegen, verwijderen of de volgorde ervan wijzigen.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Gesloten" data-mc-alt2="Open" />Vereisten</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Bewerken van Smart Map is ingeschakeld in uw <span class="mc-variable flvar-product.SC variable">Smart Client</span>-profiel in <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Volg deze stappen:</p>
+          <ol>
+            <li value="1">Navigeer naar het gebouw op de Smart Map. Desgewenst kunt u inzoomen.</li>
+            <li value="2"> Klik op <span class="uitext">Instellingen</span> om de instelmodus te openen. </li>
+            <li value="3">
+              <p>Klik ergens in het gebouw. Een blauwe rand geeft aan dat u het gebouw kunt bewerken.<br /></p>
+              <p>
+                <img src="../../../Images/buildings_on_map_explained.jpg" alt="" />
+              </p>
+            </li>
+            <li value="4">Als u de naam van het gebouw wilt wijzigen, klikt u rechts bovenin het deelvenster op <img src="../../../Images/edit_buildings_on_map.jpg" alt="" />. Wijzig de naam en klik op <img src="../../../Images/edit_buildings_on_map_1.jpg" alt="" />. Druk op <span class="uitext">Esc</span> als u wilt annuleren.</li>
+            <li value="5">Als u de hoeken wilt aanpassen, klikt u erop en sleept u deze naar een nieuwe positie.</li>
+            <li value="6">Raadpleeg <a href="#SC_AddOrRemoveLevelsFrom.htm" class="MCXref xref">Niveaus in gebouwen toevoegen of verwijderen (Smart Map)</a> voor het toevoegen of verwijderen van niveaus.</li>
+            <li value="7"> Klik opnieuw op <span class="uitext">Instellingen</span> om de instelmodus af te sluiten. Uw wijzigingen worden opgeslagen.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Gebouwen van Smart Map verwijderen<a name="SC_DeleteBuildingsOnSmar.htm"></a></h3>
+          <p>Als u een gebouw niet langer nodig hebt, kunt u het verwijderen. De volgende keer dat iemand zich aanmeldt bij <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> of de weergave opnieuw laadt, is het gebouw verdwenen.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Gesloten" data-mc-alt2="Open" />Vereisten</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Bewerken van Smart Map is ingeschakeld in uw <span class="mc-variable flvar-product.SC variable">Smart Client</span>-profiel in <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Volg deze stappen:</p>
+          <ol>
+            <li value="1">Open de Smart Map.</li>
+            <li value="2"> Klik op <span class="uitext">Instellingen</span> om de instelmodus te openen. </li>
+            <li value="3">Voer een van de volgende stappen uit:</li>
+            <ul>
+              <li>Rechtsklik op het gebouw en selecteer <span class="uitext">Verwijderen</span>.</li>
+              <li>Selecteer het gebouw en druk op <span class="uitext">Delete</span> op het toetsenbord. </li>
+            </ul>
+          </ol>
+          <p class="tip">Een alternatieve manier om een gebouw te verwijderen: Scrol in <img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">Standaardinstellingen beheren</span> omlaag naar het gedeelte <span class="uitext">Gebouwen</span>, houd de muisaanwijzer boven het gebouw, klik op <span class="uitext">Verwijderen</span> en vervolgens op <span class="uitext">Opslaan</span>. </p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Niveaus en apparaten in gebouwen beheren (Smart Map)<a name="SC_ManagingLevelsAndCame.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Apparaten en niveaus in gebouwen (uitleg)<a name="SC_CamerasAndLevelsInBui.htm"></a></h3>
+          <p>Wanneer u een apparaat toevoegt aan een gebouw, wordt het apparaat standaard gekoppeld aan het standaardniveau als dit is opgegeven. Anders worden apparaten toegewezen aan het eerste niveau. U kunt dit echter altijd wijzigen en het apparaat koppelen aan elk gewenst niveau of aan meerdere niveaus tegelijk.</p>
+          <p>Meer feiten:</p>
+          <ul>
+            <li>Als er geen niveaus zijn geselecteerd, is het apparaat zichtbaar op alle niveaus.</li>
+            <li>Als u een gebouw toevoegt op een apparaat dat al is geplaatst, wordt het apparaat standaard gekoppeld aan alle niveaus.</li>
+            <li>Als u de grenzen van een gebouw uitbreidt, zodat het gebouw een apparaat bedekt dat al is geplaatst, wordt het apparaat alleen gekoppeld aan het niveau dat is geselecteerd.</li>
+          </ul>
+          <p class="note">Als u de grenzen van een gebouw opnieuw aanpast, zodat het gebouw het apparaat niet langer bedekt, het apparaat niet langer gekoppeld aan het gebouw.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>
+            <a name="SC_FloorPlansDevicesInBuildings"></a>Plattegronden en apparaten in gebouwen (uitleg)</h3>
+          <p>Om te laten zien hoe de niveaus van een gebouw er vanbinnen uitzien, kunt u plattegronden toevoegen als aangepaste overlays. Met een plattegrond kunt u het apparaat eenvoudiger nauwkeurig positioneren. Raadpleeg <a href="#SC_AddFloorPlansToLevels.htm" class="MCXref xref">Plattegronden toevoegen aan niveaus (Smart Map)</a> voor meer informatie.</p>
+          <p>De apparaten die u plaatst, worden gekoppeld aan niveaus, niet aan aangepaste overlays. Als u een niveau verwijdert in een gebouw met apparaten en een aangepaste overlay, blijven de apparaten in de geografische positie, maar zijn deze niet langer gekoppeld aan het niveau. De aangepaste overlay wordt echter wel verwijderd, samen met het niveau.</p>
+          <p>Als u de volgorde van een niveau wijzigt, blijven zowel de apparaten als de aangepaste overlay gekoppeld aan het niveau. De apparaten behouden de geografische positie.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Niveaus in gebouwen toevoegen of verwijderen (Smart Map)<a name="SC_AddOrRemoveLevelsFrom.htm"></a></h3>
+          <p>Nadat u een gebouw aan de Smart Map hebt toegevoegd, kunt u elk gewenst aantal niveaus toevoegen. Het eerste niveau krijgt nummer <span class="uitext">1</span>, het volgende nummer <span class="uitext">2</span> enzovoort. Daarna kunt u de naam en volgorde van de afzonderlijke niveaus wijzigen.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Gesloten" data-mc-alt2="Open" />Vereisten</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Bewerken van Smart Map is ingeschakeld in uw <span class="mc-variable flvar-product.SC variable">Smart Client</span>-profiel in <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Volg deze stappen:</p>
+          <ol>
+            <li value="1">Navigeer naar het gebouw op de Smart Map. Desgewenst kunt u inzoomen.</li>
+            <li value="2">Selecteer het gebouw. Rechts wordt een deelvenster weergegeven.</li>
+            <li value="3">Klik op de knop <span class="uitext">Instellingen</span> om de instelmodus te openen.</li>
+            <li value="4">Klik op <span class="uitext">Niveau toevoegen</span><img src="../../../Images/add_or_remove_levels_from.jpg" alt="" />.</li>
+            <li value="5">U bewerkt als volgt de naam van een niveau: <ol><li value="1">Klik op de puntjes <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> en selecteer <span class="uitext">Naam wijzigen</span>.</li><li value="2">Voer een nieuwe naam in.</li></ol></li>
+            <li value="6">Als u een niveau wilt verwijderen, klikt u op de puntjes <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> en selecteert u <span class="uitext">Verwijderen</span>. Apparaten op dit niveau blijven in de geografische positie, maar zijn niet langer gekoppeld aan het niveau.</li>
+            <li value="7">Klik op <span class="uitext">Instellingen</span> om de instelmodus af te sluiten.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Volgorde van niveaus in gebouwen wijzigen (Smart Map)<a name="SC_ChangeOrderOfLevels.htm"></a></h3>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Gesloten" data-mc-alt2="Open" />Vereisten</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Bewerken van Smart Map is ingeschakeld in uw <span class="mc-variable flvar-product.SC variable">Smart Client</span>-profiel in <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Volg deze stappen:</p>
+          <ol>
+            <li value="1">Navigeer naar het gebouw op de Smart Map. Desgewenst kunt u inzoomen.</li>
+            <li value="2">Selecteer het gebouw. Rechts wordt een deelvenster weergegeven met de niveaus van het gebouw.</li>
+            <li value="3"> Klik op <span class="uitext">Instellingen</span> om de instelmodus te openen. </li>
+            <li value="4">Klik en sleep het gebied met de stippellijn <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> naar de juiste positie. Alle apparaten en aangepaste overlays blijven gekoppeld aan het niveau.</li>
+            <li value="5"> Klik opnieuw op <span class="uitext">Instellingen</span> om de instelmodus af te sluiten. Uw wijzigingen worden opgeslagen.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Standaardniveau voor gebouwen instellen (Smart Map)<a name="SC_SetDefaultLevelForBui.htm"></a></h3>
+          <p>Als een bepaald niveau in een gebouw belangrijker is dan de andere, bijvoorbeeld de begane grond, kunt u dat niveau instellen als standaardniveau. Wanneer u de Smart Map opent en naar het gebouw gaat, wordt automatisch het standaardniveau geselecteerd.</p>
+          <p>Als u in <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> van het gebouw weg navigeert en er weer naar terugkeert, komt u weer op het niveau war u was gebleven.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Gesloten" data-mc-alt2="Open" />Vereisten</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Bewerken van Smart Map is ingeschakeld in uw <span class="mc-variable flvar-product.SC variable">Smart Client</span>-profiel in <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Volg deze stappen:</p>
+          <ol>
+            <li value="1">Navigeer naar het gebouw op de Smart Map. Desgewenst kunt u inzoomen.</li>
+            <li value="2">Selecteer het gebouw. Rechts wordt een deelvenster weergegeven met de niveaus van het gebouw. Het standaardniveau wordt gemarkeerd.</li>
+            <li value="3">Klik op <span class="uitext">Instellingen</span> om de instelmodus te openen. Let op het sterretje <img src="../../../Images/set_default_level_for_buildings.jpg" alt="" />. Dit geeft aan waar het huidige standaardniveau is.</li>
+            <li value="4">Klik op de puntjes <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> op het niveau dat u wilt instellen als standaardniveau.</li>
+            <li value="5">Selecteer <span class="uitext">Instellen als standaard</span>.</li>
+            <li value="6"> Klik opnieuw op <span class="uitext">Instellingen</span> om de instelmodus af te sluiten. Uw wijzigingen worden opgeslagen.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Plattegronden toevoegen aan niveaus (Smart Map)<a name="SC_AddFloorPlansToLevels.htm"></a></h3>
+          <p>U kunt aangepaste overlays, bijvoorbeeld afbeeldingen van een plattegrond, toevoegen aan niveaus in een gebouw om te laten zien hoe een niveau er vanbinnen uitziet. Als u door de niveaus navigeert, worden de gekoppelde plattegronden automatisch weergegeven.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Gesloten" data-mc-alt2="Open" />Vereisten</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Bewerken van Smart Map is ingeschakeld in uw <span class="mc-variable flvar-product.SC variable">Smart Client</span>-profiel in <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Volg deze stappen:</p>
+          <ol>
+            <li value="1">Navigeer naar het gebouw op de Smart Map. Desgewenst kunt u inzoomen.</li>
+            <li value="2">Selecteer het gebouw. Rechts wordt een deelvenster weergegeven met de niveaus van het gebouw.</li>
+            <li value="3"> Klik op <span class="uitext">Instellingen</span> om de instelmodus te openen. </li>
+            <li value="4">Selecteer het niveau waaraan u de aangepaste overlay wilt toevoegen.</li>
+            <li value="5">Klik linksboven op <img src="../../../Images/add_custom_overlay_on_1.png" alt="" /><span class="uitext">Aangepaste overlay toevoegen</span> en klik vervolgens ergens binnen de omtrek van het gebouw. Er wordt een venster weergegeven.</li>
+            <li value="6">Selecteer het type aangepaste overlay. Raadpleeg <a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">Aangepaste overlays (uitleg)</a> voor meer informatie.</li>
+            <li value="7">
+              <p>Selecteer de locatie op de computer waar het bestand is opgeslagen en klik op <span class="uitext">Doorgaan</span>. De aangepaste overlay wordt weergegeven als een blauwe omtrek.<br /></p>
+              <p>
+                <img src="../../../Images/add_floorplans_to_levels.jpg" alt="" />
+              </p>
+            </li>
+            <li value="8">Sleep deze op de omtrek van het gebouw en gebruik het draaipunt en de hoekgrepen om de aangepaste overlay te draaien en te positioneren.</li>
+            <li value="9">Klik in de bovenbalk op <span class="uitext">Opslaan</span>.</li>
+            <li value="10"> Klik opnieuw op <span class="uitext">Instellingen</span> om de instelmodus af te sluiten. Uw wijzigingen worden opgeslagen.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Plattegronden van niveaus verwijderen (Smart Map)<a name="SC_DeleteFloorPlansOnLev.htm"></a></h3>
+          <p>Als een plattegrond op een niveau in een gebouw is gewijzigd, moet u de aangepaste overlay met de plattegrond mogelijk vervangen. <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> raadt u aan de oude plattegrond te verwijderen voordat u een nieuwe plattegrond toevoegt.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Gesloten" data-mc-alt2="Open" />Vereisten</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Bewerken van Smart Map is ingeschakeld in uw <span class="mc-variable flvar-product.SC variable">Smart Client</span>-profiel in <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Volg deze stappen:</p>
+          <ol>
+            <li value="1">Navigeer naar het gebouw op de Smart Map. Desgewenst kunt u inzoomen.</li>
+            <li value="2">Selecteer het gebouw. Rechts wordt een deelvenster weergegeven met de niveaus van het gebouw.</li>
+            <li value="3"> Klik op <span class="uitext">Instellingen</span> om de instelmodus te openen. </li>
+            <li value="4">Selecteer het niveau waarop de aangepaste overlay zich bevindt.</li>
+            <li value="5">Rechtsklik ergens op de aangepaste overlay en selecteer <span class="uitext">Aangepaste overlay verwijderen</span>.</li>
+            <li value="6"> Klik opnieuw op <span class="uitext">Instellingen</span> om de instelmodus af te sluiten. Uw wijzigingen worden opgeslagen.</li>
+          </ol>
+          <p class="tip">Als u de positie of grootte van de plattegrond wilt bewerken, rechtsklikt u op de aangepaste overlay en selecteert u <span class="uitext">Positie bewerken</span>. U kunt de aangepaste overlay nu verplaatsen, draaien en de grootte ervan aanpassen.</p>
+        </div>
+        <div>
+          <h3>Apparaten toevoegen aan gebouwen (Smart Map)<a name="SC_AddCamerasToBuildings.htm"></a></h3>
+          <p>Nadat u een gebouw hebt gemaakt en niveaus hebt toegevoegd, kunt u apparaten aan het gebouw toevoegen. Als een standaardniveau is opgegeven, worden de apparaten hieraan gekoppeld. Anders worden de apparaten gekoppeld aan het eerste niveau. U kunt dit wel wijzigen en het apparaat koppelen aan elk gewenst niveau in het gebouw.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Gesloten" data-mc-alt2="Open" />Vereisten</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Bewerken van Smart Map is ingeschakeld in uw <span class="mc-variable flvar-product.SC variable">Smart Client</span>-profiel in <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Volg deze stappen:</p>
+          <ol>
+            <li value="1">Navigeer naar het gebouw op de Smart Map. Desgewenst kunt u inzoomen.</li>
+            <li value="2"> Klik op <span class="uitext">Instellingen</span> om de instelmodus te openen. </li>
+            <li value="3">Als u een apparaat wilt toevoegen, klikt u op het bijbehorende pictogram. <p>Voorbeeld: In het geval van een camera klikt u op <img src="../../../Images/add_cameras_to_buildings.jpg" alt="" /><span class="uitext">Camera toevoegen</span>.</p></li>
+            <li value="4">Klik opnieuw op de locatie waar u het apparaat wilt plaatsen. Er wordt een dialoogvenster weergegeven.</li>
+            <li value="5">Selecteer het gewenste apparaat en klik op <span class="uitext">OK</span>. Herhaal stap 3 t/m 5 voor elk apparaat dat u wilt toevoegen.</li>
+            <li value="6">Als u een apparaat wilt koppelen aan een of meer niveaus, rechtsklikt u op het apparaat en selecteert u de gewenste niveaus.</li>
+            <li value="7"> Klik opnieuw op <span class="uitext">Instellingen</span> om de instelmodus af te sluiten. Uw wijzigingen worden opgeslagen.</li>
+          </ol>
+          <p class="note">Als er geen niveaus zijn geselecteerd, is het apparaat zichtbaar op alle niveaus.</p>
+        </div>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Conceptinformatie</p>
+        <p class="containerItem_container_0">
+          <a href="sc_workingwithmap.htm">Smart Map (gebruik)</a>
+        </p>
+        <p class="referenceHeading_reference_0">Referentiematerialen</p>
+        <p class="referenceItem_reference_0">
+          <a href="sc_map_faq.htm">Veelgestelde vragen: Smart Maps</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LogMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <version>20.2.1</version>
+  <culture>nb-NO</culture>
+  <userfields>
+    <userfield type="string" uname="ResourceId"/>
+    <userfield type="string" uname="ResourceName"/>
+    <userfield type="enum" uname="ResourceType"/>
+    <userfield type="string" uname="ResourceLocation"/>
+    <userfield type="enum" uname="AccessGranted"/>
+    <userfield type="enum" uname="AuditType"/>
+  </userfields>
+  <userEnums>
+    <userEnum fieldname="groupname" fieldtype="system" uname="group">
+      <enum uname="Audit" value="Revisjon"/>
+    </userEnum>
+    <userEnum fieldname="severity" fieldtype="system" uname="severity">
+      <enum uname="Info" value="Info"/>
+      <enum uname="Error" value="Feil"/>
+    </userEnum>
+    <userEnum fieldname="status" fieldtype="system" uname="status">
+      <enum uname="Success" value="Vellykket"/>
+    </userEnum>
+    <userEnum fieldname="AccessGranted" fieldtype="user" uname="AccessGranted">
+      <enum uname="Granted" value="Innvilget"/>
+      <enum uname="Denied" value="Avvist"/>
+      <enum uname="Default" value="Standard"/>
+    </userEnum>
+    <userEnum fieldname="objecttype" fieldtype="system" uname="objecttype">      
+      <enum uname="Device" value="Enhet"/>
+      <enum uname="Camera" value="Kamera"/>
+      <enum uname="Speaker" value="Høyttaler"/>
+      <enum uname="Microphone" value="Mikrofon"/>
+      <enum uname="VideoWallMonitor" value="Smart Wall-skjerm"/>
+      <enum uname="Hot_zone" value="Aktiv sone"/>
+      <enum uname="PtzPreset" value="PTZ-forhåndsinnstilling"/>
+      <enum uname="Print" value="Skriv ut"/>
+      <enum uname="Server" value="Server"/>
+      <enum uname="Search" value="Søk"/>
+    </userEnum>
+    <userEnum fieldname="ResourceType" fieldtype="user" uname="ResourceType">      
+      <enum uname="Export" value="Eksporter"/>
+      <enum uname="Camera" value="Kamera"/>
+      <enum uname="Speaker" value="Høyttaler"/>
+      <enum uname="Microphone" value="Mikrofon"/>
+      <enum uname="VideoWallMonitor" value="Smart Wall-skjerm"/>
+      <enum uname="Hot_zone" value="Aktiv sone"/>
+      <enum uname="PtzPreset" value="PTZ-forhåndsinnstilling"/>
+      <enum uname="Server" value="Server"/>
+      <enum uname="Search" value="Søk kategori"/>
+    </userEnum>
+    <userEnum fieldname="category" fieldtype="system" uname="category">      
+      <enum uname="Export" value="Eksporter"/>
+      <enum uname="VideoWallControl" value="Smart Wall-kontroll"/>
+      <enum uname="MapControl" value="Kartkontroll"/>
+      <enum uname="PtzPresets" value="PTZ-forhåndsinnstillinger"/>
+      <enum uname="Print" value="Skriv ut"/>
+      <enum uname="Camera" value="Kamera"/>
+      <enum uname="Security" value="Sikkerhet"/>
+      <enum uname="Search" value="Søk"/>
+    </userEnum>
+    <userEnum fieldname="AuditType" fieldtype="user" uname="AuditType">      
+      <enum uname="Export" value="Eksporter"/>
+      <enum uname="VideoWallControl" value="Smart Wall-kontroll"/>
+      <enum uname="MapControl" value="Kartkontroll"/>
+      <enum uname="PtzPresets" value="PTZ-forhåndsinnstillinger"/>
+      <enum uname="Print" value="Skriv ut"/>
+      <enum uname="CameraSnapshot" value="Kamera øyeblikksbilde"/>
+      <enum uname="CameraPrivacyProtection" value="Beskyttelse av privat område"/>
+      <enum uname="UserLogOut" value="Brukerutlogging"/>
+      <enum uname="Search" value="Søk"/>
+    </userEnum>
+  </userEnums>
+  <application uname="SmartClient">    
+    <component uname="Export">
+      <module uname="CombinedExportLogger">
+        <entries>
+          <group category="Export" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" field4="ResourceType" name="Audit" value1="" value2="Multiple Devices" value3="@objLocationName" value4="Export">
+            <entry field1="AccessGranted" field2="AuditType" object_type="Device" severity="Info" status="Success" uname="ExportBegun" value1="Granted" value2="Export">Eksportering har startet...{newLine}Eksporteringsnavn: &apos;{exportTitle}&apos;{newLine}Sekvens: &apos;{starttime}&apos; til &apos;{endtime}&apos;{newLine}Eksportert til bane: ( {exportToPath} ){newLine}Eksportert til brenner: ( {exportToOptics} ){newLine}Eksportert i {brandName}-format: ( {database} ){newLine}- Passordbeskyttet: ( {encrypted} ){newLine}- Re-eksport forhindret: ( {locked} ){newLine}- Med tillagte kommentarer: ( {comments} ){newLine}- Digital signatur inkludert: ( {signed} ){newLine}Eksportert i media player-format: ( {avi} ){newLine}Stillbilde-format eksportert: ( {jpeg} ){newLine}Enheter inkludert:{d1}{d2}{d3}{d4}{d5}{d6}{d7}{d8}{d9}{d10}{d11}{d12}{d13}{d14}{d15}{d16}{d17}{d18}{d19}{d20}{d21}{d22}{d23}{d24}{d25}{d26}{d27}{d28}{d29}{d30}{newLine}(Alle tider i UTC)</entry>
+            <entry field1="AccessGranted" field2="AuditType" object_type="Device" severity="Error" status="Success" uname="ExportCanceled" value1="Granted" value2="Export">Eksporteringen ble avbrutt ...{newLine}Eksporteringsnavn: {exportTitle}{newLine}Sekvens: &apos;{starttime}&apos; til &apos;{endtime}&apos;{newLine}Eksportert til bane: ( {exportToPath} ){newLine}Eksportert til brenner: ( {exportToOptics} ){newLine}Eksportert i {brandName}-format: ( {database} ){newLine}- Passordbeskyttet: ( {encrypted} ){newLine}- Re-eksport forhindret: ( {locked} ){newLine}- Med tillagte kommentarer: ( {comments} ){newLine}- Digital signatur inkludert: ( {signed} ){newLine}Eksportert i media player-format: ( {avi} ){newLine}Stillbilde-format eksportert: ( {jpeg} ){newLine}Enheter inkludert:{d1}{d2}{d3}{d4}{d5}{d6}{d7}{d8}{d9}{d10}{d11}{d12}{d13}{d14}{d15}{d16}{d17}{d18}{d19}{d20}{d21}{d22}{d23}{d24}{d25}{d26}{d27}{d28}{d29}{d30}{newLine}(Alle tider i UTC)</entry>
+            <entry field1="AccessGranted" field2="AuditType" object_type="Device" severity="Info" status="Success" uname="ExportCompleted" value1="Granted" value2="Export">Eksporteringen er fullført ...{newLine}Eksporteringsnavn: {exportTitle}{newLine}Sekvens: &apos;{starttime}&apos; til &apos;{endtime}&apos;{newLine}Eksportert til bane: ( {exportToPath} ){newLine}Eksportert til brenner: ( {exportToOptics} ){newLine}Eksportert i {brandName}-format: ( {database} ){newLine}- Passordbeskyttet: ( {encrypted} ){newLine}- Re-eksport forhindret: ( {locked} ){newLine}- Med tillagte kommentarer: ( {comments} ){newLine}- Digital signatur inkludert: ( {signed} ){newLine}Eksportert i media player-format: ( {avi} ){newLine}Stillbilde-format eksportert: ( {jpeg} ){newLine}Enheter inkludert:{d1}{d2}{d3}{d4}{d5}{d6}{d7}{d8}{d9}{d10}{d11}{d12}{d13}{d14}{d15}{d16}{d17}{d18}{d19}{d20}{d21}{d22}{d23}{d24}{d25}{d26}{d27}{d28}{d29}{d30}{newLine}(Alle tider i UTC)</entry>
+            <entry field1="AccessGranted" field2="AuditType" object_type="Device" severity="Info" status="Success" uname="ExportCompletedWithErrorsInclGeneralError" value1="Granted" value2="Export">Eksporteringen ble fullført med feil ...{newLine}Eksporteringsnavn: {exportTitle}{newLine}Sekvens: &apos;{starttime}&apos; til &apos;{endtime}&apos;{newLine}Eksportert til bane: ( {exportToPath} ){newLine}Eksportert til brenner: ( {exportToOptics} ){newLine}Eksportert i {brandName}-format: ( {database} ){newLine}- Passordbeskyttet: ( {encrypted} ){newLine}- Re-eksport forhindret: ( {locked} ){newLine}- Med tillagte kommentarer: ( {comments} ){newLine}- Digital signatur inkludert: ( {signed} ){newLine}Eksportert i media player-format: ( {avi} ){newLine}Stillbilde-format eksportert: ( {jpeg} ){newLine}En feil oppsto under eksporteringen{newLine}Eksporteringen var vellykket for følgende enheter: {sd1}{sd2}{sd3}{sd4}{sd5}{sd6}{sd7}{sd8}{sd9}{sd10}{sd11}{sd12}{sd13}{sd14}{sd15}{sd16}{sd17}{sd18}{sd19}{sd20}{sd21}{sd22}{sd23}{sd24}{sd25}{sd26}{sd27}{sd28}{sd29}{sd30}{newLine}Eksporteringen var mislykket for følgende enheter: {fd1}{fd2}{fd3}{fd4}{fd5}{fd6}{fd7}{fd8}{fd9}{fd10}{fd11}{fd12}{fd13}{fd14}{fd15}{fd16}{fd17}{fd18}{fd19}{fd20}{fd21}{fd22}{fd23}{fd24}{fd25}{fd26}{fd27}{fd28}{fd29}{fd30}{newLine}(Alle tider i UTC)</entry>
+            <entry field1="AccessGranted" field2="AuditType" object_type="Device" severity="Info" status="Success" uname="ExportCompletedWithErrors" value1="Granted" value2="Export">Eksporteringen ble fullført med feil ...{newLine}Eksporteringsnavn: {exportTitle}{newLine}Sekvens: &apos;{starttime}&apos; til &apos;{endtime}&apos;{newLine}Eksportert til bane: ( {exportToPath} ){newLine}Eksportert til brenner: ( {exportToOptics} ){newLine}Eksportert i {brandName}-format: ( {database} ){newLine}- Passordbeskyttet: ( {encrypted} ){newLine}- Re-eksport forhindret: ( {locked} ){newLine}- Med tillagte kommentarer: ( {comments} ){newLine}- Digital signatur inkludert: ( {signed} ){newLine}Eksportert i media player-format: ( {avi} ){newLine}Stillbilde-format eksportert: ( {jpeg} ){newLine}Eksporteringen var vellykket for følgende enheter: {sd1}{sd2}{sd3}{sd4}{sd5}{sd6}{sd7}{sd8}{sd9}{sd10}{d11}{d12}{d13}{d14}{d15}{d16}{d17}{d18}{d19}{d20}{d21}{d22}{d23}{d24}{d25}{d26}{d27}{d28}{d29}{d30}{newLine}Eksporteringen var mislykket for følgende enheter: {fd1}{fd2}{fd3}{fd4}{fd5}{fd6}{fd7}{fd8}{fd9}{fd10}{fd11}{fd12}{fd13}{fd14}{fd15}{fd16}{fd17}{fd18}{fd19}{fd20}{fd21}{fd22}{fd23}{fd24}{fd25}{fd26}{fd27}{fd28}{fd29}{fd30}{newLine}(Alle tider i UTC)</entry>
+            <entry field1="AccessGranted" field2="AuditType" object_type="Device" severity="Error" status="Success" uname="ExportFailed" value1="Granted" value2="Export">Eksporteringen var mislykket ...{newLine}Eksporteringsnavn: {exportTitle}{newLine}Sekvens: &apos;{starttime}&apos; til &apos;{endtime}&apos;{newLine}Eksportert til bane: ( {exportToPath} ){newLine}Eksportert til brenner: ( {exportToOptics} ){newLine}Eksportert i {brandName}-format: ( {database} ){newLine}- Passordbeskyttet: ( {encrypted} ){newLine}- Re-eksport forhindret: ( {locked} ){newLine}- Med tillagte kommentarer: ( {comments} ){newLine}- Digital signatur inkludert: ( {signed} ){newLine}Eksportert i media player-format: ( {avi} ){newLine}Stillbilde-format eksportert: ( {jpeg} ){newLine}Enheter inkludert:{d1}{d2}{d3}{d4}{d5}{d6}{d7}{d8}{d9}{d10}{d11}{d12}{d13}{d14}{d15}{d16}{d17}{d18}{d19}{d20}{d21}{d22}{d23}{d24}{d25}{d26}{d27}{d28}{d29}{d30}{newLine}(Alle tider i UTC)</entry>
+            <entry field1="AccessGranted" field2="AuditType" object_type="Device" severity="Error" status="Success" uname="ExportDenied" value1="Denied" value2="Export">Eksporteringen var mislykket ...{newLine}Eksporteringsnavn: {exportTitle}{newLine}Sekvens: &apos;{starttime}&apos; til &apos;{endtime}&apos;{newLine}Eksportert til bane: ( {exportToPath} ){newLine}Eksportert til brenner: ( {exportToOptics} ){newLine}Eksportert i {brandName}-format: ( {database} ){newLine}- Passordbeskyttet: ( {encrypted} ){newLine}- Re-eksport forhindret: ( {locked} ){newLine}- Med tillagte kommentarer: ( {comments} ){newLine}- Digital signatur inkludert: ( {signed} ){newLine}Eksportert i media player-format: ( {avi} ){newLine}Stillbilde-format eksportert: ( {jpeg} ){newLine}Enheter inkludert:{d1}{d2}{d3}{d4}{d5}{d6}{d7}{d8}{d9}{d10}{d11}{d12}{d13}{d14}{d15}{d16}{d17}{d18}{d19}{d20}{d21}{d22}{d23}{d24}{d25}{d26}{d27}{d28}{d29}{d30}{newLine}(Alle tider i UTC)</entry>
+          </group>
+        </entries>
+      </module>
+      <module uname="AVI_JPEG">
+        <entries>
+          <group category="Export" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Info" status="Success" uname="ExportAVICameraBegun" value1="Granted" value2="Camera" value3="Export">AVI-eksport startet, sekvens &apos;{starttime}&apos; til &apos;{endtime}&apos; (UTC-tid)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Error" status="Success" uname="ExportAVICameraCancelled" value1="Granted" value2="Camera" value3="Export">AVI-eksport avbrutt</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Info" status="Success" uname="ExportAVICameraCompleted" value1="Granted" value2="Camera" value3="Export">AVI-eksport fullført, sekvens &apos;{starttime}&apos; til &apos;{endtime}&apos; (UTC-tid)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Error" status="Success" uname="ExportAVICameraFailed" value1="Granted" value2="Camera" value3="Export">AVI-eksport mislyktes</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Speaker" severity="Info" status="Success" uname="ExportAVISpeakerBegun" value1="Granted" value2="Speaker" value3="Export">AVI-eksport startet, sekvens &apos;{starttime}&apos; til &apos;{endtime}&apos; (UTC-tid)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Speaker" severity="Error" status="Success" uname="ExportAVISpeakerCancelled" value1="Granted" value2="Speaker" value3="Export">AVI-eksport avbrutt</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Speaker" severity="Info" status="Success" uname="ExportAVISpeakerCompleted" value1="Granted" value2="Speaker" value3="Export">AVI-eksport fullført, sekvens &apos;{starttime}&apos; til &apos;{endtime}&apos; (UTC-tid)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Speaker" severity="Error" status="Success" uname="ExportAVISpeakerFailed" value1="Granted" value2="Speaker" value3="Export">AVI-eksport mislyktes</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Microphone" severity="Info" status="Success" uname="ExportAVIMicrophoneBegun" value1="Granted" value2="Microphone" value3="Export">AVI-eksport startet, sekvens &apos;{starttime}&apos; til &apos;{endtime}&apos; (UTC-tid)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Microphone" severity="Error" status="Success" uname="ExportAVIMicrophoneCancelled" value1="Granted" value2="Microphone" value3="Export">AVI-eksport avbrutt</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Microphone" severity="Info" status="Success" uname="ExportAVIMicrophoneCompleted" value1="Granted" value2="Microphone" value3="Export">AVI-eksport fullført, sekvens &apos;{starttime}&apos; til &apos;{endtime}&apos; (UTC-tid)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Microphone" severity="Error" status="Success" uname="ExportAVIMicrophoneFailed" value1="Granted" value2="Microphone" value3="Export">AVI-eksport mislyktes</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Info" status="Success" uname="ExportJPEGBegun" value1="Granted" value2="Camera" value3="Export">JPEG-eksport startet, sekvens &apos;{starttime}&apos; til &apos;{endtime}&apos; (UTC-tid)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Error" status="Success" uname="ExportJPEGCancelled" value1="Granted" value2="Camera" value3="Export">JPEG-eksport avbrutt</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Info" status="Success" uname="ExportJPEGCompleted" value1="Granted" value2="Camera" value3="Export">JPEG-eksport fullført, sekvens &apos;{starttime}&apos; til &apos;{endtime}&apos; (UTC-tid)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Error" status="Success" uname="ExportJPEGFailed" value1="Granted" value2="Camera" value3="Export">JPEG-eksport mislyktes</entry>
+          </group>
+        </entries>
+      </module>
+      <module uname="DB">
+        <entries>
+          <group category="Export" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Info" status="Success" uname="ExportCameraBegunWithEncryption" value1="Granted" value2="Camera" value3="Export">Databaseeksport startet, kryptering aktivert, sekvens &apos;{starttime}&apos; til &apos;{endtime}&apos; (UTC-tid)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Info" status="Success" uname="ExportCameraBegunWithNoEncryption" value1="Granted" value2="Camera" value3="Export">Databaseeksport startet, kryptering deaktivert, sekvens &apos;{starttime}&apos; til &apos;{endtime}&apos; (UTC-tid)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Error" status="Success" uname="ExportCameraCancelled" value1="Granted" value2="Camera" value3="Export">Databaseeksport avbrutt</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Info" status="Success" uname="ExportCameraCompleted" value1="Granted" value2="Camera" value3="Export">Databaseeksport fullført, sekvens &apos;{starttime}&apos; til &apos;{endtime}&apos; (UTC-tid)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Error" status="Success" uname="ExportCameraFailed" value1="Granted" value2="Camera" value3="Export">Databaseeksport mislyktes</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Speaker" severity="Info" status="Success" uname="ExportSpeakerBegunWithEncryption" value1="Granted" value2="Speaker" value3="Export">Databaseeksport startet, kryptering aktivert, sekvens &apos;{starttime}&apos; til &apos;{endtime}&apos; (UTC-tid)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Speaker" severity="Info" status="Success" uname="ExportSpeakerBegunWithNoEncryption" value1="Granted" value2="Speaker" value3="Export">Databaseeksport startet, kryptering deaktivert, sekvens &apos;{starttime}&apos; til &apos;{endtime}&apos; (UTC-tid)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Speaker" severity="Error" status="Success" uname="ExportSpeakerCancelled" value1="Granted" value2="Speaker" value3="Export">Databaseeksport avbrutt</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Speaker" severity="Info" status="Success" uname="ExportSpeakerCompleted" value1="Granted" value2="Speaker" value3="Export">Databaseeksport fullført, sekvens &apos;{starttime}&apos; til &apos;{endtime}&apos; (UTC-tid)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Speaker" severity="Error" status="Success" uname="ExportSpeakerFailed" value1="Granted" value2="Speaker" value3="Export">Databaseeksport mislyktes</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Microphone" severity="Info" status="Success" uname="ExportMicrophoneBegunWithEncryption" value1="Granted" value2="Microphone" value3="Export">Databaseeksport startet, kryptering aktivert, sekvens &apos;{starttime}&apos; til &apos;{endtime}&apos; (UTC-tid)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Microphone" severity="Info" status="Success" uname="ExportMicrophoneBegunWithNoEncryption" value1="Granted" value2="Microphone" value3="Export">Databaseeksport startet, kryptering deaktivert, sekvens &apos;{starttime}&apos; til &apos;{endtime}&apos; (UTC-tid)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Microphone" severity="Error" status="Success" uname="ExportMicrophoneCancelled" value1="Granted" value2="Microphone" value3="Export">Databaseeksport avbrutt</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Microphone" severity="Info" status="Success" uname="ExportMicrophoneCompleted" value1="Granted" value2="Microphone" value3="Export">Databaseeksport fullført, sekvens &apos;{starttime}&apos; til &apos;{endtime}&apos; (UTC-tid)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Microphone" severity="Error" status="Success" uname="ExportMicrophoneFailed" value1="Granted" value2="Microphone" value3="Export">Databaseeksport mislyktes</entry>
+          </group>
+        </entries>
+      </module>
+    </component>
+    <component uname="VideoWall">
+      <module uname="Drop">
+        <entries>
+          <group category="VideoWallControl" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="VideoWallMonitor" severity="Info" status="Success" uname="MonitorLayoutCameraPlaced" value1="Granted" value2="VideoWallMonitor" value3="VideoWallControl">Kamera &apos;{name}&apos; plassert i posisjon &apos;{positionNumber}&apos;</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="VideoWallMonitor" severity="Info" status="Success" uname="MonitorLayoutViewItemPlaced" value1="Granted" value2="VideoWallMonitor" value3="VideoWallControl">Vis element &apos;{name}&apos; plassert ved posisjon &apos;{positionNumber}&apos;</entry>
+          </group>
+        </entries>
+      </module>
+    </component>
+    <component uname="Map">
+      <module uname="Navigation">
+        <entries>
+          <group category="MapControl" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Hot zone" severity="Info" status="Success" uname="MapNavigationServerChanged" value1="Granted" value2="Hot_zone" value3="MapControl">Endrer til et kart fra server &quot;{servername}&quot;</entry>
+          </group>
+        </entries>
+      </module>
+    </component>
+    <component uname="PtzPresets">
+      <module uname="Manage">
+        <entries>
+          <group category="ManagePtzPreset" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="PtzPreset" severity="Info" status="Success" uname="AddPtzPreset" value1="Granted" value2="PtzPreset" value3="ManagePtzPresets">PTZ-forhåndsinnstilling &apos;{name}&apos; opprettet</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="PtzPreset" severity="Info" status="Success" uname="UpdatePtzPresetName" value1="Granted" value2="PtzPreset" value3="ManagePtzPresets">PTZ-forhåndsinnstilling &apos;{name}&apos; er oppdatert med et nytt navn</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="PtzPreset" severity="Info" status="Success" uname="UpdatePtzPresetPosition" value1="Granted" value2="PtzPreset" value3="ManagePtzPresets">PTZ-forhåndsinnstilling &apos;{name}&apos; er oppdatert med en ny PTZ-stilling</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="PtzPreset" severity="Info" status="Success" uname="DeletePtzPreset" value1="Granted" value2="PtzPreset" value3="ManagePtzPresets">PTZ-forhåndsinnstilling &apos;{name}&apos; er slettet</entry>
+          </group>
+        </entries>
+      </module>
+    </component>
+    <component uname="PrintForm">
+      <module uname="DoPrint">
+        <entries>
+          <group category="Print" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Print" severity="Info" status="Success" uname="Print" value1="Granted" value2="Camera" value3="Print">Utskrift av bilde som er tatt opp &apos;{time}&apos; (UTC time)</entry>
+          </group>
+        </entries>
+      </module>
+    </component>
+    <component uname="Camera">
+      <module uname="Snapshot">
+        <entries>
+          <group category="Camera" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Info" status="Success" uname="CameraSnapshot" value1="Granted" value2="Camera" value3="CameraSnapshot">Øyeblikksbilde av bilde som er tatt opp &apos;{time}&apos; (UTC time)</entry>
+          </group>
+        </entries>
+      </module>
+      <module uname="PrivacyProtection">
+        <entries>
+          <group category="Camera" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Info" status="Success" uname="CameraPrivacyProtectionLifted" value1="Granted" value2="Camera" value3="CameraPrivacyProtection">Beskyttelse av privat område opphevet. Autorisert av «{authUser}»</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Info" status="Success" uname="CameraPrivacyProtectionApplied" value1="Granted" value2="Camera" value3="CameraPrivacyProtection">Beskyttelse av privat område aktivert.</entry>
+          </group>
+        </entries>
+      </module>
+    </component>
+    <component uname="User">
+      <module uname="LogOut">
+        <entries>
+          <group category="Security" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Security" severity="Info" status="Success" uname="UserLoggedOut" value1="Granted" value2="Server" value3="UserLogOut">Bruker logget ut</entry>
+          </group>
+        </entries>
+      </module>
+    </component>
+    <component uname="CentralizedSearch">
+      <module uname="Search">
+        <entries>
+          <group category="Search" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Device" severity="Info" status="Success" uname="SearchStarted" value1="Granted" value2="Search" value3="Search">Brukerutført søk{newLine}Varighet: start &apos;{starttime}&apos; slutt &apos;{endtime}&apos;{newLine}Kameraer:{newLine}{c1}{c2}{c3}{c4}{c5}{c6}{c7}{c8}{c9}{c10}{newLine}Søkekategorier og filtre: {i1}{i2}{i3}{i4}{i5}{i6}{i7}{i8}{i9}{i10}{newLine}{newLine}(Alle tider i UTC)</entry>
+          </group>
+        </entries>
+      </module>
+    </component>
+  </application>
+</LogMessages>

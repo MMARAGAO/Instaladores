@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="ko-KR" xml:lang="ko-KR" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="최적화" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Get familiar with and read how to set up adaptive streaming to improve the performance of computers running XProtect Smart Client." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=관리자" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=통합자" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>적응 스트리밍 활성화</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#feature_flags/ff_adaptivestreaming/sc_enablingadaptivestreaming.htm">탐색기로 항목 열기</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="브레드크럼즈" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>적응 스트리밍 활성화</h1>
+      <h2>적응 스트리밍(설명됨)<a name="SC_AdaptiveStreamingExplained"></a></h2>
+      <p>적응 스트리밍은 디코딩 기능과 현재 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 을/를 실행 중인 컴퓨터의 성능을 개선합니다. 이는 동일한 뷰에서 멀티 라이브 비디오 스트림을 볼 때 유용합니다.</p>
+      <p>적응 스트리밍을 이용하려면 카메라가 다른 해상도로 정의된 멀티 스트림을 갖고 있어야 합니다. 이를 통해 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 이/가 자동으로 뷰 항목을 따라 가장 근접하게 일치한 해상도를 선택하도록 해줍니다. 이제 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 이/가 불필요하게 높은 해상도의 디폴트 스트림으로 크기를 줄이지 않아도 됩니다. 이렇게 함으로써 CPU와 GPU의 디코딩 리소스 처리량을 줄일 수 있습니다.</p>
+      <p>좋은 비디오 품질 확보를 위해 가장 가까운 일치 결과는 가능한 경우 뷰 항목을 따라 요청된 해상도와 동일하거나 높은 해상도로 정의합니다. 이는 스트림 크기 확장을 방지하기 위한 것입니다. 아래의 표는 적응 스트리밍이 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 에서 뷰 항목 요청에 기반하여 선택함을 보여줍니다.</p>
+      <table cellspacing="3">
+        <col style="width: 40%;" />
+        <col />
+        <col />
+        <thead>
+          <tr>
+            <th>뷰 항목에 따라 요청된 해상도</th>
+            <th colspan="2">사용 가능한 비디오 스트림의 가장 근접한 일치 결과</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>636 x 477</td>
+            <td style="text-align: left;">비디오 스트림 1</td>
+            <td>640 x 480(VGA)</td>
+          </tr>
+          <tr>
+            <td>644 x 483</td>
+            <td style="text-align: left;">비디오 스트림 2</td>
+            <td>1280 x 720(WXGA-H)</td>
+          </tr>
+          <tr>
+            <td>1920 x 1080</td>
+            <td style="text-align: left;">비디오 스트림 3</td>
+            <td>1920 x 1080(FHD)</td>
+          </tr>
+          <tr>
+            <td>1920 x 1440</td>
+            <td style="text-align: left;">비디오 스트림 4</td>
+            <td>3840x2160(4K UHD-1)</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="note">
+        <p>줌을 할 때 요청된 라이브 비디오 스트림은 항상 최고 해상도입니다.</p>
+        <p>대역폭 사용량은 종종 요청된 스트림의 해상도가 감소했을 때 감소합니다. 대역폭 사용량은 또한 정의된 스트림 구성 내 기타 설정에 따릅니다.</p>
+      </div>
+      <h2>적응 스트리밍 설정 확인<a name="SC_CheckAdaptiveStreamingSettings"></a></h2>
+      <ol>
+        <li value="1">
+          <span class="uitext">설정</span> &gt;<span class="uitext"> 고급</span> &gt;<span class="uitext"> 적응 스트리밍</span>으로 이동합니다.</li>
+        <li value="2">적응 스트리밍 설정에는 두 가지가 있습니다: <span class="uitext">비활성화</span> 및 <span class="uitext">활성화</span>. <p><span class="uitext"><span class="uitext">활성화</span></span> 를 선택합니다.</p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_settings_advanced_adaptivestreamingdiagnosticsoverlaycut.png" data-mc-popup-alt="Adaptive streaming settings in XProtect Smart Client."><img class="MCPopupThumbnail img" data-mc-width="800" data-mc-height="480" src="../../../Images/sc_settings_advanced_adaptivestreamingdiagnosticsoverlaycut_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Adaptive streaming settings in XProtect Smart Client." tabindex="" /></a></p></li>
+        <li value="3">
+          <span class="uitext">비디오 진단 오버레이</span> 로 이동합니다.</li>
+        <li value="4">현재 스트림의 비디오 해상도를 보이게 하려면 <span class="uitext">레벨 2</span> 를 선택합니다.</li>
+        <p class="note">이 설정은 모든 항목 보기에 적용됩니다. <span class="uitext">숨기기</span> 가 기본 설정입니다.</p>
+        <li value="5">이제 비디오 진단 오버레이가 <span class="uitext">활성화</span> 되었을 것입니다. </li>
+        <p>뷰 창을 크게 또는 작게 재조정해본 후 <span class="uitext">비디오 해상도</span> 값이 변경되었는지 확인하십시오.</p>
+        <p>
+          <img src="../../../Images/sc_viewitem_diagnosticsoverlay_resolution320x180.png" alt="" />
+          <img src="../../../Images/sc_viewitem_diagnosticsoverlay_resolution480x270.png" alt="" />
+          <img src="../../../Images/sc_viewitem_diagnosticsoverlay_resolution1280x720.png" alt="" />
+        </p>
+        <p>비디오 해상도 값이 변경되지 않은 경우, 가능한 경우 적응 스트리밍을 활성화할 수 있도록 카메라에서 사용 가능한 라이브 비디오 스트림을 점검합니다.</p>
+      </ol>
+      <h2>사용 가능한 라이브 비디오 스트림 확인<a name="SC_CheckAvailableLiveVideoStreams"></a></h2>
+      <p>적응 스트리밍을 이용하려면 서로 다른 해상도로 설정된 둘 이상의 라이브 비디오 스트림이 카메라 설정에 구성되어 있어야 합니다.</p>
+      <p class="note"> 적응 스트리밍에 대해 지원되는 비디오 해상도 양식은 <span class="inputtext">너비 x 높이</span> 뿐입니다. 카메라에서 720p, 모드2, VGA 또는 그와 유사한 양식으로 제공된 비디오 해상도 양식은 지원되지 않습니다.</p>
+      <p class="note">모든 카메라가 멀티 스트리밍을 지원하지는 않습니다.</p>
+      <p>멀티스트리밍은 서버에서 장치별로 멀티스트림이 구성되도록 해줍니다. 멀티스트림이 구성되어 있으며 적응 스트리밍이 활성화되어 있는 경우, <span class="uitext">적응 스트리밍</span> 또는 기타 사용 가능한 스트림 중 하나를 선택할 수 있습니다.</p>
+      <p>
+        <span class="uitext">적응 스트리밍</span> 이 뷰에 구성되어 있는지 확인합니다:</p>
+      <ol>
+        <li value="1">
+          <span class="uitext">설정</span> 을 클릭하여 뷰를 구성합니다.</li>
+        <li value="2">
+          <span class="uitext">속성</span> 에서 <span class="uitext">라이브 스트림</span> 드롭다운 목록을 클릭하면 사용 가능한 라이브 비디오 스트림 목록이 나타납니다.</li>
+        <li value="3">
+          <p>두 개 이상의 라이브 비디오 스트림이 사용 가능한지 확인 후 <span class="uitext">적응 스트리밍</span> 을 선택합니다.</p>
+          <p>
+            <img src="../../../Images/sc_viewitem_setup_properties_livestream_adaptivestreamingselect.png" alt="Verify that adaptive streaming is selected in the camera properties." />
+          </p>
+          <p class="note">단 하나의 라이브 비디오 스트림만 사용 가능한 경우, <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> 에서 카메라에 대한 라이브 비디오 스트림을 더 추가합니다.</p>
+        </li>
+        <li value="4">
+          <span class="uitext">설정</span> 을 클릭하여 뷰 구성을 닫습니다.</li>
+      </ol>
+      <p>
+        <span class="uitext">적응 스트리밍</span> 이 <span class="uitext">라이브</span> 뷰 항목에 선택되어 있는지 확인합니다:</p>
+      <ol>
+        <li value="1">
+          <span class="uitext">더 보기</span> 드롭다운 목록을 클릭합니다.</li>
+        <li value="2">
+          <span class="uitext">라이브 스트림</span>을 선택한 후, 사용 가능한 라이브 비디오 스트림 목록이 나타납니다.</li>
+        <li value="3">
+          <p>두 개 이상의 라이브 비디오 스트림이 사용 가능한지 확인 후 <span class="uitext">적응 스트리밍</span> 을 선택합니다.</p>
+          <p>
+            <img src="../../../Images/sc_viewitem_more_livestream_adaptivestreaming.png" alt="Verify that adaptive streaming is selected in the camera view item." />
+          </p>
+        </li>
+      </ol>
+    </div>
+    <p></p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

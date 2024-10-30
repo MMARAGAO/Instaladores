@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MadCapSynonyms xml:lang="tr-TR">
+    <!-- saved from url=(0016)http://localhost -->
+    <Groups>
+        <SynonymGroup Stem="true">
+            <Word Stem="resim">resim</Word>
+            <Word Stem="video">video</Word>
+        </SynonymGroup>
+    </Groups>
+    <Directional>
+        <DirectionalSynonym Stem="true" From="değiştir" To="değiştir=modifiye et=özelleştir=özelleştir=düzenle" FromStem="değiştir" />
+    </Directional>
+</MadCapSynonyms>

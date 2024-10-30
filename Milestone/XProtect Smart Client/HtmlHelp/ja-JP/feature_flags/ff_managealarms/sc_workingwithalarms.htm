@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="ja-JP" xml:lang="ja-JP" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="操作" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Events are predefined incidents on the XProtect VMS system that can be set up to trigger an alarm. You can acknowledge and ignore alarms or print alarm reports." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=オペレータ" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>アラームとイベント（使用）</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#feature_flags/ff_managealarms/sc_workingwithalarms.htm">ナビ付きでトピックを開く</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="パンくず" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>アラームとイベント（使用）</h1>
+      <div>
+        <h2>アラーム（説明付き）<a name="SC_AboutAlarms.htm"></a></h2>
+        <div>
+          <p class="note">この機能は、特定の<span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMSシステムでのみ使用できます。システムの機能に関する詳細な情報は、<a href="../../standard_features/sf_sc/sf_considerationsrequirements/sc_surveillancesystemdif.htm" class="MCXref xref">製品間の相違点</a>を参照してください。</p>
+        </div>
+        <p>
+          <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMSサーバーでは、ほぼどのようなインシデントや技術的な問題（イベント）でもアラームをトリガーするよう設定できます。アラームとイベントは<span class="uitext">アラームマネージャー</span>タブで表示できます。ここには、VMSインシデント、ステータス、可能な技術的問題の概要が集約的に表示されます。</p>
+        <p>
+          <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>ではアラームトリガーを設定できません。システム管理者は、<span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMSシステムを設定する際に、これを行います。</p>
+        <p class="note">
+          <span class="uitext">アラームマネージャー</span>タブは、システム管理者の定義した設定に応じて表示または非表示されます。</p>
+        <p>
+          <span class="uitext">アラームマネージャ</span>タブは、アラームやイベントの処理専用のビューを提供します。このタブには、アクティブなアラームの数が表示されます。9件を超えるアラームは、<img src="../../../Images/about_alarms.png" alt="9+件のアラーム" />で表示されます。<span class="uitext">アラームマネージャー</span>には、アラームリスト、各アラームまたはイベントに関連のあるビデオをプレビューするためのアラームプレビューのほか、アラームに関連のあるカメラの場所を示す地図も含まれていることがあります。</p>
+      </div>
+      <div>
+        <h2>アラームリスト（説明付き）<a name="SC_TheAlarmList.htm"></a></h2>
+        <p>
+          <span class="uitext">アラームリスト</span>には、デフォルトで受信するアラームが表示されます。最も直近のアラームがリストのトップに表示されます。または、アラームリストに<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term17">MIP<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>「Milestone Integration Platform」の省略形。</span></a>のプラグインやアナリティクスイベントのリストを表示することもできます（アクセスコントロールやナンバープレート認識など）。</p>
+        <p>関連のあるビデオがあるアラームまたはイベントは、<img src="../../../Images/sc_alarmorevent_withvideo_icon.png" alt="" />とともに表示されます。アラームまたはイベント発生時の静止画像をプレビューするには、アイコンの上にマウスを動かしてください。アラームやイベントに関連付けられたカメラからの録画ビデオをプレビューするには、リストでアラームまたはイベントを選択します。アラームの繰り返しを止めるには、リストからその音に該当するアラームを選択します。</p>
+        <p>リストの表示方法、列のフィルタリング方法、列を異なる位置にドラッグする方法、右クリックして特定の列を表示または非表示にする方法を決められます。</p>
+        <p class="note">イベントリストには、モーション検知やアーカイブ障害などのシステムやユーザーが生成するイベントは表示されません。</p>
+        <p>リストは3秒ごとに更新されます。</p>
+        <p>
+          <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/the_alarm_list.png" data-mc-popup-alt="The alarm list in XProtect Smart Client.">
+            <img class="MCPopupThumbnail img" data-mc-width="500" data-mc-height="173" src="../../../Images/the_alarm_list_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="The alarm list in XProtect Smart Client." tabindex="" />
+          </a>
+        </p>
+        <p class="tip">イベントのリストを表示するには、設定モードに入り、<span class="uitext">プロパティ</span>ペインで<span class="uitext">イベント</span>を選択します。「<a href="sc_configuringalarmsandevents.htm#SC_AlarmListSettings.htm" class="MCXref xref">アラームリストの設定</a>」も参照してください。</p>
+      </div>
+      <div>
+        <h2>アラームリストのサーバー（説明付き）<a name="SC_Servers.htm"></a></h2>
+        <p>アラームリストの左側で、アラームが発生したサーバーを表示できます。多くの<span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMSシステムには単一のサーバーのみが含まれていますが、階層で複数のサーバーが構成されているシステムもあります。アクセスできるすべてのサーバーが一覧表示されます。アラームはサーバーでフィルタリングできます。</p>
+      </div>
+      <div>
+        <h2>アラーム状態（説明付き）<a name="SC_Filters.htm"></a></h2>
+        <p>アラームには以下の状態があります。新規、処理中、保留中、処理済。各アラームの状態は<span class="uitext">[状態]</span>列の<span class="uitext">[アラームリスト]</span>で見ることができます。<span class="uitext">[フィルター]</span>ペインでは、特定の基準に従ってフィルタリングできます。最初はすべてのアラームが<span class="uitext">[新規]</span>状態ですが、アラームが処理されると、その状態が更新されます。</p>
+      </div>
+      <div>
+        <h2>アラームのフィルタリング<a name="SC_FilterAlarms.htm"></a></h2>
+        <p>アラームリストにフィルタをかけるには複数の方法があり、関心のあるデータだけを表示することができます。</p>
+        <p>手順： </p>
+        <ol>
+          <li value="1">
+            <p>アラームリストのツールバーで、<span class="uitext">カスタム（フィルター適用済み）</span>または<span class="uitext">フィルターなし</span>テキストをクリックします。選択したフィルターによっては、テキストが異なる場合があります。<br /></p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/filter_alarms.png" data-mc-popup-alt="Filter alarms in XProtect Smart Client.">
+                <img class="MCPopupThumbnail img" data-mc-width="1217" data-mc-height="286" src="../../../Images/filter_alarms_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Filter alarms in XProtect Smart Client." tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="2">フィルターをかける列のフィルター条件を入力します。たとえば、<span class="uitext">ID</span>フィールドにユーザーIDを入力すると、そのユーザーに割り当てられているアラームだけが表示されます。</li>
+          <li value="3">例えば、<span class="uitext">州名</span>および<span class="uitext">所有者</span>（割り当て済み）などのようにフィルターを組み合わせることができます。</li>
+          <li value="4">フィルター処理していないアラームリストに戻るには、<span class="uitext">[フィルター解除]</span>ボタンをクリックします。</li>
+          <li value="5">アラームリストのコンテンツを並べ替えるには、列のタイトルをクリックします。</li>
+        </ol>
+        <p class="tip">アラーム処理にマップコンテンツが含まれる場合、マップ上のエレメント（カメラ、サーバーなど）を右クリックして、<span class="uitext">アラームの表示</span>を選択することでアラームリストをフィルター処理することもできます。これにより、選択した要素からのアラームだけがアラームリストに表示されます。</p>
+      </div>
+      <div>
+        <h2>アラームへの応答<a name="SC_ResponsdingToAlarms.htm"></a></h2>
+        <div>
+          <h3>アラームの詳細の表示および編集<a name="SC_ViewingAndEditingDeta.htm"></a></h3>
+          <p>アラームにはさまざまな方法で応答できます。 <span class="uitext">アラームリスト</span>を追加したいずれかのビューに移動して、アラームをダブルクリックできます。アラームが別のウィンドウで開き、ここでアラームインシデントとライブビデオのプレビューを表示できます。 また、以下のテーブルのフィールドを変更することで、アラームに応答することもできます。 </p>
+        </div>
+      </div>
+      <p>
+        <span class="mc-variable flvar-brand-company.XP variable">XProtect</span>
+        <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term50"> VMS<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>「ビデオマネジメントソフトウェア」の短縮形</span></a>システムの設定方法に応じて、アラームのデスクトップ通知を受け取ることも可能です。このような通知は、スクリーンに15秒間表示されます。 通知をクリックすると、<span class="uitext">アラームマネージャー</span>タブに直接移動し、アラームウィンドウが開きます。</p>
+      <div>
+        <div>
+          <table cellspacing="3">
+            <col />
+            <col />
+            <thead>
+              <tr>
+                <th>フィールド</th>
+                <th>説明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">ステータス</span>
+                  </p>
+                </td>
+                <td>
+                  <p>アラームの状態は、誰かがイベントに対応したかどうかを示します。アラームの状態を変更できます。通常、<span class="uitext">新規</span>から<span class="uitext">進行中</span>に状態を変更した後、<span class="uitext">保留中</span>または<span class="uitext">終了</span>に変更できます。</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">優先度</span>
+                  </p>
+                </td>
+                <td>
+                  <p>アラームの優先度を変更できます。</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">割り当て先</span>
+                  </p>
+                </td>
+                <td>
+                  <p>自分自身を含めて、組織内のユーザーにアラームを割り当てることができます。アラームを割り当てる相手がアラームの所有者になり、アラームリストの<span class="uitext">所有者</span>列に表示されます。</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">コメント</span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    <span class="uitext">アクティビティ</span>セクションに追加されるコメントや備考を入力します。コメントは通常、ユーザーが行ったアクションに関連します。たとえば、「警備担当者が容疑者を拘束」、「容疑者を警察に引き渡す」、「火災報知器」などです。ウィンドウの最下部に<span class="uitext">コメント</span>フィールドが表示されます。</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">アクティビティ</span>
+                  </p>
+                </td>
+                <td>
+                  <p>アクティビティはユーザーがアラームをどのように処理したかを簡単に示します。アラームの状態または優先順位にユーザーが変更を加えると、ユーザー間でのアラームの再割り当て、追加されたコメントが<span class="uitext">アクティビティ</span>セクションに自動的に含められます。</p>
+                  <p class="note">
+                    <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMSサーバーの設定によって、アラームにはアラーム受領時の対応手順を含めることができます。この手順は、アラーム定義の一環としてサーバー側で定義されます。この場合、アラームを編集するときにアクティビティが自動的に表示されます。</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">印刷</span>
+                  </p>
+                </td>
+                <td>
+                  <p>アラームに関する情報を含むレポートを印刷できます。アラーム履歴や、画像を利用できる場合はアラーム発生時の<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term19">静止画像<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>単一の静止画像。</span></a>などです。</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h3>アラームを確認<a name="SC_AcknowledgeAnAlarm.htm"></a></h3>
+          <p>アラームを受信したら、それに対応することを録画するために確認応答することができます。</p>
+          <p>手順：</p>
+          <ol>
+            <li value="1">
+              <p>アラーム リスト中でアラームを右クリックして<span class="uitext">認識させる </span>を選択。 アラーム状態は<span class="uitext">進行中</span>に変更されます。</p>
+              <p class="note">確認応答できるのは新規のアラームだけです。</p>
+            </li>
+            <li value="2">複数のアラームを同時に確認応答することができます。<span class="uitext">Ctrl</span>キーを押したまま、確認するアラームを選択します。</li>
+            <li value="3">アラームをダブルクリックすると、アラームの詳細を編集することができます。例えば、アラームを個人に割り当て、指示を追加します。</li>
+          </ol>
+        </div>
+        <div>
+          <h3>
+            <a name="Disable"></a>特定のイベントタイプで新しいアラームを全て無効にする</h3>
+          <p>イベントが誤認アラームを起動する場合は、一定期間、このタイプのイベントでの新しいアラームをすべて無効にした方がよいかもしれません。</p>
+          <p>例えば、カメラのまわりで動作が多く、何度も誤認アラームが発生している場合は、このカメラの動作検出アラームを10分間、無効にできます。その後、カメラのモーション検知は10分間、アラームを起動しなくなります。これにより、誤認アラームにわずらわされることなく、注意の必要なアラームに集中できます。</p>
+          <p class="important">アラームを無効にすると、同じ<span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMSシステムに接続しているオペレータ全員に影響します。</p>
+          <p>
+            <span class="uitext">アラームマネージャー</span>またはマップを使用して、新しいアラームを全て無効にできます。</p>
+          <ol>
+            <li value="1">
+              <p>
+                <span class="uitext">アラームマネージャー</span>を使用する場合：アラームリストでアラームを右クリックし、<span class="uitext">新規アラームを全て無効にする</span>を選択します。</p>
+              <p>マップを使用する場合：アラームを右クリックし、<span class="uitext">新規アラームを全て無効にする</span> &gt; <span class="uitext">無効化</span>を選択します。</p>
+              <p>
+                <span class="uitext">新規アラームを全て無効にする</span>ウィンドウが表示されます。</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_disablealarmsoneventtypes.png" data-mc-popup-alt="Disable alarms based on event types in XProtect Smart Client.">
+                  <img class="MCPopupThumbnail img" data-mc-width="459" data-mc-height="790" src="../../../Images/sc_disablealarmsoneventtypes_thumb_200_0.png" style="max-width: 400px;mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Disable alarms based on event types in XProtect Smart Client." tabindex="" />
+                </a>
+              </p>
+            </li>
+            <li value="2">
+              <span class="uitext">アラームをトリガしないイベント</span>リスト <img src="../../../Images/1.png" alt="" /> で、アラームを起動すべきでないイベントのタイプを選択します。</li>
+            <li value="3">いつまで、またはどれくらいの期間、選択したイベントのタイプがアラームを起動しないようにするのか指定します <img src="../../../Images/2.png" alt="" />。</li>
+            <li value="4">また、選択したイベントタイプでアラームを無効にしている理由を追加することもできます<img src="../../../Images/3.png" alt="" />。</li>
+          </ol>
+        </div>
+        <div>
+          <h3>マップでアラームを無視する<a name="SC_IgnoreAnAlarm.htm"></a></h3>
+          <p>マップで指定した期間、エレメントに対するアラームを無視することができます。たとえば、カメラが修理中で接続が解除されている場合、修理中はマップにエラーが表示されても無視する必要があります。マップでアラームを無視しても、アラームはマップから削除されるだけで、アラームリストには残ります。</p>
+          <p>
+            <img src="../../../Images/sc_ignorealarmonmap.png" alt="Ignore alarms on maps in XProtect Smart Client." />
+          </p>
+        </div>
+        <div>
+          <h3>アラームを閉じる<a name="SC_CloseAlarms.htm"></a></h3>
+          <p>アラームを確認した後、通常は、調査担当者アラームを割り当てます。この間、アラームは<span class="uitext">運転中</span>の状態になります。アラームを処理した後、閉じることができます。</p>
+          <p>アラームを閉じるには、 <span class="uitext">[アラームリスト]</span>で以下のいずれかを実行します。</p>
+          <ul>
+            <li>アラームを右クリックして、<span class="uitext">[閉じる]</span>を選択。</li>
+            <li>アラームをダブルクリックし、<span class="uitext">[状態]</span>リストで、<span class="uitext">[閉じる]</span>を選択。</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <h2>アラームレポートを印刷する<a name="SC_PrintAReportWithAlarm.htm"></a></h2>
+        <p>アラーム履歴や、利用できる場合はアラームの時刻での静止画像を含め、アラームに関する情報を記載したレポートを印刷できます。アラームリストで複数のアラームを選択している場合は、この機能は使用できません。</p>
+        <p>手順：</p>
+        <ol>
+          <li value="1">アラームリストで、アラームを右クリックします。</li>
+          <li value="2">
+            <span class="uitext">印刷</span>を選択します。ウィンドウが表示されます。</li>
+          <li value="3">メモを追加するには<span class="uitext">メモ</span>フィールドにテキストを入力します。</li>
+          <li value="4">
+            <span class="uitext">[印刷]</span>ボタンをクリックします。</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_GetAlarmStatistics"></a>アラームの統計を取得する</h2>
+        <p>以下の期間に<span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMSシステムでトリガーされたアラームに関する統計データを取得します。</p>
+        <ul>
+          <li>
+            <span class="uitext">直近24時間</span>
+          </li>
+          <li>
+            <span class="uitext">直近7日間</span>
+          </li>
+          <li>
+            <span class="uitext">直近30日間</span>
+          </li>
+          <li>
+            <span class="uitext">直近6ヶ月間</span>
+          </li>
+          <li>
+            <span class="uitext">昨年</span>
+          </li>
+        </ul>
+        <p>
+          <span class="uitext">アラームレポート</span>ウィンドウには、カテゴリでフィルタリングされたアラーム数を示すグラフが2つ表示されます。例えば、<span class="uitext">優先度</span>や<span class="uitext">状態</span>などで、2つのグラフを並べて比較できます。</p>
+        <p>手順：</p>
+        <ol>
+          <li value="1">
+            <span class="uitext">アラームリスト</span>で<span class="uitext">レポート</span>ボタンをクリックします。ウィンドウが表示されます。</li>
+          <li value="2">グラフの上でタイムスパンを選択します（例：<span class="uitext">直近24時間</span>）。</li>
+          <li value="3">
+            <span class="uitext">レポートの選択</span>リストで、次のカテゴリのいずれかを選択します。<ul><li><span class="uitext">カテゴリ</span></li><li><span class="uitext">ステータス</span></li><li><span class="uitext">優先度</span></li><li><span class="uitext">閉じる理由</span></li><li><span class="uitext">サイト</span></li><li><span class="uitext">応答時間</span></li></ul></li>
+          <li value="4">各グラフでサブフィルターを選択します。例えば、<span class="uitext">ステータス</span>を選択すると、最初のグラフで<span class="uitext">新規</span>、2番目のグラフで<span class="uitext">進行中</span>を選択できます。グラフは自動的に入力されます。</li>
+          <li value="5">PDFレポートとしてグラフを印刷するには、<img src="../../../Images/sc_printalarmstatisticsicon.png" alt="" />をクリックします。</li>
+        </ol>
+        <p>
+          <a name="SC_ViewAlarmReports.htm"></a>
+        </p>
+      </div>
+      <div>
+        <h2>マップ上のアラーム（説明付き）<a name="SC_AlarmsOnMaps.htm"></a></h2>
+        <p>アラーム処理ビューに1つまたは複数のマップ位置が含まれている場合は、マップにもアラームを表示できます。マップは、カメラ、サーバーまたはアラームをトリガーする他のデバイスの地理的位置に基づいてアラームを表示するので、アラームがどこで発生したのか簡単に確認できます。右クリックすることで、マップから直接アラームを確認、無効化、抑制することができます。</p>
+        <p>カメラエレメントは、マウスを置くと、サムネイル形式のビデオを表示します。アラームと併用すると、アラーム発生時にマップ上のグラフィック要素が赤い丸で囲まれます。例えば、特定のカメラに関連付けられたアラームが作動すると、そのカメラを表すグラフィック要素が即座に赤い丸で囲まれます。 カメラ要素をクリックすると、そのカメラのビデオを表示するだけでなく、表示されるメニューを介してアラームを処理できます。</p>
+        <p class="tip">マップ上のアラームを強調表示する色として赤が妥当でない場合は、色を変更できます。</p>
+        <p>アラームが関連付けられているカメラが番地レベルのマップにあり、市のレベルのマップを表示しているとします。アラームを通知するには 異なるマップ階層レベルをつなぐグラフィック表現であるホットゾーンを使用すれば問題ありません。アラームが道路マップレベルで検出されると、都市レベルのマップ上のホットゾーンの色が赤に変わり、（これらの間に他のマップレベルが存在する場合でも）下位レベルのマップにアラームが発生していることが示されます。</p>
+        <p>複数の要素からのアラームを表示できるアラームリストモードに戻るには、アラームリストに表示されている必要なサーバー、優先順位、または状態をクリックします。</p>
+      </div>
+      <div>
+        <h2>
+          <a name="Alarms"></a>スマートマップ上のアラーム（説明付き）</h2>
+        <p>スマートマップには、デバイスで起動された場合、およびデバイスがスマートマップに追加された場合にアラームが表示されます。「<a href="../ff_map/sc_configuringmaps.htm#SC_AddingDeletingOrEditi_1.htm" class="MCXref xref">スマートマップ上のデバイスの追加、削除、編集</a>」も参照してください。</p>
+      </div>
+      <p>スマートマップのアイコンの詳細については、<a href="../../standard_features/sf_sc/sf_operation/sc_searchingadditionalinfo.htm#Camera" class="MCXref xref">カメラアイコン（説明付き）</a>を参照してください。</p>
+      <div>
+        <h2>イベント（説明付き）<a name="SC_Events.htm"></a></h2>
+        <p>イベントは、<span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMSシステムで事前に定義されたインシデントで、アラームをトリガーするよう設定できます。イベントは事前に定義されたシステムインシデント、またはユーザーの指定したイベントです。分析イベント、一般的なイベントなどがあります。イベントは必ずアラームにリンクしなければならないわけではありませんが、リンクすることができます。</p>
+        <p>通常、イベントはバックグラウンドで自動的に有効になります（外部センサーからの入力の結果、動作検出、他のアプリケーションからのデータなど）。 ただし、イベントは手動で起動することも可能です。イベントはアクションをトリガーするためにVMSシステムによって使用されます。録画の開始や停止、ビデオ設定の変更、<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term33">出力<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>コンピュータから送られるデータ。 IP監視システムで、出力はゲートやサイレン、ストロボなどのデバイスを起動するため、頻繁に使用されます。</span></a>の有効化、アクションの組み合わせといったアクションがあります。<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>からイベントを有効にすると、VMSシステムでアクションが自動的にトリガーされます（特定期間、特定の<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term14">フレームレート<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>モーションビデオに含まれている情報量を示す単位。通常、FPS（秒当たりのフレーム数）で計算します。</span></a>を使い、特定のカメラで録画するなど）。</p>
+        <p>手動でイベントを起動した場合に何が起きるのかについては、システム管理者が決めます。</p>
+        <div>
+          <h3>イベントのマニュアル起動<a name="SC_ManuallyActivateAnEve.htm"></a></h3>
+          <p>選択可能な<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term11">イベント<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>監視システムで発生する定義済みの状態で、これを基に監視システムはアクションを起動します。 監視システムの設定によっては、外部センサーからの入力、モーションの検知、あるいは他のアプリケーションから受け取ったデータによって、イベントが発生します。また、ユーザーの入力を通じて手動でイベントを発生させることも可能です。イベントの発生は、特定のフレームレートでのカメラ録画、出力の開始、電子メールの送信や操作の組み合わせなどから起動するよう設定できます。</span></a>のリストは、サーバーと、イベントが関連付けられているカメラ/デバイスごとにグループ分けされています。イベントは手動で起動できます。イベント起動後の確認はありません。</p>
+          <ol>
+            <li value="1">
+              <span class="uitext">ライブ</span>タブで、<span class="uitext">イベント</span>ペインを展開します。</li>
+            <li value="2">
+              <span class="uitext">実行</span>をクリックします。</li>
+            <li value="3">カメラで利用できる場合は、マウスを画像の上に移動した時に表示される<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term34">オーバーレイボタン<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>ライブタブのビューの個別のカメラ位置にマウスのカーソルを移動させた際、ビデオにレイヤーとして表示されるボタンです。オーバーレイボタンは、スピーカーの起動、イベント、出力、PTZカメラの移動、録画開始、カメラからの信号の消去に使用します。</span></a>をクリックすることもできます。</li>
+          </ol>
+          <p class="note">階層構造内では、関連するサーバーの下にグローバルイベントが表示されます。サーバーが赤色のアイコン付きでリストされている場合は使用することができず、その場合、そのサーバーではイベントをアクティブ化できません。</p>
+        </div>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">概念情報</p>
+        <p class="containerItem_container_0">
+          <a href="sc_configuringalarmsandevents.htm">アラームとイベント（設定）</a>
+        </p>
+        <p class="referenceHeading_reference_0">参考資料</p>
+        <p class="referenceItem_reference_0">
+          <a href="sc_faq_alarms.htm">FAQ：アラーム</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

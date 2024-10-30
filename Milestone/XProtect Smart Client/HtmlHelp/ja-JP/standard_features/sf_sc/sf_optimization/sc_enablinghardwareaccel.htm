@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="ja-JP" xml:lang="ja-JP" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="最適化" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Get familiar with and read how to set up hardware acceleration to improve the performance of computers running XProtect Smart Client." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=管理者" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=インテグレーター" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>ハードウェアアクセラレーションの有効化</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#standard_features/sf_sc/sf_optimization/sc_enablinghardwareaccel.htm">ナビ付きでトピックを開く</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="パンくず" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>ハードウェアアクセラレーションの有効化</h1>
+      <h2>ハードウェアアクセラレーション（説明付き）<a name="SC_HardwareAccelerationExplained"></a></h2>
+      <p>ハードウェアアクセラレーションは<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>を使用しているコンピュータのデコーディングの能力、およびパフォーマンスを向上させます。主に、<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term14">高フレームレート<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>モーションビデオに含まれている情報量を示す単位。通常、FPS（秒当たりのフレーム数）で計算します。</span></a>および高解像度のビデオストリームを、複数閲覧する場合に便利です。</p>
+      <p class="note">
+        <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>は、Intel<sup>®</sup>およびNVIDIA<sup>®</sup> GPUを使用したハードウェア アクセラレーションによるデコーディングに対応しています。 <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span>では、お使いになっているNVIDIAディスプレイアダプターでのスケーラブルリンクインターフェース（SLI）構成の使用を推奨していません。</p>
+      <h2>ハードウェアアクセラレーション設定をチェックします<a name="SC_CheckHardwareAccelerationSettings"></a></h2>
+      <ol>
+        <li value="1">[<span class="uitext">設定</span>] &gt; [<span class="uitext">詳細</span>] &gt; [<span class="uitext">ハードウェアアクセラレーション</span>] の順に移動します。</li>
+        <li value="2">ハードウェアアクセラレーション用に2つの設定があります：<span class="uitext">自動</span>および<span class="uitext">オフ</span>。<p>デフォルトの設定<span class="uitext">自動</span>を選択します。</p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/check_hardware_acceleration.png" data-mc-popup-alt="Hardware acceleration settings in XProtect Smart Client."><img class="MCPopupThumbnail img" data-mc-width="798" data-mc-height="371" src="../../../../Images/check_hardware_acceleration_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Hardware acceleration settings in XProtect Smart Client." tabindex="" /></a></p></li>
+        <li value="3">
+          <span class="uitext">ビデオ診断オーバーレイ</span>に進みます。</li>
+        <li value="4">ハードウェアアクセラレーションに使われたGPUリソースを含む、ストリームの現状を閲覧するには、<span class="uitext">レベル2</span>を選択します。</li>
+        <p class="note">この設定はすべての表示アイテムに適用されます。<span class="uitext">非表示</span>がデフォルトの設定です。</p>
+        <p>
+          <span class="uitext">ハードウェアアクセラレーション</span>のための、ビデオ診断オーバーレイステイタスは以下のいずれかです：<span class="uitext">Intel</span>、<span class="uitext">NVIDIA</span>または<span class="uitext">Off</span>。</p>
+        <p>
+          <img src="../../../../Images/check_hardware_acceleration_1.png" alt="The video diagnostics status for hardware acceleration in XProtect Smart Client." />
+        </p>
+        <p>ステータスが<span class="uitext">［オフ］</span>の場合は、可能であればハードウェアアクセラレーションを有効にできるようコンピュータの調整し、すべてのハードウェアアクセラレーションリソースが活用されていることを確認してください。</p>
+        <li value="5">
+          <p class="note">
+            <span class="uitext">［システムモニター］</span>を使用して、現在の<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>デコーディングパフォーマンスを確認します。 <a href="../../../feature_flags/ff_systemmonitor/sc_monitoryoursystem.htm#Monitor_client_resources" class="MCXref xref">クライアントリソースのモニタリング</a>を参照してください。</p>
+        </li>
+      </ol>
+      <h2>オペレーティングシステムの確認<a name="SC_VerifyOperatingSystem"></a></h2>
+      <p>オペレーティングシステムがMicrosoft<sup>10</sup> Windows<sup>1809</sup> ®（ビルド®）、Windows<sup>®</sup> Server 2012 R2、またはそれ以降であることを確認します。</p>
+      <div>
+        <p class="note">非仮想環境のみがサポートされています。</p>
+      </div>
+      <h2>CPU Quick Syncのサポート確認<a name="SC_CheckCPUQuickSyncSupport"></a></h2>
+      <p>プロセッサがIntel Quick Sync Videoをサポートしているか確認するために：</p>
+      <ol>
+        <li value="1">IntelのWebサイト(<a href="https://ark.intel.com/Search/FeatureFilter?productType=processors/" target="_blank">https://ark.intel.com/Search/FeatureFilter?productType=processors/</a>)にアクセスします。</li>
+        <li value="2">メニューで、<span class="uitext">プロセッサー</span>そして<span class="uitext">Intel Quick Sync Video</span>フィルターが<span class="uitext">はい</span>に設定します。</li>
+        <li value="3">CPUをリストで見つけます。<p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/check_cpu_quick_sync_support.png" data-mc-popup-alt="Hardware acceleration in XProtect Smart Client - check support for CPU Quick Sync."><img class="MCPopupThumbnail img" data-mc-width="766" data-mc-height="554" src="../../../../Images/check_cpu_quick_sync_support_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Hardware acceleration in XProtect Smart Client - check support for CPU Quick Sync." tabindex="" /></a></p></li>
+      </ol>
+      <h2>デバイスマネージャの確認<a name="SC_ExamineDeviceManager"></a></h2>
+      <p>NVIDIAディスプレイアダプターが、Windowsデバイスマネージャーにて表示されていることを確認してください。</p>
+      <p>
+        <img src="../../../../Images/examine_the_device_manager.png" alt="Hardware acceleration in XProtect Smart Client - examine the device manager." />
+      </p>
+      <div>
+        <p class="important">ディスプレイを使用可能な任意のディスプレイアダプタに接続します。コンピュータ上でより強力なディスプレイアダプターが可能な場合、通常NVIDIA あるいは AMD<sup>®</sup>,のディスプレイをこのアダプターがデコーディングとレンダリングを補助するハードウェアに関連づけされている全てのGPUリソースへアクセスできるようにしてください。</p>
+        <p class="important">すべてのNVIDIAディスプレイがハードウェアアクセラレーションをサポートしているわけではありません。<a href="#Check_NVIDIA_hardware_acceleration_support" class="MCXref xref">NVIDIAハードウェアアクセラレーションを確認します。</a>を参照してください。</p>
+      </div>
+      <p>Intelディスプレイアダプターが存在しない場合、BIOSでIntelディスプレイアダプターを有効にします。<a href="#Enable_the_Intel_display_adapter_in_the_BIOS" class="MCXref xref">BIOSでIntel ディスプレイ アダプタを有効にする</a>を参照してください。</p>
+      <h2>
+        <a name="Check_NVIDIA_hardware_acceleration_support"></a>NVIDIAハードウェアアクセラレーションを確認します。</h2>
+      <p>NVIDIA製品は異なったコ性能を持っています。</p>
+      <p class="note">NVIDIA GPUを使用するハードウェア アクセラレーションによるデコーディングでは、バージョン 6.x (Pascal) 以降が必要です。</p>
+      <p>お使いのNVIDIA製品の演算能力は、NVIDIA Webサイト（<a href="https://developer.nvidia.com/cuda-gpus/" target="_blank">https://developer.nvidia.com/cuda-gpus/</a>）で確認できます。</p>
+      <h2>
+        <a name="Enable_the_Intel_display_adapter_in_the_BIOS"></a>BIOSでIntel ディスプレイ アダプタを有効にする</h2>
+      <p>例えば、NVIDIAまたはAMDなど、ご使用のコンピュータに別のディスプレイアダプタカードが搭載されている場合は、ボード上のIntelディスプレイアダプタが無効になっていることがあり、その場合は有効にする必要があります。</p>
+      <p>Intelディスプレイアダプタは、CPUの一部としてマザーボード上に配置されています。有効化するためには、コンピュータのBIOSで、グラフィックス、CPUまたはディスプレイの設定をご覧ください。関連設定を見つけるには、ベンダーのマザーボードマニュアルが役立つこともあります。</p>
+      <p class="tip">設定を変更してもボード上のIntelディスプレイアダプタが有効化されない場合は、ディスプレイアダプタカードを別のスロットに移動し、マザーボードへのディスプレイの接続をお試しください。これによってボード上のディスプレイアダプタが有効になる場合があります。</p>
+      <h2>ビデオドライバを更新します<a name="SC_UpdateVideoDriver"></a></h2>
+      <p>お使いのすべてのディスプレイアダプタのためのドライバのバージョンがIntel、あるいはNVIDIAが提供している最新のバージョンに更新されていることを確認してください。</p>
+      <p class="note">PCベンダーの提供するドライババージョンが古く、Intel Quick Sync Videoをサポートしていない可能性があります。</p>
+      <p>ドライバの更新方法は次の2つです。手動でダウンロードしてインストールするか、ドライバアップデートユーティリティを使用します。</p>
+      <p class="subheading">Intel</p>
+      <p>手動でのダウンロードとインストール：</p>
+      <ol>
+        <li value="1">IntelダウンロードWebサイト（<a href="https://downloadcenter.intel.com/" target="_blank">https://downloadcenter.intel.com/</a>）にアクセスします。</li>
+        <li value="2">一体型のディスプレイアダプタの名前を入力します。</li>
+        <li value="3">ドライバを手動でダウンロードし、インストールします。</li>
+      </ol>
+      <p>Intelコンポーネントおよびドライバの自動検出と更新：</p>
+      <ol>
+        <li value="1">インテルドライバーおよびサポートアシスタント（<a href="https://www.intel.com/p/en_us/support/detect/" target="_blank">https://www.intel.com/p/en_us/support/detect/</a>）をダウンロードします。</li>
+        <li value="2">ドライバのための自動サーチに対し、アシスタントを実行します。</li>
+        <li value="3">グラフィックスのドライバの更新を選択します。</li>
+      </ol>
+      <p class="subheading">NVIDIA</p>
+      <p>オプション1：my NVIDIA製品のためのドライバを手動で見つけます。</p>
+      <ol>
+        <li value="1">NVIDIAダウンロードドライバーWebサイト（<a href="https://www.nvidia.com/Download/index.aspx/" target="_blank">https://www.nvidia.com/Download/index.aspx/</a>）にアクセスします。</li>
+        <li value="2">お使いの製品の名前、およびオペレーティングシステムを入力します。</li>
+        <li value="3">ドライバを手動でダウンロードし、インストールします。</li>
+      </ol>
+      <p>オプション2：my NVIDIA製品のためのドライバを自動で見つけます。</p>
+      <ol>
+        <li value="1">NVIDIAダウンロードドライバーWebサイト（<a href="https://www.nvidia.com/Download/index.aspx/" target="_blank">https://www.nvidia.com/Download/index.aspx/</a>）にアクセスします。</li>
+        <li value="2">
+          <span class="uitext">グラフィクスドライバ</span>をクリックします。</li>
+        <li value="3">お使いのシステムがスキャンされます。</li>
+        <li value="4">ドライバをダウンロードおよびアップデートします。</li>
+      </ol>
+      <h2>モジュール設定の確認<a name="SC_CheckMemoryModulesConfig"></a></h2>
+      <p>システムでサポートしているのが、1つのメモリチャネルである場合は、最低2つのチャネルでメモリモジュールが正しいDIMMスロットに挿入されていることを確認することで、システムパフォーマンスを上げることができる場合があります。正しいDIMMスロットを見つけるにはマザーボードのマニュアルを参照してください。</p>
+      <p>例：</p>
+      <p>メモリチャネルが2つあるシステムで、メモリの合計量が8GBあるときは、2x4GBのメモリモジュール構成を使用したときに最高のパフォーマンスを得ることができます。</p>
+      <p>カメラビューを新規フローティングウィンドウに送る。</p>
+    </div>
+    <p></p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

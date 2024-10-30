@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" dir="rtl" lang="ar-SA" xml:lang="ar-SA" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="التشغيل" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Events are predefined incidents on the XProtect VMS system that can be set up to trigger an alarm. You can acknowledge and ignore alarms or print alarm reports." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=المشغل" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>الإنذارات والأحداث (الاستخدام)</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/purify.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#feature_flags/ff_managealarms/sc_workingwithalarms.htm">فَتح موضوع مع التصفح</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="مسارات التنقل" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>الإنذارات والأحداث (الاستخدام)</h1>
+      <div>
+        <h2>الإنذارات (موضّحة)<a name="SC_AboutAlarms.htm"></a></h2>
+        <div>
+          <p class="note">هذه الميزة متاحة فقط في بعض أنظمة VMS <span class="mc-variable flvar-brand-company.XP variable">XProtect</span>. للحصول على معلومات حول الميزات الموجودة في النظام الخاص بك، راجع <a href="../../standard_features/sf_sc/sf_considerationsrequirements/sc_surveillancesystemdif.htm" class="MCXref xref">اختلافات نظام المراقبة</a>.</p>
+        </div>
+        <p>على خادم VMS <span class="mc-variable flvar-brand-company.XP variable">XProtect</span>، يمكن تقريبًا إعداد أي نوع من الحوادث أو المشكلات الفنية - الأحداث - لإطلاق إنذار. يمكن عرض جميع الإنذارات والأحداث في علامة التبويب <span class="uitext">إدارة الإنذار</span>، والتي توفر نظرة عامة مركزية على حوادث نظام VMS والحالة والمشاكل التقنية المحتملة.</p>
+        <p>لا يمكنك إعداد مشغلات الإنذار في <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. يقوم مسؤول النظام بذلك عند تكوين نظام VMS <span class="mc-variable flvar-brand-company.XP variable">XProtect</span>.</p>
+        <p class="note">إمَّا يتم عرض علامة تبويب <span class="uitext">إدارة الإنذار</span> أو إخفائها وفقًا للإعدادات التي يحددها مسؤول النظام.</p>
+        <p>يقدم تبويب <span class="uitext">مدير الإنذار</span> طريقة عرض مخصصة لمعالجة الحدث أو الإنذار لديك. تعرض علامة التبويب نفسها عدد الإنذارات النشطة. يتم عرض أكثر من تسعة إنذارات مع <img src="../../../Images/about_alarms.png" alt="9+ إنذارات" />. تتضمن علامة التبويب <span class="uitext">مدير الإنذار</span> قائمة الإنذارات ومعاينة إنذار لمعاينة الفيديو المرتبط بالإنذارات أو الأحداث الفردية ، وربما أيضًا خريطة تعرض الموقع الجغرافي للكاميرا المرتبط بالتنبيه. </p>
+      </div>
+      <div>
+        <h2>قائمة الإنذارات (موضّحة)<a name="SC_TheAlarmList.htm"></a></h2>
+        <p>تقوم <span class="uitext">قائمة الإنذارات</span> بعرض الإنذارات الواردة افتراضيًا، مع عرض أحدث الإنذارات أعلى القائمة. بدلاً من ذلك، يمكن أن تعرض قائمة الإنذارات قائمة بالمكونات الإضافية والأحداث التحليلية لـ <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term17">MIP<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>اختصار لـ "Milestone Integration Platform".</span></a>،مثل خاصية التحكم في الوصول أو التعرف على لوحات التراخيص. </p>
+        <p>يتم عرض الإنذارات أو الأحداث مع الفيديو المرتبط برمز <img src="../../../Images/sc_alarmorevent_withvideo_icon.png" alt="" />. لمعاينة صورة ثابتة من وقت الإنذار أو الحدث، مرر الماوس فوق الرمز. لمعاينة فيديو مسجل من الكاميرا أو الكاميرات المرتبطة بالإنذار أو الحدث، اختر الإنذار أو الحدث من القائمة. لإيقاف صوت إنذار متكرر، حدد الإنذار المرتبط بالصوت في القائمة.</p>
+        <p>يمكنك تحديد الطريقة التي تريد أن تظهر بها القائمة، ويمكنك تصفية الأعمدة، ويمكنك سحب الأعمدة إلى مواضع مختلفة، ويمكنك النقر بزر الماوس الأيمن لإظهار أو إخفاء أعمدة معينة.</p>
+        <p class="note">لا تعرض قائمة الأحداث أيًا من الفعاليات التي يولدها النظام أو المستخدم، كالكشف عن الحركة أو الخطأ في الأرشفة.</p>
+        <p>يتم تحديث هذه القائمة كل 3 ثوان.</p>
+        <p>
+          <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/the_alarm_list.png" data-mc-popup-alt="The alarm list in XProtect Smart Client.">
+            <img class="MCPopupThumbnail img" data-mc-width="500" data-mc-height="173" src="../../../Images/the_alarm_list_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="The alarm list in XProtect Smart Client." tabindex="" />
+          </a>
+        </p>
+        <p class="tip">للاطلاع على قائمة الأحداث، أدخل وضع الإعداد وحدد <span class="uitext">حدث</span> في جزء <span class="uitext">الخصائص</span>. راجع أيضًا <a href="sc_configuringalarmsandevents.htm#SC_AlarmListSettings.htm" class="MCXref xref">إعدادات قائمة الإنذار</a>.</p>
+      </div>
+      <div>
+        <h2>الخوادم في قائمة الإنذارات (موضّحة)<a name="SC_Servers.htm"></a></h2>
+        <p>في الجانب الأيسر من قائمة الإنذارات، يمكنك عرض الخوادم التي تنشأ منها الإنذارات. تحتوي العديد من أنظمة VMS <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> على خادم واحد فقط، ولكن قد تتكون بعض الأنظمة من عدة خوادم في تسلسل هرمي. يتم سرد جميع الخوادم التي يمكنك الوصول إليها، ويمكنك تصفية الإنذارات حسب الخوادم.</p>
+      </div>
+      <div>
+        <h2>حالات الإنذار (موضّحة)<a name="SC_Filters.htm"></a></h2>
+        <p>يمكن أن تكون الإنذارات واحدة من الحالات التالية: جديدة أو قيد التنفيذ أو معلقة أو مغلقة. يمكنك رؤية حالة كل إنذار في عمود <span class="uitext">اسم الحالة</span> الخاص <span class="uitext">بقائمة الإنذارات</span>. يتيح لك جزء <span class="uitext">عوامل التصفية</span> إمكانية التصفية وفقًا لمعايير معينة. مبدئيًا، ستكون جميع الإنذارات في الحالة <span class="uitext">جديد</span>، ولكن بمجرد معالجة أحد الإنذارات، سيتم تحديث حالته.</p>
+      </div>
+      <div>
+        <h2>تصفية التنبيهات<a name="SC_FilterAlarms.htm"></a></h2>
+        <p>هناك العديد من الطرق التي يمكنك بها تصفية قائمة الإنذارات، بحيث تعرض الإنذارات أو الأحداث التي تهتم بها.</p>
+        <p>الخطوات: </p>
+        <ol>
+          <li value="1">
+            <p>في شريط أدوات قائمة الإنذار، انقر فوق نص <span class="uitext">مخصص (يتم تطبيق عامل تصفية)</span> أو <span class="uitext">بدون عامل تصفية</span>. قد يختلف النص حسب عامل التصفية المستخدم.<br /></p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/filter_alarms.png" data-mc-popup-alt="Filter alarms in XProtect Smart Client.">
+                <img class="MCPopupThumbnail img" data-mc-width="1217" data-mc-height="286" src="../../../Images/filter_alarms_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Filter alarms in XProtect Smart Client." tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="2">أدخل معايير التصفية في أي من الأعمدة التي تريد تصفيتها. على سبيل المثال، إذا قمت بإدخال معرف مستخدم في حقل <span class="uitext">(ID) المعرف</span>، فسوف تعرض القائمة الإنذارات المعينة لهذا المستخدم المحدد.</li>
+          <li value="3">يمكنك جمع عوامل التصفية مثل <span class="uitext">اسم الولاية</span> و <span class="uitext">المالك</span> (المخصص لـها).</li>
+          <li value="4">للعودة إلى قائمة الإنذار التي لم تتم تصفيتها، انقر فوق زر <span class="uitext">حذف عامل التصفية</span>.</li>
+          <li value="5">لفرز محتويات قائمة الإنذارات، في قائمة الإنذارات، انقر فوق عنوان العمود.</li>
+        </ol>
+        <p class="tip">ا كانت عروض معالجة الإنذارات الخاصة بك تشتمل على محتوى خرائط، فإنه يمكنك أيضًا تصفية قائمة الإنذارات من خلال النقر بزر الماوس الأيمن فوق عنصر من العناصر الموجودة علي الخريطة (كاميرا أو خادم أو ما شابه ذلك)، ثم تحديد <span class="uitext">إظهار الإنذارات</span>. وسيدفع هذا الخيار قائمة الإنذارات لإظهار الإنذارات الصادرة من العنصر المحدد فقط.</p>
+      </div>
+      <div>
+        <h2>الاستجابة للإنذارات<a name="SC_ResponsdingToAlarms.htm"></a></h2>
+        <div>
+          <h3>عرض وتحرير تفاصيل الإنذار<a name="SC_ViewingAndEditingDeta.htm"></a></h3>
+          <p>يمكنك الاستجابة للإنذارات بطرق مختلفة. يمكنك الانتقال إلى أي عرض قمت بإضافة <span class="uitext">قائمة الإنذارات</span> فيه ثم النقر نقرًا مزدوجًا فوق الإنذار. يفتح الإنذار في نافذة منفصلة، بحيث يمكنك معاينة حادثة الإنذار والفيديو المباشر. كما يمكنك أيضًا الاستجابة للإنذار بتغيير الحقول في الجدول أدناه. </p>
+        </div>
+      </div>
+      <p>اعتمادًا على كيفية تكوين نظام <span class="mc-variable flvar-brand-company.XP variable">XProtect</span><a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term50">المخصص لإدارة الفيديو<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>اختصار إلى "برنامج إدارة الفيديو".</span></a>، قد تتلقى الإنذارات أيضًا من خلال إخطارات سطح المكتب. تبقى هذه الإشعارات على الشاشة لمدة 15 ثانية. عندما تنقر فوق إشعار، فإنه ينقلك مباشرة إلى علامة تبويب <span class="uitext">إدارة الإنذار</span> ويفتح نافذة الإنذار.</p>
+      <div>
+        <div>
+          <table cellspacing="3">
+            <col />
+            <col />
+            <thead>
+              <tr>
+                <th>الحقل</th>
+                <th>الوصف</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">الحالة</span>
+                  </p>
+                </td>
+                <td>
+                  <p>تشير حالة الإنذار إلى ما إذا قام شخص ما بمعالجة الحدث. يمكنك تغيير حالة الإنذار. عادة، يمكنك تغيير الحالة من <span class="uitext">جديد</span> إلى <span class="uitext">قيد التقدم</span>، ثم بعد ذلك إلى <span class="uitext">قيد الانتظار</span> أو <span class="uitext">مغلق</span>. </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">الأولوية</span>
+                  </p>
+                </td>
+                <td>
+                  <p>يتيح لك تغيير أولوية الإنذار.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">معين إلى</span>
+                  </p>
+                </td>
+                <td>
+                  <p>يتيح لك تعيين الإنذار إلى مستخدم في المؤسسة الخاصة بك، بما في ذلك تعيينه لك شخصيًا. يصبح الشخص الذي تقوم بتعيين التنبيه له هو مالك التنبيه ، وسيظهر في عمود <span class="uitext">المالك</span> بقائمة الإنذار.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">تعليق</span>
+                  </p>
+                </td>
+                <td>
+                  <p>لكتابة التعليقات والملاحظات، والتي ستتم إضافتها إلى قسم <span class="uitext">الأنشطة</span>. تتعلق التعليقات عادة بالإجراءات التي اتخذتها. على سبيل المثال، "تم احتجاز المشتبه به من قبل الأمن" أو "تسليم المشتبه به إلى الشرطة" أو "إنذار كاذب". يظهر حقل <span class="uitext">التعليق</span> في الجزء السفلي من النافذة.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">الأنشطة</span>
+                  </p>
+                </td>
+                <td>
+                  <p>تلخص الأنشطة طريقة تعاملك مع الإنذار. سيتم تلقائيا إدراج أية تغييرات تقوم بها أو يقوم بها زملاؤك في حالة أو أولوية الإنذار وأي عملية إعادة تعيين للإنذارات بين المستخدمين وكذلك أية تعليقات مضافة في قسم <span class="uitext">الأنشطة</span>.</p>
+                  <p class="note">اعتمادًا على تكوين خادم VMS <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> ، يمكن أن يحتوي الإنذار على إرشادات حول ما يجب فعله عند تلقي الإنذار. يتم تحديد الإرشادات على جانب الخادم كجزء من تعريف الإنذار. وفي هذه الحالة، يتم عرض الأنشطة تلقائيًا عند تحرير الإنذار.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">طباعة</span>
+                  </p>
+                </td>
+                <td>
+                  <p>يتيح لك طباعة تقرير يحتوي على معلومات خاصة بالإنذارات، مثل محفوظات الإنذار و<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term19">صورة ثابتة<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>صورة ثابتة واحدة.</span></a>، من وقت الإنذار، إذا توافرت صورة.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h3>الإقرار بالإنذارات<a name="SC_AcknowledgeAnAlarm.htm"></a></h3>
+          <p>عندما تتلقى إنذارًا، يمكنك الإقرار به بتسجيل أنك ستقوم بشيء حياله.</p>
+          <p>الخطوات:</p>
+          <ol>
+            <li value="1">
+              <p>في قائمة الإنذار، انقر بزر الماوس الأيمن على الإنذار وحدد <span class="uitext">إقرار</span>. تتغير حالة الإنذار إلى <span class="uitext">قيد التقدم</span>.</p>
+              <p class="note">يمكنك إقرار الإنذارات الجديدة فقط.</p>
+            </li>
+            <li value="2">يمكنك إقرار عدة إنذارات في الوقت نفسه؛ اضغط مع الاستمرار على المفتاح <span class="uitext">CTRL</span>، ثم قم بتحديد الإنذارات التي تريد إقرارها.</li>
+            <li value="3">انقر نقرًا مزدوجًا فوق إنذار لتحرير تفاصيل الإنذار، على سبيل المثال، تعيين الإنذار لشخص ما وإضافة التعليمات.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>
+            <a name="Disable"></a>تعطيل جميع الإنذارات الجديدة في أنواع الأحداث المحددة</h3>
+          <p>إذا أدى حدث ما إلى تشغيل إنذارات خاطئة، فقد ترغب في تعطيل جميع الإنذارات الجديدة لهذا النوع من الأحداث لمدة معينة.</p>
+          <p>على سبيل المثال، إذا كان هناك الكثير من الحركة حول الكاميرا وهذا يسبب العديد من الإنذارات الكاذبة، فيمكنك تعطيل التنبيهات على اكتشاف الحركة لهذه الكاميرا لمدة 10 دقائق. وبالتالي، لن يؤدي اكتشاف الحركة من خلال الكاميرا إلى إطلاق الإنذارات لمدة 10دقائق. بهذه الطريقة، لن تزعجك الإنذارات الكاذبة، كما يمكنك التركيز على الإنذارات التي تحتاج إلى انتباهك.</p>
+          <p class="important">يؤثر تعطيل الإنذارات على جميع المشغلين المتصلين بنظام إدارة الفيديو <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> الذي تتصل به أيضًا. </p>
+          <p>يمكنك تعطيل جميع الإنذارات الجديدة باستخدام <span class="uitext">مدير الإنذار</span> أو خريطة.</p>
+          <ol>
+            <li value="1">
+              <p>استخدام <span class="uitext">مدير الإنذار</span>: في قائمة الإنذار، انقر بزر الماوس الأيمن فوق المنبه وحدد <span class="uitext">تعطيل جميع الإنذارات الجديدة</span>.</p>
+              <p>استخدام الخريطة: انقر بزر الماوس الأيمن على الإنذار وحدد <span class="uitext">تعطيل كل الإنذارات الجديدة</span> &gt; <span class="uitext">تعطيل</span>.</p>
+              <p>تظهر نافذة <span class="uitext">تعطيل كل الإنذارات الجديدة</span>.</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_disablealarmsoneventtypes.png" data-mc-popup-alt="Disable alarms based on event types in XProtect Smart Client.">
+                  <img class="MCPopupThumbnail img" data-mc-width="459" data-mc-height="790" src="../../../Images/sc_disablealarmsoneventtypes_thumb_200_0.png" style="max-width: 400px;mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Disable alarms based on event types in XProtect Smart Client." tabindex="" />
+                </a>
+              </p>
+            </li>
+            <li value="2">في قائمة <span class="uitext">الأحداث التي لن تؤدي إلى تشغيل الإنذارات</span><img src="../../../Images/1.png" alt="" /> ، حدد أنواع الأحداث التي يجب ألا تؤدي إلى تشغيل الإنذارات.</li>
+            <li value="3">حدد الوقت والمدة التي تريد خلالها تعطيل الإنذارات على أنواع محددة من الأحداث <img src="../../../Images/2.png" alt="" />.</li>
+            <li value="4">اختياريًا، أضف تعليقًا حول سبب تعطيل التنبيهات على أنواع الأحداث المحددة <img src="../../../Images/3.png" alt="" />.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>تجاهل الإنذارات على الخريطة<a name="SC_IgnoreAnAlarm.htm"></a></h3>
+          <p>من على خريطة، يمكنك تجاهل إنذار ما لعنصر ما لفترة من الوقت. على سبيل المثال، في حالة إصلاح الكاميرا ومن ثم فصلها، ربما تحتاج إلى تجاهل الخطأ الذي يظهر على الخريطة خلال فترة الإصلاح. عندما تتجاهل إنذار على الخريطة، فإن ذلك لا يؤدي إلى إزالة الإنذار من قائمة الإنذارات، ولكن من الخريطة فقط.</p>
+          <p>
+            <img src="../../../Images/sc_ignorealarmonmap.png" alt="Ignore alarms on maps in XProtect Smart Client." />
+          </p>
+        </div>
+        <div>
+          <h3>إغلاق الإنذارات<a name="SC_CloseAlarms.htm"></a></h3>
+          <p>بعد الإقرار بإنذار، عادة ما تقوم بتعيينه لشخص يحقق فيما يجري. خلال هذا الوقت، سيكون الإنذار في حالة <span class="uitext">قيد التقدم</span>. بعد التعامل مع الإنذار، يمكنك إغلاقه.</p>
+          <p>لإغلاق إنذار، في <span class="uitext">قائمة الإنذارات</span>، قم بأحد الأمرين التاليين:</p>
+          <ul>
+            <li>انقر بزر الماوس الأيمن فوق الإنذار وحدد <span class="uitext">إغلاق</span>.</li>
+            <li>انقر نقرًا مزدوجًا فوق الإنذار، وفي قائمة <span class="uitext">الحالة</span>، حدد <span class="uitext">مغلق</span>.</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <h2>طباعة تقارير الإنذارات<a name="SC_PrintAReportWithAlarm.htm"></a></h2>
+        <p>يمكنك طباعة تقرير يحتوي على معلومات خاصة بالإنذارات، بما في ذلك محفوظات الإنذار وصورة ثابتة، إن وجدت، من وقت الإنذار. إذا حددت إنذارات متعددة في قائمة الإنذارات، فلن تستطيع استخدام هذه الميزة.</p>
+        <p>الخطوات:</p>
+        <ol>
+          <li value="1">في قائمة الإنذار، انقر بزر الماوس فوق الإنذار.</li>
+          <li value="2">حدد<span class="uitext"> طباعة</span>. تظهر نافذة.</li>
+          <li value="3">لإضافة ملاحظة، أدخل النص في حقل <span class="uitext">الملاحظات</span>.</li>
+          <li value="4">انقر فوق زر <span class="uitext">طباعة</span>.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_GetAlarmStatistics"></a>احصل على إحصائيات عن الإنذارات</h2>
+        <p>احصل على بيانات إحصائية حول الإنذارات التي تم إطلاقها في نظام VMS <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> الخاص بك عبر:</p>
+        <ul>
+          <li>
+            <span class="uitext">آخر24 ساعة</span>
+          </li>
+          <li>
+            <span class="uitext">آخر 7 أيام</span>
+          </li>
+          <li>
+            <span class="uitext">آخر 30 يومًا</span>
+          </li>
+          <li>
+            <span class="uitext">آخر 6 أشهر</span>
+          </li>
+          <li>
+            <span class="uitext">السنة الماضية</span>
+          </li>
+        </ul>
+        <p>تعرض نافذة <span class="uitext">تقرير الإنذارات</span> رسمين بيانيين يعرضان عدد الإنذارات التي تمت تصفيتها حسب الفئات، مثل <span class="uitext">الأولوية</span> أو <span class="uitext">الحالة</span> ، مما يتيح لك مقارنة الرسمين البيانيين جنبًا إلى جنب. </p>
+        <p>الخطوات:</p>
+        <ol>
+          <li value="1">في <span class="uitext">قائمة الإنذار</span>، انقر على زر <span class="uitext">التقارير</span>. تظهر نافذة.</li>
+          <li value="2">فوق الرسوم البيانية، حدد النطاق الزمني، على سبيل المثال <span class="uitext">آخر 24 ساعة</span>. </li>
+          <li value="3">في قائمة <span class="uitext">تحديد تقرير</span>، حدد إحدى هذه الفئات:<ul><li><span class="uitext">فئة</span></li><li><span class="uitext">الحالة</span></li><li><span class="uitext">الأولوية</span></li><li><span class="uitext">أسباب الغلق</span></li><li><span class="uitext">موقع</span></li><li><span class="uitext">وقت الاستجابة</span></li></ul></li>
+          <li value="4">لكل رسم بياني، حدد عامل تصفية فرعي. على سبيل المثال، إذا حددت <span class="uitext">الحالة</span>، يمكنك تحديد <span class="uitext">جديد</span> في الرسم البياني الأول و<span class="uitext">قيد التقدم</span> في الرسم البياني الثاني. يتم ملء الرسوم البيانية.</li>
+          <li value="5">لطباعة الرسوم البيانية كتقرير PDF، انقر فوق <img src="../../../Images/sc_printalarmstatisticsicon.png" alt="" />.</li>
+        </ol>
+        <p>
+          <a name="SC_ViewAlarmReports.htm"></a>
+        </p>
+      </div>
+      <div>
+        <h2>الإنذارات على الخرائط (موضّحة)<a name="SC_AlarmsOnMaps.htm"></a></h2>
+        <p>إذا اشتملت طريقة عرض معالجة الإنذارات على موضع أو أكثر من مواضع الخرائط، يمكنك أيضًا عرض الإنذارات على الخرائط أيضًا. تقوم الخرائط بعرض الإنذارات على حسب الموقع الجغرافي للكاميرا أو الخادم أو أي جهاز آخر يقوم بتشغيل الإنذارات ، لذا يمكنك على الفور رؤية مصدر الإنذارات. يمكنك النقر بزر الماوس الأيمن وإقرار أو تعطيل أو إيقاف عرض الإنذار مباشرة من على الخريطة.</p>
+        <p>تقوم عناصر الكاميرا بعرض الفيديو في صيغة صورة مصغرة عند تحريك الماوس عليه. عند استخدامها مع الإنذارات، تعرض العناصر الرسومية على الخرائط دوائر حمراء حولها في حالة حدوث الإنذارات. على سبيل المثال، في حالة حدوث إنذار مرتبط بكاميرا معينة، سيحصل العنصر الرسومي الذي يمثل تلك الكاميرا على الفور على دائرة حمراء حولها، ويمكنك بعد ذلك النقر على عنصر الكاميرا وليس فقط عرض الفيديو من الكاميرا، ولكن أيضًا التعامل مع الإنذار من خلال قائمة تظهر.</p>
+        <p class="tip">إذا لم يكن اللون الأحمر اللون المثالي للدلالة على الإنذارات على خرائطك، فيمكنك تغيير هذا اللون.</p>
+        <p>والآن على فرض أن الكاميرا التي تشتمل على إنذار مرتبط بها، موجودة في خريطة مستوى الشارع، ولكنك تستعرض خريطة مستوى المدينة. كيف ستلاحظ الإنذار؟ لا توجد مشكلة بخصوص هذا الأمر، فبفضل المناطق النشطة، تقوم التمثيلات الرسومية بربط مستويات تسلسل هرمي مختلفة للخريطة معا. إذا اكتشاف إنذار على خريطة مستوى الشارع، فستتحول المنطقة الساخنة على خريطة مستوى المدينة إلى اللون الأحمر، مما يشير إلى وجود إنذار على خريطة المستوى الأدنى - حتى إذا كانت هناك مستويات خريطة بينهما.</p>
+        <p>للعودة إلى وضع قائمة الإنذارات حيث يمكنك رؤية إنذارات صادرة من أكثر من عنصر واحد، انقر فوق الخادم المطلوب أو الأولوية أو الحالة المدرجة في قائمة الإنذارات.</p>
+      </div>
+      <div>
+        <h2>
+          <a name="Alarms"></a>الإنذارات على الخرائط الذكية (موضّحة)</h2>
+        <p>تعرض الخريطة الذكية الإنذارات إذا تم تشغيلها بواسطة جهاز ما وإذا تمت إضافة الجهاز إلى الخريطة الذكية. راجع أيضًا <a href="../ff_map/sc_configuringmaps.htm#SC_AddingDeletingOrEditi_1.htm" class="MCXref xref">إضافة أجهزة إلى الخريطة الذكية أو حذفها أو تحريرها</a>.</p>
+      </div>
+      <p>لمزيد من المعلومات حول رموز الخرائط الذكية، راجع <a href="../../standard_features/sf_sc/sf_operation/sc_searchingadditionalinfo.htm#Camera" class="MCXref xref">أيقونات الكاميرا (موضّحة)</a>.</p>
+      <div>
+        <h2>الأحداث (موضّحة)<a name="SC_Events.htm"></a></h2>
+        <p>الحدث هو حدث محدد مسبقًا على نظام VMS<span class="mc-variable flvar-brand-company.XP variable">XProtect</span> يمكن إعداده لإطلاق إنذار. والأحداث إما أن تكون أحداث نظام محددة مسبقًا أو أحداث يحددها المستخدم، مثل أحداث التحليلات أو الأحداث العامة. ليس من الضروري ربط الأحداث بإنذار، ولكن من الممكن القيام بذلك.</p>
+        <p>عادةً ما يتم تنشيط الأحداث تلقائيًا وفي الخلفية على إثر أي معلومة مدخلة من أجهزة الاستشعار الخارجية مثلًا أو أي حركة مكتشفة أو بيانات من التطبيقات الأخرى. ومع ذلك، يمكن أيضًا تنشيط الأحداث يدويًا. يتم استخدام الأحداث بواسطة نظام VMS لتشغيل الإجراءات، مثل بدء التسجيل أو إيقافه أو تغيير إعدادات الفيديو أو تنشيط <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term33">الإخراج<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>البيانات الصادرة من الكمبيوتر. على أنظمة المراقبة التي تستخدم IP، يُستخدم الإخراج كثيرًا لتنشيط أجهزة مثل البوابات وصفارات الإنذار والأضواء الوامضة وغير ذلك.</span></a> أو مجموعات من الإجراءات. عندما تقوم بتنشيط حدث من <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>، فإنه يقوم تلقائيًا بتشغيل إجراءات على نظام VMS، على سبيل المثال التسجيل على كاميرا معينة <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term14">بمعدل إطار<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>مقياس يشير إلى كمية المعلومات المحتواة في فيديو حركة. ويقاس نموذجيًا بوحدة FPS (الإطارات في الثانية).</span></a> معين لفترة زمنية معينة.</p>
+        <p>يحدد مسؤول النظام ما يحدث عند تنشيط حدث يدويًا. </p>
+        <div>
+          <h3>تنشيط الأحداث يدويًا<a name="SC_ManuallyActivateAnEve.htm"></a></h3>
+          <p>يتم تجميع قائمة <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term11">الأحداث<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>حادثة معرفة مسبقًا تظهر على نظام المراقبة؛ يستخدمها نظام المراقبة لبدء تفعيل الإجراءات. اعتمادًا على تهيئة نظام المراقبة، قد تنجم الأحداث عن إدخال من أدوات استشعار خارجية أو حركة تم اكتشافها أو بيانات مستلمة من تطبيقات أخرى أو يدويًا من خلال إدخال المستخدم. قد يستخدم ظهور حدث ما، على سبيل المثال، لتنفيذ سجل كاميرا ذي معدل إطارات معين أو لتنشيط عمليات إخراج أو لإرسال رسائل بريد إلكتروني أو لمجموعة من ذلك.</span></a> القابلة للتحديد من قبل الخادم والكاميرا أو الجهاز الذي يقترن الحدث به. يمكنك تنشيط الأحداث يدويًا. لا يوجد تأكيد بمجرد تنشيط الحدث.</p>
+          <ol>
+            <li value="1">في علامة التبويب <span class="uitext">مباشر</span>، قم بتوسيع الجزء <span class="uitext">حدث</span>.</li>
+            <li value="2">انقر فوق <span class="uitext">تنشيط</span>.</li>
+            <li value="3">أو بدلاً من ذلك، إذا كان متاحًا للكاميرا، انقر <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term34">زر التراكب<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>زر يظهر كطبقة فوق الفيديو عندما تقوم بتحريك مؤشر الماوس فوق مواضع معينة للكاميرا في طرق العرض الواردة في علامة التبويب "مباشر". استخدم أزرار التراكب لتنشيط السماعات والأحداث والإخراج وتحريك كاميرات PTZ وبدء التسجيل ومسح الإشارات من الكاميرات.</span></a> الذي يظهر عند تحريك الفارة فوق الصورة.</li>
+          </ol>
+          <p class="note">تدريجيًا، ستظهر الأحداث العامة تحت الخادم ذي الصلة. إذا تم سرد خادم بأيقونة حمراء، فلن يكون متوفرًا ولا يمكنك تنشيط الأحداث الموجودة به.</p>
+        </div>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">معلومات حول المفهوم</p>
+        <p class="containerItem_container_0">
+          <a href="sc_configuringalarmsandevents.htm">التنبيهات والأحداث (التكوين)</a>
+        </p>
+        <p class="referenceHeading_reference_0">مواد مرجعية</p>
+        <p class="referenceItem_reference_0">
+          <a href="sc_faq_alarms.htm">الأسئلة المتداولة: الإنذارات</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LogMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <version>4.0.14</version>
+  <culture>ru-RU</culture>
+  <userfields>
+    <userfield type="string" uname="ResourceId"/>
+    <userfield type="string" uname="ResourceName"/>
+    <userfield type="enum" uname="ResourceType"/>
+    <userfield type="enum" uname="SourceType"/>
+    <userfield type="enum" uname="ListType"/>
+    <userfield type="string" uname="EventType"/>
+  </userfields>
+  <userEnums>
+    <userEnum fieldname="SourceType" fieldtype="user" uname="SourceType">
+      <enum uname="LPRService" value="Служба LPR Server"/>
+      <enum uname="LPRClient" value="Клиент LPR"/>
+    </userEnum>
+    <userEnum fieldname="groupname" fieldtype="system" uname="group">
+      <enum uname="Audit" value="Аудит"/>
+    </userEnum>
+    <userEnum fieldname="ResourceType" fieldtype="user" uname="ResourceType">
+      <enum uname="LPR" value="Распознавание номерного знака"/>
+    </userEnum>
+    <userEnum fieldname="ListType" fieldtype="system" uname="ListType">
+      <enum uname="Edit_LPR_license_plate_list" value="Правка списка номерных знаков"/>
+      <enum uname="Search_LPR_events" value="Поиск событий распознавания номерных знаков"/>
+    </userEnum>
+    <userEnum fieldname="category" fieldtype="system" uname="category">
+      <enum uname="LPRList" value="Список LPR"/>
+      <enum uname="LPRSearch" value="Поиск LPR"/>
+    </userEnum>
+  </userEnums>
+  <application uname="LPRService">
+    <component uname="Service">
+      <entries>
+        <group field1="SourceType" field3="EventType" name="System">
+          <entry object_type="Service" severity="Info" status="Success" uname="ServiceStarted">Служба LPR Server запущена.</entry>
+          <entry object_type="Service" severity="Info" status="Success" uname="ServiceStopped">Служба LPR Server остановлена.</entry>
+          <entry object_type="Service" severity="Info" status="Success" uname="VideoSourceStateChangedToOK">Состояние камеры LPR изменено на &quot;OK&quot;.</entry>
+          <entry object_type="Service" severity="Info" status="Success" uname="VideoSourceStateChangedToWarning">Состояние камеры LPR изменено на &quot;Предупреждение&quot;.</entry>
+          <entry object_type="Service" severity="Info" status="Success" uname="VideoSourceStateChangedToError">Состояние камеры LPR изменено на &quot;Ошибка&quot;.</entry>
+        </group>
+        </entries>
+    </component>
+  </application>
+  <application uname="LPRClient">
+    <component uname="Client">
+      <entries>
+        <group category="Edit_LPR_license_plate_list" field1="SourceType" field3="ListType" name="Audit">
+          <entry field1="SourceType" field3="ListType" object_type="LPR license plate list" severity="Info" status="Success" uname="LPRListsAdd">Номерной знак: {plateName} добавлен в список номерных знаков LPR: {listName}.</entry>
+          <entry field1="SourceType" field3="ListType" object_type="LPR license plate list" severity="Info" status="Success" uname="LPRListsDelete">Номерной знак: {plateName} удален из списка номерных знаков LPR: {listName}.</entry>
+          <entry field1="SourceType" field3="ListType" object_type="LPR license plate list" severity="Info" status="Success" uname="LPRListsSearch">Искомый номерной знак: {plateName} в списке номерных знаков LPR: {listName}.</entry>
+        </group>
+        <group category="LPRSearch" field1="SourceType" field2="ResourceName" field3="ListType" field4="ResourceType" name="Audit" value1="" value2="LPR event" value4="LPR">
+          <entry field1="SourceType" field3="ListType" object_type="LPR event search" severity="Info" status="Success" uname="LPREventSearch">Искомое событие номерного знака с фильтром: {searchFilter}.</entry>
+        </group>
+      </entries>
+    </component>
+  </application>
+</LogMessages>

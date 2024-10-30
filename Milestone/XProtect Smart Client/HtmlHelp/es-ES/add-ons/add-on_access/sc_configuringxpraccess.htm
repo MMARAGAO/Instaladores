@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="es-ES" xml:lang="es-ES" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="Configuración" data-mc-conditions="flcts-alias.sc-alias-content,flcts-add-on.xp-acc-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Configure your views in XProtect Smart Client to display access monitors. This allows you to control doors and access to buildings." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Access" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Operador" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Administrador" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Integrador" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>XProtect Access (configuración)</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#add-ons/add-on_access/sc_configuringxpraccess.htm">Abrir tema con navegación</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Rutas de navegación" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>
+        <span class="mc-variable flvar-product.ACMName_XP variable">XProtect Access</span> (configuración)</h1>
+      <div>
+        <h2>Añadir monitores de acceso a las vistas<a name="SC_AddAccessMonitorsToVi.htm"></a></h2>
+        <p>Debe comenzar por definir un elemento de vista para el control de acceso:</p>
+        <ol>
+          <li value="1">En la pestaña <span class="uitext">Directo</span> (consulte <a href="../../standard_features/sf_sc/sf_operation/sc_workspaces.htm#SC_LiveTabExplained" class="MCXref xref">Pestaña Directo (explicación)</a>), en el modo de configuración, seleccione la vista que desea usar para acceder a la monitorización de control de acceso.</li>
+          <li value="2">En el panel <span class="uitext">Información general del sistema</span>, haga clic en <span class="uitext">Monitor de acceso</span> y arrástrelo hasta un elemento de vista.</li>
+          <li value="3">En el cuadro de diálogo <span class="uitext">Ajustes de monitor de acceso</span> (consulte <a href="#SC_AccessMonitorSettings(56313).htm" class="MCXref xref">Ajustes de monitor de acceso</a>) que aparece, especifique los ajustes. Cuando haya seleccionado una puerta, puede conservar los ajustes predefinidos o cambiarlos si lo necesita.</li>
+          <li value="4">Haga clic en <span class="uitext">Aceptar</span> y el monitor de acceso se añade a la vista. <p>Cuando se produce un incidente de control de acceso que activa un <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term11">evento<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Incidente predefinido que ocurre en el sistema de vigilancia, el cual lo utiliza para activar acciones. Dependiendo de la configuración del sistema de vigilancia, los eventos pueden activarse por medio de señales procedentes de sensores externos, detección de movimientos, datos recibidos desde otras aplicaciones o manualmente a través de la acción del usuario. Cuando ocurre un evento, puede usarse para hacer, por ejemplo, que una cámara grabe a una velocidad de fotogramas específica, para activar salidas, enviar correos electrónicos o una combinación de estas acciones.</span></a>, este aparece en la parte derecha del elemento de vista.</p></li>
+        </ol>
+      </div>
+      <div>
+        <h2>Ajustes de monitor de acceso<a name="SC_AccessMonitorSettings(56313).htm"></a></h2>
+        <p>Especifique los siguientes ajustes para los monitores de acceso:</p>
+        <table cellspacing="3">
+          <col />
+          <col />
+          <thead>
+            <tr>
+              <th>
+                <p>Nombre</p>
+              </th>
+              <th>
+                <p>Descripción</p>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="uitext">Puerta</span>
+              </td>
+              <td>
+                <p>Seleccione la puerta de la que quiere ver los eventos de control de acceso. Cuando seleccione una puerta, los ajustes restantes en el diálogo aparecen con los valores actuales.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Fuentes</span>
+              </td>
+              <td>
+                <p>Seleccione el tipo de fuentes de control de acceso de las que quiere recibir eventos. La lista puede contener, por ejemplo, puertas, o puntos de acceso específicos para una puerta. Un punto de acceso es un punto de entrada, incluidos sus dispositivos físicos asociados, como lectores de tarjetas, teclados, sensores o botones. Una puerta normalmente posee dos puntos de acceso que controlan la entrada y la salida a través de la puerta respectivamente.</p>
+                <p>La lista de fuentes la determina el administrador del sistema.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Cámara</span>
+              </td>
+              <td>
+                <p>Seleccione la cámara desde la cual quiere ver el vídeo relacionado con esta puerta. De manera predeterminada, el sistema enumera las cámaras que su administrador ha asociado con la puerta seleccionada, pero puede usarlo también para seleccionar otra cámara en su sistema.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Eventos</span>
+              </td>
+              <td>
+                <p>Seleccione el tipo de <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term11">eventos<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Incidente predefinido que ocurre en el sistema de vigilancia, el cual lo utiliza para activar acciones. Dependiendo de la configuración del sistema de vigilancia, los eventos pueden activarse por medio de señales procedentes de sensores externos, detección de movimientos, datos recibidos desde otras aplicaciones o manualmente a través de la acción del usuario. Cuando ocurre un evento, puede usarse para hacer, por ejemplo, que una cámara grabe a una velocidad de fotogramas específica, para activar salidas, enviar correos electrónicos o una combinación de estas acciones.</span></a> que quiere recibir. Puede seleccionar eventos desde las categorías de eventos definidas por su administrador de sistema <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> o desde la lista de eventos definida en el sistema de control de acceso.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Comandos</span>
+              </td>
+              <td>
+                <p>Seleccione los botones de comando que quiere tener disponible en el monitor de acceso, por ejemplo; bloquear y desbloquear puertas. Los comandos disponibles dependen de la configuración de su sistema.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Orden</span>
+              </td>
+              <td>
+                <p>Seleccione si quiere que los nuevos eventos aparezcan en la parte inferior o superior de la lista.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2>Modificar ajustes de monitor de acceso<a name="SC_ModifyAccessMonitorSe.htm"></a></h2>
+        <p>En la pestaña <span class="uitext">Directo</span> puede cambiar los ajustes para acceder a su monitor de acceso:</p>
+        <ol>
+          <li value="1">Haga clic en <span class="uitext">Ajustes</span> y seleccione el elemento de vista que quiere modificar.</li>
+          <li value="2">En el panel <span class="uitext">Propiedades</span>, haga clic en el botón <span class="uitext">Ajustes de monitor de acceso</span>.</li>
+          <li value="3">En el cuadro de diálogo <span class="uitext">Ajustes de monitor de acceso</span> (consulte <a href="#SC_AccessMonitorSettings(56313).htm" class="MCXref xref">Ajustes de monitor de acceso</a>) que aparece, especifique los ajustes.</li>
+          <li value="4">Haga clic en <span class="uitext">Aceptar</span> en el diálogo y después en <span class="uitext">Ajustes</span> para volver a la vista en directo.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>Personalizar su vista<a name="SC_CustomizeYourView.htm"></a></h2>
+        <p>Los <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term34">botones superpuestos<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Pulsador que aparece en forma de capa sobre el vídeo al mover el cursor del ratón sobre posiciones de cámara concretas en vistas de la pestaña Directo. Los botones superpuestos sirven para activar altavoces, eventos y salidas; mover cámaras PTZ; iniciar grabaciones; borrar señales de las cámaras, etc.</span></a> le permiten personalizar la interfaz. Puede añadir botones de comandos superpuestos del control del acceso a un elemento de vista de una lista de comandos configurados para las puertas o puntos de acceso.</p>
+        <p>Ejemplos de uso:</p>
+        <ul>
+          <li>Tener acceso directo a los botones de comando en elementos de vista que no sean monitores de acceso</li>
+          <li>Colocar los botones de comando directamente junto a una puerta en el elemento de vista.</li>
+          <li>Añadir botones de comando que sean diferentes a los especificados en <a href="#SC_AccessMonitorSettings(56313).htm" class="MCXref xref">Ajustes de monitor de acceso</a></li>
+        </ul>
+        <p>Pasos:</p>
+        <ol>
+          <li value="1">En la pestaña <span class="uitext">Directo</span>, haga clic en <span class="uitext">Ajustes</span> y seleccione el elemento de vista que quiere modificar.</li>
+          <li value="2">En el panel <span class="uitext">Botones superpuestos</span>, haga clic en <span class="uitext">Control de acceso</span>.</li>
+          <li value="3">Ubique el comando que quiere añadir y arrástrelos a su elemento de vista.</li>
+          <li value="4">Haga clic en <span class="uitext">Ajustes</span> para volver a la vista en directo. <p>El botón superpuesto aparece cuando arrastra el ratón sobre el elemento de vista.</p></li>
+        </ol>
+      </div>
+      <div>
+        <h2>Gestionar información del propietario de tarjeta<a name="SC_ManageCardholderInfor.htm"></a></h2>
+        <p>Si su sistema de control de acceso está configurado para ello, puede ir directamente a una representación en página web de un registro de propietario de tarjeta y hacer, por ejemplo, administración del usuario o conseguir más información sobre el propietario de la tarjeta.</p>
+        <p>Si el plug-in es compatible con el formato «deep link», se deben cumplir los siguientes pre-requisitos:</p>
+        <ul>
+          <li>Deberá incluir un cliente web.</li>
+          <li>Deberá admitir vínculos profundos.</li>
+        </ul>
+        <p>Para gestionar información del propietario de tarjeta:</p>
+        <ol>
+          <li value="1">En la pestaña <span class="uitext">Control de acceso</span>, seleccione lista de <span class="uitext">Propietarios de tarjetas</span>.</li>
+          <li value="2">Busque un propietario de tarjeta y seleccione a esa persona en la lista.</li>
+          <li value="3">En la parte derecha, debajo de la información del propietario de tarjeta, puede hacer clic en un enlace a, por ejemplo, una página web. Según el plug-in, puede haber más enlaces compatibles y puede necesitar más credenciales de acceso.</li>
+          <li value="4">Puede modificar varias funciones, incluyendo la información del propietario de la tarjeta y los derechos de acceso.</li>
+          <li value="5">En este ejemplo, cierre la página web y vuelva a <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>Active o desactive las notificaciones de peticiones de acceso.<a name="SC_TurnAccessRequestNoti.htm"></a></h2>
+        <p>Puede desactivar la gestión de peticiones de acceso, por ejemplo, cuando solo una persona deba gestionar las peticiones de acceso.</p>
+        <ol>
+          <li value="1">Haga clic en <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> y, a continuación, en <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">Configuración</span> para abrir la ventana <span class="uitext">Configuración</span>.</li>
+          <li value="2">Seleccione <span class="uitext">Control de acceso</span> y desactive las notificaciones de solicitud de acceso.</li>
+        </ol>
+        <p>Si, posteriormente, necesita volver a gestionar las peticiones de acceso, active las notificaciones de petición de acceso. También puede cambiar las opciones de control de acceso haciendo clic en el icono de <span class="uitext">Configuración</span> desde una notificación de petición de acceso.</p>
+        <p class="note">Si el campo <span class="uitext">Seguir servidor</span> está seleccionado, el administrador de sistema controla los ajustes de <span class="uitext">Mostrar notificaciones de solicitud de acceso</span>.</p>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Información de concepto</p>
+        <p class="containerItem_container_0">
+          <a href="sc_workingwithxpraccess.htm">XProtect Access (uso)</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

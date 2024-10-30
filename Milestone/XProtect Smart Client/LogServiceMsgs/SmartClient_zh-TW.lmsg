@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LogMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <version>20.2.1</version>
+  <culture>zh-TW</culture>
+  <userfields>
+    <userfield type="string" uname="ResourceId"/>
+    <userfield type="string" uname="ResourceName"/>
+    <userfield type="enum" uname="ResourceType"/>
+    <userfield type="string" uname="ResourceLocation"/>
+    <userfield type="enum" uname="AccessGranted"/>
+    <userfield type="enum" uname="AuditType"/>
+  </userfields>
+  <userEnums>
+    <userEnum fieldname="groupname" fieldtype="system" uname="group">
+      <enum uname="Audit" value="稽核"/>
+    </userEnum>
+    <userEnum fieldname="severity" fieldtype="system" uname="severity">
+      <enum uname="Info" value="資訊"/>
+      <enum uname="Error" value="錯誤"/>
+    </userEnum>
+    <userEnum fieldname="status" fieldtype="system" uname="status">
+      <enum uname="Success" value="成功"/>
+    </userEnum>
+    <userEnum fieldname="AccessGranted" fieldtype="user" uname="AccessGranted">
+      <enum uname="Granted" value="已授與"/>
+      <enum uname="Denied" value="已遭拒"/>
+      <enum uname="Default" value="預設"/>
+    </userEnum>
+    <userEnum fieldname="objecttype" fieldtype="system" uname="objecttype">      
+      <enum uname="Device" value="裝置"/>
+      <enum uname="Camera" value="攝影機"/>
+      <enum uname="Speaker" value="揚聲器"/>
+      <enum uname="Microphone" value="麥克風"/>
+      <enum uname="VideoWallMonitor" value="Smart Wall 監視器"/>
+      <enum uname="Hot_zone" value="熱區"/>
+      <enum uname="PtzPreset" value="PTZ 預設點"/>
+      <enum uname="Print" value="列印"/>
+      <enum uname="Server" value="伺服器"/>
+      <enum uname="Search" value="搜尋"/>
+    </userEnum>
+    <userEnum fieldname="ResourceType" fieldtype="user" uname="ResourceType">      
+      <enum uname="Export" value="匯出"/>
+      <enum uname="Camera" value="攝影機"/>
+      <enum uname="Speaker" value="揚聲器"/>
+      <enum uname="Microphone" value="麥克風"/>
+      <enum uname="VideoWallMonitor" value="Smart Wall 監視器"/>
+      <enum uname="Hot_zone" value="熱區"/>
+      <enum uname="PtzPreset" value="PTZ 預設點"/>
+      <enum uname="Server" value="伺服器"/>
+      <enum uname="Search" value="搜尋類別"/>
+    </userEnum>
+    <userEnum fieldname="category" fieldtype="system" uname="category">      
+      <enum uname="Export" value="匯出"/>
+      <enum uname="VideoWallControl" value="Smart Wall 控制項"/>
+      <enum uname="MapControl" value="地圖控制"/>
+      <enum uname="PtzPresets" value="PTZ 預設點"/>
+      <enum uname="Print" value="列印"/>
+      <enum uname="Camera" value="攝影機"/>
+      <enum uname="Security" value="安全性"/>
+      <enum uname="Search" value="搜尋"/>
+    </userEnum>
+    <userEnum fieldname="AuditType" fieldtype="user" uname="AuditType">      
+      <enum uname="Export" value="匯出"/>
+      <enum uname="VideoWallControl" value="Smart Wall 控制項"/>
+      <enum uname="MapControl" value="地圖控制"/>
+      <enum uname="PtzPresets" value="PTZ 預設點"/>
+      <enum uname="Print" value="列印"/>
+      <enum uname="CameraSnapshot" value="攝影機快照"/>
+      <enum uname="CameraPrivacyProtection" value="隱私遮蔽"/>
+      <enum uname="UserLogOut" value="使用者登出"/>
+      <enum uname="Search" value="搜尋"/>
+    </userEnum>
+  </userEnums>
+  <application uname="SmartClient">    
+    <component uname="Export">
+      <module uname="CombinedExportLogger">
+        <entries>
+          <group category="Export" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" field4="ResourceType" name="Audit" value1="" value2="Multiple Devices" value3="@objLocationName" value4="Export">
+            <entry field1="AccessGranted" field2="AuditType" object_type="Device" severity="Info" status="Success" uname="ExportBegun" value1="Granted" value2="Export">開始匯出...{newLine}匯出名稱: &apos;{exportTitle}&apos;{newLine}片段: &apos;{starttime}&apos; 至 &apos;{endtime}&apos;{newLine}匯出目的地路徑: ( {exportToPath} ){newLine}已匯出至媒體燒錄器: ( {exportToOptics} ){newLine}已匯出為 {brandName} 格式: ( {database} ){newLine}- 受密碼保護: ( {encrypted} ){newLine}- 防止重複匯出: ( {locked} ){newLine}- 含備註: ( {comments} ){newLine}- 包含數位簽章: ( {signed} ){newLine}已匯出為媒體播放器格式: ( {avi} ){newLine}已匯出為靜態影像格式: ( {jpeg} ){newLine}包含的裝置:{d1}{d2}{d3}{d4}{d5}{d6}{d7}{d8}{d9}{d10}{d11}{d12}{d13}{d14}{d15}{d16}{d17}{d18}{d19}{d20}{d21}{d22}{d23}{d24}{d25}{d26}{d27}{d28}{d29}{d30}{newLine}(均為 UTC 時間)</entry>
+            <entry field1="AccessGranted" field2="AuditType" object_type="Device" severity="Error" status="Success" uname="ExportCanceled" value1="Granted" value2="Export">已取消匯出...{newLine}匯出名稱： {exportTitle}{newLine}片段: &apos;{starttime}&apos; 至 &apos;{endtime}&apos;{newLine}匯出目的地路徑: ( {exportToPath} ){newLine}已匯出至媒體燒錄器: ( {exportToOptics} ){newLine}已匯出為 {brandName} 格式: ( {database} ){newLine}- 受密碼保護: ( {encrypted} ){newLine}- 防止重複匯出: ( {locked} ){newLine}- 含備註: ( {comments} ){newLine}- 包含數位簽章: ( {signed} ){newLine}已匯出為媒體播放器格式: ( {avi} ){newLine}已匯出為靜態影像格式: ( {jpeg} ){newLine}包含的裝置:{d1}{d2}{d3}{d4}{d5}{d6}{d7}{d8}{d9}{d10}{d11}{d12}{d13}{d14}{d15}{d16}{d17}{d18}{d19}{d20}{d21}{d22}{d23}{d24}{d25}{d26}{d27}{d28}{d29}{d30}{newLine}(均為 UTC 時間)</entry>
+            <entry field1="AccessGranted" field2="AuditType" object_type="Device" severity="Info" status="Success" uname="ExportCompleted" value1="Granted" value2="Export">匯出完成...{newLine}匯出名稱: {exportTitle}{newLine}片段: &apos;{starttime}&apos; 至 &apos;{endtime}&apos;{newLine}匯出目的地路徑: ( {exportToPath} ){newLine}已匯出至媒體燒錄器: ( {exportToOptics} ){newLine}已匯出為 {brandName} 格式: ( {database} ){newLine}- 受密碼保護: ( {encrypted} ){newLine}- 防止重複匯出: ( {locked} ){newLine}- 含備註: ( {comments} ){newLine}- 包含數位簽章: ( {signed} ){newLine}已匯出為媒體播放器格式: ( {avi} ){newLine}已匯出為靜態影像格式: ( {jpeg} ){newLine}包含的裝置:{d1}{d2}{d3}{d4}{d5}{d6}{d7}{d8}{d9}{d10}{d11}{d12}{d13}{d14}{d15}{d16}{d17}{d18}{d19}{d20}{d21}{d22}{d23}{d24}{d25}{d26}{d27}{d28}{d29}{d30}{newLine}(均為 UTC 時間)</entry>
+            <entry field1="AccessGranted" field2="AuditType" object_type="Device" severity="Info" status="Success" uname="ExportCompletedWithErrorsInclGeneralError" value1="Granted" value2="Export">匯出完成，但出現錯誤...{newLine}匯出名稱: {exportTitle}{newLine}片段: &apos;{starttime}&apos; 至 &apos;{endtime}&apos;{newLine}匯出目的地路徑: ( {exportToPath} ){newLine}已匯出至媒體燒錄器: ( {exportToOptics} ){newLine}已匯出為 {brandName} 格式: ( {database} ){newLine}- 受密碼保護: ( {encrypted} ){newLine}- 防止重複匯出: ( {locked} ){newLine}- 含備註: ( {comments} ){newLine}- 包含數位簽章: ( {signed} ){newLine}已匯出為媒體播放器格式: ( {avi} ){newLine}已匯出為靜態影像格式: ( {jpeg} ){newLine}發生匯出錯誤{newLine}下列裝置的匯出成功完成: {sd1}{sd2}{sd3}{sd4}{sd5}{sd6}{sd7}{sd8}{sd9}{sd10}{sd11}{sd12}{sd13}{sd14}{sd15}{sd16}{sd17}{sd18}{sd19}{sd20}{sd21}{sd22}{sd23}{sd24}{sd25}{sd26}{sd27}{sd28}{sd29}{sd30}{newLine}下列裝置的匯出失敗: {fd1}{fd2}{fd3}{fd4}{fd5}{fd6}{fd7}{fd8}{fd9}{fd10}{fd11}{fd12}{fd13}{fd14}{fd15}{fd16}{fd17}{fd18}{fd19}{fd20}{fd21}{fd22}{fd23}{fd24}{fd25}{fd26}{fd27}{fd28}{fd29}{fd30}{newLine}(均為 UTC 時間)</entry>
+            <entry field1="AccessGranted" field2="AuditType" object_type="Device" severity="Info" status="Success" uname="ExportCompletedWithErrors" value1="Granted" value2="Export">匯出完成，但出現錯誤...{newLine}匯出名稱: {exportTitle}{newLine}片段: &apos;{starttime}&apos; 至 &apos;{endtime}&apos;{newLine}匯出目的地路徑: ( {exportToPath} ){newLine}已匯出至媒體燒錄器: ( {exportToOptics} ){newLine}已匯出為 {brandName} 格式: ( {database} ){newLine}- 受密碼保護: ( {encrypted} ){newLine}- 防止重複匯出: ( {locked} ){newLine}- 含備註: ( {comments} ){newLine}- 包含數位簽章: ( {signed} ){newLine}已匯出為媒體播放器格式: ( {avi} ){newLine}已匯出為靜態影像格式: ( {jpeg} ){newLine}下列裝置的匯出成功完成: {sd1}{sd2}{sd3}{sd4}{sd5}{sd6}{sd7}{sd8}{sd9}{sd10}{d11}{d12}{d13}{d14}{d15}{d16}{d17}{d18}{d19}{d20}{d21}{d22}{d23}{d24}{d25}{d26}{d27}{d28}{d29}{d30}{newLine}下列裝置的匯出失敗: {fd1}{fd2}{fd3}{fd4}{fd5}{fd6}{fd7}{fd8}{fd9}{fd10}{fd11}{fd12}{fd13}{fd14}{fd15}{fd16}{fd17}{fd18}{fd19}{fd20}{fd21}{fd22}{fd23}{fd24}{fd25}{fd26}{fd27}{fd28}{fd29}{fd30}{newLine}(均為 UTC 時間)</entry>
+            <entry field1="AccessGranted" field2="AuditType" object_type="Device" severity="Error" status="Success" uname="ExportFailed" value1="Granted" value2="Export">匯出失敗...{newLine}匯出名稱: {exportTitle}{newLine}片段: &apos;{starttime}&apos; 至 &apos;{endtime}&apos;{newLine}匯出目的地路徑: ( {exportToPath} ){newLine}已匯出至媒體燒錄器: ( {exportToOptics} ){newLine}已匯出為 {brandName} 格式: ( {database} ){newLine}- 受密碼保護: ( {encrypted} ){newLine}- 防止重複匯出: ( {locked} ){newLine}- 含備註: ( {comments} ){newLine}- 包含數位簽章: ( {signed} ){newLine}已匯出為媒體播放器格式: ( {avi} ){newLine}已匯出為靜態影像格式: ( {jpeg} ){newLine}包含的裝置:{d1}{d2}{d3}{d4}{d5}{d6}{d7}{d8}{d9}{d10}{d11}{d12}{d13}{d14}{d15}{d16}{d17}{d18}{d19}{d20}{d21}{d22}{d23}{d24}{d25}{d26}{d27}{d28}{d29}{d30}{newLine}(均為 UTC 時間)</entry>
+            <entry field1="AccessGranted" field2="AuditType" object_type="Device" severity="Error" status="Success" uname="ExportDenied" value1="Denied" value2="Export">匯出失敗...{newLine}匯出名稱: {exportTitle}{newLine}片段: &apos;{starttime}&apos; 至 &apos;{endtime}&apos;{newLine}匯出目的地路徑: ( {exportToPath} ){newLine}已匯出至媒體燒錄器: ( {exportToOptics} ){newLine}已匯出為 {brandName} 格式: ( {database} ){newLine}- 受密碼保護: ( {encrypted} ){newLine}- 防止重複匯出: ( {locked} ){newLine}- 含備註: ( {comments} ){newLine}- 包含數位簽章: ( {signed} ){newLine}已匯出為媒體播放器格式: ( {avi} ){newLine}已匯出為靜態影像格式: ( {jpeg} ){newLine}包含的裝置:{d1}{d2}{d3}{d4}{d5}{d6}{d7}{d8}{d9}{d10}{d11}{d12}{d13}{d14}{d15}{d16}{d17}{d18}{d19}{d20}{d21}{d22}{d23}{d24}{d25}{d26}{d27}{d28}{d29}{d30}{newLine}(均為 UTC 時間)</entry>
+          </group>
+        </entries>
+      </module>
+      <module uname="AVI_JPEG">
+        <entries>
+          <group category="Export" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Info" status="Success" uname="ExportAVICameraBegun" value1="Granted" value2="Camera" value3="Export">已開始匯出 AVI，片段 &apos;{starttime}&apos; 至 &apos;{endtime}&apos; (UTC 時間)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Error" status="Success" uname="ExportAVICameraCancelled" value1="Granted" value2="Camera" value3="Export">已取消 AVI 匯出</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Info" status="Success" uname="ExportAVICameraCompleted" value1="Granted" value2="Camera" value3="Export">已完成匯出 AVI，片段 &apos;{starttime}&apos; 至 &apos;{endtime}&apos; (UTC 時間)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Error" status="Success" uname="ExportAVICameraFailed" value1="Granted" value2="Camera" value3="Export">AVI 匯出失敗</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Speaker" severity="Info" status="Success" uname="ExportAVISpeakerBegun" value1="Granted" value2="Speaker" value3="Export">已開始匯出 AVI，片段 &apos;{starttime}&apos; 至 &apos;{endtime}&apos; (UTC 時間)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Speaker" severity="Error" status="Success" uname="ExportAVISpeakerCancelled" value1="Granted" value2="Speaker" value3="Export">已取消 AVI 匯出</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Speaker" severity="Info" status="Success" uname="ExportAVISpeakerCompleted" value1="Granted" value2="Speaker" value3="Export">已完成匯出 AVI，片段 &apos;{starttime}&apos; 至 &apos;{endtime}&apos; (UTC 時間)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Speaker" severity="Error" status="Success" uname="ExportAVISpeakerFailed" value1="Granted" value2="Speaker" value3="Export">AVI 匯出失敗</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Microphone" severity="Info" status="Success" uname="ExportAVIMicrophoneBegun" value1="Granted" value2="Microphone" value3="Export">已開始匯出 AVI，片段 &apos;{starttime}&apos; 至 &apos;{endtime}&apos; (UTC 時間)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Microphone" severity="Error" status="Success" uname="ExportAVIMicrophoneCancelled" value1="Granted" value2="Microphone" value3="Export">已取消 AVI 匯出</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Microphone" severity="Info" status="Success" uname="ExportAVIMicrophoneCompleted" value1="Granted" value2="Microphone" value3="Export">已完成匯出 AVI，片段 &apos;{starttime}&apos; 至 &apos;{endtime}&apos; (UTC 時間)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Microphone" severity="Error" status="Success" uname="ExportAVIMicrophoneFailed" value1="Granted" value2="Microphone" value3="Export">AVI 匯出失敗</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Info" status="Success" uname="ExportJPEGBegun" value1="Granted" value2="Camera" value3="Export">已開始匯出 JPEG，片段 &apos;{starttime}&apos; 至 &apos;{endtime}&apos; (UTC 時間)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Error" status="Success" uname="ExportJPEGCancelled" value1="Granted" value2="Camera" value3="Export">已取消 JPEG 匯出</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Info" status="Success" uname="ExportJPEGCompleted" value1="Granted" value2="Camera" value3="Export">已完成匯出 JPEG，片段 &apos;{starttime}&apos; 至 &apos;{endtime}&apos; (UTC 時間)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Error" status="Success" uname="ExportJPEGFailed" value1="Granted" value2="Camera" value3="Export">JPEG 匯出失敗</entry>
+          </group>
+        </entries>
+      </module>
+      <module uname="DB">
+        <entries>
+          <group category="Export" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Info" status="Success" uname="ExportCameraBegunWithEncryption" value1="Granted" value2="Camera" value3="Export">已開始匯出資料庫，啟用加密，片段 &apos;{starttime}&apos; 至 &apos;{endtime}&apos; (UTC 時間)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Info" status="Success" uname="ExportCameraBegunWithNoEncryption" value1="Granted" value2="Camera" value3="Export">已開始匯出資料庫，停用加密，片段 &apos;{starttime}&apos; 至 &apos;{endtime}&apos; (UTC 時間)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Error" status="Success" uname="ExportCameraCancelled" value1="Granted" value2="Camera" value3="Export">已取消匯出資料庫</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Info" status="Success" uname="ExportCameraCompleted" value1="Granted" value2="Camera" value3="Export">已完成匯出資料庫，片段 &apos;{starttime}&apos; 至 &apos;{endtime}&apos; (UTC 時間)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Error" status="Success" uname="ExportCameraFailed" value1="Granted" value2="Camera" value3="Export">資料庫匯出失敗</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Speaker" severity="Info" status="Success" uname="ExportSpeakerBegunWithEncryption" value1="Granted" value2="Speaker" value3="Export">已開始匯出資料庫，啟用加密，片段 &apos;{starttime}&apos; 至 &apos;{endtime}&apos; (UTC 時間)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Speaker" severity="Info" status="Success" uname="ExportSpeakerBegunWithNoEncryption" value1="Granted" value2="Speaker" value3="Export">已開始匯出資料庫，停用加密，片段 &apos;{starttime}&apos; 至 &apos;{endtime}&apos; (UTC 時間)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Speaker" severity="Error" status="Success" uname="ExportSpeakerCancelled" value1="Granted" value2="Speaker" value3="Export">已取消匯出資料庫</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Speaker" severity="Info" status="Success" uname="ExportSpeakerCompleted" value1="Granted" value2="Speaker" value3="Export">已完成匯出資料庫，片段 &apos;{starttime}&apos; 至 &apos;{endtime}&apos; (UTC 時間)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Speaker" severity="Error" status="Success" uname="ExportSpeakerFailed" value1="Granted" value2="Speaker" value3="Export">資料庫匯出失敗</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Microphone" severity="Info" status="Success" uname="ExportMicrophoneBegunWithEncryption" value1="Granted" value2="Microphone" value3="Export">已開始匯出資料庫，啟用加密，片段 &apos;{starttime}&apos; 至 &apos;{endtime}&apos; (UTC 時間)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Microphone" severity="Info" status="Success" uname="ExportMicrophoneBegunWithNoEncryption" value1="Granted" value2="Microphone" value3="Export">已開始匯出資料庫，停用加密，片段 &apos;{starttime}&apos; 至 &apos;{endtime}&apos; (UTC 時間)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Microphone" severity="Error" status="Success" uname="ExportMicrophoneCancelled" value1="Granted" value2="Microphone" value3="Export">已取消匯出資料庫</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Microphone" severity="Info" status="Success" uname="ExportMicrophoneCompleted" value1="Granted" value2="Microphone" value3="Export">已完成匯出資料庫，片段 &apos;{starttime}&apos; 至 &apos;{endtime}&apos; (UTC 時間)</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Microphone" severity="Error" status="Success" uname="ExportMicrophoneFailed" value1="Granted" value2="Microphone" value3="Export">資料庫匯出失敗</entry>
+          </group>
+        </entries>
+      </module>
+    </component>
+    <component uname="VideoWall">
+      <module uname="Drop">
+        <entries>
+          <group category="VideoWallControl" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="VideoWallMonitor" severity="Info" status="Success" uname="MonitorLayoutCameraPlaced" value1="Granted" value2="VideoWallMonitor" value3="VideoWallControl">攝影機 &apos;{name}&apos; 已放置在位置 &apos;{positionNumber}&apos;</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="VideoWallMonitor" severity="Info" status="Success" uname="MonitorLayoutViewItemPlaced" value1="Granted" value2="VideoWallMonitor" value3="VideoWallControl">檢視項目 &apos;{name}&apos; 已放置於位置 &apos;{positionNumber}&apos;</entry>
+          </group>
+        </entries>
+      </module>
+    </component>
+    <component uname="Map">
+      <module uname="Navigation">
+        <entries>
+          <group category="MapControl" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Hot zone" severity="Info" status="Success" uname="MapNavigationServerChanged" value1="Granted" value2="Hot_zone" value3="MapControl">變更為伺服器&apos;{servername}&apos; 中的地圖</entry>
+          </group>
+        </entries>
+      </module>
+    </component>
+    <component uname="PtzPresets">
+      <module uname="Manage">
+        <entries>
+          <group category="ManagePtzPreset" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="PtzPreset" severity="Info" status="Success" uname="AddPtzPreset" value1="Granted" value2="PtzPreset" value3="ManagePtzPresets">已建立 PTZ 預設點 &apos;{name}&apos;</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="PtzPreset" severity="Info" status="Success" uname="UpdatePtzPresetName" value1="Granted" value2="PtzPreset" value3="ManagePtzPresets">以新名稱更新 PTZ 預設點 &apos;{name}&apos;</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="PtzPreset" severity="Info" status="Success" uname="UpdatePtzPresetPosition" value1="Granted" value2="PtzPreset" value3="ManagePtzPresets">以新 PTZ 位置更新 PTZ 預設點 &apos;{name}&apos;</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="PtzPreset" severity="Info" status="Success" uname="DeletePtzPreset" value1="Granted" value2="PtzPreset" value3="ManagePtzPresets">已刪除 PTZ 預設點 &apos;{name}&apos;</entry>
+          </group>
+        </entries>
+      </module>
+    </component>
+    <component uname="PrintForm">
+      <module uname="DoPrint">
+        <entries>
+          <group category="Print" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Print" severity="Info" status="Success" uname="Print" value1="Granted" value2="Camera" value3="Print">在 &apos;{time}&apos; (UTC 時間) 錄製的影像的列印</entry>
+          </group>
+        </entries>
+      </module>
+    </component>
+    <component uname="Camera">
+      <module uname="Snapshot">
+        <entries>
+          <group category="Camera" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Info" status="Success" uname="CameraSnapshot" value1="Granted" value2="Camera" value3="CameraSnapshot">在 &apos;{time}&apos; (UTC 時間) 錄製的影像的快照</entry>
+          </group>
+        </entries>
+      </module>
+      <module uname="PrivacyProtection">
+        <entries>
+          <group category="Camera" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Info" status="Success" uname="CameraPrivacyProtectionLifted" value1="Granted" value2="Camera" value3="CameraPrivacyProtection">已移除隱私遮蔽 授權者：「{authUser}」</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Info" status="Success" uname="CameraPrivacyProtectionApplied" value1="Granted" value2="Camera" value3="CameraPrivacyProtection">隱私遮蔽已套用。</entry>
+          </group>
+        </entries>
+      </module>
+    </component>
+    <component uname="User">
+      <module uname="LogOut">
+        <entries>
+          <group category="Security" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Security" severity="Info" status="Success" uname="UserLoggedOut" value1="Granted" value2="Server" value3="UserLogOut">使用者已成功登出</entry>
+          </group>
+        </entries>
+      </module>
+    </component>
+    <component uname="CentralizedSearch">
+      <module uname="Search">
+        <entries>
+          <group category="Search" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Device" severity="Info" status="Success" uname="SearchStarted" value1="Granted" value2="Search" value3="Search">使用者已執行搜尋{newLine}持續時間：開始 &apos;{starttime}&apos; 結束 &apos;{endtime}&apos;{newLine}攝影機：{newLine}{c1}{c2}{c3}{c4}{c5}{c6}{c7}{c8}{c9}{c10}{newLine}搜尋類別和篩選器： {i1}{i2}{i3}{i4}{i5}{i6}{i7}{i8}{i9}{i10}{newLine}{newLine}(均為 UTC 時間)</entry>
+          </group>
+        </entries>
+      </module>
+    </component>
+  </application>
+</LogMessages>

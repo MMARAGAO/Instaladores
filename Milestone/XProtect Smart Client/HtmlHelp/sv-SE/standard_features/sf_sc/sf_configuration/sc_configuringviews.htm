@@ -1,0 +1,561 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="sv-SE" xml:lang="sv-SE" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="Konfiguration" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Konfigurera vyer i XProtect Smart Client att visa video från kameror och andra typer av innehåll." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Administratör" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Integratör" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Operatör" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Vyer (konfiguration)</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#standard_features/sf_sc/sf_configuration/sc_configuringviews.htm">Öppna ämne med navigering</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>Vyer (konfiguration)</h1>
+      <p>I inställningsläget kan du skapa vyer och ange vilka kameror eller andra typer av innehåll som ska inkluderas i varje respektive vy. För att organisera dina vyer måste du skapa minst en vygrupp. Detta görs oftast av din systemadministratör.</p>
+      <p class="note">Möjligheten att redigera vyer och grupper beror på användarbehörigheten. Om du kan du redigera en vy så kan du även skapa den. </p>
+      <div>
+        <h2>
+          <a name="SC_ViewsExplained"></a>Vyer och vygrupper (förklaring)</h2>
+        <p>Det sätt på vilket videoupptagningar visas i <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> kallas för en vy. <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> kan hantera ett obegränsat antal vyer, så du kan växla mellan videoupptagningar från olika kameragrupper. Vyer kan innehålla mellan en och hundra kameror men även andra typer av innehåll, till exempel bilder och text. </p>
+        <p>Vyer måste hållas i vygrupper som hjälper dig att organisera dina vyer.</p>
+        <p>Vyer finns tillgängliga på flikarna <span class="uitext">Live</span> och <span class="uitext">Uppspelning</span>. Vyer kan vara privata eller delade:</p>
+        <div>
+          <ul>
+            <li>Privata vyer kan bara öppnas av den användare som skapade dem. För att göra vyn privat, skapa den inuti mappen <span class="uitext">Privat</span></li>
+            <li>Delade vyer låter flera operatörer dela samma vyer. Beroende på ditt <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS-system: <ul><li>Det kan finnas en förvald mapp för delade vyer som har namngetts <span class="uitext">Delad</span> eller <span class="uitext">Standardgrupp</span></li><li>Delade vyer kan delas av alla operatörer eller tillgång till utvalda delade vyer kan ges till vissa operatörer. Vanligen kan endast ett fåtal personer i en organisation skapa och redigera delade vyer, till exempel systemadminstratörer.</li></ul></li>
+          </ul>
+          <p class="note">Inte alla användare har tillgång till alla kameror i <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS-systemet. Vissa av funktionerna du inkluderar i din delade vy kanske inte stöds i tidigare versioner av <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Kontrollera därför alltid att de användare du vill dela med har de behörigheter som krävs och kör samma version av <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> som dig själv.</p>
+        </div>
+        <p>Dina användarinställningar, inklusive information om dina vyer, lagras centralt på <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS-servern, så du kan använda dina vyer på varje dator som har <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> installerat.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Stängd" data-mc-alt2="Öppen" />Exempel på en 2x2-vy</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <img src="../../../../Images/views_explained.jpg" alt="2x2-vy i XProtect Smart Client." />
+            </p>
+          </div>
+        </div>
+        <div>
+          <h2>
+            <a name="SC_ContentInsideViewsExp.htm"></a>Vad kan vyer innehålla?</h2>
+          <p>I inställningsläget, i rutan <span class="uitext">Systemöversikt</span>, kan du se de objekt du kan lägga till i dina vyer:</p>
+          <p>
+            <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_systemoverview.jpg" data-mc-popup-alt="Vad kan vyer innehålla i XProtect Smart Client?">
+              <img class="MCPopupThumbnail img" data-mc-width="295" data-mc-height="609" src="../../../../Images/sc_systemoverview_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Vad kan vyer innehålla i XProtect Smart Client?" tabindex="" />
+            </a>
+          </p>
+          <table cellspacing="3">
+            <col />
+            <col />
+            <thead>
+              <tr>
+                <th>Objekt</th>
+                <th>Beskrivning</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p>Larm</p>
+                </td>
+                <td>
+                  <p>Låter dig visa en lista över larm eller en larmförhandsvisning. Båda dessa objekt finns även tillgängliga på fliken <span class="uitext">Larmhanteraren</span>.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>Inpasseringsövervakning</td>
+                <td>
+                  <p>Inpasseringsövervakning - med <span class="mc-variable flvar-product.ACMName_XPtm variable">XProtect® Access </span> installerad kan du visa inpasseringsövervakning i dina vyer, till exempel för en specifik dörr.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Kameror</p>
+                </td>
+                <td>
+                  <p>Låter dig visa ett videoflöde från en livekamera eller spela upp video. Kamerorna visas under platsnamnet, vilket definieras av din systemadministratör.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Karuseller</p>
+                </td>
+                <td>
+                  <p>Låter dig växla mellan kameror i den takt du anger.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Hotspots</p>
+                </td>
+                <td>
+                  <p>Låter dig visa den kamera som är i fokus i hög upplösning eller bildfrekvens.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>HTML-sidor</p>
+                </td>
+                <td>
+                  <p> Låter dig visa en webbsida, till exempel en online nyhetskanal.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Bilder</p>
+                </td>
+                <td>
+                  <p>Låter dig visa en bild, om du till exempel vill distribuera ett foto av en misstänkt.</p>
+                </td>
+              </tr>
+              <tr data-mc-conditions="flcts-add-on.xp-lp-content">
+                <td>LPR</td>
+                <td>
+                  <p>Med <span class="mc-variable flvar-product.LPRName_XPtm variable">XProtect® LPR</span> installerat kan du lägga till nummerskyltskameror till vyer.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Kartor</p>
+                </td>
+                <td>Låter dig visa ett våningsplan eller ett geografiskt område.</td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="mc-variable flvar-brand-company.MMName_short variable">Matrix</span>
+                  </p>
+                </td>
+                <td>
+                  <p>Låter dig visa en <span class="mc-variable flvar-brand-company.MMName_short variable">Matrix</span>-position. Se även <a href="sc_workingwithmatrix_715_.htm#SC_MatrixExplained.htm" class="MCXref xref">Matrix (förklaring)</a>.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Smartkartor </p>
+                </td>
+                <td>
+                  <p>Låter dig navigera dina kameror på en geografisk världskarta baserad på en av dessa karttjänster online:</p>
+                  <ul>
+                    <li>Bing Maps</li>
+                    <li>Google Maps</li>
+                    <li data-mc-conditions="flcts-features.oem-map-service-content">
+                      <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+                    </li>
+                    <li> OpenStreetMap </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="mc-variable flvar-product.SWName variable">Smart Wall</span>-kontroller</p>
+                </td>
+                <td>
+                  <p>Om <span class="mc-variable flvar-product.SWName_XP variable">XProtect Smart Wall</span> har konfigurerats av din systemadministratör, tillåter <span class="mc-variable flvar-product.SWName variable">Smart Wall</span>-kontroller dig att pusha kameror och andra typer av innehåll till dina videoväggar.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Text </p>
+                </td>
+                <td>
+                  <p>Låter dig visa text, om du till exempel vill tillhandahålla instruktioner till andra operatörer.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="mc-variable flvar-product.TName variable">Transact</span>
+                  <p> </p>
+                </td>
+                <td>
+                  <p>Om <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span> har installerats i ditt system kan du lägga till point-of-sales-system tillsammans med kameror.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_CreateAViewGroup.htm"></a>Skapa vygrupper</h2>
+        <p>Din <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> kan förinställas att visa vygrupper som du kan lägga till dina vyer i. Du kan även skapa egna vygrupper som hjälp att organisera dina vyer.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Stängd" data-mc-alt2="Öppen" />Exempel</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Föreställ dig att du har kameror installerade på tio olika nivåer i ett flervåningshus. Du beslutar att skapa en vygrupp för varje nivå och namnge dem i enlighet: <span class="uitext">Bottenvåning</span>, <span class="uitext">Första våningen</span>, <span class="uitext">andra våningen</span> och så vidare.</p>
+          </div>
+        </div>
+        <p>Gör så här:</p>
+        <ol>
+          <li value="1">I inställningsläget, i rutan <span class="uitext">Vyer</span>, väljer du den mapp på toppnivåerna <span class="uitext">Privat</span> eller <span class="uitext">Delad</span> där du vill lägga till en grupp.</li>
+          <li value="2">Klicka på <span class="uitext">Skapa ny grupp</span>: <p><img src="../../../../Images/create_a_view_group.png" alt="" /></p><p>En ny grupp med namn <span class="uitext">Ny grupp</span> skapas.</p></li>
+          <li value="3">Markera och klicka på <span class="uitext">Ny grupp</span> för att skriva över namnet.</li>
+          <li value="4">Du kan nu skapa vyer inom gruppen.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_CreateView.htm"></a>Skapa vyer</h2>
+        <p>För att visa eller spela upp video i <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> måste du först skapa en vy där du lägger till kamerorna du behöver.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Stängd" data-mc-alt2="Öppen" />Krav </a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Innan skapandet av vyn behöver du ha en grupp som vyn ska tillhöra. Se även <a href="#SC_CreateAViewGroup.htm" class="MCXref xref">Skapa vygrupper</a>.</p>
+          </div>
+        </div>
+        <p>Gör så här:</p>
+        <ol>
+          <li value="1">Klicka på <span class="uitext">Inställning</span> i övre högra hörnet för att öppna inställningsläget.</li>
+          <li value="2">I fönstret <span class="uitext">Vyer</span>, välj den grupp du vill att vyn ska tillhöra.</li>
+          <li value="3">Klicka på <img src="../../../../Images/create_view.png" alt="" /> för att skapa en ny vy.</li>
+          <li value="4">Välj en layout. Tillgängliga layouter grupperas efter <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term2">bildformat<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Höjd- och breddförhållande hos en bild.</span></a>, och efter huruvida de optimerats för vanligt innehåll eller stående format (större höjd än bredd). <p><img src="../../../../Images/create_view.jpg" alt="Vylayouter i XProtect Smart Client." /></p></li>
+          <li value="5">Ange ett namn för vyn genom att skriva över standardnamnet <span class="uitext">Ny vy</span>.</li>
+          <li value="6"> Klicka på <span class="uitext">Inställning</span> igen så att inställningsläget avslutas. Dina ändringar har sparats.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_CopyRenameOrDeleteAVi.htm"></a>Kopiera, byt namn på eller ta bort vyer eller grupper</h2>
+        <p>Om du har en vy och vill återanvända den kan du kopiera den. Du kan också kopiera en grupp vyer eller en privat vy till en delad vy.</p>
+        <p>Gör så här:</p>
+        <ol>
+          <li value="1">Välj önskad vy i navigeringsrutan i inställningsläget.</li>
+          <li value="2">Klicka på <span class="uitext">Kopiera</span> eller tryck <span class="uitext">CTRL</span>+<span class="uitext">C</span>. <p><img src="../../../../Images/copy_rename_or_delete_a_view.png" alt="" /></p></li>
+          <li value="3">Flytta dig till där du vill klistra in vyn och välj <span class="uitext">Klistra in</span> eller tryck <span class="uitext">CTRL</span>+<span class="uitext">V</span>. <p><img src="../../../../Images/copy_rename_or_delete_a_view_1.png" alt="" /></p><p class="tip">Du kan också markera och dra vyn till en annan mapp.</p></li>
+          <li value="4">Den kopierade vyn har som standard samma namn som originalet, följt av (2). För att ändra namnet, högerklicka och välj <span class="uitext">Byt namn</span>.<p><img src="../../../../Images/copy_rename_or_delete_a_view_2.png" alt="" /></p></li>
+          <li value="5">För att radera en vy, högerklicka och välj <span class="uitext">Ta bort</span>. <p><img src="../../../../Images/copy_rename_or_delete_a_view_3.png" alt="" /></p></li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_AddingContentToViews.htm"></a>Lägg till kameror och andra objekt till vyer</h2>
+        <p>Du kan lägga till olika typer av objekt till dina vyer, till exempel kameror. Se även <a href="#SC_ContentInsideViewsExp.htm" class="MCXref xref">Vad kan vyer innehålla?</a></p>
+        <p>Steg: </p>
+        <ol>
+          <li value="1">Öppna den vy som du vill modifiera.</li>
+          <li value="2"> Klicka på <span class="uitext">Inställning</span> för att aktivera inställningsläget. </li>
+          <li value="3">
+            <p>I rutan <span class="uitext">Systemöversikt</span>, dra det önskade objektet in i ett visningselement. </p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_systemoverview.jpg" data-mc-popup-alt="Vad kan vyer innehålla i XProtect Smart Client?">
+                <img class="MCPopupThumbnail img" data-mc-width="295" data-mc-height="609" src="../../../../Images/sc_systemoverview_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Vad kan vyer innehålla i XProtect Smart Client?" tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="4">Fyll i tilläggsinformation om objektet.</li>
+          <li value="5"> Klicka på <span class="uitext">Inställning</span> igen så att inställningsläget avslutas. Dina ändringar har sparats.</li>
+        </ol>
+      </div>
+      <p class="note">För detaljerad information, se <a href="#SC_AddingContentToViewsDetailed" class="MCXref xref">Lägga till innehåll till vyer (detaljerat)</a>.</p>
+      <div>
+        <h2>
+          <a name="SC_AssignAShortcutNumber.htm"></a>Tilldela snabbvalsnummer till vyer</h2>
+        <p>Du kan tilldela snabbvalsnummer till vyer och låta användare välja vyer via standardiserade tangentbordsgenvägar (se <a href="../sf_operation/sc_workingwithnavelements.htm#SC_KeyboardShortcutsExpl.htm" class="MCXref xref">Tangentbordsgenvägar (översikt)</a>).</p>
+        <ol>
+          <li value="1"> Klicka på <span class="uitext">Inställning</span> för att aktivera inställningsläget. </li>
+          <li value="2">I rutan <span class="uitext">Vyer</span>, välj den vy som du vill ange en genväg till.</li>
+          <li value="3">Ange ett snabbvalsnummer i fältet <span class="uitext">Snabbval</span> och tryck på RETUR. Snabbvalsnumret visas nu inom parentes framför vynamnet.</li>
+          <li value="4">Upprepa vid behov för övriga vyer.</li>
+          <li value="5"> Klicka på <span class="uitext">Inställning</span> igen så att inställningsläget avslutas. Dina ändringar har sparats.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_AddingContentToViewsDetailed"></a>Lägga till innehåll till vyer (detaljerat)</h2>
+        <p>Som beskrivet i <a href="#SC_AddingContentToViews.htm" class="MCXref xref">Lägg till kameror och andra objekt till vyer</a>, kan du lägga till kameror och andra typer av objekt i dina vyer. Detta avsnitt ger mer detaljerade användartips:</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Stängd" data-mc-alt2="Öppen" />Lägg till larm till vyer</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="../../../feature_flags/ff_managealarms/sc_configuringalarmsandevents.htm#SC_AddAlarmsToViews" class="MCXref xref">Lägg till larm till vyer</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Stängd" data-mc-alt2="Öppen" />Lägg till kameror till vyer</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>För att se video från en kamera måste du först lägga till kameran till en vy.</p>
+            <ol>
+              <li value="1">Markera den vy där du vill lägga till en ny kamera i inställningsläget.</li>
+              <li value="2">I fönstret <span class="uitext">Översikt</span>, expandera krävd server <img src="../../../../Images/add_a_camera_to_a_view.png" alt="" /> för att se en lista över tillgängliga kameror från den servern. <p class="note">Om en server listas med en röd ikon är den inte tillgänglig och då kan du inte visa larm från den servern.</p></li>
+              <li value="3">
+                <p>Välj kameran från listan och dra den till ett visningselement inuti vyn. En bild från kameran visas i det valda visningselementet. </p>
+                <p class="note">Om områden i videon är oskarpa eller utgråade beror det på att din systemadministratör har täckt dessa områden med <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term55">integritetsmasker<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>En oskarp eller solid färg som täcker ett område av videon i kameravyn. De definierade områdena är oskarpa eller täckta i klienternas live-, uppspelnings-, hotspot-, karusell-, smartkarta-, smartsökning- och exportlägen.</span></a> (se <a href="../../../feature_flags/ff_extendedprivacymasking/sc_workingwithprivacymasking.htm#SC_PrivacyMaskingExplain.htm" class="MCXref xref">Integritetsmaskning (förklaring)</a>).</p>
+              </li>
+              <li value="4">Du kan ange egenskaper för kameran (bildkvalitet, <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term14">bildfrekvens<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Ett mått som påvisar mängden information i en rörlig videoupptagning. Anges i regel med FPS (Frames Per Second, bilder per sekund).</span></a> osv.) i rutan <span class="uitext">Egenskaper</span>. För mer information, se <a href="sc_configuringcamerasettings.htm#SC_CameraSettings.htm" class="MCXref xref">Kamerainställningar</a>.</li>
+              <li value="5">För varje kamera du vill lägga till, repetera stegen ovan.</li>
+              <li value="6">För att lägga till flera kameror i en vy samtidigt, till exempel alla kameror i en kameramapp under en server, drar du mappen till vyn. Du måste se till att det finns tillräckligt många visningselement i vyn.</li>
+            </ol>
+            <p class="tip">Du kan enkelt ändra vilka kameror som inkluderas i din vy genom att dra en annan kamera till visningselementet.</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Stängd" data-mc-alt2="Öppen" />Lägg till karuseller till vyer</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="sc_configuringcarousels.htm#SC_AddCarouselToViews.htm" class="MCXref xref">Lägg till karuseller till vyer</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Stängd" data-mc-alt2="Öppen" />Lägg till bilder till vyer</a>
+            <a name="SC_AddImageToViews.htm"></a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Du kan visa statiska bilder i en vy. Detta är t.ex. användbart när du vill dela en stillbild på en misstänkt eller en ritning med nödutgångar.</p>
+            <p>Gör så här:</p>
+            <ol>
+              <li value="1"> Klicka på <span class="uitext">Inställning</span> för att aktivera inställningsläget. </li>
+              <li value="2">
+                <p>I rutan <span class="uitext">Systemöversikt</span>, dra objektet <span class="uitext">Bild</span> till ett visningselement. Ett fönster visas.</p>
+                <p>
+                  <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_addimagetoview.jpg" data-mc-popup-alt="Lägg till bilder till vyer i XProtect Smart Client.">
+                    <img class="MCPopupThumbnail img" data-mc-width="306" data-mc-height="946" src="../../../../Images/sc_addimagetoview_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Lägg till bilder till vyer i XProtect Smart Client." tabindex="" />
+                  </a>
+                </p>
+              </li>
+              <li value="3">Hitta och välj den bildfil du vill lägga till.</li>
+              <li value="4">Klicka på <span class="uitext">Öppna</span>. Bilden visas nu inuti visningselementet.</li>
+              <li value="5">För att göra bilden tillgänglig för andra som inte kan nå bildfilens plats, gå till fönstret <span class="uitext">Egenskaper</span> och klicka på <span class="uitext">Infoga</span>. Filen kommer att lagras i systemet.</li>
+              <li value="6"> Klicka på <span class="uitext">Inställning</span> igen så att inställningsläget avslutas. Dina ändringar har sparats.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Stängd" data-mc-alt2="Öppen" />Lägg till hotspots till vyer</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="sc_configuringhotspots.htm#SC_AddHotspotToViews.htm" class="MCXref xref">Lägg till hotspots till vyer</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Stängd" data-mc-alt2="Öppen" />Lägg till kartor till vyer</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="sc_configuringmaps.htm#SC_AddMapToViews.htm" class="MCXref xref">Lägg till kartor till vyer</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Stängd" data-mc-alt2="Öppen" />Lägg till smartkartor till vyer</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="../../../feature_flags/ff_map/sc_configuringmaps.htm#SC_AddSmartMapToView.htm" class="MCXref xref">Lägg till smartkarta till vyer</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Stängd" data-mc-alt2="Öppen" />Lägg till text till vyer</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Du kan lägga till text i ett eller fler visningselement inne i en vy. Detta är t.ex. användbart när du vill skicka ett meddelande eller instruktioner till operatörerna eller anslå ett arbetsschema för säkerhetspersonal. Du kan använda till upp till 1 000 tecken.</p>
+            <p>Gör så här:</p>
+            <ol>
+              <li value="1"> Klicka på <span class="uitext">Inställning</span> för att aktivera inställningsläget. </li>
+              <li value="2">I rutan <span class="uitext">Systemöversikt</span>, dra objektet <span class="uitext">Text</span> till det visningselement där du vill att texten ska visas. Ett fönster visas.</li>
+              <li value="3">Lägg in texten.</li>
+              <li value="4">Klicka på <span class="uitext">Spara</span>.</li>
+              <li value="5">För att ändra din text efter att du har sparat den, klicka på <span class="uitext">Redigera text</span> i fönstret <span class="uitext">Egenskaper</span> som du hittar i inställningsläget.</li>
+            </ol>
+            <div>
+              <p class="note">Du kan infoga tabeller från produkter som t.ex. Microsoft Word och Microsoft Excel, men du kan inte göra ändringar i tabellerna. </p>
+            </div>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Stängd" data-mc-alt2="Öppen" />
+            </a>
+            <a name="Add"></a>
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Lägg till webbsidor till vyer</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Du kan lägga till webbsidor till vyer, till exempel HTML, PHP, eller ASP-sidor. Detta är användbart, till exempel för att tillhandahålla online-instruktioner eller att visa företagswebbsidor i kombination med kameror eller andra typer av innehåll.</p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/add_html_page_to_view_or_1.jpg" data-mc-popup-alt="Lägg till webbsidor till vyer i XProtect Smart Client för att visa webbkontext bredvid videoflödet.">
+                <img class="MCPopupThumbnail img" data-mc-width="1320" data-mc-height="854" src="../../../../Images/add_html_page_to_view_or_1_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Lägg till webbsidor till vyer i XProtect Smart Client för att visa webbkontext bredvid videoflödet." tabindex="" />
+              </a>
+            </p>
+            <p>Gör så här:</p>
+            <ol>
+              <li value="1">Öppna den vy som du vill modifiera.</li>
+              <li value="2"> Klicka på <span class="uitext">Inställning</span> för att aktivera inställningsläget. </li>
+              <li value="3">I rutan <span class="uitext">Systemöversikt</span>, klicka och dra objektet <span class="uitext">HTML-sida</span> till ett av visningselementen. Ett fönster visas.<p><img src="../../../../Images/add_html_page_to_view_or_1.png" alt="Ange URL när webbsida läggs till i vyer i XProtect Smart Client." /></p></li>
+              <li value="4">
+                <p>I fältet <span class="uitext">Öppna</span>, ange adressen till webbsidan.</p>
+                <p class="important">För att använda en webbsida lagrad på din lokala dator, nätverk eller på en FTP-server, säkerställ att visningsläget är inställt på <span class="uitext">Kompatibilitet</span> i webbsidans egenskaper. Se <a href="#Web" class="MCXref xref">Webbsida egenskaper </a>. Annars får du ett felmeddelande. Se <a href="../sf_troubleshooting/sc_troubleshootinghtmlpages.htm" class="MCXref xref">Webbsidor (felsökning)</a>.</p>
+              </li>
+              <li value="5">Klicka på <span class="uitext">OK</span>.</li>
+              <li value="6">För att ställa in egenskaper, expandera rutan <span class="uitext">Egenskaper</span>.</li>
+              <li value="7"> Klicka på <span class="uitext">Inställning</span> igen så att inställningsläget avslutas. Dina ändringar har sparats.</li>
+            </ol>
+            <p class="note">Du kan inte navigera webbsidan i inställningsläge. </p>
+            <h3>
+              <a name="Web"></a>Webbsida egenskaper </h3>
+            <table cellspacing="3">
+              <col />
+              <col style="width: 376px;" />
+              <thead>
+                <tr>
+                  <th>
+                    <p>Namn</p>
+                  </th>
+                  <th>
+                    <p>Beskrivning</p>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">Redigera</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>Ange en ny URL eller filplats för webbsidan.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">Visningsläge</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>Välj vilken webbläsare som ska rendera webbsidan. Det finns två alternativ:</p>
+                    <ul>
+                      <li>
+                        <span class="uitext">Standard</span> - denna inställning använder Microsoft Edge. Välj <span class="uitext">Standard</span> om webbsidan ligger på en webbserver, och nätverksprotokollet som används är HTTP eller HTTPS</li>
+                      <li>
+                        <span class="uitext">Kompatibilitet</span> - denna inställning använder Internet Explorer. Välj <span class="uitext">Kompatibilitet</span> om webbsidan:<ul><li> är sparad lokalt</li><li>använder andra nätverksprotokoll än HTTP och HTTPS</li><li>innehåller skript utformade för att interagera med <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span></li><li>använder en äldre HTML-version</li></ul></li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">Skalning</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>Välj skalning för webbsidan. Optimal skalning beror på innehållet i den importerade webbsidan och hur du vill visa den </p>
+                    <p class="note">Denna inställning är bara tillgänglig i läget <span class="uitext">Kompatibilitet</span>.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">Dölj verktygsfält</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>Markera kryssrutan för att dölja navigationsverktygsfältet som läggs in över varje importerad webbsida.</p>
+                    <p>
+                      <img src="../../../../Images/set_properties_for_html_page.png" alt="" />
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Stängd" data-mc-alt2="Öppen" />Lägga till overlay-knappar i vyer</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Du kan aktivera högtalare, händelser, <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term33">utgångar<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Data som går ut ur en dator. På IP-övervakningssystem används utgångar ofta för att aktivera enheter som portar, sirener, stroboskop osv.</span></a> och annat genom <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term34">overlay-knappar<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Knapp som visas som ett lager ovanpå videon när du flyttar muspekaren över enskilda kamerapositioner i vyer under fliken Live. Med overlay-knappar kan du aktivera högtalare, händelser, utgångar, flytta PTZ-kameror, starta inspelning, ta bort signaler från kameror osv.</span></a>, som visas när du flyttar muspekaren över enskilda kamerapositioner i vyer på fliken <span class="uitext">Live</span>.</p>
+            <p>Du kan lägga till så många knappar som behövs.</p>
+            <ol>
+              <li value="1"> Klicka på <span class="uitext">Inställning</span> för att aktivera inställningsläget. </li>
+              <li value="2">I rutan <span class="uitext">Overlay-knappar</span>, välj och dra åtgärden till kamerans visningselement.</li>
+              <li value="3">När du släpper upp musknappen visas overlay-knappen. Om du vill ändra storlek på knappen drar du i de handtag som visas. <p><img src="../../../../Images/add_an_overlay_button_to_a.jpg" alt="" /></p></li>
+              <li value="4">För att ändra texten på overlay-knappen, dubbelklicka på texten, skriv över den, och välj kryssrutan <img src="../../../../Images/add_an_overlay_button_to_a.png" alt="" /> för att spara. Klicka på knappen Avbryt <img src="../../../../Images/add_an_overlay_button_to_a_1.png" alt="" /> för att ångra. När du sparar anpassas knapptexten till största möjliga storlek på knappen.</li>
+              <li value="5"> Klicka på <span class="uitext">Inställning</span> igen så att inställningsläget avslutas. Dina ändringar har sparats.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <p>
+        <a name="SC_AssignAShortcutNumber.htm"></a>
+      </p>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Konceptinformation</p>
+        <p class="containerItem_container_0">
+          <a href="../sf_operation/sc_workingwithviews.htm">Hantera vyer</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

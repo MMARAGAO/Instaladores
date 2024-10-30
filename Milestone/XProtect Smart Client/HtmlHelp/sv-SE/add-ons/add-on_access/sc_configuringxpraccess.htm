@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="sv-SE" xml:lang="sv-SE" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="Konfiguration" data-mc-conditions="flcts-alias.sc-alias-content,flcts-add-on.xp-acc-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Konfigurera dina vyer i XProtect Smart Client att visa inpasseringsövervakning. Detta låter dig kontrollera dörrar och tillträde till byggnader." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Access" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Operatör" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Administratör" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Integratör" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>XProtect Access (konfiguration)</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#add-ons/add-on_access/sc_configuringxpraccess.htm">Öppna ämne med navigering</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>
+        <span class="mc-variable flvar-product.ACMName_XP variable">XProtect Access</span> (konfiguration)</h1>
+      <div>
+        <h2>Lägg till inpasseringsövervakning till vyer<a name="SC_AddAccessMonitorsToVi.htm"></a></h2>
+        <p>Du börjar med att definiera ett visningselement för passersystemet:</p>
+        <ol>
+          <li value="1">På fliken <span class="uitext">Live</span> (se <a href="../../standard_features/sf_sc/sf_operation/sc_workspaces.htm#SC_LiveTabExplained" class="MCXref xref">Fliken Live (förklaring)</a>), i inställningsläge, välj den vy du vill använda för att övervaka passersystemet.</li>
+          <li value="2">I rutan <span class="uitext">Systemöversikt</span>, klicka på <span class="uitext">Inpasseringsövervakning</span> och dra den till ett visningselement.</li>
+          <li value="3">Ange inställningarna i dialogrutan <span class="uitext">Inställningar för inpasseringsövervakning</span> (se <a href="#SC_AccessMonitorSettings(56313).htm" class="MCXref xref">Inställningar för inpasseringsövervakning</a>) som visas. När du har valt en dörr kan du behålla standardinställningarna eller ändra dem efter behov.</li>
+          <li value="4">Klicka på <span class="uitext">OK</span>. Inpasseringsövervakning läggs till i vyn. <p>När en passersystemincident utlöser en <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term11">händelse<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>En fördefinierad incident som inträffar i övervakningssystemet. Den används av övervakningssystemet för att utlösa åtgärder. Beroende på övervakningssystemets konfiguration kan händelser orsakas av inmatning från externa sensorer, av upptäckt rörelse, av mottagna data från andra program, eller manuellt genom användarinmatning. En händelse kan användas till exempel för att se till att en kamera spelar in med en viss bildfrekvens, för att aktivera utdata, för att skicka e-post eller en kombination av dessa.</span></a> visas detta till höger i visningselementet.</p></li>
+        </ol>
+      </div>
+      <div>
+        <h2>Inställningar för inpasseringsövervakning<a name="SC_AccessMonitorSettings(56313).htm"></a></h2>
+        <p>Ange följande inställningar för inpasseringsövervakning:</p>
+        <table cellspacing="3">
+          <col />
+          <col />
+          <thead>
+            <tr>
+              <th>
+                <p>Namn</p>
+              </th>
+              <th>
+                <p>Beskrivning</p>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="uitext">Dörr</span>
+              </td>
+              <td>
+                <p>Ange den dörr du vill visa passersystemhändelser från. När du väljer en dörr visas återstående inställningar i dialogrutan med aktuella värden.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Källor</span>
+              </td>
+              <td>
+                <p>Välj vilken typ av passersystemkällor du vill ta emot händelser från. Listan kan t.ex. innehålla dörrar eller specifika inpasseringspunkter för en dörr. En inpasseringspunkt är en plats där man kan ta sig in, inklusive associerade fysiska enheter som t.ex. kortläsare, knappsatser, sensorer eller knappar. En dörr har normalt två inpasseringspunkter, som styr ingång respektive utgång genom dörren.</p>
+                <p>Listan över källor konfigureras av systemadministratören.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Kamera</span>
+              </td>
+              <td>
+                <p>Välj den kamera från vilken du vill visa video som hör till dörren. Som standard listar systemet de kameror som systemadministratören har associerat med vald dörr, men du kan också välja någon annan kamera i systemet.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Händelser</span>
+              </td>
+              <td>
+                <p>Välj den typ av <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term11">Händelser<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>En fördefinierad incident som inträffar i övervakningssystemet. Den används av övervakningssystemet för att utlösa åtgärder. Beroende på övervakningssystemets konfiguration kan händelser orsakas av inmatning från externa sensorer, av upptäckt rörelse, av mottagna data från andra program, eller manuellt genom användarinmatning. En händelse kan användas till exempel för att se till att en kamera spelar in med en viss bildfrekvens, för att aktivera utdata, för att skicka e-post eller en kombination av dessa.</span></a> du vill ta emot. Du kan välja händelser från de händelsekategorier som definierats av din <span class="mc-variable flvar-brand-company.XP variable">XProtect</span>-systemadministratör eller från den lista med händelser som definierats i passersystemet.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Kommandon</span>
+              </td>
+              <td>
+                <p>Välj de kommandoknappar du vill ha tillgängliga i inpasseringsövervakning, t.ex. för att låsa och låsa upp dörrar. Listan med kommandon beror på din systemkonfiguration.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Ordning</span>
+              </td>
+              <td>
+                <p>Välj om du vill att nya händelser ska visas längst upp eller längst ned i händelselistan.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2>Ändra inställningar för inpasseringsövervakning<a name="SC_ModifyAccessMonitorSe.htm"></a></h2>
+        <p>På fliken <span class="uitext">Live</span> kan du ändra inställningar för inpasseringsövervakning:</p>
+        <ol>
+          <li value="1">Klicka på <span class="uitext">Inställning</span> och välj det visningselement du vill ändra.</li>
+          <li value="2">I rutan <span class="uitext">Egenskaper</span> klicka på knappen <span class="uitext">Inställningar för inpasseringsövervakning</span>.</li>
+          <li value="3">Ange inställningarna i dialogrutan <span class="uitext">Inställningar för inpasseringsövervakning</span> (se <a href="#SC_AccessMonitorSettings(56313).htm" class="MCXref xref">Inställningar för inpasseringsövervakning</a>) som visas.</li>
+          <li value="4">Klicka på <span class="uitext">OK</span> för att stänga dialogrutan, och sedan på <span class="uitext">Inställning</span> för att återgå till livevisning.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>Anpassa din vy<a name="SC_CustomizeYourView.htm"></a></h2>
+        <p>Med <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term34">overlay-knappar<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Knapp som visas som ett lager ovanpå videon när du flyttar muspekaren över enskilda kamerapositioner i vyer under fliken Live. Med overlay-knappar kan du aktivera högtalare, händelser, utgångar, flytta PTZ-kameror, starta inspelning, ta bort signaler från kameror osv.</span></a> kan du anpassa ditt gränssnitt. Du kan lägga till overlay-knappar för passersystem till ett visningselement från en lista med kommandon som konfigurerats för dörrarna eller inpasseringspunkterna.</p>
+        <p>Exempel på användning:</p>
+        <ul>
+          <li>Ha direkt åtkomst till kommandoknappar i andra visningselement än inpasseringsövervakning</li>
+          <li>Placera kommandoknapparna direkt vid en dörr i visningselementet</li>
+          <li>Lägg till andra kommandoknappar än de som angetts i <a href="#SC_AccessMonitorSettings(56313).htm" class="MCXref xref">Inställningar för inpasseringsövervakning</a></li>
+        </ul>
+        <p>Gör så här:</p>
+        <ol>
+          <li value="1">Klicka på <span class="uitext">Inställning</span> på fliken <span class="uitext">Live</span> och välj det visningselement du vill ändra.</li>
+          <li value="2">I rutan <span class="uitext">Overlay-knappar</span>, klicka på <span class="uitext">Passersystem</span>.</li>
+          <li value="3">Leta upp det kommando du vill lägga till och dra det till ett visningselement.</li>
+          <li value="4">Klicka på <span class="uitext">Inställning</span> för att återgå till livevisning. <p>Overlay-knappen visas när du flyttar muspekaren över visningselementet.</p></li>
+        </ol>
+      </div>
+      <div>
+        <h2>Hantera information om kortinnehavare<a name="SC_ManageCardholderInfor.htm"></a></h2>
+        <p>Om ditt passersystem har konfigurerats för det kan du gå direkt till en webbsida med en representation av kortinnehavarens post och t.ex. utföra användaradministration eller få mer information om kortinnehavaren.</p>
+        <p>Om plugin-programmet har stöd för djuplänkning finns följande förutsättningar för passersystemet:</p>
+        <ul>
+          <li>Det måste innefatta en webbklient</li>
+          <li>Det måste ha stöd för djuplänkning.</li>
+        </ul>
+        <p>Så här hanterar du information om kortinnehavare:</p>
+        <ol>
+          <li value="1">På fliken <span class="uitext">Passersystem</span> väljer du listan <span class="uitext">Kortinnehavare</span>.</li>
+          <li value="2">Sök efter en kortinnehavare och välj personen i listan.</li>
+          <li value="3">Till höger, under informationen om kortinnehavaren, kan du klicka på en länk till t.ex. en webbsida. Beroende på plugin-programmet kan det finnas stöd för flera länkar, och du kan bli tillfrågad om ytterligare autentiseringsuppgifter.</li>
+          <li value="4">Du kan redigera flera funktioner, inklusive information om kortinnehavare och passagebehörigheter.</li>
+          <li value="5">I det här exemplet stänger du webbsidan och återgår till <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>Aktivera och inaktivera aviseringar om passagebegäran<a name="SC_TurnAccessRequestNoti.htm"></a></h2>
+        <p>Du kan inaktivera hantering av passagebegäran, t.ex. om endast en person ska hantera passagebegäran.</p>
+        <ol>
+          <li value="1">Klicka på <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> och sedan <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">Inställningar</span> för att öppna fönstret <span class="uitext">Inställningar</span>.</li>
+          <li value="2">Välj <span class="uitext">Passersystem</span> och inaktivera aviseringar om passagebegäran.</li>
+        </ol>
+        <p>Du kan återaktivera aviseringar för passagebegäran om du behöver hantera passagebegäran igen. Du kan också ändra alternativen för passersystemet genom att klicka på ikonen <span class="uitext">Inställningar</span> inuti en avisering om passagebegäran.</p>
+        <p class="note">Om fältet <span class="uitext">Följ server</span> är markerat så kontrollerar din systemadministratör inställningen <span class="uitext">Visa aviseringar om passagebegäran</span>.</p>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Konceptinformation</p>
+        <p class="containerItem_container_0">
+          <a href="sc_workingwithxpraccess.htm">XProtect Access (användning)</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

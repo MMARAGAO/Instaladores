@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LogMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <version>0.0.0.1</version>
+  <culture>ru-RU</culture>
+  <userfields>
+    <userfield type="string" uname="ResourceId"/>
+    <userfield type="string" uname="ResourceName"/>
+    <userfield type="enum" uname="ResourceType"/>
+    <userfield type="string" uname="ResourceLocation"/>
+    <userfield type="enum" uname="AccessGranted"/>
+    <userfield type="enum" uname="AuditType"/>
+  </userfields>
+  <userEnums>
+    <userEnum fieldname="groupname" fieldtype="system" uname="group">
+      <enum uname="Audit" value="Аудит"/>
+    </userEnum>
+    <userEnum fieldname="severity" fieldtype="system" uname="severity">
+      <enum uname="Info" value="Сведения"/>
+    </userEnum>
+    <userEnum fieldname="status" fieldtype="system" uname="status">
+      <enum uname="Success" value="Выполнено"/>
+    </userEnum>
+    <userEnum fieldname="AccessGranted" fieldtype="user" uname="AccessGranted">
+      <enum uname="Granted" value="Выдано"/>
+      <enum uname="Denied" value="Отклонено"/>
+      <enum uname="Default" value="По умолчанию"/>
+    </userEnum>
+    <userEnum fieldname="objecttype" fieldtype="system" uname="objecttype">
+      <enum uname="Alarms" value="Тревоги"/>
+    </userEnum>
+    <userEnum fieldname="ResourceType" fieldtype="user" uname="ResourceType">
+      <enum uname="Alarms" value="Тревоги"/>
+    </userEnum>
+    <userEnum fieldname="category" fieldtype="system" uname="category">
+      <enum uname="View_alarm" value="Просмотр тревоги"/>
+      <enum uname="Print_alarm" value="Печать тревоги"/>
+      <enum uname="View_alarm_list" value="Просмотр списка тревог"/>
+    </userEnum>
+    <userEnum fieldname="AuditType" fieldtype="user" uname="AuditType">
+      <enum uname="View_alarm" value="Просмотр тревоги"/>
+      <enum uname="Print_alarm" value="Печать тревоги"/>
+      <enum uname="View_alarm_list" value="Просмотр списка тревог"/>
+    </userEnum>
+  </userEnums>
+  <application uname="AlarmPlugin">
+    <component uname="Alarms">
+      <entries>
+        <group category="View alarm" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+          <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Alarms" severity="Info" status="Success" uname="ViewAlarmClient" value1="Granted" value2="Alarms" value3="View_alarm">Тревога просмотрена</entry>
+        </group>
+        <group category="Print alarm" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+          <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Alarms" severity="Info" status="Success" uname="PrintAlarmClient" value1="Granted" value2="Alarms" value3="Print_alarm">Тревога распечатана</entry>
+        </group>
+        <group category="View alarm list" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+          <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Alarms" severity="Info" status="Success" uname="ViewAlarmListStartClient" value1="Granted" value2="Alarms" value3="View_alarm_list">Список тревог просмотрен; применен следующий фильтр: &apos;{filterSettings}&apos;</entry>
+          <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Alarms" severity="Info" status="Success" uname="ViewAlarmListStopClient" value1="Granted" value2="Alarms" value3="View_alarm_list">Просмотр списка тревог остановлен</entry>
+        </group>
+      </entries>
+    </component>
+  </application>
+</LogMessages>

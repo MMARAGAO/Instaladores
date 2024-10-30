@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LogMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <version>20.2.1</version>
+  <culture>it-IT</culture>
+  <userfields>
+    <userfield type="string" uname="ResourceId"/>
+    <userfield type="string" uname="ResourceName"/>
+    <userfield type="enum" uname="ResourceType"/>
+    <userfield type="string" uname="ResourceLocation"/>
+    <userfield type="enum" uname="AccessGranted"/>
+    <userfield type="enum" uname="AuditType"/>
+  </userfields>
+  <userEnums>
+    <userEnum fieldname="groupname" fieldtype="system" uname="group">
+      <enum uname="Audit" value="Controllo"/>
+    </userEnum>
+    <userEnum fieldname="severity" fieldtype="system" uname="severity">
+      <enum uname="Info" value="Info"/>
+      <enum uname="Error" value="Errore"/>
+    </userEnum>
+    <userEnum fieldname="status" fieldtype="system" uname="status">
+      <enum uname="Success" value="Operazione riuscita"/>
+    </userEnum>
+    <userEnum fieldname="AccessGranted" fieldtype="user" uname="AccessGranted">
+      <enum uname="Granted" value="Concesso"/>
+      <enum uname="Denied" value="Negato"/>
+      <enum uname="Default" value="Predefinito"/>
+    </userEnum>
+    <userEnum fieldname="objecttype" fieldtype="system" uname="objecttype">      
+      <enum uname="Device" value="Dispositivo"/>
+      <enum uname="Camera" value="Telecamera"/>
+      <enum uname="Speaker" value="Altoparlante"/>
+      <enum uname="Microphone" value="Microfono"/>
+      <enum uname="VideoWallMonitor" value="Monitor Smart Wall"/>
+      <enum uname="Hot_zone" value="Hot zone"/>
+      <enum uname="PtzPreset" value="Preset PTZ"/>
+      <enum uname="Print" value="Stampa"/>
+      <enum uname="Server" value="Server"/>
+      <enum uname="Search" value="Cerca"/>
+    </userEnum>
+    <userEnum fieldname="ResourceType" fieldtype="user" uname="ResourceType">      
+      <enum uname="Export" value="Esporta"/>
+      <enum uname="Camera" value="Telecamera"/>
+      <enum uname="Speaker" value="Altoparlante"/>
+      <enum uname="Microphone" value="Microfono"/>
+      <enum uname="VideoWallMonitor" value="Monitor Smart Wall"/>
+      <enum uname="Hot_zone" value="Hot zone"/>
+      <enum uname="PtzPreset" value="Preset PTZ"/>
+      <enum uname="Server" value="Server"/>
+      <enum uname="Search" value="Categoria di ricerca"/>
+    </userEnum>
+    <userEnum fieldname="category" fieldtype="system" uname="category">      
+      <enum uname="Export" value="Esporta"/>
+      <enum uname="VideoWallControl" value="Controllo Smart Wall"/>
+      <enum uname="MapControl" value="Controllo mappa"/>
+      <enum uname="PtzPresets" value="Presets PTZ"/>
+      <enum uname="Print" value="Stampa"/>
+      <enum uname="Camera" value="Telecamera"/>
+      <enum uname="Security" value="Sicurezza"/>
+      <enum uname="Search" value="Cerca"/>
+    </userEnum>
+    <userEnum fieldname="AuditType" fieldtype="user" uname="AuditType">      
+      <enum uname="Export" value="Esporta"/>
+      <enum uname="VideoWallControl" value="Controllo Smart Wall"/>
+      <enum uname="MapControl" value="Controllo mappa"/>
+      <enum uname="PtzPresets" value="Presets PTZ"/>
+      <enum uname="Print" value="Stampa"/>
+      <enum uname="CameraSnapshot" value="Istantanea della telecamera"/>
+      <enum uname="CameraPrivacyProtection" value="Mascheratura privacy"/>
+      <enum uname="UserLogOut" value="Disconnessione utente"/>
+      <enum uname="Search" value="Cerca"/>
+    </userEnum>
+  </userEnums>
+  <application uname="SmartClient">    
+    <component uname="Export">
+      <module uname="CombinedExportLogger">
+        <entries>
+          <group category="Export" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" field4="ResourceType" name="Audit" value1="" value2="Multiple Devices" value3="@objLocationName" value4="Export">
+            <entry field1="AccessGranted" field2="AuditType" object_type="Device" severity="Info" status="Success" uname="ExportBegun" value1="Granted" value2="Export">Esportazione avviata...{newLine}Nome esportazione: &apos;{exportTitle}&apos;{newLine}Sequenza: &quot;{starttime}&quot; a &quot;{endtime}&quot;{newLine}Esportato nel percorso: ( {exportToPath} ){newLine}Esportato al masterizzatore di supporto: ( {exportToOptics} ){newLine}Esportato in formato {brandName}: ( {database} ){newLine}- Protetto da password: ( {encrypted} ){newLine}- Riesportazione bloccata: ( {locked} ){newLine}- Con commenti: ( {comments} ){newLine}- Firma digitale inclusa: ( {signed} ){newLine}Esportato nel formato del riproduttore multimediale: ( {avi} ){newLine}Esportato in formato di immagine statica: ( {jpeg} ){newLine}Dispositivi inclusi:{d1}{d2}{d3}{d4}{d5}{d6}{d7}{d8}{d9}{d10}{d11}{d12}{d13}{d14}{d15}{d16}{d17}{d18}{d19}{d20}{d21}{d22}{d23}{d24}{d25}{d26}{d27}{d28}{d29}{d30}{newLine}(tutti gli orari in UTC)</entry>
+            <entry field1="AccessGranted" field2="AuditType" object_type="Device" severity="Error" status="Success" uname="ExportCanceled" value1="Granted" value2="Export">Esportazione annullata...{newLine}Nome esportazione: {exportTitle}{newLine}Sequenza: &quot;{starttime}&quot; a &quot;{endtime}&quot;{newLine}Esportato nel percorso: ( {exportToPath} ){newLine}Esportato al masterizzatore di supporto: ( {exportToOptics} ){newLine}Esportato in formato {brandName}: ( {database} ){newLine}- Protetto da password: ( {encrypted} ){newLine}- Riesportazione bloccata: ( {locked} ){newLine}- Con commenti: ( {comments} ){newLine}- Firma digitale inclusa: ( {signed} ){newLine}Esportato nel formato del riproduttore multimediale: ( {avi} ){newLine}Esportato in formato di immagine statica: ( {jpeg} ){newLine}Dispositivi inclusi:{d1}{d2}{d3}{d4}{d5}{d6}{d7}{d8}{d9}{d10}{d11}{d12}{d13}{d14}{d15}{d16}{d17}{d18}{d19}{d20}{d21}{d22}{d23}{d24}{d25}{d26}{d27}{d28}{d29}{d30}{newLine}(tutti gli orari in UTC)</entry>
+            <entry field1="AccessGranted" field2="AuditType" object_type="Device" severity="Info" status="Success" uname="ExportCompleted" value1="Granted" value2="Export">Esportazione completata...{newLine}Nome esportazione: {exportTitle}{newLine}Sequenza: &quot;{starttime}&quot; a &quot;{endtime}&quot;{newLine}Esportato nel percorso: ( {exportToPath} ){newLine}Esportato al masterizzatore di supporto: ( {exportToOptics} ){newLine}Esportato in formato {brandName}: ( {database} ){newLine}- Protetto da password: ( {encrypted} ){newLine}- Riesportazione bloccata: ( {locked} ){newLine}- Con commenti: ( {comments} ){newLine}- Firma digitale inclusa: ( {signed} ){newLine}Esportato nel formato del riproduttore multimediale: ( {avi} ){newLine}Esportato in formato di immagine statica: ( {jpeg} ){newLine}Dispositivi inclusi:{d1}{d2}{d3}{d4}{d5}{d6}{d7}{d8}{d9}{d10}{d11}{d12}{d13}{d14}{d15}{d16}{d17}{d18}{d19}{d20}{d21}{d22}{d23}{d24}{d25}{d26}{d27}{d28}{d29}{d30}{newLine}(tutti gli orari in UTC)</entry>
+            <entry field1="AccessGranted" field2="AuditType" object_type="Device" severity="Info" status="Success" uname="ExportCompletedWithErrorsInclGeneralError" value1="Granted" value2="Export">Esportazione completata con errori...{newLine}Nome esportazione: {exportTitle}{newLine}Sequenza: &quot;{starttime}&quot; a &quot;{endtime}&quot;{newLine}Esportato nel percorso: ( {exportToPath} ){newLine}Esportato al masterizzatore di supporto: ( {exportToOptics} ){newLine}Esportato in formato {brandName}: ( {database} ){newLine}- Protetto da password: ( {encrypted} ){newLine}- Riesportazione bloccata: ( {locked} ){newLine}- Con commenti: ( {comments} ){newLine}- Firma digitale inclusa: ( {signed} ){newLine}Esportato nel formato del riproduttore multimediale: ( {avi} ){newLine}Esportato in formato di immagine statica: ( {jpeg} ){newLine}Si è verificato un errore di esportazione{newLine}Esportazione corretta per i seguenti dispositivi: {sd1}{sd2}{sd3}{sd4}{sd5}{sd6}{sd7}{sd8}{sd9}{sd10}{sd11}{sd12}{sd13}{sd14}{sd15}{sd16}{sd17}{sd18}{sd19}{sd20}{sd21}{sd22}{sd23}{sd24}{sd25}{sd26}{sd27}{sd28}{sd29}{sd30}{newLine}Esportazione non riuscita per i dispositivi seguenti: {fd1}{fd2}{fd3}{fd4}{fd5}{fd6}{fd7}{fd8}{fd9}{fd10}{fd11}{fd12}{fd13}{fd14}{fd15}{fd16}{fd17}{fd18}{fd19}{fd20}{fd21}{fd22}{fd23}{fd24}{fd25}{fd26}{fd27}{fd28}{fd29}{fd30}{newLine}(tutti gli orari in UTC)</entry>
+            <entry field1="AccessGranted" field2="AuditType" object_type="Device" severity="Info" status="Success" uname="ExportCompletedWithErrors" value1="Granted" value2="Export">Esportazione completata con errori...{newLine}Nome esportazione: {exportTitle}{newLine}Sequenza: &quot;{starttime}&quot; a &quot;{endtime}&quot;{newLine}Esportato nel percorso: ( {exportToPath} ){newLine}Esportato al masterizzatore di supporto: ( {exportToOptics} ){newLine}Esportato in formato {brandName}: ( {database} ){newLine}- Protetto da password: ( {encrypted} ){newLine}- Riesportazione bloccata: ( {locked} ){newLine}- Con commenti: ( {comments} ){newLine}- Firma digitale inclusa: ( {signed} ){newLine}Esportato nel formato del riproduttore multimediale: ( {avi} ){newLine}Esportato in formato di immagine statica: ( {jpeg} ){newLine}Esportazione corretta per i seguenti dispositivi: {sd1}{sd2}{sd3}{sd4}{sd5}{sd6}{sd7}{sd8}{sd9}{sd10}{d11}{d12}{d13}{d14}{d15}{d16}{d17}{d18}{d19}{d20}{d21}{d22}{d23}{d24}{d25}{d26}{d27}{d28}{d29}{d30}{newLine}Esportazione non riuscita per i dispositivi seguenti: {fd1}{fd2}{fd3}{fd4}{fd5}{fd6}{fd7}{fd8}{fd9}{fd10}{fd11}{fd12}{fd13}{fd14}{fd15}{fd16}{fd17}{fd18}{fd19}{fd20}{fd21}{fd22}{fd23}{fd24}{fd25}{fd26}{fd27}{fd28}{fd29}{fd30}{newLine}(tutti gli orari in UTC)</entry>
+            <entry field1="AccessGranted" field2="AuditType" object_type="Device" severity="Error" status="Success" uname="ExportFailed" value1="Granted" value2="Export">Esportazione non riuscita...{newLine}Nome esportazione: {exportTitle}{newLine}Sequenza: &quot;{starttime}&quot; a &quot;{endtime}&quot;{newLine}Esportato nel percorso: ( {exportToPath} ){newLine}Esportato al masterizzatore di supporto: ( {exportToOptics} ){newLine}Esportato in formato {brandName}: ( {database} ){newLine}- Protetto da password: ( {encrypted} ){newLine}- Riesportazione bloccata: ( {locked} ){newLine}- Con commenti: ( {comments} ){newLine}- Firma digitale inclusa: ( {signed} ){newLine}Esportato nel formato del riproduttore multimediale: ( {avi} ){newLine}Esportato in formato di immagine statica: ( {jpeg} ){newLine}Dispositivi inclusi:{d1}{d2}{d3}{d4}{d5}{d6}{d7}{d8}{d9}{d10}{d11}{d12}{d13}{d14}{d15}{d16}{d17}{d18}{d19}{d20}{d21}{d22}{d23}{d24}{d25}{d26}{d27}{d28}{d29}{d30}{newLine}(tutti gli orari in UTC)</entry>
+            <entry field1="AccessGranted" field2="AuditType" object_type="Device" severity="Error" status="Success" uname="ExportDenied" value1="Denied" value2="Export">Esportazione non riuscita...{newLine}Nome esportazione: {exportTitle}{newLine}Sequenza: &quot;{starttime}&quot; a &quot;{endtime}&quot;{newLine}Esportato nel percorso: ( {exportToPath} ){newLine}Esportato al masterizzatore di supporto: ( {exportToOptics} ){newLine}Esportato in formato {brandName}: ( {database} ){newLine}- Protetto da password: ( {encrypted} ){newLine}- Riesportazione bloccata: ( {locked} ){newLine}- Con commenti: ( {comments} ){newLine}- Firma digitale inclusa: ( {signed} ){newLine}Esportato nel formato del riproduttore multimediale: ( {avi} ){newLine}Esportato in formato di immagine statica: ( {jpeg} ){newLine}Dispositivi inclusi:{d1}{d2}{d3}{d4}{d5}{d6}{d7}{d8}{d9}{d10}{d11}{d12}{d13}{d14}{d15}{d16}{d17}{d18}{d19}{d20}{d21}{d22}{d23}{d24}{d25}{d26}{d27}{d28}{d29}{d30}{newLine}(tutti gli orari in UTC)</entry>
+          </group>
+        </entries>
+      </module>
+      <module uname="AVI_JPEG">
+        <entries>
+          <group category="Export" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Info" status="Success" uname="ExportAVICameraBegun" value1="Granted" value2="Camera" value3="Export">Esportazione del file AVI avviata. Sequenza da &apos;{starttime}&apos; a &apos;{endtime}&apos; (ora UTC).</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Error" status="Success" uname="ExportAVICameraCancelled" value1="Granted" value2="Camera" value3="Export">Esportazione del file AVI annullata</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Info" status="Success" uname="ExportAVICameraCompleted" value1="Granted" value2="Camera" value3="Export">Esportazione del AVI completata. Sequenza da &apos;{starttime}&apos; a &apos;{endtime}&apos; (ora UTC).</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Error" status="Success" uname="ExportAVICameraFailed" value1="Granted" value2="Camera" value3="Export">Esportazione del file AVI non riuscita.</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Speaker" severity="Info" status="Success" uname="ExportAVISpeakerBegun" value1="Granted" value2="Speaker" value3="Export">Esportazione del file AVI avviata. Sequenza da &apos;{starttime}&apos; a &apos;{endtime}&apos; (ora UTC).</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Speaker" severity="Error" status="Success" uname="ExportAVISpeakerCancelled" value1="Granted" value2="Speaker" value3="Export">Esportazione del file AVI annullata</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Speaker" severity="Info" status="Success" uname="ExportAVISpeakerCompleted" value1="Granted" value2="Speaker" value3="Export">Esportazione del AVI completata. Sequenza da &apos;{starttime}&apos; a &apos;{endtime}&apos; (ora UTC).</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Speaker" severity="Error" status="Success" uname="ExportAVISpeakerFailed" value1="Granted" value2="Speaker" value3="Export">Esportazione del file AVI non riuscita.</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Microphone" severity="Info" status="Success" uname="ExportAVIMicrophoneBegun" value1="Granted" value2="Microphone" value3="Export">Esportazione del file AVI avviata. Sequenza da &apos;{starttime}&apos; a &apos;{endtime}&apos; (ora UTC).</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Microphone" severity="Error" status="Success" uname="ExportAVIMicrophoneCancelled" value1="Granted" value2="Microphone" value3="Export">Esportazione del file AVI annullata</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Microphone" severity="Info" status="Success" uname="ExportAVIMicrophoneCompleted" value1="Granted" value2="Microphone" value3="Export">Esportazione del AVI completata. Sequenza da &apos;{starttime}&apos; a &apos;{endtime}&apos; (ora UTC).</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Microphone" severity="Error" status="Success" uname="ExportAVIMicrophoneFailed" value1="Granted" value2="Microphone" value3="Export">Esportazione del file AVI non riuscita.</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Info" status="Success" uname="ExportJPEGBegun" value1="Granted" value2="Camera" value3="Export">Esportazione del file JPEG avviata. Sequenza da &apos;{starttime}&apos; a &apos;{endtime}&apos; (ora UTC).</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Error" status="Success" uname="ExportJPEGCancelled" value1="Granted" value2="Camera" value3="Export">Esportazione del file JPEG annullata</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Info" status="Success" uname="ExportJPEGCompleted" value1="Granted" value2="Camera" value3="Export">Esportazione del JPEG completata. Sequenza da &apos;{starttime}&apos; a &apos;{endtime}&apos; (ora UTC).</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Error" status="Success" uname="ExportJPEGFailed" value1="Granted" value2="Camera" value3="Export">Esportazione del file JPEG non riuscita.</entry>
+          </group>
+        </entries>
+      </module>
+      <module uname="DB">
+        <entries>
+          <group category="Export" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Info" status="Success" uname="ExportCameraBegunWithEncryption" value1="Granted" value2="Camera" value3="Export">Esportazione del database avviata. Cifratura abilitata. Sequenza da &apos;{starttime}&apos; a &apos;{endtime}&apos; (ora UTC).</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Info" status="Success" uname="ExportCameraBegunWithNoEncryption" value1="Granted" value2="Camera" value3="Export">Esportazione del database avviata. Cifratura abilitata. Sequenza da &apos;{starttime} a &apos;{endtime}&apos; (ora UTC).</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Error" status="Success" uname="ExportCameraCancelled" value1="Granted" value2="Camera" value3="Export">Esportazione del database annullata</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Info" status="Success" uname="ExportCameraCompleted" value1="Granted" value2="Camera" value3="Export">Esportazione del database completata. Sequenza da &apos;{starttime}&apos; a &apos;{endtime}&apos; (ora UTC).</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Error" status="Success" uname="ExportCameraFailed" value1="Granted" value2="Camera" value3="Export">Esportazione del database non riuscita.</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Speaker" severity="Info" status="Success" uname="ExportSpeakerBegunWithEncryption" value1="Granted" value2="Speaker" value3="Export">Esportazione del database avviata. Cifratura abilitata. Sequenza da &apos;{starttime}&apos; a &apos;{endtime}&apos; (ora UTC).</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Speaker" severity="Info" status="Success" uname="ExportSpeakerBegunWithNoEncryption" value1="Granted" value2="Speaker" value3="Export">Esportazione del database avviata. Cifratura abilitata. Sequenza da &apos;{starttime}&apos; a &apos;{endtime}&apos; (ora UTC).</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Speaker" severity="Error" status="Success" uname="ExportSpeakerCancelled" value1="Granted" value2="Speaker" value3="Export">Esportazione del database annullata</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Speaker" severity="Info" status="Success" uname="ExportSpeakerCompleted" value1="Granted" value2="Speaker" value3="Export">Esportazione del database completata. Sequenza da &apos;{starttime}&apos; a &apos;{endtime}&apos; (ora UTC).</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Speaker" severity="Error" status="Success" uname="ExportSpeakerFailed" value1="Granted" value2="Speaker" value3="Export">Esportazione del database non riuscita.</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Microphone" severity="Info" status="Success" uname="ExportMicrophoneBegunWithEncryption" value1="Granted" value2="Microphone" value3="Export">Esportazione del database avviata. Cifratura abilitata. Sequenza da &apos;{starttime}&apos; a &apos;{endtime}&apos; (ora UTC).</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Microphone" severity="Info" status="Success" uname="ExportMicrophoneBegunWithNoEncryption" value1="Granted" value2="Microphone" value3="Export">Esportazione del database avviata. Cifratura abilitata. Sequenza da &apos;{starttime}&apos; a &apos;{endtime}&apos; (ora UTC).</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Microphone" severity="Error" status="Success" uname="ExportMicrophoneCancelled" value1="Granted" value2="Microphone" value3="Export">Esportazione del database annullata</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Microphone" severity="Info" status="Success" uname="ExportMicrophoneCompleted" value1="Granted" value2="Microphone" value3="Export">Esportazione del database completata. Sequenza da &apos;{starttime}&apos; a &apos;{endtime}&apos; (ora UTC).</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Microphone" severity="Error" status="Success" uname="ExportMicrophoneFailed" value1="Granted" value2="Microphone" value3="Export">Esportazione del database non riuscita.</entry>
+          </group>
+        </entries>
+      </module>
+    </component>
+    <component uname="VideoWall">
+      <module uname="Drop">
+        <entries>
+          <group category="VideoWallControl" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="VideoWallMonitor" severity="Info" status="Success" uname="MonitorLayoutCameraPlaced" value1="Granted" value2="VideoWallMonitor" value3="VideoWallControl">Telecamera &quot;{name}&quot; inserita nella posizione &quot;{positionNumber}&quot;</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="VideoWallMonitor" severity="Info" status="Success" uname="MonitorLayoutViewItemPlaced" value1="Granted" value2="VideoWallMonitor" value3="VideoWallControl">Visualizza l&apos;elemento &quot;{name}&quot; collocato nella posizione &quot;{positionNumber}&quot;</entry>
+          </group>
+        </entries>
+      </module>
+    </component>
+    <component uname="Map">
+      <module uname="Navigation">
+        <entries>
+          <group category="MapControl" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Hot zone" severity="Info" status="Success" uname="MapNavigationServerChanged" value1="Granted" value2="Hot_zone" value3="MapControl">Passaggio a una mappa dal server &apos;{servername}&apos;</entry>
+          </group>
+        </entries>
+      </module>
+    </component>
+    <component uname="PtzPresets">
+      <module uname="Manage">
+        <entries>
+          <group category="ManagePtzPreset" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="PtzPreset" severity="Info" status="Success" uname="AddPtzPreset" value1="Granted" value2="PtzPreset" value3="ManagePtzPresets">Preset PTZ &quot;{name}&quot; creato</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="PtzPreset" severity="Info" status="Success" uname="UpdatePtzPresetName" value1="Granted" value2="PtzPreset" value3="ManagePtzPresets">Preset PTZ &quot;{name}&quot; aggiornato con un nuovo nome</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="PtzPreset" severity="Info" status="Success" uname="UpdatePtzPresetPosition" value1="Granted" value2="PtzPreset" value3="ManagePtzPresets">Preset PTZ &quot;{name}&quot; aggiornato con una nuova posizione PTZ</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="PtzPreset" severity="Info" status="Success" uname="DeletePtzPreset" value1="Granted" value2="PtzPreset" value3="ManagePtzPresets">Preset PTZ &quot;{name}&quot; eliminato</entry>
+          </group>
+        </entries>
+      </module>
+    </component>
+    <component uname="PrintForm">
+      <module uname="DoPrint">
+        <entries>
+          <group category="Print" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Print" severity="Info" status="Success" uname="Print" value1="Granted" value2="Camera" value3="Print">Stampa dell&apos;immagine registrata alle &quot;{time}&quot; (ora UTC)</entry>
+          </group>
+        </entries>
+      </module>
+    </component>
+    <component uname="Camera">
+      <module uname="Snapshot">
+        <entries>
+          <group category="Camera" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Info" status="Success" uname="CameraSnapshot" value1="Granted" value2="Camera" value3="CameraSnapshot">Istantanea dell&apos;immagine registrata alle &quot;{time}&quot; (ora UTC)</entry>
+          </group>
+        </entries>
+      </module>
+      <module uname="PrivacyProtection">
+        <entries>
+          <group category="Camera" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Info" status="Success" uname="CameraPrivacyProtectionLifted" value1="Granted" value2="Camera" value3="CameraPrivacyProtection">Maschere privacy rimosse. Autorizzato da &apos;{authUser}&apos;</entry>
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Camera" severity="Info" status="Success" uname="CameraPrivacyProtectionApplied" value1="Granted" value2="Camera" value3="CameraPrivacyProtection">Maschere privacy applicate.</entry>
+          </group>
+        </entries>
+      </module>
+    </component>
+    <component uname="User">
+      <module uname="LogOut">
+        <entries>
+          <group category="Security" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Security" severity="Info" status="Success" uname="UserLoggedOut" value1="Granted" value2="Server" value3="UserLogOut">L&apos;utente si è disconnesso con successo</entry>
+          </group>
+        </entries>
+      </module>
+    </component>
+    <component uname="CentralizedSearch">
+      <module uname="Search">
+        <entries>
+          <group category="Search" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+            <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Device" severity="Info" status="Success" uname="SearchStarted" value1="Granted" value2="Search" value3="Search">L&apos;utente ha eseguito una ricerca{newLine}Durata: inizio &apos;{starttime}&apos; fine &apos;{endtime}&apos;{newLine}Telecamere:{newLine}{c1}{c2}{c3}{c4}{c5}{c6}{c7}{c8}{c9}{c10}{newLine}Categorie e filtri di ricerca: {i1}{i2}{i3}{i4}{i5}{i6}{i7}{i8}{i9}{i10}{newLine}{newLine}(tutti gli orari sono in formato UTC)</entry>
+          </group>
+        </entries>
+      </module>
+    </component>
+  </application>
+</LogMessages>

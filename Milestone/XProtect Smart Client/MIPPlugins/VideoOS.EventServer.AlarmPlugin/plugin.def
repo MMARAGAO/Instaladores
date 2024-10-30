@@ -1,0 +1,4 @@
+<plugin>
+  <file name="VideoOS.EventServer.AlarmPlugin.SmartClient.dll"/>
+  <load env="SmartClient"/>
+</plugin>

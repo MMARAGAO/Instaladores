@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="zh-TW" xml:lang="zh-TW" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="最佳化" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Get familiar with and read how to set up adaptive streaming to improve the performance of computers running XProtect Smart Client." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=管理員" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=整合商" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>啟用調適串流</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#feature_flags/ff_adaptivestreaming/sc_enablingadaptivestreaming.htm">使用瀏覽打開主題</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="階層連結" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>啟用調適串流</h1>
+      <h2>調適串流 (說明)<a name="SC_AdaptiveStreamingExplained"></a></h2>
+      <p>調適串流可改善執行 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 之電腦的解碼功能與效能。當您在同一個檢視中檢視多個即時視訊串流時，這非常適用。</p>
+      <p>若要利用調適串流，您的攝影機必須具有用不同解析度定義的多個串流。它使 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 能自動選擇與檢視項目要求的解析度最符合的匹配項目。目前 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 無需以不必要的高解析度縮減預設串流。這將降低 CPU 和 GPU 解碼來源的負載。</p>
+      <p>為確保視訊品質，定義為等於或大於視訊項目要求的解析度最為符合 (如果可能)。這有助於避免串流提高。下表顯示調適串流根據 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 中的檢視項目要求選擇的視訊串流。</p>
+      <table cellspacing="3">
+        <col style="width: 40%;" />
+        <col />
+        <col />
+        <thead>
+          <tr>
+            <th>檢視項目要求的解析度</th>
+            <th colspan="2">最符合可用的視訊串流</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>636 x 477</td>
+            <td style="text-align: left;">視訊串流 1</td>
+            <td>640 x 480 (VGA)</td>
+          </tr>
+          <tr>
+            <td>644 x 483</td>
+            <td style="text-align: left;">視訊串流 2</td>
+            <td>1280 x 720 (WXGA-H)</td>
+          </tr>
+          <tr>
+            <td>1920 x 1080</td>
+            <td style="text-align: left;">視訊串流 3</td>
+            <td>1920 x 1080 (FHD)</td>
+          </tr>
+          <tr>
+            <td>1920 x 1440</td>
+            <td style="text-align: left;">視訊串流 4</td>
+            <td>3840 x 2160 (4K UHD-1)</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="note">
+        <p>變焦時，要求的即時視訊串流的解析度總是最高。</p>
+        <p>頻寬使用量經常會在要求的串流解析度降低時減少。頻寬使用量還取決於已定義串流設定中的其他設定。</p>
+      </div>
+      <h2>檢查調適串流設定<a name="SC_CheckAdaptiveStreamingSettings"></a></h2>
+      <ol>
+        <li value="1">移至<span class="uitext">設定</span> &gt;<span class="uitext"> 進階</span> &gt;<span class="uitext"> 調適串流</span>。</li>
+        <li value="2">調適串流有兩種設定：<span class="uitext">已停用</span>和<span class="uitext">已啟用</span>。<p>選擇<span class="uitext"><span class="uitext">已啟用</span></span>。</p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_settings_advanced_adaptivestreamingdiagnosticsoverlaycut.png" data-mc-popup-alt="Adaptive streaming settings in XProtect Smart Client."><img class="MCPopupThumbnail img" data-mc-width="800" data-mc-height="480" src="../../../Images/sc_settings_advanced_adaptivestreamingdiagnosticsoverlaycut_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Adaptive streaming settings in XProtect Smart Client." tabindex="" /></a></p></li>
+        <li value="3">移至<span class="uitext">視訊診斷覆蓋</span>。</li>
+        <li value="4">若要使串流的目前視訊解析度可見，請選擇<span class="uitext">層級 2</span>。</li>
+        <p class="note">此設定將套用至所有檢視項目。預設設定為<span class="uitext">隱藏</span>。</p>
+        <li value="5">視訊診斷覆蓋目前應為<span class="uitext">已啟用</span>。</li>
+        <p>嘗試將檢視視窗從小調到大，從大調到小，並檢查<span class="uitext">視訊解析度</span>值是否變更。</p>
+        <p>
+          <img src="../../../Images/sc_viewitem_diagnosticsoverlay_resolution320x180.png" alt="" />
+          <img src="../../../Images/sc_viewitem_diagnosticsoverlay_resolution480x270.png" alt="" />
+          <img src="../../../Images/sc_viewitem_diagnosticsoverlay_resolution1280x720.png" alt="" />
+        </p>
+        <p>如果該值無法變更，請繼續檢查您的攝影機中可用的即時視訊資料流，以便您可啟用彈性資料流 (如果可能)。</p>
+      </ol>
+      <h2>檢查可用的即時視訊串流<a name="SC_CheckAvailableLiveVideoStreams"></a></h2>
+      <p>若要利用調適串流，必須在攝影機設定中設定具有不同解析度的兩個或多個即時視訊串流。</p>
+      <p class="note"> 彈性串流唯一支援的視訊解析度格式為<span class="inputtext">寬度 x 高度</span>。攝影機呈現的視訊解析度格式為 720p、模式2，不支援 VGA 等。</p>
+      <p class="note">並非所有攝影機都支援多個串流。</p>
+      <p>多個串流方便在伺服器中設定每個裝置的多個串流。如果已設定多個串流並啟用彈性串流，您可以選擇<span class="uitext">彈性串流</span>或其他可用串流之一。</p>
+      <p>若要確保是否已在檢視中設定<span class="uitext">調適串流</span>：</p>
+      <ol>
+        <li value="1">按一下<span class="uitext">設定</span>以設定檢視。</li>
+        <li value="2">在<span class="uitext">屬性</span>中，按一下<span class="uitext">即時串流</span>下拉式清單，將顯示可用即時視訊串流清單。</li>
+        <li value="3">
+          <p>檢查兩個或多個即時視訊串流是否可用，並選擇<span class="uitext">調適用串流</span>。</p>
+          <p>
+            <img src="../../../Images/sc_viewitem_setup_properties_livestream_adaptivestreamingselect.png" alt="Verify that adaptive streaming is selected in the camera properties." />
+          </p>
+          <p class="note">如果僅一個即時視訊可用，請在 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> 中為攝影機加入更多即時視訊串流。</p>
+        </li>
+        <li value="4">按一下<span class="uitext">設定</span>以關閉檢視設定。</li>
+      </ol>
+      <p>若要確保是否已<span class="uitext">即時</span>視訊項目中選擇<span class="uitext">調適串流</span>：</p>
+      <ol>
+        <li value="1">按一下<span class="uitext">更多</span>拉式清單。</li>
+        <li value="2">選擇<span class="uitext">即時串流</span>，顯示可用即時視訊串流清單。</li>
+        <li value="3">
+          <p>檢查兩個或多個即時視訊串流是否可用，並選擇<span class="uitext">調適用串流</span>。</p>
+          <p>
+            <img src="../../../Images/sc_viewitem_more_livestream_adaptivestreaming.png" alt="Verify that adaptive streaming is selected in the camera view item." />
+          </p>
+        </li>
+      </ol>
+    </div>
+    <p></p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

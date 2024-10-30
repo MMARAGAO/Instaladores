@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LogMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <version>4.0.14</version>
+  <culture>pt-BR</culture>
+  <userfields>
+    <userfield type="string" uname="ResourceId"/>
+    <userfield type="string" uname="ResourceName"/>
+    <userfield type="enum" uname="ResourceType"/>
+    <userfield type="enum" uname="SourceType"/>
+    <userfield type="enum" uname="ListType"/>
+    <userfield type="string" uname="EventType"/>
+  </userfields>
+  <userEnums>
+    <userEnum fieldname="SourceType" fieldtype="user" uname="SourceType">
+      <enum uname="LPRService" value="Serviço de servidor LPR"/>
+      <enum uname="LPRClient" value="Cliente LPR"/>
+    </userEnum>
+    <userEnum fieldname="groupname" fieldtype="system" uname="group">
+      <enum uname="Audit" value="Auditoria"/>
+    </userEnum>
+    <userEnum fieldname="ResourceType" fieldtype="user" uname="ResourceType">
+      <enum uname="LPR" value="LPR"/>
+    </userEnum>
+    <userEnum fieldname="ListType" fieldtype="system" uname="ListType">
+      <enum uname="Edit_LPR_license_plate_list" value="Editar a lista de placas de licença"/>
+      <enum uname="Search_LPR_events" value="Pesquisar eventos LPR"/>
+    </userEnum>
+    <userEnum fieldname="category" fieldtype="system" uname="category">
+      <enum uname="LPRList" value="Lista LPR"/>
+      <enum uname="LPRSearch" value="Pesquisa de LPR"/>
+    </userEnum>
+  </userEnums>
+  <application uname="LPRService">
+    <component uname="Service">
+      <entries>
+        <group field1="SourceType" field3="EventType" name="System">
+          <entry object_type="Service" severity="Info" status="Success" uname="ServiceStarted">O serviço do servidor LPR foi iniciado.</entry>
+          <entry object_type="Service" severity="Info" status="Success" uname="ServiceStopped">O servidor do servidor LPR foi interrompido.</entry>
+          <entry object_type="Service" severity="Info" status="Success" uname="VideoSourceStateChangedToOK">O estado da câmera LPR foi alterado para &apos;OK&apos;.</entry>
+          <entry object_type="Service" severity="Info" status="Success" uname="VideoSourceStateChangedToWarning">O estado da câmera LPR foi alterado para &apos;Advertência&apos;.</entry>
+          <entry object_type="Service" severity="Info" status="Success" uname="VideoSourceStateChangedToError">O estado da câmera LPR foi alterado para &apos;Erro&apos;.</entry>
+        </group>
+        </entries>
+    </component>
+  </application>
+  <application uname="LPRClient">
+    <component uname="Client">
+      <entries>
+        <group category="Edit_LPR_license_plate_list" field1="SourceType" field3="ListType" name="Audit">
+          <entry field1="SourceType" field3="ListType" object_type="LPR license plate list" severity="Info" status="Success" uname="LPRListsAdd">Placa: {plateName} adicionado à lista de placas LPR: {listName}.</entry>
+          <entry field1="SourceType" field3="ListType" object_type="LPR license plate list" severity="Info" status="Success" uname="LPRListsDelete">Placa: {plateName} excluído da lista de placas LPR: {listName}.</entry>
+          <entry field1="SourceType" field3="ListType" object_type="LPR license plate list" severity="Info" status="Success" uname="LPRListsSearch">Placa pesquisada: {plateName} em lista de placas LPR: {listName}.</entry>
+        </group>
+        <group category="LPRSearch" field1="SourceType" field2="ResourceName" field3="ListType" field4="ResourceType" name="Audit" value1="" value2="LPR event" value4="LPR">
+          <entry field1="SourceType" field3="ListType" object_type="LPR event search" severity="Info" status="Success" uname="LPREventSearch">Evento de placa pesquisado com filtro: {searchFilter}.</entry>
+        </group>
+      </entries>
+    </component>
+  </application>
+</LogMessages>

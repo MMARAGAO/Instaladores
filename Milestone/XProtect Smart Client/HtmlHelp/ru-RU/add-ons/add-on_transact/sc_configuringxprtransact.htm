@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="ru-RU" xml:lang="ru-RU" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="Конфигурация" data-mc-conditions="flcts-alias.sc-alias-content,flcts-add-on.xp-tra-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Configure XProtect Transact in XProtect Smart Client to view and investigate transactions from PoS systems in combination with video." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Transact" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Администратор" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Интегратор" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Оператор" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>XProtect Transact (настройка)</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#add-ons/add-on_transact/sc_configuringxprtransact.htm">Открыть тему с навигацией</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Навигация" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>
+        <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span> (настройка)</h1>
+      <div>
+        <h2>Начало работы с <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span><a name="SC_GettingStarted_Transa.htm"></a></h2>
+        <p>Перед началом отслеживания и изучения транзакций в <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> необходимо:</p>
+        <ol>
+          <li value="1">Проверить активацию базовой лицензии <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span> в ходе установки системы управления видео. Для этого откройте <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> и убедитесь, что вкладка <span class="uitext">Transact</span> остается видимой. Даже если у вас нет базовой лицензии, <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span> можно пользоваться с пробной лицензией. Дополнительные сведения приведены в разделе <a href="#SC_XPrTransactTrial.htm" class="MCXref xref">XProtect Transact Пробная лицензия</a>.</li>
+          <li value="2">Проверить правильное отображение транзакций. Это касается отдельных строк транзакций и чеков. Для этого нажмите на вкладку <span class="uitext">Транзакция</span> и выберите источник транзакции и интервал времени. Если все настроено правильно, то появится список строк транзакций, а при нажатии на строку отобразится соответствующий кадр видеозаписи (один на каждую подключенную камеру).</li>
+          <li value="3">Настроить вид транзакций, если вы хотите отслеживать транзакции в реальном времени на вкладке <span class="uitext">Наблюдение</span> или изучить транзакции на вкладке <span class="uitext">Воспроизведение</span>. Дополнительные сведения приведены в разделе <a href="#SC_SetUpAViewForTransact.htm" class="MCXref xref">Настройка видов для транзакций</a>.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span> Пробная лицензия<a name="SC_XPrTransactTrial.htm"></a></h2>
+        <p>Пробная лицензия <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span> дает возможность попробовать функции <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span> в течение 30 дней. Все функции продукта будут включены, и можно будет добавить один источник транзакций, например кассовый аппарат. По истечении 30-дневного пробного периода все функции <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span> будут деактивированы, включая рабочую область <span class="uitext">Transact</span> и элементы просмотра транзакций. Купив и активировав базовую лицензию <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span> и лицензии источников транзакций, можно продолжать использовать <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span> со всеми сохраненными настройками и данными.</p>
+        <p>Необходимо получить пробную лицензию в <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span>. Полученные лицензии администратор должен активировать в конфигурации.</p>
+      </div>
+      <div>
+        <h2>Настройка видов для транзакций<a name="SC_SetUpAViewForTransact.htm"></a></h2>
+        <p>Перед просмотром транзакций во вкладке <span class="uitext">Наблюдение</span> или <span class="uitext">Воспроизведение</span> вам необходимо настроить вид, в который будет включен элемент просмотра транзакций для каждого источника транзакции. Если речь идет о текущих транзакциях, то чеки будут динамически отображаться на экране внутри элемента просмотра после выхода из режима настройки.</p>
+        <p>Действия:</p>
+        <ol>
+          <li value="1">Во вкладке <span class="uitext">Наблюдение</span> или <span class="uitext">Воспроизведение</span> нажмите <span class="uitext">Настроить</span> в верхнем правом углу, чтобы войти в режим настройки.</li>
+          <li value="2">Создайте новый вид или выберите имеющийся.</li>
+          <li value="3">Разверните панель <span class="uitext">Обзор системы</span>.</li>
+          <li value="4">
+            <p>Перетащите элемент <span class="uitext">Транзакция</span> в элемент просмотра, в котором необходимо отображать транзакции и источник видео. Отобразится всплывающее окно. </p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/tra_set_up_a_view_for_tra.png" data-mc-popup-alt="Add transaction sources to views in XProtect Smart Client.">
+                <img class="MCPopupThumbnail img" data-mc-width="422" data-mc-height="369" src="../../../Images/tra_set_up_a_view_for_tra_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add transaction sources to views in XProtect Smart Client." tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="5">Выберите источник транзакции, например, кассовый аппарат, и нажмите <span class="uitext">OK</span>. Внутри элемента просмотра отобразится предварительный просмотр чека.</li>
+          <li value="6">
+            <p>Разверните <span class="uitext">Свойства</span> и установите флажок напротив <span class="uitext">Показывать камеры</span>, чтобы добавить камеры, связанные с источником транзакции. По умолчанию будет выбрана первая камера, добавленная в источник транзакции в конфигурации.<br /></p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/tra_set_up_a_view_for_tra_1.png" data-mc-popup-alt="Connect cash register with camera in XProtect Smart Client.">
+                <img class="MCPopupThumbnail img" data-mc-width="295" data-mc-height="238" src="../../../Images/tra_set_up_a_view_for_tra_1_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Connect cash register with camera in XProtect Smart Client." tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="7">Используйте раскрывающиеся списки <span class="uitext">Первая камера</span> и <span class="uitext">Вторая камера</span>, чтобы выбрать, какие камеры будут отображаться в элементе просмотра. По умолчанию вторая камера будет отсутствовать. Если вторая камера не требуется, не вносите никаких изменений.</li>
+          <li value="8">Если необходимо изменить позицию камеры, выберите значение в раскрывающемся списке <span class="uitext">Позиция</span>, например, слева от чека.</li>
+        </ol>
+        <p class="note">В отношении каждого элемента просмотра транзакции, который необходимо добавить в вид, повторите действия с 4 по 8.</p>
+      </div>
+      <div>
+        <h2>Изменение параметров элемента просмотра транзакции<a name="SC_AdjustSettingsForTran.htm"></a></h2>
+        <p>После создания вида, в который входит один или несколько элементов просмотра транзакций, вы можете:</p>
+        <ul>
+          <li>Изменять выбранные камеры и порядок их отображения. Можно выбрать максимум две камеры для одного элемента просмотра транзакции; это могут быть только камеры, соотнесенные с источником транзакции</li>
+          <li>Изменять позиционирование камер по отношению к чеку</li>
+          <li>Добавлять (или удалять) элементы просмотра транзакций</li>
+        </ul>
+        <p>Действия:</p>
+        <ol>
+          <li value="1">Во вкладке <span class="uitext">Наблюдение</span> или <span class="uitext">Воспроизведение</span> нажмите <span class="uitext">Настроить</span> в верхнем правом углу, чтобы войти в режим настройки.</li>
+          <li value="2">Выберите вид и затем элемент просмотра, который необходимо настроить.</li>
+          <li value="3">
+            <p>Для изменения выбранных камер или их положения разверните <span class="uitext">Свойства</span> и удостоверьтесь в том, что напротив поля <span class="uitext">Показать камеры</span> установлен флажок.<br /></p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/tra_set_up_a_view_for_tra_1.png" data-mc-popup-alt="Adjust settings for views in XProtect Smart Client that display transactions.">
+                <img class="MCPopupThumbnail img" data-mc-width="295" data-mc-height="238" src="../../../Images/tra_set_up_a_view_for_tra_1_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Adjust settings for views in XProtect Smart Client that display transactions." tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="4">Используя раскрывающийся список <span class="uitext">Позиция</span>, укажите, как камера или камеры будут отображаться по отношению к чеку, например, под чеком.</li>
+          <li value="5">Используйте раскрывающиеся списки <span class="uitext">Первая камера</span> и <span class="uitext">Вторая камера</span>, чтобы изменить камеры, которые будут отображаться в элементе просмотра.</li>
+          <li value="6">Если нужно добавить источник транзакций в вид, выполните шаги 3-8 из раздела <a href="#SC_SetUpAViewForTransact.htm" class="MCXref xref">Настройка видов для транзакций</a>.</li>
+        </ol>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Информация о концепции</p>
+        <p class="containerItem_container_0">
+          <a href="sc_workingwithtransact.htm">XProtect Transact (использование)</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

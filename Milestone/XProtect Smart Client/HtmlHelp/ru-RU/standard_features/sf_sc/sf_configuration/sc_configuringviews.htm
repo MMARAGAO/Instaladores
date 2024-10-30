@@ -1,0 +1,561 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="ru-RU" xml:lang="ru-RU" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="Конфигурация" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Configure views in XProtect Smart Client to view video from cameras and other types of content." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Администратор" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Интегратор" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Оператор" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Виды (настройка)</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#standard_features/sf_sc/sf_configuration/sc_configuringviews.htm">Открыть тему с навигацией</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Навигация" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>Виды (настройка)</h1>
+      <p>В режиме настройки можно создавать виды и указывать, какие камеры и другие виды контента должны включаться в те или иные виды. Для организации видов необходимо создать по крайней мере одну группу видов. Эту операцию часто выполняет администратор.</p>
+      <p class="note">Ваши возможности по редактированию видов и групп зависят от ваших прав пользователя. Если вы можете создавать виды и группы, вы также можете изменять их. </p>
+      <div>
+        <h2>
+          <a name="SC_ViewsExplained"></a>Виды и группы видов (объяснение)</h2>
+        <p>Способ отображения видео в приложении <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> называется видом. <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> может работать с неограниченным количеством видов, позволяя переключаться между видеопотоками с различных групп камер. Виды могут содержать от одной до ста камер, а также другие виды контента, например изображения и текст. </p>
+        <p>Виды должны находиться внутри групп видов, которые используются для организации видов.</p>
+        <p>Виды доступны на вкладках <span class="uitext">Наблюдение</span> и <span class="uitext">Воспроизведение</span>. Виды могут быть личными и общими:</p>
+        <div>
+          <ul>
+            <li>Личные виды доступны только создавшему их пользователю. Чтобы сделать вид личным, создайте его в папке <span class="uitext">Личные</span></li>
+            <li>Общие виды дают нескольким операторам возможность использовать одни и те же виды. В зависимости от системы <span class="mc-variable flvar-brand-company.XP variable">XProtect</span>: <ul><li>Может присутствовать папка по умолчанию для общих видов с названием <span class="uitext">Общие</span> или <span class="uitext">Группа по умолчанию</span></li><li>Общие виды могут быть доступны всем или только определенным операторам. Обычно только небольшое число людей в организации, например администраторы, обладают правами на создание и изменение общих видов</li></ul></li>
+          </ul>
+          <p class="note">Не всем пользователям могут быть доступны все камеры системы <span class="mc-variable flvar-brand-company.XP variable">XProtect</span>. Ряд функций, используемых в общем виде, может быть недоступен в предыдущих версиях <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Всегда убеждайтесь, что у пользователей, которым вы хотите предоставить доступ к виду, есть необходимые права и такая же версия <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>, как у вас.</p>
+        </div>
+        <p>Ваши параметры пользователя, в том числе информация о ваших представлениях, хранятся централизованно на <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> сервере VMS, поэтому вы можете использовать свои представления на любом компьютере, на котором установлено <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Пример вида 2x2</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <img src="../../../../Images/views_explained.jpg" alt="2x2 view in XProtect Smart Client." />
+            </p>
+          </div>
+        </div>
+        <div>
+          <h2>
+            <a name="SC_ContentInsideViewsExp.htm"></a>Что могут содержать представления?</h2>
+          <p>В режиме настройки на панели <span class="uitext">Обзор системы</span> показаны элементы, которые можно добавить в виды:</p>
+          <p>
+            <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_systemoverview.jpg" data-mc-popup-alt="What can views contain in XProtect Smart Client?">
+              <img class="MCPopupThumbnail img" data-mc-width="295" data-mc-height="609" src="../../../../Images/sc_systemoverview_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="What can views contain in XProtect Smart Client?" tabindex="" />
+            </a>
+          </p>
+          <table cellspacing="3">
+            <col />
+            <col />
+            <thead>
+              <tr>
+                <th>Элемент</th>
+                <th>Описание</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p>Тревоги</p>
+                </td>
+                <td>
+                  <p>Позволяет показать список сигналов тревоги или просмотреть сигнал. Оба элемента также доступны на вкладке <span class="uitext">Диспетчер сигналов тревоги</span>.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>Монитор доступа</td>
+                <td>
+                  <p>Контроль доступа — если установлен <span class="mc-variable flvar-product.ACMName_XPtm variable">XProtect® Access </span>, в виды можно добавлять контроль доступа, например для определенной двери.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Камеры</p>
+                </td>
+                <td>
+                  <p>Позволяет просматривать видео с камеры в режиме реального времени или в записи. Камеры показаны под названием сайта, которое задал администратор системы.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Карусели</p>
+                </td>
+                <td>
+                  <p>Позволяет переключаться между камерами в удобном для вас темпе.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Области внимания</p>
+                </td>
+                <td>
+                  <p>Позволяет переключиться на любую камеру, которая находится в фокусе, в высоком разрешении или с высокой частотой кадров.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Страницы HTML</p>
+                </td>
+                <td>
+                  <p> Позволяет показать веб-страницу, например онлайн-канал новостей.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Изображения</p>
+                </td>
+                <td>
+                  <p>Позволяет показать изображение, например если необходимо разослать изображение подозреваемого.</p>
+                </td>
+              </tr>
+              <tr data-mc-conditions="flcts-add-on.xp-lp-content">
+                <td>Распознавание номерного знака</td>
+                <td>
+                  <p>Если установлен <span class="mc-variable flvar-product.LPRName_XPtm variable">XProtect® LPR</span>, в виды можно добавлять камеры для распознавания номерных знаков.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Карты</p>
+                </td>
+                <td>Позволяет показать планировку или географическую область.</td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="mc-variable flvar-brand-company.MMName_short variable">Matrix</span>
+                  </p>
+                </td>
+                <td>
+                  <p>Позволяет показать расположение <span class="mc-variable flvar-brand-company.MMName_short variable">Matrix</span>. См. также <a href="sc_workingwithmatrix_715_.htm#SC_MatrixExplained.htm" class="MCXref xref">Matrix (объяснение)</a>.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Интеллектуальные карты </p>
+                </td>
+                <td>
+                  <p>Позволяет переключаться между камерами на географической карте мира, использующей одну из следующих онлайн-служб:</p>
+                  <ul>
+                    <li>Bing Maps</li>
+                    <li>Google Maps</li>
+                    <li data-mc-conditions="flcts-features.oem-map-service-content">
+                      <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+                    </li>
+                    <li> OpenStreetMap </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="mc-variable flvar-product.SWName variable">Smart Wall</span> — элементы управления</p>
+                </td>
+                <td>
+                  <p>Если <span class="mc-variable flvar-product.SWName_XP variable">XProtect Smart Wall</span> был настроен системным администратором, элементы управления <span class="mc-variable flvar-product.SWName variable">Smart Wall</span> позволяют переносить камеры и содержимое других типов на видеостены.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Текст </p>
+                </td>
+                <td>
+                  <p>Позволяет показать текст, например инструкции для других операторов.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="mc-variable flvar-product.TName variable">Transact</span>
+                  <p> </p>
+                </td>
+                <td>
+                  <p>Если в системе установлен <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span>, вместе с камерами можно добавлять кассовые аппараты.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_CreateAViewGroup.htm"></a>Создание групп видов</h2>
+        <p>Ваша <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> может быть настроена для показа групп видов, в которые вы можете добавлять собственные виды. Однако вы также можете создавать свои собственные группы видов для удобства работы с видами.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Пример</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Представьте, что ваши камеры установлены на десяти этажах многоэтажного здания. Вы решили создать по одной группе видов для каждого этажа и назвать эти группы соответствующим образом: <span class="uitext">Цокольный этаж</span>, <span class="uitext">Первый этаж</span>, <span class="uitext">Второй этаж</span> и т. д.</p>
+          </div>
+        </div>
+        <p>Действия:</p>
+        <ol>
+          <li value="1">В режиме настройки на панели <span class="uitext">Виды</span> выберите папку верхнего уровня <span class="uitext">Личные</span> или <span class="uitext">Общие</span>, в которую нужно добавить группу.</li>
+          <li value="2">Щелкните <span class="uitext">Создать новую группу</span>: <p><img src="../../../../Images/create_a_view_group.png" alt="" /></p><p>Будет создана группа с названием <span class="uitext">Новая группа</span>.</p></li>
+          <li value="3">Выделите группу и щелкните название <span class="uitext">Новая группа</span>, чтобы изменить его.</li>
+          <li value="4">Теперь вы можете создавать виды в этой группе.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_CreateView.htm"></a>Создание представлений</h2>
+        <p>Для просмотра и воспроизведения видео в <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> сначала нужно создать вид и добавить в него нужные камеры.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Требования </a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Перед созданием вида нужно создать группу, в которую можно будет добавить вид. См. также <a href="#SC_CreateAViewGroup.htm" class="MCXref xref">Создание групп видов</a>.</p>
+          </div>
+        </div>
+        <p>Действия:</p>
+        <ol>
+          <li value="1">Нажмите кнопку <span class="uitext">Настройка</span> в верхнем правом углу для перехода в режим настройки.</li>
+          <li value="2">На панели <span class="uitext">Виды</span> выберите группу, в которую нужно добавить вид.</li>
+          <li value="3">Нажмите кнопку <img src="../../../../Images/create_view.png" alt="" /> для создания вида.</li>
+          <li value="4">Выберите макет. Доступные макеты сгруппированы по <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term2">пропорциям<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Соотношение высоты и ширины изображения.</span></a> и ориентации (альбомной или книжной). <p><img src="../../../../Images/create_view.jpg" alt="View layouts in XProtect Smart Client." /></p></li>
+          <li value="5">Введите название для вида, перезаписав название по умолчанию <span class="uitext">Новый вид</span>.</li>
+          <li value="6"> Снова нажмите кнопку <span class="uitext">Настройка</span> для выхода из режима настройки. Ваши изменения сохранены.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_CopyRenameOrDeleteAVi.htm"></a>Копирование, переименование и удаление видов и групп</h2>
+        <p>Если у вас есть вид, и вы хотите повторно использовать его, этот вид можно скопировать. Вы можете также скопировать группу видов или личный вид в общий вид.</p>
+        <p>Действия:</p>
+        <ol>
+          <li value="1">В режиме настройки на панели навигации выберите вид.</li>
+          <li value="2">Нажмите <span class="uitext">Копировать</span> или <span class="uitext">CTRL</span> + <span class="uitext">C</span>. <p><img src="../../../../Images/copy_rename_or_delete_a_view.png" alt="" /></p></li>
+          <li value="3">Выберите, куда нужно вставить вид, и нажмите <span class="uitext">Вставить</span> или <span class="uitext">CTRL</span> + <span class="uitext">V</span>. <p><img src="../../../../Images/copy_rename_or_delete_a_view_1.png" alt="" /></p><p class="tip">Вы также можете выделить и перетащить вид в другую папку.</p></li>
+          <li value="4">Скопированный вид по умолчанию имеет такое же название, как и оригинал, но с приставкой (2). Чтобы изменить название, нажмите правую кнопку мыши и выберите <span class="uitext">Переименовать</span>.<p><img src="../../../../Images/copy_rename_or_delete_a_view_2.png" alt="" /></p></li>
+          <li value="5">Для удаления вида нажмите на него правой кнопкой мыши и выберите <span class="uitext">Удалить</span>. <p><img src="../../../../Images/copy_rename_or_delete_a_view_3.png" alt="" /></p></li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_AddingContentToViews.htm"></a>Добавление камер и других элементов в виды</h2>
+        <p>В виды можно добавлять различные устройства, например камеры. См. также <a href="#SC_ContentInsideViewsExp.htm" class="MCXref xref">Что могут содержать представления?</a></p>
+        <p>Действия: </p>
+        <ol>
+          <li value="1">Откройте представление, которое вы хотите изменить.</li>
+          <li value="2"> Нажмите кнопку <span class="uitext">Настройка</span> для перехода в режим настройки. </li>
+          <li value="3">
+            <p>На панели <span class="uitext">Обзор системы</span> перенесите выбранный элемент на элемент вида. </p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_systemoverview.jpg" data-mc-popup-alt="What can views contain in XProtect Smart Client?">
+                <img class="MCPopupThumbnail img" data-mc-width="295" data-mc-height="609" src="../../../../Images/sc_systemoverview_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="What can views contain in XProtect Smart Client?" tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="4">Укажите дополнительную информацию об этом элементе.</li>
+          <li value="5"> Снова нажмите кнопку <span class="uitext">Настройка</span> для выхода из режима настройки. Ваши изменения сохранены.</li>
+        </ol>
+      </div>
+      <p class="note">Подробные сведения приведены в разделе <a href="#SC_AddingContentToViewsDetailed" class="MCXref xref">Добавление контента в виды (подробно)</a>.</p>
+      <div>
+        <h2>
+          <a name="SC_AssignAShortcutNumber.htm"></a>Присвоение видам цифр быстрого вызова</h2>
+        <p>Можно назначать номера быстрого вызова для того, чтобы давать пользователям возможность выбирать виды с помощью стандартных сочетаний клавиш (см. <a href="../sf_operation/sc_workingwithnavelements.htm#SC_KeyboardShortcutsExpl.htm" class="MCXref xref">Сочетания клавиш (обзор)</a>).</p>
+        <ol>
+          <li value="1"> Нажмите кнопку <span class="uitext">Настройка</span> для перехода в режим настройки. </li>
+          <li value="2">На панели <span class="uitext">Виды</span> выберите вид, которому нужно присвоить цифру быстрого вызова.</li>
+          <li value="3">В поле <span class="uitext">Быстрый вызов</span> укажите цифру быстрого вызова и нажмите ENTER. Номер быстрого вызова будет показан в скобках перед названием вида.</li>
+          <li value="4">При необходимости повторите для других видов.</li>
+          <li value="5"> Снова нажмите кнопку <span class="uitext">Настройка</span> для выхода из режима настройки. Ваши изменения сохранены.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_AddingContentToViewsDetailed"></a>Добавление контента в виды (подробно)</h2>
+        <p>Как указано в разделе <a href="#SC_AddingContentToViews.htm" class="MCXref xref">Добавление камер и других элементов в виды</a>, в виды можно добавлять камеры и другие типы элементов. В этом разделе приведены более подробные сведения:</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Добавить тревоги в виды</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="../../../feature_flags/ff_managealarms/sc_configuringalarmsandevents.htm#SC_AddAlarmsToViews" class="MCXref xref">Добавить тревоги в виды</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Добавить камеры в виды</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Для просмотра видео с камеры нужно сначала добавить камеру в вид.</p>
+            <ol>
+              <li value="1">В режиме настройки выберите вид, в который нужно добавить камеру.</li>
+              <li value="2">На панели <span class="uitext">Обзор</span> разверните нужный сервер <img src="../../../../Images/add_a_camera_to_a_view.png" alt="" /> для просмотра списка доступных камер. <p class="note">Если сервер в списке обозначен красным значком, он недоступен. В этом случае вы не сможете просмотреть камеры с этого сервера.</p></li>
+              <li value="3">
+                <p>Выберите камеру из списка и перенесите ее на элемент вида. Изображение с камеры появится на соответствующем элементе. </p>
+                <p class="note">Если отдельные области видео размыты или окрашены в серый цвет, это значит, что администратор скрыл их <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term55">масками конфиденциальности<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Размытый или залитый определенным цветом участок в поле зрения камеры. Определенные участки размываются или заливаются в режимах наблюдения, просмотра, областях внимания, на каруселях, интеллектуальной карте, в интектуальном поиске и при экспорте видео.</span></a> (см. <a href="../../../feature_flags/ff_extendedprivacymasking/sc_workingwithprivacymasking.htm#SC_PrivacyMaskingExplain.htm" class="MCXref xref">Маски конфиденциальности (объяснение)</a>).</p>
+              </li>
+              <li value="4">Свойства камеры (например, качество, <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term14">частоту кадров<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Показатель количества информации, которая содержится в видео. Обычно измеряется в FPS (кадр/с).</span></a> и другие параметры) можно задать на панели <span class="uitext">Свойства</span>. Дополнительные сведения приведены в разделе <a href="sc_configuringcamerasettings.htm#SC_CameraSettings.htm" class="MCXref xref">Параметры камер</a>.</li>
+              <li value="5">Повторите вышеуказанные шаги для всех камер, которые нужно добавить.</li>
+              <li value="6">Для добавления нескольких камер в вид, например всех камер из определенной папки, перенесите папку в вид. Убедитесь в том, что в виде есть нужное количество доступных элементов.</li>
+            </ol>
+            <p class="tip">Для изменения набора камер, включенных в вид, достаточно перенести нужные камеры на элементы вида.</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Добавить карусели в виды</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="sc_configuringcarousels.htm#SC_AddCarouselToViews.htm" class="MCXref xref">Добавить карусели в виды</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Добавить изображения в виды</a>
+            <a name="SC_AddImageToViews.htm"></a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>В вид можно включить неподвижные изображения. Например, это удобно, если нужно передать снимок подозреваемого или схему аварийных выходов.</p>
+            <p>Действия:</p>
+            <ol>
+              <li value="1"> Нажмите кнопку <span class="uitext">Настройка</span> для перехода в режим настройки. </li>
+              <li value="2">
+                <p>На панели <span class="uitext">Обзор системы</span> перетащите элемент <span class="uitext">Изображение</span> на элемент просмотра. Появится новое окно.</p>
+                <p>
+                  <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_addimagetoview.jpg" data-mc-popup-alt="Add images to views in XProtect Smart Client.">
+                    <img class="MCPopupThumbnail img" data-mc-width="306" data-mc-height="946" src="../../../../Images/sc_addimagetoview_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add images to views in XProtect Smart Client." tabindex="" />
+                  </a>
+                </p>
+              </li>
+              <li value="3">Найдите и выберите файл изображения, который нужно добавить.</li>
+              <li value="4">Нажмите <span class="uitext">Открыть</span>. Изображение будет показано в элементе вида.</li>
+              <li value="5">Чтобы сделать кадр доступным другим пользователям, которым недоступно расположение файла кадра, откройте панель <span class="uitext">Свойства</span> и выберите <span class="uitext">Вложить</span>. Файл хранится в системе.</li>
+              <li value="6"> Снова нажмите кнопку <span class="uitext">Настройка</span> для выхода из режима настройки. Ваши изменения сохранены.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Добавить области внимания в виды</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="sc_configuringhotspots.htm#SC_AddHotspotToViews.htm" class="MCXref xref">Добавить области внимания в виды</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Добавить карты в виды</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="sc_configuringmaps.htm#SC_AddMapToViews.htm" class="MCXref xref">Добавить карты в виды</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Добавление интеллектуальных карт в виды</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="../../../feature_flags/ff_map/sc_configuringmaps.htm#SC_AddSmartMapToView.htm" class="MCXref xref">Добавить интеллектуальную карту в виды</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Добавить текст в виды</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Можно добавить текст в один или несколько элементов вида. Например, это удобно, если требуется отправить сообщение или инструкции операторам, либо опубликовать график работы сотрудников службы безопасности. Длина текста – до 1000 знаков.</p>
+            <p>Действия:</p>
+            <ol>
+              <li value="1"> Нажмите кнопку <span class="uitext">Настройка</span> для перехода в режим настройки. </li>
+              <li value="2">На панели <span class="uitext">Обзор системы</span> перенесите элемент <span class="uitext">Текст</span> в элемент вида, в котором должен быть показан текст. Появится новое окно.</li>
+              <li value="3">Введите текст.</li>
+              <li value="4">Нажмите <span class="uitext">Сохранить</span>.</li>
+              <li value="5">Чтобы изменить текст после сохранения, в режиме настройки нажмите <span class="uitext">Изменить текст</span> на панели <span class="uitext">Свойства</span>.</li>
+            </ol>
+            <div>
+              <p class="note">Предусмотрена возможность вставки таблиц из таких программ, как Microsoft Word и Microsoft Excel, однако вносить изменения в таблицы невозможно. </p>
+            </div>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />
+            </a>
+            <a name="Add"></a>
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Добавление веб-страниц в представления</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Вы можете добавлять в представления веб-страницы, такие как HTML, PHP или ASP. Это удобно, например, при предоставлении онлайн-инструкций или показа веб-страниц компании в сочетании с камерами или другими типами содержимого.</p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/add_html_page_to_view_or_1.jpg" data-mc-popup-alt="Add webpages to views in XProtect Smart Client to display web context next to video feeds.">
+                <img class="MCPopupThumbnail img" data-mc-width="1320" data-mc-height="854" src="../../../../Images/add_html_page_to_view_or_1_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add webpages to views in XProtect Smart Client to display web context next to video feeds." tabindex="" />
+              </a>
+            </p>
+            <p>Действия:</p>
+            <ol>
+              <li value="1">Откройте представление, которое вы хотите изменить.</li>
+              <li value="2"> Нажмите кнопку <span class="uitext">Настройка</span> для перехода в режим настройки. </li>
+              <li value="3">На панели <span class="uitext">Обзор системы</span> перетащите элемент <span class="uitext">HTML-страница</span> в один из элементов просмотра. Появится новое окно.<p><img src="../../../../Images/add_html_page_to_view_or_1.png" alt="Enter URL when adding webpage to views in XProtect Smart Client." /></p></li>
+              <li value="4">
+                <p>В поле <span class="uitext">Открыть</span> введите адрес веб-страницы.</p>
+                <p class="important">Чтобы использовать веб-страницу, которая хранится на вашем компьютере, в сети или на FTP-сервере, убедитесь, что в свойствах веб-страницы установлен режим отображения <span class="uitext">Совместимость</span>. См. <a href="#Web" class="MCXref xref">Свойства веб-страницы </a>. В противном случае будет выдано сообщение об ошибке. См. раздел <a href="../sf_troubleshooting/sc_troubleshootinghtmlpages.htm" class="MCXref xref">Веб-страницы (устранение неполадок)</a>.</p>
+              </li>
+              <li value="5">Нажмите кнопку <span class="uitext">OK</span>.</li>
+              <li value="6">Чтобы задать свойства, разверните панель <span class="uitext">Свойства</span>.</li>
+              <li value="7"> Снова нажмите кнопку <span class="uitext">Настройка</span> для выхода из режима настройки. Ваши изменения сохранены.</li>
+            </ol>
+            <p class="note">Веб-страницу нельзя открыть в режиме настройки. </p>
+            <h3>
+              <a name="Web"></a>Свойства веб-страницы </h3>
+            <table cellspacing="3">
+              <col />
+              <col style="width: 376px;" />
+              <thead>
+                <tr>
+                  <th>
+                    <p>Имя</p>
+                  </th>
+                  <th>
+                    <p>Описание</p>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">Редактировать</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>Укажите новый URL-адрес или местоположение файла веб-страницы.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">Режим отображения</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>Выберите движок браузера, чтобы отобразить веб-страницу. Есть два возможных варианта:</p>
+                    <ul>
+                      <li>
+                      Настройка <span class="uitext">Стандартный</span> используется в Microsoft Edge. Выберите <span class="uitext">Стандартный</span>, если веб-страница расположена на веб-сервере и используется сетевой протокол HTTP либо HTTPS</li>
+                      <li>
+                      Настройка <span class="uitext">Совместимость</span> используется в Internet Explorer. Выберите <span class="uitext">Совместимость</span>, если веб-страница:<ul><li> хранится локально;</li><li>использует сетевые протоколы, отличные от HTTP и HTTPS;</li><li>содержит сценарии, предназначенные для взаимодействия с <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span></li><li>использует старую версию HTML.</li></ul></li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">Масштаб</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>Выберите масштаб веб-страницы. Оптимальный масштаб зависит от содержимого импортированной веб-страницы и того, как вы хотите ее отобразить </p>
+                    <p class="note">Эта настройка доступна только в режиме <span class="uitext">Совместимость</span>.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">Скрыть панель инструментов</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>Поставьте отметку в этом поле, чтобы скрыть панель навигации, которая вставляется над каждой импортированной веб-страницей.</p>
+                    <p>
+                      <img src="../../../../Images/set_properties_for_html_page.png" alt="" />
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Добавление кнопок наложений в виды</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Динамики, события, <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term33">выходы<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Исходящие из компьютера данные. В IP-системах наблюдения выходы часто используются для активации устройств, например ворот, сирен, стробоскопических источников света и т. д.</span></a> и многое другое можно активировать с помощью <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term34">кнопок наложения<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Кнопка, которая выглядит, как дополнительный слой поверх видео, вы наводите указатель мыши на позиции отдельных камер в видах на вкладке Наблюдение. Кнопки наложения позволяют активировать динамики, события, выход, перемещение PTZ-камер, начало записи, очистку сигналов с камер и т. д.</span></a>, которые появляются при наведении указателя мыши на позиции отдельных камер в видах на вкладке <span class="uitext">Наблюдение</span>.</p>
+            <p>При необходимости можно добавить любое количество кнопок.</p>
+            <ol>
+              <li value="1"> Нажмите кнопку <span class="uitext">Настройка</span> для перехода в режим настройки. </li>
+              <li value="2">На панели <span class="uitext">Кнопки наложения</span> выберите и перенесите действие на элемент просмотра камеры.</li>
+              <li value="3">После отпускания кнопки мыши появится кнопка наложения. Чтобы изменить размер кнопки, потащите появившиеся маркеры. <p><img src="../../../../Images/add_an_overlay_button_to_a.jpg" alt="" /></p></li>
+              <li value="4">Для изменения текста кнопки наложения дважды нажмите текст, замените его, а затем поставьте отметку в поле <img src="../../../../Images/add_an_overlay_button_to_a.png" alt="" /> для сохранения. Для отмены действия нажмите кнопку отмены <img src="../../../../Images/add_an_overlay_button_to_a_1.png" alt="" />. При сохранении текст масштабируется до наибольшего возможного размера на кнопке.</li>
+              <li value="5"> Снова нажмите кнопку <span class="uitext">Настройка</span> для выхода из режима настройки. Ваши изменения сохранены.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <p>
+        <a name="SC_AssignAShortcutNumber.htm"></a>
+      </p>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Информация о концепции</p>
+        <p class="containerItem_container_0">
+          <a href="../sf_operation/sc_workingwithviews.htm">Управление видами</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

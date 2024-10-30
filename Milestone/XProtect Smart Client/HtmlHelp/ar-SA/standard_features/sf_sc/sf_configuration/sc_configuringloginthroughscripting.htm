@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" dir="rtl" lang="ar-SA" xml:lang="ar-SA" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="التكوين" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Create scripts to control the login procudure and switch between views in XProtect Smart Client." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=المطوّر" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=مدير التطوير" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>البرمجة النصية</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/purify.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#standard_features/sf_sc/sf_configuration/sc_configuringloginthroughscripting.htm">فَتح موضوع مع التصفح</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="مسارات التنقل" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>البرمجة النصية</h1>
+      <div>
+        <h2>البرمجة النصية لتسجيل الدخول (موضّحة)<a name="SC_StartupScripting.htm"></a></h2>
+        <p>يمكنك استخدام البرمجة النصية للتحكم في أجزاء معينة أو جميع إجراءات تسجيل الدخول في <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>.</p>
+        <ul>
+          <li>إذا كنت تستخدم <span class="uitext">المصادقة الأساسية</span> أو <span class="uitext">مصادقة Windows</span>، فيمكنك فتح نافذة تسجيل دخول <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> بعنوان خادم مملوء مسبقًا وحقول أسماء مستخدمين بحيث يجب على المستخدمين إدخال كلمة مرور فقط لتسجيل الدخول.</li>
+          <li>إذا كنت تستخدم <span class="uitext">مصادقة Windows (المستخدم الحالي)</span>، فيمكنك إجراء اتصال <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> بنظام المراقبة تلقائيًا، بناءً على تسجيل دخول Windows الحالي للمستخدم.</li>
+        </ul>
+        <div class="important">
+          <p>تتطلب البرمجة النصية لإجراء تسجيل الدخول استنادًا إلى <span class="uitext">المصادقة الأساسية</span> أو <span class="uitext">مصادقة Windows</span> إضافة معلومات حساسة وغير مشفرة إلى ملف SCS الذي تقوم بتخزينه محليًا مع ملفات برنامج <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>:</p>
+          <ul>
+            <li>اسم المضيف</li>
+            <li>اسم المستخدم</li>
+            <li>كلمة المرور</li>
+          </ul>
+          <p>قد يؤدي تخزين المعلومات غير المشفرة إلى تعريض أمان النظام أو الامتثال للائحة العامة لحماية البيانات للخطر. يمكن قراءة المعلومات الموجودة في ملف SCS:</p>
+          <ul>
+            <li>من قبل أي شخص يمكنه الوصول إلى الملف</li>
+            <li>في بصمة ذاكرة تطبيق <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> الذي تم تشغيله بواسطة ملف SCS أو سطر الأوامر الذي يسلم اسم المستخدم وكلمة المرور</li>
+          </ul>
+          <p>
+            <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> يوصي باستخدام <span class="uitext">مصادقة Windows (المستخدم الحالي)</span>. إذا كان يجب عليك استخدا <span class="uitext">المصادقة الأساسية</span> أو <span class="uitext">مصادقة Windows</span>، فيجب عليك تقييد الوصول إلى ملف SCS.</p>
+        </div>
+      </div>
+      <div>
+        <h2>البرمجة النصية لتسجيل الدخول - المعلمات<a name="SC_Scripting_Parameters.htm"></a></h2>
+        <p>يمكنك استخدام هذه المعلمات:</p>
+        <p>عنوان الخادم</p>
+        <p>يشير إلى عنوان URL لخادم الإدارة الذي يتصل به <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>.</p>
+        <p>يعرض المثال التالي نافذة تسجيل الدخول إلى <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> مع وجود <span class="citationtext">http://ourserver</span> في حقل <span class="uitext">عنوان الخادم</span>:</p>
+        <p class="codechunk">Client.exe -ServerAddress="http://ourserver"</p>
+        <p>نوع المصادقة الافتراضي هو <span class="uitext">مصادقة Windows (المستخدم الحالي)</span>. إلا إذا قمت بتغييرها، وذلك من خلال استخدام معلمة <span class="uitext">نوع المصادقة</span> (الموضحة في القسم التالي)، فسيقوم تلقائيًا نافذة تسجيل الدخول بعرض اسم مستخدم Windows الحالي في الحقل <span class="uitext">اسم المستخدم</span>.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" />اسم المستخدم</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>يشير إلى اسم مستخدم معين.</p>
+            <p>يعرض المثال التالي نافذة تسجيل الدخول إلى <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> مع وجود <span class="citationtext">http://ourserver</span> في حقل <span class="uitext">عنوان الخادم</span> و<span class="specialbold">Tommy</span> في حقل <span class="uitext">اسم المستخدم</span>:</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -UserName="Tommy"</p>
+            <p class="note">لا تكون هذه المعلمة مناسبة إلا من أجل <span class="uitext">مصادقة Windows</span> و<span class="uitext">مصادقة أساسية</span>. يمكنك استخدام معلمة <span class="uitext">AuthenticationType (نوع المصادقة)</span> للتحكم في طريقة المصادقة المستخدمة.</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" />كلمة المرور</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>تشير إلى كلمة مرور معينة.</p>
+            <p>يعرض المثال التالي نافذة تسجيل الدخول إلى <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> مع وجود <span class="citationtext">http://ourserver</span> في حقل <span class="uitext">عنوان الخادم</span> و<span class="specialbold">Tommy</span> في حقل <span class="uitext">اسم المستخدم</span> و<span class="specialbold">T0mMy5Pa55w0rD</span> في حقل <span class="uitext">كلمة المرور</span>:</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -UserName="Tommy" -Password="T0mMy5Pa55w0rD"</p>
+            <p class="note">لا تكون هذه المعلمة مناسبة إلا من أجل <span class="uitext">مصادقة Windows</span> و<span class="uitext">مصادقة أساسية</span>. يمكنك استخدام معلمة <span class="uitext">AuthenticationType (نوع المصادقة)</span> للتحكم في طريقة المصادقة المستخدمة.</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" />نوع المصادقة</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>يشير إلى واحدة من ثلاث طرق مصادقة ممكنة في <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>: <span class="uitext">مصادقة Windows (المستخدم الحالي)</span> (تسمى <span class="uitext">Windows</span>Default في البرامج النصية لبدء التشغيل)، أو <span class="uitext">مصادقة Windows</span> (يسمى <span class="uitext">Windows</span> في البرامج النصية لبدء التشغيل)، أو <span class="uitext">مصادقة أساسية</span> (يسمى <span class="uitext">بسيط</span> في البرامج النصية لبدء التشغيل).</p>
+            <p>يعرض المثال التالي نافذة تسجيل دخول إلى <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> مع وجود <span class="citationtext">http://ourserver</span> في حقل <span class="uitext">عنوان الخادم</span> وتحديد <span class="uitext">مصادقة أساسية</span> في الحقل <span class="uitext">مصادقة</span> و<span class="specialbold">Tommy</span> في حقل <span class="uitext">اسم المستخدم</span> والحروف <span class="specialbold">T0mMy5Pa55w0rD</span> (مخفية في شكل علامات نجمية) في حقل <span class="uitext">كلمة المرور</span>:</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -UserName="Tommy" -Password="T0mMy5Pa55w0rD" -AuthenticationType="Simple"</p>
+            <p>عند استخدامك <span class="uitext">مصادقة Windows</span>، المثال هو:</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -UserName="Tommy" -Password="T0mMy5Pa55w0rD" -AuthenticationType="Windows"</p>
+            <p>إذا قمت باستخدام <span class="uitext">مصادقة Windows (المستخدم الحالي)،</span> فلن تكون معلمتا <span class="uitext">UserName</span> (اسم المستخدم) و <span class="uitext">Password</span> (كلمة المرور) لازمتين، وسيكون المثال كما يلي:</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -AuthenticationType="WindowsDefault"</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" />البرنامج النصي</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>يشير إلى مسار كامل إلى برنامج نصي .scs (نوع برنامج نصي يهدف إلى التحكم في <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>).</p>
+            <p>يستخدم المثال التالي برنامج نصي .scs لتسجيل الدخول:</p>
+            <p class="codechunk">Client.exe -Script=c:\startup.scs</p>
+            <p>مثال على برنامج نصي .scs لتسجيل الدخول إلى <span class="citationtext">http://ourserver</span> باستخدام مستخدم Windows الحالي:</p>
+            <p class="codechunk">&lt;ScriptEngine&gt;</p>
+            <p class="codechunk"> &lt;Login&gt;</p>
+            <p class="codechunk">   &lt;ServerAddress&gt;http://ourserver&lt;/ServerAddress&gt;</p>
+            <p class="codechunk">   &lt;AuthenticationType&gt;WindowsDefault&lt;/AuthenticationType&gt;</p>
+            <p class="codechunk"> &lt;/Login&gt;</p>
+            <p class="codechunk">&lt;/ScriptEngine&gt;</p>
+            <p>يمكنك استخدام العديد من استدعاءات دوال <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> (راجع عرض قائمة استدعاءات الدوال) لإضافة وظيفة إضافية إلى البرامج النصية .scs. في المثال التالي، قمنا بإضافة سطر حتى يقوم البرنامج النصي .scs من المثال السابق بتصغير تطبيق <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>:</p>
+            <p class="codechunk">&lt;ScriptEngine&gt;</p>
+            <p class="codechunk"> &lt;Login&gt;</p>
+            <p class="codechunk">   &lt;ServerAddress&gt;http://ourserver&lt;/ServerAddress&gt;</p>
+            <p class="codechunk">   &lt;AuthenticationType&gt;WindowsDefault&lt;/AuthenticationType&gt;</p>
+            <p class="codechunk"> &lt;/Login&gt;</p>
+            <p class="codechunk"> &lt;Script&gt;SCS. Application.Minimize();&lt;/Script&gt;</p>
+            <p class="codechunk">&lt;/ScriptEngine&gt;</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" />التنسيق</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>تنسيقات المعلمة الصالحة هي:</p>
+            <p class="codechunk">{-,/,--}param{ ,=,:}((".')value(",'))</p>
+            <p>أمثلة:</p>
+            <p class="codechunk">-UserName Tommy</p>
+            <p class="codechunk">--UserName Tommy /UserName:"Tommy" /UserName=Tommy -Password 'Tommy'</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_UseAnHTMLPageForNavig.htm"></a>برمجة صفحة HTML للتنقل</h2>
+        <p>يمكنك استخدام البرمجة النصية لإنشاء صفحات HTML تتيح لك التبديل بين طرق العرض. يمكن إضافة صفحات HTML إلى طرق العرض الخاصة بك، بحيث تظهر مع الفيديو من الكاميرات الخاصة بك.</p>
+        <p>مثال: في صفحة HTML، يمكنك إدراج مخطط أرضي قابل للنقر لمبنى يسمح للمشغلين بالنقر فوق جزء من مخطط الأرضية للتبديل فورًا إلى طريقة عرض تعرض فيديو من ذلك الجزء من المبنى. </p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" />المتطلبات</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <ul>
+              <li>إذا كان نظام VMS <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> يدعم ملفات تعريف <span class="mc-variable flvar-product.SC variable">Smart Client</span>، فيجب تمكين البرمجة النصية لـ HTML على ملفات التعريف <span class="mc-variable flvar-product.SC variable">Smart Client</span> المطلوبة في <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>.</li>
+              <li>إذا كان نظام VMS <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> لا يدعم ملفات تعريف <span class="mc-variable flvar-product.SC variable">Smart Client</span>، فيجب عليك تمكين برمجة HTML في ملف <span class="uitext">Client.exe.config</span>.</li>
+            </ul>
+          </div>
+        </div>
+        <p>في ما يلي ، سترى أمثلة على صفحات HTML لتنقل <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>:</p>
+        <ul>
+          <li> صفحة HTML بسيطة مزودة بأزرار</li>
+          <li>صفحة HTML أكثر تقدمًا مع خريطة صور قابلة للنقر</li>
+          <li>قائمة فحص لمسؤولي النظام تحدد المهام التي ينطوي عليها إنشاء صفحات HTML وتوزيعها على مشغلين<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span></li>
+        </ul>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" />مثال على صفحة HTML يتم التنقل فيها باستخدام الأزرار</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>أحد الحلول السريعة جدًا هو إنشاء صفحة HTML ذات أزرار للتنقل. يمكنك إنشاء مجموعة كبيرة من الأزرار على صفحة HTML. في هذا المثال، سنقوم فقط بإنشاء نوعين من الأزرار:</p>
+            <ul>
+              <li>
+                <span class="specialbold">أزرار للتبديل بين طرق عرض <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span></span>
+                <p>بناء جملة HTML المطلوب:</p>
+                <p class="codechunk">&lt;input type="button" value=" Buttontext" onclick="SCS. Views.SelectView('Viewstatus.Groupname. عرض الاسم');"&gt;</p>
+                <p>حيث توضح <span class="uitext">Viewstatus</span> ما إذا كانت طريقة العرض مشتركة أم خاصة (إذا كان سيتم توزيع صفحة HTML على العديد من المستخدمين، <span class="specialbold">فيجب</span> مشاركة طريقة العرض).</p>
+                <p>مثال من زر حقيقي:</p>
+                <p class="codechunk">&lt;input type="button" value="Go to Shared Group1 View2" onclick="SCS. Views.SelectView('Shared.Group1. View2');"&gt;</p>
+                <p>يتيح هذا الزر للمستخدمين الانتقال إلى طريقة عرض تسمى <span class="uitext">View2</span> في مجموعة مشتركة تسمى <span class="uitext">Group1</span>.</p>
+                <p>
+                  <span class="specialbold">أزرار للتبديل بين علامات التبويب</span>: <span class="uitext">مباشر</span> و<span class="uitext">تشغيل</span> تذكر دائمًا أنه بناءً على حقوق المستخدم، قد لا يتمكن بعض المستخدمين من الوصول إلى جميع علامات التبويب.</p>
+                <p>بناء جملة HTML المطلوب:</p>
+                <p>
+                  <span class="uitext">علامة التبويب "مباشر"</span>: <code class="codesnippet">&lt;input type="button" value="Buttontext" onclick="SCS. Application.ShowLive();"&gt;</code></p>
+                <p>
+                  <span class="uitext">علامة التبويب "تشغيل"</span>: <span class="codesnippet">&lt;input type="button" value="Buttontext" onclick="SCS. Application.ShowBrowse();"&gt;</span></p>
+              </li>
+            </ul>
+            <p class="tip">للمستخدمين المتقدمين، يمكن إنشاء العديد من أنواع الأزرار الأخرى باستخدام ما يقرب من 100 استدعاء دالة مختلفة متاحة في <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. </p>
+            <p>لقد قمنا فيما يلي بإنشاء مجموعتين مشتركتين في <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. وأطلقنا عليهما اسم <span class="uitext">Group1</span> و <span class="uitext">Group2</span>. تشتمل كل مجموعة على طريقتي عرض، تحملان اسم <span class="uitext">View1</span> و <span class="uitext">View2</span>.</p>
+            <p>لقد قمنا كذلك بإنشاء صفحة HTML ذات أزرار تتيح للمستخدمين إمكانية التبديل بين طرق العرض الأربعة المختلفة الخاصة بنا وكذلك بين اثنتين من علامات التبويب في <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>، وهما <span class="uitext">مباشر</span> و<span class="uitext">تشغيل</span>. عند عرض ذلك في مستعرض، تبدو صفحة HTML الخاصة بنا كما يلي:</p>
+            <p>
+              <img src="../../../../Images/use_an_html_page_for_navigation.png" alt="" />
+            </p>
+            <p>صفحة HTML ذات أزرار للتنقل بين طرق العرض وعلامات التبويب</p>
+            <p>لقد قمنا بحفظ صفحة HTML محليًا، في هذه الحالة، على محرك الأقراص C لدى المستخدم. عند الحاجة إلى استخدام صفحة HTML للتنقل، فلابد من حفظ صفحة HTML محليًا لفتحها في وضع التوافق. راجع أيضًا <a href="sc_configuringviews.htm#Web" class="MCXref xref">خصائص صفحة الويب </a>.</p>
+            <p>عند حفظ صفحة HTML محليًا، قم بحفظها في موقع يمكن تعريف مسار واضح إليه، على سبيل المثال في مجلد على محرك C لدى المستخدم (مثال: C:\ myfolder\file.htm). إن حفظ صفحة HTML على سطح مكتب المستخدم أو في مجلد <span class="uitext">المستندات</span> لدى المستخدم لن يعمل بشكل صحيح بسبب طريقة Windows في بناء المسار إلى مثل هذه المواقع.</p>
+            <p>ثم نقوم باستيراد صفحة HTML إلى طرق عرض <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> المطلوبة. </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" />مثال على صفحة HTML ذات مخطط صورة للتنقل</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>يمكنك أيضًا إنشاء صفحة HTML ذات محتوى أكثر تقدمًا، على سبيل المثال مخطط صورة يتيح للمستخدم التبديل بين طرق العرض.</p>
+            <p>في المثال التالي، احتفظنا بالمجموعتين وطريقتي العرض من المثال السابق. وبدلاً من استخدام أزرار، قمنا بإنشاء صفحة HTML ذات صورة لخريطة الطابق الأرضي، وأنشأنا مخطط صورة بناءً على خريطة الطابق الأرضي. عند عرض ذلك في مستعرض، تبدو صفحة HTML الخاصة بنا كما يلي:</p>
+            <p>
+              <img src="../../../../Images/use_an_html_page_for_navigation_2.png" alt="" />
+            </p>
+            <p>صفحة HTML ذات مخطط صورة للتنقل بين طرق العرض</p>
+            <p>في هذا المثال، قمنا بتقسيم خريطة الطابق الأرضي إلى أربع مناطق ملونة، وقمنا بتعريف منطقة مخطط صورة لكل منطقة. يستطيع المستخدمون النقر فوق كل منطقة للذهاب إلى العرض الذي يوضح الكاميرات من تلك المنطقة.</p>
+            <p>على سبيل المثال، تعكس المنطقة الحمراء الموجودة على مخطط الصورة، زر <span class="uitext">انتقال إلى Shared Group2 View2</span> المشترك من المثال السابق. إذا نقرت فوق المنطقة الحمراء، ستنتقل إلى <span class="uitext">طريقة عرض2</span> في <span class="uitext">مجموعة2</span>.</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" />استيراد صفحة HTML</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>لا يختلف استيراد صفحة HTML للتصفح في طريقة عرض من حيث المبدأ عن استيراد أي نوع آخر من صفحات HTML في طريقة عرض في <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. راجع <a href="sc_configuringviews.htm#Add" class="MCXref xref">إضافة صفحات الويب إلى طرق العرض</a>. </p>
+            <div class="note">
+              <ul>
+                <li>يجب تخزين صفحة HTML محليًا على كمبيوتر المشغل</li>
+                <li>لكي يعمل التنقل بشكل صحيح، قد ترغب في استيراد صفحة HTML إلى طرق عرض متعددة</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" />قائمة تدقيق مسؤول النظام</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>لإنشاء صفحات HTML للتصفح وتوزيعها على مشغلي <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>، قم بما يلي:</p>
+            <ol>
+              <li value="1">
+                <span class="specialbold">إنشاء</span> صفحة HTML المطلوبة. يجب أن تطابق عناصر التحكم في التنقل في صفحة HTML طرق العرض التي يراها المستخدمون في <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. على سبيل المثال، من أجل أن يعمل زر ما يؤدي إلى <span class="uitext">طريقة العرض1</span>، يجب أن توجد طريقة عرض تسمى <span class="uitext">طريقة العرض1</span> في تثبيتات <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> للمستخدمين. إذا كنت تنوي توزيع صفحة HTML على مجموعة من المستخدمين، يجب وضع طرق العرض التي سيتم استخدام صفحة HTML فيها في مجموعات مشتركة.</li>
+              <li value="2">
+                <span class="specialbold">حفظ</span> صفحة HTML محليًا على كل جهاز كمبيوتر سيتم استخدامها عليه. عند حفظ صفحة HTML محليًا، قم بحفظها في موقع يمكن تعريف مسار واضح إليه، على سبيل المثال في مجلد على محرك C لدى المستخدم (مثال: C:\ myfolder\file.htm). حفظ صفحة HTML على سطح مكتب المستخدم أو في مجلد <span class="uitext">المستندات</span> لدى المستخدم لن يعمل بصورة صحيحة بسبب طريقة Windows في بناء المسار إلى مثل هذه المواقع.</li>
+              <li value="3">
+                <span class="specialbold">استيراد</span> صفحة HTML إلى طرق العرض المطلوبة في <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. راجع <a href="sc_configuringviews.htm#Add" class="MCXref xref">إضافة صفحات الويب إلى طرق العرض</a>. </li>
+              <li value="4">
+                <span class="specialbold">اختبار</span> عمل عناصر التحكم في التنقل على صفحة HTML المستوردة كما هو مطلوب.</li>
+            </ol>
+            <p class="note">للحصول على معلومات حول استكشاف الأخطاء وإصلاحها، راجع <a href="../sf_troubleshooting/sc_troubleshootinghtmlpages.htm" class="MCXref xref">صفحات الويب (استكشاف الأخطاء وإصلاحها)</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">معلومات حول المفهوم</p>
+        <p class="containerItem_container_0">
+          <a href="../sf_operation/sc_loggingin_366_.htm">تسجيل الدخول</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

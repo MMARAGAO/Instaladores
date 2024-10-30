@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="zh-CN" xml:lang="zh-CN" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>安全通信（已解释）</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#system/security/certificates/sg_securecommunicationexplained2.htm">用导航打开主题</a>
+    </p>
+    <div role="main" id="mc-main-content">
+      <h1>安全通信（已解释）</h1>
+      <p>安全超文本传输协议 (HTTPS) 是超文本传输协议 (HTTP) 的扩展，用于通过计算机网络进行安全通信。 在 HTTPS 中，通信协议使用传输层安全 (TLS) 或其前身安全套接字层 (SSL) 进行加密。</p>
+      <p>在 <span class="mc-variable flvar-brand-company.AdvVMS_XP variable">XProtect VMS</span> 中，安全通信是通过使用 TLS/SSL 和非对称加密 (RSA) 实现。</p>
+      <p>TLS/SSL 使用一对密钥（一个私钥和一个公钥）来验证、保护和管理安全连接。</p>
+      <p>证书颁发机构 (CA) 是任何能够颁发根证书的人。这可以是颁发根证书的互联网服务，或任何手动生成并发放证书的人。CA 可以向 web 服务，即向任何使用 https 通信的软件颁发证书。此证书包含两个密钥，即私钥和公钥。公钥通过安装公共证书安装在 Web 服务的客户端（服务客户端）上。 私钥用于签署必须安装在服务器上的服务器证书。 每当服务客户端调用 Web 服务时，Web 服务都会将包含公钥的服务器证书发送到客户端。服务客户端可以使用已安装的公共 CA 证书验证服务器证书。 客户端和服务器现在可以使用公共和私人服务器证书来交换密钥，从而建立安全的 TLS/SSL 连接。</p>
+      <p>对于手动发放的证书，必须在客户端可以进行此类验证前安装证书。</p>
+      <p>有关 TLS 的详细信息：<a href="https://en.wikipedia.org/wiki/Transport_Layer_Security" target="_blank">https://en.wikipedia.org/wiki/Transport_Layer_Security</a></p>
+      <p class="important">证书具有到期日。<span class="mc-variable flvar-brand-company.AdvVMS_XP variable">XProtect VMS</span>不会在证书即将到期时警告您。如果证书到期：<br />• 客户端将不再信任具有过期证书的记录服务器，因此无法与其进行通信<br />• 记录服务器将不再信任具有过期证书的管理服务器，因此无法与其进行通信<br />• 移动设备将不再信任具有过期证书的移动设备服务器，因此无法与其进行通信<br /><br />要更新证书，请按照本指南中的步骤进行操作，就像您创建证书时所做的那样。</p>
+      <p>有关详细信息，请参阅<a href="https://doc.milestonesys.com/2022r2/zh-CN/portal/htm/chapter-page-certificates-guide.htm" target="_blank">有关如何保护 <span class="mc-variable flvar-brand-company.AdvVMS_XP variable">XProtect VMS</span> 安装的证书指南</a>。 </p>
+    </div>
+    <p></p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

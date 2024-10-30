@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MadCapSynonyms xml:lang="fr-FR">
+    <!-- saved from url=(0016)http://localhost -->
+    <Groups>
+        <SynonymGroup Stem="true">
+            <Word Stem="imag">image</Word>
+            <Word Stem="vidéo">vidéo</Word>
+        </SynonymGroup>
+    </Groups>
+    <Directional>
+        <DirectionalSynonym Stem="true" From="modifier" To="alter=modify=customise=customize=ed" FromStem="modifi" />
+    </Directional>
+</MadCapSynonyms>

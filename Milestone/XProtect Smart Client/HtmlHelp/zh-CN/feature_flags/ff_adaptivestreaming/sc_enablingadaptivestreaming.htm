@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="zh-CN" xml:lang="zh-CN" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="优化" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Get familiar with and read how to set up adaptive streaming to improve the performance of computers running XProtect Smart Client." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=管理员" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=整合商" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>启用自适应流媒体传输</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#feature_flags/ff_adaptivestreaming/sc_enablingadaptivestreaming.htm">用导航打开主题</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="痕迹" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>启用自适应流媒体传输</h1>
+      <h2>自适应流媒体传输（已解释）<a name="SC_AdaptiveStreamingExplained"></a></h2>
+      <p>自适应流媒体传输可提高运行 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 的计算机的解码能力和性能。在同一视图中查看多个实时视频流时，这非常有用。</p>
+      <p>要利用自适应流媒体传输，您的摄像机必须具有使用不同分辨率定义的多个流。这使 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 能够自动选择与视图项目所请求的分辨率最接近的匹配项。现在 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 不需要使用不必要的高分辨率缩小默认流。这减少了 CPU 和 GPU 解码资源的负载。</p>
+      <p>为确保视频质量，最接近的匹配项被定义为等于或高于视图项目所请求的分辨率（如果可能）。这是为了避免放大流。下表显示了自适应流媒体传输根据来自 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 的视图项目请求选择的视频流。</p>
+      <table cellspacing="3">
+        <col style="width: 40%;" />
+        <col />
+        <col />
+        <thead>
+          <tr>
+            <th>视图项目所请求的分辨率</th>
+            <th colspan="2">可用视频流的最接近匹配项</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>636 x 477</td>
+            <td style="text-align: left;">视频流 1</td>
+            <td>640 x 480 (VGA)</td>
+          </tr>
+          <tr>
+            <td>644 x 483</td>
+            <td style="text-align: left;">视频流 2</td>
+            <td>1280 x 720 (WXGA-H)</td>
+          </tr>
+          <tr>
+            <td>1920 x 1080</td>
+            <td style="text-align: left;">视频流 3</td>
+            <td>1920 x 1080 (FHD)</td>
+          </tr>
+          <tr>
+            <td>1920 x 1440</td>
+            <td style="text-align: left;">视频流 4</td>
+            <td>3840 x 2160 (4K UHD-1)</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="note">
+        <p>缩放时，所请求的实时视频流始终是分辨率最高的视频流。</p>
+        <p>所请求的流的分辨率降低时，带宽使用通常会减少。带宽使用还取决已定义流的配置中的其他设置。</p>
+      </div>
+      <h2>检查自适应流媒体传输设置<a name="SC_CheckAdaptiveStreamingSettings"></a></h2>
+      <ol>
+        <li value="1">转到<span class="uitext">设置</span> &gt;<span class="uitext"> 高级</span> &gt;<span class="uitext"> 自适应流媒体传输</span>。</li>
+        <li value="2">自适应流媒体传输有两种设置：<span class="uitext">禁用</span>和<span class="uitext">启用</span>。<p>选择<span class="uitext"><span class="uitext">启用</span></span>。</p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_settings_advanced_adaptivestreamingdiagnosticsoverlaycut.png" data-mc-popup-alt="Adaptive streaming settings in XProtect Smart Client."><img class="MCPopupThumbnail img" data-mc-width="800" data-mc-height="480" src="../../../Images/sc_settings_advanced_adaptivestreamingdiagnosticsoverlaycut_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Adaptive streaming settings in XProtect Smart Client." tabindex="" /></a></p></li>
+        <li value="3">前往<span class="uitext">视频诊断覆盖</span>。</li>
+        <li value="4">要使流的当前视频分辨率可见，请选择<span class="uitext">级别 2</span>。</li>
+        <p class="note">此设置适用于所有视图项目。默认设置为<span class="uitext">隐藏</span>。</p>
+        <li value="5">视频诊断覆盖现在应该已经<span class="uitext">启用</span>。</li>
+        <p>尝试将视图窗口从小调整到大，从大调整到小，并检查<span class="uitext">视频分辨率</span>值是否发生变化。</p>
+        <p>
+          <img src="../../../Images/sc_viewitem_diagnosticsoverlay_resolution320x180.png" alt="" />
+          <img src="../../../Images/sc_viewitem_diagnosticsoverlay_resolution480x270.png" alt="" />
+          <img src="../../../Images/sc_viewitem_diagnosticsoverlay_resolution1280x720.png" alt="" />
+        </p>
+        <p>如果值没有发生变化，请继续检查摄像机中的可用实时视频流，以便在可能的情况下启用自适应流媒体传输。</p>
+      </ol>
+      <h2>检查可用实时视频流<a name="SC_CheckAvailableLiveVideoStreams"></a></h2>
+      <p>要利用自适应流媒体传输，必须在您的摄像机设置中配置两个或多个具有不同分辨率的实时视频流。</p>
+      <p class="note">自适应流唯一支持的视频分辨率格式是<span class="inputtext">宽 x 高</span>。不支持以 720p、mode2、VGA 或类似格式显示的视频分辨率格式。</p>
+      <p class="note">并非所有摄像机都支持多流。</p>
+      <p>多流允许在服务器上为每个设备配置多个流。如果配置了多个流并启用了自适应流，则可以选择<span class="uitext">自适应流</span>或其他可用流之一。</p>
+      <p>要确保在视图中配置<span class="uitext">自适应流媒体传输</span>，请执行以下操作：</p>
+      <ol>
+        <li value="1">单击<span class="uitext">设置</span>以配置视图。</li>
+        <li value="2">在<span class="uitext">属性</span>中，单击<span class="uitext">实时流</span>下拉列表，此时会显示可用实时视频流列表。</li>
+        <li value="3">
+          <p>检查两个或更多个实时视频流是否可用并选择<span class="uitext">自适应流媒体传输</span>。</p>
+          <p>
+            <img src="../../../Images/sc_viewitem_setup_properties_livestream_adaptivestreamingselect.png" alt="Verify that adaptive streaming is selected in the camera properties." />
+          </p>
+          <p class="note">如果只有一个实时视频流可用，请在 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> 中为摄像机添加更多实时视频流。</p>
+        </li>
+        <li value="4">单击<span class="uitext">设置</span>以关闭视图配置。</li>
+      </ol>
+      <p>要确保在<span class="uitext">实时</span>视图项目中选择<span class="uitext">自适应流媒体传输</span>，请执行以下操作：</p>
+      <ol>
+        <li value="1">单击<span class="uitext">更多</span>下拉列表。</li>
+        <li value="2">选择<span class="uitext">实时流</span>，此时会显示可用实时视频流列表。</li>
+        <li value="3">
+          <p>检查两个或更多个实时视频流是否可用并选择<span class="uitext">自适应流媒体传输</span>。</p>
+          <p>
+            <img src="../../../Images/sc_viewitem_more_livestream_adaptivestreaming.png" alt="Verify that adaptive streaming is selected in the camera view item." />
+          </p>
+        </li>
+      </ol>
+    </div>
+    <p></p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

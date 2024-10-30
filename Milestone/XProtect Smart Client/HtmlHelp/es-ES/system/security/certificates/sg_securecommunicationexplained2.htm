@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="es-ES" xml:lang="es-ES" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Comunicación segura (explicado)</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#system/security/certificates/sg_securecommunicationexplained2.htm">Abrir tema con navegación</a>
+    </p>
+    <div role="main" id="mc-main-content">
+      <h1>Comunicación segura (explicado)</h1>
+      <p>El Protocolo de Transferencia de Hipertexto Seguro (HTTPS) es una extensión del Protocolo de Transferencia de Hipertexto (HTTP) para la comunicación segura a través de una red informática. En HTTPS, el protocolo de comunicación está cifrado mediante Transport Layer Security (TLS), o su predecesor, Secure Sockets Layer (SSL).</p>
+      <p>En <span class="mc-variable flvar-brand-company.AdvVMS_XP variable">XProtect VMS</span>, la comunicación segura se obtiene utilizando TLS/SSL con cifrado asimétrico (RSA).</p>
+      <p>TLS/SSL utiliza un par de claves, una privada y otra pública, para autenticar, asegurar y gestionar las conexiones seguras.</p>
+      <p>Una autoridad de certificación (CA) es cualquiera que pueda emitir certificados raíz. Puede tratarse de un servicio de Internet que emita certificados raíz, o de cualquier persona que genere y distribuya manualmente un certificado. Una CA puede emitir certificados para servicios web, es decir, para cualquier software que utilice la comunicación https. Este certificado contiene dos claves, una clave privada y una clave pública. La clave pública se instala en los clientes de un servicio web (clientes del servicio) mediante la instalación de un certificado público. La clave privada se utiliza para firmar los certificados del servidor que deben instalarse en el mismo. Siempre que un cliente de servicio llama al servicio web, el servicio web envía el certificado del servidor, incluida la clave pública, al cliente. El cliente de servicio puede validar el certificado del servidor utilizando el certificado de CA público ya instalado. El cliente y el servidor pueden ahora utilizar los certificados público y privado del servidor para intercambiar una clave secreta y establecer así una conexión segura TLS/SSL.</p>
+      <p>Para los certificados distribuidos manualmente, los certificados deben ser instalados antes de que el cliente pueda realizar dicha verificación.</p>
+      <p>Si desea más información acerca de TLS: <a href="https://en.wikipedia.org/wiki/Transport_Layer_Security" target="_blank">https://en.wikipedia.org/wiki/Transport_Layer_Security</a></p>
+      <p class="important">Los certificados tienen una fecha de caducidad. <span class="mc-variable flvar-brand-company.AdvVMS_XP variable">XProtect VMS</span> no le avisará cuando un certificado esté a punto de caducar. Si un certificado caduca:<br />• Los clientes dejarán de confiar en el servidor de grabación con el certificado caducado y, por tanto, no podrán comunicarse con él<br />• Los servidores de grabación dejarán de confiar en el servidor de gestión con el certificado caducado y, por tanto, no podrán comunicarse con él<br />• Los dispositivos móviles dejarán de confiar en el servidor móvil con el certificado caducado y, por tanto, no podrán comunicarse con él<br /><br />Para renovar los certificados, siga los pasos de esta guía como lo hizo cuando creó los certificados.</p>
+      <p>Si desea más información, consulte la <a href="https://doc.milestonesys.com/2022r2/es-ES/portal/htm/chapter-page-certificates-guide.htm" target="_blank">guía de certificados sobre cómo asegurar sus instalaciones <span class="mc-variable flvar-brand-company.AdvVMS_XP variable">XProtect VMS</span></a>. </p>
+    </div>
+    <p></p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

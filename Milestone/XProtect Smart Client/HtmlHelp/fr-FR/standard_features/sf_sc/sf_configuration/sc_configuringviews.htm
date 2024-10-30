@@ -1,0 +1,560 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="fr-FR" xml:lang="fr-FR" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="Configuration" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Configure views in XProtect Smart Client to view video from cameras and other types of content." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Administrateur" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Intégrateur" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Opérateur" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Vues (configuration)</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#standard_features/sf_sc/sf_configuration/sc_configuringviews.htm">Ouvrir la rubrique avec les liens de navigation</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Pistes de navigation" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>Vues (configuration)</h1>
+      <p>En mode configuration, vous pouvez créer des vues et préciser les caméras ou les autres types de contenu à inclure dans chaque vue. Pour organiser vos vues, vous devez créer un groupe de vues au moins. Cela est souvent fait par votre administrateur système.</p>
+      <p class="note">Votre capacité à modifier des groupes et des vues dépend de vos droits d'utilisateur. Si vous pouvez créer la vue ou un groupe, vous pouvez également le ou la modifier. </p>
+      <div>
+        <h2>
+          <a name="SC_ViewsExplained"></a>Les vues et groupes de vues (explication)</h2>
+        <p>La manière dont une vidéo s'affiche dans <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> est appelée une vue. Le <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> peut gérer un nombre illimité de vues, ce qui vous permet de passer d'une vidéo à une autre, venant de toute une série de caméras. Les vues peuvent prendre en charge entre une à cent caméras, mais également contenir d'autres types de contenu, comme les images et du texte. </p>
+        <p>Les vues doivent faire partie de groupes de vues qui vous aide à organiser vos vues.</p>
+        <p>Les vues sont disponibles dans les onglets <span class="uitext">En direct</span> et <span class="uitext">Lecture</span>. Les vues peuvent être confidentielles ou partagées :</p>
+        <div>
+          <ul>
+            <li>Les vues Confidentielles ne sont accessibles qu'à l'utilisateur qui les a créées. Pour rendre une vue confidentielle, créez-la dans le dossier <span class="uitext">Confidentiel</span></li>
+            <li>Les vues partagées permettront à plusieurs utilisateurs opérateurs de partager les mêmes vues. Selon votre système VMS <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> : <ul><li>Il peut exister un dossier par défaut pour les vues partagées nommé <span class="uitext">Partagées</span> ou <span class="uitext">Groupe par défaut</span></li><li>Les vues partagées peuvent être partagées par tous les opérateurs. Certains opérateurs peuvent également bénéficier d'un accès aux vues partagées sélectionnées. En général, peu de gens dans une entreprise sont en droit de créer et de modifier les vues partagées, par exemple, les administrateurs de systèmes.</li></ul></li>
+          </ul>
+          <p class="note">Tous les utilisateurs n'ont pas accès à l'ensemble des caméras du système VMS <span class="mc-variable flvar-brand-company.XP variable">XProtect</span>. Notez que certaines fonctions que vous pouvez inclure dans vos vues partagées peuvent ne pas être prises en charge par des versions antérieures de <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Par conséquent, assurez-vous toujours que les utilisateurs avec lesquels vous souhaitez effectuer un partage disposent des droits nécessaires et de la même version de <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> que vous.</p>
+        </div>
+        <p>Vos paramètres d'utilisateur, y compris les informations concernant vos vues, sont stockés de manière centralisée sur le serveur VMS <span class="mc-variable flvar-brand-company.XP variable">XProtect</span>. Ainsi, vous pouvez utiliser vos vues sur n'importe quel ordinateur disposant de <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fermé" data-mc-alt2="Ouvert" />Exemple de vue 2x2</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <img src="../../../../Images/views_explained.jpg" alt="2x2 view in XProtect Smart Client." />
+            </p>
+          </div>
+        </div>
+        <div>
+          <h2>
+            <a name="SC_ContentInsideViewsExp.htm"></a>Que peuvent contenir les vues ?</h2>
+          <p>En mode configuration, dans le volet <span class="uitext">Vue d'ensemble</span>, vous pouvez afficher les éléments que vous souhaitez ajouter à vos vues :</p>
+          <p>
+            <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_systemoverview.jpg" data-mc-popup-alt="What can views contain in XProtect Smart Client?">
+              <img class="MCPopupThumbnail img" data-mc-width="295" data-mc-height="609" src="../../../../Images/sc_systemoverview_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="What can views contain in XProtect Smart Client?" tabindex="" />
+            </a>
+          </p>
+          <table cellspacing="3">
+            <col />
+            <col />
+            <thead>
+              <tr>
+                <th>Élément</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p>Alarmes</p>
+                </td>
+                <td>
+                  <p>Permet d'afficher une liste des alarmes ou un aperçu des alarmes. Ces deux éléments sont également disponibles dans l'onglet <span class="uitext">Gestionnaire des alarmes</span>.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>Moniteur d'accès</td>
+                <td>
+                  <p>Moniteur d'accès : avec <span class="mc-variable flvar-product.ACMName_XPtm variable">XProtect® Access </span> d'installé, vous pouvez afficher les moniteurs d'accès dans vos vues, par exemple, pour une porte en particulier.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Caméras</p>
+                </td>
+                <td>
+                  <p>Permet d'afficher le flux vidéo depuis une caméra en direct ou d'une vidéo en cours de lecture. La caméra apparaît sous le nom du site, qui est défini par votre administrateur du système.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Cycliques</p>
+                </td>
+                <td>
+                  <p>Permet de passer d'une caméra à l'autre à un rythme prédéfini.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Hot spots</p>
+                </td>
+                <td>
+                  <p>Permet d'afficher que la caméra soit nette dans une haute résolution ou le nb d'images/sec.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Pages HTML</p>
+                </td>
+                <td>
+                  <p> Permet d'afficher une page Web, par exemple, une chaîne d'informations en ligne.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Images</p>
+                </td>
+                <td>
+                  <p>Permet d'afficher une image, par exemple, si vous souhaitez distribuer l'image d'un suspect.</p>
+                </td>
+              </tr>
+              <tr data-mc-conditions="flcts-add-on.xp-lp-content">
+                <td>LPR</td>
+                <td>
+                  <p>Avec <span class="mc-variable flvar-product.LPRName_XPtm variable">XProtect® LPR</span> d'installé, vous pouvez ajouter des caméras de reconnaissance des plaques d'immatriculation (LPR) aux vues.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Plans</p>
+                </td>
+                <td>Permet d'afficher un plan d'étage ou une zone géographique.</td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="mc-variable flvar-brand-company.MMName_short variable">Matrix</span>
+                  </p>
+                </td>
+                <td>
+                  <p>Permet d'afficher une position <span class="mc-variable flvar-brand-company.MMName_short variable">Matrix</span>. Voir également <a href="sc_workingwithmatrix_715_.htm#SC_MatrixExplained.htm" class="MCXref xref">Matrix (explications)</a>.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Smart Maps </p>
+                </td>
+                <td>
+                  <p>Permet de naviguer entre vos caméras sur une carte du monde basée sur l'un des services de plan en ligne suivants :</p>
+                  <ul>
+                    <li>Bing Maps</li>
+                    <li>Google Maps</li>
+                    <li data-mc-conditions="flcts-features.oem-map-service-content">
+                      <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+                    </li>
+                    <li> OpenStreetMap </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Commandes <span class="mc-variable flvar-product.SWName variable">Smart Wall</span></p>
+                </td>
+                <td>
+                  <p>Si <span class="mc-variable flvar-product.SWName_XP variable">XProtect Smart Wall</span> a été configuré par l'administrateur de votre système, les commandes de <span class="mc-variable flvar-product.SWName variable">Smart Wall</span> vous permettent d'ajouter des caméras et d'autres types de contenu vers vos murs vidéo.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Texte </p>
+                </td>
+                <td>
+                  <p>Permet d'afficher du texte, par exemple, si vous souhaitez fournir des instructions aux autre opérateurs.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="mc-variable flvar-product.TName variable">Transact</span>
+                  <p> </p>
+                </td>
+                <td>
+                  <p>Si <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span> a été installé dans votre système, vous pouvez ajouter des systèmes de point de vente avec les caméras.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_CreateAViewGroup.htm"></a>Créer des groupes de vues</h2>
+        <p>Votre <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> peut être configuré pour afficher des groupes de vues qui peuvent être ajoutés à vos vues. Cependant, vous pouvez créer vos propres groupes de vues afin de vous aider à organiser vos vues.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fermé" data-mc-alt2="Ouvert" />Exemple</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Imaginez que vous avez des caméras installées sur dix niveaux différents dans un bâtiment à plusieurs étages. Vous décidez de créer un groupe de vues pour chaque niveau et vous les nommez en conséquence : <span class="uitext">Rez-de-chaussée</span>, <span class="uitext">Premier étage</span>, <span class="uitext">Deuxième étage</span>, et ainsi de suite.</p>
+          </div>
+        </div>
+        <p>Étapes :</p>
+        <ol>
+          <li value="1">Dans le panneau <span class="uitext">Vues</span> en mode Configuration, sélectionnez le dossier de premier niveau <span class="uitext">Privé</span> ou <span class="uitext">Partagé</span> auquel vous souhaitez ajouter un groupe.</li>
+          <li value="2">Cliquez sur <span class="uitext">Créer un nouveau groupe</span> : <p><img src="../../../../Images/create_a_view_group.png" alt="" /></p><p>Le nouveau groupe porte simplement le nom <span class="uitext">Nouveau groupe</span>.</p></li>
+          <li value="3">Sélectionnez et cliquez sur le <span class="uitext">Nouveau groupe</span> pour changer de nom.</li>
+          <li value="4">Vous pouvez désormais créer des vues au sein du groupe.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_CreateView.htm"></a>Créer des vues</h2>
+        <p>Pour afficher ou lire une vidéo dans <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>, vous devez d'abord créer une vue dans laquelle vous ajoutez les caméras dont vous avez besoin.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fermé" data-mc-alt2="Ouvert" />Configuration </a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Avant de créer la vue, vous devez disposer d'un groupe auquel ajouter la vue. Voir également <a href="#SC_CreateAViewGroup.htm" class="MCXref xref">Créer des groupes de vues</a>.</p>
+          </div>
+        </div>
+        <p>Étapes :</p>
+        <ol>
+          <li value="1">Cliquez sur <span class="uitext">Configuration</span> dans le coin supérieur droit pour entrer dans le mode configuration.</li>
+          <li value="2">Dans le panneau <span class="uitext">Vues</span>, sélectionnez le groupe auquel vous souhaitez ajouter la vue.</li>
+          <li value="3">Cliquez sur <img src="../../../../Images/create_view.png" alt="" /> pour créer une nouvelle vue.</li>
+          <li value="4">Sélectionner la disposition. Les dispositions sont regroupées selon leurs <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term2">proportions<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Rapport hauteur/largeur d'une image.</span></a> et selon le fait qu'elles soient optimisées pour du contenu standard ou pour du contenu en format portrait (où la hauteur est supérieure à la largeur). <p><img src="../../../../Images/create_view.jpg" alt="View layouts in XProtect Smart Client." /></p></li>
+          <li value="5">Saisissez un nom pour la vue en écrasant le nom de la <span class="uitext">Nouvelle vue</span> par défaut.</li>
+          <li value="6"> Cliquez sur <span class="uitext">Configuration</span> à nouveau pour quitter le mode configuration. Vos changements sont enregistrés.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_CopyRenameOrDeleteAVi.htm"></a>Copier, renommer ou supprimer des vues ou des groupes</h2>
+        <p>Si vous disposez d'une vue et que vous désirez la réutiliser, vous pouvez la copier. Vous pouvez également copier un groupe de vues ou une vue privée sur une vue partagée.</p>
+        <p>Étapes :</p>
+        <ol>
+          <li value="1">En mode Configuration, sélectionnez la vue dans le panneau de navigation.</li>
+          <li value="2">Cliquez <span class="uitext">Copier</span> ou appuyez sur les touches <span class="uitext">CTRL</span>+<span class="uitext">C</span>. <p><img src="../../../../Images/copy_rename_or_delete_a_view.png" alt="" /></p></li>
+          <li value="3">Rendez-vous à l'endroit où vous désirez coller la vue et sélectionnez <span class="uitext">Coller</span> ou appuyez sur les touches <span class="uitext">CTRL</span>+<span class="uitext">V</span>. <p><img src="../../../../Images/copy_rename_or_delete_a_view_1.png" alt="" /></p><p class="tip">Sinon, vous pouvez sélectionner et faire glisser la vue dans un autre dossier.</p></li>
+          <li value="4">La vue copiée est nommée par défaut comme l'original suivi d'un (2). Effectuez un clic droit et sélectionnez <span class="uitext">Renommer</span> pour modifier le nom.<p><img src="../../../../Images/copy_rename_or_delete_a_view_2.png" alt="" /></p></li>
+          <li value="5">Effectuez un clic droit et sélectionnez <span class="uitext">Supprimer</span> pour supprimer une vue. <p><img src="../../../../Images/copy_rename_or_delete_a_view_3.png" alt="" /></p></li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_AddingContentToViews.htm"></a>Ajouter des caméras et d'autres éléments à des vues</h2>
+        <p>Vous pouvez ajouter différents types d'éléments à vos vues, tels que des caméras. Voir également <a href="#SC_ContentInsideViewsExp.htm" class="MCXref xref">Que peuvent contenir les vues ?</a></p>
+        <p>Étapes : </p>
+        <ol>
+          <li value="1">Ouvrez la vue que vous souhaitez modifier.</li>
+          <li value="2"> Cliquez sur <span class="uitext">Configuration</span> pour entrer en mode configuration. </li>
+          <li value="3">
+            <p>Dans le volet <span class="uitext">Vue d'ensemble du système</span>, faites glisser l'élément souhaité dans un élément de vue. </p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_systemoverview.jpg" data-mc-popup-alt="What can views contain in XProtect Smart Client?">
+                <img class="MCPopupThumbnail img" data-mc-width="295" data-mc-height="609" src="../../../../Images/sc_systemoverview_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="What can views contain in XProtect Smart Client?" tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="4">Saisissez les renseignements supplémentaires sur l'élément.</li>
+          <li value="5"> Cliquez sur <span class="uitext">Configuration</span> à nouveau pour quitter le mode configuration. Vos changements sont enregistrés.</li>
+        </ol>
+      </div>
+      <p class="note">Pour plus d’informations, voir <a href="#SC_AddingContentToViewsDetailed" class="MCXref xref">Ajouter du contenu aux vues (en détail)</a>.</p>
+      <div>
+        <h2>
+          <a name="SC_AssignAShortcutNumber.htm"></a>Attribuer des numéros de raccourci à des vues</h2>
+        <p>Vous pouvez assigner des numéros de raccourci à des vues afin de permettre aux utilisateurs de sélectionner des vues avec les raccourcis clavier standard (voir <a href="../sf_operation/sc_workingwithnavelements.htm#SC_KeyboardShortcutsExpl.htm" class="MCXref xref">Raccourcis clavier (vue d'ensemble)</a>).</p>
+        <ol>
+          <li value="1"> Cliquez sur <span class="uitext">Configuration</span> pour entrer en mode configuration. </li>
+          <li value="2">Dans le volet <span class="uitext">Vues</span>, sélectionnez la vue à laquelle vous souhaitez attribuer un raccourci.</li>
+          <li value="3">Dans le champ <span class="uitext">Raccourci</span>, indiquez un numéro de raccourci, puis appuyez sur ENTRÉE. Le numéro de raccourci indiqué apparaît entre parenthèses devant le nom de la vue.</li>
+          <li value="4">Répétez la procédure si nécessaire pour les autres vues.</li>
+          <li value="5"> Cliquez sur <span class="uitext">Configuration</span> à nouveau pour quitter le mode configuration. Vos changements sont enregistrés.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_AddingContentToViewsDetailed"></a>Ajouter du contenu aux vues (en détail)</h2>
+        <p>Comme décrit dans <a href="#SC_AddingContentToViews.htm" class="MCXref xref">Ajouter des caméras et d'autres éléments à des vues</a>, vous pouvez ajouter différente caméras et différents types d'éléments à vos vues. Cette rubrique fournit des explications plus détaillées :</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fermé" data-mc-alt2="Ouvert" />Ajouter des alarmes à des vues</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="../../../feature_flags/ff_managealarms/sc_configuringalarmsandevents.htm#SC_AddAlarmsToViews" class="MCXref xref">Ajouter des alarmes à des vues</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fermé" data-mc-alt2="Ouvert" />Ajouter des caméras à des vues</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Pour visionner la vidéo d'une caméra, vous devez d'abord ajouter la caméra à une vue.</p>
+            <ol>
+              <li value="1">En mode Configuration, sélectionnez la vue à laquelle vous souhaitez ajouter une caméra.</li>
+              <li value="2">Dans le volet <span class="uitext">Vue d’ensemble</span>, développez le serveur requis <img src="../../../../Images/add_a_camera_to_a_view.png" alt="" /> pour visualiser une liste des caméras disponibles depuis ce serveur. <p class="note">Si un serveur est listé avec une icône rouge, cela signifie qu'il n'est pas disponible ; dans ce cas, vous ne pouvez pas voir les alarmes de ce serveur.</p></li>
+              <li value="3">
+                <p>Dans la liste, sélectionnez la caméra et faites-la glisser sur l'élément de vue souhaitée dans la vue souhaitée. Une image de la caméra apparaît dans l'élément de vue sélectionné. </p>
+                <p class="note">Si des zones de la vidéo sont floutées ou grisées, c’est parce que votre administrateur système a recouvert ces zones avec des <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term55">masques de confidentialité<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Une couleur floue ou solide qui couvre une zone de la vidéo sur la vue de la caméra. Les zones définies sont floues ou couvertes dans les mode en direct, lecture, hot spot, carousel, Smart Map, recherche avancée et exportation dans les clients.</span></a> (voir <a href="../../../feature_flags/ff_extendedprivacymasking/sc_workingwithprivacymasking.htm#SC_PrivacyMaskingExplain.htm" class="MCXref xref">Masquage de confidentialité (explications)</a>).</p>
+              </li>
+              <li value="4">Vous pouvez préciser les propriétés de la caméra (comme la qualité, la <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term14">fluidité d'images<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Mesure indiquant le nombre d'informations contenues dans une vidéo de mouvement. Généralement mesuré en FPS (nombre d'images par seconde).</span></a>, etc.) dans le panneau <span class="uitext">Propriétés</span>. Pour plus d’informations, voir <a href="sc_configuringcamerasettings.htm#SC_CameraSettings.htm" class="MCXref xref">Paramètre des caméras</a>.</li>
+              <li value="5">Répétez les étapes ci-dessus pour chaque caméra que vous souhaitez ajouter.</li>
+              <li value="6">Pour ajouter plusieurs caméras à une vue, par exemple toutes les caméras d'un répertoire de caméras, il suffit de faire glisser le répertoire requis dans la vue. Veillez à ce qu'il y ait suffisamment d'élément de vue disponibles dans la vue.</li>
+            </ol>
+            <p class="tip">Vous pouvez aisément changer les caméras intégrées à votre vue en faisant glisser une autre caméra dans l'élément de vue.</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fermé" data-mc-alt2="Ouvert" />Ajouter des cycliques à des vues</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="sc_configuringcarousels.htm#SC_AddCarouselToViews.htm" class="MCXref xref">Ajouter des cycliques à des vues</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fermé" data-mc-alt2="Ouvert" />Ajouter des images à des vues</a>
+            <a name="SC_AddImageToViews.htm"></a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Vous pouvez afficher des images statiques dans une vue. Par exemple, cette fonction est utile lorsque vous souhaitez partager un instantané d'un suspect ou un schéma des sorties de secours.</p>
+            <p>Étapes :</p>
+            <ol>
+              <li value="1"> Cliquez sur <span class="uitext">Configuration</span> pour entrer en mode configuration. </li>
+              <li value="2">
+                <p>Dans le volet <span class="uitext">Vue d'ensemble du système</span>, faites glissez l'élément <span class="uitext">Image</span> dans l'écran caméra. Une fenêtre s'affiche.</p>
+                <p>
+                  <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_addimagetoview.jpg" data-mc-popup-alt="Add images to views in XProtect Smart Client.">
+                    <img class="MCPopupThumbnail img" data-mc-width="306" data-mc-height="946" src="../../../../Images/sc_addimagetoview_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add images to views in XProtect Smart Client." tabindex="" />
+                  </a>
+                </p>
+              </li>
+              <li value="3">Localisez et sélectionnez le fichier image que vous souhaitez ajouter.</li>
+              <li value="4">Cliquez sur <span class="uitext">Ouvrir</span>. L'image apparaît désormais dans l'élément de vue.</li>
+              <li value="5">Afin de rendre l'image disponible auprès d'autres personnes qui ne peuvent accéder à l'emplacement du fichier d'image, cliquez sur <span class="uitext">Intégrer</span> dans le panneau <span class="uitext">Propriétés</span>. Le fichier est enregistré dans le système.</li>
+              <li value="6"> Cliquez sur <span class="uitext">Configuration</span> à nouveau pour quitter le mode configuration. Vos changements sont enregistrés.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fermé" data-mc-alt2="Ouvert" />Ajouter des hot spots à des vues</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="sc_configuringhotspots.htm#SC_AddHotspotToViews.htm" class="MCXref xref">Ajouter des hot spots à des vues</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fermé" data-mc-alt2="Ouvert" />Ajouter des plans à des vues</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="sc_configuringmaps.htm#SC_AddMapToViews.htm" class="MCXref xref">Ajouter des plans à des vues</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fermé" data-mc-alt2="Ouvert" />Ajouter des smart maps à des vues</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="../../../feature_flags/ff_map/sc_configuringmaps.htm#SC_AddSmartMapToView.htm" class="MCXref xref">Ajouter des smart maps à des vues</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fermé" data-mc-alt2="Ouvert" />Ajouter du texte à des vues</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Vous pouvez ajouter du texte dans un ou plusieurs éléments de vue au sein d'une vue. Cette fonction est utile lorsque vous souhaitez adresser un message ou des instructions aux opérateurs ou afficher un calendrier de travail pour le personnel de sécurité, par exemple. Vous pouvez utiliser jusqu'à 1 000 caractères.</p>
+            <p>Étapes :</p>
+            <ol>
+              <li value="1"> Cliquez sur <span class="uitext">Configuration</span> pour entrer en mode configuration. </li>
+              <li value="2">Dans le volet <span class="uitext">Vue d'ensemble du système</span>, faites glisser l'élément <span class="uitext">Texte</span> dans l'élément de vue dans lequel vous souhaitez voir apparaître le texte. Une fenêtre s'affiche.</li>
+              <li value="3">Saisissez le texte.</li>
+              <li value="4">Cliquez sur <span class="uitext">Enregistrer</span>.</li>
+              <li value="5">Si vous souhaitez modifier le texte une fois celui-ci enregistré, cliquez sur <span class="uitext">Modifier le texte</span> dans le panneau <span class="uitext">Propriétés</span> en mode de configuration.</li>
+            </ol>
+            <div>
+              <p class="note">Vous pouvez insérer des tableaux provenant de produits tels que Microsoft Word et Microsoft Excel, mais vous ne pouvez pas apporter de modifications à ces tableaux. </p>
+            </div>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fermé" data-mc-alt2="Ouvert" />
+            </a>
+            <a name="Add"></a>
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Ajouter des pages Web aux vues</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Vous pouvez ajouter des pages Web aux vues, par exemple, des pages HTML, PHP ou ASP. Cette fonctionnalité est utile pour, par exemple, transmettre des instructions en ligne ou afficher les pages Web de la société avec les caméras ou tout autre type de contenu.</p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/add_html_page_to_view_or_1.jpg" data-mc-popup-alt="Add webpages to views in XProtect Smart Client to display web context next to video feeds.">
+                <img class="MCPopupThumbnail img" data-mc-width="1320" data-mc-height="854" src="../../../../Images/add_html_page_to_view_or_1_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add webpages to views in XProtect Smart Client to display web context next to video feeds." tabindex="" />
+              </a>
+            </p>
+            <p>Étapes :</p>
+            <ol>
+              <li value="1">Ouvrez la vue que vous souhaitez modifier.</li>
+              <li value="2"> Cliquez sur <span class="uitext">Configuration</span> pour entrer en mode configuration. </li>
+              <li value="3">Dans le panneau <span class="uitext">Vue d'ensemble du système</span>, cliquez sur l'élément de la <span class="uitext">Page HTML</span> et déplacez-le vers les écrans caméras. Une fenêtre s'affiche.<p><img src="../../../../Images/add_html_page_to_view_or_1.png" alt="Enter URL when adding webpage to views in XProtect Smart Client." /></p></li>
+              <li value="4">
+                <p>Dans le champ <span class="uitext">Ouvrir</span>, saisissez l'adresse Web de la page Web.</p>
+                <p class="important">Assurez-vous que le mode d'affichage est configuré sur <span class="uitext">Compatibilité</span> dans les propriétés de la page Web pour pouvoir utiliser une page Web stockée sur votre ordinateur local, réseau ou sur un serveur FTP. Voir <a href="#Web" class="MCXref xref">Propriétés de la page Web </a>. Sinon, vous allez recevoir un message d'erreur. Voir <a href="../sf_troubleshooting/sc_troubleshootinghtmlpages.htm" class="MCXref xref">Pages Web (dépannage)</a>.</p>
+              </li>
+              <li value="5">Cliquez sur <span class="uitext">OK</span>.</li>
+              <li value="6">Développez le volet <span class="uitext">Propriétés</span> pour configurer les propriétés.</li>
+              <li value="7"> Cliquez sur <span class="uitext">Configuration</span> à nouveau pour quitter le mode configuration. Vos changements sont enregistrés.</li>
+            </ol>
+            <p class="note">Vous ne pouvez pas naviguer dans une page Web dans le mode configuration. </p>
+            <h3>
+              <a name="Web"></a>Propriétés de la page Web </h3>
+            <table cellspacing="3">
+              <col />
+              <col style="width: 376px;" />
+              <thead>
+                <tr>
+                  <th>
+                    <p>Nom</p>
+                  </th>
+                  <th>
+                    <p>Description</p>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">Modifier</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>Indiquer une nouvelle URL ou l'emplacement fichier de la page Web.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">Mode d'affichage</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>Sélectionner le navigateur à utiliser pour afficher la page Web. Il existe deux options :</p>
+                    <ul>
+                      <li>
+                        <span class="uitext">Standard</span> : Ce paramètre utilise Microsoft Edge. Choisissez <span class="uitext">Standard</span> si la page Web est localisée sur le serveur Web et que le protocole réseau utilisé est HTTP ou HTTPS</li>
+                      <li>
+                        <span class="uitext">Compatibilité</span> : Ce paramètre utilise Internet Explorer. Choisissez <span class="uitext">Compatibilité</span> si la page Web :<ul><li> est stockée localement</li><li>utilise un protocole réseau autre que HTTP et HTTPS</li><li>contient des scripts conçus pour interagir avec <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span></li><li>utilise une version ancienne de HTML</li></ul></li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">Mise à l'échelle</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>Sélectionner la dimension souhaitée de la page Web. La dimension optimale dépend du contenu de la page Web importée et de la manière dont vous souhaitez l’afficher </p>
+                    <p class="note">Ce paramètre est disponible uniquement en mode <span class="uitext">Compatibilité</span>.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">Masquer la barre d'outils</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>Cocher la case pour masquer la barre d'outils de navigation qui s'insère au-dessus de chaque page Web importée.</p>
+                    <p>
+                      <img src="../../../../Images/set_properties_for_html_page.png" alt="" />
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Fermé" data-mc-alt2="Ouvert" />Ajouter des boutons de recouvrement aux vues</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Vous pouvez activer des haut-parleurs, des événements, des <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term33">sorties<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Données sortant d'un ordinateur. Sur les systèmes de surveillance IP, on utilise souvent la sortie pour activer des appareils de type portail, sirène, lumière, etc.</span></a> et bien plus encore via les <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term34">boutons de recouvrement<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Bouton apparaissant en superposition sur la vidéo lorsque vous déplacez le curseur de votre souris sur les différentes positions de caméra individuelle dans les vues sur l'onglet En direct. Utilisez les boutons de recouvrement pour activer des haut-parleurs, événements et sorties, déplacer des caméras PTZ, démarrer l'enregistrement, supprimer des signaux des caméras, etc.</span></a>. Ces derniers apparaissent lorsque vous déplacez le curseur de votre souris sur des positions de caméra individuelles dans les vues dans l'onglet <span class="uitext">En direct</span>.</p>
+            <p>Vous pouvez ajouter autant de boutons que nécessaire.</p>
+            <ol>
+              <li value="1"> Cliquez sur <span class="uitext">Configuration</span> pour entrer en mode configuration. </li>
+              <li value="2">Dans le volet <span class="uitext">Boutons de recouvrement</span>, sélectionnez et faites glissez l'action dans l'écran caméra de la caméra.</li>
+              <li value="3">Lorsque vous relâchez le bouton de la souris, le bouton de recouvrement apparaît. Pour redimensionner le bouton, faites glisser les poignées que vous voyez à l'écran. <p><img src="../../../../Images/add_an_overlay_button_to_a.jpg" alt="" /></p></li>
+              <li value="4">Pour modifier le texte des boutons de recouvrement, effectuez un double-clic avec votre souris sur le texte, écrivez à cet endroit, puis cochez la case <img src="../../../../Images/add_an_overlay_button_to_a.png" alt="" /> pour sauvegarder. Pour annuler, cliquez sur le bouton annuler <img src="../../../../Images/add_an_overlay_button_to_a_1.png" alt="" />. Lorsque vous sauvegardez, le texte s'étend le plus possible en fonction de la taille du bouton.</li>
+              <li value="5"> Cliquez sur <span class="uitext">Configuration</span> à nouveau pour quitter le mode configuration. Vos changements sont enregistrés.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <p>
+        <a name="SC_AssignAShortcutNumber.htm"></a>
+      </p>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Informations du concept</p>
+        <p class="containerItem_container_0">
+          <a href="../sf_operation/sc_workingwithviews.htm">Gestion des vues</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="zh-TW" xml:lang="zh-TW" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="操作" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Events are predefined incidents on the XProtect VMS system that can be set up to trigger an alarm. You can acknowledge and ignore alarms or print alarm reports." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=操作員" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>警報和事件 (使用量)。</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#feature_flags/ff_managealarms/sc_workingwithalarms.htm">使用瀏覽打開主題</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="階層連結" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>警報和事件 (使用量)。</h1>
+      <div>
+        <h2>警報（說明）<a name="SC_AboutAlarms.htm"></a></h2>
+        <div>
+          <p class="note">只有特定 <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS 系統能使用此功能。如需與您系統中可用功能相關的資訊，請參閱 <a href="../../standard_features/sf_sc/sf_considerationsrequirements/sc_surveillancesystemdif.htm" class="MCXref xref">監視系統差異</a>。</p>
+        </div>
+        <p>在 <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS 伺服器上，幾乎所有類型的事件或技術問題 (事件) 都可設定來觸發警報。<span class="uitext">警報管理器</span>標籤提供 VMS 事件、狀態與可能技術問題的中央概觀，可讓您檢視所有警報和事件。</p>
+        <p>您無法設定 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 中的警報觸發。您的系統管理員會在設定 <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS 系統時執行此操作。</p>
+        <p class="note">
+          <span class="uitext">警報管理員</span>標籤的顯示或隱藏取決於系統管理員所定義的設定。</p>
+        <p>
+          <span class="uitext">警報管理員</span>標籤為警報或事件處理提供專用檢視。標籤本身會顯示作用中警報數量。超過九個警報會以 <img src="../../../Images/about_alarms.png" alt="9+ 警報" /> 顯示。<span class="uitext">警報管理器</span>標籤包含警報清單、警報預覽 (用來預覽與個別警報或事件關聯的視訊)，還可能包含地圖 (顯示與警報關聯的攝影機的地理位置)。</p>
+      </div>
+      <div>
+        <h2>警報列表（說明）<a name="SC_TheAlarmList.htm"></a></h2>
+        <p>
+          <span class="uitext">警報清單</span>預設會顯示傳入警報，且將最近的警報放在清單最上方。警報清單也可以顯示 <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term17">MIP<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>「Milestone Integration Platform」的簡稱。</span></a> 外掛程式和分析事件的清單，例如存取控制或車牌辨識。 </p>
+        <p>與包含關聯視訊的警報或事件會以 <img src="../../../Images/sc_alarmorevent_withvideo_icon.png" alt="" /> 圖示顯示。若要檢視警報或事件時間的靜態影像，請將游標停在圖示上方。若要預覽與警報或事件關聯的攝影機，或是其錄製的視訊，請在清單中選取警報或事件。 若要停止重複的警報音，請選取與此清單關聯的警報。</p>
+        <p>您可決定希望清單顯示的方式、篩選欄、將欄拖曳至不同位置，並可以右鍵按一下以顯示或隱藏特定欄。</p>
+        <p class="note">事件清單不會顯示系統或使用者產生的事件，如移動偵測或歸檔失敗。</p>
+        <p>此清單每 3 秒更新一次。</p>
+        <p>
+          <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/the_alarm_list.png" data-mc-popup-alt="The alarm list in XProtect Smart Client.">
+            <img class="MCPopupThumbnail img" data-mc-width="500" data-mc-height="173" src="../../../Images/the_alarm_list_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="The alarm list in XProtect Smart Client." tabindex="" />
+          </a>
+        </p>
+        <p class="tip">若要參閱事件清單，請進入設定模式並選取<span class="uitext">屬性</span>窗格中的<span class="uitext">事件</span>。另請參閱<a href="sc_configuringalarmsandevents.htm#SC_AlarmListSettings.htm" class="MCXref xref">警報清單設定</a>。</p>
+      </div>
+      <div>
+        <h2>警報列表中的伺服器（說明）<a name="SC_Servers.htm"></a></h2>
+        <p>在警報列表的左側，您可以檢視警報的來源伺服器。許多 <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS 系統只有單一伺服器，但有些系統可能包含階層式的多部伺服器。您存取的所有伺服器已列出，但您可以按伺服器篩選警報。</p>
+      </div>
+      <div>
+        <h2>警報狀態（說明）<a name="SC_Filters.htm"></a></h2>
+        <p>警報可以有下列狀態之一：新增、正在進行中、保留、或關閉。您可在<span class="uitext">警報清單</span>的<span class="uitext">狀態名稱</span>欄看到各警報的狀態。<span class="uitext">篩選器</span>窗格，讓您根據特定準則篩選。一開始，所有警報的狀態都會是<span class="uitext">新增</span>，但一旦開始處理警報，其狀態就會更新。</p>
+      </div>
+      <div>
+        <h2>篩選警報<a name="SC_FilterAlarms.htm"></a></h2>
+        <p>有多種方法可篩選警報清單，以便顯示您感興趣的警報或事件。</p>
+        <p>步驟： </p>
+        <ol>
+          <li value="1">
+            <p>在警報列表工具列中點選<span class="uitext">自訂（套用篩選器）</span>或<span class="uitext">無篩選器</span>文本。文本可能因選擇的篩選器而異。<br /></p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/filter_alarms.png" data-mc-popup-alt="Filter alarms in XProtect Smart Client.">
+                <img class="MCPopupThumbnail img" data-mc-width="1217" data-mc-height="286" src="../../../Images/filter_alarms_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Filter alarms in XProtect Smart Client." tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="2">在您希望篩選的欄上輸入篩選準則。例如，若您在 <span class="uitext">ID</span>欄位輸入某使用者 ID，則清單只會顯示指派給該特定使用者的警報。</li>
+          <li value="3">您可以組合篩選器，例如<span class="uitext">狀態名稱</span>和<span class="uitext">擁有者</span>（分配對象）。</li>
+          <li value="4">若要回到未篩選的警報清單，請按一下<span class="uitext">清除篩選器</span>按鈕。</li>
+          <li value="5">若要排序警報清單的內容，請按一下欄上方的標題。</li>
+        </ol>
+        <p class="tip">若您的警報處理檢視包含地圖內容，亦可用滑鼠右鍵按一下地圖上的攝影機、伺服器等元件，再選取<span class="uitext">顯示警報</span>以篩選警報。這樣會讓警報清單只顯示所選元件的警報。</p>
+      </div>
+      <div>
+        <h2>回應警報<a name="SC_ResponsdingToAlarms.htm"></a></h2>
+        <div>
+          <h3>檢視與編輯警報詳細資料<a name="SC_ViewingAndEditingDeta.htm"></a></h3>
+          <p>您可以不同方式回應警報。 您可以移至您已將<span class="uitext">警報清單</span>新增到的任何檢視，並按兩下警報。警報將在單獨視窗中開啟，您可在其中預覽警報事件和即時視訊。 您還可以透過變更下表中的欄位來回應警報。 </p>
+        </div>
+      </div>
+      <p>依據您的 <span class="mc-variable flvar-brand-company.XP variable">XProtect</span><a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term50">VMS<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>“视频管理软件”的缩写。</span></a> 系統的設定方式，您還可接收警報桌面通知。 此類通知將在螢幕上持續顯示 15 秒。 當您按一下通知後，它將使您直接移至<span class="uitext">警報管理員</span>標籤，並開啟警報視窗。</p>
+      <div>
+        <div>
+          <table cellspacing="3">
+            <col />
+            <col />
+            <thead>
+              <tr>
+                <th>欄位</th>
+                <th>說明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">狀態</span>
+                  </p>
+                </td>
+                <td>
+                  <p>警報的狀態表示是否有人已經處理了事件。您可以變更警報狀態。一般而言，您會將狀態從<span class="uitext">新增</span>變更為<span class="uitext">正在進行中</span>，再變更為<span class="uitext">保留</span>或<span class="uitext">關閉</span>。</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">優先權</span>
+                  </p>
+                </td>
+                <td>
+                  <p>讓您變更警報優先權。</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">已指派給:</span>
+                  </p>
+                </td>
+                <td>
+                  <p>用於將警報指派給組織中的使用者，包含您自己。您指派警報的對象會成為警報的擁有者，且會顯示於警報清單的<span class="uitext">擁有者</span>一欄。</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">備註</span>
+                  </p>
+                </td>
+                <td>
+                  <p>撰寫新增至<span class="uitext">活動</span>區段的備註和評語。備註通常與您所採取的動作相關。例如，「嫌犯由保全拘留」、「已將嫌犯交給警方」或「假警報」。<span class="uitext">備註</span>欄位會顯示在視窗底部。</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">活動</span>
+                  </p>
+                </td>
+                <td>
+                  <p>活動會將您處理警報的方式進行摘要。只要您或同事變更警報狀態或優先權、將警報重新指派給其他使用者以及新增備註，都會自動包含於<span class="uitext">活動</span>區段中。</p>
+                  <p class="note">根據 <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS 伺服器的配置，警報可能會包含收到警報時應採取哪些措施的指示。這些指示是在伺服器上定義，作為警報定義的一部分。在這種情況下，當您編輯警報時，畫面上就會自動顯示警報。</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">列印</span>
+                  </p>
+                </td>
+                <td>
+                  <p>可讓您列印包含警報相關資訊的報告，例如警報歷史記錄和警報時間的<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term19">靜態影像<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>一个静态的图像。</span></a> (若影像可用)。</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h3>確認警報<a name="SC_AcknowledgeAnAlarm.htm"></a></h3>
+          <p>當您收到警報時，您可以確認並記錄即將採取之行動。</p>
+          <p>步驟：</p>
+          <ol>
+            <li value="1">
+              <p>在警報清單中，用滑鼠右鍵按一下警報，然後選取<span class="uitext">確認</span>。警報狀態更改為<span class="uitext">正在進行中</span>。</p>
+              <p class="note">您僅能承認新警報。</p>
+            </li>
+            <li value="2">您可同時確認多個警報，只要按住 <span class="uitext">CTRL</span> 鍵再選取您要確認的警報。</li>
+            <li value="3">點兩下警報以編輯警報詳情，例如將警報分配給特定對象並附加說明。</li>
+          </ol>
+        </div>
+        <div>
+          <h3>
+            <a name="Disable"></a>停用所選事件類型的所有新警報</h3>
+          <p>如果事件觸發了錯誤警報，您可能想要將此類型事件的所有新警報停用一段時間。</p>
+          <p>例如，若攝影機周圍有大量移動而產生許多假警報，您可停用此攝影機的移動偵測 10 分鐘。此外，攝影機移動偵測觸發警報的時間不會持續 10 分鐘。這樣，錯誤警報便不會中斷您，您可以關注需要注意的警報。</p>
+          <p class="important">停用警報會影響連接至 <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS 系統的所有操作員 (也包含您)。</p>
+          <p>您可以使用<span class="uitext">警報管理器</span>或地圖停用所有新警報。</p>
+          <ol>
+            <li value="1">
+              <p>使用<span class="uitext">警報管理器</span>：在警報清單中，以右鍵按一下警報並選取<span class="uitext">停用所有新警報</span>。</p>
+              <p>使用地圖：以右鍵按一下警報並選取<span class="uitext">停用所有新警報</span> &gt; <span class="uitext">停用</span>。</p>
+              <p>顯示<span class="uitext">停用所有新警報</span>視窗。</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_disablealarmsoneventtypes.png" data-mc-popup-alt="Disable alarms based on event types in XProtect Smart Client.">
+                  <img class="MCPopupThumbnail img" data-mc-width="459" data-mc-height="790" src="../../../Images/sc_disablealarmsoneventtypes_thumb_200_0.png" style="max-width: 400px;mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Disable alarms based on event types in XProtect Smart Client." tabindex="" />
+                </a>
+              </p>
+            </li>
+            <li value="2">在<span class="uitext">不會觸發警報的事件</span>清單 <img src="../../../Images/1.png" alt="" /> 中，選取不得觸發警報的具體事件類型。</li>
+            <li value="3">指定所選事件類型不得觸發警報 <img src="../../../Images/2.png" alt="" /> 的等待時間或時長。</li>
+            <li value="4">或者，對您為何停用所選事件類型的警報新增備註 <img src="../../../Images/3.png" alt="" />。</li>
+          </ol>
+        </div>
+        <div>
+          <h3>忽略地圖上的警報<a name="SC_IgnoreAnAlarm.htm"></a></h3>
+          <p>您可在一段時間內，忽略地圖上某元件的警報。例如，若某攝影機正在修理所以中斷連線，您可在修理期間忽略地圖上顯示的錯誤。當您忽略地圖上的警報時，並不會從警報清單中移除警報，只會從地圖上移除。</p>
+          <p>
+            <img src="../../../Images/sc_ignorealarmonmap.png" alt="Ignore alarms on maps in XProtect Smart Client." />
+          </p>
+        </div>
+        <div>
+          <h3>關閉警報<a name="SC_CloseAlarms.htm"></a></h3>
+          <p>一般在確認警報後，您會將其分配給負責調查情況的人。在此期間，警報將處於<span class="uitext">進行中</span>的狀態。處理警報後，您可以關閉它。</p>
+          <p>要關閉警報，在<span class="uitext">警報列表</span>以下列任一方法執行：</p>
+          <ul>
+            <li>右鍵點選警報並選擇<span class="uitext">關閉</span>。</li>
+            <li>點兩下警報，在<span class="uitext">狀態</span>列表選擇<span class="uitext">關閉</span>。</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <h2>列印警報報告<a name="SC_PrintAReportWithAlarm.htm"></a></h2>
+        <p>您可以列印警報相關資訊的報告，包含警報歷史記錄和自警報觸發時間起的靜態影像 (若有的話)。若您在警報清單中選取多個警報，則無法使用這項功能。</p>
+        <p>步驟：</p>
+        <ol>
+          <li value="1">在警報清單中，用滑鼠右鍵按一下警報。</li>
+          <li value="2">選取<span class="uitext">列印</span>。畫面上會出現視窗。</li>
+          <li value="3">如需新增附註，請在<span class="uitext">附註</span>欄位中輸入文字。</li>
+          <li value="4">按一下<span class="uitext">列印</span>按鈕。</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_GetAlarmStatistics"></a>獲取警報統計</h2>
+        <p>透過以下方式獲取在 <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS 系統中觸發的警報統計資料：</p>
+        <ul>
+          <li>
+            <span class="uitext">過去 24 小時</span>
+          </li>
+          <li>
+            <span class="uitext">過去 7 天</span>
+          </li>
+          <li>
+            <span class="uitext">過去 30 天</span>
+          </li>
+          <li>
+            <span class="uitext">過去 6 個月</span>
+          </li>
+          <li>
+            <span class="uitext">去年</span>
+          </li>
+        </ul>
+        <p>
+          <span class="uitext">警報報告</span>視窗顯示兩種圖表，圖表中顯示依照類別篩選的警報數目，例如<span class="uitext">優先權</span>或<span class="uitext">狀態</span>，便於您並排比較這些圖表。</p>
+        <p>步驟：</p>
+        <ol>
+          <li value="1">在<span class="uitext">警報清單</span>中，按一下<span class="uitext">報告</span>按鈕。畫面上會出現視窗。</li>
+          <li value="2">在圖表上，選取時間範圍，例如<span class="uitext">過去 24 小時</span>。</li>
+          <li value="3">在<span class="uitext">選取報告</span>清單中，選取其中一個類別：<ul><li><span class="uitext">類別</span></li><li><span class="uitext">狀態</span></li><li><span class="uitext">優先權</span></li><li><span class="uitext">关闭的原因</span></li><li><span class="uitext">站台</span></li><li><span class="uitext">反應時間</span></li></ul></li>
+          <li value="4">針對每個圖表，選取一個子篩選。例如，如果選取了<span class="uitext">狀態</span>，可以在第一個圖表中選取<span class="uitext">新增</span>，並在第二個圖表中選取<span class="uitext">正在進行中</span>。已填入圖表。</li>
+          <li value="5">若要將圖表列印為 PDF 報告，請按一下 <img src="../../../Images/sc_printalarmstatisticsicon.png" alt="" />。</li>
+        </ol>
+        <p>
+          <a name="SC_ViewAlarmReports.htm"></a>
+        </p>
+      </div>
+      <div>
+        <h2>地圖上的警報（說明）<a name="SC_AlarmsOnMaps.htm"></a></h2>
+        <p>若您的警報處理檢視包含一個或多個地圖位置，亦可在地圖上檢視警報。 地圖會根據攝影機、伺服器或觸發警報的其他裝置之地理位置顯示警報，讓您立即瞭解警報源於何處。您可以右鍵按一下，並直接在地圖上承認、停用或抑制警報。</p>
+        <p>將滑鼠停留在攝影機元件上面時，會以縮圖格式顯示視訊。若搭配警報使用，發生警報時，地圖上的圖形元件會顯示紅色圓圈。例如，若發生與特定相機相關的警報，代表該相機的圖形元件會立即以紅色圓圈圈起，您即可點選相機元件，並且不僅能檢視該相機的視訊，還可透過出現的功能表處理警報。</p>
+        <p class="tip">若您覺得在地圖上以紅色代表警報不理想，可變更此顏色。</p>
+        <p>現在，假設發生警報的某攝影機位於街道層級的地圖上，但您正在檢視城市層級的地圖。您該如何注意到此警報？ 這時，熱區即可派上用場，這是將不同地圖階層連結起來的圖形化顯示畫面。若在街道層級的地圖上偵測到警報，城市層級地圖的危險區會變成紅色，表示即使中間有多個地圖層級，較低層級地圖中也有警報。</p>
+        <p>若要回到可檢視多種元件的警報的警報清單模式，請按一下警報清單中的所需伺服器、優先權或狀態。</p>
+      </div>
+      <div>
+        <h2>
+          <a name="Alarms"></a>智慧地圖上的警報 (說明)</h2>
+        <p>智慧地圖在裝置觸發警報且裝置新增至智慧地圖時顯示警報。另請參閱<a href="../ff_map/sc_configuringmaps.htm#SC_AddingDeletingOrEditi_1.htm" class="MCXref xref">在智慧地圖上新增、刪除或編輯裝置</a>。</p>
+      </div>
+      <p>如需有關智慧地圖圖示的更多資訊，請參閱 <a href="../../standard_features/sf_sc/sf_operation/sc_searchingadditionalinfo.htm#Camera" class="MCXref xref">相機圖示 (說明)</a>。</p>
+      <div>
+        <h2>事件（說明）<a name="SC_Events.htm"></a></h2>
+        <p>事件是 <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS 系統上預先定義的事件，可設定來觸發警報。事件可以是預先定義的系統事件或使用者定義的事件 (例如，分析事件或一般事件)。事件不一定要連結至警報，但可以連結。</p>
+        <p>一般而言，事件是自動且於背景啟動的，例如，來自外部感測器、偵測到移動或其他應用程式的資料等輸入的結果。但是，也可手動啟動事件。VMS 系統使用事件來觸發動作，如開始或停止錄影、變更視訊設定、啟動<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term33">輸出<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>计算机输出的数据。在 IP 监控系统上，输出频繁用于触发各种设备，如门、警报、闪光灯等。</span></a>，或合併幾項動作。 從 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 啟動事件時，會自動在 VMS 系統上觸發動作，例如在特定攝影機以特定<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term14">影格速率<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>一種表示移動視訊內含資訊量的度量方法。通常以 FPS (每秒影格數) 進行度量。</span></a>錄製特定時間長度。</p>
+        <p>您的系統管理員會決定您手動啟動事件時會發生的操作。</p>
+        <div>
+          <h3>手動啟動事件<a name="SC_ManuallyActivateAnEve.htm"></a></h3>
+          <p>可選事件的清單依照與<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term11">事件<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>監視系統上發生的預先定義事件，監視系統使用事件來觸發動作。根據監視系統的設定而定，事件可能是由外部感測器的輸入、偵測到的移動、接收自其他應用程式的資料或是使用者手動輸入所觸發。發生事件時可讓攝影機以特定的影格速率進行錄影、啟動輸出內容、傳送電子郵件，或是一次執行上述所有動作。</span></a>相關的伺服器、攝影機或裝置來組成群組。您可以手動啟動事件。一旦啟動事件之後，不會有確認訊息。</p>
+          <ol>
+            <li value="1">在<span class="uitext">即時</span>標籤上，展開<span class="uitext">事件</span>窗格。</li>
+            <li value="2">點選<span class="uitext">啟動</span>。</li>
+            <li value="3">或若可供攝影機使用，請在滑鼠移到影像上時按一下出現的<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term34">覆蓋按鈕<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>在将鼠标光标移至实时选项卡上的视图中单独摄像机位置上方时，以图层形式显示在视频上的按钮。使用覆盖按钮时，可以触发扬声器、事件、输出，移动 PTZ 摄像机，开始记录，清除摄像机的信号等。</span></a>。</li>
+          </ol>
+          <p class="note">全域事件會分層顯示在相關伺服器之下。以紅色圖示 列出的伺服器無法使用，您無法在該伺服器上啟動事件。</p>
+        </div>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">概念資訊</p>
+        <p class="containerItem_container_0">
+          <a href="sc_configuringalarmsandevents.htm">警報和事件 (設定)</a>
+        </p>
+        <p class="referenceHeading_reference_0">交叉參考資料</p>
+        <p class="referenceItem_reference_0">
+          <a href="sc_faq_alarms.htm">常見問題集：警報</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

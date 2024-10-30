@@ -1,0 +1,561 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="de-DE" xml:lang="de-DE" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="Konfiguration" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Configure views in XProtect Smart Client to view video from cameras and other types of content." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Administrator" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Integrator" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Bediener" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Ansichten (Konfiguration)</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#standard_features/sf_sc/sf_configuration/sc_configuringviews.htm">Topic mit Navigation öffnen</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>Ansichten (Konfiguration)</h1>
+      <p>Im Einrichtungsmodus können Sie Ansichten erstellen und angeben, welche Kameras oder sonstigen Inhalte zu jeder Ansicht gehören sollen. Um Ihre Ansichten zu organisieren müssen Sie mindestens eine Ansichtsgruppe erstellen. Dies erfolgt oft durch Ihren Systemadministrator.</p>
+      <p class="note">Ob Sie Ansichten und Gruppen bearbeiten dürfen, hängt von Ihren Benutzerberechtigungen ab. Wenn Sie die Ansicht oder Gruppe erstellen können, können Sie sie auch bearbeiten. </p>
+      <div>
+        <h2>
+          <a name="SC_ViewsExplained"></a>Ansichten und Ansichtsgruppen (Erklärung)</h2>
+        <p>Die Art und Weise, wie ein Video in <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> dargestellt wird, wird eine Ansicht genannt. <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> kann eine uneingeschränkte Anzahl von Ansichten verwalten, sodass Sie zwischen Video von verschiedenen Gruppen von Kameras wechseln können. Ansichten können zwischen einer und 100 Kameras enthalten, sie können jedoch auch Inhalte anderer Art enthalten, z.B. Bilder und Text. </p>
+        <p>Ansichten müssen Teil von Ansichtsgruppen sein, mit deren Hilfe Sie Ihre Ansichten organisieren können.</p>
+        <p>Ansichten stehen auf dem Registerkarten <span class="uitext">Live</span> und <span class="uitext">Wiedergabe</span> zur Verfügung. Ansichten können als private oder allgemeine Ansichten vorliegen:</p>
+        <div>
+          <ul>
+            <li>Der Zugriff auf Private Ansichten ist nur durch den Benutzer möglich, der sie erstellt hat. Um die Ansicht privat zu machen, erstellen Sie sie in dem <span class="uitext">Privaten</span> Ordner</li>
+            <li>Anhand geteilter Videos können mehrere Bediener die gleichen Ansichten teilen. Je nach Ihrem <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS-System: <ul><li>Es kann einen Standardordner für freigegebene Ansichten geben, der <span class="uitext">Geteilte</span> oder <span class="uitext">Standardgruppe genannt wird</span></li><li>Können geteilte Videos von allen Bediener geteilt werden, oder der Zugriff auf ausgewählte, geteilte Ansichten kann bestimmten Bedienern gewährt werden. In der Regel können nur einige wenige Personen in einer Organisation geteilte Ansichten erstellen und bearbeiten, z.B. die Systemadministratoren</li></ul></li>
+          </ul>
+          <p class="note">Nicht alle Benutzer haben Zugriff auf alle Kameras im <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS-System. Bestimmte Funktionen, die Sie in Ihrer gemeinsamen Ansicht einschließen, werden in früheren Versionen des <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> möglicherweise nicht unterstützt. Achten Sie stets darauf, dass die Benutzer, mit denen Sie Inhalte teilen möchten, die notwendigen Rechte haben und dieselbe <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> Version verwenden, wie Sie selbst.</p>
+        </div>
+        <p>Ihre Benutzereinstellungen, einschließlich der Informationen zu Ihren Ansichten, werden zentral auf dem <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS-Server gespeichert, damit Sie Ihre Ansichten auf jedem Computer verwenden können, auf dem <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> installiert ist.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Geschlossen" data-mc-alt2="Öffnen" />Beispiel einer 2x2-Ansicht</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <img src="../../../../Images/views_explained.jpg" alt="2x2 view in XProtect Smart Client." />
+            </p>
+          </div>
+        </div>
+        <div>
+          <h2>
+            <a name="SC_ContentInsideViewsExp.htm"></a>Was kann in Ansichten alles enthalten sein?</h2>
+          <p>Im Einrichtungsmodus können Sie im Bereich <span class="uitext">Systemübersicht</span> die Elemente sehen, die Sie zu Ihren Ansichten hinzufügen können:</p>
+          <p>
+            <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_systemoverview.jpg" data-mc-popup-alt="What can views contain in XProtect Smart Client?">
+              <img class="MCPopupThumbnail img" data-mc-width="295" data-mc-height="609" src="../../../../Images/sc_systemoverview_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="What can views contain in XProtect Smart Client?" tabindex="" />
+            </a>
+          </p>
+          <table cellspacing="3">
+            <col />
+            <col />
+            <thead>
+              <tr>
+                <th>Element</th>
+                <th>Beschreibung</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p>Alarme</p>
+                </td>
+                <td>
+                  <p>Hiermit können Sie eine Liste der Alarme oder eine Alarmvorschau einsehen. Beide Elemente stehen auch auf der Registerkarte <span class="uitext">Alarm Manager</span> zur Verfügung.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>Zugangsmonitor</td>
+                <td>
+                  <p>Zutrittsmonitor - wenn <span class="mc-variable flvar-product.ACMName_XPtm variable">XProtect® Access </span> installiert ist, können Sie in Ihren Ansichten Zutrittsmonitore anzeigen, z. B. für eine bestimmte Tür.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Kameras</p>
+                </td>
+                <td>
+                  <p>Ermöglicht die Anzeige des Videofeeds von einer Live-Kamera oder die Wiedergabe von Videoaufzeichnungen. Die Kameras erscheinen unter dem Seitennamen, der von Ihrem Systemadministrator festgelegt wird.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Karusselle:</p>
+                </td>
+                <td>
+                  <p>Hiermit können Sie mit einer vorgegebenen Geschwindigkeit zwischen Kameras hin- und herschalten.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Hotspots</p>
+                </td>
+                <td>
+                  <p>Hiermit können Sie eine beliebige Kamera mit hoher Auflösung oder Bildwiederholungsfrequenz betrachten, die sich gerade im Fokus befindet.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>HTML-Seiten</p>
+                </td>
+                <td>
+                  <p> Hiermit können Sie eine Internetseite anzeigen, z.B. einen Online-Nachrichtenkanal.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Abbildungen</p>
+                </td>
+                <td>
+                  <p>Hiermit können Sie ein Bild zeigen, z.B. wenn Sie ein Bild eines Verdächtigen weitergeben wollen.</p>
+                </td>
+              </tr>
+              <tr data-mc-conditions="flcts-add-on.xp-lp-content">
+                <td>LPR</td>
+                <td>
+                  <p>Wenn <span class="mc-variable flvar-product.LPRName_XPtm variable">XProtect® LPR</span> installiert ist, können Sie LPR-Kameras zu Ansichten hinzufügen.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Karten</p>
+                </td>
+                <td>Hiermit können Sie einen Geschossplan oder einen geographischen Bereich zeigen.</td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="mc-variable flvar-brand-company.MMName_short variable">Matrix</span>
+                  </p>
+                </td>
+                <td>
+                  <p>Hiermit können Sie eine <span class="mc-variable flvar-brand-company.MMName_short variable">Matrix</span> Position zeigen. Siehe auch <a href="sc_workingwithmatrix_715_.htm#SC_MatrixExplained.htm" class="MCXref xref">Matrix (erklärt)</a>.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Smart Maps </p>
+                </td>
+                <td>
+                  <p>Hiermit können Sie anhand der folgenden Online-Kartendienste auf einer geographischen Weltkarte durch Ihre Kameras navigieren:</p>
+                  <ul>
+                    <li>Bing Maps</li>
+                    <li>Google Maps</li>
+                    <li data-mc-conditions="flcts-features.oem-map-service-content">
+                      <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+                    </li>
+                    <li> OpenStreetMap </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="mc-variable flvar-product.SWName variable">Smart Wall</span> Steuerelemente</p>
+                </td>
+                <td>
+                  <p>Wenn <span class="mc-variable flvar-product.SWName_XP variable">XProtect Smart Wall</span> von Ihrem Systemadministrator konfiguriert wurde, <span class="mc-variable flvar-product.SWName variable">Smart Wall</span> können Sie mit den Steuerelementen Kameras und sonstige Inhalte auf Ihre Videowände übertragen.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Text </p>
+                </td>
+                <td>
+                  <p>Hiermit können Sie Textanzeigen, z.B. wenn Sie anderen Bedienern Anweisungen geben wollen.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="mc-variable flvar-product.TName variable">Transact</span>
+                  <p> </p>
+                </td>
+                <td>
+                  <p>Wenn in Ihrem System <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span> installiert wurde, können Sie Verkaufsstellensysteme gemeinsam mit Kameras hinzufügen.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_CreateAViewGroup.htm"></a>Ansichtsgruppen erstellen</h2>
+        <p>Ihr <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> kann so vorkonfiguriert sein, dass Ansichtsgruppen angezeigt werden, zu denen Sie Ihre Ansichten hinzufügen können. Sie können jedoch Ihre eigenen Ansichtskarten erstellen, um Ihre Ansichten leichter zu organisieren.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Geschlossen" data-mc-alt2="Öffnen" />Beispiel</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Stellen Sie sich vor, Sie hätten in einem Hochhaus Kameras auf zehn verschiedenen Geschossen installiert. Sie beschließen, eine Ansichtsgruppe für jedes Geschoss zu erstellen und diese entsprechend zu benennen: <span class="uitext">Erdgeschosses</span>, <span class="uitext">Erster Stock</span>, <span class="uitext">Zweiter Stock</span> usw.</p>
+          </div>
+        </div>
+        <p>Schritte:</p>
+        <ol>
+          <li value="1">Wählen Sie im Einrichtungs-Modus im Fensterbereich <span class="uitext">Ansichten</span> den <span class="uitext">privaten</span> oder <span class="uitext">allgemeinen</span> Hauptordner, dem Sie eine Gruppe hinzufügen wollen.</li>
+          <li value="2">Klicken Sie auf <span class="uitext">Neue Gruppe erstellen</span>: <p><img src="../../../../Images/create_a_view_group.png" alt="" /></p><p>Es wird eine neue Gruppe mit dem Namen <span class="uitext">Neue Gruppe</span> erstellt.</p></li>
+          <li value="3">Wählen Sie die <span class="uitext">Neue Gruppe</span> aus und klicken Sie darauf, um den Namen zu überschreiben.</li>
+          <li value="4">Nun können Sie in dieser Gruppe Ansichten erstellen.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_CreateView.htm"></a>Ansichten erstellen</h2>
+        <p>Um das Video in <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> anzuzeigen oder wiederzugeben, müssen Sie zunächst eine Ansicht erstellen, in der Sie die gewünschten Kameras hinzufügen.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Geschlossen" data-mc-alt2="Öffnen" />Voraussetzungen </a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Bevor Sie die Ansicht erstellen, benötigen Sie eine Gruppe, in die Sie die Ansicht hinzufügen können. Siehe auch <a href="#SC_CreateAViewGroup.htm" class="MCXref xref">Ansichtsgruppen erstellen</a>.</p>
+          </div>
+        </div>
+        <p>Schritte:</p>
+        <ol>
+          <li value="1">Klicken Sie in der oberen rechten Ecke auf <span class="uitext">Setup</span>, um in den Setup-Modus zu gelangen.</li>
+          <li value="2">Im Bereich <span class="uitext">Ansichten</span> wählen Sie die Ansicht aus, für die Sie hinzufügen möchten.</li>
+          <li value="3">Klicken Sie auf <img src="../../../../Images/create_view.png" alt="" />, um eine neue Ansicht zu erstellen.</li>
+          <li value="4">Wählen Sie ein Layout aus. Die Layouts werden nach ihrem <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term2">Seitenverhältnis<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Höhe-Breite-Verhältnis von Bildern.</span></a> gruppiert und je nachdem, ob sie für den regulären Inhalt oder Inhalt im Hochformat optimiert sind (wo die Höhe größer als die Breite ist). <p><img src="../../../../Images/create_view.jpg" alt="View layouts in XProtect Smart Client." /></p></li>
+          <li value="5">Geben Sie einen Namen für die Ansicht ein. Überschreiben Sie dazu den Standardnamen <span class="uitext">Neue Ansicht</span>.</li>
+          <li value="6"> Klicken Sie erneut auf <span class="uitext">Einrichtung</span>, um den Setup-Modus zu verlassen. Ihre Änderungen werden gespeichert.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_CopyRenameOrDeleteAVi.htm"></a>Kopieren Sie Ansichten oder Gruppen, benennen Sie sie um oder löschen Sie sie</h2>
+        <p>Wenn Sie über eine Ansicht verfügen und diese wiederverwenden wollen, können Sie sie kopieren. Sie können auch eine Ansichtengruppe oder eine private Ansicht zu einer allgemeinen Ansicht kopieren.</p>
+        <p>Schritte:</p>
+        <ol>
+          <li value="1">Wählen Sie im Einrichtungs-Modus im Navigations-Fensterbereich die gewünschte Ansicht aus.</li>
+          <li value="2">Klicken Sie auf <span class="uitext">Kopiere</span>, oder drücken Sie <span class="uitext">STRG</span>+<span class="uitext">C</span>. <p><img src="../../../../Images/copy_rename_or_delete_a_view.png" alt="" /></p></li>
+          <li value="3">Navigieren Sie an die Stelle, an der Sie die Ansicht einfügen möchten, und wählen Sie <span class="uitext">Einfügen</span>, oder drücken Sie <span class="uitext">STRG</span>+<span class="uitext">V</span>. <p><img src="../../../../Images/copy_rename_or_delete_a_view_1.png" alt="" /></p><p class="tip">Sie können die Ansicht auch auswählen und dann in einen anderen Ordner ziehen.</p></li>
+          <li value="4">Die kopierte Ansicht hat standardmäßig denselben Namen wie das Original, gefolgt von einer (2). Um den Namen zu ändern, klicken Sie mit der rechten Maustaste und wählen Sie <span class="uitext">Umbenennen</span> aus.<p><img src="../../../../Images/copy_rename_or_delete_a_view_2.png" alt="" /></p></li>
+          <li value="5">Um eine Ansicht zu löschen, klicken Sie mit der rechten Maustaste und wählen Sie <span class="uitext">Löschen</span> aus. <p><img src="../../../../Images/copy_rename_or_delete_a_view_3.png" alt="" /></p></li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_AddingContentToViews.htm"></a>Kameras und andere Elemente zu Ansichten hinzufügen</h2>
+        <p>Sie können zu Ihren Ansichten verschiedene Arten von Elementen hinzufügen, z.B. Kameras. Siehe auch <a href="#SC_ContentInsideViewsExp.htm" class="MCXref xref">Was kann in Ansichten alles enthalten sein?</a></p>
+        <p>Schritte: </p>
+        <ol>
+          <li value="1">Öffnen Sie die Ansicht, die Sie verändern möchten.</li>
+          <li value="2"> Klicken Sie auf <span class="uitext">Setup</span>, um in den Setup-Modus zu wechseln. </li>
+          <li value="3">
+            <p>Ziehen Sie im Fensterbereich <span class="uitext">Systemübersicht</span> das benötigte Element auf ein Ansichtselement. </p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_systemoverview.jpg" data-mc-popup-alt="What can views contain in XProtect Smart Client?">
+                <img class="MCPopupThumbnail img" data-mc-width="295" data-mc-height="609" src="../../../../Images/sc_systemoverview_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="What can views contain in XProtect Smart Client?" tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="4">Tragen Sie alle zusätzlichen Informationen zum Element ein.</li>
+          <li value="5"> Klicken Sie erneut auf <span class="uitext">Einrichtung</span>, um den Setup-Modus zu verlassen. Ihre Änderungen werden gespeichert.</li>
+        </ol>
+      </div>
+      <p class="note">Weitere Informationen finden Sie unter <a href="#SC_AddingContentToViewsDetailed" class="MCXref xref">Zu Ansichten Inhalte hinzufügen (im Detail)</a>.</p>
+      <div>
+        <h2>
+          <a name="SC_AssignAShortcutNumber.htm"></a>Ansichten Tastenkombinationen zuweisen</h2>
+        <p>Sie können Ansichten Kurzkastennummern zuordnen, damit die Benutzer Ansichten mithilfe von Standardkurztastenbefehlen auswählen können (siehe <a href="../sf_operation/sc_workingwithnavelements.htm#SC_KeyboardShortcutsExpl.htm" class="MCXref xref">Tastaturkurzbefehle (Übersicht)</a>).</p>
+        <ol>
+          <li value="1"> Klicken Sie auf <span class="uitext">Setup</span>, um in den Setup-Modus zu wechseln. </li>
+          <li value="2">Wählen Sie im Fensterbereich <span class="uitext">Ansichten</span> die Ansicht, der Sie eine Tastenkombination zuweisen wollen.</li>
+          <li value="3">Geben Sie im Feld <span class="uitext">Tastenkombination</span> eine Tastenkombination ein und drücken Sie dann die EINGABETASTE. Die Tastenkombination wird nun in Klammern vor dem Namen der Ansicht angezeigt.</li>
+          <li value="4">Wiederholen Sie die Schritte ggf. für weitere Ansichten.</li>
+          <li value="5"> Klicken Sie erneut auf <span class="uitext">Einrichtung</span>, um den Setup-Modus zu verlassen. Ihre Änderungen werden gespeichert.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_AddingContentToViewsDetailed"></a>Zu Ansichten Inhalte hinzufügen (im Detail)</h2>
+        <p>Wie in <a href="#SC_AddingContentToViews.htm" class="MCXref xref">Kameras und andere Elemente zu Ansichten hinzufügen</a> beschrieben, können Sie Kameras und sonstige Elemente zu Ihren Ansichten hinzufügen. Dieser Abschnitt beschreibt eingehender, wie:</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Geschlossen" data-mc-alt2="Öffnen" />Alarme zu Ansichten hinzufügen</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="../../../feature_flags/ff_managealarms/sc_configuringalarmsandevents.htm#SC_AddAlarmsToViews" class="MCXref xref">Alarme zu Ansichten hinzufügen</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Geschlossen" data-mc-alt2="Öffnen" />Kamera zu Ansichten hinzufügen</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Um Video von einer Kamera zu betrachten müssen Sie die Kamera zunächst zu einer Ansicht hinzufügen.</p>
+            <ol>
+              <li value="1">Wählen Sie im Einrichtungs-Modus die Ansicht aus, der eine Kamera zugewiesen werden soll.</li>
+              <li value="2">Erweitern Sie im Fenster <span class="uitext">Übersicht</span> den erforderlichen Server <img src="../../../../Images/add_a_camera_to_a_view.png" alt="" />, um eine Liste mit verfügbaren Kameras von diesem Server anzuzeigen. <p class="note">Wenn ein Server mit einem roten Symbol aufgeführt ist, ist er nicht verfügbar. In diesem Fall können Sie keine Kameras von diesem Server anzeigen.</p></li>
+              <li value="3">
+                <p>Wählen Sie von der Liste die Kamera aus und ziehen Sie sie in die gewünschte Position in der Ansicht. Ein Bild von der Kamera erscheint in der ausgewählten Ansichtsposition. </p>
+                <p class="note">Wenn Bereiche in einer Videoaufzeichnung verschwommen oder ausgegraut sind, liegt das daran, dass Ihr Systemadministrator diese Bereiche <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term55">aus Datenschutzgründen verdeckt hat<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Ein Bereich in der Kameraansicht des Videos wurde unscharf gemacht oder durch ein farbiges Feld verdeckt. Die festgelegten Bereiche sind im Live-, Wiedergabe-, Hotspot-, Karussell-, Smart-Map-, Smart-Search- und Export-Modus in den Clients verschwommen oder verdeckt dargerstellt.</span></a> (siehe <a href="../../../feature_flags/ff_extendedprivacymasking/sc_workingwithprivacymasking.htm#SC_PrivacyMaskingExplain.htm" class="MCXref xref">Privatsphärenausblendung (Erklärung)</a>).</p>
+              </li>
+              <li value="4">Sie können die Kameraeigenschaften (wie Qualität, <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term14">Bildrate<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Ein Maß für den Umfang an Informationen in einem Video mit Bewegung. Wird i. d. R. in FPS (Frames Per Second, Bilder pro Sekunde) gemessen.</span></a> usw.) im Fenster <span class="uitext">Eigenschaften</span> festlegen. Weitere Informationen finden Sie unter <a href="sc_configuringcamerasettings.htm#SC_CameraSettings.htm" class="MCXref xref">Kamera-Einstellungen</a>.</li>
+              <li value="5">Wiederholen Sie die obigen Schritte für jede Kamera, die Sie hinzufügen möchten.</li>
+              <li value="6">Um mehrere Kameras zu einer Ansicht hinzuzufügen, z. B. alle Kameras aus einem Kamera-Ordner, ziehen Sie den gewünschten Ordner in die Ansicht. Achten Sie darauf, dass in der Ansicht ausreichend viele Positionen verfügbar sind.</li>
+            </ol>
+            <p class="tip">Sie können leicht ändern, welche Kameras zu Ihrer Ansicht gehören, indem Sie eine andere Kamera in diese Position ziehen.</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Geschlossen" data-mc-alt2="Öffnen" />Karussell zu Ansichten hinzufügen</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="sc_configuringcarousels.htm#SC_AddCarouselToViews.htm" class="MCXref xref">Karussell zu Ansichten hinzufügen</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Geschlossen" data-mc-alt2="Öffnen" />Bilder zu Ansichten hinzufügen</a>
+            <a name="SC_AddImageToViews.htm"></a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Sie können Standbilder in einer Ansicht anzeigen. Dies ist beispielsweise hilfreich, wenn Sie eine Momentaufnahme eines Verdächtigen oder ein Diagramm von Notausgängen teilen wollen.</p>
+            <p>Schritte:</p>
+            <ol>
+              <li value="1"> Klicken Sie auf <span class="uitext">Setup</span>, um in den Setup-Modus zu wechseln. </li>
+              <li value="2">
+                <p>Ziehen Sie im Bereich <span class="uitext">Systemübersicht</span> das Element <span class="uitext">Bild</span> auf ein Ansichtselement. Ein Fenster wird angezeigt.</p>
+                <p>
+                  <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_addimagetoview.jpg" data-mc-popup-alt="Add images to views in XProtect Smart Client.">
+                    <img class="MCPopupThumbnail img" data-mc-width="306" data-mc-height="946" src="../../../../Images/sc_addimagetoview_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add images to views in XProtect Smart Client." tabindex="" />
+                  </a>
+                </p>
+              </li>
+              <li value="3">Suchen und wählen Sie dann die Bilddatei aus, die Sie hinzufügen möchten.</li>
+              <li value="4">Klicken Sie auf <span class="uitext">Öffnen</span>. Das Bild erscheint jetzt innerhalb des Ansichtselements.</li>
+              <li value="5">Um das Bild für andere zugänglich zu machen, die nicht auf den Speicherort der Bilddatei zugreifen können, klicken Sie auf dem <span class="uitext">Eigenschaft</span> sfenster, auf <span class="uitext">Einbetten</span>. Die Datei wird im System gespeichert.</li>
+              <li value="6"> Klicken Sie erneut auf <span class="uitext">Einrichtung</span>, um den Setup-Modus zu verlassen. Ihre Änderungen werden gespeichert.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Geschlossen" data-mc-alt2="Öffnen" />Hotspots zu Ansichten hinzufügen</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="sc_configuringhotspots.htm#SC_AddHotspotToViews.htm" class="MCXref xref">Hotspots zu Ansichten hinzufügen</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Geschlossen" data-mc-alt2="Öffnen" />Maps zu Ansichten hinzufügen</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="sc_configuringmaps.htm#SC_AddMapToViews.htm" class="MCXref xref">Maps zu Ansichten hinzufügen</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Geschlossen" data-mc-alt2="Öffnen" />Smart Maps zu Ansichten hinzufügen</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="../../../feature_flags/ff_map/sc_configuringmaps.htm#SC_AddSmartMapToView.htm" class="MCXref xref">Hinzufügen einer Smart Map zu Ansichten</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Geschlossen" data-mc-alt2="Öffnen" />Text zu Ansichten hinzufügen</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Sie können zu einem oder mehreren Ansichtselementen innerhalb einer Ansicht Text hinzufügen. Dies ist beispielsweise nützlich, wenn Sie eine Meldung oder Anweisungen an Anwender senden oder einen Arbeitsplan für das Sicherheitspersonal veröffentlichen möchten. Sie können bis zu 1.000 Zeichen verwenden.</p>
+            <p>Schritte:</p>
+            <ol>
+              <li value="1"> Klicken Sie auf <span class="uitext">Setup</span>, um in den Setup-Modus zu wechseln. </li>
+              <li value="2">Ziehen Sie im Fensterbereich <span class="uitext">Systemübersicht</span> das <span class="uitext">Text</span>-Element auf das Ansichtselement, in dem der Text erscheinen soll. Ein Fenster wird angezeigt.</li>
+              <li value="3">Geben Sie den Text ein.</li>
+              <li value="4">Klicken Sie auf <span class="uitext">Speichern</span>.</li>
+              <li value="5">Um Ihren Text zu ändern, nachdem Sie ihn gespeichert haben, klicken Sie im Setup-Modus auf <span class="uitext">Text editieren</span> im <span class="uitext">Eigenschaften</span>-Fenster.</li>
+            </ol>
+            <div>
+              <p class="note">Sie können Tabellen aus Produkten wie Microsoft Word und Microsoft Excel einfügen, diese jedoch nicht verändern. </p>
+            </div>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Geschlossen" data-mc-alt2="Öffnen" />
+            </a>
+            <a name="Add"></a>
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Internetseiten zu Ansichten hinzufügen</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Sie können Internetseiten zu Ansichten hinzufügen, z.B. HTML-, PHP- oder ASP-Seiten. Dies ist z.B. dann nützlich, wenn Sie online Anweisungen geben oder die Internetseiten einer Firma zusammen mit Kameras oder sonstigen Inhalten zeigen wollen.</p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/add_html_page_to_view_or_1.jpg" data-mc-popup-alt="Add webpages to views in XProtect Smart Client to display web context next to video feeds.">
+                <img class="MCPopupThumbnail img" data-mc-width="1320" data-mc-height="854" src="../../../../Images/add_html_page_to_view_or_1_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add webpages to views in XProtect Smart Client to display web context next to video feeds." tabindex="" />
+              </a>
+            </p>
+            <p>Schritte:</p>
+            <ol>
+              <li value="1">Öffnen Sie die Ansicht, die Sie verändern möchten.</li>
+              <li value="2"> Klicken Sie auf <span class="uitext">Setup</span>, um in den Setup-Modus zu wechseln. </li>
+              <li value="3">Ziehen Sie im Bereich <span class="uitext">Systemübersicht</span> das Element <span class="uitext">HTML-Seite</span> auf eines der Ansichtselemente. Ein Fenster wird angezeigt.<p><img src="../../../../Images/add_html_page_to_view_or_1.png" alt="Enter URL when adding webpage to views in XProtect Smart Client." /></p></li>
+              <li value="4">
+                <p>Geben Sie in das Feld <span class="uitext">Öffnen</span> die Adresse der Internetseite ein.</p>
+                <p class="important">Um eine Internetseite zu nutzen, die auf Ihrem lokalen Computer, im Netzwerk oder auf einem FTP-Server gespeichert ist, vergewissern Sie sich, dass der Anzeigemodus in den Eigenschaften der Internetseite auf <span class="uitext">Kompatibilität</span> gestellt ist. Siehe <a href="#Web" class="MCXref xref">Eigenschaften von Internetseiten </a>. Andernfalls erhalten Sie eine Fehlermeldung. Siehe <a href="../sf_troubleshooting/sc_troubleshootinghtmlpages.htm" class="MCXref xref">Internetseiten (Fehlersuche)</a>.</p>
+              </li>
+              <li value="5">Klicken Sie auf <span class="uitext">OK</span>.</li>
+              <li value="6">Erweitern Sie das Fenster <span class="uitext">Eigenschaften</span>, um die Eigenschaften festzulegen.</li>
+              <li value="7"> Klicken Sie erneut auf <span class="uitext">Einrichtung</span>, um den Setup-Modus zu verlassen. Ihre Änderungen werden gespeichert.</li>
+            </ol>
+            <p class="note">Im Einrichtungsmodus können Sie die Internetseite nicht navigieren. </p>
+            <h3>
+              <a name="Web"></a>Eigenschaften von Internetseiten </h3>
+            <table cellspacing="3">
+              <col />
+              <col style="width: 376px;" />
+              <thead>
+                <tr>
+                  <th>
+                    <p>Name</p>
+                  </th>
+                  <th>
+                    <p>Beschreibung</p>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">Bearbeiten</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>Geben Sie eine neue URL oder einen neuen Dateispeicherort der Internetseite an.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">Anzeigemodus</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>Wählen Sie den Browser Engine aus, der zum Rendern der Internetseite verwendet werden soll. Es stehen zwei Optionen zur Verfügung:</p>
+                    <ul>
+                      <li>
+                        <span class="uitext">Standard</span> - diese Einstellung verwendet Microsoft Edge. Wählen Sie <span class="uitext">Standard</span>, wenn sich die Internetseite auf einem Internetserver befindet und entweder HTTP oder HTTPS als Netzwerkprotokoll verwendet wird.</li>
+                      <li>
+                        <span class="uitext">Kompatibilität</span> - diese Einstellungen verwendet Internet Explorer. Wählen Sie <span class="uitext">Kompatibilität</span>, wenn die Internetseite:<ul><li> es ist lokal gespeichert</li><li>verwendet andere Netzwerkprotokolle als HTTP und HTTPS</li><li>enthält Skripte zur Interaktion mit <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span></li><li>verwendet eine ältere Version von HTML</li></ul></li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">Skalierung</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>Wählen Sie die Skalierung der Internetseite aus. Die optimale Skalierung hängt vom Inhalt der importierten Internetseite ab, sowie davon, wie Sie diese angezeigt haben wollen </p>
+                    <p class="note">Diese Einstellung steht nur im <span class="uitext">Kompatibilitätsmodus</span> zur Verfügung.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">Werkzeugleiste verbergen</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>Aktivieren Sie das Kontrollkästchen, um die über jeder importierten Internetseite eingeschobene Navigationsleiste zu verbergen.</p>
+                    <p>
+                      <img src="../../../../Images/set_properties_for_html_page.png" alt="" />
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Geschlossen" data-mc-alt2="Öffnen" />Overlay-Schaltflächen zu Ansichten hinzufügen</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Sie können Lautsprecher, Ereignisse, <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term33">Ausgänge<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Die von einem Computer gesendeten Daten. In IP-Überwachungssystemen wird der Ausgang häufig zum Aktivieren von Geräten wie Toren, Sirenen, Stroboskopleuchten usw. verwendet.</span></a> u. v. m. mithilfe von <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term34">Overlay-Schaltflächen<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Eine Schaltfläche, die als Ebene über einem Video eingeblendet wird, wenn Sie den Mauszeiger über einzelne Kamerapositionen in Ansichten der Registerkarte Live bewegen. Mithilfe von Overlay-Schaltflächen können Lautsprecher, Ereignisse oder Ausgänge aktiviert, PTZ-Kameras bewegt, Aufzeichnungen gestartet, Signale von Kameras gelöscht werden.</span></a> aktivieren. Diese werden angezeigt, wenn Sie mit der Maus über die jeweiligen Kamerapositionen in den Ansichten auf der Registerkarte <span class="uitext">Live</span> fahren.</p>
+            <p>Sie können so viele Schaltflächen hinzufügen, wie Sie benötigen.</p>
+            <ol>
+              <li value="1"> Klicken Sie auf <span class="uitext">Setup</span>, um in den Setup-Modus zu wechseln. </li>
+              <li value="2">Wählen Sie im Bereich <span class="uitext">Overlay-Schaltflächen</span> die Aktion aus und ziehen Sie sie auf das Element der Kameraansicht.</li>
+              <li value="3">Wenn Sie die Maus loslassen, wird die Overlay-Schaltfläche angezeigt. Ziehen Sie zum Skalieren der Schaltfläche an den angezeigten Ziehgriffen. <p><img src="../../../../Images/add_an_overlay_button_to_a.jpg" alt="" /></p></li>
+              <li value="4">Zum Ändern des Textes der Overlay-Schaltfläche klicken Sie doppelt auf den Text, überschreiben Sie diesen, und aktivieren Sie dann das Kontrollkästchen <img src="../../../../Images/add_an_overlay_button_to_a.png" alt="" />, um zu speichern. Um den Vorgang rückgängig zu machen, klicken Sie auf die Abbrechen-Schaltfläche <img src="../../../../Images/add_an_overlay_button_to_a_1.png" alt="" />. Wenn Sie speichern, wird der Text auf der Schaltfläche auf die größtmögliche Größe skaliert.</li>
+              <li value="5"> Klicken Sie erneut auf <span class="uitext">Einrichtung</span>, um den Setup-Modus zu verlassen. Ihre Änderungen werden gespeichert.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <p>
+        <a name="SC_AssignAShortcutNumber.htm"></a>
+      </p>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Konzept-Informationen</p>
+        <p class="containerItem_container_0">
+          <a href="../sf_operation/sc_workingwithviews.htm">Ansichten verwalten</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

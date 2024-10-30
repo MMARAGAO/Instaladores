@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="cs-CZ" xml:lang="cs-CZ" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="Konfigurace" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Create scripts to control the login procudure and switch between views in XProtect Smart Client." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Vývojář" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Vedoucí vývoje" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Skriptování</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#standard_features/sf_sc/sf_configuration/sc_configuringloginthroughscripting.htm">Open topic with navigation</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>Skriptování</h1>
+      <div>
+        <h2>Skriptování pro přihlášení (vysvětlení)<a name="SC_StartupScripting.htm"></a></h2>
+        <p>Pro ovládání části nebo celého procesu přihlašování do aplikace <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> lze použít skriptování.</p>
+        <ul>
+          <li>Pokud používáte <span class="uitext">Základní ověřování</span> nebo <span class="uitext">Ověřování systému Windows</span>, můžete nastavit otevření okna přihlašování do aplikace <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> s předvyplněnými poli adresy serveru a uživatelského jména, aby uživatelům stačilo k přihlášení zadat pouze heslo.</li>
+          <li>Pokud používáte <span class="uitext">Ověřování systému Windows (aktuální uživatel)</span>, můžete nechat aplikaci <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> připojit k zabezpečovacímu systému automaticky na základě stávajícího přihlášení uživatele do systému Windows.</li>
+        </ul>
+        <div class="important">
+          <p>Skriptování procesu přihlašování na základě <span class="uitext">Základního ověření</span> nebo <span class="uitext">Ověření systému Windows</span> vyžaduje, abyste nezašifrované citlivé informace přidávali do souboru SCS, který uložíte místně do programových souborů <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>:</p>
+          <ul>
+            <li>Název hostitele</li>
+            <li>UserName</li>
+            <li>Heslo</li>
+          </ul>
+          <p>Ukládání nezašifrovaných informací může ohrozit zabezpečení vašeho systému nebo dodržování GDPR. Čtení informací v SCS souboru:</p>
+          <ul>
+            <li>Kýmkoli, kdo má přístup k souboru</li>
+            <li>V paměťové stopě aplikace <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> spuštěné souborem SCS nebo na příkazovém řádku, který poskytuje uživatelské jméno a heslo</li>
+          </ul>
+          <p>
+            <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> doporučuje, byste používali <span class="uitext">ověření systému Windows (současný uživatel)</span>. Pokud musíte provést <span class="uitext">základní ověření</span> nebo <span class="uitext">ověření systému Windows</span>, měli byste omezit přístup k souboru SCS.</p>
+        </div>
+      </div>
+      <div>
+        <h2>Skriptování pro přihlášení – parametry<a name="SC_Scripting_Parameters.htm"></a></h2>
+        <p>Můžete použít následující parametry:</p>
+        <p>ServerAddress</p>
+        <p>Odkazuje na adresu URL serveru pro správu, ke kterému se aplikace <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> připojuje.</p>
+        <p>Následující příklad znázorňuje okno přihlášení do aplikace <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> s textem <span class="citationtext">http://ourserver</span> v poli <span class="uitext">Adresa serveru</span>:</p>
+        <p class="codechunk">Client.exe -ServerAddress="http://ourserver"</p>
+        <p>Výchozím typem ověřování je <span class="uitext">Ověřování systému Windows (aktuální uživatel)</span>. Pokud toto nastavení pomocí parametru <span class="uitext">AuthenticationType</span> (popsaného v následující části) nezměníte, přihlašovací okno bude automaticky zobrazovat jméno aktuálního uživatele systému Windows v poli <span class="uitext">Uživatelské jméno</span>.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />UserName</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Týká se konkrétního uživatelského jména.</p>
+            <p>Následující příklad znázorňuje okno přihlášení do aplikace <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> s textem <span class="citationtext">http://ourserver</span> v poli <span class="uitext">Adresa serveru</span> a <span class="specialbold">Tommy</span> v poli <span class="uitext">Uživatelské jméno</span>:</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -UserName="Tommy"</p>
+            <p class="note">Tento parametr je relevantní pouze pro metody ověřování <span class="uitext">Ověřování systému Windows</span> a <span class="uitext">Základní ověřování</span>. Parametr <span class="uitext">Typ ověření</span> slouží k nastavení, která metoda ověřování se použije.</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Heslo</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Týká se konkrétního hesla.</p>
+            <p>Následující příklad znázorňuje okno přihlášení do aplikace <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> s textem <span class="citationtext">http://ourserver</span> v poli <span class="uitext">Adresa serveru</span>, <span class="specialbold">Tommy</span> v poli <span class="uitext">Uživatelské jméno</span> a <span class="specialbold">T0mMy5Pa55w0rD</span> v poli <span class="uitext">Heslo</span>:</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -UserName="Tommy" -Password="T0mMy5Pa55w0rD"</p>
+            <p class="note">Tento parametr je relevantní pouze pro metody ověřování <span class="uitext">Ověřování systému Windows</span> a <span class="uitext">Základní ověřování</span>. Parametr <span class="uitext">Typ ověření</span> slouží k nastavení, která metoda ověřování se použije.</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Typ ověření</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Znamená jednu ze tří možných metod ověření v aplikaci <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>: <span class="uitext">Ověření systému Windows (aktuální uživatel)</span> (ve spouštěcích skriptech nazývaná <span class="uitext">WindowsDefault</span>), <span class="uitext">Ověření systému Windows</span> (ve spouštěcích skriptech nazývaná <span class="uitext">Windows</span>) nebo <span class="uitext">Základní ověření</span> (ve spouštěcích skriptech nazývaná <span class="uitext">Simple</span>).</p>
+            <p>Následující příklad znázorňuje okno přihlášení do aplikace <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> s textem <span class="citationtext">http://ourserver</span> v poli <span class="uitext">Adresa serveru</span>, výběrem <span class="uitext">Základní ověření</span> v poli <span class="uitext">Ověření</span>, <span class="specialbold">Tommy</span> v poli <span class="uitext">Uživatelské jméno</span> a <span class="specialbold">T0mMy5Pa55w0rD</span> (znázorněné hvězdičkami) v poli <span class="uitext">Heslo</span>:</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -UserName="Tommy" -Password="T0mMy5Pa55w0rD" -AuthenticationType="Simple"</p>
+            <p>Pokud používáte <span class="uitext">Ověřování systému Windows</span>, příklad vypadá takto:</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -UserName="Tommy" -Password="T0mMy5Pa55w0rD" -AuthenticationType="Windows"</p>
+            <p>Pokud používáte <span class="uitext">Ověřování systému Windows (aktuální uživatel)</span>, parametry <span class="uitext">UserName</span> a <span class="uitext">Password</span> nejsou nutné a příklad vypadá takto:</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -AuthenticationType="WindowsDefault"</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Script</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Odkazuje na úplnou cestu ke skriptu .scs (typ skriptu určený k řízení aplikace <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>).</p>
+            <p>Níže uvedený příklad využívá pro přihlášení skript .scs:</p>
+            <p class="codechunk">Client.exe -Script=c:\startup.scs</p>
+            <p>Příklad skriptu .scs pro přihlášení k adrese <span class="citationtext">http://ourserver</span> pomocí aktuálního uživatele systému Windows:</p>
+            <p class="codechunk">&lt;ScriptEngine&gt;</p>
+            <p class="codechunk"> &lt;Login&gt;</p>
+            <p class="codechunk">   &lt;ServerAddress&gt;http://ourserver&lt;/ServerAddress&gt;</p>
+            <p class="codechunk">   &lt;AuthenticationType&gt;WindowsDefault&lt;/AuthenticationType&gt;</p>
+            <p class="codechunk"> &lt;/Login&gt;</p>
+            <p class="codechunk">&lt;/ScriptEngine&gt;</p>
+            <p>Můžete použít řadu volání funkcí aplikace <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> (viz téma Zobrazení seznamu volání funkcí) pro přidání dalších funkcí ke skriptům .scs. V následujícím příkladu je do skriptu .scs z předchozího příkladu přidán řádek, který slouží k minimalizaci aplikace <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>:</p>
+            <p class="codechunk">&lt;ScriptEngine&gt;</p>
+            <p class="codechunk"> &lt;Login&gt;</p>
+            <p class="codechunk">   &lt;ServerAddress&gt;http://ourserver&lt;/ServerAddress&gt;</p>
+            <p class="codechunk">   &lt;AuthenticationType&gt;WindowsDefault&lt;/AuthenticationType&gt;</p>
+            <p class="codechunk"> &lt;/Login&gt;</p>
+            <p class="codechunk"> &lt;Script&gt;SCS. Application.Minimize();&lt;/Script&gt;</p>
+            <p class="codechunk">&lt;/ScriptEngine&gt;</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Formát</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Platné parametry formátu jsou následující:</p>
+            <p class="codechunk">{-,/,--}param{ ,=,:}((".')value(",'))</p>
+            <p>Příklady:</p>
+            <p class="codechunk">-UserName Tommy</p>
+            <p class="codechunk">--UserName Tommy /UserName:"Tommy" /UserName=Tommy -Password 'Tommy'</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_UseAnHTMLPageForNavig.htm"></a>Skriptování stránky HTML pro navigaci</h2>
+        <p>Pomocí skriptů můžete vytvářet stránky HTML, které vám umožní přepínat mezi náhledy. HTML stránky je možné přidat k vaším náhledům, aby se zobrazovaly společně s videem z vašich kamer.</p>
+        <p>Příklad: Na HTML stránku můžete vložit plán podlaží budovy reagující na kliknutí, takže operátoři mohou jen kliknout na část plánu podlaží pro okamžité přepnutí na náhled zobrazující video z požadované části budovy. </p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Požadavky</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <ul>
+              <li>Pokud váš <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> systém VMS system podporuje profily <span class="mc-variable flvar-product.SC variable">Smart Client</span>, musíte aktivovat HTML skriptování na odpovídajících profilech <span class="mc-variable flvar-product.SC variable">Smart Client</span> v <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>.</li>
+              <li>Pokud váš systém <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS nepodporuje profily <span class="mc-variable flvar-product.SC variable">Smart Client</span>, musíte aktivovat HTML skriptování v souboru <span class="uitext">Client.exe.config</span>.</li>
+            </ul>
+          </div>
+        </div>
+        <p>Níže uvidíte příklady stránek HTML pro navigaci <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>:</p>
+        <ul>
+          <li> Jednoduchá HTML stránka s tlačítky</li>
+          <li>Rozšířenější HTML stránka s obrazovou mapou, na kterou lze kliknout</li>
+          <li>Kontrolní seznam pro správce systému, který uvádí úkoly, které jsou součástí tvorby a distribuce HTML stránek <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> operátorům</li>
+        </ul>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Příklad HTML stránky pro navigaci pomocí tlačítek</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Velmi rychlým řešením je vytvoření stránky HTML s tlačítky pro navigaci. Na stránce HTML můžete vytvořit širokou škálu tlačítek. V tomto příkladu vytvoříme jen dva typy tlačítek:</p>
+            <ul>
+              <li>
+                <span class="specialbold">Tlačítka pro přepínání mezi náhledy aplikace <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span></span>
+                <p>Požadovaná syntaxe HTML:</p>
+                <p class="codechunk">&lt;input type="button" value=" Buttontext" onclick="SCS. Views.SelectView('Viewstatus.Groupname. Viewname');"&gt;</p>
+                <p>Kde parametr <span class="uitext">Viewstatus</span> značí, zda je náhled sdílený nebo soukromý (pokud má být stránka HTML rozeslána více uživatelům, <span class="specialbold">musí</span> být náhled sdílený).</p>
+                <p>Příklad skutečného tlačítka:</p>
+                <p class="codechunk">&lt;input type="button" value="Go to Shared Group1 View2" onclick="SCS. Views.SelectView('Shared.Group1. View2');"&gt;</p>
+                <p>Toto tlačítko umožní uživatelům přechod na náhled nazvaný <span class="uitext">Náhled2</span> ve sdílené skupině nazvané <span class="uitext">Skupina1</span>.</p>
+                <p>
+                  <span class="specialbold">Tlačítka pro přepínání mezi kartami</span>: <span class="uitext">Živý obraz</span> a <span class="uitext">Přehrávání</span> Berte v potaz, že uživatelé v závislosti na svých uživatelských právech nemusí mít přístup ke všem kartám.</p>
+                <p>Požadovaná syntaxe HTML:</p>
+                <p>
+                  <span class="uitext">Karta Živý obraz</span>: <code class="codesnippet">&lt;input type="button" value="Buttontext" onclick="SCS. Application.ShowLive();"&gt;</code></p>
+                <p>
+                  <span class="uitext">Karta Přehrávání</span>: <span class="codesnippet">&lt;input type="button" value="Buttontext" onclick="SCS. Application.ShowBrowse();"&gt;</span></p>
+              </li>
+            </ul>
+            <p class="tip">Pokročilí uživatelé mohou vytvořit mnoho dalších typů tlačítek pomocí přibližně 100 různých volání funkcí, které jsou k dispozici pro aplikaci <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. </p>
+            <p>Níže jsme v aplikaci <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> vytvořili dvě sdílené skupiny. Nazvali jsme je <span class="uitext">Group1</span> a <span class="uitext">Group2</span>. Každá skupina obsahuje dva náhledy nazvané <span class="uitext">View1</span> a <span class="uitext">View2</span>.</p>
+            <p>Vytvořili jsme také HTML stránku s tlačítky, která uživatelům umožňují přepínat mezi čtyřmi různými náhledy i mezi dvěma kartami aplikace <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>: <span class="uitext">Živý obraz</span> a <span class="uitext">Přehrávání</span>. Při prohlížení v prohlížeči vypadá HTML stránka následovně:</p>
+            <p>
+              <img src="../../../../Images/use_an_html_page_for_navigation.png" alt="" />
+            </p>
+            <p>HTML stránka s tlačítky pro navigaci mezi náhledy a kartami</p>
+            <p>HTML stránku jsme uložili lokálně, v tomto případě na disk C. Pokud se pro navigaci používá stránka HTML, je lokální uložení HTML stránky nezbytné pro její otevření v režimu kompatibility. Viz také <a href="sc_configuringviews.htm#Web" class="MCXref xref">Vlastnosti webové stránky </a>.</p>
+            <p>Při lokálním ukládání HTML stránky ji uložte na místo, ke kterému lze nadefinovat jednoznačnou cestu, například do složky na disku C: (například: C:\ myfolder\file.htm). Uložení HTML stránky na plochu uživatele nebo do složky <span class="uitext">Moje dokumenty</span> uživatele nebude fungovat řádně kvůli způsobu, jakým Windows vytvářejí cesty k takovým umístěním.</p>
+            <p>Poté importujeme HTML stránku do požadovaných náhledů aplikace <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Příklad HTML stránky pro navigaci pomocí obrazové mapy</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Můžete také vytvořit HTML stránku s pokročilejším obsahem, například obrazovou mapou, která uživatelům umožňuje přepínat mezi náhledy.</p>
+            <p>V následujícím příkladu jsme ponechali dvě skupiny a dva náhledy z předchozího příkladu. Místo použití tlačítek jsme vytvořili HTML stránku s obrázkem plánu podlaží a na základě plánu podlaží jsme vytvořili obrazovou mapu. Při prohlížení v prohlížeči vypadá HTML stránka následovně:</p>
+            <p>
+              <img src="../../../../Images/use_an_html_page_for_navigation_2.png" alt="" />
+            </p>
+            <p>HTML stránka s obrazovou mapou pro navigaci mezi náhledy</p>
+            <p>Pro tento příklad jsme plán podlaží rozdělili na čtyři barevné zóny a pro jednotlivé zóny jsme definovali oblasti obrazové mapy. Uživatelé mohou kliknout na zónu, aby se přesunuli na náhled zobrazující kamery z příslušné zóny.</p>
+            <p>Například červená zóna na naší obrazové mapě odráží tlačítko <span class="uitext">Přejít na náhled View2 sdílené skupiny Group2</span> z předchozího příkladu. Po kliknutí na červenou zónu se přesunete na <span class="uitext">Náhled2</span> ve <span class="uitext">Skupina2</span>.</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Import HTML stránky</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Import HTML stránky pro navigaci do náhledu se v podstatě neliší od importu jakéhokoliv jiného typu HTML stránky do náhledu v aplikaci <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Viz <a href="sc_configuringviews.htm#Add" class="MCXref xref">Přidání webových stránek do náhledů</a>. </p>
+            <div class="note">
+              <ul>
+                <li>HTML stránka by měla být uložena lokálně na PC operátora.</li>
+                <li>Pokud má navigace správně fungovat, může být vhodné naimportovat HTMP stránku do více náhledů.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Kontrolní seznam správce systému</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Pokud chcete vytvořit a distribuovat HTML stránky pro operátory <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>, postupujte následovně:</p>
+            <ol>
+              <li value="1">
+                <span class="specialbold">Vytvořit</span> požadovanou HTML stránku. Ovladače navigace na HTML stránce musí odpovídat náhledům, které uživatelé vidí ve své aplikaci <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Chcete-li například zprovoznit tlačítko pro <span class="uitext">Náhled1</span>, náhled nazvaný <span class="uitext">Náhled1</span> musí v uživatelských instalacích aplikace <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> existovat. Chcete-li stránku HTML distribuovat mezi skupinu uživatelů, musíbýt náhledy, které budou tuto stránku HTML používat, umístěny ve sdílených skupinách.</li>
+              <li value="2">
+                <span class="specialbold">Uložit</span> HTML stránku lokálně do jednotlivých počítačů, ve kterých se bude používat. Při lokálním ukládání HTML stránky ji uložte na místo, ke kterému lze nadefinovat jednoznačnou cestu, například do složky na disku C: (například: C:\ myfolder\file.htm). Uložení HTML stránky na plochu uživatele nebo do složky <span class="uitext">Moje dokumenty</span> uživatele nebude fungovat řádně kvůli způsobu, jakým Windows vytvářejí cesty k takovým umístěním.</li>
+              <li value="3">
+              Proveďte <span class="specialbold">Import</span> HTML stránky do požadovaných náhledů v <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Viz <a href="sc_configuringviews.htm#Add" class="MCXref xref">Přidání webových stránek do náhledů</a>. </li>
+              <li value="4">
+                <span class="specialbold">Vyzkoušejte</span>, zda ovládací prvky navigace na importované HTML stránce fungují tak, jak mají.</li>
+            </ol>
+            <p class="note">Informace o řešení potíží naleznete na <a href="../sf_troubleshooting/sc_troubleshootinghtmlpages.htm" class="MCXref xref">Webové stránky (řešení problémů)</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Concept Information</p>
+        <p class="containerItem_container_0">
+          <a href="../sf_operation/sc_loggingin_366_.htm">Přihlašování</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

@@ -1,0 +1,810 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="es-ES" xml:lang="es-ES" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="Configuración" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Configure smart map in XProtect Smart Client to get a geographical overview of your cameras, devices, and plug-in elements - in a one world experience." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=Recording Server" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Administrador" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Integrador" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Operador" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Plano inteligente (configuración)</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#feature_flags/ff_map/sc_configuringmaps.htm">Abrir tema con navegación</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Rutas de navegación" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>Plano inteligente (configuración)</h1>
+      <p>Antes de poder aprovechar las características del plano Inteligente, debe seguir ciertas tareas de configuración en <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>.</p>
+      <p>Solo puede ver su plano Inteligente si se ha añadido a una vista. Consulte también <a href="#SC_AddSmartMapToView.htm" class="MCXref xref">Añadir plano inteligente a vistas</a>. </p>
+      <p class="note">Si desea más información, consulte <a href="sc_workingwithmap.htm#SC_SmartMapExplained.htm" class="MCXref xref">Plano Inteligente (explicación)</a>.</p>
+      <div>
+        <h2>Diferencias entre planos y planos inteligentes (explicación)<a name="SC_DifferencesBetweenMap.htm"></a></h2>
+        <p>
+          <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> ofrece funciones de plano que pueden ayudarle a visualizar su sistema de vigilancia y responder rápidamente a los incidentes.</p>
+        <ul>
+          <li>
+            <span class="uitext">Planos</span> - se basan en imágenes fijas que no poseen referencias geográficas. Puede añadir dispositivos como cámaras, micrófonos y servidores de grabación. También puede añadir alarmas, eventos y controles de acceso que le permiten interactuar con su sistema de vigilancia directamente desde el plano. Debe posicionar manualmente los elementos de funciones y dispositivos en el plano. Si desea más información, consulte <a href="../../standard_features/sf_sc/sf_operation/sc_workingwithmaps.htm#SC_IntroductionToMaps(796).htm" class="MCXref xref">Planos (explicación)</a></li>
+          <li>
+            <span class="uitext">Plano Inteligente</span> - este tipo de plano usa un sistema de información geográfica para reflejar con precisión la geografía en el mundo real. Esto puede darle un resumen general más exacto de sus cámaras en varias ubicaciones. También puede:<ul><li>Utilice los servicios de Bing Maps y Google Maps</li><li data-mc-conditions="flcts-features.oem-map-service-content">Utilice el <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> como entornos geográficos</li><li>Utilice el proyecto de plano de OpenStreetMap como entornos geográficos</li><li>Añadir dibujos de diseño asistido por ordenador (CAD), siluetas, e imágenes como sobreposiciones</li></ul><p> Si desea más información, consulte <a href="sc_workingwithmap.htm#SC_SmartMapExplained.htm" class="MCXref xref">Plano Inteligente (explicación)</a></p></li>
+        </ul>
+        <p class="note">Las funciones de planos y plano inteligentes no son intercambiables. Si usa las funciones de planos, puede usar el archivo de imagen como un plano inteligente, pero debe añadir los dispositivos de nuevo. No puede transferir planos con dispositivos a un plano inteligente. Pero puede enlazar un plano inteligente a planos. Si desea más información, consulte <a href="#SC_AddingDeletingOrEditi_2.htm" class="MCXref xref">Añadir, eliminar o editar enlaces en un Plano Inteligente</a>.</p>
+      </div>
+      <div>
+        <h2>Añadir plano inteligente a vistas<a name="SC_AddSmartMapToView.htm"></a></h2>
+        <p>Empiece a utilizar un <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">plano inteligente<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Funcionalidad de planos que utiliza un sistema de información geográfica para visualizar los dispositivos (por ejemplo, cámaras y micrófonos), estructuras y elementos topográficos de un sistema de vigilancia en imágenes geográficamente precisas del mundo real. Los planos que usan elementos de esta funcionalidad se denominan planos inteligentes.</span></a> añadiéndolo a una vista. De manera predeterminada se muestra el plano básico. Después de añadir el plano inteligente, puede cambiar el entorno geográfico.</p>
+        <p>Pasos:</p>
+        <ol>
+          <li value="1">En la pestaña <span class="uitext">Directo</span> o <span class="uitext">Reproducción</span>, seleccione la vista que quiere añadir el plano Inteligente.</li>
+          <li value="2"> Haga clic en <span class="uitext">Configuración</span> para entrar en el modo de configuración. </li>
+          <li value="3">Amplíe el panel de <span class="uitext">Información general del sistema</span> y, a continuación, arrastre el elemento del <span class="uitext">plano inteligente</span> a la posición correspondiente dentro de la vista.</li>
+          <li value="4"> Haga clic en <span class="uitext">Configuración</span> de nuevo para salir del modo de configuración. Sus cambios están guardados.</li>
+          <li value="5">Ahora puede cambiar el entorno geográfico. </li>
+        </ol>
+      </div>
+      <div>
+        <h2>Cambio de entornos geográficos en planos inteligentes<a name="SC_ChangeTheGeographicBa.htm"></a></h2>
+        <p>De manera predeterminada, el mapamundi básico muestra cuando añade un plano inteligente a una vista. Después de haber añadido el plano inteligente a una vista, puede seleccionar un fondo geográfico diferente. Cada usuario que usen el plano inteligente verán el nuevo entorno cuando vuelvan a mostrar esta vista.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Cerrado" data-mc-alt2="Abierto" />Requisitos</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Los entornos geográficos de Bing Maps y Google Maps están disponibles solo si su administrador de sistema los ha puesto a disposición en <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>.</p>
+          </div>
+        </div>
+        <p>Pasos:</p>
+        <ol>
+          <li value="1">Seleccione la vista que posee el Plano Inteligente.</li>
+          <li value="2">En la barra de herramientas, haga clic en <img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">Mostrar u ocultar capas y sobreposiciones personalizadas</span>.</li>
+          <li value="3">En <span class="uitext">Entornos geográficos</span>, seleccione el entorno y el tipo de detalle que quiere visualizar. Por ejemplo, si quiere ver la información topográfica, seleccione <span class="uitext">Terreno</span>. Si quiere ver las carreteras, seleccione <span class="uitext">Carreteras</span>.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>Entornos geográficos (explicación)<a name="SC_GeographicBackgrounds.htm"></a></h2>
+        <p>Puede utilizar los siguientes servicios como entorno geográfico de su <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">plano inteligente<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Funcionalidad de planos que utiliza un sistema de información geográfica para visualizar los dispositivos (por ejemplo, cámaras y micrófonos), estructuras y elementos topográficos de un sistema de vigilancia en imágenes geográficamente precisas del mundo real. Los planos que usan elementos de esta funcionalidad se denominan planos inteligentes.</span></a>:</p>
+        <ul>
+          <li>Bing Maps</li>
+          <li>Google Maps</li>
+          <li data-mc-conditions="flcts-features.oem-map-service-content">
+            <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+          </li>
+          <li> OpenStreetMap </li>
+        </ul>
+        <p>Una vez seleccionado el fondo geográfico, se añaden los dispositivos, por ejemplo las cámaras, y las superposiciones personalizadas, por ejemplo las siluetas. Si desea más información, consulte <a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">Sobreposiciones personalizadas (explicación)</a>.</p>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Tipos de entornos geográficos (explicación)<a name="SC_TypesOfGeographicBack.htm"></a></h2>
+        <p>Después de haber añadido un <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">plano inteligente<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Funcionalidad de planos que utiliza un sistema de información geográfica para visualizar los dispositivos (por ejemplo, cámaras y micrófonos), estructuras y elementos topográficos de un sistema de vigilancia en imágenes geográficamente precisas del mundo real. Los planos que usan elementos de esta funcionalidad se denominan planos inteligentes.</span></a> a una vista, puede usar uno de los siguientes entornos geográficos:</p>
+        <ul>
+          <li>
+            <span class="uitext">Mapamundi básico</span> - Usa el entorno geográfico estándar proporcionado en <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Este plano está diseñado para usar como referencia general, y no posee funciones como límites de países, ciudades u otros detalles. Sin embargo, como los otros entornos geográficos, no posee datos de geo-referencia.</li>
+          <li>
+            <span class="uitext">Bing Maps</span> - Conectado a Bing Maps.</li>
+          <li>
+            <span class="uitext">Google Maps</span> - Conectado a Google Maps. <p class="note">Las opciones de Bing Maps y Google Maps requieren acceso a Internet, y debe adquirir una clave de Microsoft o Google.</p></li>
+          <div data-mc-conditions="flcts-features.oem-map-service-content">
+            <li>
+              <span class="uitext">
+                <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+              </span> - conecta a un proveedor de planos gratuito. Después de habilitarlo <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>, no es necesaria ninguna otra configuración.</li>
+            <p>Consulte <a href="#Enable">Habilitar Milestone Map Service</a></p>
+          </div>
+          <div>
+            <li>
+              <p>
+                <span class="uitext">OpenStreetMap</span> conecta a:</p>
+              <ul>
+                <li>Un servidor de archivos comerciales de su elección</li>
+                <li>
+                  <p>Su propio servidor local de archivos</p>
+                </li>
+              </ul>
+              <p>Consultar <a href="#SC_ChangeOpenstreetmapTi.htm">Cambio de servidores de fichas de OpenStreetMap</a></p>
+            </li>
+          </div>
+          <li>
+            <span class="uitext">Nada</span> - esta opción oculta el entorno geográfico. Tenga en cuenta que los datos de geo-referencia permanecen allí. Consulte también <a href="#SC_LayersOnSmartMapExpla.htm" class="MCXref xref">Capas de un Plano Inteligente (explicación)</a></li>
+        </ul>
+        <p>De manera predeterminada, Bing Maps y Google Maps muestran imágenes del satélite. Puede cambiar las imágenes, por ejemplo de aéreas a de terreno, para ver los diferentes detalles.</p>
+      </div>
+      <div data-mc-conditions="flcts-features.oem-map-service-content">
+        <h2>
+          <a name="Enable"></a>Habilitar <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span></h2>
+        <p>
+          <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> es un servicio en línea con el que puede conectarse a un servidor de archivos de <span class="mc-variable flvar-brand-company.CompanyLong variable">Milestone Systems</span>. Este servidor de archivos utiliza un servicio de planos gratuito y disponible en el mercado. </p>
+        <p>Después de que habilite <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> en su plano inteligente, el plano inteligente lo utiliza <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> como su entorno geográfico.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Cerrado" data-mc-alt2="Abierto" />Requisitos</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Si el campo <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> se muestra en gris, no tiene los derechos de usuario necesarios para activar o desactivar el servicio. Contacte con su administrador de sistemas para ayudarle a habilitar la función en <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>.</p>
+            <p class="important">
+              <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> requiere acceso a Internet.</p>
+          </div>
+        </div>
+        <p>Pasos:</p>
+        <ol>
+          <li value="1">
+            <p>En la esquina superior izquierda, haga clic en <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> y, a continuación, en <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">Configuración</span> para abrir la ventana <span class="uitext">Configuración</span>.</p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_configuringmaps_mmapserv.png" data-mc-popup-alt="Enable Milestone Map Service.">
+                <img class="MCPopupThumbnail img" data-mc-width="786" data-mc-height="593" src="../../../Images/sc_configuringmaps_mmapserv_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Enable Milestone Map Service." tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="2">A la izquierda, haga clic en <span class="uitext">Plano Inteligente</span>.</li>
+          <li value="3">En el campo <span class="uitext mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>, seleccione <span class="uitext">Disponible</span>.</li>
+          <li value="4">Haga clic en <span class="uitext">Cerrar</span>. La próxima vez que cargue su plano inteligente, utiliza <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> como el entorno geográfico.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>Servidor de archivos de OpenStreetMap (explicación)<a name="SC_ChangingOpenstreetmap.htm"></a></h2>
+        <p>Si utiliza OpenStreetMap como el entorno geográfico para su plano inteligente, debe especificar un servidor de archivos. Puede especificar un servidor de archivos local, por ejemplo, si su organización tiene sus propios planos para zonas como aeropuertos y puertos, o puede utilizar un servidor de archivos comercial.</p>
+        <p class="note">Para utilizar un servidor local de fichas, no se necesita acceso a Internet.</p>
+        <p>La dirección del servidor de archivos se puede especificar de dos maneras:</p>
+        <ul>
+          <li>Con <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> - El usuario escribe la dirección del servidor de mosaicos en los perfiles de <span class="mc-variable flvar-product.SC variable">Smart Client</span>. La dirección del servidor se aplica a todos los <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> usuarios asignados a los perfiles de <span class="mc-variable flvar-product.SC variable">Smart Client</span></li>
+          <li>Con <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> - establece el servidor de mosaicos en el cuadro de diálogo <span class="uitext">Ajustes</span>. La dirección del servidor se aplica solamente a esa instalación</li>
+        </ul>
+        <div>
+          <h2>Cambio del servidor de archivos de OpenStreetMap<a name="SC_ChangeOpenstreetmapTi.htm"></a></h2>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Cerrado" data-mc-alt2="Abierto" />Requisitos</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>Si el servidor de fichas especificado en el lado del servidor se ha bloqueado para la edición, el campo aparece en gris y no se puede cambiar la dirección del servidor. Contacte con su administrador de sistemas para ayudarle a habilitar la función en <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>.</p>
+            </div>
+          </div>
+          <p>Pasos:</p>
+          <ol>
+            <li value="1">
+              <p>En la esquina superior izquierda, haga clic en <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> y, a continuación, en <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">Configuración</span> para abrir la ventana <span class="uitext">Configuración</span>.</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_mapsettings.png" data-mc-popup-alt="Specify alternative tile server for the smart map.">
+                  <img class="MCPopupThumbnail img" data-mc-width="786" data-mc-height="593" src="../../../Images/sc_mapsettings_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Specify alternative tile server for the smart map." tabindex="" />
+                </a>
+                <br />
+              </p>
+            </li>
+            <li value="2">A la izquierda, haga clic en <span class="uitext">Plano Inteligente</span>.</li>
+            <li value="3">En el campo <span class="uitext">servidor OpenStreetMap</span>, realice una de las siguientes acciones: <ul><li>Especifique la dirección del servidor. Si el campo está en gris, ha sido bloqueado del lado del servidor</li><li>Para utilizar el servidor especificado en el lado del servidor, si lo hay, seleccione la casilla <span class="uitext">Seguir al servidor</span></li></ul></li>
+            <li value="4">Haga clic en <span class="uitext">Cerrar</span>. La próxima vez que cargue su plano inteligente, utilizará el servidor OpenStreetMap que ha especificado.</li>
+          </ol>
+          <p class="important">Si no se especifica ninguna dirección del servidor, o la dirección del servidor es inválida, entonces OpenStreetMap no está disponible como fondo geográfico.</p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Mostrar u ocultar capas en un Plano Inteligente<a name="SC_ShowingOrHidingLayers.htm"></a></h2>
+        <p>Puede activar y desactivar capas en su plano Inteligente dependiendo de lo que quiera ver.</p>
+        <div>
+          <h3>Capas de un Plano Inteligente (explicación)<a name="SC_LayersOnSmartMapExpla.htm"></a></h3>
+          <p>Use las capas para filtrar la información que muestra el <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">plano inteligente<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Funcionalidad de planos que utiliza un sistema de información geográfica para visualizar los dispositivos (por ejemplo, cámaras y micrófonos), estructuras y elementos topográficos de un sistema de vigilancia en imágenes geográficamente precisas del mundo real. Los planos que usan elementos de esta funcionalidad se denominan planos inteligentes.</span></a>. Hay tres tipos de capas en un Plano Inteligente:</p>
+          <ul>
+            <li>
+              <span class="uitext">Elementos del sistema</span> - entre otros, cámaras, enlaces y ubicaciones.</li>
+            <li>
+              <span class="uitext">Sobreposiciones personalizadas</span> - imágenes de mapa de bits, dibujos CAD y archivos de siluetas</li>
+            <li>
+              <span class="uitext">Entornos geográficos</span> - mapamundis básicos o uno de los siguientes servicios:<ul><li>Bing Maps</li><li>Google Maps</li><li data-mc-conditions="flcts-features.oem-map-service-content"><span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span></li><li> OpenStreetMap </li></ul></li>
+          </ul>
+          <p class="note">Bing Maps y Google Maps están disponibles como entornos geográficos solo si su administrador de sistema los ha establecido en <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. Si desea más información, consulte <a href="#SC_GeographicBackgrounds.htm" class="MCXref xref">Entornos geográficos (explicación)</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Orden de capas (explicación)<a name="SC_OrderOfLayersExplaine.htm"></a></h3>
+          <p>Todos los elementos del sistema de cada tipo están en la misma <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term26">capa<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>El entorno geográfico de un Plano Inteligente, una sobreposición personalizada o un elemento del sistema, por ejemplo, una cámara. Las capas son todos los elementos gráficos que existen en un Plano Inteligente.</span></a>. Por ejemplo, todas las cámaras están en la misma capa. Si oculta la capa de la cámara, todas las cámaras se ocultan. De arriba a abajo, las capas de elementos del sistema se organizan en el siguiente orden: zonas, cámaras, enlaces y entornos geográficos. Este orden no se puede cambiar.</p>
+          <p>El entorno geográfico siempre es la capa más inferior en un Plano Inteligente. Puede cambiar entre entornos geográficos, pero puede seleccionar solo uno.</p>
+          <p>Las sobreposiciones personalizadas se añaden como capas separadas, y se almacenan en el pedido en que se añadieron al plano inteligente. Puede volver a organizar el orden configurando los ajustes predeterminados para el plano. </p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Cerrado" data-mc-alt2="Abierto" />Ejemplo</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>Un planificador de ciudad posee un perfil de silueta que muestra los límites de la ciudad y un perfil de silueta que incluye las calles principales dentro de la ciudad. El planificador puede organizar el orden de las capas para las calles se muestren en la parte superior de los límites de la ciudad. Este proporcionar una vista general de dónde están las cámaras en la ciudad, y la posibilidad de acercar el zoom para ver el nombre de la calle en la que está la cámara.</p>
+            </div>
+          </div>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Mostrar u ocultar capas en un Plano Inteligente<a name="SC_ShowOrHideLayersOnSma.htm"></a></h3>
+          <p>Puede mostrar u ocultar capas en su Plano Inteligente, incluyendo el entorno geográfico. Por ejemplo, esto es útil cuando quiere centrarse en un elemento en particular, o simplificar el contenido que muestre el Plano Inteligente.</p>
+          <p>Pasos:</p>
+          <ol>
+            <li value="1">En la barra de herramientas, haga clic en <img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">Mostrar u ocultar capas y sobreposiciones personalizadas</span>.</li>
+            <li value="2">Para mostrar u ocultar elementos del sistema y sobreposiciones personalizadas, seleccione o desmarque las casillas.</li>
+            <li value="3">Para ocultar el entorno geográfico, seleccione <span class="uitext">Nada</span>.</li>
+          </ol>
+          <p class="note">Al seleccionar <span class="uitext">Nada</span> se oculta el entorno geográfico, pero las geo-referencias se siguen aplicando al Plano Inteligente. Por ejemplo, si añade una nueva silueta que contiene una referencia espacial, el sistema sigue utilizando la referencia espacial para colocar el archivo en el mapa.</p>
+          <p class="note">Al ocultar los micrófonos, se silenciará el micrófono no silenciado en ese momento hasta que se vuelvan a mostrar los micrófonos.</p>
+        </div>
+        <div>
+          <h3>Especificar ajustes predeterminados para plano inteligente<a name="SC_ManageDefaultSettings(65803).htm"></a></h3>
+          <p>Después de añadir un Plano Inteligente a una vista y de añadir capas adicionales, cámaras y enlaces, podrá especificar ajustes predeterminados para las sobreposiciones personalizadas. También puede eliminar sobreposiciones personalizadas para llevar a cabo una limpieza.</p>
+          <p>Pasos:</p>
+          <ol>
+            <li value="1">Haga clic en <span class="uitext">Ajustes</span>.</li>
+            <li value="2">Haga clic en <img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">Gestionar ajustes predeterminados</span>.</li>
+            <li value="3">Puede seguir estos pasos: <ul><li>Para mostrar u ocultar una capa, seleccione o desmarque las casilla.</li><li>Para cambiar el orden, utilice la opción de arrastrar delante de la capa para llevarla a otra posición de la lista. Las capas se ordenan de arriba a abajo en la lista.</li><li>Para borrar una sobreposición, pase el puntero por esta y, a continuación, haga clic en <span class="uitext">Eliminar</span>.</li></ul></li>
+            <li value="4">Haga clic en <span class="uitext">Guardar</span>.</li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Agregar, borrar o editar sobreposiciones personalizadas<a name="SC_AddingDeletingOrEditi.htm"></a></h2>
+        <div>
+          <h3>Sobreposiciones personalizadas (explicación)<a name="SC_CustomOverlaysExplain.htm"></a></h3>
+          <p>Puede añadir los siguientes tipos de archivos como sobreposiciones personalizadas en un Plano Inteligente <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>:</p>
+          <ul>
+            <li>
+              <span class="uitext">Archivo de siluetas</span> - puede contener datos vectoriales geo-espaciales, como puntos, líneas, polígonos y atributos que representan objetos en el plano, como muros, calles o detalles geográficos como ríos o lagos. Por ejemplo, los departamentos de planificación urbanística y administración suelen usar archivos de silueta ya que siguen bien la escala cuando se acerca y aleja la imagen, y su tamaño de archivo es menor que los dibujos CAD o las imágenes de mapa de bits</li>
+            <li>
+              <span class="uitext">CAD</span> - un dibujo de diseño asistido por ordenador (CAD) es útil como sobreposición, sobre todo porque, como los archivos de siluetas, los datos CAD pueden usar un sistema de coordenadas y referencia espacial para proporcionar contexto geográfico preciso. Por ejemplo, puede usar un plano aéreo detallado en un plano de calles de una ubicación.</li>
+            <li>
+              <span class="uitext">Imagen</span> - si tiene un archivo de imagen, como el plano de planta de un edificio, puede añadirla como sobreposición en el plano inteligente. Puede usar los siguientes tipos de archivos de imagen: PNG, BMP, GIF, JPG, JPEG, PHG, TIF y TIFF.</li>
+          </ul>
+          <p class="note">Para enfocar las superposiciones personalizadas, puede ocultar temporalmente otros tipos de capas. Consulte <a href="#SC_LayersOnSmartMapExpla.htm" class="MCXref xref">Capas de un Plano Inteligente (explicación)</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Sobreposiciones o ubicaciones personalizadas (explicación)<a name="SC_CustomOverlaysAndLoca.htm"></a></h3>
+          <p>Puede saltar rápidamente a las sobreposiciones personalizadas que usted haya añadido a su plano inteligente, según se explica en <a href="sc_workingwithmap.htm#SC_FindLocationOfCustomO.htm" class="MCXref xref">Saltar a una sobreposición personalizada en un plano inteligente</a>. Sin embargo, en los ajustes, puede establecer una conexión entre las superposiciones personalizadas y las ubicaciones. Esto significa que siempre que usted añade una nueva sobreposición personalizada, <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> crea una ubicación con el mismo nombre que la sobreposición en el mismo lugar del plano. La ubicación de la sobreposición personalizada pasa a estar disponible en la lista <span class="uitext">Seleccionar una ubicación</span>.</p>
+          <p>
+            <img src="../../../Images/custom_overlays_and_locations.jpg" alt="" />
+          </p>
+          <p>La sobreposición y la ubicación no están enlazadas. Por ejemplo, puede eliminar o renombrar la ubicación sin cambiar la sobreposición, y viceversa.</p>
+          <p class="note">Para activar esta función, consulte <a href="#SC_AddLocationsToCustomO.htm" class="MCXref xref">Agregar ubicaciones a sobreposiciones personalizadas (Plano Inteligente)</a>.</p>
+        </div>
+        <div>
+          <h3>Agregar sobreposición personalizada en un Plano Inteligente<a name="SC_AddCustomOverlayOnSma.htm"></a></h3>
+          <p>Aumente el nivel de detalle en su Plano Inteligente añadiendo sobreposiciones personalizadas. Cuando añade una <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term8">sobreposición personalizada<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Elemento gráfico definido por el usuario que éste puede añadir a un plano inteligente, por ejemplo para ilustrar el plano de un edificio o para marcar los límites entre regiones. Una sobreposición personalizada puede ser una imagen, un dibujo CAD o un archivo de forma.</span></a>, <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> crea una ubicación con el mismo nombre que la sobreposición.</p>
+          <p>Pasos:</p>
+          <ol>
+            <li value="1">Seleccione la vista que posee el plano inteligente, y después haga clic en <span class="uitext">Ajustes</span>.</li>
+            <li value="2">Haga clic en <img src="../../../Images/add_custom_overlay_on_1.png" alt="" /><span class="uitext">Añadir una sobreposición personalizada</span>: <ul><li>Si la sobreposición posee geo-referencia, haga clic en cualquier parte del Plano Inteligente. <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> usa la información de la geo-referencia para poner la sobreposición en la zona geográfica correcta. Además, el plano inteligente tiende a centrar la sobreposición a un nivel de zoom predeterminado.</li><li>Si la sobreposición no posee geo-referencia, vaya al punto del plano en el que desee añadir el elemento y, a continuación, haga clic en el punto del plano inteligente</li><p class="tip">Antes de añadir una sobreposición, conviene acercar el zoom a la ubicación en el plano en la que la quiere añadir. Hace más fácil posicionar con precisión la sobreposición.</p></ul></li>
+            <li value="3">Escriba un nombre para la sobreposición.</li>
+            <li value="4">Dependiendo del tipo de archivo, seleccione: <ul><li><span class="uitext">Imagen</span> - Seleccione el archivo de imagen y, a continuación, haga clic en <span class="uitext">Aceptar</span>.</li><li><span class="uitext">Archivo de siluetas</span> - seleccione el archivo SHP. Si tiene un archivo PRJ, <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> lo encontrará y usted puede hacer clic en <span class="uitext">Aceptar</span>. Si no tiene un archivo PRJ, puede reposicionar la sobreposición manualmente cuando la añada. También puede aplicar un color. Por ejemplo, la adición de un color puede suponer que el archivo de silueta destaque más en el plano inteligente.</li><li><span class="uitext">CAD</span> - seleccione el archivo DWG. Si tiene un archivo PRJ, haga clic en <span class="uitext">Aceptar</span>. Si no tiene un archivo PRJ, y quiere usar la geo-referencia para posicionar el archivo en el Plano Inteligente, introduzca el identificador de referencia espacial (SRID) y haga clic en <span class="uitext">Aceptar</span>. Si no tiene un archivo PRJ o un SRID, puede cambiar la posición de la sobreposición manualmente cuando la añada.</li><p class="note">Para más información sobre los tipos de sobreposiciones, consulte <a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">Sobreposiciones personalizadas (explicación)</a>.</p></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Agregar ubicaciones a sobreposiciones personalizadas (Plano Inteligente)<a name="SC_AddLocationsToCustomO.htm"></a></h3>
+          <p>Puede configurar <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> para añadir ubicaciones automáticamente a <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term8">sobreposiciones personalizadas<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Elemento gráfico definido por el usuario que éste puede añadir a un plano inteligente, por ejemplo para ilustrar el plano de un edificio o para marcar los límites entre regiones. Una sobreposición personalizada puede ser una imagen, un dibujo CAD o un archivo de forma.</span></a> en su plano inteligente. Esto le permite saltar a las superposiciones personalizadas a través de la lista <span class="uitext">Seleccionar una ubicación</span>. </p>
+          <p>Pasos:</p>
+          <ol>
+            <li value="1">En la barra de herramientas de la aplicación, haga clic en <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> y, a continuación, en <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">Configuración</span> para abrir la ventana <span class="uitext">Configuración</span>.</li>
+            <li value="2">Vaya a la pestaña <span class="uitext">Plano Inteligente</span>.</li>
+            <li value="3">En la lista <span class="uitext">Crear ubicación cuando se añade una capa</span>, seleccione <span class="uitext">Sí</span>.</li>
+            <li value="4">Cierre la ventana para guardar los cambios realizados.</li>
+          </ol>
+          <p class="note">Si desea más información, consulte <a href="#SC_CustomOverlaysAndLoca.htm" class="MCXref xref">Sobreposiciones o ubicaciones personalizadas (explicación)</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Eliminar una sobreposición personalizada en un Plano Inteligente<a name="SC_DeleteCustomOverlayOn.htm"></a></h3>
+          <ol>
+            <li value="1">Seleccione la vista que posee el plano inteligente, y después haga clic en <span class="uitext">Ajustes</span>.</li>
+            <li value="2">En la barra de herramientas, haga clic en <img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">Gestionar ajustes predeterminados</span>.</li>
+            <li value="3">Pase el puntero sobre la sobreposición personalizada haga clic en <span class="uitext">Eliminar</span>.</li>
+            <li value="4">Haga clic en <span class="uitext">Guardar</span> para eliminar la sobreposición personalizada.</li>
+            <li value="5">Opcional: Si se ha creado una ubicación para la sobreposición personalizada, quizá quiera eliminarla también. Si desea más información, consulte <a href="#SC_AddingDeletingOrEditi_3.htm" class="MCXref xref">Añadir, eliminar o editar ubicaciones en un Plano Inteligente</a>.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Mejorar la visibilidad de zonas en archivos de siluetas (Plano Inteligente)<a name="SC_MakeAreasInShapefiles.htm"></a></h3>
+          <p class="note">Este tema solo es relevante si usted utiliza archivos de siluetas con polígonos.</p>
+          <p>Si desea utilizar un archivo de siluetas en su Plano Inteligente que contenga polígonos en sus inmediaciones, puede que tenga que diferenciar los polígonos entre sí. Puede conseguirlo reduciendo la opacidad del color elegido para el archivo de siluetas. Destacarán los bordes de los polígonos.</p>
+          <p>Pasos:</p>
+          <ol>
+            <li value="1">Seguir los pasos descritos en <a href="#SC_AddCustomOverlayOnSma.htm" class="MCXref xref">Agregar sobreposición personalizada en un Plano Inteligente</a>.</li>
+            <li value="2">
+              <p>Cuando seleccione el color, arrastre el control deslizante <span class="uitext">Opacidad</span> a la izquierda hasta que el nivel de transparencia le parezca bien.</p>
+              <p>
+                <img src="../../../Images/make_areas_in_shapefiles_more.jpg" alt="" />
+              </p>
+            </li>
+            <li value="3">Haga clic en <span class="uitext">Guardar</span>.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Ajuste la posición, el tamaño o la alineación de una sobreposición personalizada<a name="SC_AdjustPositionSizeOrA.htm"></a></h3>
+          <p>Puede mover una sobreposición a un lugar diferente en el plano, hacerla más grande o pequeña y girarla. Por ejemplo, esto es útil si la sobreposición no posee geo-referencia, o la sobreposición tiene geo-referencia pero por algún motivo no se alinea con el entorno geográfico.</p>
+          <p>Pasos:</p>
+          <ol>
+            <li value="1">Seleccione la vista que posee el plano inteligente, y después haga clic en <span class="uitext">Ajustes</span>.</li>
+            <li value="2">Haga clic con el botón secundario en la sobreposición y seleccione <span class="uitext">Modificar posición</span>.</li>
+            <li value="3">Para modificar el tamaño o girar la sobreposición: <ul><li>Haga clic en una esquina de la imagen y arrástrela.</li><li><p>Para girar la sobreposición alrededor de un punto determinado, desplace el punto pivotante hasta ese lugar en el plano. A continuación, haga clic en una esquina de la imagen y arrástrela. </p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/adjust_position_size_or_alignment.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="273" data-mc-height="261" src="../../../Images/adjust_position_size_or_alignment_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="" tabindex="" /></a></p></li></ul></li>
+            <li value="4">Para mover la sobreposición en el plano, haga clic y arrastre la sobreposición.</li>
+            <li value="5">Para guardar los cambios, haga clic en <span class="uitext">Guardar</span>.</li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Añadir, eliminar o editar dispositivos en un plano inteligente<a name="SC_AddingDeletingOrEditi_1.htm"></a></h2>
+        <p>Puede añadir dispositivos a un plano inteligente en sus posiciones actuales en su entorno. Esto proporciona una buena visión genera de su sistema de vigilancia y le ayuda a responder a una situación. Por ejemplo, si quiere seguir a un sospechoso durante un incidente, puede hacer clic en las cámaras del plano para ver la grabación.</p>
+        <p>Después de añadir una cámara a un Plano Inteligente, puede ajustar el campo de visión del icono de la cámara para que refleje el campo de visión de la cámara real. Hace que sea más fácil encontrar la cámara que está cubriendo una zona en particular. Adicionalmente, puede seleccionar un icono para representar la cámara en el plano, que puede ayudarle a identificar el tipo de cámara en el plano.</p>
+        <p>Puedes trabajar con los siguientes tipos de dispositivos en planos inteligentes:</p>
+        <ul>
+          <li>Cámaras</li>
+          <li>Dispositivos de entrada</li>
+          <li>Micrófonos</li>
+        </ul>
+        <div data-mc-conditions="">
+          <h3>Añadir dispositivos a plano inteligente<a name="SC_AddCamerasToSmartMap.htm"></a></h3>
+          <p>Si las coordenadas geográficas del dispositivo han sido especificadas en <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> por su administrador de sistema, el dispositivo se posicionará automáticamente en el plano inteligente cuando lo añada. De lo contrario, deberá posicionarlo usted en su ubicación geográfica exacta.</p>
+          <ol>
+            <li value="1">Seleccione la vista que posee el plano inteligente, y después haga clic en <span class="uitext">Ajustes</span>.</li>
+            <li value="2">Para añadir un dispositivo o un grupo de dispositivos: <p class="tip">Antes de añadir el dispositivo, conviene acercar el zoom a la ubicación en el plano. Hace más fácil posicionar con precisión el dispositivo.</p><ul><li>Amplíe el panel de <span class="uitext">Información general del sistema</span>, busque el dispositivo o el grupo de dispositivos y arrástrelo hasta el punto del plano inteligente en el que desee visualizarlo. Puede arrastrar los dispositivos más adelante para cambiarlas de posición.</li><li>En la barra de herramientas del plano inteligente, seleccione <img src="../../../Images/add-a-device-to-smart-map.png" alt="" /><span class="uitext">Añadir un dispositivo</span> &gt; seleccione un tipo de dispositivo.<ul><li>Ejemplo: En el caso de una cámara, seleccione <img src="../../../Images/add_cameras_to_map.png" alt="" /><span class="uitext">Añadir una cámara</span>, y a continuación seleccione la cámara.</li></ul></li><li>Arrastre el dispositivo al plano inteligente</li><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_adddevice.png" data-mc-popup-alt="Add a device to your smart map."><img class="MCPopupThumbnail img" data-mc-width="709" data-mc-height="823" src="../../../Images/sc_smap_adddevice_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add a device to your smart map." tabindex="" /></a><br /></ul></li>
+            <li value="3">Para guardar el cambio, haga clic en <span class="uitext">Configurar</span> para salir del modo de configuración.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Cambiar el campo de visión de una cámara<a name="SC_ChangeFieldOfViewAndD.htm"></a></h3>
+          <p>Una vez añadida la cámara al Mapa inteligente, puede cambiar el campo de visión y dirección ajustando el símbolo de la cámara.</p>
+          <p class="tip">Si ha alejado la imagen del plano, puede que tenga que acercar la imagen hasta que se muestre el campo de visión.</p>
+          <ol>
+            <li value="1">Seleccione la vista que contiene el plano inteligente con el que quiere trabajar.</li>
+            <li value="2">Haga clic en el botón <span class="uitext">Ajustes</span> para editar el símbolo de la cámara.</li>
+            <li value="3">
+              <p>Haga clic en el símbolo de la cámara.</p>
+              <p>
+                <img src="../../../Images/change_field_of_view_and_direction.png" alt="" />
+              </p>
+            </li>
+            <li value="4">Use la manilla de rotación para alinear la cámara en la dirección adecuada.</li>
+            <li value="5">Para ajustar la anchura, longitud y ángulo del campo de visión, haga clic y arrastre las manillas del borde superior del campo de visión.</li>
+            <li value="6">Para guardar los cambios, haga clic en <span class="uitext">Configuración</span> para salir del modo de configuración.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Seleccione o cambie el icono del dispositivo<a name="SC_SelectOrChangeTheIcon.htm"></a></h3>
+          <p>Puede elegir un símbolo de dispositivo acorde al tipo de dispositivo que está utilizando.</p>
+          <ol>
+            <li value="1">Seleccione la vista que contiene el plano inteligente con el que quiere trabajar.</li>
+            <li value="2">
+              <p>Haga clic en <span class="uitext">Ajustes</span> y doble clic en el símbolo del dispositivo en el plano.</p>
+              <p>
+                <img src="../../../Images/select_or_change_the_icon.png" alt="" />
+              </p>
+            </li>
+            <li value="3">Haga clic en <span class="uitext">Seleccionar icono</span> y después seleccione el dispositivo.</li>
+            <li value="4">Vuelva a hacer clic en <span class="uitext">Ajustes</span> para guardar el cambio realizado.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Mostrar u ocultar la información del dispositivo<a name="SC_ShowOrHideInformation.htm"></a></h3>
+          <p>Puede mostrar u ocultar la información sobre los dispositivos en un plano inteligente. Esto es útil, por ejemplo, cuando quiere aumentar o reducir la cantidad de contenido en su plano inteligente.</p>
+          <ol>
+            <li value="1">Seleccione la vista que contiene el plano inteligente con el que quiere trabajar.</li>
+            <li value="2">Haga clic en <img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">Mostrar u ocultar las capas y las sobreposiciones personalizadas</span>.</li>
+            <li value="3">Seleccione o elimine las casillas de selección para mostrar u ocultar la información.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Escuche el audio del micrófono en el plano inteligente</h3>
+          <p>Después de añadir micrófonos a un plano inteligente, puede escuchar el audio de un micrófono a la vez en la pestaña <span class="uitext">Directo</span>. </p>
+          <p>Pasos:</p>
+          <ol>
+            <li value="1">
+              <p>En la pestaña <span class="uitext">Directo</span>, navegue hasta el lugar del plano inteligente en el que se encuentra el micrófono.</p>
+            </li>
+            <li value="2">
+              <p>Haga doble clic en el micrófono para activarlo o desactivarlo.</p>
+              <p class="tip">Como alternativa, haga clic con el botón derecho del ratón en el micrófono y seleccione <span class="uitext">Silenciar micrófono</span> o <span class="uitext">No silenciar</span>.</p>
+            </li>
+          </ol>
+        </div>
+        <div>
+          <h3>Eliminar dispositivos del plano inteligente<a name="SC_DeletingCamerasOnSmar.htm"></a></h3>
+          <p>Puede eliminar dispositivos, por ejemplo si se han quitado físicamente o se han añadido por error. Al eliminar un dispositivo, la información de posicionamiento del dispositivo, por ejemplo las coordenadas geográficas, son eliminadas de su sistema VMS.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Cerrado" data-mc-alt2="Abierto" />Requisitos</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>Estos derechos de usuario deben estar habilitados en <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>:</p>
+              <ul>
+                <li>Editar planos inteligentes</li>
+                <li>Editar dispositivos</li>
+              </ul>
+            </div>
+          </div>
+          <p>Pasos:</p>
+          <ol>
+            <li value="1">Navegue al dispositivo que quiera quitar.</li>
+            <li value="2"> Haga clic en <span class="uitext">Configuración</span> para entrar en el modo de configuración. </li>
+            <li value="3">
+              <p>Para eliminar un solo dispositivo, haga clic con el botón derecho del ratón en el dispositivo y haga clic en <span class="uitext">Eliminar</span>.</p>
+              <p>Ejemplo: En el caso de una cámara, haga clic en <span class="uitext">Eliminar cámara</span>.</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_removecamera.png" data-mc-popup-alt="Remove camera from your smart map.">
+                  <img class="MCPopupThumbnail img" data-mc-width="284" data-mc-height="209" src="../../../Images/sc_smap_removecamera_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: 0;" alt="Remove camera from your smart map." tabindex="" />
+                </a>
+              </p>
+            </li>
+            <li value="4">Para quitar varias cámaras:<ol><li value="1"><p>En la barra de herramientas del plano inteligente, haga clic en <img src="../../../Images/preview_videos_from_several.png" alt="" /><span class="uitext">Seleccionar múltiples cámaras</span>.</p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_cluster_multiselect.png" data-mc-popup-alt="Select multipe cameras on your smart map."><img class="MCPopupThumbnail img" data-mc-width="1056" data-mc-height="672" src="../../../Images/sc_smap_cluster_multiselect_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: 0;" alt="Select multipe cameras on your smart map." tabindex="" /></a><br /></p></li><li value="2">Haga clic y arrastre para seleccionar varias cámaras. Otros tipos de dispositivos, por ejemplo los de entrada, no están incluidos en la selección.</li><li value="3">Haga clic con el botón derecho y seleccione <span class="uitext">Eliminar cámaras</span>.</li></ol></li>
+            <li value="5">Para eliminar varios dispositivos que no son cámaras:<ol><li value="1">En el plano inteligente, mantenga pulsado Ctrl. </li><li value="2">Mientras mantiene pulsado Ctrl, haga clic en los dispositivos que desea eliminar.</li><li value="3">Haga clic con el botón derecho del ratón en uno de los dispositivos seleccionados, y seleccione Quitar.</li></ol></li>
+            <li value="6"> Haga clic en <span class="uitext">Configuración</span> de nuevo para salir del modo de configuración. Sus cambios están guardados.</li>
+          </ol>
+          <p class="tip">También puede borrar un solo dispositivo seleccionándolo y a continuación pulsar <span class="uitext">BORRAR</span> en el teclado.</p>
+        </div>
+      </div>
+      <div>
+        <h2>Añadir, eliminar o editar enlaces en un Plano Inteligente<a name="SC_AddingDeletingOrEditi_2.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Enlaces en un Plano Inteligente (explicación)<a name="SC_LinksOnSmartMapExplai.htm"></a></h3>
+          <p>Puede añadir enlaces que van a zonas en su Plano Inteligente, o ir a planos estáticos en <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Esto le permite visitar rápidamente zonas o mostrar otro tipo de plano sin tener que cambiar a otra vista. No puede enlazar a otro Plano Inteligente. Si desea más información, consulte <a href="#SC_DifferencesBetweenMap.htm" class="MCXref xref">Diferencias entre planos y planos inteligentes (explicación)</a>.</p>
+          <p>Los enlaces muestran zonas y planos de la siguiente manera:</p>
+          <ul>
+            <li>Un enlace a una zona muestra la zona en la vista actual. Para volver a una zona que ha visualizado previamente, haga clic en <img src="../../../Images/backtracking_to_previous_locations.png" alt="" /><span class="uitext">Volver</span> en la barra de herramientas del plano inteligente.</li>
+            <li>Un enlace al plano muestra el plano en una ventana flotante. Esto le permite acceder a ambos tipos de planos al mismo tiempo. Puede ver e interactuar con el plano, pero no puede hacer cambios en la ventana flotante, como añadir cámaras.</li>
+          </ul>
+          <p class="note">Si quiere clasificar con colores los enlaces, o si quiere hacerlos visibles en el plano, puede especificar un color para el enlace. De manera predeterminada, los enlaces a ubicaciones de Plano Inteligente son azules, y los enlaces a planos heredados son rojos. Si usa un color diferente, se recomienda usar el mismo color con todos los tipos de enlace. Por ejemplo esto puede hacer más fácil distinguir entre enlaces cuando use capas para filtrar en el plano.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Añadir un enlace a una ubicación de un plano o Plano Inteligente<a name="SC_AddLinkToSmartMapLoca.htm"></a></h3>
+          <p>Añadir enlaces a su Plano Inteligente le permite visitar rápidamente ubicaciones o mostrar otro tipo de plano sin tener que cambiar a otra vista.</p>
+          <p>Pasos:</p>
+          <ol>
+            <li value="1">Seleccione la vista que posee el plano inteligente, y después haga clic en <span class="uitext">Ajustes</span>.</li>
+            <li value="2">Vaya al punto del plano donde quiere añadir el enlace.</li>
+            <li value="3">En la barra de herramientas del plano, haga clic en <img src="../../../Images/add_link_to_map_location.png" alt="" /><span class="uitext">Añadir enlace</span>, y después en el punto del mapa donde quiere situar el enlace.</li>
+            <li value="4">Especifique si quiere enlazar a un Plano Inteligente o a un plano y haga clic en <span class="uitext">Añadir</span>.</li>
+            <li value="5">
+              <p>Introduzca un nombre para el enlace.</p>
+              <p class="tip">Puede mostrar el título del enlace en el Plano Inteligente si selecciona <span class="uitext">Icono y texto</span> en el estilo de visualización. Normalmente los nombres indican dónde lleva el enlace.</p>
+            </li>
+            <li value="6">En el campo <span class="uitext">Destino</span>, seleccione el plano o zona al que va el enlace.</li>
+            <li value="7">En el campo <span class="uitext">Estilo de visualización</span>, especifique si quiere mostrar el nombre y el icono del enlace o solo el icono del enlace en el plano.</li>
+            <li value="8">Opcional: Haga clic en <span class="uitext">Color</span> para especificar el color de su enlace.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Modificar o eliminar enlaces en un Plano Inteligente<a name="SC_EditOrDeleteLinkOnSma.htm"></a></h3>
+          <p>Después de añadir un enlace en su Plano Inteligente, puede modificarlo o borrarlo.</p>
+          <p>Pasos:</p>
+          <ol>
+            <li value="1"> Haga clic en <span class="uitext">Configuración</span> para entrar en el modo de configuración. </li>
+            <li value="2">Para modificar el enlace, haga clic sobre el botón derecho del ratón en el enlace y seleccione <span class="uitext">Editar enlace</span>.</li>
+            <li value="3">Para eliminar el enlace, realice una de las siguientes acciones:<ul><li>Haga clic sobre el botón derecho del ratón en el enlace y seleccione <span class="uitext">Eliminar enlace</span>.</li><li>Seleccione el enlace, y pulse <span class="uitext">ELIMINAR</span> en el teclado</li></ul></li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Añadir, eliminar o editar ubicaciones en un Plano Inteligente<a name="SC_AddingDeletingOrEditi_3.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Ubicaciones en un Plano Inteligente (explicación)<a name="SC_LocationsOnSmartMapEx.htm"></a></h3>
+          <p>Puede crear ubicaciones en los lugares del Plano Inteligente que le interesen. Por ejemplo, puede crear zonas para su oficina central y las remotas. Las ubicaciones no solo proporcionan una imagen completa de su entorno, también son útiles para navegar por el Plano Inteligente. </p>
+          <p class="note">Dependiendo de su configuración, cuando usted añade una sobreposición personalizada, <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> puede añadir una ubicación con el mismo nombre que la sobreposición. Por ejemplo, esto hace que ir a la sobreposición en el Plano Inteligente cuando la imagen está lejos sea más fácil. La sobreposición y la ubicación no están enlazadas. Por ejemplo, puede eliminar o renombrar la ubicación sin cambiar la sobreposición, y viceversa. Si desea más información, consulte <a href="#SC_AddingDeletingOrEditi.htm" class="MCXref xref">Agregar, borrar o editar sobreposiciones personalizadas</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Ubicaciones de origen en un Plano Inteligente (explicación)<a name="SC_HomeLocationsForSmart.htm"></a></h3>
+          <p>Las ubicaciones de origen son específicas para el elemento de vista en el que están colocadas. Puede haber distintas ubicaciones de origen para distintos elementos de vista. Si una ubicación de origen no está especificada para un elemento de vista determinado, el elemento de vista mostrará todo el mundo, independientemente del tipo de entorno que usted esté utilizando. Este será el caso si elimina la ubicación de origen.</p>
+          <p>Mientras trabaja con el Plano Inteligente, puede hacer clic en <img src="../../../Images/home_locations_for_map.png" alt="" /><span class="uitext">Inicio</span> para volver a la zona de inicio. Esto es parecido a restaurar el Plano Inteligente en la vista. Puede volver a los ajustes predeterminados para el elemento de vista, y el sistema elimina el historial de zonas visitadas.</p>
+          <p class="note">Seleccionar una nueva zona de inicio afecta a todo aquel que use el elemento de vista. Si alguien ha establecido otra zona de inicio como inicio, con esto está cambiando su configuración.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Añadir ubicaciones a un Plano Inteligente<a name="SC_AddLocationToSmartMap.htm"></a></h3>
+          <p>Para monitorizar las ubicaciones de su interés, puede añadir ubicaciones que le permitan navegar rápidamente hasta esos lugares del Plano Inteligente.</p>
+          <p>Pasos:</p>
+          <ol>
+            <li value="1">Seleccione la vista que posee el Plano Inteligente, y después haga clic en <span class="uitext">Ajustes</span>.</li>
+            <li value="2">Si es necesario, ubique y haga zoom en el lugar del Plano Inteligente en que quiere añadir la ubicación.</li>
+            <li value="3">En la barra de herramientas, haga clic en <img src="../../../Images/add_location_to_map.png" alt="" /><span class="uitext">Añadir una ubicación</span>, y después en el lugar del plano inteligente.</li>
+            <li value="4">Proporcione un nombre a la zona y añada los siguientes detalles opcionales: <ul><li>Especifique un nivel de zoom que desee aplicar cuando alguien entre en la ubicación del Plano Inteligente.</li><li>Seleccione el color del icono de zona. Clasificar las zonas por colores es útil, por ejemplo, para distinguir entre tipos de zonas. Esto se puede basar en la función de la zona o de su tipo, o indicar la prioridad de la zona.</li><li>Opcional: Haga ce la zona su zona de inicio. El plano Inteligente se centra en esta zona, y aplica el nivel de zoom predeterminado cuando haga clic en <img src="../../../Images/home_locations_for_map.png" alt="" /><span class="uitext">Inicio</span></li></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Modificar o eliminar ubicaciones en un Plano Inteligente<a name="SC_EditOrDeleteLocationO.htm"></a></h3>
+          <p>Una vez añadidas las ubicaciones en su Plano Inteligente, puede eliminarlas o modificar la configuración, por ejemplo, borrando la ubicación de origen.</p>
+          <p>Pasos:</p>
+          <ol>
+            <li value="1"> Haga clic en <span class="uitext">Configuración</span> para entrar en el modo de configuración. </li>
+            <li value="2">Para modificar la ubicación, haga clic sobre el botón derecho del ratón y seleccione <span class="uitext">Editar ubicación</span>.</li>
+            <li value="3">Para eliminar una ubicación, realice una de las siguientes acciones:<ul><li>Haga clic con el botón derecho y seleccione <span class="uitext">Eliminar ubicación</span>.</li><li>Seleccione la ubicación, y pulse <span class="uitext">ELIMINAR</span> en el teclado</li></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Enlace entre ubicaciones (explicación)<a name="SC_LinkingBetweenLocatio.htm"></a></h3>
+          <p>Por ejemplo, puede crear una ruta de patrulla creando una serie de enlaces entre ubicaciones. Crear un enlace a la ubicación A que va a la ubicación B y un enlace a B que vaya a C, y etc. Si desea más información, consulte <a href="#SC_AddingDeletingOrEditi_2.htm" class="MCXref xref">Añadir, eliminar o editar enlaces en un Plano Inteligente</a>.</p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Añadir, eliminar o editar edificios en un Plano Inteligente<a name="SC_AddingDeletingOrEditi_4.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Edificios en un Plano Inteligente (explicación)<a name="SC_BuildingsOnSmartMapEx.htm"></a></h3>
+          <p>Los edificios se representan en el <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">plano inteligente<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Funcionalidad de planos que utiliza un sistema de información geográfica para visualizar los dispositivos (por ejemplo, cámaras y micrófonos), estructuras y elementos topográficos de un sistema de vigilancia en imágenes geográficamente precisas del mundo real. Los planos que usan elementos de esta funcionalidad se denominan planos inteligentes.</span></a> como polígonos de cuatro lados. Una vez añadidos, puede ajustar las dimensiones, ángulos y tamaño para que coincidan con la forma y posición real del edificio.</p>
+          <p>Si el edificio tiene varios pisos, puede comenzar añadiendo niveles y cámaras a cada uno de forma individual. Esto le permitirá recorrer las cámaras del edificio nivel a nivel.</p>
+          <p>Para ayudarle a ilustrar el interior de un nivel, puede añadir superposiciones personalizadas a los niveles, por ejemplo una imagen que ilustre un plano. Si desea más información, consulte <a href="#SC_AddFloorPlansToLevels.htm" class="MCXref xref">Añadir planos de planta a los niveles (plano inteligente)</a>.</p>
+          <p>Los edificios reciben un nombre de forma automática; por ejemplo, <span class="uitext">Edificio 4</span>. <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> aconseja cambiar dicho nombre. Esto hace que le sea más fácil distinguir los edificios entre sí.</p>
+          <p>
+            <img src="../../../Images/buildings_on_map_explained.jpg" alt="" />
+          </p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Añadir edificios al Plano Inteligente<a name="SC_AddBuildingsToSmartMa.htm"></a></h3>
+          <p>En vez de utilizar imágenes o archivos de forma para ilustrar edificios, puede añadir un esquema de un edificio. A continuación, puede cambiar las dimensiones, ángulos y tamaño para que coincidan con la forma y posición del edificio en cuestión.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Cerrado" data-mc-alt2="Abierto" />Requisitos</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Se ha habilitado la edición inteligente de planos en su <span class="mc-variable flvar-product.SC variable">Smart Client</span> perfil en <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Pasos:</p>
+          <ol>
+            <li value="1"> Haga clic en <span class="uitext">Configuración</span> para entrar en el modo de configuración. </li>
+            <li value="2">En el Plano Inteligente, navegue hasta la ubicación donde desee colocar el edificio.</li>
+            <li value="3">Haga clic en <img src="../../../Images/add_buildings_to_map.jpg" alt="" /> y sitúe en cursos en la posición correspondiente sobre el Plano Inteligente.</li>
+            <li value="4">Vuelva a hacer clic. Se ha añadido un rectángulo al Plano Inteligente. Si el zoom está alejado, el nivel de zoom aumenta de forma automática.</li>
+            <li value="5">Utilice los iconos de las esquinas para ajustar la forma y posición del edificio concreto.</li>
+            <li value="6"> Haga clic en <span class="uitext">Configuración</span> de nuevo para salir del modo de configuración. Sus cambios están guardados.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Editar edificios en el Plano Inteligente<a name="SC_EditBuildingsOnSmartM.htm"></a></h3>
+          <p>Cuando un edificio se haya añadido al Plano Inteligente, podrá cambiar el nombre del mismo y ajustar la posición, el tamaño, las dimensiones y los ángulos. También podrá añadir, eliminar o reorganizar los niveles.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Cerrado" data-mc-alt2="Abierto" />Requisitos</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Se ha habilitado la edición inteligente de planos en su <span class="mc-variable flvar-product.SC variable">Smart Client</span> perfil en <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Pasos:</p>
+          <ol>
+            <li value="1">Navegue hasta el edificio situado en el plano inteligente. Acerque el zoom en caso necesario.</li>
+            <li value="2"> Haga clic en <span class="uitext">Configuración</span> para entrar en el modo de configuración. </li>
+            <li value="3">
+              <p>Haga clic en cualquier parte del edificio. El borde resaltado en azul indica que puede editar el edificio.<br /></p>
+              <p>
+                <img src="../../../Images/buildings_on_map_explained.jpg" alt="" />
+              </p>
+            </li>
+            <li value="4">Para cambiar el nombre del edificio, vaya a la parte superior del panel de la derecha y haga clic en <img src="../../../Images/edit_buildings_on_map.jpg" alt="" />. Cambie el nombre y haga clic en <img src="../../../Images/edit_buildings_on_map_1.jpg" alt="" />. Para cancelar, pulse <span class="uitext">Esc</span>.</li>
+            <li value="5">Para ajustar las esquinas, haga clic sobre ellas y arrástrelas hasta la nueva posición.</li>
+            <li value="6">Para añadir o eliminar niveles, consulte <a href="#SC_AddOrRemoveLevelsFrom.htm" class="MCXref xref">Añadir o eliminar niveles de los edificios (Plano Inteligente)</a>.</li>
+            <li value="7"> Haga clic en <span class="uitext">Configuración</span> de nuevo para salir del modo de configuración. Sus cambios están guardados.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Borrar edificios del Plano Inteligente<a name="SC_DeleteBuildingsOnSmar.htm"></a></h3>
+          <p>Si un edificio ya no es necesario, puede eliminarlo. La próxima vez que alguien se conecte a <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> o que vuelva a cargar, el edificio habrá desaparecido.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Cerrado" data-mc-alt2="Abierto" />Requisitos</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Se ha habilitado la edición inteligente de planos en su <span class="mc-variable flvar-product.SC variable">Smart Client</span> perfil en <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Pasos:</p>
+          <ol>
+            <li value="1">Abra el Plano Inteligente.</li>
+            <li value="2"> Haga clic en <span class="uitext">Configuración</span> para entrar en el modo de configuración. </li>
+            <li value="3">Puede seguir estos pasos:</li>
+            <ul>
+              <li>Haga clic sobre el botón derecho del ratón en el edificio y seleccione <span class="uitext">Eliminar</span>.</li>
+              <li>Seleccione el edificio, y pulse <span class="uitext">ELIMINAR</span> en el teclado </li>
+            </ul>
+          </ol>
+          <p class="tip">Una forma alternativa de eliminar un edificio: En <img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">Gestionar ajustes predeterminados</span>, desplácese hacia abajo a la sección <span class="uitext">Edificios</span>, pase por encima sobre el edificio, y haga clic en <span class="uitext">Eliminar</span> y a continuación en <span class="uitext">Guardar</span>. </p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Gestionar niveles y dispositivos en edificios (plano inteligente)<a name="SC_ManagingLevelsAndCame.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Dispositivos y niveles en edificios (explicación)<a name="SC_CamerasAndLevelsInBui.htm"></a></h3>
+          <p>Al añadir un dispositivo a un edificio, el dispositivo se asocia por defecto al nivel predeterminado, en caso de que se haya especificado uno. Si no, el dispositivo se asigna al primer nivel. Sin embargo, puede cambiarlo y asociar el dispositivo con cualquier otro nivel o varios al mismo tiempo.</p>
+          <p>Más datos:</p>
+          <ul>
+            <li>Si no hay niveles seleccionados, el dispositivo es visible en todos los niveles.</li>
+            <li>Si añade un edificio sobre un dispositivo ya situado, el dispositivo se asocia por defecto a todos los niveles.</li>
+            <li>Si expande los límites de un edificio de modo que abarque un dispositivo ya situado, este se asocia únicamente con el nivel seleccionado.</li>
+          </ul>
+          <p class="note">Si reajusta los límites de un edificio para que deje de cubrir el dispositivo, el dispositivo dejará de estar asociado con el edificio.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>
+            <a name="SC_FloorPlansDevicesInBuildings"></a>Planos y dispositivos en los edificios (explicación)</h3>
+          <p>Para ayudarle a visualizar el interior de los niveles de un edificio, puede añadir planos de planta como superposiciones personalizadas. Con un plano de planta, es más fácil colocar el dispositivo con precisión. Si desea más información, consulte <a href="#SC_AddFloorPlansToLevels.htm" class="MCXref xref">Añadir planos de planta a los niveles (plano inteligente)</a>.</p>
+          <p>Los dispositivos que coloque están asociados con niveles, no con sobreposiciones personalizadas. Si borra un nivel dentro de un edificio con dispositivos y una sobreposición personalizada, los dispositivos permanecerán en su ubicación geográfica, pero dejarán de estar asociados con el nivel. Sin embargo, la sobreposición personalizada se borrará junto con el nivel.</p>
+          <p>Si reordena un nivel, tanto los dispositivos como la sobreposición personalizada permanecerán en el nivel. Las dispositivos mantendrán su ubicación geográfica.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Añadir o eliminar niveles de los edificios (Plano Inteligente)<a name="SC_AddOrRemoveLevelsFrom.htm"></a></h3>
+          <p>Tras añadir un edificio a su Plano Inteligente, puede añadir cualquier número de niveles. Al primer nivel se le asigna el número <span class="uitext">1</span>, al siguiente el <span class="uitext">2</span> y así sucesivamente. A continuación, puede cambiar el nombre de los niveles y reordenarlos de forma individual.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Cerrado" data-mc-alt2="Abierto" />Requisitos</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Se ha habilitado la edición inteligente de planos en su <span class="mc-variable flvar-product.SC variable">Smart Client</span> perfil en <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Pasos:</p>
+          <ol>
+            <li value="1">Navegue hasta el edificio situado en el plano inteligente. Acerque el zoom en caso necesario.</li>
+            <li value="2">Seleccione el edificio. Aparecerá un panel en el lateral derecho.</li>
+            <li value="3">Haga clic en el botón <span class="uitext">Ajustes</span> para entrar en el modo de configuración.</li>
+            <li value="4">Haga clic en <span class="uitext">Añadir nivel</span><img src="../../../Images/add_or_remove_levels_from.jpg" alt="" />.</li>
+            <li value="5">Para editar el nombre de un nivel: <ol><li value="1">Haga clic en los puntos <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> y seleccione <span class="uitext">Renombrar</span>.</li><li value="2">Introduzca un nuevo nombre.</li></ol></li>
+            <li value="6">Para borrar un nivel, haga clic en los puntos <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> y seleccione <span class="uitext">Borrar</span>. Los dispositivos de dicho nivel permanecerán en su ubicación geográfica, pero ya no estarán asociadas al nivel.</li>
+            <li value="7">Haga clic en <span class="uitext">Ajustes</span> para salir del modo de configuración.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Cambio del orden de los niveles en edificios (plano inteligente)<a name="SC_ChangeOrderOfLevels.htm"></a></h3>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Cerrado" data-mc-alt2="Abierto" />Requisitos</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Se ha habilitado la edición inteligente de planos en su <span class="mc-variable flvar-product.SC variable">Smart Client</span> perfil en <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Pasos:</p>
+          <ol>
+            <li value="1">Navegue hasta el edificio situado en el plano inteligente. Acerque el zoom en caso necesario.</li>
+            <li value="2">Seleccione el edificio. Aparecerá un nivel en el lateral derecho que muestra los niveles de un edificio.</li>
+            <li value="3"> Haga clic en <span class="uitext">Configuración</span> para entrar en el modo de configuración. </li>
+            <li value="4">Haga clic y arrastre la zona punteada <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> a la ubicación correcta. Todos los dispositivos asociados y las sobreposiciones personalizadas permanecen en el nivel.</li>
+            <li value="5"> Haga clic en <span class="uitext">Configuración</span> de nuevo para salir del modo de configuración. Sus cambios están guardados.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Definir un nivel predeterminado para edificios (Plano Inteligente)<a name="SC_SetDefaultLevelForBui.htm"></a></h3>
+          <p>Si un nivel concreto de un edificio es más importante que el resto (por ejemplo, la planta baja), puede definirlo como el nivel predeterminado. Al abrir su Plano Inteligente e ir al edificio, el nivel predeterminado se seleccionará automáticamente.</p>
+          <p>Si sale del edificio y vuelve a este, <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> le lleva al nivel desde donde lo dejó.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Cerrado" data-mc-alt2="Abierto" />Requisitos</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Se ha habilitado la edición inteligente de planos en su <span class="mc-variable flvar-product.SC variable">Smart Client</span> perfil en <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Pasos:</p>
+          <ol>
+            <li value="1">Navegue hasta el edificio situado en el plano inteligente. Acerque el zoom en caso necesario.</li>
+            <li value="2">Seleccione el edificio. Aparecerá un nivel en el lateral derecho que muestra los niveles de un edificio. El nivel predeterminado aparece resaltado.</li>
+            <li value="3">Haga clic en <span class="uitext">Ajustes</span> para entrar en el modo de configuración. Observe el asterisco <img src="../../../Images/set_default_level_for_buildings.jpg" alt="" />. Indica dónde está el nivel predeterminado actual.</li>
+            <li value="4">Haga clic en los puntos <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> en el nivel que quiera definir como nivel predeterminado.</li>
+            <li value="5">Seleccione <span class="uitext">Configurar como predeterminado</span>.</li>
+            <li value="6"> Haga clic en <span class="uitext">Configuración</span> de nuevo para salir del modo de configuración. Sus cambios están guardados.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Añadir planos de planta a los niveles (plano inteligente)<a name="SC_AddFloorPlansToLevels.htm"></a></h3>
+          <p>Puede añadir superposiciones personalizadas, por ejemplo imágenes de planos, a los niveles de su edificio para ayudarle a ilustrar el interior de un nivel dentro de un edificio. Al navegar por los niveles, se muestran automáticamente los planos de planta asociados.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Cerrado" data-mc-alt2="Abierto" />Requisitos</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Se ha habilitado la edición inteligente de planos en su <span class="mc-variable flvar-product.SC variable">Smart Client</span> perfil en <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Pasos:</p>
+          <ol>
+            <li value="1">Navegue hasta el edificio situado en el plano inteligente. Acerque el zoom en caso necesario.</li>
+            <li value="2">Seleccione el edificio. Aparecerá un nivel en el lateral derecho que muestra los niveles de un edificio.</li>
+            <li value="3"> Haga clic en <span class="uitext">Configuración</span> para entrar en el modo de configuración. </li>
+            <li value="4">Seleccione el nivel donde desee añadir la sobreposición personalizada.</li>
+            <li value="5">En la esquina superior izquierda, haga clic en <img src="../../../Images/add_custom_overlay_on_1.png" alt="" /><span class="uitext">Añadir una sobreposición personalizada</span>, y a continuación, en cualquier parte dentro del esquema del edificio. Se muestra una ventana.</li>
+            <li value="6">Seleccione el tipo de sobreposición personalizada. Si desea más información, consulte <a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">Sobreposiciones personalizadas (explicación)</a>.</li>
+            <li value="7">
+              <p>Seleccione la ubicación donde el archivo esté almacenado en su ordenador y haga clic en <span class="uitext">Continuar</span>. La sobreposición personalizada se muestra con un contorno azul.<br /></p>
+              <p>
+                <img src="../../../Images/add_floorplans_to_levels.jpg" alt="" />
+              </p>
+            </li>
+            <li value="8">Arrástrela dentro del contorno del edificio y utilice el punto pivotante y las esquinas para rotar y ajustar la posición de la sobreposición personalizada.</li>
+            <li value="9">En la barra de la parte superior, haga clic en <span class="uitext">Guardar</span>.</li>
+            <li value="10"> Haga clic en <span class="uitext">Configuración</span> de nuevo para salir del modo de configuración. Sus cambios están guardados.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Eliminar planos de planta en los niveles (plano inteligente)<a name="SC_DeleteFloorPlansOnLev.htm"></a></h3>
+          <p>Si el plano de planta de un nivel dentro de un edificio ha cambiado, es posible que tenga que reemplazar la superposición personalizada que ilustra el plano de planta. <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> recomienda que elimine el antiguo plano, antes de añadir uno nuevo.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Cerrado" data-mc-alt2="Abierto" />Requisitos</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Se ha habilitado la edición inteligente de planos en su <span class="mc-variable flvar-product.SC variable">Smart Client</span> perfil en <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Pasos:</p>
+          <ol>
+            <li value="1">Navegue hasta el edificio situado en el plano inteligente. Acerque el zoom en caso necesario.</li>
+            <li value="2">Seleccione el edificio. Aparecerá un nivel en el lateral derecho que muestra los niveles de un edificio.</li>
+            <li value="3"> Haga clic en <span class="uitext">Configuración</span> para entrar en el modo de configuración. </li>
+            <li value="4">Seleccione el nivel donde se encuentre la sobreposición personalizada.</li>
+            <li value="5">Haga clic con el botón derecho en cualquier parte de la sobreposición personalizada y seleccione <span class="uitext">Eliminar la sobreposición personalizada</span>.</li>
+            <li value="6"> Haga clic en <span class="uitext">Configuración</span> de nuevo para salir del modo de configuración. Sus cambios están guardados.</li>
+          </ol>
+          <p class="tip">Para editar la posición o el tamaño del plano, haga clic con el botón derecho en la superposición personalizada y seleccione <span class="uitext">Editar posición</span>. Ahora ya puede mover, girar y cambiar el tamaño de la sobreposición personalizada.</p>
+        </div>
+        <div>
+          <h3>Añadir dispositivos a edificios (plano inteligente)<a name="SC_AddCamerasToBuildings.htm"></a></h3>
+          <p>Tras crear un edificio y añadir niveles, podrá añadir los dispositivos al edificio. Si se ha especificado un nivel por defecto, los dispositivos estarán asociados a él. Si no, los dispositivo se asignarán al primer nivel. Puede modificar esta opción y asociar los dispositivos a cualquier otro nivel del edificio.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Cerrado" data-mc-alt2="Abierto" />Requisitos</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Se ha habilitado la edición inteligente de planos en su <span class="mc-variable flvar-product.SC variable">Smart Client</span> perfil en <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Pasos:</p>
+          <ol>
+            <li value="1">Navegue hasta el edificio situado en el plano inteligente. Acerque el zoom en caso necesario.</li>
+            <li value="2"> Haga clic en <span class="uitext">Configuración</span> para entrar en el modo de configuración. </li>
+            <li value="3">Para añadir un dispositivo, haga clic en su icono. <p>Ejemplo: En el caso de una cámara, haga clic en <img src="../../../Images/add_cameras_to_buildings.jpg" alt="" /><span class="uitext">Añadir una cámara</span>.</p></li>
+            <li value="4">Vuelva a hacer clic en la ubicación donde desee ubicar el dispositivo. Aparecerá un cuadro de diálogo.</li>
+            <li value="5">Seleccione el dispositivo requerido y haga clic en <span class="uitext">Aceptar</span>. Repita los pasos 3-5 con cada dispositivo que desee añadir.</li>
+            <li value="6">Para asociar un dispositivo a uno o más niveles, haga clic con el botón derecho sobre el dispositivo y seleccione los niveles requeridos.</li>
+            <li value="7"> Haga clic en <span class="uitext">Configuración</span> de nuevo para salir del modo de configuración. Sus cambios están guardados.</li>
+          </ol>
+          <p class="note">Si no hay niveles seleccionados, el dispositivo es visible en todos los niveles.</p>
+        </div>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Información de concepto</p>
+        <p class="containerItem_container_0">
+          <a href="sc_workingwithmap.htm">Plano inteligente (uso)</a>
+        </p>
+        <p class="referenceHeading_reference_0">Materiales de referencia</p>
+        <p class="referenceItem_reference_0">
+          <a href="sc_map_faq.htm">Preguntas más frecuentes: plano inteligente</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

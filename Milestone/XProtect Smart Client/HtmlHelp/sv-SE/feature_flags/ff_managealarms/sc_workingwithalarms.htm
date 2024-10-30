@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="sv-SE" xml:lang="sv-SE" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="Drift" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Händelser är fördefinierade incidenter i XProtect VMS-systemet som kan ställas in att utlösa ett larm. Du kan bekräfta och ignorera larm eller skriva ut larmrapporter." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Operatör" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Larm och händelser (användning)</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#feature_flags/ff_managealarms/sc_workingwithalarms.htm">Öppna ämne med navigering</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>Larm och händelser (användning)</h1>
+      <div>
+        <h2>Larm (förklaring)<a name="SC_AboutAlarms.htm"></a></h2>
+        <div>
+          <p class="note">Denna funktionalitet är bara tillgänglig i vissa <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS-system. För information om funktionalitet i ditt system, se <a href="../../standard_features/sf_sc/sf_considerationsrequirements/sc_surveillancesystemdif.htm" class="MCXref xref">Skillnader mellan övervakningssystem</a>.</p>
+        </div>
+        <p>På <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS-server, kan i princip alla typer av incidenter eller tekniska problem - händelser - konfigureras för att utlösa ett larm. Alla larm och händelser kan visas på fliken <span class="uitext">Larmhanteraren</span> som ger dig en central översikt över dina VMS-incidenter, status samt möjliga tekniska problem.</p>
+        <p>Du kan inte konfigurera larmutlösare i <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Det gör din systemadministratör i konfigureringen av <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS-system.</p>
+        <p class="note">Fliken <span class="uitext">Larmhanteraren</span> är antingen visad eller dold beroende på vilken inställning som definierats av din systemadministratör.</p>
+        <p>Fliken <span class="uitext">Larmhanteraren</span> innehåller en speciell vy för larm- och händelsehantering. På själva fliken visas antalet aktiva larm. Fler än nio larm visas med en <img src="../../../Images/about_alarms.png" alt="9+ larm" />. Fliken <span class="uitext">Larmhanteraren</span> innehåller en larmlista, en larmförhandsvisning för att granska video associerad med individuella larm eller händelser, och möjligen även en karta som visar geografisk position för kameran associerad med larmet. </p>
+      </div>
+      <div>
+        <h2>Larmlistan (förklaring)<a name="SC_TheAlarmList.htm"></a></h2>
+        <p>
+          <span class="uitext">Larmlistan</span> visar som standard inkommande larm, med de senaste larmen högst upp i listan. Larmlistan kan också visa en lista över <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term17">MIP<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Förkortning av ”Milestone Integration Platform”.</span></a>-plugin- och analyshändelser, t.ex. passersystem eller identifiering av nummerskyltar. </p>
+        <p>Larm eller händelser med associerad video visas med en ikon <img src="../../../Images/sc_alarmorevent_withvideo_icon.png" alt="" />. Hovra över ikonen för att förhandsvisa en stillbild från tiden för larmet eller händelsen. För att förhandsvisa inspelad video från kameror associerade till larmet eller händelsen, välj larmet eller händelsen i listan. Du kan stoppa ett upprepade larmljud genom att välja larmet som är associerat med ljudet i listan.</p>
+        <p>Du kan bestämma hur du vill att listan visas, du kan filtrera kolumner, flytta kolumner och högerklicka för att visa eller dölja vissa kolumner.</p>
+        <p class="note">Händelselistan visar inte system- eller användargenererade händelser, t.ex. rörelsedetektering eller arkiveringsfel.</p>
+        <p>Listan uppdateras var 3:e sekund.</p>
+        <p>
+          <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/the_alarm_list.png" data-mc-popup-alt="Larmlistan i XProtect Smart Client.">
+            <img class="MCPopupThumbnail img" data-mc-width="500" data-mc-height="173" src="../../../Images/the_alarm_list_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Larmlistan i XProtect Smart Client." tabindex="" />
+          </a>
+        </p>
+        <p class="tip">För att se en lista med händelser, gå in i inställningsläge och välj <span class="uitext">Händelse</span> i rutan <span class="uitext">Egenskaper</span>. Se även <a href="sc_configuringalarmsandevents.htm#SC_AlarmListSettings.htm" class="MCXref xref">Inställningar för larmlista</a>.</p>
+      </div>
+      <div>
+        <h2>Servrar i larmlistan (förklaring)<a name="SC_Servers.htm"></a></h2>
+        <p>På vänster sida i larmlistan kan du se de servrar som larmen kommer ifrån. Många <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS-system har bara en enda server medan vissa system kan utgöras av ett flertal servrar i en hierarki. Alla servrar du har tillgång till listas, och du kan filtrera larm per server.</p>
+      </div>
+      <div>
+        <h2>Larmstatus (förklaring)<a name="SC_Filters.htm"></a></h2>
+        <p>Ett larm kan ha följande status: Nytt, Pågående, Parkerat eller Stängt. Du kan se varje larms status i <span class="uitext">Larmlista</span> i kolumnen <span class="uitext">Statusnamn</span>. I rutan <span class="uitext">Filter</span> kan du filtrera enligt vissa kriterier. Från början har alla larmposter status <span class="uitext">Nytt</span>, men när ett larm hanteras uppdateras dess status.</p>
+      </div>
+      <div>
+        <h2>Filtrera larm<a name="SC_FilterAlarms.htm"></a></h2>
+        <p>Du kan filtrera larmlistan på flera sätt så att den visar enbart de larm eller händelser du är intresserad av.</p>
+        <p>Gör så här: </p>
+        <ol>
+          <li value="1">
+            <p>I larmlistans verktygsfält klickar du på texten <span class="uitext">Anpassat (filter används)</span> eller <span class="uitext">Inget filter</span>. Texten kan vara olika beroende på vilket filter som valts.<br /></p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/filter_alarms.png" data-mc-popup-alt="Filtrera larm i XProtect Smart Client.">
+                <img class="MCPopupThumbnail img" data-mc-width="1217" data-mc-height="286" src="../../../Images/filter_alarms_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Filtrera larm i XProtect Smart Client." tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="2">Ange filtervillkor för de kolumner du vill filtrera efter. Om du t.ex. anger ett användar-ID i fältet <span class="uitext">ID</span> visar listan bara de larm som tilldelats till motsvarande användare.</li>
+          <li value="3">Du kan kombinera filter, t.ex. <span class="uitext">Statusnamn</span> och <span class="uitext">Ägare</span> (tilldelats till).</li>
+          <li value="4">Klicka på knappen <span class="uitext">Rensa filter</span> för att återgå till den ofiltrerade larmlistan.</li>
+          <li value="5">För att sortera innehållet i larmlistan, klicka på kolumnens rubrik.</li>
+        </ol>
+        <p class="tip">Om dina hanteringsvyer för larm innehåller kartinnehåll, kan du även filtrera larmlistan genom att högerklicka på ett objekt (kamera, server eller liknande) på kartan och därefter välja <span class="uitext">Visa larm</span>. Då visar larmlistan bara larm från det valda elementet.</p>
+      </div>
+      <div>
+        <h2>Svara på larm<a name="SC_ResponsdingToAlarms.htm"></a></h2>
+        <div>
+          <h3>Visa och redigera detaljer för ett larm<a name="SC_ViewingAndEditingDeta.htm"></a></h3>
+          <p>Du kan svara på larm på olika sätt. Du kan gå till alla vyer där du lagt till <span class="uitext">Larmlista</span> och dubbelklicka på ett larm. Larmet öppnas i ett separat fönster där du kan förhandsvisa larmincidenter och livevideo. Du kan också svara på larm genom att ändra fälten i tabellen nedan. </p>
+        </div>
+      </div>
+      <p>Beroende på hur ditt <span class="mc-variable flvar-brand-company.XP variable">XProtect</span><a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term50"> VMS<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Förkortning av "Video Management Software" (videohanteringsprogram).</span></a>-system är konfigurerat kan du även få skrivbordsaviseringar om larm. Sådana aviseringar stannar på skärmen i 15 sekunder. När du klickar på en avisering tar den dig direkt till fliken <span class="uitext">Larmhanteraren</span> och öppnar larmfönstret.</p>
+      <div>
+        <div>
+          <table cellspacing="3">
+            <col />
+            <col />
+            <thead>
+              <tr>
+                <th>Fält</th>
+                <th>Beskrivning</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">Status</span>
+                  </p>
+                </td>
+                <td>
+                  <p>Larmstatusen indikerar om någon har reagerat på händelsen. Här kan du ändra larmets status. Vanligtvis ändrar du status stegvis, från <span class="uitext">Ny</span> till <span class="uitext">Pågår</span> och senare till <span class="uitext">Parkerat</span> eller <span class="uitext">Stängd</span>. </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">Prioritet</span>
+                  </p>
+                </td>
+                <td>
+                  <p>Här kan du ändra larmets prioritet.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">Tilldelad till</span>
+                  </p>
+                </td>
+                <td>
+                  <p>Här kan du tilldela larmet till en användare i din organisation, inklusive dig själv. Person som du tilldelar larmet blir larmets ägare och kommer att visas i kolumnen <span class="uitext">Ägare</span> i larmlistan.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">Kommentar</span>
+                  </p>
+                </td>
+                <td>
+                  <p>Här kan du skriva in kommentarer och anmärkningar, som läggs till i avsnittet <span class="uitext">Aktiviteter</span>. Kommentarer gäller vanligen de åtgärder du vidtagit. Till exempel, “Misstänkt omhändertagen av säkerhetsvakt”, “Misstänkt överlämnad till polisen,” eller “Falskt larm.” Fältet <span class="uitext">Kommentar</span> visas i fönstrets nederkant.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">Aktiviteter</span>
+                  </p>
+                </td>
+                <td>
+                  <p>Aktiviteterna sammanfattar hur larmet hanterats. Alla ändringar du eller dina kollegor gör för ett larms status eller prioritet, varje tilldelning av larm mellan användare samt alla kommentarer som lagts till tas automatiskt med i avsnittet <span class="uitext">Aktiviteter</span>.</p>
+                  <p class="note">Beroende på konfigurationen av din <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS-server, kan larmet innehålla instruktioner om åtgärder vid mottagande av larm. Dessa instruktioner definieras på serversidan som del av larmdefinitionen. När så är fallet visas aktiviteterna automatiskt när du redigerar larmet.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">Skriv ut</span>
+                  </p>
+                </td>
+                <td>
+                  <p>Här kan du skriva ut en rapport med information om larmet, såsom larmets historik och, om tillgängligt, en <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term19">stillbild<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>En enda statisk bild.</span></a> från tiden för larmet.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h3>Bekräfta larm<a name="SC_AcknowledgeAnAlarm.htm"></a></h3>
+          <p>När du har fått ett larm, kan du bekräfta det för att registrera att du kommer att göra något åt det.</p>
+          <p>Gör så här:</p>
+          <ol>
+            <li value="1">
+              <p>Högerklicka på larmet i larmlistan och välj <span class="uitext">Bekräfta</span>. Larmstatusen ändras till <span class="uitext">Pågår</span>.</p>
+              <p class="note">Du kan bara bekräfta nya larm.</p>
+            </li>
+            <li value="2">Du kan bekräfta flera alarm samtidigt. Håll <span class="uitext">CTRL</span>-tangenten nedtryckt och markera de larm du vill bekräfta.</li>
+            <li value="3">Dubbelklicka på ett larm för att ändra information om larmet, till exempel tilldela larmet till någon och lägga till anvisningar.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>
+            <a name="Disable"></a>Inaktivera alla nya larm för valda händelsetyper</h3>
+          <p>Om en händelse utlöser falsklarm vill du kanske temporärt inaktivera alla nya larm för denna typ av händelse.</p>
+          <p>Om det till exempel är mycket rörelse runt en kamera och detta skapar återkommande falsklarm så kan du inaktivera larm för rörelsedetektering för den kameran i 10 minuter. Rörelsedetektering för kameran kommer då inte att utlösa larm på 10 minuter. På så sätt blir du inte störd av falsklarm och kan fokusera på de larm som behöver din uppmärksamhet.</p>
+          <p class="important">Deaktivering av larm påverkar alla operatörer som är anslutna till det <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS-system som du också är ansluten till. </p>
+          <p>Du kan inaktivera alla nya larm med <span class="uitext">Larmhanteraren</span> eller en karta.</p>
+          <ol>
+            <li value="1">
+              <p>Använda <span class="uitext">Larmhanteraren</span>: högerklicka ett larm i larmlistan och välj <span class="uitext">Inaktivera alla nya larm</span>.</p>
+              <p>Använda karta: högerklicka ett larm och välj <span class="uitext">Inaktivera alla nya larm</span> &gt; <span class="uitext">Inaktivera</span>.</p>
+              <p>Fönstret <span class="uitext">Inaktivera alla nya larm</span> visas.</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_disablealarmsoneventtypes.png" data-mc-popup-alt="Inaktivera larm baserat på händelsetyp i XProtect Smart Client.">
+                  <img class="MCPopupThumbnail img" data-mc-width="459" data-mc-height="790" src="../../../Images/sc_disablealarmsoneventtypes_thumb_200_0.png" style="max-width: 400px;mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Inaktivera larm baserat på händelsetyp i XProtect Smart Client." tabindex="" />
+                </a>
+              </p>
+            </li>
+            <li value="2">I listan <span class="uitext">Händelser som inte utlöser larm</span><img src="../../../Images/1.png" alt="" /> väljer du vilka händelsetyper som inte ska utlösa larm.</li>
+            <li value="3">Ange tills när, eller hur länge, de utvalda händelsetyperna inte ska utlösa larm <img src="../../../Images/2.png" alt="" />.</li>
+            <li value="4">Om du önskar kan du lägga till en kommentar om varför du inaktiverar larm på utvalda händelsetyper <img src="../../../Images/3.png" alt="" />.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Ignorera larm på kartor<a name="SC_IgnoreAnAlarm.htm"></a></h3>
+          <p>På en karta kan du ignorera ett larm för en händelse under en viss tid. Om t.ex. en kamera repareras och därför kopplas ur, kan du vilja ignorera att felet visas på kartan under reparationen. När du ignorerar ett larm på en karta tas inte larmet bort från larmlistan, utan bara från kartan.</p>
+          <p>
+            <img src="../../../Images/sc_ignorealarmonmap.png" alt="Ignorera larm på kartor i XProtect Smart Client." />
+          </p>
+        </div>
+        <div>
+          <h3>Stänga larm<a name="SC_CloseAlarms.htm"></a></h3>
+          <p>När du har bekräftat ett larm, tilldelar du vanligtvis det till någon som undersöker vad som händer. Under den tiden kommer larmet att befinna sig i läget <span class="uitext">Pågår</span>. När du har hanterat larmet kan du stänga det.</p>
+          <p>För att stänga ett larm, i <span class="uitext">Larmlista</span>, gör något av följande:</p>
+          <ul>
+            <li>Högerklicka på larmet och välj <span class="uitext">Stäng</span>.</li>
+            <li>Dubbelklicka på larmet, och i <span class="uitext">Status</span>-listan väljer du <span class="uitext">Stängd</span>.</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <h2>Skriva ut larmrapporter<a name="SC_PrintAReportWithAlarm.htm"></a></h2>
+        <p>Du kan skriva ut en rapport med information om larmet, inklusive larmets historik och, om det är tillgängligt, en stillbild från tiden för larmet. Om du har markerat flera larm i larmlistan kan du inte använda den här funktionen.</p>
+        <p>Gör så här:</p>
+        <ol>
+          <li value="1">Högerklicka på larmet i listan Larm.</li>
+          <li value="2">Välj <span class="uitext">Skriv ut</span>. Ett fönster visas.</li>
+          <li value="3">Du lägger in en anteckning genom att skriva texten i fältet <span class="uitext">Notering</span>.</li>
+          <li value="4">Klicka på knappen <span class="uitext">Skriv ut</span>.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_GetAlarmStatistics"></a>Få statistik om larm</h2>
+        <p>Få statistik om de larm som utlösts i ditt <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS-system under:</p>
+        <ul>
+          <li>
+            <span class="uitext">de senaste 24 timmarna</span>
+          </li>
+          <li>
+            <span class="uitext">de senaste 7 dagarna</span>
+          </li>
+          <li>
+            <span class="uitext">de senaste 30 dagarna</span>
+          </li>
+          <li>
+            <span class="uitext">de senaste 6 månaderna</span>
+          </li>
+          <li>
+            <span class="uitext">det senaste året</span>
+          </li>
+        </ul>
+        <p>I fönstret <span class="uitext">Larmrapport</span> finns två grafer som visar antal larm filtrerad per kategori, till exempel <span class="uitext">Prioritet</span> eller <span class="uitext">Status</span>, så du kan jämföra dessa grafer sida vid sida. </p>
+        <p>Gör så här:</p>
+        <ol>
+          <li value="1">Klicka på knappen <span class="uitext">Rapporter</span> i <span class="uitext">Larmlista</span>. Ett fönster visas.</li>
+          <li value="2">Välj tidsspannet över graferna, till exempel <span class="uitext">Senaste 24 timmarna</span>. </li>
+          <li value="3">Välj en av följande kategorier från listan <span class="uitext">Välj rapport</span>:<ul><li><span class="uitext">Kategori</span></li><li><span class="uitext">Status</span></li><li><span class="uitext">Prioritet</span></li><li><span class="uitext">Orsaker till stängning</span></li><li><span class="uitext">Plats</span></li><li><span class="uitext">Svarstid</span></li></ul></li>
+          <li value="4">Välj ett underfilter för varje graf. Om du till exempel valde <span class="uitext">Status</span> så kan du välja <span class="uitext">Ny</span> i den första grafen och <span class="uitext">Pågår</span> i den andra. Graferna fylls i med begärd information.</li>
+          <li value="5">Klicka på <img src="../../../Images/sc_printalarmstatisticsicon.png" alt="" /> för att skriva ut graferna som en PDF-rapport.</li>
+        </ol>
+        <p>
+          <a name="SC_ViewAlarmReports.htm"></a>
+        </p>
+      </div>
+      <div>
+        <h2>Larm på kartor (förklaring)<a name="SC_AlarmsOnMaps.htm"></a></h2>
+        <p>Om din larmhanteringsvy innehåller en eller flera kartpositioner kan du även visa larm på kartorna. Kartor visar larm baserat på kamerans geografiska plats, server eller andra enheter som utlöser larmen, så du kan omedelbart se varifrån larmet kommer. Du kan högerklicka och bekräfta, inaktivera eller undertrycka larmet direkt från kartan.</p>
+        <p>Kameraelement visar video i miniatyrformat när du håller muspekaren över dem. När de används i samband med larm, visas röda cirklar runt de grafiska elementen på kartan om ett larm utlöses. Till exempel, om ett larm associerat med en viss kamera utlöses, får det grafiska elementet som representerar kameran genast en röd ring runt sig, och du kan klicka på kameraelementet och inte bara se video utan även hantera larmet via en meny som visas.</p>
+        <p class="tip">Om rött inte är en passande färg för att indikera larm på dina kartor så kan du ändra färgen.</p>
+        <p>Anta att en kamera med ett associerat larm finns på en karta på gatunivå, men du visar en karta på stadsnivå. Hur ser du då larmet? Inget problem, tack vare aktiva zoner - grafiska representationer som länkar ihop olika karthierarkinivåer. Om ett larm detekteras på gatunivåkartan, blir den aktiva zonen på stadsnivåkartan röd, vilket indikerar att det utlösts ett larm på en karta på en lägre nivå, även om det finns kartnivåer där emellan.</p>
+        <p>För att återgå till ett larmlistläge där du kan se larm från fler än bara ett element, klickar du på önskad server, prioritet eller status som listats i larmlistan.</p>
+      </div>
+      <div>
+        <h2>
+          <a name="Alarms"></a>Larm på smartkartor (förklaring)</h2>
+        <p>Smartkartan visar larm om de utlösts av en enhet och den enheten är tillagd till smartkartan. Se även <a href="../ff_map/sc_configuringmaps.htm#SC_AddingDeletingOrEditi_1.htm" class="MCXref xref">Lägga till, ta bort eller redigera enheter på smartkarta.</a>.</p>
+      </div>
+      <p>För mer information om ikoner i smartkartan, se <a href="../../standard_features/sf_sc/sf_operation/sc_searchingadditionalinfo.htm#Camera" class="MCXref xref">Kameraikoner (förklaring)</a>.</p>
+      <div>
+        <h2>Händelser (förklaring)<a name="SC_Events.htm"></a></h2>
+        <p>En händelse är en fördefinierad incident på ditt <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS-system som kan konfigureras till att utlösa ett larm. Händelser är antingen fördefinierade systemhändelser eller användardefinierade händelser, till exempel analyshändelser eller generiska händelser. Händelser behöver inte vara länkade till ett larm, men de kan vara det.</p>
+        <p>Händelser är vanligen aktiverade automatiskt och i bakgrunden, till exempel som ett resultat av input från externa sensorer, detekterad rörelse eller av data från andra program. Händelser kan dock även aktiveras manuellt. Händelser används av VMS-systemet för att utlösa åtgärder såsom påbörja eller avsluta inspelning, byta videoinställningar, aktivera <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term33">utgång<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Data som går ut ur en dator. På IP-övervakningssystem används utgångar ofta för att aktivera enheter som portar, sirener, stroboskop osv.</span></a> eller kombinationer av åtgärder. När du aktiverar en händelse från <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>, utlöser den automatiskt åtgärder i VMS-systemet, till exempel inspelning på en särskild kamera med en särskild <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term14">bildfrekvens<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Ett mått som påvisar mängden information i en rörlig videoupptagning. Anges i regel med FPS (Frames Per Second, bilder per sekund).</span></a> för en särskild tidpunkt.</p>
+        <p>Din systemadministratör avgör vad som händer när du manuellt aktiverar en händelse. </p>
+        <div>
+          <h3>Manuellt aktivera händelser<a name="SC_ManuallyActivateAnEve.htm"></a></h3>
+          <p>Listan av valbara <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term11">händelser<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>En fördefinierad incident som inträffar i övervakningssystemet. Den används av övervakningssystemet för att utlösa åtgärder. Beroende på övervakningssystemets konfiguration kan händelser orsakas av inmatning från externa sensorer, av upptäckt rörelse, av mottagna data från andra program, eller manuellt genom användarinmatning. En händelse kan användas till exempel för att se till att en kamera spelar in med en viss bildfrekvens, för att aktivera utdata, för att skicka e-post eller en kombination av dessa.</span></a> grupperas efter server och den kamera eller enhet som händelsen ska knytas till. Du kan aktivera händelser manuellt. Du får ingen bekräftelse efter att du aktiverat en händelse.</p>
+          <ol>
+            <li value="1">Under fliken <span class="uitext">Live</span>, expandera rutan <span class="uitext">Händelse</span>.</li>
+            <li value="2">Klicka på <span class="uitext">Aktivera</span>.</li>
+            <li value="3">Om det är tillgängligt för kameran kan du också klicka på den <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term34">overlay-knapp<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Knapp som visas som ett lager ovanpå videon när du flyttar muspekaren över enskilda kamerapositioner i vyer under fliken Live. Med overlay-knappar kan du aktivera högtalare, händelser, utgångar, flytta PTZ-kameror, starta inspelning, ta bort signaler från kameror osv.</span></a> som visas när du flyttar muspekaren över bilden.</li>
+          </ol>
+          <p class="note">Hierarkiskt sett visas globala händelser under relevant server. Om en server anges med en röd ikon är den inte tillgänglig och du inte kan aktivera händelser på den.</p>
+        </div>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Konceptinformation</p>
+        <p class="containerItem_container_0">
+          <a href="sc_configuringalarmsandevents.htm">Larm och händelser (konfiguration)</a>
+        </p>
+        <p class="referenceHeading_reference_0">Referensmaterial</p>
+        <p class="referenceItem_reference_0">
+          <a href="sc_faq_alarms.htm">Vanliga frågor: larm</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

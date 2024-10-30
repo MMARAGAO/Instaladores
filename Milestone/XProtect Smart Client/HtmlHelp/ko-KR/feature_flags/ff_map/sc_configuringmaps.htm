@@ -1,0 +1,864 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="ko-KR" xml:lang="ko-KR" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="구성" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Configure smart map in XProtect Smart Client to get a geographical overview of your cameras, devices, and plug-in elements - in a one world experience." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=Recording Server" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=관리자" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=통합자" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=운영자" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>스마트 맵(구성)</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#feature_flags/ff_map/sc_configuringmaps.htm">탐색기로 항목 열기</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="브레드크럼즈" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>스마트 맵(구성)</h1>
+      <p>스마트 맵 기능을 이용하려면 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 에서 특정 구성 작업 수행을 완료해야 합니다.</p>
+      <p>스마트 맵이 뷰에 추가된 경우에만 볼 수 있습니다. 또한 <a href="#SC_AddSmartMapToView.htm" class="MCXref xref">뷰에 스마트 맵 추가</a>를 참조하십시오. </p>
+      <p class="note">자세한 정보는 <a href="sc_workingwithmap.htm#SC_SmartMapExplained.htm" class="MCXref xref">스마트 맵(설명됨)</a>를 참조하십시오.</p>
+      <div>
+        <h2>맵과 스마트 맵의 차이(설명됨)<a name="SC_DifferencesBetweenMap.htm"></a></h2>
+        <p>
+          <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 은(는) 감시 시스템의 시각화를 도와 사건에 신속히 대응할 수 있는 맵 기능을 제공합니다.</p>
+        <ul>
+          <li>
+            <span class="uitext">맵</span> - 이러한 맵은 지리적 참조를 포함하지 않은 스틸 이미지를 기반으로 합니다. 카메라, 마이크 및 레코딩 서버와 같은 장치를 추가할 수 있습니다. 맵에서 감시 시스템과 직접 상호 작용할 수 있게 해주는 알람, 이벤트 및 액세스 컨드롤도 추가할 수 있습니다. 맵에 장치와 기능 요소를 수동으로 배치해야 합니다. 자세한 정보는 <a href="../../standard_features/sf_sc/sf_operation/sc_workingwithmaps.htm#SC_IntroductionToMaps(796).htm" class="MCXref xref">맵(설명됨)</a>를 참조하십시오.</li>
+          <li>
+            <span class="uitext">스마트 맵</span> - 이러한 유형의 맵은 지리 정보 시스템을 사용하여 실제의 지리적 특성을 정확히 반영합니다. 이는 여러 위치의 카메라에 대해 보다 정확한 개요를 제공할 수 있습니다. 또한 다음 작업이 가능합니다.<ul><li>Bing Maps 및 Google Maps 서비스를 사용합니다</li><li data-mc-conditions="flcts-features.oem-map-service-content">지리적 배경으로 <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> 을(를) 사용합니다</li><li>지리적 배경으로 OpenStreetMap 맵 프로젝트를 사용합니다</li><li>컴퓨터 지원 설계(CAD) 드로잉, 모양파일, 이미지를 오버레이로 추가합니다</li></ul><p> 자세한 정보는 <a href="sc_workingwithmap.htm#SC_SmartMapExplained.htm" class="MCXref xref">스마트 맵(설명됨)</a>를 참조하십시오.</p></li>
+        </ul>
+        <p class="note">맵과 스마트 맵 기능은 상호 대체가 불가능합니다. 맵을 사용 중인 경우, 이미지 파일을 스마트 맵으로 사용할 수 있지만 장치를 다시 추가해야 합니다. 장치가 있는 맵을 스마트 맵으로 전송할 수 없습니다. 그러나 스마트 맵을 맵에 연결할 수 있습니다. 자세한 정보는 <a href="#SC_AddingDeletingOrEditi_2.htm" class="MCXref xref">스마트 맵에서 링크 추가, 삭제 또는 편집</a>를 참조하십시오.</p>
+      </div>
+      <div>
+        <h2>뷰에 스마트 맵 추가<a name="SC_AddSmartMapToView.htm"></a></h2>
+        <p>뷰에 수준을 추가하여 <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">스마트 맵<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>지리 정보 시스템을 사용하여 지리적으로 정확한 실제 이미지 상에서 감시 시스템의 장치(예: 카메라 및 마이크), 구조 및 토포그래픽 요소를 시각화하는 맵 기능입니다. 이 기능의 요소를 사용하는 맵은 스마트 맵이라고 합니다.</span></a>을 시작합니다. 기본적으로 기본 세계 지도가 표시됩니다. 스마트 맵을 추가한 후, 지리적 배경을 변경할 수 있습니다.</p>
+        <p>단계:</p>
+        <ol>
+          <li value="1">
+            <span class="uitext">라이브</span> 또는 <span class="uitext">재생</span> 탭에서 스마트 맵에 추가하려는 뷰를 선택합니다.</li>
+          <li value="2">
+            <span class="uitext">설정</span> 을 클릭하여 설정 모드로 들어갑니다. </li>
+          <li value="3">
+            <span class="uitext">시스템 개요</span> 창을 확장한 다음, <span class="uitext">스마트 맵</span> 항목을 뷰 내 관련 위치에 끌어다 놓습니다.</li>
+          <li value="4"> 다시 <span class="uitext">설정</span> 을 클릭하여 설정 모드를 종료합니다. 변경 사항이 저장됩니다.</li>
+          <li value="5">이제 지리적 배경을 변경할 수 있게 되었습니다. </li>
+        </ol>
+      </div>
+      <div>
+        <h2>스마트 맵 상의 지리적 배경 변경<a name="SC_ChangeTheGeographicBa.htm"></a></h2>
+        <p>기본적으로 스마트 맵을 뷰에 추가할 때 기본 세계 지도가 표시됩니다. 스마트 맵을 뷰에 추가한 후, 다른 지리적 배경을 선택할 수 있습니다. 스마트 맵을 사용하는 모든 사용자들이 다음 번 이 뷰를 표시할 때 새로운 배경을 보게 됩니다.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />요구사항</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Bing Maps 및 Google Maps 지리 배경은 시스템 관리자가 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> 에서 해당 항목을 사용하도록 한 경우에만 사용할 수 있습니다.</p>
+          </div>
+        </div>
+        <p>단계:</p>
+        <ol>
+          <li value="1">스마트 맵이 포함된 뷰를 선택합니다.</li>
+          <li value="2">도구 모음에서, <img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">레이어와 사용자 정의 오버레이 표시 또는 숨기기</span> 를 클릭합니다.</li>
+          <li value="3">
+            <span class="uitext">지리적 배경</span> 에서 표시하려는 배경과 세부 정보의 유형을 선택합니다. 예를 들어, 지형 정보를 보려면 <span class="uitext">지형</span> 을 선택합니다. 도로를 보려면 <span class="uitext">도로</span> 를 선택합니다.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>지리적 배경(설명됨)<a name="SC_GeographicBackgrounds.htm"></a></h2>
+        <p>사용자는 다음 서비스를 <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">스마트 맵<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>지리 정보 시스템을 사용하여 지리적으로 정확한 실제 이미지 상에서 감시 시스템의 장치(예: 카메라 및 마이크), 구조 및 토포그래픽 요소를 시각화하는 맵 기능입니다. 이 기능의 요소를 사용하는 맵은 스마트 맵이라고 합니다.</span></a>의 지리적 배경으로 사용할 수 있습니다.</p>
+        <ul>
+          <li>Bing Maps</li>
+          <li>Google Maps</li>
+          <li data-mc-conditions="flcts-features.oem-map-service-content">
+            <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+          </li>
+          <li> OpenStreetMap </li>
+        </ul>
+        <p>지리적 배경을 선택한 후, 카메라 같은 장치와 모양 파일 같은 사용자 정의 오버레이를 추가합니다. 자세한 정보는 <a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">사용자 정의 오버레이(설명됨)</a>를 참조하십시오.</p>
+      </div>
+      <div data-mc-conditions="">
+        <h2>지리적 배경의 유형(설명됨)<a name="SC_TypesOfGeographicBack.htm"></a></h2>
+        <p>뷰에 <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">스마트 맵<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>지리 정보 시스템을 사용하여 지리적으로 정확한 실제 이미지 상에서 감시 시스템의 장치(예: 카메라 및 마이크), 구조 및 토포그래픽 요소를 시각화하는 맵 기능입니다. 이 기능의 요소를 사용하는 맵은 스마트 맵이라고 합니다.</span></a>을 추가한 후, 다음 지리적 배경 중 하나를 사용할 수 있습니다.</p>
+        <ul>
+          <li>
+            <span class="uitext">기본 세계 지도</span> - <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 에서 제공된 표준 지리적 배경을 사용합니다. 이 맵은 일반 참조로 사용하기 위한 것으로, 국경선, 도시 또는 기타 세부 정보와 같은 기능을 포함하지 않습니다. 그러나 다른 지리적 배경처럼 지리 참조 데이터는 포함되어 있습니다</li>
+          <li>
+            <span class="uitext">Bing Maps</span> - Bing Maps에 연결</li>
+          <li>
+            <span class="uitext">Google Maps</span> - Google Maps에 연결 <p class="note">Bing Maps 및 Google Maps 옵션은 인터넷 액세스를 필요로 하며, Microsoft 또는 Google에서 키를 구매해야 합니다.</p></li>
+          <div data-mc-conditions="flcts-features.oem-map-service-content">
+            <li>
+              <span class="uitext">
+                <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+              </span> - 무료 맵 제공자에 연결합니다. <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> 을(를) 활성화한 후에는 추가 설정이 필요하지 않습니다.</li>
+            <p>
+              <a href="#Enable">Milestone Map Service 활성화</a> 를 참조</p>
+          </div>
+          <div>
+            <li>
+              <p>
+                <span class="uitext">OpenStreetMap</span> - 다음으로 연결됩니다.</p>
+              <ul>
+                <li>직접 선택한 상용 타일 서버</li>
+                <li>
+                  <p>자체 사용 중인 온라인 또는 로컬 타일 서버</p>
+                </li>
+              </ul>
+              <p>
+                <a href="#SC_ChangeOpenstreetmapTi.htm">OpenStreetMap 타일 서버 변경</a> 을 참조</p>
+            </li>
+          </div>
+          <li>
+            <span class="uitext">숨기기</span> - 이 옵션을 선택하면 지리적 배경을 숨기게 됩니다. 지리적 참조 데이터는 그대로 남아있게 됩니다. 또한 <a href="#SC_LayersOnSmartMapExpla.htm" class="MCXref xref">스마트 맵의 계층(설명됨)</a>를 참조하십시오.</li>
+        </ul>
+        <p>기본적으로, Bing Maps 및 Google Maps는 위성 이미지를 표시합니다. 이 이미지를 예를 들어 항공 또는 지형 이미지로 변경하여 다른 세부 정보를 볼 수 있습니다.</p>
+      </div>
+      <div data-mc-conditions="flcts-features.oem-map-service-content">
+        <h2>
+          <a name="Enable"></a>
+          <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> 활성화</h2>
+        <p>
+          <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> 은(는) <span class="mc-variable flvar-brand-company.CompanyLong variable">Milestone Systems</span> 의 타일 서버에 연결하는데 사용할 수 있는 온라인 서비스입니다. 이 타일 서버는 상업적으로 이용 가능한 무료 맵 서비스를 사용합니다. </p>
+        <p>스마트 맵에서 <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> 을(를) 활성화한 후에는 스마트 맵은 지리적 배경으로 <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> 을(를) 사용합니다.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />요구사항</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> 필드가 회색으로 표시되는 경우, 사용자에게는 해당 서비스를 활성화 또는 비활성화하는데 필요한 사용자 권한이 없는 것입니다. <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> 에서 해당 기능을 활성화하는 데 도움을 받으려면 시스템 관리자에게 문의하십시오.</p>
+            <p class="important">
+              <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> 은(는) 인터넷 액세스가 필요합니다.</p>
+          </div>
+        </div>
+        <p>단계:</p>
+        <ol>
+          <li value="1">
+            <p>오른쪽 위 모서리에서 <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> 을(를) 클릭한 다음 <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">설정</span> 을 클릭하여 <span class="uitext">설정</span> 창을 엽니다.</p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_configuringmaps_mmapserv.png" data-mc-popup-alt="Enable Milestone Map Service.">
+                <img class="MCPopupThumbnail img" data-mc-width="786" data-mc-height="593" src="../../../Images/sc_configuringmaps_mmapserv_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Enable Milestone Map Service." tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="2">왼쪽 섹션에서 <span class="uitext">스마트 맵</span> 을 클릭합니다.</li>
+          <li value="3">
+            <span class="uitext mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> 필드에서 <span class="uitext">이용 가능</span> 을 선택합니다.</li>
+          <li value="4">
+            <span class="uitext">닫기</span> 를 클릭합니다. 다음에 스마트 맵을 로딩할 때 <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> 을(를) 지리적 배경으로 사용하게 됩니다.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>OpenStreetMap 타일 서버(설명됨)<a name="SC_ChangingOpenstreetmap.htm"></a></h2>
+        <p>OpenStreetMap을 스마트 맵의 지리적 배경으로 사용할 경우, 타일 서버를 지정해야 합니다. 예를 들어 공항이나 항구 같은 지역에 대해 조직에서 자체 맵을 보유한 경우, 로컬 타일 서버를 지정하거나 상용 타일 서버를 사용할 수 있습니다.</p>
+        <p class="note">로컬 타일 서버를 사용하기 위해 인터넷 접속을 할 필요가 없습니다.</p>
+        <p>타일 서버 주소는 두 가지 방법을 지정할 수 있습니다.</p>
+        <ul>
+          <li>
+            <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> 에서 - <span class="mc-variable flvar-product.SC variable">Smart Client</span> 프로필에 타일 서버 주소를 설정합니다. 서버 주소는 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 프로파일에 할당된 모든 <span class="mc-variable flvar-product.SC variable">Smart Client</span> 사용자에게 적용됩니다.</li>
+          <li>
+            <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 에서 <span class="uitext">설정</span> 대화 상자에 타일 서버 주소를 설정합니다. 서버 주소는 해당 설치에만 적용됩니다.</li>
+        </ul>
+        <div>
+          <h2>OpenStreetMap 타일 서버 변경<a name="SC_ChangeOpenstreetmapTi.htm"></a></h2>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />요구사항</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>서버 측에서 지정된 타일 서버의 편집이 잠긴 경우, 필드가 비활성화되어 서버를 변경할 수 없습니다. <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> 에서 해당 기능을 활성화하는 데 도움을 받으려면 시스템 관리자에게 문의하십시오.</p>
+            </div>
+          </div>
+          <p>단계:</p>
+          <ol>
+            <li value="1">
+              <p>오른쪽 위 모서리에서 <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> 을(를) 클릭한 다음 <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">설정</span> 을 클릭하여 <span class="uitext">설정</span> 창을 엽니다.</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_mapsettings.png" data-mc-popup-alt="Specify alternative tile server for the smart map.">
+                  <img class="MCPopupThumbnail img" data-mc-width="786" data-mc-height="593" src="../../../Images/sc_mapsettings_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Specify alternative tile server for the smart map." tabindex="" />
+                </a>
+                <br />
+              </p>
+            </li>
+            <li value="2">왼쪽 섹션에서 <span class="uitext">스마트 맵</span> 을 클릭합니다.</li>
+            <li value="3">
+              <span class="uitext">OpenStreetMap 서버</span> 필드에서 다음 중 하나를 수행합니다. <ul><li>서버 주소를 입력합니다. 필드가 회색으로 표시되는 경우, 서버 측에서 잠겨져 있습니다.</li><li>서버 측에서 지정된 서버를 사용하려면 <span class="uitext">서버 따라가기</span> 확인란을 선택합니다.</li></ul></li>
+            <li value="4">
+              <span class="uitext">닫기</span> 를 클릭합니다. 다음에 스마트 맵을 로딩할 때 사용자가 지정한 OpenStreetMap 서버를 사용하게 됩니다.</li>
+          </ol>
+          <p class="important">서버 주소가 지정되지 않았거나 서버 주소가 잘못된 경우, OpenStreetMap은 지리적 배경으로 사용할 수 없습니다.</p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>스마트 맵에서 오버레이 표시 또는 숨기기<a name="SC_ShowingOrHidingLayers.htm"></a></h2>
+        <p>보고자 하는 내용에 따라 스마트 맵에서 레이어를 켜고 끌 수 있습니다.</p>
+        <div>
+          <h3>스마트 맵의 계층(설명됨)<a name="SC_LayersOnSmartMapExpla.htm"></a></h3>
+          <p>레이어를 사용해서 <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">스마트 맵<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>지리 정보 시스템을 사용하여 지리적으로 정확한 실제 이미지 상에서 감시 시스템의 장치(예: 카메라 및 마이크), 구조 및 토포그래픽 요소를 시각화하는 맵 기능입니다. 이 기능의 요소를 사용하는 맵은 스마트 맵이라고 합니다.</span></a>이 표시하는 정보를 필터링합니다. 스마트 맵에는 3가지 유형의 계층이 있습니다.</p>
+          <ul>
+            <li>
+              <span class="uitext">시스템 요소</span> - 카메라, 링크 및 위치 포함</li>
+            <li>
+              <span class="uitext">사용자 정의 오버레이</span> - 비트맵 이미지, CAD 도면 및 셰이프파일</li>
+            <li>
+              <span class="uitext">지리적 배경</span> - 기본 세계 지도 또는 다음 서비스 중 하나:<ul><li>Bing Maps</li><li>Google Maps</li><li data-mc-conditions="flcts-features.oem-map-service-content"><span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span></li><li> OpenStreetMap </li></ul></li>
+          </ul>
+          <p class="note">Bing Maps 및 Google Maps는 시스템 관리자가 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> 에서 활성화한 경우에만 지리적 배경으로 사용할 수 있습니다. 자세한 정보는 <a href="#SC_GeographicBackgrounds.htm" class="MCXref xref">지리적 배경(설명됨)</a>를 참조하십시오.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>계층 순서(설명됨)<a name="SC_OrderOfLayersExplaine.htm"></a></h3>
+          <p>각 유형의 모든 시스템 요소는 동일한 <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term26">레이어<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>스마트 맵, 사용자 정의 오버레이 또는 시스템 요소(예: 카메라)의 지리적 배경. 레이어는 스마트 맵에 존재하는 모든 그래픽 요소입니다.</span></a>에 있습니다. 예를 들어, 모든 카메라가 같은 계층에 존재합니다. 카메라 계층을 숨길 경우 모든 카메라가 숨겨집니다. 위에서 아래로 시스템 요소의 계층은 다음과 같이 위치, 카메라 링크 및 지리적 배경의 순서로 정렬됩니다. 이 순서는 변경할 수 없습니다.</p>
+          <p>지리적 배경은 항상 스마트 맵에서 가장 낮은 계층에 해당합니다. 지리적 배경 간을 전환할 수 있지만 한 번에 하나의 지리적 배경만 선택할 수 있습니다.</p>
+          <p>사용자 정의 오버레이는 별도의 계층으로 추가되며, 스마트 맵에 추가된 순으로 쌓이게 됩니다. 맵의 기본 설정을 구성하여 순서를 재정렬할 수 있습니다. </p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />예제</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>한 도시 계획자가 도심 경계를 보여주는 모양 파일을 가지고 있으며, 이 모양 파일에는 도시 내의 모든 주요 도로가 포함되어 있습니다. 계획자는 도로가 도시 경계의 맨 위에 표시되도록 계층 순서를 정렬할 수 있습니다. 이는 도시에서 카메라의 위치에 대한 일반적인 뷰를 비롯하여 특정 카메라가 작동하고 있는 거리의 이름을 보기 위해 확대할 수 있는 기능을 제공합니다.</p>
+            </div>
+          </div>
+        </div>
+        <div data-mc-conditions="">
+          <h3>스마트 맵에서 계층 표시 또는 숨기기<a name="SC_ShowOrHideLayersOnSma.htm"></a></h3>
+          <p>스마트 맵에서 지리적 배경을 포함한 계층을 표시하거나 숨길 수 있습니다. 예를 들어, 이 기능은 특정 요소에 초점을 맞추거나 스마트 맵이 표시하는 내용을 간소화할 때 유용합니다.</p>
+          <p>단계:</p>
+          <ol>
+            <li value="1">도구 모음에서 <img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">레이어와 사용자 정의 오버레이 표시 또는 숨기기</span> 를 클릭합니다.</li>
+            <li value="2">시스템 요소 및 사용자 정의 오버레이를 표시하거나 숨기려면 해당 확인란을 선택 또는 선택 취소합니다.</li>
+            <li value="3">지리적 배경을 숨기려면 <span class="uitext">없음</span> 을 선택합니다.</li>
+          </ol>
+          <p class="note">
+            <span class="uitext">없음</span> 을 선택하면 지리적 배경이 숨겨지지만, 지리 참조는 여전히 스마트 맵에 적용됩니다. 예를 들어, 공간 참조를 포함한 셰이프파일을 추가한 경우, 시스템이 여전히 해당 공간 참조를 사용해 맵에 파일을 배치합니다.</p>
+          <p class="note">마이크 숨기기를 하면 다시 마이크를 표시할 때까지 현재 음소거하지 않은 마이크를 음소거하게 됩니다.</p>
+        </div>
+        <div>
+          <h3>스마트 맵의 기본 설정 관리<a name="SC_ManageDefaultSettings(65803).htm"></a></h3>
+          <p>뷰에 스마트 맵을 추가한 후 그리고 오베레이, 카메라 및 링크를 추가한 후, 사용자 정의 오버레이에 대한 기본 설정을 지정할 수 있습니다. 또한 사용자 정의 오버레이를 삭제할 수 있습니다.</p>
+          <p>단계:</p>
+          <ol>
+            <li value="1">
+              <span class="uitext">설정</span> 을 클릭하십시오.</li>
+            <li value="2">
+              <img src="../../../Images/manage_default_settings_for.png" alt="" />
+              <span class="uitext">기본 설정 관리</span> 를 클릭하십시오.</li>
+            <li value="3">다음 중 하나를 수행하십시오. <ul><li>오버레이를 표시하거나 숨기려면 해당 확인란을 선택 또는 선택 취소합니다.</li><li>순서를 재정리하려면, 오버레이 앞의 드래그 핸들을 사용하여 오버레이를 목록의 새 위치로 드래그하십시오. 레이어는 목록의 맨 위에서 맨 아래로 순서가 정렬됩니다</li><li>오버레이를 삭제하려면, 오버레이 위로 포인터를 가져간 다음, <span class="uitext">삭제</span> 를 클릭합니다.</li></ul></li>
+            <li value="4">
+              <span class="uitext">저장</span> 을 클릭하십시오.</li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>오버레이 추가, 삭제 또는 편집<a name="SC_AddingDeletingOrEditi.htm"></a></h2>
+        <div>
+          <h3>사용자 정의 오버레이(설명됨)<a name="SC_CustomOverlaysExplain.htm"></a></h3>
+          <p>다음 유형의 파일을 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 의 스마트 맵에 사용자 정의 오버레이로 추가할 수 있습니다.</p>
+          <ul>
+            <li>
+              <span class="uitext">Shapefile</span> - 이 형식은 벽, 도로나 강 또는 호수와 같은 지리적 특징 등 맵에 객체를 나타내는 특성과 점, 선, 다각형과 같은 지리 공간 벡터 데이터를 포함할 수 있습니다. 예를 들어, 확대/축소할 때 손쉽게 배율을 조정하고 CAD 도면이나 비트맵 이미지보다 파일 크기가 작기 때문에 도시 계획 및 관리 사무소는 종종 셰이프파일을 사용합니다</li>
+            <li>
+              <span class="uitext">CAD</span> - CAD(컴퓨터 지원 설계) 도면은 스마트 맵 오버레이로 유용합니다. Shapefile처럼 CAD 데이터는 좌표계와 공간 참조를 사용해 정확한 지리적 문맥을 제공할 수 있기 때문입니다. 예를 들어, 한 위치에 대한 세부적인 공중 촬영 맵 또는 도로 맵을 사용할 수 있습니다</li>
+            <li>
+              <span class="uitext">이미지</span> - 건물의 평면도와 같이 이미지 파일을 가지고 있다면, 해당 파일을 스마트 맵에 오버레이로 추가할 수 있습니다. 다음 유형의 이미지 파일을 사용할 수 있습니다. PNG, BMP, GIF, JPG, JPEG, PHG, TIF, 및 TIFF</li>
+          </ul>
+          <p class="note">사용자 정의 오버레이에 포커스를 맞추기 위해 일시적으로 다른 유형의 레이어를 숨길 수 있습니다. <a href="#SC_LayersOnSmartMapExpla.htm" class="MCXref xref">스마트 맵의 계층(설명됨)</a>를 참조하십시오.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>사용자 정의 오버레이 및 위치(설명됨)<a name="SC_CustomOverlaysAndLoca.htm"></a></h3>
+          <p>
+            <a href="sc_workingwithmap.htm#SC_FindLocationOfCustomO.htm" class="MCXref xref">스마트 맵의 사용자 정의 오버레이로 이동</a>에 설명된 대로 스마트 맵에 추가한 사용자 지정 오버레이로 빠르게 이동할 수 있습니다. 그러나 설정에서는 사용자 지정 오버레이와 위치 간 연결을 설정할 수 있습니다. 이는 새 사용자 정의 오버레이를 추가할 때마, <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 에서 맵에 정확한 지점에 오버레이와 동일한 이름을 가진 위치를 생성한다는 의미입니다. 이제 사용자 정의 오버레이의 위치는 <span class="uitext">위치 선택</span> 목록에서 이용할 수 있게 됩니다.</p>
+          <p>
+            <img src="../../../Images/custom_overlays_and_locations.jpg" alt="" />
+          </p>
+          <p>오버레이와 위치가 연결되지는 않습니다. 예를 들어, 오버레이를 변경하지 않고 위치를 삭제하거나 이름을 바꿀 수 있으며 그 반대도 마찬가지입니다.</p>
+          <p class="note">이 기능을 켜려면 <a href="#SC_AddLocationsToCustomO.htm" class="MCXref xref">사용자 정의 오버레이에 위치 추가(스마트 맵)</a>를 참조하십시오.</p>
+        </div>
+        <div>
+          <h3>스마트 맵에 사용자 정의 오버레이 추가<a name="SC_AddCustomOverlayOnSma.htm"></a></h3>
+          <p>사용자 정의 오버레이를 추가하여 스마트 맵에서 세부 정보의 수준을 높이십시오. <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term8">사용자 정의 오버레이<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>사용자가 스마트 맵에 추가할 수 있는 사용자 정의 그래픽 요소(예: 건물의 평면도를 시연하거나 영역 사이에 경계를 표시를 할 때). 사용자 정의 오버레이는 이미지, CAD 도면 또는 쉐이프파일이 될 수 있습니다.</span></a>를 추가하면, <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 이(가) 오버레이와 동일한 이름의 위치를 생성합니다.</p>
+          <p>단계:</p>
+          <ol>
+            <li value="1">스마트 맵을 포함하는 뷰를 선택한 다음 <span class="uitext">설정</span> 을 클릭합니다.</li>
+            <li value="2">
+              <img src="../../../Images/add_custom_overlay_on_1.png" alt="" />
+              <span class="uitext">사용자 정의 오버레이 추가</span> 를 클릭합니다. <ul><li>오버레이가 지리적 위치 참조일 경우, 스마트 맵에서 아무 곳이나 클릭하십시오. <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 은(는) 지리 참조 정보를 사용하여 오버레이를 올바른 지리적 위치에 놓습니다. 또한, 스마트 맵은 기본 줌 수준에서 오버레이 중앙에 놓입니다</li><li>오버레이가 지리 참조되지 않을 경우, 요소를 추가하려는 맵 상의 지점으로 이동한 다음 스마트 맵에서 이 지점을 클릭합니다</li><p class="tip">오버레이를 추가하기 전에 이를 추가하려는 맵상의 위치를 확대하는 것이 좋습니다. 이렇게 하면 보다 쉽게 오버레이를 정확히 배치할 수 있습니다.</p></ul></li>
+            <li value="3">오버레이 이름을 입력하십시오.</li>
+            <li value="4">선택하는 파일 유형에 따라: <ul><li><span class="uitext">이미지</span> -이미지 파일을 선택하고 <span class="uitext">확인</span> 을 클릭합니다.</li><li><span class="uitext">모양 파일</span> - SHP 파일을 선택합니다. PRJ 파일이 있으면, <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 이(가) 파일을 찾고, 사용자는 <span class="uitext">확인</span> 을 클릭하면 됩니다. PRJ 파일이 없으면 추가 후에 오버레이를 수동으로 재배치할 수 있습니다. 색상을 적용할 수도 있습니다. 예를 들어, 색상을 추가하면 스마트 맵에서 셰이프 파일을 더 두드러져 보이게 할 수 있습니다</li><li><span class="uitext">CAD</span> - DWG 파일을 선택합니다. PRJ 파일이 있으면 <span class="uitext">확인</span> 을 클릭합니다. PRJ 파일이 없고 스마트 맵에서 파일 위치를 지정하기 위해 지리 참조를 사용하려는 경우, SRID(공간 참조 식별)를 입력하고 <span class="uitext">확인</span> 을 클릭합니다. PRJ 파일 또는 SRID가 없으면, 추가한 후에 오버레이를 수동으로 재배치할 수 있습니다.</li><p class="note">오버레이 유형에 대한 자세한 정보는 <a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">사용자 정의 오버레이(설명됨)</a>를 참조하십시오.</p></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>사용자 정의 오버레이에 위치 추가(스마트 맵)<a name="SC_AddLocationsToCustomO.htm"></a></h3>
+          <p>
+            <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 을(를) 구성하여 사용 중인 스마트 맵에서 <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term8">사용자 정의 오버레이<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>사용자가 스마트 맵에 추가할 수 있는 사용자 정의 그래픽 요소(예: 건물의 평면도를 시연하거나 영역 사이에 경계를 표시를 할 때). 사용자 정의 오버레이는 이미지, CAD 도면 또는 쉐이프파일이 될 수 있습니다.</span></a>에 위치를 자동으로 추가할 수 있습니다. 이렇게 하면 사용자는 <span class="uitext">위치 선택</span> 목록을 통해 사용자 정의 오버레이로 곧바로 이동할 수 있습니다. </p>
+          <p>단계:</p>
+          <ol>
+            <li value="1">응용 프로그램 도구 모음에서 <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> 을(를) 클릭한 다음 <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">설정</span> 을 클릭하여 <span class="uitext">설정</span> 창을 엽니다.</li>
+            <li value="2">
+              <span class="uitext">스마트 맵</span> 탭으로 이동합니다.</li>
+            <li value="3">
+              <span class="uitext">계층이 추가되면 위치 생성</span> 목록에서, <span class="uitext">예</span> 를 선택합니다.</li>
+            <li value="4">변경 내용을 저장하려면 대화상자를 닫습니다.</li>
+          </ol>
+          <p class="note">자세한 정보는 <a href="#SC_CustomOverlaysAndLoca.htm" class="MCXref xref">사용자 정의 오버레이 및 위치(설명됨)</a>를 참조하십시오.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>스마트 맵에서 사용자 정의 오버레이 삭제<a name="SC_DeleteCustomOverlayOn.htm"></a></h3>
+          <ol>
+            <li value="1">스마트 맵을 포함하는 뷰를 선택한 다음 <span class="uitext">설정</span> 을 클릭합니다.</li>
+            <li value="2">도구 모음에서 <img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">기본 설정 관리</span> 를 클릭합니다.</li>
+            <li value="3">사용자 정의 오버레이 위로 포인터를 가져간 다음 <span class="uitext">삭제</span> 를 클릭합니다.</li>
+            <li value="4">
+              <span class="uitext">저장</span> 을 클릭하여 사용자 정의 오버레이를 삭제합니다.</li>
+            <li value="5">선택 사항: 사용자 정의 오버레이를 위한 위치를 만들었다면 삭제가 필요할 수도 있습니다. 자세한 정보는 <a href="#SC_AddingDeletingOrEditi_3.htm" class="MCXref xref">스마트 맵에서 위치 추가, 삭제 또는 편집</a>를 참조하십시오.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>shapefile의 영역 두드러지게 만들기(스마트 맵)<a name="SC_MakeAreasInShapefiles.htm"></a></h3>
+          <p class="note">이 주제는 다각형을 가진 shapefile을 사용하는 경우에만 관련됩니다.</p>
+          <p>근접한 다각형들로 구성된 스마트 맵에 shapefile을 사용하고자 할 경우, 개별 다각형을 서로 구분해야 합니다. shapefile에 대해 선택하는 색상의 불투명도를 줄여서 구분합니다. 다각형의 경계를 두드러지게 합니다.</p>
+          <p>단계:</p>
+          <ol>
+            <li value="1">
+              <a href="#SC_AddCustomOverlayOnSma.htm" class="MCXref xref">스마트 맵에 사용자 정의 오버레이 추가</a>에 설명된 단계를 따릅니다.</li>
+            <li value="2">
+              <p>색상을 선택할 경우, 투명 수준에 만족할 때까지 <span class="uitext">불투명도</span> 슬라이더를 왼쪽으로 끌어 오십시오.</p>
+              <p>
+                <img src="../../../Images/make_areas_in_shapefiles_more.jpg" alt="" />
+              </p>
+            </li>
+            <li value="3">
+              <span class="uitext">저장</span> 을 클릭하십시오.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>사용자 정의 오버레이의 위치, 크기 또는 정렬을 조정<a name="SC_AdjustPositionSizeOrA.htm"></a></h3>
+          <p>오버레이를 맵상의 다른 위치로 이동하고 더 크거나 작게 만들고 회전시킬 수 있습니다. 예를 들어, 오버레이가 지리 참조되지 않았거나 오버레이가 지리 참조되었지만 어떤 이유로 지리적 배경과 정확하게 정렬되지 않는 경우에 이러한 조정 작업이 유용할 수 있습니다.</p>
+          <p>단계:</p>
+          <ol>
+            <li value="1">스마트 맵을 포함하는 뷰를 선택한 다음 <span class="uitext">설정</span> 을 클릭합니다.</li>
+            <li value="2">오버레이를 마우스 오른쪽 버튼으로 클릭하고 <span class="uitext">위치 편집</span> 을 선택합니다.</li>
+            <li value="3">오버레이의 크기 조정 또는 회전하려면: <ul><li>모서리의 핸들을 클릭해서 끌어 옵니다</li><li><p>특정 지점 주위로 오버레이를 회전하려면 피봇 지점을 맵 상에 해당 지점으로 이동합니다. 그런 다음 모서리의 핸들을 클릭해서 끌어 옵니다 </p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/adjust_position_size_or_alignment.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="273" data-mc-height="261" src="../../../Images/adjust_position_size_or_alignment_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="" tabindex="" /></a></p></li></ul></li>
+            <li value="4">맵에서 오버레이를 이동하려면 오버레이를 클릭해서 끌어 옵니다.</li>
+            <li value="5">변경 내용을 저장하려면 <span class="uitext">저장</span> 을 클릭합니다.</li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>스마트 맵에서 장치 추가, 삭제 또는 편집<a name="SC_AddingDeletingOrEditi_1.htm"></a></h2>
+        <p>사용 중인 환경의 실제 위치에서 스마트 맵에 장치를 추가할 수 있습니다. 이렇게 하면 감시 시스템에 대해 정확한 개요를 확보하고 상황에 대응하는 데 도움이 될 수 있습니다. 예를 들어, 진행 중인 인시던트 중 용의자를 따라가려면 맵에서 카메라를 클릭해서 해당 영상을 확인할 수 있습니다.</p>
+        <p>카메라를 스마트 맵에 추가한 후, 실제 카메라의 시계를 반용하도록 해당 카메라 아이콘의 시계를 조정할 수 있습니다. 이렇게 하면 특정 영역을 담당하고 있는 카메라를 쉽게 찾을 수 있습니다. 또한 맵에서 카메라의 유형을 손쉽게 식별할 수 있도록 맵에서 카메라를 나타내는 아이콘을 선택할 수 있습니다.</p>
+        <p>스마트 맵에 있는 다음과 같은 유형의 장치로 작업할 수 있습니다.</p>
+        <ul>
+          <li>카메라</li>
+          <li>입력 장치</li>
+          <li>마이크</li>
+        </ul>
+        <div data-mc-conditions="">
+          <h3>스마트 맵에 장치 추가<a name="SC_AddCamerasToSmartMap.htm"></a></h3>
+          <p>시스템 관리자가 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> 에 장치의 지리적 좌표를 지정한 경우, 해당 장치는 사용자가 추가 시 스마트 맵에 자동으로 배치됩니다. 그렇지 않을 경우, 해당 장치를 직접 정확한 지리적 위치에 놓아야 합니다.</p>
+          <ol>
+            <li value="1">스마트 맵을 포함하는 뷰를 선택한 다음 <span class="uitext">설정</span> 을 클릭합니다.</li>
+            <li value="2">장치 또는 장치 그룹을 추가하려면 다음과 같이 하십시오. <p class="tip">장치를 추가하기 전에 맵에서 위치를 확대하는 것이 좋습니다. 이렇게 하면 보다 쉽게 장치를 정확히 배치할 수 있습니다.</p><ul><li><span class="uitext">시스템 개요</span> 창을 확장하고 장치 또는 장치 그룹을 찾은 다음, 스마트 맵에서 표시하려는 지점으로 끌어서 놓습니다. 재배치 이후 장치를 드래그할 수 있습니다.</li><li>스마트 맵 도구 모음에서 <img src="../../../Images/add-a-device-to-smart-map.png" alt="" /><span class="uitext">장치 추가</span> 를 선택한 후 &gt; 장치 유형을 선택합니다.<ul><li>예: 카메라인 경우 <img src="../../../Images/add_cameras_to_map.png" alt="" /><span class="uitext">카메라 추가</span> 를 선택한 후 카메라를 선택합니다.</li></ul></li><li>장치를 스마트 맵에 드래그하여 추가합니다.</li><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_adddevice.png" data-mc-popup-alt="Add a device to your smart map."><img class="MCPopupThumbnail img" data-mc-width="709" data-mc-height="823" src="../../../Images/sc_smap_adddevice_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add a device to your smart map." tabindex="" /></a><br /></ul></li>
+            <li value="3">변경 내용을 저장하려면 <span class="uitext">설정</span> 을 클릭하여 설정 모드를 종료합니다.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>카메라 시야와 방향 변경<a name="SC_ChangeFieldOfViewAndD.htm"></a></h3>
+          <p>카메라가 스마트 맵에 추가되면, 사용자는 카메라 아이콘을 조정하여 시야와 방향을 변경할 수 있습니다.</p>
+          <p class="tip">맵을 축소한 경우, 시계가 표시될 때까지 확대해야 할 수도 있습니다.</p>
+          <ol>
+            <li value="1">사용하고자 하는 스마트 맵을 포함한 뷰를 선택합니다.</li>
+            <li value="2">카메라 아이콘을 편집하려면 <span class="uitext">설정</span> 을 클릭하십시오.</li>
+            <li value="3">
+              <p>카메라 아이콘을 클릭합니다.</p>
+              <p>
+                <img src="../../../Images/change_field_of_view_and_direction.png" alt="" />
+              </p>
+            </li>
+            <li value="4">회전 핸들을 사용하여 카메라를 오른쪽 방향으로 가리킵니다.</li>
+            <li value="5">시계의 너비, 길이 및 각도를 조정하려면 시계의 앞쪽 가장자리에서 핸들을 클릭하고 드래그합니다.</li>
+            <li value="6">변경 내용을 저장하려면 <span class="uitext">설정</span> 을 클릭하여 설정 모드를 종료합니다.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>장치 아이콘 선택 또는 변경<a name="SC_SelectOrChangeTheIcon.htm"></a></h3>
+          <p>사용 중인 장치의 유형과 일치하는 장치 아이콘을 선택할 수 있습니다.</p>
+          <ol>
+            <li value="1">사용하고자 하는 스마트 맵을 포함한 뷰를 선택합니다.</li>
+            <li value="2">
+              <p>
+                <span class="uitext">설정</span> 을 클릭한 다음, 맵에서 장치 아이콘 을 두 번 클릭합니다.</p>
+              <p>
+                <img src="../../../Images/select_or_change_the_icon.png" alt="" />
+              </p>
+            </li>
+            <li value="3">
+              <span class="uitext">선택 아이콘</span> 을 클릭한 다음, 해당 장치의 아이콘을 선택합니다.</li>
+            <li value="4">변경 내용을 저장하려면 다시 <span class="uitext">설정</span> 을 클릭합니다.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>장치 정보 표시 또는 숨기기<a name="SC_ShowOrHideInformation.htm"></a></h3>
+          <p>스마트 맵에서 장치에 관한 정보를 표시하거나 숨길 수 있습니다. 예를 들어, 이 기능은 스마트 맵에 표시되는 내용의 양을 늘리거나 줄일 때 유용합니다.</p>
+          <ol>
+            <li value="1">사용하고자 하는 스마트 맵을 포함한 뷰를 선택합니다.</li>
+            <li value="2">
+              <img src="../../../Images/change_the_geographic_background.png" alt="" />
+              <span class="uitext">레이어와 사용자 정의 오버레이 표시 또는 숨기기</span> 를 클릭합니다.</li>
+            <li value="3">정보의 표시 또는 숨기기 확인란을 선택하거나 지우십시오.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>스마트 맵의 마이크에서 오디오 청취</h3>
+          <p>스마트 맵에 마이크를 추가한 후 <span class="uitext">라이브</span> 탭에서 한 번에 마이크 하나씩으로부터 오디오를 들을 수 있습니다. </p>
+          <p>단계:</p>
+          <ol>
+            <li value="1">
+              <p>
+                <span class="uitext">라이브</span> 탭에서 마이크가 배치된 스마트 맵의 자리로 이동합니다.</p>
+            </li>
+            <li value="2">
+              <p>마이크를 더블 클릭하여 음소거하거나 음소거를 해제합니다.</p>
+              <p class="tip">또는 마이크에서 마우스 오른쪽 버튼을 클릭한 후 <span class="uitext">마이크 음소거</span> 또는 <span class="uitext">음소거 해제</span> 를 선택합니다.</p>
+            </li>
+          </ol>
+        </div>
+        <div>
+          <h3>스마트 맵에서 장치 제거하기<a name="SC_DeletingCamerasOnSmar.htm"></a></h3>
+          <p>사용자는 장치를 제거할 수 있습니다(예: 장치가 물리적으로 제거되었거나 실수로 추가한 경우). 장치를 제거하면, 장치의 배치 정보(예: 지리적 좌표)는 사용 중인 VMS 시스템에서 제거됩니다.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />요구사항</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>다음과 같은 사용자 권한은 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> 에서 활성화되어야만 합니다:</p>
+              <ul>
+                <li>스마트 맵 편집</li>
+                <li>장치 편집</li>
+              </ul>
+            </div>
+          </div>
+          <p>단계:</p>
+          <ol>
+            <li value="1">제거하고자 하는 장치로 이동합니다.</li>
+            <li value="2">
+              <span class="uitext">설정</span> 을 클릭하여 설정 모드로 들어갑니다. </li>
+            <li value="3">
+              <p>장치 하나를 제거하려면 해당 장치에서 마우스 오른쪽 버튼을 클릭하고 <span class="uitext">제거</span> 를 클릭합니다.</p>
+              <p>예: 카메라인 경우 <span class="uitext">카메라 제거</span> 를 클릭합니다.</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_removecamera.png" data-mc-popup-alt="Remove camera from your smart map.">
+                  <img class="MCPopupThumbnail img" data-mc-width="284" data-mc-height="209" src="../../../Images/sc_smap_removecamera_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: 0;" alt="Remove camera from your smart map." tabindex="" />
+                </a>
+              </p>
+            </li>
+            <li value="4">다수의 카메라를 제거하려면 다음과 같이 하십시오:<ol><li value="1"><p>스마트 맵 도구모음에서 <img src="../../../Images/preview_videos_from_several.png" alt="" /><span class="uitext">다중 카메라 선택</span> 을 클릭합니다.</p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_cluster_multiselect.png" data-mc-popup-alt="Select multipe cameras on your smart map."><img class="MCPopupThumbnail img" data-mc-width="1056" data-mc-height="672" src="../../../Images/sc_smap_cluster_multiselect_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: 0;" alt="Select multipe cameras on your smart map." tabindex="" /></a><br /></p></li><li value="2">클릭하고 드래그하여 다수의 카메라를 선택합니다. 다른 유형의 장치(예: 입력 장치)는 이러한 선택에 포함되지 않습니다.</li><li value="3">마우스 오른쪽 버튼으로 클릭하고 <span class="uitext">카메라 제거</span> 를 선택합니다.</li></ol></li>
+            <li value="5">카메라가 아닌 여러 장치를 제거하려면 다음과 같이 합니다.<ol><li value="1">스마트 맵에서 컨트롤 키를 누르고 있습니다. </li><li value="2">컨트롤 키를 누른 채로 제거하려는 장치를 클릭합니다.</li><li value="3">선택한 장치 중 하나를 마우스 오른쪽 버튼으로 클릭하고 제거를 선택합니다.</li></ol></li>
+            <li value="6"> 다시 <span class="uitext">설정</span> 을 클릭하여 설정 모드를 종료합니다. 변경 사항이 저장됩니다.</li>
+          </ol>
+          <p class="tip">제거하고자 하는 장치 하나를 선택하고 키보드에서 <span class="uitext">DELETE</span> 를 눌러 제거할 수도있습니다.</p>
+        </div>
+      </div>
+      <div>
+        <h2>스마트 맵에서 링크 추가, 삭제 또는 편집<a name="SC_AddingDeletingOrEditi_2.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>스마트 맵의 링크(설명됨)<a name="SC_LinksOnSmartMapExplai.htm"></a></h3>
+          <p>스마트 맵의 위치로 이동하거나 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 에 정적 맵으로 이동하는 링크를 추가할 수 있습니다. 이렇게 하면 해당 위치를 신속하게 방문하거나 다른 뷰로 변경하지 않고 맵의 다른 유형을 표시할 수 있습니다. 또 다른 스마트 맵에 연결할 수는 없습니다. 자세한 정보는 <a href="#SC_DifferencesBetweenMap.htm" class="MCXref xref">맵과 스마트 맵의 차이(설명됨)</a>를 참조하십시오.</p>
+          <p>링크는 다음과 같인 위치와 맵을 표시합니다.</p>
+          <ul>
+            <li>위치로의 링크는 현재 뷰의 위치를 표시합니다. 이전에 본 위치로 돌아가려면 스마트 맵 도구 모음에서 <img src="../../../Images/backtracking_to_previous_locations.png" alt="" /><span class="uitext">뒤로</span> 를 클릭합니다</li>
+            <li>맵으로의 링크는 부동 창에 맵을 표시합니다. 이를 통해 두 가지 유형의 맵에 동시에 액세스할 수 있습니다. 맵을 보고 상호 작용할 수 있지만, 부동 창에서 카메라 추가와 같은 변경 내용을 적용할 수 없습니다</li>
+          </ul>
+          <p class="note">링크에 색상 코드를 지정하거나 맵에서 더 눈에 띄게 만들려면 해당 링크에 색상을 지정할 수 있습니다. 기본적으로 스마트 맵으로의 링크는 파란색이며 레거시 맵으로의 링크는 빨간색입니다. 다른 색상을 사용할 경우, 링크의 각 유형에 대해 동일한 색상을 사용하는 것이 좋습니다. 예를 들어, 이렇게 하면 계층을 사용해 맵에서 항목을 필터링할 때 링크 간을 손쉽게 구별할 수 있습니다.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>스마트 맵 위치 또는 맵으로의 링크 추가<a name="SC_AddLinkToSmartMapLoca.htm"></a></h3>
+          <p>스마트 맵에 대한 링크를 추가하면 다른 뷰로 변경하지 않고도 위치를 빠르게 방문하거나 다른 유형의 맵을 표시할 수 있습니다.</p>
+          <p>단계:</p>
+          <ol>
+            <li value="1">스마트 맵을 포함하는 뷰를 선택한 다음 <span class="uitext">설정</span> 을 클릭합니다.</li>
+            <li value="2">맵에서 링크를 추가하려는 지점으로 이동합니다.</li>
+            <li value="3">맵 도구 모음에서 <img src="../../../Images/add_link_to_map_location.png" alt="" /><span class="uitext">링크 추가</span> 를 클릭한 다음, 맵에서 링크를 설정할 지점을 클릭합니다.</li>
+            <li value="4">스마트 맵 위치 또는 맵으로의 링크를 설정할지 여부를 지정한 다음, <span class="uitext">추가</span> 를 클릭합니다.</li>
+            <li value="5">
+              <p>링크의 이름을 입력합니다.</p>
+              <p class="tip">
+                <span class="uitext">아이콘 및 텍스트</span> 를 표시 스타일로 선택한 경우, 스마트 맵에 링크의 제목을 표시할 수 있습니다. 일반적으로 이름은 링크의 이동 위치를 나타냅니다.</p>
+            </li>
+            <li value="6">
+              <span class="uitext">대상</span> 필드에 링크가 이동할 맵 또는 위치를 선택합니다.</li>
+            <li value="7">
+              <span class="uitext">표시 스타일</span> 필드에 맵에서 이름과 아이콘을 표시할지, 또는 링크 아이콘만을 표시할지 지정합니다.</li>
+            <li value="8">선택 사항: 링크의 색상을 지정하려면 <span class="uitext">색상</span> 을 클릭하십시오.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>스마트 맵에서 링크 편집 또는 삭제<a name="SC_EditOrDeleteLinkOnSma.htm"></a></h3>
+          <p>스마트 맵에서 링크를 추가하면, 편집하거나 삭제할 수 있습니다.</p>
+          <p>단계:</p>
+          <ol>
+            <li value="1">
+              <span class="uitext">설정</span> 을 클릭하여 설정 모드로 들어갑니다. </li>
+            <li value="2">링크를 편집하려면 링크를 마우스 오른쪽 버튼으로 클릭하고 <span class="uitext">링크 편집</span> 을 선택합니다.</li>
+            <li value="3">링크를 삭제하려면 다음 중 하나를 수행하십시오:<ul><li>링크를 마우스 오른쪽 버튼으로 클릭하고 <span class="uitext">링크 삭제</span> 를 선택합니다.</li><li>링크를 선택하고 키보드에서 <span class="uitext">DELETE</span> 를 누릅니다.</li></ul></li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>스마트 맵에서 위치 추가, 삭제 또는 편집<a name="SC_AddingDeletingOrEditi_3.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>스마트 맵에서의 위치(설명됨)<a name="SC_LocationsOnSmartMapEx.htm"></a></h3>
+          <p>스마트 맵에서 관심 있는 지점에 위치를 생성할 수 있습니다. 예를 들어, 본사와 지국에 대한 위치를 생성할 수 있습니다. 이러한 위치는 환경에 대한 전체 그림을 제공할 뿐 아니라 스마트 맵을 탐색할 때도 유용합니다. </p>
+          <p class="note">사용자의 구성에 따라, 사용자 정의 오버레이를 추가할 때 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 이(가) 오버레이와 동일한 이름의 위치를 추가할 수 있습니다. 그러면 예를 들어, 축소했을 때 스마트 맵에서 오버레이로 이동하기가 쉬워집니다. 그러나 오버레이와 위치가 연결되지는 않습니다. 예를 들어, 오버레이를 변경하지 않고 위치를 삭제하거나 이름을 바꿀 수 있으며 그 반대도 마찬가지입니다. 자세한 정보는 <a href="#SC_AddingDeletingOrEditi.htm" class="MCXref xref">오버레이 추가, 삭제 또는 편집</a>를 참조하십시오.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>스마트 맵의 홈 위치(설명됨)<a name="SC_HomeLocationsForSmart.htm"></a></h3>
+          <p>홈 위치는 설정된 항목 보기에 특정하게 사용됩니다. 다른 항목 보기에서 다른 홈 위치를 가질 수 있습니다. 홈 위치가 항목 보기에 지정되지 않은 경우, 항목 보기는 사용하는 배경 유형에 상관 없이 전세계를 표시합니다. 이는 또한 홈 위치를 삭제할 경우에도 해당됩니다.</p>
+          <p>스마트 맵을 사용할 때 <img src="../../../Images/home_locations_for_map.png" alt="" /><span class="uitext">홈</span> 을 클릭해 홈 위치로 돌아갈 수 있습니다. 이는 뷰에서 스마트 맵 재설정과 유사합니다. 뷰 항목에 대한 기본 설정으로 돌아가고 시스템이 방문한 위치의 기록을 삭제합니다.</p>
+          <p class="note">새 홈 위치를 선택하면 해당 항목 보기를 사용하는 모든 사용자에게 영향을 줍니다. 누군가 다른 위치를 홈으로 설정한 경우, 해당 설정을 변경할 수 있습니다.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>스마트 맵에 위치 추가<a name="SC_AddLocationToSmartMap.htm"></a></h3>
+          <p>사용자에게 관심 있는 지점을 추적하기 위해 스마트 맵에서 그러한 위치를 빠르게 탐색할 수 있는 위치를 생성할 수 있습니다.</p>
+          <p>단계:</p>
+          <ol>
+            <li value="1">스마트 맵을 포함하는 뷰를 선택하고 <span class="uitext">설정</span> 을 클릭합니다.</li>
+            <li value="2">필요하면 스마트 맵에서 위치를 추가할 지점으로 이동하여 확대합니다.</li>
+            <li value="3">도구 모음에서 <img src="../../../Images/add_location_to_map.png" alt="" /><span class="uitext">위치 추가</span> 를 클릭한 다음, 스마트 맵의 지점을 클릭합니다.</li>
+            <li value="4">위치 이름을 지정하고 다음 옵션의 세부 정보를 추가합니다. <ul><li>다른 사용자가 스마트 맵에서 해당 위치로 이동할 때 적용할 줌 수준 지정</li><li>위치 아이콘의 색상을 선택합니다. 색상이 코딩한 위치는 위치 유형 간에 구분할 때 유용합니다. 이러한 구분은 위치의 기능이나 그 유형에 기초하거나 위치 우선 순위를 나타낼 수 있습니다.</li><li>선택 사항: 위치를 홈 위치로 설정합니다. <img src="../../../Images/home_locations_for_map.png" alt="" /><span class="uitext">홈</span> 을 클릭할 때, 스마트 맵이 이 위치에 중심을 맞추고 기본 줌 수준 설정을 적용합니다.</li></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>스마트 맵에서 위치 편집 또는 삭제<a name="SC_EditOrDeleteLocationO.htm"></a></h3>
+          <p>스마트 맵에서 위치를 추가하면, 홈 위치 삭제와 같은 설정을 삭제하거나 편집할 수 있습니다.</p>
+          <p>단계:</p>
+          <ol>
+            <li value="1">
+              <span class="uitext">설정</span> 을 클릭하여 설정 모드로 들어갑니다. </li>
+            <li value="2">위치를 편집하려면 위치를 마우스 오른쪽 버튼으로 클릭하고 <span class="uitext">위치 편집</span> 을 선택합니다.</li>
+            <li value="3">위치를 삭제하려면 다음 중 하나를 수행하십시오:<ul><li>위치를 마우스 오른쪽 버튼으로 클릭하고 <span class="uitext">위치 삭제</span> 를 선택합니다.</li><li>위치를 선택하고 키보드에서 <span class="uitext">DELETE</span> 를 누릅니다.</li></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>위치 사이의 연결(설명됨)<a name="SC_LinkingBetweenLocatio.htm"></a></h3>
+          <p>예를 들어, 위치 사이에 일련의 링크를 만들어 순찰 경로를 생성할 수 있습니다. 위치 A에 위치 B로 이동하는 링크를, 위치 B에 위치 C로 이동하는 링크 등을 만듭니다. 자세한 정보는 <a href="#SC_AddingDeletingOrEditi_2.htm" class="MCXref xref">스마트 맵에서 링크 추가, 삭제 또는 편집</a>를 참조하십시오.</p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>스마트 맵에서 건물 추가, 삭제 또는 편집<a name="SC_AddingDeletingOrEditi_4.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>스마트 맵상의 건물(설명됨)<a name="SC_BuildingsOnSmartMapEx.htm"></a></h3>
+          <p>
+            <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">스마트 맵<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>지리 정보 시스템을 사용하여 지리적으로 정확한 실제 이미지 상에서 감시 시스템의 장치(예: 카메라 및 마이크), 구조 및 토포그래픽 요소를 시각화하는 맵 기능입니다. 이 기능의 요소를 사용하는 맵은 스마트 맵이라고 합니다.</span></a> 상의 건물은 4개의 모서리로 이루어진 다각형으로 그려져 있습니다. 건물이 추가되면, 건물의 실제 모양과 위치에 맞게 치수, 각도 및 크기를 조정할 수 있습니다.</p>
+          <p>건물이 다층 건물이라면, 층 추가를 시작하고 개별 층에 카메라를 추가 할 수 있습니다. 이렇게 하면 건물 안의 카메라를 층별로 탐색할 수 있습니다.</p>
+          <p>어떤 층의 내부를 시연하는 데 도움을 주기 위해 각 층에 사용자 정의 오버레이를 추가할 수 있습니다(예: 평면도를 보여주는 이미지). 자세한 정보는 <a href="#SC_AddFloorPlansToLevels.htm" class="MCXref xref">층에 평면도 추가하기(스마트 맵)</a>를 참조하십시오.</p>
+          <p>건물에는 자동으로 이름이 부여됩니다. 예를 들면 <span class="uitext">건물 4</span>가 됩니다. <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> 에서는 이름을 변경하도록 권고합니다. 이렇게 하면 건물을 쉽게 구별할 수 있게 됩니다.</p>
+          <p>
+            <img src="../../../Images/buildings_on_map_explained.jpg" alt="" />
+          </p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>스마트 맵에 건물 추가하기<a name="SC_AddBuildingsToSmartMa.htm"></a></h3>
+          <p>이미지나 쉐이프파일을 사용하여 건물을 시연하는 대신, 건물의 윤곽을 추가할 수 있습니다. 그런 다음, 실제 건물의 모양과 위치에 맞게 치수, 각도 및 크기를 변경할 수 있습니다.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />요구사항</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> 스마트 맵 편집이 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>의 <span class="mc-variable flvar-product.SC variable">Smart Client</span> 프로필에서 활성화되었습니다. </p>
+            </div>
+          </div>
+          <p>단계:</p>
+          <ol>
+            <li value="1">
+              <span class="uitext">설정</span> 을 클릭하여 설정 모드로 들어갑니다. </li>
+            <li value="2">스마트 맵에서 건물을 배치할 원하는 위치로 이동합니다.</li>
+            <li value="3">
+              <img src="../../../Images/add_buildings_to_map.jpg" alt="" /> 을(를) 클릭하고 커서를 스마트 맵의 관련 위치에 놓습니다.</li>
+            <li value="4">다시 클릭합니다. 직사각형이 스마트 맵에 추가됩니다. 축소하면 줌 레벨이 자동으로 증가합니다.</li>
+            <li value="5">필요한 경우, 모서리 핸들을 사용하여 실제 건물의 모양과 위치를 조정합니다.</li>
+            <li value="6"> 다시 <span class="uitext">설정</span> 을 클릭하여 설정 모드를 종료합니다. 변경 사항이 저장됩니다.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>스마트 맵에서 건물 수정하기<a name="SC_EditBuildingsOnSmartM.htm"></a></h3>
+          <p>건물이 스마트 맵에 추가되면, 건물 이름을 변경하고, 위치, 크기, 치수 및 각도를 조정할 수 있습니다. 층을 추가, 제거 또는 재정렬할 수도 있습니다.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />요구사항</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> 스마트 맵 편집이 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>의 <span class="mc-variable flvar-product.SC variable">Smart Client</span> 프로필에서 활성화되었습니다. </p>
+            </div>
+          </div>
+          <p>단계:</p>
+          <ol>
+            <li value="1">스마트 맵에서 건물로 이동합니다. 필요한 경우, 확대합니다.</li>
+            <li value="2">
+              <span class="uitext">설정</span> 을 클릭하여 설정 모드로 들어갑니다. </li>
+            <li value="3">
+              <p>건물 내부의 아무 곳이나 클릭하십시오. 파란 테두리는 건물을 편집할 수 있음을 나타냅니다.<br /></p>
+              <p>
+                <img src="../../../Images/buildings_on_map_explained.jpg" alt="" />
+              </p>
+            </li>
+            <li value="4">건물의 이름을 바꾸려면, 오른쪽 창 상단으로 이동하여 <img src="../../../Images/edit_buildings_on_map.jpg" alt="" /> 을 클릭합니다. 이름을 변경하고 <img src="../../../Images/edit_buildings_on_map_1.jpg" alt="" /> 을 클릭합니다. 취소하려면, <span class="uitext">Esc</span> 키를 누릅니다.</li>
+            <li value="5">모서리를 조정하려면, 클릭하고 새로운 위치로 드래그합니다.</li>
+            <li value="6">층을 추가 또는 제거하려면 <a href="#SC_AddOrRemoveLevelsFrom.htm" class="MCXref xref">건물에서 층 추가 또는 제거하기(스마트 맵)</a>를 참조하십시오.</li>
+            <li value="7"> 다시 <span class="uitext">설정</span> 을 클릭하여 설정 모드를 종료합니다. 변경 사항이 저장됩니다.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>스마트 맵에서 건물 삭제하기<a name="SC_DeleteBuildingsOnSmar.htm"></a></h3>
+          <p>건물이 더 이상 필요하지 않은 경우, 이를 삭제할 수 있습니다. 다음 번에 누군가 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 에 로그인하거나 다시 로드할 때, 건물은 삭제되어 있습니다.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />요구사항</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> 스마트 맵 편집이 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>의 <span class="mc-variable flvar-product.SC variable">Smart Client</span> 프로필에서 활성화되었습니다. </p>
+            </div>
+          </div>
+          <p>단계:</p>
+          <ol>
+            <li value="1">스마트 맵 열기.</li>
+            <li value="2">
+              <span class="uitext">설정</span> 을 클릭하여 설정 모드로 들어갑니다. </li>
+            <li value="3">다음 중 하나를 수행하십시오.</li>
+            <ul>
+              <li>빌딩을 마우스 오른쪽 버튼으로 클릭하고 <span class="uitext">삭제</span> 를 선택합니다.</li>
+              <li>건물을 선택하고 키보드에서 <span class="uitext">DELETE</span> 키를 누릅니다. </li>
+            </ul>
+          </ol>
+          <p class="tip">빌딩 삭제를 하는 다른 방법: <img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">기본 설정 관리</span> 에서, <span class="uitext">건물</span> 섹션을 스크롤 다운한 다음, 해당 건물 위에 마우스 포인터를 올린 후, <span class="uitext">삭제</span> 한 후 <span class="uitext">저장</span> 합니다. </p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>건물의 층 및 장치 관리(스마트 맵)<a name="SC_ManagingLevelsAndCame.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>장치와 건물의 층(설명됨)<a name="SC_CamerasAndLevelsInBui.htm"></a></h3>
+          <p>건물에 장치를 추가할 때, 디폴트 층이 지정된 경우 장치는 자동적으로 디폴트 층으로 연결됩니다. 그렇지 않으면 장치가 1층에 배치됩니다. 그러나 이를 변경하여 장치를 다른 층 또는 동시에 여러 층에 연결할 수 있습니다.</p>
+          <p>기능 더보기:</p>
+          <ul>
+            <li>선택한 층이 없으면, 모든 층에서 장치를 볼 수 있습니다</li>
+            <li>이미 배치된 장치 위에 건물을 추가하면, 기본적으로 장치가 모든 층과 연결됩니다</li>
+            <li>이미 배치된 장치를 포함하도록 건물의 경계를 확장할 경우, 장치는 선택한 층에만 연결됩니다</li>
+          </ul>
+          <p class="note">건물의 경계를 재조정하여 더 이상 장치를 포함되지 않게 된 경우, 해당 장치는 더 이상 건물과 연결되지 않습니다.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>
+            <a name="SC_FloorPlansDevicesInBuildings"></a>평면도와 건물 장치(설명됨)</h3>
+          <p>건물의 층 내부를 시각화하고자 하는 경우, 사용자 정의 오버레이로 평면도를 추가할 수 있습니다. 평면도를 사용하면 장치를 보다 쉽게 정확히 배치할 수 있습니다. 자세한 정보는 <a href="#SC_AddFloorPlansToLevels.htm" class="MCXref xref">층에 평면도 추가하기(스마트 맵)</a>를 참조하십시오.</p>
+          <p>배치된 장치는 사용자 정의 오버레이가 아닌 층과 연결되어 있습니다. 장치 및 사용자 정의 오버레이가 있는 건물 내부의 층을 삭제하면, 장치는 지리적 위치에 머물러 있지만, 더 이상 층과 연결되지 않습니다. 그러나 사용자 정의 오버레이는 그 층과 함께 삭제됩니다.</p>
+          <p>층을 재정렬하면, 장치와 사용자 정의 오버레이 모두 그 층과 함께 유지됩니다. 장치는 지리적 위치를 유지합니다.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>건물에서 층 추가 또는 제거하기(스마트 맵)<a name="SC_AddOrRemoveLevelsFrom.htm"></a></h3>
+          <p>스마트 맵에 건물을 추가한 후, 건물의 층을 원하는 만큼 추가할 수 있습니다. 첫 번째 층에 번호 <span class="uitext">1</span> 이 배정되고, 다음 층은 <span class="uitext">2</span> 와 같은 방식으로 그 이후의 층도 번호가 배정됩니다. 그런 후, 개별 층의 이름을 변경하고 순서를 재정렬할 수 있습니다.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />요구사항</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> 스마트 맵 편집이 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>의 <span class="mc-variable flvar-product.SC variable">Smart Client</span> 프로필에서 활성화되었습니다. </p>
+            </div>
+          </div>
+          <p>단계:</p>
+          <ol>
+            <li value="1">스마트 맵에서 건물로 이동합니다. 필요한 경우, 확대합니다.</li>
+            <li value="2">건물을 선택합니다. 창이 오른쪽에 나타납니다.</li>
+            <li value="3">
+              <span class="uitext">설정</span> 버튼을 클릭하여 설정 모드로 들어갑니다.</li>
+            <li value="4">
+              <span class="uitext">수준 추가</span>
+              <img src="../../../Images/add_or_remove_levels_from.jpg" alt="" /> 를 클릭합니다.</li>
+            <li value="5">층 이름을 편집하려면: <ol><li value="1">점들 <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> 을 클릭하고 <span class="uitext">이름변경</span> 을 선택합니다.</li><li value="2">새 이름을 입력합니다.</li></ol></li>
+            <li value="6">층을 제거하려면, 점들을 클릭하고 <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /><span class="uitext">제거</span> 를 선택합니다. 이 층의 장치는 지리적 위치에 있지만, 더 이상 층과 연결이 되지 않습니다.</li>
+            <li value="7">
+              <span class="uitext">설정</span> 을 클릭하여 설정 모드를 종료합니다.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>건물 내에서 층 변경(스마트 맵)<a name="SC_ChangeOrderOfLevels.htm"></a></h3>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />요구사항</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> 스마트 맵 편집이 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>의 <span class="mc-variable flvar-product.SC variable">Smart Client</span> 프로필에서 활성화되었습니다. </p>
+            </div>
+          </div>
+          <p>단계:</p>
+          <ol>
+            <li value="1">스마트 맵에서 건물로 이동합니다. 필요한 경우, 확대합니다.</li>
+            <li value="2">건물을 선택합니다. 건물의 층을 보여주는 창이 오른쪽에 나타납니다.</li>
+            <li value="3">
+              <span class="uitext">설정</span> 을 클릭하여 설정 모드로 들어갑니다. </li>
+            <li value="4">점선으로 표시된 영역 <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> 을 클릭하여 올바른 위치로 드래그합니다. 연관된 모든 장치와 사용자 정의 오버레이가 그 층과 함께 유지됩니다.</li>
+            <li value="5"> 다시 <span class="uitext">설정</span> 을 클릭하여 설정 모드를 종료합니다. 변경 사항이 저장됩니다.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>건물의 디폴트 층 설정(스마트 맵)<a name="SC_SetDefaultLevelForBui.htm"></a></h3>
+          <p>건물의 특정 층이 다른 층들보다 더 중요성을 띠는 경우(예: 1층), 해당 층을 디폴트 층으로 설정할 수 있습니다. 스마트 맵을 열고 건물로 이동할 때 자동적으로 디폴트 층이 선택됩니다.</p>
+          <p>건물 밖을 탐색한 후 다시 건물로 이동하면, <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 은(는) 사용자가 떠났던 층으로 다시 이동시켜 줍니다.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />요구사항</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> 스마트 맵 편집이 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>의 <span class="mc-variable flvar-product.SC variable">Smart Client</span> 프로필에서 활성화되었습니다. </p>
+            </div>
+          </div>
+          <p>단계:</p>
+          <ol>
+            <li value="1">스마트 맵에서 건물로 이동합니다. 필요한 경우, 확대합니다.</li>
+            <li value="2">건물을 선택합니다. 건물의 층을 보여주는 창이 오른쪽에 나타납니다. 디폴트 층은 강조 표시됩니다.</li>
+            <li value="3">
+              <span class="uitext">설정</span> 을 클릭하여 설정 모드로 들어갑니다. 별표 <img src="../../../Images/set_default_level_for_buildings.jpg" alt="" /> 를 확인하십시오. 현재 디폴트 층이 어디에 있는지 나타냅니다.</li>
+            <li value="4">디폴트 층으로 설정하려는 층에서 점 <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> 들을 클릭하십시오.</li>
+            <li value="5">
+              <span class="uitext">디폴트로 설정하기</span> 를 선택합니다.</li>
+            <li value="6"> 다시 <span class="uitext">설정</span> 을 클릭하여 설정 모드를 종료합니다. 변경 사항이 저장됩니다.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>층에 평면도 추가하기(스마트 맵)<a name="SC_AddFloorPlansToLevels.htm"></a></h3>
+          <p>건물의 해당 층에 사용자 정의 오버레이(예: 평면도 이미지)를 추가하면 건물의 층 내부를 시연하는 데 도움을 얻을 수 있습니다. 해당 층을 탐색할 때 연관된 평면도가 자동으로 표시됩니다.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />요구사항</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> 스마트 맵 편집이 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>의 <span class="mc-variable flvar-product.SC variable">Smart Client</span> 프로필에서 활성화되었습니다. </p>
+            </div>
+          </div>
+          <p>단계:</p>
+          <ol>
+            <li value="1">스마트 맵에서 건물로 이동합니다. 필요한 경우, 확대합니다.</li>
+            <li value="2">건물을 선택합니다. 건물의 층을 보여주는 창이 오른쪽에 나타납니다.</li>
+            <li value="3">
+              <span class="uitext">설정</span> 을 클릭하여 설정 모드로 들어갑니다. </li>
+            <li value="4">사용자 정의 오버레이를 추가할 층을 선택합니다.</li>
+            <li value="5">왼쪽 상단 모서리에서, <img src="../../../Images/add_custom_overlay_on_1.png" alt="" /><span class="uitext">사용자 정의 오버레이 추가</span> 를 클릭하고, 건물의 윤곽 안에 아무 곳이나 클릭합니다. 창이 표시됩니다.</li>
+            <li value="6">사용자 정의 오버레이의 유형을 선택합니다. 자세한 정보는 <a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">사용자 정의 오버레이(설명됨)</a>를 참조하십시오.</li>
+            <li value="7">
+              <p>컴퓨터에 파일이 저장된 위치를 선택하고 <span class="uitext">계속</span> 을 클릭합니다. 사용자 정의 오버레이는 파란색 외곽선으로 표시됩니다.<br /></p>
+              <p>
+                <img src="../../../Images/add_floorplans_to_levels.jpg" alt="" />
+              </p>
+            </li>
+            <li value="8">그것을 건물의 윤곽선 위로 드래그하여, 피벗 포인트 및 모서리 핸들을 사용하여 사용자 정의 오버레이를 회전하고 위치를 조정합니다.</li>
+            <li value="9">상단의 바에서, <span class="uitext">저장</span> 을 클릭합니다.</li>
+            <li value="10"> 다시 <span class="uitext">설정</span> 을 클릭하여 설정 모드를 종료합니다. 변경 사항이 저장됩니다.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>층에서 평면도 삭제하기(스마트 맵)<a name="SC_DeleteFloorPlansOnLev.htm"></a></h3>
+          <p>건물 내부 층의 평면도가 변경된 경우, 평면도를 나타내는 사용자 정의 오버레이를 교체해야 할 수 있습니다. <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> 에서는 새 평면도를 추가하기 전에 이전 평면도를 삭제할 것을 권장합니다.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />요구사항</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> 스마트 맵 편집이 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>의 <span class="mc-variable flvar-product.SC variable">Smart Client</span> 프로필에서 활성화되었습니다. </p>
+            </div>
+          </div>
+          <p>단계:</p>
+          <ol>
+            <li value="1">스마트 맵에서 건물로 이동합니다. 필요한 경우, 확대합니다.</li>
+            <li value="2">건물을 선택합니다. 건물의 층을 보여주는 창이 오른쪽에 나타납니다.</li>
+            <li value="3">
+              <span class="uitext">설정</span> 을 클릭하여 설정 모드로 들어갑니다. </li>
+            <li value="4">사용자 정의 오버레이가 있는 층을 선택합니다.</li>
+            <li value="5">사용자 정의 오버레이의 아무 곳이나 마우스 오른쪽 버튼으로 클릭하고 <span class="uitext">사용자 정의 오버레이 삭제</span> 를 선택합니다.</li>
+            <li value="6"> 다시 <span class="uitext">설정</span> 을 클릭하여 설정 모드를 종료합니다. 변경 사항이 저장됩니다.</li>
+          </ol>
+          <p class="tip">평면도의 위치 또는 크기를 편집하려면 사용자 정의 오버레이를 마우스 오른쪽 버튼으로 클릭하고 <span class="uitext">위치 편집하기</span>를 선택합니다. 이제 사용자 정의 오버레이를 이동, 회전하고 크기를 변경할 수 있습니다.</p>
+        </div>
+        <div>
+          <h3>건물에 장치 추가하기(스마트 맵)<a name="SC_AddCamerasToBuildings.htm"></a></h3>
+          <p>건물을 만들고 층을 추가한 후에 장치를 추가할 수 있습니다. 디폴트 층이 지정된 경우, 장치가 그 층과 연결됩니다. 그렇지 않으면 장치가 1층과 연결됩니다. 이를 변경하고 건물의 모든 층과 장치를 연결할 수 있습니다.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />요구사항</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> 스마트 맵 편집이 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>의 <span class="mc-variable flvar-product.SC variable">Smart Client</span> 프로필에서 활성화되었습니다. </p>
+            </div>
+          </div>
+          <p>단계:</p>
+          <ol>
+            <li value="1">스마트 맵에서 건물로 이동합니다. 필요한 경우, 확대합니다.</li>
+            <li value="2">
+              <span class="uitext">설정</span> 을 클릭하여 설정 모드로 들어갑니다. </li>
+            <li value="3">장치를 추가하려면 장치의 아이콘을 클릭하십시오. <p>예: 카메라인 경우 <img src="../../../Images/add_cameras_to_buildings.jpg" alt="" /><span class="uitext">카메라 추가</span> 를 클릭합니다.</p></li>
+            <li value="4">장치를 배치하고 싶은 위치를 다시 클릭하십시오. 대화 상자가 나타납니다.</li>
+            <li value="5">필요한 장치를 선택하고 <span class="uitext">확인</span> 을 클릭합니다. 추가하고 싶은 각 장치에 대해, 3~5단계를 반복합니다.</li>
+            <li value="6">장치를 하나 이상의 층과 연결하려면, 장치를 마우스 오른쪽 단추로 클릭하여 필요한 층을 선택합니다.</li>
+            <li value="7"> 다시 <span class="uitext">설정</span> 을 클릭하여 설정 모드를 종료합니다. 변경 사항이 저장됩니다.</li>
+          </ol>
+          <p class="note">선택한 층이 없으면, 모든 층에서 장치를 볼 수 있습니다.</p>
+        </div>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">컨셉트 정보</p>
+        <p class="containerItem_container_0">
+          <a href="sc_workingwithmap.htm">스마트 맵(사용량)</a>
+        </p>
+        <p class="referenceHeading_reference_0">참고 자료</p>
+        <p class="referenceItem_reference_0">
+          <a href="sc_map_faq.htm">자주 묻는 질문: 스마트 맵</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

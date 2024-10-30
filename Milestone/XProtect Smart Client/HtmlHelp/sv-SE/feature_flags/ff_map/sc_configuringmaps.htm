@@ -1,0 +1,810 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="sv-SE" xml:lang="sv-SE" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="Konfiguration" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Konfigurera smartkartan i XProtect Smart Client för att få en geografisk översikt över dina kameror, enheter och plugin-element." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=Recording Server" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Administratör" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Integratör" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Operatör" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Smartkarta (konfiguration)</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#feature_flags/ff_map/sc_configuringmaps.htm">Öppna ämne med navigering</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>Smartkarta (konfiguration)</h1>
+      <p>Innan du kan dra fördel av funktionalitet i smartkartan måste du gå igenom en del konfigurationsuppgifter i <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>.</p>
+      <p>Du kan endast visa din smartkarta om den har lagts till i en vy. Se även <a href="#SC_AddSmartMapToView.htm" class="MCXref xref">Lägg till smartkarta till vyer</a>. </p>
+      <p class="note">För mer information, se <a href="sc_workingwithmap.htm#SC_SmartMapExplained.htm" class="MCXref xref">Smartkarta (förklaring)</a>.</p>
+      <div>
+        <h2>Skillnader mellan kartor och smartkartor (förklaring)<a name="SC_DifferencesBetweenMap.htm"></a></h2>
+        <p>
+          <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> har kartfunktioner som kan hjälpa dig att visualisera dina övervakningssystem och snabbt svara på incidenter.</p>
+        <ul>
+          <li>
+            <span class="uitext">Kartor</span> – dessa kartor är baserade på stillbilder som inte har geografiska referenser. Du kan lägga till enheter såsom kameror, mikrofoner och inspelningsservrar. Du kan också lägga till larm, händelser, och passersystem som låter dig interagera med ditt övervakningssystem direkt från kartan. Du måste manuellt placera dina enheter och funktionselement på kartan. För mer information, se <a href="../../standard_features/sf_sc/sf_operation/sc_workingwithmaps.htm#SC_IntroductionToMaps(796).htm" class="MCXref xref">Kartor (förklaring)</a></li>
+          <li>
+            <span class="uitext">Smartkarta</span> – denna sorts karta använder sig av ett geografiskt informationssystem för att återge geografin i den verkliga världen. Det ger dig en mer exakt överblick över dina kameror på flera olika platser. Du kan också:<ul><li>Använda tjänsterna Bing Maps och Google Maps</li><li data-mc-conditions="flcts-features.oem-map-service-content">Använda <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> som geografisk bakgrund</li><li>Använda kartprojektet OpenStreetMap som geografisk bakgrund</li><li>Lägga till CAD-ritningar, formfiler och bilder som överlagringar</li></ul><p> För mer information, se <a href="sc_workingwithmap.htm#SC_SmartMapExplained.htm" class="MCXref xref">Smartkarta (förklaring)</a></p></li>
+        </ul>
+        <p class="note">Kartor och smartkartor är inte utbytbara. Om du använder kartor kan du använda bildfilen som smartkarta, men du måste lägga till enheterna igen. Du kan inte överföra kartor med enheter till en smartkarta. Däremot kan du länka en smartkarta till kartorna. För mer information, se <a href="#SC_AddingDeletingOrEditi_2.htm" class="MCXref xref">Lägga till, redigera eller ta bort kameror på smartkarta.</a>.</p>
+      </div>
+      <div>
+        <h2>Lägg till smartkarta till vyer<a name="SC_AddSmartMapToView.htm"></a></h2>
+        <p>Börja använda en <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">smartkarta<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>En kartfunktion som använder ett geografiskt informationssystem för att visualisera enheter (till exempel kameror och mikrofoner), byggnader och topografiska objekt i ett övervakningssystem med geografiskt korrekta, verkliga bilder. Kartor som använder element av denna funktionalitet kallas smartkartor.</span></a> genom att lägga till den i en vy. Den vanliga världskartan visas som standard. Efter att du lagt till smartkartan kan du ändra den geografiska bakgrunden.</p>
+        <p>Gör så här:</p>
+        <ol>
+          <li value="1">På fliken <span class="uitext">Live</span> eller fliken <span class="uitext">Uppspelning</span>, välj den vy som du vill lägga till på smartkartan.</li>
+          <li value="2"> Klicka på <span class="uitext">Inställning</span> för att aktivera inställningsläget. </li>
+          <li value="3">Expandera rutan <span class="uitext">Systemöversikt</span> och dra objektet <span class="uitext">Smartkarta</span> till relevant position inom vyn.</li>
+          <li value="4"> Klicka på <span class="uitext">Inställning</span> igen så att inställningsläget avslutas. Dina ändringar har sparats.</li>
+          <li value="5">Nu kan du ändra geografisk bakgrund. </li>
+        </ol>
+      </div>
+      <div>
+        <h2>Ändra geografisk bakgrund på smartkartor<a name="SC_ChangeTheGeographicBa.htm"></a></h2>
+        <p>Som standard visas den grundläggande världskartan när du lägger till en smartkarta till en vy. Efter att du har lagt till smartkartan till en vy kan du använda en annan geografisk bakgrund. Alla användare av smartkartan ser den nya bakgrunden nästa gång de visar denna vy.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Stängd" data-mc-alt2="Öppen" />Krav</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Geografiska bakgrunder från Bing Maps och Google Maps är bara tillgängliga om din systemadministratör har gjort dem tillgängliga i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>.</p>
+          </div>
+        </div>
+        <p>Gör så här:</p>
+        <ol>
+          <li value="1">Markera den vy som innehåller smartkartan och klicka på Inställningar.</li>
+          <li value="2">I verktygsfältet, klicka på <img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">Visa eller dölj lager och anpassade bildöverlagringar</span>.</li>
+          <li value="3">Under <span class="uitext">Geografiska bakgrunder</span>, välj den bakgrund och detaljtyp som du vill visa. Till exempel, om du vill se topografisk information, väljer du <span class="uitext">Terräng</span>. Om du vill se vägar, välj <span class="uitext">Väg</span>.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>Geografiska bakgrunder (förklaring)<a name="SC_GeographicBackgrounds.htm"></a></h2>
+        <p>Du kan använda följande tjänster som geografisk bakgrund i din <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">smartkarta<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>En kartfunktion som använder ett geografiskt informationssystem för att visualisera enheter (till exempel kameror och mikrofoner), byggnader och topografiska objekt i ett övervakningssystem med geografiskt korrekta, verkliga bilder. Kartor som använder element av denna funktionalitet kallas smartkartor.</span></a>:</p>
+        <ul>
+          <li>Bing Maps</li>
+          <li>Google Maps</li>
+          <li data-mc-conditions="flcts-features.oem-map-service-content">
+            <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+          </li>
+          <li> OpenStreetMap </li>
+        </ul>
+        <p>Efter att du har valt geografisk bakgrund lägger du till enheter, till exempel kameror, och anpassade överlagringar, till exempel formfiler. För mer information, se <a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">Anpassade bildöverlagringar (förklaring)</a>.</p>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Typer av geografiska bakgrunder (förklaring)<a name="SC_TypesOfGeographicBack.htm"></a></h2>
+        <p>Efter att du har lagt till en <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">smartkarta<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>En kartfunktion som använder ett geografiskt informationssystem för att visualisera enheter (till exempel kameror och mikrofoner), byggnader och topografiska objekt i ett övervakningssystem med geografiskt korrekta, verkliga bilder. Kartor som använder element av denna funktionalitet kallas smartkartor.</span></a> till en vy kan du använda en av följande geografiska bakgrunder:</p>
+        <ul>
+          <li>
+            <span class="uitext">Vanlig världskarta</span> – använd den normala geografiska bakgrund som finns i <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Denna karta är menad att användas som generell referens och innehåller inte funktionalitet såsom landsgränser, städer eller andra detaljer. Men precis som andra geografiska bakgrunder innehåller den geografiska referensdata</li>
+          <li>
+            <span class="uitext">Bing Maps</span> – anslut till Bing Maps</li>
+          <li>
+            <span class="uitext">Google Maps</span> – anslut till Google Maps <p class="note">Alternativen Bing Maps och Google Maps kräver tillgång till internet, och du måste köpa en nyckel från Microsoft eller Google.</p></li>
+          <div data-mc-conditions="flcts-features.oem-map-service-content">
+            <li>
+              <span class="uitext">
+                <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+              </span> - anslut till en gratis kartleverantör. Efter du aktiverat <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> behövs ingen mer inställning.</li>
+            <p>Se <a href="#Enable">Aktivera Milestone Map Service</a></p>
+          </div>
+          <div>
+            <li>
+              <p>
+                <span class="uitext">OpenStreetMap</span> - anslut till:</p>
+              <ul>
+                <li>En kommersiell bildrutsserver du själv väljer</li>
+                <li>
+                  <p>Din egen, online- eller lokala, bildrutsserver</p>
+                </li>
+              </ul>
+              <p>Se <a href="#SC_ChangeOpenstreetmapTi.htm">Ändra OpenStreetMap bildrutsservrar</a></p>
+            </li>
+          </div>
+          <li>
+            <span class="uitext">Inget</span> - detta alternativ döljer den geografiska bakgrunden. Notera att geografisk referensdata behålls. Se även <a href="#SC_LayersOnSmartMapExpla.htm" class="MCXref xref">Lager på smartkarta (förklaring)</a></li>
+        </ul>
+        <p>Som standard visar Bing Maps och Google Maps satellitbilder. Du kan ändra bildvisning, till exempel till satellit eller terräng, för att se olika detaljer.</p>
+      </div>
+      <div data-mc-conditions="flcts-features.oem-map-service-content">
+        <h2>
+          <a name="Enable"></a>Aktivera <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span></h2>
+        <p>
+          <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> är en onlinetjänst med vilken du kan ansluta till en bildrutsserver från <span class="mc-variable flvar-brand-company.CompanyLong variable">Milestone Systems</span>. Denna bildrutsserver använder en gratis, kommersiellt tillgänglig karttjänst. </p>
+        <p>Efter att du aktiverar <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> på din smartkarta använder smartkartan <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> som geografisk bakgrund.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Stängd" data-mc-alt2="Öppen" />Krav</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Om fältet <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> är utgråat har du inte tillräckliga användarrättigheter för att aktivera eller inaktivera tjänsten. Kontakta din systemadministratör för hjälp att aktivera funktionaliteten i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>.</p>
+            <p class="important">
+              <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> kräver internetuppkoppling.</p>
+          </div>
+        </div>
+        <p>Gör så här:</p>
+        <ol>
+          <li value="1">
+            <p>I det övre högra hörnet, klicka <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> och sedan <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">Inställningar</span> för att öppna fönstret <span class="uitext">Inställningar</span>.</p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_configuringmaps_mmapserv.png" data-mc-popup-alt="Aktivera Milestone Map Service.">
+                <img class="MCPopupThumbnail img" data-mc-width="786" data-mc-height="593" src="../../../Images/sc_configuringmaps_mmapserv_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Aktivera Milestone Map Service." tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="2">Klicka på <span class="uitext">Smartkarta</span> till vänster.</li>
+          <li value="3">I fältet <span class="uitext mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>, välj <span class="uitext">Tillgänglig</span>.</li>
+          <li value="4">Klicka på <span class="uitext">Stäng</span>. Nästa gång du laddar din smartkarta använder den <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> som geografisk bakgrund.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>OpenStreetMap-bildrutsserver (förklaring)<a name="SC_ChangingOpenstreetmap.htm"></a></h2>
+        <p>Om du använder OpenStreetMap som geografisk bakgrund för din smartkarta så behöver du ange en kartbildsserver. Du kan ange en lokal kartbildsserver, till exempel om din organisation har egna kartor för områden såsom flygplatser eller hamnar, eller så kan du använda en kommersiell kartbildsserver.</p>
+        <p class="note">För att använda en lokal bildrutsserver behöver du inte internetuppkoppling.</p>
+        <p>Bildrutsserverns adress kan anges på två sätt:</p>
+        <ul>
+          <li>I <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> - anger du serverns adress i <span class="mc-variable flvar-product.SC variable">Smart Client</span>-profilerna. Serveradressen omfattar alla <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>-användare tilldelade <span class="mc-variable flvar-product.SC variable">Smart Client</span>-profiler</li>
+          <li>I <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> - ställer du in bildrutsserverns adress i dialogrutan <span class="uitext">Inställningar</span>. Serveradressen gäller bara för den installationen</li>
+        </ul>
+        <div>
+          <h2>Ändra OpenStreetMap-bildrutsserver<a name="SC_ChangeOpenstreetmapTi.htm"></a></h2>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Stängd" data-mc-alt2="Öppen" />Krav</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>Om bildrutsservern angiven på serversidan har låsts för ändringar så är fältet utgråat och du kan inte ändra serveradressen. Kontakta din systemadministratör för hjälp att aktivera funktionaliteten i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>.</p>
+            </div>
+          </div>
+          <p>Gör så här:</p>
+          <ol>
+            <li value="1">
+              <p>I det övre högra hörnet, klicka <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> och sedan <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">Inställningar</span> för att öppna fönstret <span class="uitext">Inställningar</span>.</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_mapsettings.png" data-mc-popup-alt="Ange alternativ bildrutsserver för smartkartan.">
+                  <img class="MCPopupThumbnail img" data-mc-width="786" data-mc-height="593" src="../../../Images/sc_mapsettings_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Ange alternativ bildrutsserver för smartkartan." tabindex="" />
+                </a>
+                <br />
+              </p>
+            </li>
+            <li value="2">Klicka på <span class="uitext">Smartkarta</span> till vänster.</li>
+            <li value="3">I fältet <span class="uitext">OpenStreetMap-server</span>, gör något av följande: <ul><li>Skriv in serverns adress. Om fältet är utgråat så har det låsts på serversidan</li><li>För att använda serversidan angiven av servern, markera kryssrutan <span class="uitext">Följ server</span></li></ul></li>
+            <li value="4">Klicka på <span class="uitext">Stäng</span>. Nästa gång du laddar din smartkarta används den OpenStreetMap-server du har angett.</li>
+          </ol>
+          <p class="important">Om ingen serveradress har angetts, eller om serveradressen är ogiltig, så är OpenStreetMap inte tillgänglig som geografisk bakgrund.</p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Visa eller dölja lager på smartkarta<a name="SC_ShowingOrHidingLayers.htm"></a></h2>
+        <p>Beroende på vad du vill se kan du välja att stänga av eller på lagren i din smartkarta.</p>
+        <div>
+          <h3>Lager på smartkarta (förklaring)<a name="SC_LayersOnSmartMapExpla.htm"></a></h3>
+          <p>Använd lager för att filtrera informationen som <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">smartkartan<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>En kartfunktion som använder ett geografiskt informationssystem för att visualisera enheter (till exempel kameror och mikrofoner), byggnader och topografiska objekt i ett övervakningssystem med geografiskt korrekta, verkliga bilder. Kartor som använder element av denna funktionalitet kallas smartkartor.</span></a> visar. Det finns tre sorters lager på en smartkarta:</p>
+          <ul>
+            <li>
+              <span class="uitext">Systemelement</span> – inkluderar kameror, länkar, och platser</li>
+            <li>
+              <span class="uitext">Anpassade bildöverlagringar</span> – bitmappsbilder, CAD-ritningar och formfiler</li>
+            <li>
+              <span class="uitext">Geografiska bakgrunder</span> - den grundläggande världskartan eller en av följande tjänster:<ul><li>Bing Maps</li><li>Google Maps</li><li data-mc-conditions="flcts-features.oem-map-service-content"><span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span></li><li> OpenStreetMap </li></ul></li>
+          </ul>
+          <p class="note">Bing Maps och Google Maps är bara tillgängliga som geografiska bakgrunder om din systemadministratör har aktiverat dem i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. För mer information, se <a href="#SC_GeographicBackgrounds.htm" class="MCXref xref">Geografiska bakgrunder (förklaring)</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Lagerordning (förklaring)<a name="SC_OrderOfLayersExplaine.htm"></a></h3>
+          <p>Alla systemelement för varje typ är på samma <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term26">lager<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Den geografiska bakgrunden på en smartkarta, en anpassad bildöverlagring eller ett systemelement, exempelvis en kamera. Lager är alla grafiska element som finns på smartkartan.</span></a>. Till exempel, alla kameror är på samma lager. Om du döljer kameralagret så döljs alla kameror. Lager för systemelement arrangeras hela vägen uppifrån och ned i följande ordning: platser, kameror, länkar, och geografiska bakgrunder. Du kan inte ändra den här ordningen.</p>
+          <p>De geografiska bakgrunderna utgör alltid det lägsta lagret på en smartkarta. Du kan växla mellan geografiska bakgrunder, men du kan bara välja en geografisk bakgrund åt gången.</p>
+          <p>Anpassade bildöverlagringar läggs till som separata lager och är staplade i samma ordning de lades till på smartkartan. Du kan ändra ordningen genom att konfigurera standardinställningarna för kartan. </p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Stängd" data-mc-alt2="Öppen" />Exempel</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>En stadsplanerare har en formfil som visar stadens gränser, och en formfil som inkluderar alla huvudled inom staden. Stadsplaneraren kan ordna lager så att vägarna visas ovanpå stadsgränserna. Det ger en allmän översikt över var kamerorna är placerade i staden, och gör det möjligt att zooma in och se namnet på gatan som en särskild kamera sitter på.</p>
+            </div>
+          </div>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Visa eller dölj lager på en smartkarta<a name="SC_ShowOrHideLayersOnSma.htm"></a></h3>
+          <p>Du kan visa eller dölja lager på din smartkarta, inklusive den geografiska bakgrunden. Det är användbart när du t.ex. vill fokusera på vissa element, eller bara förenkla innehållet som din smartkarta visar.</p>
+          <p>Gör så här:</p>
+          <ol>
+            <li value="1">I verktygsfältet, klicka på <img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">Visa eller dölj lager och anpassade bildöverlagringar</span>.</li>
+            <li value="2">För att visa eller dölja systemelement och anpassade bildöverlagringar, markera eller rensa kryssrutorna.</li>
+            <li value="3">För att dölja den geografiska bakgrunden, välj <span class="uitext">Inget</span>.</li>
+          </ol>
+          <p class="note">När du väljer <span class="uitext">Inget</span> döljer du den geografiska bakgrunden, men georeferenserna gäller fortfarande för din smartkarta. Till exempel, om du lägger till en ny formfil som innehåller en spatial referens, använder systemet fortfarande den spatiala referensen för att placera filen på kartan.</p>
+          <p class="note">Döljs mikrofoner stängs ljudet av på dem tills du väljer att visa mikrofoner igen.</p>
+        </div>
+        <div>
+          <h3>Ange standardinställningar för en smartkarta<a name="SC_ManageDefaultSettings(65803).htm"></a></h3>
+          <p>När du har lagt till en smartkarta i en vy och lägger till överlagringar, kameror och länkar, kan du ange standardinställningar för anpassade bildöverlagringar. Du kan även radera anpassade bildöverlagringar för att rensa kartan.</p>
+          <p>Gör så här:</p>
+          <ol>
+            <li value="1">Klicka på <span class="uitext">Inställningar</span>.</li>
+            <li value="2">Klicka på <img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">Hantera standardinställningar</span>.</li>
+            <li value="3">Gör något av följande: <ul><li>För att visa eller dölja en överlagring markerar eller avmarkerar du kryssrutan</li><li>Du ändrar ordningen genom att dra i handtaget framför överlagringen och dra det till en ny plats i listan. Lagren är ordnade uppifrån och ned i listan</li><li>Du tar bort en bildöverlagring genom att hovra över den och klicka på <span class="uitext">Radera</span></li></ul></li>
+            <li value="4">Klicka på <span class="uitext">Spara</span>.</li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Lägga till, radera eller redigera anpassade bildöverlagringar<a name="SC_AddingDeletingOrEditi.htm"></a></h2>
+        <div>
+          <h3>Anpassade bildöverlagringar (förklaring)<a name="SC_CustomOverlaysExplain.htm"></a></h3>
+          <p>Du kan lägga till följande filtyper som anpassade bildöverlagringar i en smartkarta i <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>:</p>
+          <ul>
+            <li>
+              <span class="uitext">Shapefile</span> – det här formatet kan innehålla geo-spatiala vektordata, som t.ex. punkter, linjer, polygoner och attribut som representerar objekt på en karta, som t.ex. väggar, vägar eller geografiska funktioner som floder eller sjöar. Formfiler används ofta av t.ex. stadsplanerings- och administrationskontor eftersom de har bra skalor när du zoomar in och ut, och deras filstorlekar är ofta mindre än CAD-ritningar eller bitmappsbilder</li>
+            <li>
+              <span class="uitext">CAD</span> – en CAD-ritning är användbar som en överlagring för smartkarta eftersom CAD-data, precis som formfiler, kan använda ett koordinatsystem och spatial referens för att ge ett exakt geografiskt sammanhang. Du kan t.ex. använda en detaljerad flygkarta eller vägkarta över en plats</li>
+            <li>
+              <span class="uitext">Bild</span> – om du har en bildfil, som t.ex. planlösningen till en byggnad, kan du lägga till den som en överlagring på din smartkarta. Du kan använda följande typer av bildfiler: PNG, BMP, GIF, JPG, JPEG, PHG, TIF och TIFF</li>
+          </ul>
+          <p class="note">För att fokusera anpassade bildöverlagringar kan du temporärt dölja andra typer av lager. Se <a href="#SC_LayersOnSmartMapExpla.htm" class="MCXref xref">Lager på smartkarta (förklaring)</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Anpassade bildöverlagringar och anpassade platser (förklaring)<a name="SC_CustomOverlaysAndLoca.htm"></a></h3>
+          <p>Du kan snabbt byta till anpassade bildöverlagringar som du lagt till på din smartkarta så som beskrivs i <a href="sc_workingwithmap.htm#SC_FindLocationOfCustomO.htm" class="MCXref xref">Flytta dig till anpassade bildöverlagringar på smartkartan</a>. Du kan dock i inställningarna etablera en anslutning mellan anpassade bildöverlagringar och platser. Det innebär att <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> skapar en ny plats med samma namn som överlagringen när du lägger till en ny anpassad bildöverlagring på samma plats på kartan. Platsen för anpassad bildöverlagring blir nu tillgänglig i listan <span class="uitext">Välj en position</span>.</p>
+          <p>
+            <img src="../../../Images/custom_overlays_and_locations.jpg" alt="" />
+          </p>
+          <p>Överlagringen och platsen är dock inte sammanlänkade. Till exempel kan du radera och byta namn på platsen utan att ändra överlagringen och vice versa.</p>
+          <p class="note">För att slå på denna funktion, se <a href="#SC_AddLocationsToCustomO.htm" class="MCXref xref">Lägga till platser till anpassade bildöverlagringar (smartkarta)</a>.</p>
+        </div>
+        <div>
+          <h3>Lägga till anpassad bildöverlagring på smartkarta<a name="SC_AddCustomOverlayOnSma.htm"></a></h3>
+          <p>Öka detaljnivån på din smartkarta genom att lägga till anpassade bildöverlagringar. När du lägger till en <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term8">anpassad bildöverlagring<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Ett användarvänligt grafiskt element som användare kan lägga till på en smartkarta, exempelvis för att visa en planritning i en byggnad eller för att markera gränser mellan regioner. En anpassad bildöverlagring kan vara en bild, en CAD-ritning eller en formfil.</span></a> skapar <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> en plats med samma namn som bildöverlagringen.</p>
+          <p>Gör så här:</p>
+          <ol>
+            <li value="1">Markera den vy som innehåller smartkartan och klicka på <span class="uitext">Inställning</span>.</li>
+            <li value="2">Klicka på <img src="../../../Images/add_custom_overlay_on_1.png" alt="" /><span class="uitext">Lägg till anpassad bildöverlagring</span>: <ul><li>Om överlagringen du lagt till är georefererad, klickar du var som helst på din smartkarta. <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> använder den georefererade informationen för att placera överlagringen i korrekt geografisk position. Dessutom kommer smartkartan att centreras på överlagringen vid normal zoomnivå</li><li>Om den överlagring du lägger till inte är georefererad, går du till den punkt på kartan där du vill lägga till elementet och klickar sedan på punkten på smartkarta</li><p class="tip">Innan du lägger till en överlagring är det en bra idé att zooma in till den plats på kartan där du vill lägga till den. Det gör det lättare att placera överlagringen exakt.</p></ul></li>
+            <li value="3">Ange ett namn för överlagringen.</li>
+            <li value="4">Beroende på vilken typ av fil du väljer: <ul><li><span class="uitext">Bild</span> – välj bildfilen och klicka sedan på <span class="uitext">OK</span></li><li><span class="uitext">Shapefile</span> – välj SHP-filen. Om du har en PRJ-fil, kommer <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> att hitta den och du behöver bara klicka på <span class="uitext">OK</span>. Om du inte har en PRJ-fil, kan du placera om överlagringen manuellt efter att du lagt till den. Du kan också använda en färg. Till exempel kan användning av färger göra att formfilen sticker ut mer på smartkarta</li><li><span class="uitext">CAD</span> – välj en DWG-fil. Om du har en PRJ-fil, klicka på <span class="uitext">OK</span>. Om du inte har en PRJ-fil och vill använda georeferens för att positionera filen på smartkarta, anger du rymdreferensidentifieraren (SRID) och klickar sedan på <span class="uitext">OK</span>. Om du inte har en PRJ-fil eller en SRID, kan du placera om överlagringen manuellt efter att du lagt till den</li><p class="note">För mer information om olika typer av överlagringar, se <a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">Anpassade bildöverlagringar (förklaring)</a>.</p></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Lägga till platser till anpassade bildöverlagringar (smartkarta)<a name="SC_AddLocationsToCustomO.htm"></a></h3>
+          <p>Du kan konfigurera <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> att automatiskt lägga till positioner i <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term8">anpassade bildöverlagringar<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Ett användarvänligt grafiskt element som användare kan lägga till på en smartkarta, exempelvis för att visa en planritning i en byggnad eller för att markera gränser mellan regioner. En anpassad bildöverlagring kan vara en bild, en CAD-ritning eller en formfil.</span></a> på din smartkarta. Detta låter dig flytta dig till anpassade bildöverlagringar via listan <span class="uitext">Välj en position</span>. </p>
+          <p>Gör så här:</p>
+          <ol>
+            <li value="1">I programmets verktygsfält, klicka på <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> och sedan <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">Inställningar</span> för att öppna fönstret <span class="uitext">Inställningar</span>.</li>
+            <li value="2">Gå till fliken <span class="uitext">Smartkarta</span>.</li>
+            <li value="3">I listan <span class="uitext">Skapa plats när lager läggs till</span> väljer du <span class="uitext">Ja</span>.</li>
+            <li value="4">Stäng dialogrutan för att spara ändringarna.</li>
+          </ol>
+          <p class="note">För mer information, se <a href="#SC_CustomOverlaysAndLoca.htm" class="MCXref xref">Anpassade bildöverlagringar och anpassade platser (förklaring)</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Ta bort anpassad bildöverlagring på smartkarta<a name="SC_DeleteCustomOverlayOn.htm"></a></h3>
+          <ol>
+            <li value="1">Markera den vy som innehåller smartkartan och klicka på <span class="uitext">Inställning</span>.</li>
+            <li value="2">I verktygsfältet klickar du på <img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">Hantera standardinställningar</span>.</li>
+            <li value="3">Hovra över den anpassade bildöverlagringen och klicka på <span class="uitext">Ta bort</span>.</li>
+            <li value="4">Klicka på <span class="uitext">Spara</span> för att radera den anpassade bildöverlagringen.</li>
+            <li value="5">Valfritt: Om en plats skapades för den anpassade bildöverlagringen, kan du eventuellt vilja radera den också. För mer information, se <a href="#SC_AddingDeletingOrEditi_3.htm" class="MCXref xref">Lägga till, redigera eller ta bort positioner på smartkarta.</a>.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Göra områden i formfiler mer synbara (smartkarta)<a name="SC_MakeAreasInShapefiles.htm"></a></h3>
+          <p class="note">Ämnet är enbart relevant om du använder formfiler med polygoner.</p>
+          <p>Om du inom en snart framtid vill använda en formfil på din smartkarta som består av polygoner kan du behöva skilja de individuella polygonerna från varandra. Det gör du genom att minska ogenomskinligheten för den färg du väljer för formfilen. Polygonernas kanter kommer att sticka ut.</p>
+          <p>Gör så här:</p>
+          <ol>
+            <li value="1">Följ stegen som beskrivs i <a href="#SC_AddCustomOverlayOnSma.htm" class="MCXref xref">Lägga till anpassad bildöverlagring på smartkarta</a>.</li>
+            <li value="2">
+              <p>När du väljer färg drar du skjutreglaget <span class="uitext">Ogenomskinlighet</span> till vänster tills du är ok med nivån på transparens.</p>
+              <p>
+                <img src="../../../Images/make_areas_in_shapefiles_more.jpg" alt="" />
+              </p>
+            </li>
+            <li value="3">Klicka på <span class="uitext">Spara</span>.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Justera position, storlek eller inställning för en anpassad bildöverlagring<a name="SC_AdjustPositionSizeOrA.htm"></a></h3>
+          <p>Du kan flytta en överlagring till en annan plats på kartan, göra den större eller mindre samt rotera den. Till exempel kan detta vara användbart om din överlagring inte är georefererad, eller om den av någon anledning inte justeras exakt mot den geografiska bakgrunden.</p>
+          <p>Gör så här:</p>
+          <ol>
+            <li value="1">Markera den vy som innehåller smartkartan och klicka på <span class="uitext">Inställning</span>.</li>
+            <li value="2">Högerklicka på överlagringen och välj <span class="uitext">Redigera position</span>.</li>
+            <li value="3">För att ändra storlek eller rotera överlagringen: <ul><li>Klicka och dra ett hörnhandtag</li><li><p>För att rotera överlagringen runt en specifik punkt, rör rotationspunkten till den platsen på kartan. Klicka sedan och dra ett hörnhandtag </p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/adjust_position_size_or_alignment.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="273" data-mc-height="261" src="../../../Images/adjust_position_size_or_alignment_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="" tabindex="" /></a></p></li></ul></li>
+            <li value="4">För att flytta överlagringen på kartan klickar du och drar överlagringen.</li>
+            <li value="5">För att spara ändringen klickar du på <span class="uitext">Spara</span>.</li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Lägga till, ta bort eller redigera enheter på smartkarta.<a name="SC_AddingDeletingOrEditi_1.htm"></a></h2>
+        <p>Du kan lägga till enheter på en smartkarta på deras aktuella positioner i din miljö. Det ger dig en god översikt över ditt övervakningssystem, och kan hjälpa dig att svara på en händelse. Om du t.ex. vill följa en misstänkt under en pågående incident, kan du klicka på kamerorna på kartan för att se inspelat material.</p>
+        <p>Efter att du lägger till en kamera på en smartkarta, kan du justera synfältet för kameraikonen så den visar samma synfält som den verkliga kameran. Det gör det lättare att hitta kameran som täcker ett visst område. Du kan även välja en ikon för att representera kameran på kartan, vilket kan hjälpa dig att identifiera kameratypen på kartan.</p>
+        <p>Du kan arbeta med följande enhetstyper på smartkartor:</p>
+        <ul>
+          <li>Kameror</li>
+          <li>Ingångsenheter</li>
+          <li>Mikrofoner</li>
+        </ul>
+        <div data-mc-conditions="">
+          <h3>Lägga till enheter till smartkarta<a name="SC_AddCamerasToSmartMap.htm"></a></h3>
+          <p>Om enhetens geo-koordinater har angetts i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> av din systemadministratör, blir enheten automatiskt positionerad på smartkartan när du lägger till den. Annars måste du själv positionera enheten på dess exakta geografiska plats.</p>
+          <ol>
+            <li value="1">Markera den vy som innehåller smartkartan och klicka på <span class="uitext">Inställning</span>.</li>
+            <li value="2">För att lägga till en enhet eller en grupp av enheter: <p class="tip">Innan du lägger till enheten är det en god idé att zooma in till platsen på kartan. Det gör det lättare att placera enheten exakt.</p><ul><li>Expandera rutan <span class="uitext">Systemöversikt</span>, hitta enheten eller enhetsgruppen och dra den sedan till den punkt på smartkartan där du vill visa den. Du kan i efterhand dra enheter för att positionera om dem</li><li>I smartkartans verktygsfält, välj <img src="../../../Images/add-a-device-to-smart-map.png" alt="" /><span class="uitext">Lägg till en enhet</span> och välj enhetstyp.<ul><li>Exempel: Gäller det en kamera, välj <img src="../../../Images/add_cameras_to_map.png" alt="" /><span class="uitext">Lägg till en kamera</span> och välj sedan kameran.</li></ul></li><li>Dra enheten för att lägga till den till smartkartan</li><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_adddevice.png" data-mc-popup-alt="Lägg till en enhet till din smartkarta."><img class="MCPopupThumbnail img" data-mc-width="709" data-mc-height="823" src="../../../Images/sc_smap_adddevice_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Lägg till en enhet till din smartkarta." tabindex="" /></a><br /></ul></li>
+            <li value="3">Spara ändringen genom att klicka på <span class="uitext">Inställning</span> för att lämna inställningsläget.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Ändra synfält och riktning på kameran<a name="SC_ChangeFieldOfViewAndD.htm"></a></h3>
+          <p>När kameran har lagts till på smartkarta kan du ändra synfält och riktning genom att justera kameraikonen.</p>
+          <p class="tip">Om du har zoomat ut på kartan och vill ändra kamerans synfält, kan du behöva zooma in tills synfältet visas.</p>
+          <ol>
+            <li value="1">Välj den vy som innehåller smartkartan du vill arbeta med.</li>
+            <li value="2">Klicka på <span class="uitext">Inställning</span> för att redigera kameraikonen.</li>
+            <li value="3">
+              <p>Klicka på kameraikonen.</p>
+              <p>
+                <img src="../../../Images/change_field_of_view_and_direction.png" alt="" />
+              </p>
+            </li>
+            <li value="4">Använd handtaget för att rotera kameran i rätt riktning.</li>
+            <li value="5">För att justera bredden, längden och vinkeln på synfältet, klicka på och dra i handtagen längst fram på synfältet.</li>
+            <li value="6">Spara ändringarna genom att klicka på <span class="uitext">Inställning</span> för att lämna inställningsläget.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Välj eller ändra enhetsikon<a name="SC_SelectOrChangeTheIcon.htm"></a></h3>
+          <p>Du kan välja en enhetsikon som matchar den enhetstyp du använder.</p>
+          <ol>
+            <li value="1">Välj den vy som innehåller smartkartan du vill arbeta med.</li>
+            <li value="2">
+              <p>Klicka på <span class="uitext">Inställning</span> och dubbelklicka sedan på enhetsikonen på kartan.</p>
+              <p>
+                <img src="../../../Images/select_or_change_the_icon.png" alt="" />
+              </p>
+            </li>
+            <li value="3">Klicka på <span class="uitext">Välj ikon</span> och välj sedan en ikon för enheten.</li>
+            <li value="4">Klicka på <span class="uitext">Inställning</span> för att spara ändringen.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Visa eller dölj enhetsinformation<a name="SC_ShowOrHideInformation.htm"></a></h3>
+          <p>Du kan visa eller dölja information om enheter på en smartkarta. Detta är användbart när du till exempel vill öka eller minska mängden innehåll på din smartkarta.</p>
+          <ol>
+            <li value="1">Välj den vy som innehåller smartkartan du vill arbeta med.</li>
+            <li value="2">Klicka på <img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">Visa eller dölj lager och anpassade bildöverlagringar</span>.</li>
+            <li value="3">Välj eller rensa markeringsrutorna för att visa eller dölja informationen.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Lyssna på ljud från mikrofon på smartkartan</h3>
+          <p>Efter du har lagt till mikrofoner till en smartkarta kan du lyssna på ljud från en mikrofon åt gången på fliken <span class="uitext">Live</span>. </p>
+          <p>Gör så här:</p>
+          <ol>
+            <li value="1">
+              <p>På fliken <span class="uitext">Live</span>, navigera till det ställe på smartkartan som mikrofonen placerats.</p>
+            </li>
+            <li value="2">
+              <p>Dubbelklicka på mikrofonen för att slå ljudet på eller av.</p>
+              <p class="tip">Alternativt, högerklicka mikrofonen och välj <span class="uitext">Stäng av mikrofon</span> eller <span class="uitext">Ljud på</span>.</p>
+            </li>
+          </ol>
+        </div>
+        <div>
+          <h3>Ta bort enheter från smartkarta<a name="SC_DeletingCamerasOnSmar.htm"></a></h3>
+          <p>Du kan ta bort enheter, om de till exempel tagits bort fysiskt eller lagts till av misstag. När du tar bort en enhet tas även dess positionsinformation, till exempel geo-koordinater, bort från ditt VMS-system.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Stängd" data-mc-alt2="Öppen" />Krav</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>Dessa användarrättigheter måste vara aktiverade i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>:</p>
+              <ul>
+                <li>Redigering av smartkartor</li>
+                <li>Redigering av enheter</li>
+              </ul>
+            </div>
+          </div>
+          <p>Gör så här:</p>
+          <ol>
+            <li value="1">Navigera till enheten du vill ta bort.</li>
+            <li value="2"> Klicka på <span class="uitext">Inställning</span> för att aktivera inställningsläget. </li>
+            <li value="3">
+              <p>För att ta bort en enskild enhet, högerklicka på den och klicka på <span class="uitext">Ta bort</span>.</p>
+              <p>Exempel: Gäller det en kamera, klicka på <span class="uitext">Ta bort kamera</span>.</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_removecamera.png" data-mc-popup-alt="Ta bort kamera från din smartkarta.">
+                  <img class="MCPopupThumbnail img" data-mc-width="284" data-mc-height="209" src="../../../Images/sc_smap_removecamera_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: 0;" alt="Ta bort kamera från din smartkarta." tabindex="" />
+                </a>
+              </p>
+            </li>
+            <li value="4">Ta bort flera kameror:<ol><li value="1"><p>På smartkartans verktygsfält, klicka <img src="../../../Images/preview_videos_from_several.png" alt="" /><span class="uitext">Välj flera kameror</span>.</p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_cluster_multiselect.png" data-mc-popup-alt="Välj flera kameror på din smartkarta."><img class="MCPopupThumbnail img" data-mc-width="1056" data-mc-height="672" src="../../../Images/sc_smap_cluster_multiselect_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: 0;" alt="Välj flera kameror på din smartkarta." tabindex="" /></a><br /></p></li><li value="2">Klicka och dra för att markera flera kameror. Andra enhetstyper, till exempel ingångsenheter, inkluderas inte i markeringen.</li><li value="3">Högerklicka och välj <span class="uitext">Ta bort kameror</span>.</li></ol></li>
+            <li value="5">För att ta bort flera enheter som inte är kameror:<ol><li value="1">På smartkartan, tryck och håll ner Ctrl. </li><li value="2">Medan du håller ner Ctrl, klicka på de enheter du vill ta bort.</li><li value="3">Högerklicka på en av de markerade enheterna och välj Ta bort.</li></ol></li>
+            <li value="6"> Klicka på <span class="uitext">Inställning</span> igen så att inställningsläget avslutas. Dina ändringar har sparats.</li>
+          </ol>
+          <p class="tip">Du kan även ta bort en enskild enhet genom att markera den och trycka på <span class="uitext">DELETE</span> på ditt tangentbord.</p>
+        </div>
+      </div>
+      <div>
+        <h2>Lägga till, redigera eller ta bort kameror på smartkarta.<a name="SC_AddingDeletingOrEditi_2.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Länkar på smartkarta (förklaring)<a name="SC_LinksOnSmartMapExplai.htm"></a></h3>
+          <p>Du kan lägga till länkar till platser eller kartor på din smartkarta eller gå till statiska kartor i <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Det här låter dig besöka platser snabbt, eller visa en annan sorts karta utan att ändra till en annan vy. Du kan inte länka till en annan smartkarta. För mer information, se <a href="#SC_DifferencesBetweenMap.htm" class="MCXref xref">Skillnader mellan kartor och smartkartor (förklaring)</a>.</p>
+          <p>Länkar visar platser och kartor så här:</p>
+          <ul>
+            <li>En länk till en plats visar platsen i den nuvarande vyn. För att återgå till en plats som du redan har visat, klicka på <img src="../../../Images/backtracking_to_previous_locations.png" alt="" /><span class="uitext">Bakåt</span> på verktygsfältet i smartkartan.</li>
+            <li>En länk till en karta visar kartan i ett flytande fönster. Låter dig komma åt båda sorters kartor samtidigt. Du kan visa och arbeta med kartan men du kan inte utföra några ändringar i det flytande fönstret, som att t.ex. lägga till kameror</li>
+          </ul>
+          <p class="note">Om du gör dina länkar färgkodade, eller vill göra de mer tydliga på kartan, kan du ange en färg för länken. Som standard är länkar till platser på en smartkarta blå och länkar till äldre kartor röda. Om du använder en annan färg, är det bra att använda samma färg för varje sorts länk. Det gör det t.ex. enklare att se skillnad på länkar när du använder lager för att filtrera föremål på kartan.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Länka till en plats på smartkarta eller karta<a name="SC_AddLinkToSmartMapLoca.htm"></a></h3>
+          <p>Genom att lägga till länkar till din smartkarta kan du snabbt besöka platser eller visa en annan sorts karta utan att ändra till en annan vy.</p>
+          <p>Gör så här:</p>
+          <ol>
+            <li value="1">Markera den vy som innehåller smartkartan och klicka på <span class="uitext">Inställning</span>.</li>
+            <li value="2">Välj den plats på kartan där du vill lägga till en länk.</li>
+            <li value="3">I kartans verktygsfält, klicka på <img src="../../../Images/add_link_to_map_location.png" alt="" /><span class="uitext">Lägg till en länk</span>, och sedan på den plats på kartan där du vill att länken ska vara.</li>
+            <li value="4">Ange om du vill länka till en smartkarta-plats, eller en karta, och klicka på <span class="uitext">Lägg till</span>.</li>
+            <li value="5">
+              <p>Ange ett namn för länken.</p>
+              <p class="tip">Du kan visa rubriken på länken på din smartkarta om du väljer <span class="uitext">Ikon och text</span> som visningsstil. Vanligtvis anger namn vart länken leder till.</p>
+            </li>
+            <li value="6">I fältet <span class="uitext">Mål</span>, välj den karta eller plats som länken leder till.</li>
+            <li value="7">I fältet <span class="uitext">Visningsstil</span>, ange om du vill visa länkens ikon med namn eller bara länkens ikon på kartan.</li>
+            <li value="8">Valfritt: Klicka på <span class="uitext">Färg</span> för att ange en färg för din länk.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Redigera eller ta bort en länk på en smartkarta<a name="SC_EditOrDeleteLinkOnSma.htm"></a></h3>
+          <p>När du har lagt till en länk på din smartkarta kan du redigera eller radera den.</p>
+          <p>Gör så här:</p>
+          <ol>
+            <li value="1"> Klicka på <span class="uitext">Inställning</span> för att aktivera inställningsläget. </li>
+            <li value="2">För att redigera länken, högerklicka på länken och välj <span class="uitext">Redigera länk</span>.</li>
+            <li value="3">För att radera länken, gör så här:<ul><li>Högerklicka på länken och välj <span class="uitext">Ta bort länk</span></li><li>Markera länken och tryck på <span class="uitext">DELETE</span> på ditt tangentbord</li></ul></li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Lägga till, redigera eller ta bort positioner på smartkarta.<a name="SC_AddingDeletingOrEditi_3.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Positioner på smartkarta (förklaring)<a name="SC_LocationsOnSmartMapEx.htm"></a></h3>
+          <p>Du kan skapa platser på de punkter på smartkartan som är intressanta för dig. Du kan t.ex. skapa platser för ditt huvudkontor, och satellitkontor. Platser ger dig inte bara en helhetsbild av din omgivning, de hjälper dig också att navigera din smartkarta. </p>
+          <p class="note">När du lägger till en anpassad bildöverlagring, skapar <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> en plats med samma namn som bildöverlagringen. Till exempel gör detta det enklare att gå till överlagringen på smartkarta när du är utzoomad. Överlagringen och platsen är dock inte sammanlänkade. Till exempel kan du radera och byta namn på platsen utan att ändra överlagringen och vice versa. För mer information, se <a href="#SC_AddingDeletingOrEditi.htm" class="MCXref xref">Lägga till, radera eller redigera anpassade bildöverlagringar</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Hemplatser för smartkarta (förklaring)<a name="SC_HomeLocationsForSmart.htm"></a></h3>
+          <p>Hemplatser är specifika för visningselementen de har angetts i. Du kan ha olika hemplatser i olika visningselement. Om en hemplats inte anges för ett visningselement kommer visningselementet att visa hela världen, oavsett vilken typ av bakgrund du använder. Detta är även fallet om du raderar din hemplats.</p>
+          <p>Medan du arbetar med din smartkarta, kan du klicka på <img src="../../../Images/home_locations_for_map.png" alt="" /><span class="uitext">Hem</span> för att återgå till hemplatsen. Det är samma som att återställa din smartkarta i vyn. Du återgår till ursprungsinställningarna för visningselementet, och systemet raderar historian över de platser du har besökt.</p>
+          <p class="note">Att välja en ny hemplats påverkar alla som använder visningselementet. Om någon annan har angett en annan hemplats, ändrar du deras inställningar.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Lägga till plats i smartkarta<a name="SC_AddLocationToSmartMap.htm"></a></h3>
+          <p>För att hålla koll på platserna som är intressanta för dig kan du lägga till platser som tillåter dig att snabbt navigera för att välja platser på smartkarta.</p>
+          <p>Gör så här:</p>
+          <ol>
+            <li value="1">Markera den vy som innehåller smartkartan och klicka på <span class="uitext">Inställning</span>.</li>
+            <li value="2">Vid behov, panorera till eller zooma in på den punkt på din smartkarta där du vill lägga till en plats.</li>
+            <li value="3">I verktygsfältet, klicka på <img src="../../../Images/add_location_to_map.png" alt="" /><span class="uitext">Lägg till en position</span>, och klicka på punkten på din smartkarta.</li>
+            <li value="4">Namnge platsen, och lägg till följande valfria detaljer: <ul><li>Ange en zoomnivå när någon går till platsen på din smartkarta.</li><li>Välj en färg för platsens ikon. Att färgkoda platser är användbart för att t.ex. se skillnad på olika sorters platser. Detta kan baseras på platsfunktionen eller dess typ, eller indikera platsens prioritet</li><li>Valfritt: Gör platsen till din hemplats. Smartkartan centrerar på den här platsen, och applicerar standardinställningen för zoomnivå, när du klickar på <img src="../../../Images/home_locations_for_map.png" alt="" /><span class="uitext">Hem</span></li></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Redigera eller ta bort en plats på en smartkarta<a name="SC_EditOrDeleteLocationO.htm"></a></h3>
+          <p>När du har lagt till platser på din smartkarta kan du radera dem eller redigera inställningarna, t.ex. radera hemplatsen.</p>
+          <p>Gör så här:</p>
+          <ol>
+            <li value="1"> Klicka på <span class="uitext">Inställning</span> för att aktivera inställningsläget. </li>
+            <li value="2">För att redigera en plats, högerklicka på platsen och välj <span class="uitext">Redigera position</span>.</li>
+            <li value="3">För att radera en plats, gör så här:<ul><li>Högerklicka på platsen och välj <span class="uitext">Radera position</span></li><li>Markera platsen och tryck på <span class="uitext">DELETE</span> på ditt tangentbord</li></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Länkning mellan platser (förklaring)<a name="SC_LinkingBetweenLocatio.htm"></a></h3>
+          <p>Du kan t.ex. skapa en patrulleringsrutt genom att skapa en serie av länkar mellan platser. Skapa en länk vid plats A som går till plats B, och en länk vid plats B som går till plats C, och så vidare. För mer information, se <a href="#SC_AddingDeletingOrEditi_2.htm" class="MCXref xref">Lägga till, redigera eller ta bort kameror på smartkarta.</a>.</p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Lägga till, redigera eller ta bort kameror på smartkarta<a name="SC_AddingDeletingOrEditi_4.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Byggnader på smartkarta (förklaring)<a name="SC_BuildingsOnSmartMapEx.htm"></a></h3>
+          <p>Byggnader på <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">smartkartan<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>En kartfunktion som använder ett geografiskt informationssystem för att visualisera enheter (till exempel kameror och mikrofoner), byggnader och topografiska objekt i ett övervakningssystem med geografiskt korrekta, verkliga bilder. Kartor som använder element av denna funktionalitet kallas smartkartor.</span></a> avbildas som polygoner med fyra kanter. När de är tillagda kan du justera mått, vinklar och storlek så att de matchar den faktiska formen och positionen på byggnaden.</p>
+          <p>Om det är en flervåningsbyggnad, kan du börja att lägga på nivåer och sedan lägga på kameror på de enskilda nivåerna. Det tillåter dig att navigera kamerorna på insidan av byggnaden, nivå för nivå.</p>
+          <p>För att hjälpa dig att visa interiören av en nivå kan du lägga till anpassade bildöverlagringar för nivåer, exempelvis en bildillustration eller planritning. För mer information, se <a href="#SC_AddFloorPlansToLevels.htm" class="MCXref xref">Lägga till planritningar i nivåer (smartkarta)</a>.</p>
+          <p>Byggnaderna får automatiskt ett namn, exempelvis <span class="uitext">Byggnad 4.</span><span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> rekommenderar att du ändrar det namnet. Detta gör det lättare för dig att skilja mellan olika byggnader.</p>
+          <p>
+            <img src="../../../Images/buildings_on_map_explained.jpg" alt="" />
+          </p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Lägga till byggnader till smartkarta<a name="SC_AddBuildingsToSmartMa.htm"></a></h3>
+          <p>Istället för att använda bilder eller formfiler för att visa byggnader kan du skissa byggnadens konturer. När de är tillagda kan du justera mått, vinklar och storlek så att de matchar den faktiska formen och positionen på byggnaden.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Stängd" data-mc-alt2="Öppen" />Krav</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Redigering av smartkartan har aktiverats i din <span class="mc-variable flvar-product.SC variable">Smart Client</span> profil i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Gör så här:</p>
+          <ol>
+            <li value="1"> Klicka på <span class="uitext">Inställning</span> för att aktivera inställningsläget. </li>
+            <li value="2">Navigera till platsen på smartkartan, där du vill placera byggnaden.</li>
+            <li value="3">Klicka på <img src="../../../Images/add_buildings_to_map.jpg" alt="" /> och placera kursören i relevant position på smartkartan.</li>
+            <li value="4">Klicka igen. En rektangel läggs till på smartkartan. Om den är utzoomad kommer zoomnivån automatiskt att öka.</li>
+            <li value="5">Vid behov, använd hörnhandtagen för att justera formen och positionen på den faktiska byggnaden.</li>
+            <li value="6"> Klicka på <span class="uitext">Inställning</span> igen så att inställningsläget avslutas. Dina ändringar har sparats.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Redigera byggnader på smartkartan.<a name="SC_EditBuildingsOnSmartM.htm"></a></h3>
+          <p>När en byggnad har lagts till på smartkartan, kan du ändra namnet på byggnaden och justera positionen, storlek, mått och vinklar. Du kan även lägga till, ta bort eller ordna om nivåerna.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Stängd" data-mc-alt2="Öppen" />Krav</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Redigering av smartkartan har aktiverats i din <span class="mc-variable flvar-product.SC variable">Smart Client</span> profil i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Gör så här:</p>
+          <ol>
+            <li value="1">Navigera till byggnaden på din smartkarta. Om nödvändigt, zooma in.</li>
+            <li value="2"> Klicka på <span class="uitext">Inställning</span> för att aktivera inställningsläget. </li>
+            <li value="3">
+              <p>Klicka var som helst inom byggnaden. En blå ram indikerar att du kan redigera byggnaden.<br /></p>
+              <p>
+                <img src="../../../Images/buildings_on_map_explained.jpg" alt="" />
+              </p>
+            </li>
+            <li value="4">För att byta namn på byggnaden gå längst upp i fönstret på höger sida och klicka på <img src="../../../Images/edit_buildings_on_map.jpg" alt="" />. Byt namn och klicka på <img src="../../../Images/edit_buildings_on_map_1.jpg" alt="" />. För att avbryta, klicka på <span class="uitext">Esc</span>.</li>
+            <li value="5">För att justera hörnen, klicka och dra dem till en ny position.</li>
+            <li value="6">För att lägga till eller ta bort nivåer, se <a href="#SC_AddOrRemoveLevelsFrom.htm" class="MCXref xref">Lägg till eller ta bort nivåer från byggnader (smartkarta)</a>.</li>
+            <li value="7"> Klicka på <span class="uitext">Inställning</span> igen så att inställningsläget avslutas. Dina ändringar har sparats.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Radera byggnader på smartkartan<a name="SC_DeleteBuildingsOnSmar.htm"></a></h3>
+          <p>Om en byggnad inte längre krävs kan du radera den. Nästa gång någon loggar in på <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> eller läser in den igen är byggnaden borta.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Stängd" data-mc-alt2="Öppen" />Krav</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Redigering av smartkartan har aktiverats i din <span class="mc-variable flvar-product.SC variable">Smart Client</span> profil i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Gör så här:</p>
+          <ol>
+            <li value="1">Öppna smartkartan.</li>
+            <li value="2"> Klicka på <span class="uitext">Inställning</span> för att aktivera inställningsläget. </li>
+            <li value="3">Gör något av följande:</li>
+            <ul>
+              <li>Högerklicka på byggnaden och välj <span class="uitext">Ta bort</span></li>
+              <li>Markera byggnaden och tryck <span class="uitext">DELETE</span> på ditt tangentbord </li>
+            </ul>
+          </ol>
+          <p class="tip">Ett alternativt sätt att ta bort en byggnad: I <img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">Hantera standardinställningar</span>, skrolla ner till avsnittet <span class="uitext">Byggnader</span>, hovra över byggnaden, klicka <span class="uitext">Ta bort</span> och sedan <span class="uitext">Spara</span>. </p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Hantera nivåer och enheter i byggnader (smartkarta)<a name="SC_ManagingLevelsAndCame.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Enheter och nivåer i byggnader (förklaring)<a name="SC_CamerasAndLevelsInBui.htm"></a></h3>
+          <p>När du lägger till en enhet till en byggnad associeras enheten som standard till standardnivån eller standardvåningen om en sådan har angetts. Annars associeras enheten med den första våningen. Du kan dock ändra detta och associera enheten med valfri våning, eller flera våningar samtidigt.</p>
+          <p>Fler fakta:</p>
+          <ul>
+            <li>Om inga våningar angetts blir enheten synlig på alla våningar</li>
+            <li>Om du lägger till en byggnad ovanpå en redan positionerad enhet associeras enheten som standard till alla våningar</li>
+            <li>Om du expanderar gränserna för en byggnad så den täcker en redan positionerad enhet associeras enheten endast med markerad våning</li>
+          </ul>
+          <p class="note">Om du justerar om byggnadens gränser så den inte längre täcker enheten associeras enheten inte längre med byggnaden.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>
+            <a name="SC_FloorPlansDevicesInBuildings"></a>Planritningar och enheter i byggnader (förklaring)</h3>
+          <p>För att hjälpa dig att visa insidan av byggnaden, kan du lägga till planritningar som anpassade bildöverlagringar. Med en planritning på plats är det enklare att exakt positionera enheten. För mer information, se <a href="#SC_AddFloorPlansToLevels.htm" class="MCXref xref">Lägga till planritningar i nivåer (smartkarta)</a>.</p>
+          <p>Enheterna som du positionerar associeras med våningar, inte med anpassade bildöverlagringar. Om du raderar en våning i en byggnad med enheter och en anpassad bildöverlagring, kvarstår enheterna i sina geografiska positioner, men är inte längre associerade med våningen. Den anpassade bildöverlagringen raderas dock tillsammans med nivån.</p>
+          <p>Om du ändrar ordning på en nivå stannar både enheter och anpassad bildöverlagring på nivån. Enheterna behåller sin geografiska position.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Lägg till eller ta bort nivåer från byggnader (smartkarta)<a name="SC_AddOrRemoveLevelsFrom.htm"></a></h3>
+          <p>Efter att du har lagt till en byggnad till din smartkarta kan du lägga till så många nivåer du önskar. Den första nivån kommer att få nummer <span class="uitext">1</span>, nästa nivå <span class="uitext">2</span>, osv. Efteråt kan du byta namn på och ordna om de enskilda nivåerna.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Stängd" data-mc-alt2="Öppen" />Krav</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Redigering av smartkartan har aktiverats i din <span class="mc-variable flvar-product.SC variable">Smart Client</span> profil i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Gör så här:</p>
+          <ol>
+            <li value="1">Navigera till byggnaden på din smartkarta. Om nödvändigt, zooma in.</li>
+            <li value="2">Välj byggnad. En ruta visas på höger sida.</li>
+            <li value="3">Klicka på knappen <span class="uitext">Inställning</span> för att hamna i inställningsläget.</li>
+            <li value="4">Klicka på <span class="uitext">Lägg till nivå</span><img src="../../../Images/add_or_remove_levels_from.jpg" alt="" />.</li>
+            <li value="5">För att redigera namnet på nivån: <ol><li value="1">Klicka på punkterna <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> och välj <span class="uitext">Byt namn</span>.</li><li value="2">Skriv in ett nytt namn.</li></ol></li>
+            <li value="6">För att radera en nivå, klicka på punkterna <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> och välj <span class="uitext">Radera</span>. Enheter på denna nivå stannar i sina geografiska positioner, men är inte längre associerade med nivån.</li>
+            <li value="7">Klicka på <span class="uitext">Inställning</span> så att inställningsläget avslutas.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Ändra ordning på nivåer i byggnader (smartkarta)<a name="SC_ChangeOrderOfLevels.htm"></a></h3>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Stängd" data-mc-alt2="Öppen" />Krav</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Redigering av smartkartan har aktiverats i din <span class="mc-variable flvar-product.SC variable">Smart Client</span> profil i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Gör så här:</p>
+          <ol>
+            <li value="1">Navigera till byggnaden på din smartkarta. Om nödvändigt, zooma in.</li>
+            <li value="2">Välj byggnad. En ruta visas på höger sida som visar dig byggnadens nivåer.</li>
+            <li value="3"> Klicka på <span class="uitext">Inställning</span> för att aktivera inställningsläget. </li>
+            <li value="4">Klicka och dra det prickade området <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> till rätt plats. Alla associerade enheter och anpassade bildöverlagringar stannar på våningen.</li>
+            <li value="5"> Klicka på <span class="uitext">Inställning</span> igen så att inställningsläget avslutas. Dina ändringar har sparats.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Ange standardnivå för byggnader (smartkarta)<a name="SC_SetDefaultLevelForBui.htm"></a></h3>
+          <p>Om en särskild nivå för en byggnad är mer relevant än andra, t.ex. bottenvåningen, kan du ange den nivån som standardnivån. När du öppnar din smartkarta och går till byggnaden, kommer standardnivån att väljas automatiskt.</p>
+          <p>Om du navigerar bort från byggnaden och tillbaka, kommer <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> att ta dig till den nivå där du befann dig sist.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Stängd" data-mc-alt2="Öppen" />Krav</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Redigering av smartkartan har aktiverats i din <span class="mc-variable flvar-product.SC variable">Smart Client</span> profil i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Gör så här:</p>
+          <ol>
+            <li value="1">Navigera till byggnaden på din smartkarta. Om nödvändigt, zooma in.</li>
+            <li value="2">Välj byggnad. En ruta visas på höger sida som visar dig byggnadens nivåer. Standardnivån har markerats.</li>
+            <li value="3">Klicka på <span class="uitext">Inställning</span> för att gå över i inställningsläge. Lägg märke till stjärnan <img src="../../../Images/set_default_level_for_buildings.jpg" alt="" />. Den visar var den befintliga standardnivån ligger.</li>
+            <li value="4">Välj den nivå du vill ange som standard och klicka på punkterna <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" />.</li>
+            <li value="5">Välj <span class="uitext">Sätt som standard</span>.</li>
+            <li value="6"> Klicka på <span class="uitext">Inställning</span> igen så att inställningsläget avslutas. Dina ändringar har sparats.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Lägga till planritningar i nivåer (smartkarta)<a name="SC_AddFloorPlansToLevels.htm"></a></h3>
+          <p>Du kan lägga till anpassade bildöverlagringar, exempelvis planritningar, i nivåer i din byggnad för att hjälpa dig att visa interiören av en nivå i en byggnad. När du navigerar igenom nivåerna kommer tillhörande planritningar att visas.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Stängd" data-mc-alt2="Öppen" />Krav</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Redigering av smartkartan har aktiverats i din <span class="mc-variable flvar-product.SC variable">Smart Client</span> profil i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Gör så här:</p>
+          <ol>
+            <li value="1">Navigera till byggnaden på din smartkarta. Om nödvändigt, zooma in.</li>
+            <li value="2">Välj byggnad. En ruta visas på höger sida som visar dig byggnadens nivåer.</li>
+            <li value="3"> Klicka på <span class="uitext">Inställning</span> för att aktivera inställningsläget. </li>
+            <li value="4">Välj den nivå där du vill lägga till den anpassade bildöverlagringen.</li>
+            <li value="5">I det övre vänstra hörnet, klicka på <img src="../../../Images/add_custom_overlay_on_1.png" alt="" /><span class="uitext">Lägg till anpassad bildöverlagring</span>, och klicka sedan på insidan av byggnadens konturer. Ett fönster visas.</li>
+            <li value="6">Välj den typ av anpassad bildöverlagring du vill använda. För mer information, se <a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">Anpassade bildöverlagringar (förklaring)</a>.</li>
+            <li value="7">
+              <p>Välj plats på din dator där mappen ska lagras och klicka på <span class="uitext">Fortsätt</span>. Den anpassade bildöverlagringen visas som en blå kontur.<br /></p>
+              <p>
+                <img src="../../../Images/add_floorplans_to_levels.jpg" alt="" />
+              </p>
+            </li>
+            <li value="8">Dra den in i byggnadens konturer och använd rotationspunkten och hörnhandtagen för att rotera och ompositionera den anpassade bildöverlagringen.</li>
+            <li value="9">I listen längst upp på sidan, klicka på <span class="uitext">Spara</span>.</li>
+            <li value="10"> Klicka på <span class="uitext">Inställning</span> igen så att inställningsläget avslutas. Dina ändringar har sparats.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Radera planritningar på nivåer (smartkarta)<a name="SC_DeleteFloorPlansOnLev.htm"></a></h3>
+          <p>Om en planritning har ändrats på insidan av en nivå kan du behöva byta ut den anpassade bildöverlagringen som visar planritningen. <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> rekommenderar att du raderar den gamla planritningen innan du lägger till en ny.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Stängd" data-mc-alt2="Öppen" />Krav</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Redigering av smartkartan har aktiverats i din <span class="mc-variable flvar-product.SC variable">Smart Client</span> profil i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Gör så här:</p>
+          <ol>
+            <li value="1">Navigera till byggnaden på din smartkarta. Om nödvändigt, zooma in.</li>
+            <li value="2">Välj byggnad. En ruta visas på höger sida som visar dig byggnadens nivåer.</li>
+            <li value="3"> Klicka på <span class="uitext">Inställning</span> för att aktivera inställningsläget. </li>
+            <li value="4">Välj den våning där den anpassade bildöverlagringen finns.</li>
+            <li value="5">Högerklicka någonstans på den anpassade bildöverlagringen och välj <span class="uitext">Ta bort anpassad bildöverlagring</span>.</li>
+            <li value="6"> Klicka på <span class="uitext">Inställning</span> igen så att inställningsläget avslutas. Dina ändringar har sparats.</li>
+          </ol>
+          <p class="tip">För att ändra position eller storlek på planritningen, högerklicka på den anpassade bildöverlagringen och välj <span class="uitext">Redigera position</span>. Nu kan du flytta, rotera och ändra storleken på den anpassade bildöverlagringen.</p>
+        </div>
+        <div>
+          <h3>Lägga till enheter till byggnader (smartkarta)<a name="SC_AddCamerasToBuildings.htm"></a></h3>
+          <p>Efter att ha skapat en byggnad och lagt till våningar kan du lägga till enheter till byggnaden. Om en standardvåning har angetts så associeras enheterna med den. Annars associeras enheterna med den första våningen. Du kan ändra detta och associera enheten med vilken våning som helst i byggnaden.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Stängd" data-mc-alt2="Öppen" />Krav</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Redigering av smartkartan har aktiverats i din <span class="mc-variable flvar-product.SC variable">Smart Client</span> profil i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Gör så här:</p>
+          <ol>
+            <li value="1">Navigera till byggnaden på din smartkarta. Om nödvändigt, zooma in.</li>
+            <li value="2"> Klicka på <span class="uitext">Inställning</span> för att aktivera inställningsläget. </li>
+            <li value="3">För att lägga till en enhet, klicka på dess ikon. <p>Exempel: Gäller det en kamera, klicka på <img src="../../../Images/add_cameras_to_buildings.jpg" alt="" /><span class="uitext">Lägg till en kamera</span>.</p></li>
+            <li value="4">Klicka igen på platsen där du vill positionera enheten. En dialogruta visas.</li>
+            <li value="5">Välj enheten och klicka på <span class="uitext">OK</span>. För varje enhet du vill lägga till, repetera steg 3-5.</li>
+            <li value="6">För att associera en enhet med en eller fler nivåer, högerklicka på enheten och ange dessa nivåer.</li>
+            <li value="7"> Klicka på <span class="uitext">Inställning</span> igen så att inställningsläget avslutas. Dina ändringar har sparats.</li>
+          </ol>
+          <p class="note">Om inga våningar angetts blir enheten synlig på alla våningar.</p>
+        </div>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Konceptinformation</p>
+        <p class="containerItem_container_0">
+          <a href="sc_workingwithmap.htm">Smartkarta (användning)</a>
+        </p>
+        <p class="referenceHeading_reference_0">Referensmaterial</p>
+        <p class="referenceItem_reference_0">
+          <a href="sc_map_faq.htm">Vanliga frågor: smartkarta</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

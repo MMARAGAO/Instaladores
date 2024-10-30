@@ -1,0 +1,810 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="cs-CZ" xml:lang="cs-CZ" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="Konfigurace" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Configure smart map in XProtect Smart Client to get a geographical overview of your cameras, devices, and plug-in elements - in a one world experience." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=Recording Server" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Správce" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Integrátor" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Operátor" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Funkce Smart map (konfigurace)</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#feature_flags/ff_map/sc_configuringmaps.htm">Open topic with navigation</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>Funkce Smart map (konfigurace)</h1>
+      <p>Než budete moci využít výhod funkce Smart Map, musíte provést určité úkoly konfigurace v <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>.</p>
+      <p>Smart Map lze zobrazit, pouze pokud byla přidána do náhledu. Viz také <a href="#SC_AddSmartMapToView.htm" class="MCXref xref">Přidání funkce smart map do náhledů</a>. </p>
+      <p class="note">Více informací viz <a href="sc_workingwithmap.htm#SC_SmartMapExplained.htm" class="MCXref xref">Smart Map (vysvětlení)</a>.</p>
+      <div>
+        <h2>Rozdíly mezi mapami a funkcí Smart Maps (vysvětlení)<a name="SC_DifferencesBetweenMap.htm"></a></h2>
+        <p>
+        Aplikace <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> nabízí funkce map, které vám pomohou vizualizovat zabezpečovací systém a rychle reagovat na incidenty.</p>
+        <ul>
+          <li>
+            <span class="uitext">Mapy</span> – tyto mapy jsou založeny na statických snímcích, které neobsahují zeměpisné odkazy. Můžete přidat zařízení jako jsou kamery, mikrofony a záznamové servery. A také další funkce jako jsou alarmy, události a kontroly přístupu, které vám umožní pracovat s vaším zabezpečovacím systémem přímo na mapě. Zařízení a funkční prvek musíte na mapu umístit ručně. Další informace viz <a href="../../standard_features/sf_sc/sf_operation/sc_workingwithmaps.htm#SC_IntroductionToMaps(796).htm" class="MCXref xref">Mapy (vysvětlení)</a></li>
+          <li>
+            <span class="uitext">Funkce Smart Map</span> – Tento typ map používá zeměpisný informační systém k přesnému zeměpisnému zobrazení v reálném světě. To vám poskytne přesnější přehled vašich kamer na více místech. Můžete také:<ul><li>Použijte služby Bing Maps a Google Maps</li><li data-mc-conditions="flcts-features.oem-map-service-content">Jako geografické pozadí použijte <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span></li><li>Jako geografická pozadí používejte mapový projekt OpenStreetMap</li><li>Přidejte výkresy, soubory obrazců a obrázky pro počítačem podporované konstruování (CAD) jako překryvy</li></ul><p> Další informace viz <a href="sc_workingwithmap.htm#SC_SmartMapExplained.htm" class="MCXref xref">Smart Map (vysvětlení)</a></p></li>
+        </ul>
+        <p class="note">Mapy a funkci Smart Map nelze zaměňovat. Pokud používáte mapy, můžete obrazový soubor použít jako funkci Smart Map, musíte však znovu přidat zařízení. Zařízení s kamerami nelze převést do funkce Smart Map. Můžete však propojit funkci Smart Map s mapami. Více informací viz <a href="#SC_AddingDeletingOrEditi_2.htm" class="MCXref xref">Přidávání, odstraňování nebo úpravy odkazů ve funkci Smart Map</a>.</p>
+      </div>
+      <div>
+        <h2>Přidání funkce smart map do náhledů<a name="SC_AddSmartMapToView.htm"></a></h2>
+        <p>Funkci <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">Smart Map<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Funkce mapy, která pro vizualizaci zařízení (například kamer a mikrofonů), budov a topografických prvků zabezpečovacího systému využívá systém zeměpisných údajů v geograficky přesném zobrazení reálného světa. Mapy, které využívají tyto prvky, jsou označeny jako funkce Smart Maps.</span></a> můžete začít používat tak, že ji přidáte do náhledu. Dle výchozího nastavení je zobrazena základní mapa světa. Po přidání funkce Smart Map můžete změnit geografické pozadí.</p>
+        <p>Kroky:</p>
+        <ol>
+          <li value="1">Na kartě <span class="uitext">Živý obraz</span> nebo <span class="uitext">Přehrávání</span> vyberte náhled, do něhož chcete přidat funkci Smart Map.</li>
+          <li value="2"> Chcete-li otevřít režim nastavení, klikněte na volbu <span class="uitext">Nastavení</span>. </li>
+          <li value="3">Rozbalte podokno <span class="uitext">Přehled systému</span> a přetáhněte funkci <span class="uitext">Smart Map</span> do odpovídající pozice v náhledu.</li>
+          <li value="4"> Režim nastavení ukončíte opětovným kliknutím na tlačítko <span class="uitext">Nastavení</span>. Vaše změny byly uloženy.</li>
+          <li value="5">Nyní můžete změnit geografické pozadí. </li>
+        </ol>
+      </div>
+      <div>
+        <h2>Změna geografického pozadí map ve funkci Smart Map<a name="SC_ChangeTheGeographicBa.htm"></a></h2>
+        <p>Jako výchozí nastavení se po přidání mapy Smart Map do náhledu zobrazí základní mapa světa. Po přidání funkce Smart Map do náhledu můžete vybrat jiné geografické pozadí. Všichni uživatelé funkce Smart Map uvidí při dalším zobrazení náhledu toto nové pozadí.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Požadavky</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Služby Bing Maps a Google Maps jalo geografické pozadí jsou k dispozici, pouze pokud je nastavil váš správce systému v <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>.</p>
+          </div>
+        </div>
+        <p>Kroky:</p>
+        <ol>
+          <li value="1">Vyberte náhled, který obsahuje funkci Smart Map.</li>
+          <li value="2">V panelu nástrojů klikněte na možnost <img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">Zobrazit nebo skrýt vrstvy a vlastní překrytí</span>.</li>
+          <li value="3">V části <span class="uitext">Geografická pozadí</span> vyberte pozadí a typ podrobností, které chcete zobrazit. Pokud například chcete zobrazit topografické údaje, vyberte možnost <span class="uitext">Terén</span>. Pokud chcete zobrazit silnice, klikněte na možnost <span class="uitext">Silnice</span>.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>Geografické pozadí (vysvětlení)<a name="SC_GeographicBackgrounds.htm"></a></h2>
+        <p>Jako geografické pozadí vaší funkce <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">Smart Map<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Funkce mapy, která pro vizualizaci zařízení (například kamer a mikrofonů), budov a topografických prvků zabezpečovacího systému využívá systém zeměpisných údajů v geograficky přesném zobrazení reálného světa. Mapy, které využívají tyto prvky, jsou označeny jako funkce Smart Maps.</span></a> můžete používat následující služby:</p>
+        <ul>
+          <li>Bing Maps</li>
+          <li>Google Maps</li>
+          <li data-mc-conditions="flcts-features.oem-map-service-content">
+            <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+          </li>
+          <li> OpenStreetMap </li>
+        </ul>
+        <p>Po výběru geografického pozadí přidejte zařízení, například kamery, a vlastní překrytí, jako jsou například soubory ve formátu shapefile. Více informací viz <a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">Vlastní překrytí (vysvětlení)</a>.</p>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Typy geografického pozadí (vysvětlení)<a name="SC_TypesOfGeographicBack.htm"></a></h2>
+        <p>Po přidání mapy funkce <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">Smart Map<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Funkce mapy, která pro vizualizaci zařízení (například kamer a mikrofonů), budov a topografických prvků zabezpečovacího systému využívá systém zeměpisných údajů v geograficky přesném zobrazení reálného světa. Mapy, které využívají tyto prvky, jsou označeny jako funkce Smart Maps.</span></a> do náhledu si můžete vybrat jedno z následujících geografických pozadí:</p>
+        <ul>
+          <li>
+            <span class="uitext">Základní mapa světa</span> – Použije standardní geografické pozadí používané v aplikaci <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Tato mapa slouží jako obecná reference a neobsahuje funkce, jako jsou hranice států, města a jiné detaily. Nicméně stejně jako jiná geografická pozadí obsahují georeferenční údaje</li>
+          <li>
+            <span class="uitext">Bing Maps</span> – připojení k službě Bing Maps</li>
+          <li>
+            <span class="uitext">Google Maps</span> – připojení k službě Google Maps <p class="note">Možnosti služeb Bing Maps a Google Maps vyžadují přístup k internetu a musíte si zakoupit klíč od společnosti Microsoft nebo Google.</p></li>
+          <div data-mc-conditions="flcts-features.oem-map-service-content">
+            <li>
+              <span class="uitext">
+                <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+              </span> - připojení k poskytovateli bezplatných map. Poté co aktivujete <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>, není nutné provádět žádný další krok.</li>
+            <p>Viz <a href="#Enable">Aktivovat Milestone Map Service</a></p>
+          </div>
+          <div>
+            <li>
+              <p>
+                <span class="uitext">OpenStreetMap</span> - připojení k:</p>
+              <ul>
+                <li>Komerční dlaždicový server dle vašeho výběru</li>
+                <li>
+                  <p>Váš vlastní, online nebo místní dlaždicový server</p>
+                </li>
+              </ul>
+              <p>Viz <a href="#SC_ChangeOpenstreetmapTi.htm">Změna serveru dlaždic ve službě OpenStreetMap</a></p>
+            </li>
+          </div>
+          <li>
+            <span class="uitext">Žádné</span> - tato možnost skryje geografické pozadí. Pamatujte, že tam zůstávají georeferenční údaje. Viz také <a href="#SC_LayersOnSmartMapExpla.htm" class="MCXref xref">Vrstvy ve funkci Smart Map (vysvětlení)</a></li>
+        </ul>
+        <p>Ve výchozím nastavení se ve službě Bing Maps a Google Maps ukazuje satelitní zobrazení. Tento obrazový obsah můžete změnit například na letecký nebo terénní a zobrazit tak různé podrobnosti.</p>
+      </div>
+      <div data-mc-conditions="flcts-features.oem-map-service-content">
+        <h2>
+          <a name="Enable"></a>Aktivovat <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span></h2>
+        <p>
+          <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> je online služba, pomocí které se můžete připojit k dlaždicovému serveru <span class="mc-variable flvar-brand-company.CompanyLong variable">Milestone Systems</span>. Tento dlažidcový server využívá bezplatné komerčně dostupné mapové služby. </p>
+        <p>Poté, co ve funkci Smart Map aktivujete <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>, bude funkce Smart Map jaké své geografické pozadí používat <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Požadavky</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Pokud je pole <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> šedé, nemáte potřebná uživatelská práva k aktivaci nebo vypnutí služby. S povolením funkce v aplikaci <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> vám pomůže správce systému.</p>
+            <p class="important">
+              <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> vyžaduje přístup k internetu.</p>
+          </div>
+        </div>
+        <p>Kroky:</p>
+        <ol>
+          <li value="1">
+            <p>V pravém horním rohu klikněte na volbu <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> a potom na <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">Nastavení</span> k otevření okna <span class="uitext">Nastavení</span>.</p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_configuringmaps_mmapserv.png" data-mc-popup-alt="Enable Milestone Map Service.">
+                <img class="MCPopupThumbnail img" data-mc-width="786" data-mc-height="593" src="../../../Images/sc_configuringmaps_mmapserv_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Enable Milestone Map Service." tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="2">Vlevo klikněte na položku <span class="uitext">Smart Map</span>.</li>
+          <li value="3">V poli <span class="uitext mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> vyberte možnost <span class="uitext">Dostupné</span>.</li>
+          <li value="4">Klikněte na <span class="uitext">Zavřít</span>. Až příště načtete svou funkci Smart Map, budete jako geografické pozadí používat <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>Server dlaždic OpenStreetMap (vysvětlení)<a name="SC_ChangingOpenstreetmap.htm"></a></h2>
+        <p>Pokud jako geografické pozadí pro mapu Smart Map používáte OpenStreetMap, možná budete muset server dlaždic zadat přesně. Můžete tak použít místní server dlaždic, například pokud vaše organizace má své vlastní mapy pro oblasti, jako jsou letiště nebo přístavy, nebo můžete použít komerční server dlaždic.</p>
+        <p class="note">K použití místního serveru dlaždic nepotřebujete přístup na internet.</p>
+        <p>Adresu serveru dlaždic lze zadat dvěma způsoby:</p>
+        <ul>
+          <li>V aplikaci <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> – adresu serveru dlaždic nastavíte v profilech aplikace <span class="mc-variable flvar-product.SC variable">Smart Client</span>. Adresa serveru se použije pro všechny uživatele aplikace <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> přiřazené jednotlivých profilům <span class="mc-variable flvar-product.SC variable">Smart Client</span></li>
+          <li>V aplikaci <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> – adresu serveru dlaždic nastavíte v dialogu <span class="uitext">Nastavení</span>. Adresa serveru se použije pouze pro danou instalaci aplikace</li>
+        </ul>
+        <div>
+          <h2>Změna serveru dlaždic ve službě OpenStreetMap<a name="SC_ChangeOpenstreetmapTi.htm"></a></h2>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Požadavky</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>Pokud byl server dlaždic uvedený na straně serveru uzamčen pro úpravy, pole v aplikaci bude šedé a vy nebudete moci změnit adresu serveru. S povolením funkce v aplikaci <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> vám pomůže správce systému.</p>
+            </div>
+          </div>
+          <p>Kroky:</p>
+          <ol>
+            <li value="1">
+              <p>V pravém horním rohu klikněte na volbu <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> a potom na <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">Nastavení</span> k otevření okna <span class="uitext">Nastavení</span>.</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_mapsettings.png" data-mc-popup-alt="Specify alternative tile server for the smart map.">
+                  <img class="MCPopupThumbnail img" data-mc-width="786" data-mc-height="593" src="../../../Images/sc_mapsettings_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Specify alternative tile server for the smart map." tabindex="" />
+                </a>
+                <br />
+              </p>
+            </li>
+            <li value="2">Vlevo klikněte na položku <span class="uitext">Smart Map</span>.</li>
+            <li value="3">V poli <span class="uitext">Server OpenStreetMap</span> proveďte jednu z následujících akcí: <ul><li>Zadejte adresu serveru. Je-li pole šedivé, znamená to, že bylo na straně serveru uzamčeno</li><li>Chcete-li použít server specifikovaný na straně serveru, vyberte zaškrtávací políčko <span class="uitext">Podle serveru</span></li></ul></li>
+            <li value="4">Klikněte na <span class="uitext">Zavřít</span>. Až příště načtete svou funkci Smart Map, použije se server OpenStreetMap, který jste určili.</li>
+          </ol>
+          <p class="important">Pokud není určena žádná adresa serveru, nebo pokud je adresa serveru neplatná, pak server OpenStreetMap nebude jako zeměpisné pozadí k dispozici.</p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Zobrazení nebo skrytí vrstev ve funkci Smart Map<a name="SC_ShowingOrHidingLayers.htm"></a></h2>
+        <p>Na své Smart Map můžete zapnout nebo vypnout vrstvy v závislosti na tom, co chcete vidět.</p>
+        <div>
+          <h3>Vrstvy ve funkci Smart Map (vysvětlení)<a name="SC_LayersOnSmartMapExpla.htm"></a></h3>
+          <p>Vrstvy používejte k filtrování údajů zobrazovaných funkcí <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">Smart Map<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Funkce mapy, která pro vizualizaci zařízení (například kamer a mikrofonů), budov a topografických prvků zabezpečovacího systému využívá systém zeměpisných údajů v geograficky přesném zobrazení reálného světa. Mapy, které využívají tyto prvky, jsou označeny jako funkce Smart Maps.</span></a>. Funkce Smart Map má tři typy vrstev:</p>
+          <ul>
+            <li>
+              <span class="uitext">Systémové prvky</span> – mezi ně patří kamery, odkazy a umístění</li>
+            <li>
+              <span class="uitext">Vlastní překrytí</span> – mezi ně patří rastrové obrázky, nákresy CAD a soubory ve formátu shapefile</li>
+            <li>
+              <span class="uitext">Geografické pozadí </span>– mezi ně patří základní mapa světa nebo některá z následujících služeb:<ul><li>Bing Maps</li><li>Google Maps</li><li data-mc-conditions="flcts-features.oem-map-service-content"><span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span></li><li> OpenStreetMap </li></ul></li>
+          </ul>
+          <p class="note">Služby Bing Maps a Google Maps jsou jako geografické pozadí k dispozici, pouze pokud je váš správce nastavil v aplikaci <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. Více informací viz <a href="#SC_GeographicBackgrounds.htm" class="MCXref xref">Geografické pozadí (vysvětlení)</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Pořadí vrstev (vysvětlení)<a name="SC_OrderOfLayersExplaine.htm"></a></h3>
+          <p>Všechny systémové prvky každého typu jsou ve stejné <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term26">vrstvě<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Geografické pozadí ve funkci Smart Map, vlastní překrytí nebo prvek v systému, například kamera. Vrstvy jsou všechny grafické prvky, které se nacházejí ve funkci Smart Map.</span></a>. Například všechny kamery jsou ve stejné vrstvě. Pokud skryjete vrstvu kamer, budou skryty všechny kamery. Vrstvy systémových prvků jsou odshora dolů seřazeny v tomto pořadí: pozice, kamery, odkazy a geografické pozadí. Toto pořadí nelze změnit.</p>
+          <p>Geografické pozadí je ve funkci Smart Map vždy tou nejnižší vrstvou. Mezi geografickými pozadími můžete přepínat, v jednu chvíli však můžete vybrat pouze jedno geografické pozadí.</p>
+          <p>Vlastní překrytí jsou přidána jako oddělené vrstvy a jsou seřazena v pořadí, ve kterém byla do funkce Smart Map přidávána. Pořadí můžete přeřadit konfigurací výchozího nastavení mapy. </p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Příklad</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>Městský architekt má soubor ve formátu shapefile, který ukazuje hranice města a soubor ve formátu shapefile, který zahrnuje všechny hlavní cesty ve městě. Městský architekt může změnit pořadí vrstev tak, aby se silnice zobrazovaly přes hranice města. Tím se získá všeobecný přehled o umístění kamer ve městě a bude možné přiblížit a vidět název ulice, na které je daná kamera umístěna.</p>
+            </div>
+          </div>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Zobrazení nebo skrytí vrstev ve funkci Smart Map<a name="SC_ShowOrHideLayersOnSma.htm"></a></h3>
+          <p>Ve funkci Smart Map můžete vrstvy zobrazovat nebo skrývat, a to včetně geografického pozadí. To je například dobré, když chcete zaostřit na určitý prvek nebo pouze zjednodušit obsah zobrazovaný funkcí Smart Map.</p>
+          <p>Kroky:</p>
+          <ol>
+            <li value="1">Na panelu nástrojů klikněte na volbu <img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">Zobrazit nebo skrýt vrstvy a vlastní překrytí</span>.</li>
+            <li value="2">Pokud chcete zobrazit nebo skrýt systémové prvky a vlastní překrytí, zaškrtněte nebo zrušte zaškrtnutí políček.</li>
+            <li value="3">Pokud chcete skrýt geografické pozadí, vyberte možnost <span class="uitext">Žádné</span>.</li>
+          </ol>
+          <p class="note">Výběrem možnosti <span class="uitext">Žádné</span> skryjete geografické pozadí, georeferenční údaje však budou pro funkci Smart Map stále platit. Například pokud přidáte nový soubor ve formátu shapefile, který obsahuje prostorové reference, systém stále použije prostorové reference pro umístění souboru na mapu.</p>
+          <p class="note">Skrytím mikrofonů se ztlumí zvuk momentálně neztlumeného mikrofonu až do chvíle, kdy mikrofony znovu neodkryjete.</p>
+        </div>
+        <div>
+          <h3>Určete výchozího nastavení pro funkci smart map<a name="SC_ManageDefaultSettings(65803).htm"></a></h3>
+          <p>Poté, co do náhledu přidáte funkci Smart Map a přidáte překrytí, kamery a odkazy, můžete pro funkci Smart Map zadat výchozí nastavení pro vlastní překrytí. Pro vyčistění můžete rovněž vlastní překrytí odstranit.</p>
+          <p>Kroky:</p>
+          <ol>
+            <li value="1">Klikněte na tlačítko <span class="uitext">Nastavení</span>.</li>
+            <li value="2">Klikněte na možnost <img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">Správa výchozího nastavení</span>.</li>
+            <li value="3">Proveďte některou z následujících akcí: <ul><li>Pokud chcete zobrazit nebo překrytí, zaškrtněte nebo zrušte zaškrtnutí políček.</li><li>Jestliže chcete změnit pořadí, pomocí táhla umístěného před překrytím toto překrytí přetáhněte do jiné pozice na seznamu. Vrstvy jsou v seznamu seřazeny odshora dolů</li><li>Jestliže chcete překrytí odstranit, přejeďte nad ním kurzorem a klikněte na možnost <span class="uitext">Odstranit</span></li></ul></li>
+            <li value="4">Klikněte na tlačítko <span class="uitext">Uložit</span>.</li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Přidávání, odstraňování nebo úprava vlastních překrytí<a name="SC_AddingDeletingOrEditi.htm"></a></h2>
+        <div>
+          <h3>Vlastní překrytí (vysvětlení)<a name="SC_CustomOverlaysExplain.htm"></a></h3>
+          <p>V aplikaci <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> můžete ve funkci Smart Map přidat jako vlastní překrytí následující typy souborů:</p>
+          <ul>
+            <li>
+              <span class="uitext">Soubor ve formátu shapefile</span> – Tento formát může obsahovat geoprostorová vektorová data jako jsou body, přímky, mnohoúhelníky a atributy představující objekty na mapách jako jsou zdi, cesty nebo geografické prvky jako řeky nebo jezera. Například odbory městského plánování a správy soubory ve formátu shapefile často používají, protože mají dobré poměry při přiblížení i oddálení a velikost souborů je často menší než nákresy v CAD nebo rastrové obrázky</li>
+            <li>
+              <span class="uitext">CAD</span> - Nákresy vytvořené v programech pro konstruování podporované počítačem (CAD) jsou u překrytí jako jsou soubory shapefiles ve funkci Smart Map užitečné proto, že CAD data mohou používat systém souřadnic a prostorové reference a zajistit tak přesný geografický kontext. Můžete například použít podrobnou leteckou nebo silniční mapu umístění</li>
+            <li>
+              <span class="uitext">Obrázek</span> – Pokud máte soubor obrázku, jako je například plán prostorového uspořádání budovy, můžete jej ve funkci Smart Map přidat jako překrytí. Používat můžete tyto soubory obrázků: PNG, BMP, GIF, JPG, JPEG, PHG, TIF a TIFF</li>
+          </ul>
+          <p class="note">Pokud chcete zaostřit na vlastní překrytí, můžete dočasně skrýt ostatní typy vrstev. Viz <a href="#SC_LayersOnSmartMapExpla.htm" class="MCXref xref">Vrstvy ve funkci Smart Map (vysvětlení)</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Vlastní překrytí a umístění (vysvětlení)<a name="SC_CustomOverlaysAndLoca.htm"></a></h3>
+          <p>Můžete rychle přeskočit na vlastní překrytí, které jste přidali do funkce Smart Map, a to dle popisu v <a href="sc_workingwithmap.htm#SC_FindLocationOfCustomO.htm" class="MCXref xref">Přeskok na vlastní překrytí ve funkci Smart Map</a>. V nastavení však můžete navázat spojení mezi vlastními překryvy a umístěními. To znamená, že kdykoliv přidáte nové vlastní překrytí, aplikace <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> vytvoří umístění se stejným názvem v přesně stejném bodě na mapě. Umístění vlastního překrytí nyní bude k dispozici v seznamu <span class="uitext">Vybrat umístění</span>.</p>
+          <p>
+            <img src="../../../Images/custom_overlays_and_locations.jpg" alt="" />
+          </p>
+          <p>Překrytí a umístění nejsou spojena. Můžete například odstranit nebo změnit umístění, aniž by se změnilo překrytí, a naopak.</p>
+          <p class="note">Chcete-li tuto funkci zapnout, viz <a href="#SC_AddLocationsToCustomO.htm" class="MCXref xref">Přidání umístění vlastního překrytí (funkce Smart Map)</a>.</p>
+        </div>
+        <div>
+          <h3>Přidávání vlastních překrytí do funkce Smart Map<a name="SC_AddCustomOverlayOnSma.htm"></a></h3>
+          <p>Úroveň podrobností ve funkci Smart Map můžete zvýšit přidáním vlastních překrytí. Když přidáte <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term8">vlastní překrytí<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Uživatelsky definovaný grafický prvek, který mohou uživatelé přidat do funkce Smart Map, například pro ilustraci plánu podlaží v budově nebo k označení hranic mezi jednotlivými oblastmi. Vlastní překrytí může být obrázek, kresba z aplikace CAD nebo soubor ve formátu shapefile.</span></a>, aplikace <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> vytvoří umístění se stejným názvem jako překrytí.</p>
+          <p>Kroky:</p>
+          <ol>
+            <li value="1">Vyberte náhled, který obsahuje funkci Smart Map, a klikněte na volbu <span class="uitext">Nastavení</span>.</li>
+            <li value="2">Klikněte na volbu <img src="../../../Images/add_custom_overlay_on_1.png" alt="" /><span class="uitext">Přidat vlastní překrytí</span>: <ul><li>Pokud přidávané překrytí obsahuje georeferenční údaje, klikněte kdekoli do mapy Smart Map. Aplikace <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> tyto georeferenční údaje použije k umístění překrytí do správného geografického umístění. Funkce Smart Map dále zarovná překrytí na střed na výchozí úrovni přiblížení</li><li>Pokud přidávané překrytí neobsahuje georeferenční údaje, přejděte na bod na mapě, kam prvek chcete přidat, a poté na tento bod klikněte ve funkci Smart Map</li><p class="tip">Dříve než překrytí přidáte, je vhodné přiblížit pozici na mapě, kam je přidáváte. To usnadňuje přesné umístění překrytí.</p></ul></li>
+            <li value="3">Zadejte název překrytí.</li>
+            <li value="4">V závislosti a typu souboru vyberte: <ul><li><span class="uitext">Obrázek</span> – vyberte soubor obrázku a klikněte na tlačítko <span class="uitext">OK</span></li><li><span class="uitext">Soubor ve formátu shapefile</span> – vyberte soubor SHP. Pokud máte soubor PRJ, aplikace <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> jej vyhledá a můžete jen kliknout na tlačítko <span class="uitext">OK</span>. Pokud nemáte soubor PRJ, můžete pozici překrytí po přidání ručně upravit. Můžete rovněž použít barvu. Přidáním barvy například soubor ve formátu shapefile více ve funkci Smart Map vynikne</li><li><span class="uitext">CAD</span> – vyberte soubor DWG. Pokud máte soubor PRJ, klikněte na tlačítko <span class="uitext">OK</span>. Jestliže nemáte soubor PRJ a chcete pozici souboru ve funkci Smart Map určit pomocí georeferenčních údajů, zadejte identifikátor SRID a klikněte na tlačítko <span class="uitext">OK</span>. Pokud nemáte soubor PRJ ani identifikátor SRID, můžete pozici překrytí po přidání ručně upravit</li><p class="note">Pro podrobnější informace o typech překrytí viz <a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">Vlastní překrytí (vysvětlení)</a>.</p></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Přidání umístění vlastního překrytí (funkce Smart Map)<a name="SC_AddLocationsToCustomO.htm"></a></h3>
+          <p>Aplikaci <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> můžete nakonfigurovat tak, aby na <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term8">vlastní překrytí<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Uživatelsky definovaný grafický prvek, který mohou uživatelé přidat do funkce Smart Map, například pro ilustraci plánu podlaží v budově nebo k označení hranic mezi jednotlivými oblastmi. Vlastní překrytí může být obrázek, kresba z aplikace CAD nebo soubor ve formátu shapefile.</span></a> na mapě Smart Map automaticky přidávala umístění. Díky tomu budete moci přeskakovat na vlastní překrytí pomocí seznamu <span class="uitext">Vybrat umístění</span>. </p>
+          <p>Kroky:</p>
+          <ol>
+            <li value="1">Na panelu nástrojů aplikace klikněte na volbu <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> a na <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">Nastavení</span>. Otevřete tak okno <span class="uitext">Nastavení</span>.</li>
+            <li value="2">Přejděte na kartu <span class="uitext">Funkce Smart Map</span>.</li>
+            <li value="3">V seznamu <span class="uitext">Vytvořit umístění při přidání vrstvy</span> vyberte volbu <span class="uitext">Ano</span>.</li>
+            <li value="4">Pro uložení změn zavřete dialogové okno.</li>
+          </ol>
+          <p class="note">Více informací viz <a href="#SC_CustomOverlaysAndLoca.htm" class="MCXref xref">Vlastní překrytí a umístění (vysvětlení)</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Odstranění vlastního překrytí z funkce Smart Map<a name="SC_DeleteCustomOverlayOn.htm"></a></h3>
+          <ol>
+            <li value="1">Vyberte náhled, který obsahuje funkci Smart Map, a klikněte na volbu <span class="uitext">Nastavení</span>.</li>
+            <li value="2">Na panelu nástrojů klikněte na možnost <img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">Správa výchozího nastavení</span>.</li>
+            <li value="3">Přejeďte kurzorem nad vlastním překrytím a klikněte na možnost <span class="uitext">Odstranit</span>.</li>
+            <li value="4">Kliknutím na možnost <span class="uitext">Uložit</span> vlastní překrytí odstraníte.</li>
+            <li value="5">Volitelná možnost: Pokud bylo pro vlastní překrytí vytvořeno umístění, možná budete chtít odstranit i toto umístění. Více informací viz <a href="#SC_AddingDeletingOrEditi_3.htm" class="MCXref xref">Přidávání, odstraňování nebo úpravy umístění ve funkci Smart Map</a>.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Zviditelnění oblastí v souborech typu shapefiles (funkce Smart Map)<a name="SC_MakeAreasInShapefiles.htm"></a></h3>
+          <p class="note">Toto téma je relevantní pouze v případě, že používáte soubory typu shapefiles s polygony.</p>
+          <p>Pokud chcete použít soubor typu shapefile ve své funkci SMart Map, který zahrnuje polygony blízko sebe, může být nezbytné jednotlivé polygony od sebe odlišit. To dosáhnete snížením neprůhlednosti barvy, kterou pro soubor typu shapefile vyberete. Hranice polygonu se zvýrazní.</p>
+          <p>Kroky:</p>
+          <ol>
+            <li value="1">Postupujte podle kroků popsaných v <a href="#SC_AddCustomOverlayOnSma.htm" class="MCXref xref">Přidávání vlastních překrytí do funkce Smart Map</a>.</li>
+            <li value="2">
+              <p>Při volbě barvy posuňte posuvník <span class="uitext">neprůhlednost</span> doleva, dokud nejste s úrovní průhlednosti spokojeni.</p>
+              <p>
+                <img src="../../../Images/make_areas_in_shapefiles_more.jpg" alt="" />
+              </p>
+            </li>
+            <li value="3">Klikněte na tlačítko <span class="uitext">Uložit</span>.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Úprava pozice, velikosti nebo zarovnání vlastního překrytí<a name="SC_AdjustPositionSizeOrA.htm"></a></h3>
+          <p>Překrytí můžete přesunout na jiné místo na mapě, zvětšit je nebo zmenšit nebo je natočit. To je užitečné například v případě, kdy překrytí neobsahuje georeferenční údaje nebo je obsahuje, ale z nějakého důvodu se přesně nezarovná s geografickým pozadím.</p>
+          <p>Kroky:</p>
+          <ol>
+            <li value="1">Vyberte náhled, který obsahuje funkci Smart Map, a klikněte na volbu <span class="uitext">Nastavení</span>.</li>
+            <li value="2">Klikněte pravým tlačítkem na překrytí a vyberte <span class="uitext">Upravit pozici</span>.</li>
+            <li value="3">Pro změnu velikosti nebo otočení překrytí: <ul><li>Klikněte na rohový ovladač a přetáhněte jej</li><li><p>Pro otočení překrytí kolem konkrétního bodu nastavte středový bod otočení na příslušné místo na mapě. Následně klikněte na rohový ovladač a přetáhněte jej </p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/adjust_position_size_or_alignment.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="273" data-mc-height="261" src="../../../Images/adjust_position_size_or_alignment_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="" tabindex="" /></a></p></li></ul></li>
+            <li value="4">Jestliže chcete překrytí posunout na mapě, klikněte na ně a přetáhněte je.</li>
+            <li value="5">Změnu uložíte kliknutím na tlačítko <span class="uitext">Uložit</span>.</li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Přidávání, odstraňování nebo úpravy odkazů ve funkci Smart Map<a name="SC_AddingDeletingOrEditi_1.htm"></a></h2>
+        <p>Zařízení můžete přidat do funkce Smart Map v jejich aktuální poloze ve svém prostředí. Tím získáte dobrý přehled o svém zabezpečovacím systému a může vám to pomoci reagovat na vzniklé situace. Například pokud chcete sledovat podezřelého při probíhajícím incidentu, můžete klikat na kamery na mapě a sledovat jejich záběry.</p>
+        <p>Po přidání kamery do funkce Smart Map můžete upravit pole náhledu pro ikonu kamery tak, aby odpovídala oblasti náhledu skutečné kamery. To usnadňuje nalezení kamery, která pokrývá určitou oblast. Kromě toho můžete vybrat ikonu představující kameru na mapě, což vám může pomoci identifikovat typ kamery na mapě.</p>
+        <p>Ve funkci Smart Map můžete pracovat s následujícími typy zařízení:</p>
+        <ul>
+          <li>Kamery</li>
+          <li>Vstupní zařízení</li>
+          <li>Mikrofony</li>
+        </ul>
+        <div data-mc-conditions="">
+          <h3>Přidat zařízení do funkce Smart Map<a name="SC_AddCamerasToSmartMap.htm"></a></h3>
+          <p>Pokud byly v <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> vaším správcem systému zadány zeměpisné souřadnice zařízení, pak se podle nich automaticky umístí, když jej přidáte do funkce Smart Map. V opačném případě jej musíte do správné zeměpisné polohy umístit sami.</p>
+          <ol>
+            <li value="1">Vyberte náhled, který obsahuje funkci Smart Map, a klikněte na volbu <span class="uitext">Nastavení</span>.</li>
+            <li value="2">Chcete-li přidat zařízení nebo skupinu zařízení: <p class="tip">Před přidáním zařízení je vhodné přiblížit umístění na mapě. To usnadňuje přesné umístění zařízení.</p><ul><li>Rozbalte podokno <span class="uitext">Přehled systému</span>, najděte zařízení nebo skupinu zařízení a následně je přetáhněte do bodu ve funkci Smart Map, ve kterém je chcete zobrazit. Zařízení můžete následně znovu přetáhnout a přemístit je</li><li>Na panelu nástrojů funkce Smart Map klikněte na položku <img src="../../../Images/add-a-device-to-smart-map.png" alt="" /><span class="uitext">Přidat zařízení</span> &gt; vyberte typ zařízení.<ul><li>Příklad: V případě kamery vyberte možnost <img src="../../../Images/add_cameras_to_map.png" alt="" /><span class="uitext">Přidat kameru</span> a poté vyberte kameru.</li></ul></li><li>Přetažením zařízení je přidejte do funkce Smart Map</li><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_adddevice.png" data-mc-popup-alt="Add a device to your smart map."><img class="MCPopupThumbnail img" data-mc-width="709" data-mc-height="823" src="../../../Images/sc_smap_adddevice_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add a device to your smart map." tabindex="" /></a><br /></ul></li>
+            <li value="3">Pokud chcete změnu uložit, klikněte na volbu <span class="uitext">Nastavení</span> a ukončete režim nastavení.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Změna pole náhledu a směru kamery<a name="SC_ChangeFieldOfViewAndD.htm"></a></h3>
+          <p>Po přidání kamery do funkce Smart Map můžete změnit její pole náhledu a směr nastavením ikony kamery.</p>
+          <p class="tip">Pokud jste od mapy oddáleni, musíte se přiblížit, dokud se pole náhledu nezobrazí.</p>
+          <ol>
+            <li value="1">Vyberte náhled, který obsahuje funkci Smart Map, s nímž chcete pracovat.</li>
+            <li value="2">Pro úpravu ikony kamery klikněte na volbu <span class="uitext">Nastavení</span>.</li>
+            <li value="3">
+              <p>Klikněte na ikonu kamery.</p>
+              <p>
+                <img src="../../../Images/change_field_of_view_and_direction.png" alt="" />
+              </p>
+            </li>
+            <li value="4">Pomocí otočné rukojeti nasměrujte kameru do správného směru.</li>
+            <li value="5">Pokud chcete upravit šířku, délku a úhel oblasti pohledu, klikněte a přetáhněte rukojeti na předním okraji oblasti pohledu.</li>
+            <li value="6">Změny uložíte kliknutím na tlačítko <span class="uitext">Nastavení</span> a ukončením režimu nastavení.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Vybrat nebo změnit ikonu zařízení<a name="SC_SelectOrChangeTheIcon.htm"></a></h3>
+          <p>Můžete vybrat ikonu zařízení odpovídající používanému typu zařízení.</p>
+          <ol>
+            <li value="1">Vyberte náhled, který obsahuje funkci Smart Map, s nímž chcete pracovat.</li>
+            <li value="2">
+              <p>Klikněte na tlačítko <span class="uitext">Nastavení</span>, potom dvakrát klikněte na ikonu zařízení umístěné na mapě.</p>
+              <p>
+                <img src="../../../Images/select_or_change_the_icon.png" alt="" />
+              </p>
+            </li>
+            <li value="3">Klikněte na možnost <span class="uitext">Vybrat ikonu</span> a vyberte ikonu zařízení.</li>
+            <li value="4">Pro uložení změn znovu klikněte na volbu <span class="uitext">Nastavení</span>.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Ukázat nebo skrýt informace o zařízení<a name="SC_ShowOrHideInformation.htm"></a></h3>
+          <p>Ve funkci Smart Map můžete zobrazit nebo skrýt údaje o zařízeních. To je dobré například v případě, že chcete zvýšit nebo snížit množství obsahu ve vaší funkci Smart Map.</p>
+          <ol>
+            <li value="1">Vyberte náhled, který obsahuje funkci Smart Map, s nímž chcete pracovat.</li>
+            <li value="2">Klikněte na volbu <img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">Zobrazit nebo skrýt vrstvy a vlastní překrytí</span>.</li>
+            <li value="3">Zatrhněte nebo zrušte zatržení zaškrtávacích políček, aby se informace zobrazily nebo skryly.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Poslech zvuku z mikrofonu ve funkci Smart Map</h3>
+          <p>Po přidání mikrofonů do funkce Smart Map můžete postupně poslouchat zvuk z jednotlivých mikrofonů na kartě <span class="uitext">Živý obraz</span>. </p>
+          <p>Kroky:</p>
+          <ol>
+            <li value="1">
+              <p>Na kartě <span class="uitext">Živý obraz</span> přejděte na místo ve funkci Smart Map, kde je umístěn mikrofon.</p>
+            </li>
+            <li value="2">
+              <p>Dvojitým kliknutím na mikrofon můžete ztlumit nebo aktivovat jeho zvuk.</p>
+              <p class="tip">Případně klikněte pravým tlačítkem myši na mikrofon a vyberte možnost <span class="uitext">Ztlumit mikrofon</span> nebo <span class="uitext">Aktivovat mikrofon</span>.</p>
+            </li>
+          </ol>
+        </div>
+        <div>
+          <h3>Odeberte zařízení z funkce Smart Map<a name="SC_DeletingCamerasOnSmar.htm"></a></h3>
+          <p>Zařízení můžete odebrat, například pokud byla fyzicky odebrána, nebo pokud byla přidána omylem. Po odebrání zařízení se informace o poloze zařízení, například jeho zeměpisné souřadnice, zcela odstraní z vašeho systému VMS.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Požadavky</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>Tato uživatelská oprávnění je nutné povolit v části <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>:</p>
+              <ul>
+                <li>Úpravy funkce Smart Map</li>
+                <li>Úprava zařízení</li>
+              </ul>
+            </div>
+          </div>
+          <p>Kroky:</p>
+          <ol>
+            <li value="1">Vyhledejte zařízení, které chcete odebrat.</li>
+            <li value="2"> Chcete-li otevřít režim nastavení, klikněte na volbu <span class="uitext">Nastavení</span>. </li>
+            <li value="3">
+              <p>Chcete-li odebrat jedno zařízení, klikněte na něj pravým tlačítkem a zvolte <span class="uitext">Odebrat</span>.</p>
+              <p>Příklad: Pokud jde o kameru, klikněte na <span class="uitext">Odebrat kameru</span>.</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_removecamera.png" data-mc-popup-alt="Remove camera from your smart map.">
+                  <img class="MCPopupThumbnail img" data-mc-width="284" data-mc-height="209" src="../../../Images/sc_smap_removecamera_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: 0;" alt="Remove camera from your smart map." tabindex="" />
+                </a>
+              </p>
+            </li>
+            <li value="4">Jak odebrat více kamer:<ol><li value="1"><p>Na liště nástrojů inteligentní mapy klikněte na tlačítko <img src="../../../Images/preview_videos_from_several.png" alt="" /><span class="uitext">Vybrat více kamer</span>.</p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_cluster_multiselect.png" data-mc-popup-alt="Select multipe cameras on your smart map."><img class="MCPopupThumbnail img" data-mc-width="1056" data-mc-height="672" src="../../../Images/sc_smap_cluster_multiselect_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: 0;" alt="Select multipe cameras on your smart map." tabindex="" /></a><br /></p></li><li value="2">Kliknutím a přetažením vyberte několik kamer. Ostatní typy zařízení, například vstupní zařízení, nejsou v tomto výběru zahrnuta.</li><li value="3">Klikněte pravým tlačítkem a zvolte možnost <span class="uitext">Odebrat kamery</span>.</li></ol></li>
+            <li value="5">Chcete-li odebrat několik zařízení a nejedná se o kamery:<ol><li value="1">Ve funkci Smart Map stiskněte a přidržte tlačítko Ctrl. </li><li value="2">Se stisknutým tlačítkem Ctrl klikněte na zařízení, která chcete odebrat.</li><li value="3">Na jedno z vybraných zařízení klikněte pravým tlačítkem a zvolte možnost Odebrat.</li></ol></li>
+            <li value="6"> Režim nastavení ukončíte opětovným kliknutím na tlačítko <span class="uitext">Nastavení</span>. Vaše změny byly uloženy.</li>
+          </ol>
+          <p class="tip">Zařízení můžete také odstranit tak, že jej vyberte a poté na klávesnici stisknete možnost <span class="uitext">ODSTRANIT</span>.</p>
+        </div>
+      </div>
+      <div>
+        <h2>Přidávání, odstraňování nebo úpravy odkazů ve funkci Smart Map<a name="SC_AddingDeletingOrEditi_2.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Odkazy na funkci Smart Map (vysvětlení)<a name="SC_LinksOnSmartMapExplai.htm"></a></h3>
+          <p>Můžete přidat odkazy, které směřují na umístění ve vaší funkci Smart Map nebo na statické mapy v <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. To vám umožní rychlé navštívení pozice nebo zobrazit jiný typ mapy bez nutnosti změny na jiný náhled. Nelze vložit odkazy na jiné mapy Smart Map. Více informací viz <a href="#SC_DifferencesBetweenMap.htm" class="MCXref xref">Rozdíly mezi mapami a funkcí Smart Maps (vysvětlení)</a>.</p>
+          <p>Odkazy zobrazují pozice a mapy takto:</p>
+          <ul>
+            <li>Odkaz na lokalitu zobrazuje pozici v aktuálním náhledu. Chcete-li se vrátit na umístění, které jste si předtím prohlíželi, klikněte na panelu nástrojů funkce Smart Map na volbu <img src="../../../Images/backtracking_to_previous_locations.png" alt="" /><span class="uitext">Zpět</span></li>
+            <li>Odkaz na mapu zobrazuje mapu v plovoucím okně. To vám umožňuje přístup k oběma typům map současně. Mapy můžete zobrazit a pracovat s nimi, v plovoucím okně však nemůžete provádět změny, například přidávat kamery</li>
+          </ul>
+          <p class="note">Pokud chcete odkazy barevně rozlišit nebo je chcete na mapě více zviditelnit, můžete stanovit jejich barvy. Odkazy na pozice ve funkci Smart Map jsou standardně modré a odkazy na starší mapy jsou červené. Pokud použijete jiné barvy, je dobré používat stejnou barvu pro každý typ odkazu. To může například usnadnit rozlišení mezi odkazy, když používáte vrstvy pro filtrování položek na mapě.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Přidání odkazu na umístění ve funkci Smart Map nebo na mapě<a name="SC_AddLinkToSmartMapLoca.htm"></a></h3>
+          <p>Přidání odkazu na funkci Smart Map vám umožní rychlé navštívení umístění nebo zobrazit jiného typu mapy bez nutnosti změny náhledu.</p>
+          <p>Kroky:</p>
+          <ol>
+            <li value="1">Vyberte náhled, který obsahuje funkci Smart Map, a klikněte na volbu <span class="uitext">Nastavení</span>.</li>
+            <li value="2">Přejděte na místo na mapě, na které chcete přidat odkaz.</li>
+            <li value="3">V panelu nástrojů mapy klikněte na možnost <img src="../../../Images/add_link_to_map_location.png" alt="" /><span class="uitext">Přidat odkaz</span> a klikněte na místo na mapě, kam chcete odkaz umístit.</li>
+            <li value="4">Uveďte, zda chcete odkaz na umístění ve funkci Smart Map nebo na mapě a klikněte na možnost <span class="uitext">Přidat</span>.</li>
+            <li value="5">
+              <p>Zadejte název odkazu.</p>
+              <p class="tip">Název odkazu ve funkci Smart Map můžete zobrazit, pokud jako styl zobrazení vyberete <span class="uitext">Ikona a text</span>. Názvy obvykle označují umístění, kam vás odkaz přesune.</p>
+            </li>
+            <li value="6">V poli <span class="uitext">Cíl</span> vyberte mapu nebo pozici, ke které odkaz směřuje.</li>
+            <li value="7">V poli <span class="uitext">Styl zobrazení</span> určete, zda bude na mapě zobrazen název a ikona odkazu nebo pouze ikona odkazu.</li>
+            <li value="8">Volitelná možnost: Kliknutím na volbu <span class="uitext">Barva</span> určete barvu odkazu.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Úprava nebo odebrání odkazů ve funkci Smart Map<a name="SC_EditOrDeleteLinkOnSma.htm"></a></h3>
+          <p>Po přidání odkazu ve funkci Smart Map můžete tento odkaz upravit nebo odstranit.</p>
+          <p>Kroky:</p>
+          <ol>
+            <li value="1"> Chcete-li otevřít režim nastavení, klikněte na volbu <span class="uitext">Nastavení</span>. </li>
+            <li value="2">Pro úpravu odkazu klikněte pravým tlačítkem myši a vyberte možnost <span class="uitext">Upravit odkaz</span>.</li>
+            <li value="3">Pro odstranění odkazu postupujte následovně:<ul><li>Pravým tlačítkem myši klikněte na odkaz a vyberte možnost <span class="uitext">Odstranit odkaz</span></li><li>Vyberte odkaz a na klávesnici stiskněte tlačítko <span class="uitext">ODSTRANIT</span></li></ul></li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Přidávání, odstraňování nebo úpravy umístění ve funkci Smart Map<a name="SC_AddingDeletingOrEditi_3.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Umístění ve funkci Smart Map (vysvětlení)<a name="SC_LocationsOnSmartMapEx.htm"></a></h3>
+          <p>V místech, která vás ve funkci Smart Map zajímají, můžete vytvořit umístění. Můžete například vytvořit pozici pro svou hlavní kancelář a vedlejší kanceláře. Nejenže vám umístění poskytnou ucelený obraz vašeho prostředí, jsou také užitečné při navigaci ve funkci Smart Map. </p>
+          <p class="note">V závislosti na vaší konfiguraci, pokud přidáte vlastní překrytí, aplikace <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> může vytvořit umístění se stejným názvem jako překrytí. Je například snadnější přejít na překrytí ve funkci Smart Map, když máte zobrazení oddáleno. Překrytí a umístění ale nejsou nijak spojena. Můžete například odstranit nebo změnit umístění, aniž by se změnilo překrytí, a naopak. Více informací viz <a href="#SC_AddingDeletingOrEditi.htm" class="MCXref xref">Přidávání, odstraňování nebo úprava vlastních překrytí</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Výchozí umístění ve funkci Smart Map (vysvětlení)<a name="SC_HomeLocationsForSmart.htm"></a></h3>
+          <p>Výchozí umístění jsou specifická pro položky zobrazení, pro která jsou nastavena. V různých položkách zobrazení můžete mít různá výchozí umístění. Pokud výchozí umístění není pro položku zobrazení nastavení, položka zobrazení zobrazí celý svět, bez ohledu na používaný typ pozadí. To platí i v případě, že výchozí umístění odstraníte.</p>
+          <p>Při práci s funkcí Smart Map můžete kliknout na možnost <img src="../../../Images/home_locations_for_map.png" alt="" /><span class="uitext">Domů</span> a vrátit se na výchozí umístění. Je to podobné jako resetování funkce Smart Map v náhledu. Vrátíte se do výchozích nastavení položky zobrazení a systém odstraní historii pozic, které jste navštívili.</p>
+          <p class="note">Výběr nové domovské pozice ovlivní každého, kdo položku zobrazení používá. Pokud si někdo jiný nastavil jinou pozici jako domovskou, změníte i jejich nastavení.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Přidávání umístění do funkce Smart Map<a name="SC_AddLocationToSmartMap.htm"></a></h3>
+          <p>Pro sledování míst, která vás zajímají, můžete přidat umístění pro rychlou navigaci na příslušná místa ve funkci Smart Map.</p>
+          <p>Kroky:</p>
+          <ol>
+            <li value="1">Vyberte náhled, který obsahuje funkci Smart Map, a poté klikněte na volbu <span class="uitext">Nastavení</span>.</li>
+            <li value="2">Pokud je to nutné, přetáhněte a přibližte se k bodu ve funkci Smart Map, do kterého chcete umístění přidat.</li>
+            <li value="3">Na panelu nástrojů klikněte na možnost <img src="../../../Images/add_location_to_map.png" alt="" /><span class="uitext">Přidat umístění</span> a potom klikněte na bod ve funkci Smart Map.</li>
+            <li value="4">Přidělte pozici název a potom přidejte tyto volitelné možnosti: <ul><li>Stanovte úroveň přiblížení, která bude ve funkci Smart Map použita při vstupu na umístění.</li><li>Vyberte barvu ikony pozice. Barevné rozlišení pozic je například užitečné při rozlišování mezi typy pozic. To může být založeno na účelu nebo typu umístění nebo označovat jeho prioritu.</li><li>Volitelná možnost: Udělejte z pozice svou domovskou pozici. Funkce Smart Map se při kliknutí na možnost <img src="../../../Images/home_locations_for_map.png" alt="" /><span class="uitext">Domů</span> na toto umístění zarovná a použije výchozí nastavení úrovně zoomu pro toto umístění.</li></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Úprava nebo odstranění umístění ve funkci Smart Map<a name="SC_EditOrDeleteLocationO.htm"></a></h3>
+          <p>Po přidání umístění ve vaší funkci Smart Map můžete nastavení upravit nebo odstranit, například odstraněním výchozího umístění.</p>
+          <p>Kroky:</p>
+          <ol>
+            <li value="1"> Chcete-li otevřít režim nastavení, klikněte na volbu <span class="uitext">Nastavení</span>. </li>
+            <li value="2">Pro úpravu umístění klikněte pravým tlačítkem myši na umístění a vyberte možnost <span class="uitext">Upravit umístění</span>.</li>
+            <li value="3">Pro odstranění umístění postupujte následovně:<ul><li>Pravým tlačítkem myši klikněte na umístění a vyberte možnost <span class="uitext">Odstranit umístění</span></li><li>Vyberte umístění a na klávesnici stiskněte volbu <span class="uitext">ODSTRANIT</span></li></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Odkazy mezi různými umístěními (vysvětlení)<a name="SC_LinkingBetweenLocatio.htm"></a></h3>
+          <p>Vytvořením řady odkazů mezi pozicemi můžete například vytvořit trasu sledování. V pozici A vytvořte odkaz, který směřuje na pozici B, v pozici B vytvořte odkaz směřující do pozice C a tak dále. Více informací viz <a href="#SC_AddingDeletingOrEditi_2.htm" class="MCXref xref">Přidávání, odstraňování nebo úpravy odkazů ve funkci Smart Map</a>.</p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Přidávání, odstraňování nebo úpravy budov ve funkci Smart Map<a name="SC_AddingDeletingOrEditi_4.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Budovy ve funkci Smart Map (vysvětlení)<a name="SC_BuildingsOnSmartMapEx.htm"></a></h3>
+          <p>Budovy ve funkci <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">Smart Map<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Funkce mapy, která pro vizualizaci zařízení (například kamer a mikrofonů), budov a topografických prvků zabezpečovacího systému využívá systém zeměpisných údajů v geograficky přesném zobrazení reálného světa. Mapy, které využívají tyto prvky, jsou označeny jako funkce Smart Maps.</span></a> se zobrazují jako polygony se čtyřmi hranami. Po přidání můžete upravit rozměry, natočení a velikost, aby odpovídaly skutečnému tvaru a umístění budovy.</p>
+          <p>Pokud má budova několik pater, můžete začít přidávat úrovně a potom kamery do jednotlivých úrovní. Umožní vám to procházet kamery uvnitř budovy po jednotlivých úrovních.</p>
+          <p>K lepší ilustraci interiéru úrovní můžete přidat vlastní překrytí úrovní, například obrázek s plánem patra. Více informací viz <a href="#SC_AddFloorPlansToLevels.htm" class="MCXref xref">Přidání plánů podlaží k úrovním (Smart Map)</a>.</p>
+          <p>Jednotlivým budovám je automaticky přiřazen název, například <span class="uitext">Budova 4</span>. Aplikace <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> doporučuje tento název změnit. Tím si usnadníte vzájemné rozlišení jednotlivých budov.</p>
+          <p>
+            <img src="../../../Images/buildings_on_map_explained.jpg" alt="" />
+          </p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Přidání budov do funkce Smart Map.<a name="SC_AddBuildingsToSmartMa.htm"></a></h3>
+          <p>Místo užívání obrázků nebo souborů ve formátu shapefile pro ilustraci budov můžete přidat obrys budovy. Potom můžete měnit rozměry, natočení a velikost, aby tvar a umístění odpovídaly skutečné budově.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Požadavky</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Ve vašem profilu <span class="mc-variable flvar-product.SC variable">Smart Client</span> v <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> byly povoleny úpravy mapy Smart Map. </p>
+            </div>
+          </div>
+          <p>Kroky:</p>
+          <ol>
+            <li value="1"> Chcete-li otevřít režim nastavení, klikněte na volbu <span class="uitext">Nastavení</span>. </li>
+            <li value="2">Přejděte na místo ve funkci Smart Map, kam chcete umístit budovu.</li>
+            <li value="3">Klikněte na <img src="../../../Images/add_buildings_to_map.jpg" alt="" /> a umístěte kursor na příslušné místo ve funkci Smart Map.</li>
+            <li value="4">Klikněte znovu. Do funkce Smart Map bude přidán obdélník. Pokud mapu oddálíte, úroveň přiblížení se automaticky zvýší.</li>
+            <li value="5">Pokud je to nutné, použijte pro úpravu tvaru a pozice skutečné budovy úchyty v rozích.</li>
+            <li value="6"> Režim nastavení ukončíte opětovným kliknutím na tlačítko <span class="uitext">Nastavení</span>. Vaše změny byly uloženy.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Úprava budov ve funkci Smart Map<a name="SC_EditBuildingsOnSmartM.htm"></a></h3>
+          <p>Po přidání budovy do funkce Smart Map můžete změnit její název, upravit její umístění, velikost, rozměry a natočení. Můžete také přidat, odstranit nebo přeskupit úrovně.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Požadavky</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Ve vašem profilu <span class="mc-variable flvar-product.SC variable">Smart Client</span> v <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> byly povoleny úpravy mapy Smart Map. </p>
+            </div>
+          </div>
+          <p>Kroky:</p>
+          <ol>
+            <li value="1">Přejděte na budovu ve funkci Smart Map. V případě potřeby zvětšete přiblížení.</li>
+            <li value="2"> Chcete-li otevřít režim nastavení, klikněte na volbu <span class="uitext">Nastavení</span>. </li>
+            <li value="3">
+              <p>Klikněte kamkoliv uvnitř budovy. Modře ohraničený okraj označuje, že můžete budovu upravovat.<br /></p>
+              <p>
+                <img src="../../../Images/buildings_on_map_explained.jpg" alt="" />
+              </p>
+            </li>
+            <li value="4">Pro přejmenování budovy přejděte do horní části pravého podokna a klikněte na možnost <img src="../../../Images/edit_buildings_on_map.jpg" alt="" />. Změňte název a klikněte na možnost <img src="../../../Images/edit_buildings_on_map_1.jpg" alt="" />. Chcete-li akci zrušit, stiskněte klávesu <span class="uitext">Esc</span>.</li>
+            <li value="5">Chcete-li upravit rohy, klikněte na ně a přetáhněte na novou pozici.</li>
+            <li value="6">Chcete-li přidat nebo odebrat úrovně, viz <a href="#SC_AddOrRemoveLevelsFrom.htm" class="MCXref xref">Přidání nebo odstranění úrovní budov (Smart Map).</a>.</li>
+            <li value="7"> Režim nastavení ukončíte opětovným kliknutím na tlačítko <span class="uitext">Nastavení</span>. Vaše změny byly uloženy.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Odstranění budov ve funkci Smart Map.<a name="SC_DeleteBuildingsOnSmar.htm"></a></h3>
+          <p>Pokud již budovu nepotřebujete, můžete ji odstranit. Při příštím přihlášení uživatele do aplikace <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> nebo po opětovném načtení budova nebude přítomná.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Požadavky</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Ve vašem profilu <span class="mc-variable flvar-product.SC variable">Smart Client</span> v <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> byly povoleny úpravy mapy Smart Map. </p>
+            </div>
+          </div>
+          <p>Kroky:</p>
+          <ol>
+            <li value="1">Otevřete funkci Smart Map.</li>
+            <li value="2"> Chcete-li otevřít režim nastavení, klikněte na volbu <span class="uitext">Nastavení</span>. </li>
+            <li value="3">Proveďte jedno z následujícího:</li>
+            <ul>
+              <li>Pravým tlačítkem myši klikněte na budovu a vyberte možnost <span class="uitext">Odstranit</span></li>
+              <li>Vyberte budovu a na klávesnici stiskněte tlačítko <span class="uitext">ODSTRANIT</span></li>
+            </ul>
+          </ol>
+          <p class="tip">Alternativní způsob odstranění budovy: V části <img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">Spravovat výchozí nastavení</span> sjeďte na oddíl <span class="uitext">Budovy</span>, najeďte myší na budovu, klikněte na <span class="uitext">Odstranit</span> a poté na <span class="uitext">Uložit</span>. </p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Správa úrovní a zařízení v budovách (Smart Map)<a name="SC_ManagingLevelsAndCame.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Zařízení a úrovně v budovách (vysvětlení)<a name="SC_CamerasAndLevelsInBui.htm"></a></h3>
+          <p>Po přidání zařízení do budovy je zařízení ve výchozím nastavení přidruženo k výchozí úrovni, pokud byla nějaká zadána. V opačném případě je zařízení přidruženo k první úrovni. Toto nastavení však můžete změnit a přidružit zařízení k libovolné jiné úrovni nebo k několika úrovním zároveň.</p>
+          <p>Další fakta:</p>
+          <ul>
+            <li>Pokud nejsou vybrány žádné úrovně, je zařízení viditelné na všech úrovních</li>
+            <li>Pokud přidáte budovu na zařízení, které již bylo umístěno, bude ve výchozím nastavení přidruženo ke všem úrovním</li>
+            <li>Pokud rozšíříte hranice budovy tak, že zahrnete také zařízení, které již bylo umístěno, bude zařízení spojeno pouze s úrovní, která je vybrána</li>
+          </ul>
+          <p class="note">Pokud upravíte hranice budovy tak, že již zařízení nezahrnuje, nebude již zařízení k budově přidruženo.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>
+            <a name="SC_FloorPlansDevicesInBuildings"></a>Půdorysy a zařízení v budovách (vysvětleno)</h3>
+          <p>K lepšímu znázornění interiéru úrovní v budově můžete přidávat plány podlaží jako vlastní překrytí. Po umístění plánu podlaží lze snadněji umísťovat zařízení. Více informací viz <a href="#SC_AddFloorPlansToLevels.htm" class="MCXref xref">Přidání plánů podlaží k úrovním (Smart Map)</a>.</p>
+          <p>Umísťovaná zařízení se nespojují s vlastním překrytím, ale s úrovněmi. Pokud odstraníte úroveň uvnitř budovy se zařízeními a vlastním překrytím, zůstanou zařízení ve své zeměpisné poloze, ale nebudou již přidružena k úrovni. Vlastní překrytí však bude společně s úrovní odstraněno.</p>
+          <p>Pokud úroveň přemístíte, zařízení i vlastní překrytí zůstanou spojené s danou úrovní. Zařízení si zachovají svou zeměpisnou polohu.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Přidání nebo odstranění úrovní budov (Smart Map).<a name="SC_AddOrRemoveLevelsFrom.htm"></a></h3>
+          <p>Po přidání budovy do funkce Smart Map můžete přidat libovolný počet úrovní. První úrovni je přiřazeno číslo <span class="uitext">1</span>, další <span class="uitext">2</span> a tak dále. Později můžete jednotlivé úrovně přejmenovat nebo přemísťovat.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Požadavky</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Ve vašem profilu <span class="mc-variable flvar-product.SC variable">Smart Client</span> v <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> byly povoleny úpravy mapy Smart Map. </p>
+            </div>
+          </div>
+          <p>Kroky:</p>
+          <ol>
+            <li value="1">Přejděte na budovu ve funkci Smart Map. V případě potřeby zvětšete přiblížení.</li>
+            <li value="2">Vyberte budovu. Zobrazí se podokno na pravé straně.</li>
+            <li value="3">Chcete-li otevřít režim nastavení, klikněte na tlačítko <span class="uitext">Nastavení</span>.</li>
+            <li value="4">Klikněte na možnost <span class="uitext">Přidat úroveň</span><img src="../../../Images/add_or_remove_levels_from.jpg" alt="" />.</li>
+            <li value="5">Postup úpravy názvu úrovně: <ol><li value="1">Klikněte na ikonu <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> a vyberte možnost <span class="uitext">Přejmenovat</span>.</li><li value="2">Zadejte nový název.</li></ol></li>
+            <li value="6">Chcete-li odstranit úroveň, klikněte na ikonu <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> a vyberte možnost <span class="uitext">Odstranit</span>. Zařízení z této úrovně zůstanou na své zeměpisné pozici, ale nebudou již spojena s úrovní.</li>
+            <li value="7">Režim nastavování ukončíte kliknutím na tlačítko <span class="uitext">Nastavení</span>.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Změna pořadí úrovní v budovách (funkce Smart Map)<a name="SC_ChangeOrderOfLevels.htm"></a></h3>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Požadavky</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Ve vašem profilu <span class="mc-variable flvar-product.SC variable">Smart Client</span> v <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> byly povoleny úpravy mapy Smart Map. </p>
+            </div>
+          </div>
+          <p>Kroky:</p>
+          <ol>
+            <li value="1">Přejděte na budovu ve funkci Smart Map. V případě potřeby zvětšete přiblížení.</li>
+            <li value="2">Vyberte budovu. Na pravé straně se zobrazí podokno se seznamem úrovní budovy.</li>
+            <li value="3"> Chcete-li otevřít režim nastavení, klikněte na volbu <span class="uitext">Nastavení</span>. </li>
+            <li value="4">Kliknutím a přetažením tečkované oblasti <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> ji umístěte do správné pozice. Všechna přidružená zařízení a vlastní překrytí zůstanou spojené s danou úrovní.</li>
+            <li value="5"> Režim nastavení ukončíte opětovným kliknutím na tlačítko <span class="uitext">Nastavení</span>. Vaše změny byly uloženy.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Nastavení výchozí úrovně budovy (Smart Map).<a name="SC_SetDefaultLevelForBui.htm"></a></h3>
+          <p>Pokud je určitá úroveň budovy důležitější než ostatní, například přízemí, můžete ji nastavit jako výchozí úroveň. Pokud otevřete funkci Smart Map a přejdete k budově, bude automaticky vybrána výchozí úroveň.</p>
+          <p>Pokud přejdete ven z budovy a vrátíte se zpět, aplikace <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> přejde na úroveň, kterou jste opustili.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Požadavky</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Ve vašem profilu <span class="mc-variable flvar-product.SC variable">Smart Client</span> v <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> byly povoleny úpravy mapy Smart Map. </p>
+            </div>
+          </div>
+          <p>Kroky:</p>
+          <ol>
+            <li value="1">Přejděte na budovu ve funkci Smart Map. V případě potřeby zvětšete přiblížení.</li>
+            <li value="2">Vyberte budovu. Na pravé straně se zobrazí podokno se seznamem úrovní budovy. Výchozí úroveň je zvýrazněna.</li>
+            <li value="3">Chcete-li otevřít režim nastavení, klikněte na volbu <span class="uitext">Nastavení</span>. Symbol hvězdičky <img src="../../../Images/set_default_level_for_buildings.jpg" alt="" />. Označuje výchozí úroveň.</li>
+            <li value="4">U úrovně, kterou chcete nastavit jako výchozí, klikněte na ikonu <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" />.</li>
+            <li value="5">Vyberte možnost <span class="uitext">Nastavit jako výchozí</span>.</li>
+            <li value="6"> Režim nastavení ukončíte opětovným kliknutím na tlačítko <span class="uitext">Nastavení</span>. Vaše změny byly uloženy.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Přidání plánů podlaží k úrovním (Smart Map)<a name="SC_AddFloorPlansToLevels.htm"></a></h3>
+          <p>Abyste si usnadnili orientaci uvnitř úrovní v budově, můžete k úrovním přidat vlastní překrytí, například obrázky plánů podlaží. Při procházení úrovněmi se automaticky zobrazují přidružené plány podlaží.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Požadavky</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Ve vašem profilu <span class="mc-variable flvar-product.SC variable">Smart Client</span> v <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> byly povoleny úpravy mapy Smart Map. </p>
+            </div>
+          </div>
+          <p>Kroky:</p>
+          <ol>
+            <li value="1">Přejděte na budovu ve funkci Smart Map. V případě potřeby zvětšete přiblížení.</li>
+            <li value="2">Vyberte budovu. Na pravé straně se zobrazí podokno se seznamem úrovní budovy.</li>
+            <li value="3"> Chcete-li otevřít režim nastavení, klikněte na volbu <span class="uitext">Nastavení</span>. </li>
+            <li value="4">Vyberte úroveň, ke které chcete přidat vlastní překrytí.</li>
+            <li value="5">V levém horním rohu klikněte na možnost <img src="../../../Images/add_custom_overlay_on_1.png" alt="" /><span class="uitext">Přidat vlastní překrytí</span> a pak klikněte kamkoli uvnitř obrysu budovy. Otevře se okno.</li>
+            <li value="6">Vyberte typ vlastního překrytí. Více informací viz <a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">Vlastní překrytí (vysvětlení)</a>.</li>
+            <li value="7">
+              <p>V počítači vyberte umístění souboru a klikněte na tlačítko <span class="uitext">Pokračovat</span>. Vlastní překrytí je zobrazeno jako modrý obrys.<br /></p>
+              <p>
+                <img src="../../../Images/add_floorplans_to_levels.jpg" alt="" />
+              </p>
+            </li>
+            <li value="8">Přetáhněte jej na obrys budovy. Pomocí bodu otáčení a rohových úchytů můžete otáčet a měnit pozici vlastního překrytí.</li>
+            <li value="9">V horním panelu klikněte na možnost <span class="uitext">Uložit</span>.</li>
+            <li value="10"> Režim nastavení ukončíte opětovným kliknutím na tlačítko <span class="uitext">Nastavení</span>. Vaše změny byly uloženy.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Odstranění plánu podlaží na úrovni (Smart Map)<a name="SC_DeleteFloorPlansOnLev.htm"></a></h3>
+          <p>Pokud se změnil plán podlaží na určité úrovni v budově, může být třeba nahradit vlastní překrytí novým plánem podlaží. <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> doporučuje nejprve odstranit starý plán podlaží a poté přidat nový.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Požadavky</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Ve vašem profilu <span class="mc-variable flvar-product.SC variable">Smart Client</span> v <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> byly povoleny úpravy mapy Smart Map. </p>
+            </div>
+          </div>
+          <p>Kroky:</p>
+          <ol>
+            <li value="1">Přejděte na budovu ve funkci Smart Map. V případě potřeby zvětšete přiblížení.</li>
+            <li value="2">Vyberte budovu. Na pravé straně se zobrazí podokno se seznamem úrovní budovy.</li>
+            <li value="3"> Chcete-li otevřít režim nastavení, klikněte na volbu <span class="uitext">Nastavení</span>. </li>
+            <li value="4">Vyberte úroveň, ve kterém se nachází vlastní překrytí.</li>
+            <li value="5">Klikněte pravým tlačítkem kamkoli na vlastní překrytí a vyberte možnost <span class="uitext">Vymazat vlastní překrytí</span>.</li>
+            <li value="6"> Režim nastavení ukončíte opětovným kliknutím na tlačítko <span class="uitext">Nastavení</span>. Vaše změny byly uloženy.</li>
+          </ol>
+          <p class="tip">Chcete-li upravit umístění nebo velikost plánu podlaží, klikněte pravým tlačítkem na vlastní překrytí a vyberte možnost <span class="uitext">Upravit umístění</span>. Nyní můžete pohybovat, otáčet a měnit velikost vlastního překrytí.</p>
+        </div>
+        <div>
+          <h3>Přidání zařízení do budov (Smart Map)<a name="SC_AddCamerasToBuildings.htm"></a></h3>
+          <p>Po vytvoření budovy a přidání úrovní můžete přidávat zařízení k budově. Pokud byla zadána výchozí úroveň, budou k ní zařízení přidružena. V opačném případě budou zařízení přidružena k první úrovni. Můžete to změnit a přidružit dané zařízení k libovolné jiné úrovni v budově.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Požadavky</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Ve vašem profilu <span class="mc-variable flvar-product.SC variable">Smart Client</span> v <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> byly povoleny úpravy mapy Smart Map. </p>
+            </div>
+          </div>
+          <p>Kroky:</p>
+          <ol>
+            <li value="1">Přejděte na budovu ve funkci Smart Map. V případě potřeby zvětšete přiblížení.</li>
+            <li value="2"> Chcete-li otevřít režim nastavení, klikněte na volbu <span class="uitext">Nastavení</span>. </li>
+            <li value="3">Chcete-li přidat zařízení, klikněte na jeho ikonu. <p>Příklad: V případě kamery klikněte na tlačítko <img src="../../../Images/add_cameras_to_buildings.jpg" alt="" /><span class="uitext">Přidat kameru</span>.</p></li>
+            <li value="4">Klikněte opět na místo, kam chcete umístit zařízení. Zobrazí se dialogové okno.</li>
+            <li value="5">Vyberte požadované zařízení a klikněte na tlačítko <span class="uitext">OK</span>. Pro každé zařízení, které chcete přidat, opakujte kroky 3–5.</li>
+            <li value="6">Chcete-li přidružit zařízení k jedné nebo více úrovním, klikněte pravým tlačítkem na zařízení a vyberte požadované úrovně.</li>
+            <li value="7"> Režim nastavení ukončíte opětovným kliknutím na tlačítko <span class="uitext">Nastavení</span>. Vaše změny byly uloženy.</li>
+          </ol>
+          <p class="note">Pokud nejsou vybrány žádné úrovně, je zařízení viditelné na všech úrovních.</p>
+        </div>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Concept Information</p>
+        <p class="containerItem_container_0">
+          <a href="sc_workingwithmap.htm">Smart map (použití)</a>
+        </p>
+        <p class="referenceHeading_reference_0">Reference Materials</p>
+        <p class="referenceItem_reference_0">
+          <a href="sc_map_faq.htm">Časté otázky: Smart map</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

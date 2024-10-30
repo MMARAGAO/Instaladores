@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="da-DK" xml:lang="da-DK" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="Optimering" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Get familiar with and read how to set up adaptive streaming to improve the performance of computers running XProtect Smart Client." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Administrator" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Integrator" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Aktiver tilpasset streaming</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#feature_flags/ff_adaptivestreaming/sc_enablingadaptivestreaming.htm">Åbn emne med navigation</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Brødkrummer" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>Aktiver tilpasset streaming</h1>
+      <h2>Tilpasset streaming (forklaret)<a name="SC_AdaptiveStreamingExplained"></a></h2>
+      <p>Tilpasset streaming forbedrer dekodningskapaciteten og ydelsen på den computer, der kører <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Dette er nyttigt, når du vil se flere live videostreams i den samme visning.</p>
+      <p>For at kunne drage fordel af tilpasset streaming skal dine kameraer have flere streams defineret med forskellige opløsninger. Dette gør det muligt for <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> at automatisk vælge den opløsning, der ligger tættest på, hvad visningselementet har anmodet om. Nu behøver <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> ikke at nedskalere standard-streams, der har en unødvendig høj opløsning. Dette reducerer belastningen på CPU- og GPU-dekodningsressourcer.</p>
+      <p>For at sikre videokvaliteten er 'tættest på' defineret som lig med eller højere end den opløsning, visningselementet har anmodet om, hvis dette er muligt. Dette er for at undgå opskalering af streams. Tabellen herunder viser de videostreams, som tilpasset streaming vælger ud fra visningselement-anmodninger fra <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>.</p>
+      <table cellspacing="3">
+        <col style="width: 40%;" />
+        <col />
+        <col />
+        <thead>
+          <tr>
+            <th>Opløsning, der er anmodet om af et visningselement</th>
+            <th colspan="2">Tætteste match af de tilgængelige videostreams</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>636 x 477</td>
+            <td style="text-align: left;">Videostream 1</td>
+            <td>640 x 480 (VGA)</td>
+          </tr>
+          <tr>
+            <td>644 x 483</td>
+            <td style="text-align: left;">Videostream 2</td>
+            <td>1280 x 720 (WXGA-H)</td>
+          </tr>
+          <tr>
+            <td>1920 x 1080</td>
+            <td style="text-align: left;">Videostream 3</td>
+            <td>1920 x 1080 (FHD)</td>
+          </tr>
+          <tr>
+            <td>1920 x 1440</td>
+            <td style="text-align: left;">Videostream 4</td>
+            <td>3840 x 2160 (4K UHD-1)</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="note">
+        <p>Mens der bliver zoomet, er den live videostream, der bliver anmodet om, altid den med den højeste opløsning.</p>
+        <p>Båndbreddeforbruget bliver ofte mindre, når opløsningen på de anmodede streams bliver reduceret. Båndbreddeforbruget afhænger også af andre indstillinger i konfigurationerne af de definerede streams.</p>
+      </div>
+      <h2>Kontroller indstillingerne for tilpasset streaming<a name="SC_CheckAdaptiveStreamingSettings"></a></h2>
+      <ol>
+        <li value="1">Gå til <span class="uitext">Indstillinger</span> &gt; <span class="uitext">Avanceret</span> &gt; <span class="uitext">Tilpasset streaming</span>.</li>
+        <li value="2">Der er to indstillinger for tilpasset streaming: <span class="uitext">Aktiveret</span> og <span class="uitext">Deaktiveret</span>. <p>Vælg <span class="uitext"><span class="uitext">Aktiveret</span></span>.</p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_settings_advanced_adaptivestreamingdiagnosticsoverlaycut.png" data-mc-popup-alt="Adaptive streaming settings in XProtect Smart Client."><img class="MCPopupThumbnail img" data-mc-width="800" data-mc-height="480" src="../../../Images/sc_settings_advanced_adaptivestreamingdiagnosticsoverlaycut_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Adaptive streaming settings in XProtect Smart Client." tabindex="" /></a></p></li>
+        <li value="3">Gå til <span class="uitext">Overlejring til videodiagnosticering</span>.</li>
+        <li value="4">For at gøre streamens aktuelle videoopløsning synlig skal du vælge <span class="uitext">Niveau 2</span>.</li>
+        <p class="note">Denne indstilling gælder for alle visningselementer. Standardindstillingen er <span class="uitext">Skjul</span>.</p>
+        <li value="5">Overlejring til videodiagnosticering skulle nu være <span class="uitext">Aktiveret</span>. </li>
+        <p>Prøv at ændre på størrelsen af visningsvinduet fra lille til stor og fra stor til lille for at se om værdien for <span class="uitext">Videoopløsning</span> ændrer sig.</p>
+        <p>
+          <img src="../../../Images/sc_viewitem_diagnosticsoverlay_resolution320x180.png" alt="" />
+          <img src="../../../Images/sc_viewitem_diagnosticsoverlay_resolution480x270.png" alt="" />
+          <img src="../../../Images/sc_viewitem_diagnosticsoverlay_resolution1280x720.png" alt="" />
+        </p>
+        <p>Hvis værdien ikke ændrer sig, så fortsæt med at undersøge dine tilgængelige live videostreams fra dine kameraer, så du om muligt kan aktivere tilpasset streaming.</p>
+      </ol>
+      <h2>Tjek tilgængelige live videostreams<a name="SC_CheckAvailableLiveVideoStreams"></a></h2>
+      <p>For at kunne drage fordel af tilpasset streaming skal to eller flere live video streams med forskellige opløsninger være konfigureret i dine kameraindstillinger.</p>
+      <p class="note"> Det eneste understøttede videoopløsningsformat for tilpasset streaming er <span class="inputtext">bredde x højde</span>. Videoopløsningsformater, der fra et kamera bliver præsenteret som 720p, mode2, VGA eller lignende, er ikke understøttet.</p>
+      <p class="note">Ikke alle kameraer understøtter multi-streaming.</p>
+      <p>Med multi-streaming kan flere streams per enhed blive konfigureret på serveren. Hvis der er konfigureret flere streams, og tilpasset streaming er aktiveret, kan du vælge <span class="uitext">Tilpasset streaming</span> eller en af de andre tilgængelige streams.</p>
+      <p>Sådan sikrer du dig, at <span class="uitext">Tilpasset streaming</span> er konfigureret i en visning:</p>
+      <ol>
+        <li value="1">Klik på <span class="uitext">Opsætning</span> for at konfigurere visningen.</li>
+        <li value="2">I <span class="uitext">Egenskaber</span> skal du klikke på rullelisten <span class="uitext">Live-stream</span>, og så vil listen med tilgængelige live videostreams blive vist.</li>
+        <li value="3">
+          <p>Tjek om to eller flere live videostreams er tilgængelige og vælg <span class="uitext">Tilpasset streaming</span>.</p>
+          <p>
+            <img src="../../../Images/sc_viewitem_setup_properties_livestream_adaptivestreamingselect.png" alt="Verify that adaptive streaming is selected in the camera properties." />
+          </p>
+          <p class="note">Hvis der kun er en live videostream tilgængelig, kan du tilføje flere live videostreams for kameraet i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>.</p>
+        </li>
+        <li value="4">Klik på <span class="uitext">Opsætning</span> for at lukke visningskonfigurationen.</li>
+      </ol>
+      <p>Sådan sikrer du dig, at <span class="uitext">Tilpasset streaming</span> er valgt i et <span class="uitext">Live</span> visningselement:</p>
+      <ol>
+        <li value="1">Klik på rullelisten <span class="uitext">Mere</span>.</li>
+        <li value="2">Vælg <span class="uitext">Live-stream</span>, og så bliver listen med tilgængelige live videostreams vist.</li>
+        <li value="3">
+          <p>Tjek om to eller flere live videostreams er tilgængelige og vælg <span class="uitext">Tilpasset streaming</span>.</p>
+          <p>
+            <img src="../../../Images/sc_viewitem_more_livestream_adaptivestreaming.png" alt="Verify that adaptive streaming is selected in the camera view item." />
+          </p>
+        </li>
+      </ol>
+    </div>
+    <p></p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

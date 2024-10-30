@@ -1,0 +1,811 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" dir="rtl" lang="ar-SA" xml:lang="ar-SA" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="التكوين" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Configure smart map in XProtect Smart Client to get a geographical overview of your cameras, devices, and plug-in elements - in a one world experience." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=Recording Server" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=المسؤول" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=المدمج" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=المشغل" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>الخرائط الذكية (تكوين)</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/purify.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#feature_flags/ff_map/sc_configuringmaps.htm">فَتح موضوع مع التصفح</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="مسارات التنقل" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>الخرائط الذكية (تكوين)</h1>
+      <p>قبل أن تتمكن من الاستفادة من ميزات الخريطة الذكية، يجب عليك تنفيذ مهام تهيئة معينة في <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>.</p>
+      <p>يُمكنك فقط عرض الخريطة الذكية الخاصة بك إذا تمت إضافتها إلى مشاهدة. راجع أيضًا <a href="#SC_AddSmartMapToView.htm" class="MCXref xref">إضافة خريطة ذكية لطرق العرض</a>. </p>
+      <p class="note">لمزيد من المعلومات، انظر <a href="sc_workingwithmap.htm#SC_SmartMapExplained.htm" class="MCXref xref">الخريطة الذكية (مُوضّح)</a>.</p>
+      <div>
+        <h2>الاختلافات بين الخرائط والخرائط الذكية (موضح)<a name="SC_DifferencesBetweenMap.htm"></a></h2>
+        <p>
+        تقدم <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> مزايا خرائط تُمكنك من استعراض نظام المراقبة الخاص بك والاستجابة سريعًا إلى الحوادث.</p>
+        <ul>
+          <li>
+            <span class="uitext">الخرائط</span> - تعتمد هذه الخرائط على الصور الثابتة التي لا تحتوي على مراجع جغرافية. يمكنك إضافة أجهزة مثل الكاميرات والميكروفونات وخوادم التسجيل. يمكنك إضافة إنذارات وأحداث وعناصر تحكم في الوصول تتيح لك إمكانية التفاعل مع نظام المراقبة لديك مباشرةً من الخريطة. يجب عليك وضع الجهاز يدويًا وتمييز العناصر على الخريطة. لمزيد من المعلومات، راجع <a href="../../standard_features/sf_sc/sf_operation/sc_workingwithmaps.htm#SC_IntroductionToMaps(796).htm" class="MCXref xref">الخرائط (موضّحة)</a></li>
+          <li>
+            <span class="uitext">الخريطة الذكية</span> - يستخدم هذا النوع من الخرائط نظام معلومات جغرافية لعكس الموقع الجغرافي بدقة كما هو في العالم الحقيقي. هذا يمكن أن يعطيك استعراضًا عامًا دقيقًا للكاميرات الخاصة بك في مواقع متعددة. يُمكنك أيضًا:<ul><li>استخدم Bing Maps وخدمات Google Maps</li><li data-mc-conditions="flcts-features.oem-map-service-content">استخدم <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> كخلفيات جغرافية</li><li>استخدم مشروع خريطة OpenStreetMap كخلفيات جغرافية</li><li>أضف رسومات تصميم بمساعدة الكمبيوتر (CAD) وملفات الأشكال والصور كعناصر متراكبة.</li></ul><p> لمزيد من المعلومات، راجع <a href="sc_workingwithmap.htm#SC_SmartMapExplained.htm" class="MCXref xref">الخريطة الذكية (مُوضّح)</a></p></li>
+        </ul>
+        <p class="note">لا يمكن استخدام الخرائط والخرائط الذكية بدل من بعضهما البعض. إذا كنت تستخدم الخرائط، يمكنك استخدام ملف الصورة كخريطة ذكية، ولكن يجب إضافة الأجهزة مرة أخرى. لا يمكنك نقل الخرائط المتصلة بالأجهزة إلى خريطة ذكية. ولكن يمكنك ربط خريطة ذكية بالخرائط. لمزيد من المعلومات، انظر <a href="#SC_AddingDeletingOrEditi_2.htm" class="MCXref xref">إضافة روابط إلى الخريطة الذكية أو حذفها أو تحريرها</a>.</p>
+      </div>
+      <div>
+        <h2>إضافة خريطة ذكية لطرق العرض<a name="SC_AddSmartMapToView.htm"></a></h2>
+        <p>ابدأ باستخدام <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">خريطة ذكية<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>خاصية للخريطة تستخدم نظام المعلومات الجغرافية لتصوير الأجهزة (على سبيل المثال، الكاميرات والميكروفونات) والهياكل والعناصر الطوبوغرافية لنظام مراقبة ما في صورة واقعية جغرافية دقيقة. تسمى الخرائط التي تستخدم عناصر هذه الوظيفة بالخرائط الذكية.</span></a> من خلال إضافتها إلى طريقة عرض. يتم افتراضيًا عرض خريطة العالم الأساسية. بعد إضافة الخريطة الذكية، يمكنك تغيير الخلفية الجغرافية.</p>
+        <p>الخطوات:</p>
+        <ol>
+          <li value="1">في علامتي التبويب <span class="uitext">مباشر</span> أو <span class="uitext">تشغيل</span> ، حدد طريقة العرض التي تريد إضافة الخريطة الذكية إليها.</li>
+          <li value="2"> انقر فوق <span class="uitext">إعداد</span> للدخول إلى وضع الإعداد. </li>
+          <li value="3">قم بتوسيع جزء <span class="uitext">نظرة عامة على النظام</span> ، ثم اسحب عنصر <span class="uitext">الخريطة الذكية</span> إلى الموضع المناسب في طريقة العرض.</li>
+          <li value="4"> انقر فوق <span class="uitext">إعداد</span> مجددًا للخروج من وضع الإعداد. تم حفظ التغييرات الخاصة بك.</li>
+          <li value="5">الآن يمكنك تغيير الخلفية الجغرافية. </li>
+        </ol>
+      </div>
+      <div>
+        <h2>تغيير الخلفيات الجغرافية على الخرائط الذكية<a name="SC_ChangeTheGeographicBa.htm"></a></h2>
+        <p>كإعداد افتراضي، تُعرض خريطة العالم الأساسية عند إضافة خريطة ذكية إلى طريقة عرض. بعد إضافة الخريطة الذكية إلى طريقة عرض، يمكنك تحديد خلفية جغرافية مختلفة. يرى كل مستخدم يستخدم الخريطة الذكية الخلفية الجديدة في المرة التالية التي يقوم فيها باستعراض طريقة العرض هذه.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" />المتطلبات</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>لا تتوفر الخلفيات الجغرافية لـ Bing Maps وGoogle Mapsإلا إذا قام مسؤول النظام لديك بإتاحتها في <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>.</p>
+          </div>
+        </div>
+        <p>الخطوات:</p>
+        <ol>
+          <li value="1">حدد طريقة العرض التي تحتوى على الخريطة الذكية.</li>
+          <li value="2">من شريط الأدوات، انقر فوق <img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">إظهار أو إخفاء الطبقات والتراكبات المخصصة</span>.</li>
+          <li value="3">ضمن <span class="uitext">الخلفيات الجغرافية</span>، حدد الخلفية ونوع التفاصيل اللذين تريد عرضهما. على سبيل المثال، إذا كنت تريد مطالعة المعلومات الطبوغرافية، فحدد <span class="uitext">تضاريس</span>، أما إذا كنت تريد أن رؤية الطرق، فحدد <span class="uitext">طريق</span>.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>الخلفيات الجغرافية (موضح)<a name="SC_GeographicBackgrounds.htm"></a></h2>
+        <p>يمكنك استخدام الخدمات الآتية كخلفيات جغرافية لـ <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">الخريطة الذكية<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>خاصية للخريطة تستخدم نظام المعلومات الجغرافية لتصوير الأجهزة (على سبيل المثال، الكاميرات والميكروفونات) والهياكل والعناصر الطوبوغرافية لنظام مراقبة ما في صورة واقعية جغرافية دقيقة. تسمى الخرائط التي تستخدم عناصر هذه الوظيفة بالخرائط الذكية.</span></a>:</p>
+        <ul>
+          <li>Bing Maps</li>
+          <li>Google Maps</li>
+          <li data-mc-conditions="flcts-features.oem-map-service-content">
+            <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+          </li>
+          <li> OpenStreetMap </li>
+        </ul>
+        <p>بعد تحديد الخلفية الجغرافية، يمكنك إضافة الأجهزة، على سبيل المثال الكاميرات والتراكبات المخصصة، بما في ذلك ملفات الأشكال. لمزيد من المعلومات، انظر <a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">التراكبات المخصصة (موضح)</a>.</p>
+      </div>
+      <div data-mc-conditions="">
+        <h2>أنواع الخلفيات الجغرافية (موضح)<a name="SC_TypesOfGeographicBack.htm"></a></h2>
+        <p>بعد إضافة <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">خريطة ذكية<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>خاصية للخريطة تستخدم نظام المعلومات الجغرافية لتصوير الأجهزة (على سبيل المثال، الكاميرات والميكروفونات) والهياكل والعناصر الطوبوغرافية لنظام مراقبة ما في صورة واقعية جغرافية دقيقة. تسمى الخرائط التي تستخدم عناصر هذه الوظيفة بالخرائط الذكية.</span></a> إلى طريقة عرض ما، يمكنك اختيار واحدة من الخلفيات الجغرافية الآتية:</p>
+        <ul>
+          <li>
+            <span class="uitext">خريطة العالم الأساسية</span> - استخدم الخلفية الجغرافية القياسية الموجودة في <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. هذه الخريطة مخصصة للاستخدام كمرجع عام ولا تحتوي على ميزات مثل حدود الدولة أو المدن أو تفاصيل أخرى. ولكنها تحتوي على بيانات مرجعية جغرافية، شأنها شأن الخلفات الجغرافية الأخرى</li>
+          <li>
+            <span class="uitext">Bing Maps</span> - للاتصال بـ Bing Maps</li>
+          <li>
+            <span class="uitext">Google Maps</span>- للاتصال بـ Google Maps <p class="note">تتطلب خيارات Bing Maps وGoogle Maps الوصول إلى الإنترنت، ويجب عليك شراء مفتاح من Microsoft أو Google.</p></li>
+          <div data-mc-conditions="flcts-features.oem-map-service-content">
+            <li>
+              <span class="uitext">
+                <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+              </span> - الاتصال بمزود خرائط مجاني. بعد تمكين <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>، ليست هناك حاجة إلى مزيد من الإعدادات.</li>
+            <p>راجع<a href="#Enable"> تمكين Milestone Map Service</a></p>
+          </div>
+          <div>
+            <li>
+              <p>
+                <span class="uitext">OpenStreetMap</span> - الاتصال بـ:</p>
+              <ul>
+                <li>خادم إطارات صور تجاري من اختيارك</li>
+                <li>
+                  <p>خادم إطارات صور إلكتروني أو محلي خاص بك</p>
+                </li>
+              </ul>
+              <p>راجع تغيير <a href="#SC_ChangeOpenstreetmapTi.htm">تغيير خوادم تجانب OpenStreetMap</a></p>
+            </li>
+          </div>
+          <li>
+            <span class="uitext">بلا</span> - يخفي هذا الخيار الخلفية الجغرافية. لاحظ أن البيانات المرجعية الجغرافية تبقى في مكانها. راجع أيضًا <a href="#SC_LayersOnSmartMapExpla.htm" class="MCXref xref">الطبقات على الخريطة الذكية (موضح)</a></li>
+        </ul>
+        <p>افتراضيًا، تعرض Bing Maps و Google Maps صور الأقمار الصناعية. يمكنك تغيير الصور، على سبيل المثال إلى أجواء أو تضاريس، لمعرفة تفاصيل مختلفة.</p>
+      </div>
+      <div data-mc-conditions="flcts-features.oem-map-service-content">
+        <h2>
+          <a name="Enable"></a>تمكين <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span></h2>
+        <p>
+          <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> هي خدمة عبر الإنترنت يمكنك ربطها بخادم تجانب <span class="mc-variable flvar-brand-company.CompanyLong variable">Milestone Systems</span>. يستخدم خادم التجانب هذا خدمة خرائط مجانية ومتاحة تجاريًا. </p>
+        <p>بعد تمكين <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> على خريطتك الذكية، تستخدم الخريطة الذكية <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> كخلفية جغرافية لها.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" />المتطلبات</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>إذا كان حقل <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> غير نشط، فهذا يعنب أنه ليس لديك حقوق المستخدم اللازمة لتمكين الخدمة أو تعطيلها. اتصل بمسؤول النظام لمساعدتك في تمكين الميزة في <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>.</p>
+            <p class="important">
+              <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> يتطلب الوصول إلى الإنترنت.</p>
+          </div>
+        </div>
+        <p>الخطوات:</p>
+        <ol>
+          <li value="1">
+            <p>في الزاوية العلوية اليمنى، انقر على <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" />، ثم <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">الإعدادات</span> لفتح نافذة <span class="uitext">الإعدادات</span>.</p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_configuringmaps_mmapserv.png" data-mc-popup-alt="Enable Milestone Map Service.">
+                <img class="MCPopupThumbnail img" data-mc-width="786" data-mc-height="593" src="../../../Images/sc_configuringmaps_mmapserv_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Enable Milestone Map Service." tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="2">في القسم الأيسر، انقر فوق <span class="uitext">الخريطة الذكية</span>.</li>
+          <li value="3">في حقل <span class="uitext mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> ، اختر <span class="uitext">متاح</span>.</li>
+          <li value="4">انقر فوق <span class="uitext">إغلاق</span>. في المرة القادمة التي تقوم فيها بتحميل خريطتك الذكية، ستقوم باستخدام <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> كخلفية جغرافية.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>خادم تجانب OpenStreetMap (موضّح)<a name="SC_ChangingOpenstreetmap.htm"></a></h2>
+        <p>إذا كنت تستخدم OpenStreetMap كخلفية جغرافية لخريطتك الذكية، فستحتاج إلى تحديد خادم تجانب. يمكنك تحديد خادم تجانب محلي، على سبيل المثال إذا كان لدى مؤسستك خرائط خاصة بها لمناطق مثل المطارات أو الموانئ أو يمكنك استخدام خادم تجانب تجاري.</p>
+        <p class="note">لاستخدام خادم تجانب محلي، لا تحتاج إلى الوصول إلى الإنترنت.</p>
+        <p>يمكنك تعيين عنوان خادم التجانب بطريقتين:</p>
+        <ul>
+          <li>في <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> - تقوم بضبط عنوان خادم التجانب في ملفات تعريف <span class="mc-variable flvar-product.SC variable">Smart Client</span>. ينطبق عنوان الخادم على جميع مستخدمي <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> المعينين في ملفات تعريف<span class="mc-variable flvar-product.SC variable">Smart Client</span></li>
+          <li>في <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> - قمت بتعيين عنوان خادم التجانب في مربع حوار <span class="uitext">الإعدادات</span>. لا ينطبق عنوان الخادم إلّا على تثبيت هذا</li>
+        </ul>
+        <div>
+          <h2>تغيير خادم تجانب OpenStreetMap<a name="SC_ChangeOpenstreetmapTi.htm"></a></h2>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" />المتطلبات</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>إذا تم قفل جانب الخادم المحدد من جانب الخادم للتحرير، فإن الحقل غير نشط ولا يمكنك تغيير عنوان الخادم. يُرجى الاتصال بمسؤول النظام لمساعدتك في تمكين الميزة في <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>.</p>
+            </div>
+          </div>
+          <p>الخطوات:</p>
+          <ol>
+            <li value="1">
+              <p>في الزاوية العلوية اليمنى، انقر على <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" />، ثم <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">الإعدادات</span> لفتح نافذة <span class="uitext">الإعدادات</span>.</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_mapsettings.png" data-mc-popup-alt="Specify alternative tile server for the smart map.">
+                  <img class="MCPopupThumbnail img" data-mc-width="786" data-mc-height="593" src="../../../Images/sc_mapsettings_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Specify alternative tile server for the smart map." tabindex="" />
+                </a>
+                <br />
+              </p>
+            </li>
+            <li value="2">في القسم الأيسر، انقر فوق <span class="uitext">الخريطة الذكية</span>.</li>
+            <li value="3">في حقل خادم <span class="uitext">OpenStreetMap</span>، قم بأحد الإجراءات التالية: <ul><li>أدخل عنوان الخادم. إذا كان الحقل غير نشط، فقد تم تأمينه من جانب الخادم</li><li>لاستخدام الخادم المحدد من جانب الخادم، إن وجد، حدد خانة الاختيار <span class="uitext">متابعة الخادم</span></li></ul></li>
+            <li value="4">انقر فوق <span class="uitext">إغلاق</span>. في المرة القادمة التي تقوم فيها بتحميل خريطتك الذكية، ستستخدم خادم OpenStreetMap الذي حددته.</li>
+          </ol>
+          <p class="important">إذا لم يتم تحديد عنوان الخادم أو كان عنوان الخادم غير صالح، فلن تكون OpenStreetMap متاحة كخلفية جغرافية.</p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>إظهار الطبقات على الخريطة الذكية أو إخفاؤها<a name="SC_ShowingOrHidingLayers.htm"></a></h2>
+        <p>يُمكنك تشغيل الطبقات وإيقافها على خريطتك الذكية وفقًا لما تريد رؤيته.</p>
+        <div>
+          <h3>الطبقات على الخريطة الذكية (موضح)<a name="SC_LayersOnSmartMapExpla.htm"></a></h3>
+          <p>استخدم الطبقات لتصفية المعلومات التي تعرضها <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">الخريطة الذكية<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>خاصية للخريطة تستخدم نظام المعلومات الجغرافية لتصوير الأجهزة (على سبيل المثال، الكاميرات والميكروفونات) والهياكل والعناصر الطوبوغرافية لنظام مراقبة ما في صورة واقعية جغرافية دقيقة. تسمى الخرائط التي تستخدم عناصر هذه الوظيفة بالخرائط الذكية.</span></a>. توجد ثلاثة أنواع من الطبقات على الخريطة الذكية:</p>
+          <ul>
+            <li>
+              <span class="uitext">عناصر النظام</span> - تشمل هذه العناصر الكاميرات والروابط والمواقع</li>
+            <li>
+              <span class="uitext">التراكبات المخصصة</span> - هي صور نقطية ورسومات CAD وملفات أشكال</li>
+            <li>
+              <span class="uitext">الخلفيات الجغرافية</span> - هي خريطة العالم الأساسية، خريطة العالم الأساسية أو إحدى الخدمات التالية:<ul><li>Bing Maps</li><li>Google Maps</li><li data-mc-conditions="flcts-features.oem-map-service-content"><span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span></li><li> OpenStreetMap </li></ul></li>
+          </ul>
+          <p class="note">لا تتوفر Bing Maps وGoogle Maps كخلفيات جغرافية، إلا إذا قام مسؤول النظام لديك بتمكينها في <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. لمزيد من المعلومات، انظر <a href="#SC_GeographicBackgrounds.htm" class="MCXref xref">الخلفيات الجغرافية (موضح)</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>ترتيب الطبقات (موضح)<a name="SC_OrderOfLayersExplaine.htm"></a></h3>
+          <p>توجد جميع عناصر النظام لكل نوع في نفس<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term26"> طبقة<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>الخلفية الجغرافية على خريطة ذكية أو تراكب مخصص أو عنصر نظام، على سبيل المثال الكاميرا. الطبقات هي العناصر الرسومية التي توجد على الخريطة الذكية.</span></a>. على سبيل المثال، توجد جميع الكاميرات في نفس الطبقة. إذا قمت بإخفاء طبقة الكاميرا، فسيتم إخفاء جميع الكاميرات. من أعلى إلى أسفل، يتم تنظيم طبقات عناصر النظام بالترتيب التالي: المواقع والكاميرات والروابط والخلفية الجغرافية. لا يمكنك تغيير هذا الترتيب.</p>
+          <p>دائمًا ما تمثل الخلفية الجغرافية الطبقة الأدنى على خريطة ذكية. يمكنك التبديل بين الخلفيات الجغرافية، ولكن لا يمكنك تحديد إلا خلفية جغرافية واحدة في المرة.</p>
+          <p>تتم إضافة التراكبات المخصصة كطبقات منفصلة، ويتم تكديسها بالترتيب الذي تمت إضافتها به إلى الخريطة الذكية. يمكنك إعادة الترتيب من خلال تهيئة الإعدادات الافتراضية للخريطة. </p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" />مثال</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>لدى أحد مخططي المدن تنسيق شكل جغرافي يعرض حدود المدينة، وملف أشكال يتضمن جميع الطرق الرئيسية داخل المدينة. يمكن للمخطِّط ترتيب الطبقات بحيث يتم عرض الطرق قبل حدود المدينة. وهذا يوفر طريقة عرض عامة لأماكن وجود الكاميرات في المدينة، وإمكانية التكبير لرؤية اسم الشارع الذي توجد به كاميرا معينة.</p>
+            </div>
+          </div>
+        </div>
+        <div data-mc-conditions="">
+          <h3>إظهار الطبقات على الخريطة الذكية أو إخفاؤها<a name="SC_ShowOrHideLayersOnSma.htm"></a></h3>
+          <p>يمكنك إظهار طبقات أو إخفائها على الخريطة الذكية لديك، بما في ذلك الخلفية الجغرافية. يفيد هذا على سبيل المثال عندما تريد التركيز على عنصر معين، أو تبسيط المحتوى الذي تعرضه الخريطة الذكية.</p>
+          <p>الخطوات:</p>
+          <ol>
+            <li value="1">من شريط الأدوات، انقر فوق <img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">إظهار أو إخفاء الطبقات والتراكبات المخصصة</span>.</li>
+            <li value="2">لإظهار عناصر النظام والتراكبات المخصصة أو إخفائها، حدد خانات الاختيار أو قم بإلغاء تحديدها.</li>
+            <li value="3">لإخفاء الخلفية الجغرافية، حدد <span class="uitext">بلا</span>.</li>
+          </ol>
+          <p class="note">يؤدي تحديد <span class="uitext">بدون</span> إلى إخفاء الخلفية الجغرافية، لكن تظل المراجع الجغرافية تنطبق على الخريطة الذكية. على سبيل المثال، إذا قمت بإضافة ملف شكل جديد يحتوي على مرجع مكاني، فسيظل النظام يستخدم المرجع المكاني لوضع الملف على الخريطة.</p>
+          <p class="note">سيؤدي إخفاء الميكروفونات إلى كتم صوت الميكروفون غير المكتوم حاليًا حتى تعرض الميكروفونات مرة أخرى.</p>
+        </div>
+        <div>
+          <h3>حدد الإعدادات الافتراضية للخريطة الذكية<a name="SC_ManageDefaultSettings(65803).htm"></a></h3>
+          <p>بعد إضافة خريطة ذكية إلى طريقة عرض وإضافة التراكبات والكاميرات والروابط، يمكنك تحديد الإعدادات الافتراضية للتراكبات المخصصة. يمكنك كذلك حذف التراكبات المخصصة للتنظيف.</p>
+          <p>الخطوات:</p>
+          <ol>
+            <li value="1">انقر فوق <span class="uitext">إعداد</span>.</li>
+            <li value="2">انقر فوق <img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">إدارة الإعدادات الافتراضية</span>.</li>
+            <li value="3">قم بأي مما يلي: <ul><li>لإظهار تراكب ما أو إخفائه، حدد خانة الاختيار أو قم بإلغاء تحديدها</li><li>لإعادة تنظيم الترتيب، استخدم مقبض السحب أمام التراكب لسحبه إلى موضع جديد في القائمة. يتم ترتيب الطبقات من الأعلى إلى الأسفل في القائمة</li><li>لحذف تراكب، قم بالتحويم بالماوس فوق التراكب، ثم انقر فوق <span class="uitext">حذف</span></li></ul></li>
+            <li value="4">انقر فوق <span class="uitext">حفظ</span>.</li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>إضافة تراكبات مخصصة أو حذفها أو تحريرها<a name="SC_AddingDeletingOrEditi.htm"></a></h2>
+        <div>
+          <h3>التراكبات المخصصة (موضح)<a name="SC_CustomOverlaysExplain.htm"></a></h3>
+          <p>يمكنك إضافة الأنواع التالية من الملفات كتراكبات مخصصة على خريطة ذكية في <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>:</p>
+          <ul>
+            <li>
+              <span class="uitext">ملف أشكال</span> - يمكن أن يحتوي على بيانات الخطوط الموجهة الجغرافية المكانية، كالنقاط والخطوط والمضلعات والسمات والتي تمثل كائنات على الخريطة، مثل الحوائط أو الطرق أو المعالم الجغرافية كالأنهار أو البحيرات. على سبيل المثال، غالبًا ما تستخدم مكاتب الإدارة وتخطيط المدن ملفات أشكال لأن لها مقياس رسم جيد عند تكبيرها وتصغيرها، ولأنه عادة ما تكون أحجام ملفاتها أقل من رسومات CAD أو الصور النقطية</li>
+            <li>
+              <span class="uitext">رسومات CAD</span> - تعد رسومات التصميم بمساعدة الكمبيوتر (CAD) مفيدة شأنها في ذلك شأن ملفات الأشكال، حيث يمكن لبيانات CAD استخدام نظام إحداثيات ومرجع مكاني لتزويد سياق جغرافي دقيق. على سبيل المثال، يمكنك استخدام خريطة جوية مفصلة أو خريطة طرق لموقع</li>
+            <li>
+              <span class="uitext">صورة</span> - إذا كان لديك ملف صورة، مثل تخطيط الطابق الأرضي لمبنى، يمكنك إضافته كتراكب على الخريطة الذكية. يمكنك استخدام الأنواع التالية من ملفات الصور: PNG وBMP وGIF وJPG وJPEG وPHG وTIF وTIFF</li>
+          </ul>
+          <p class="note">لوضع التراكبات المخصصة في التركيز، يمكنك إخفاء أنواع أخرى من الطبقات مؤقتًا. راجع <a href="#SC_LayersOnSmartMapExpla.htm" class="MCXref xref">الطبقات على الخريطة الذكية (موضح)</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>التراكبات المخصصة والمواقع (موضح)<a name="SC_CustomOverlaysAndLoca.htm"></a></h3>
+          <p>يمكنك الانتقال السريع إلى التراكبات المخصصة التي أضفتها إلى الخريطة الذكية كما هو موضح في <a href="sc_workingwithmap.htm#SC_FindLocationOfCustomO.htm" class="MCXref xref">الانتقال إلى تراكب مخصص على الخريطة الذكية</a>. ومع ذلك، في الإعدادات، يمكنك إنشاء اتصال بين التراكبات المخصصة والمواقع. يعني ذلك أنه في أي وقت تضيف فيه تراكبًا مخصصًا جديدًا، ينشئ <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> موقعًا بالاسم نفسه الخاص بالتراكب على البقعة ذاتها على الخريطة. يصبح موقع التراكب المخصص الآن متاحًا في قائمة <span class="uitext">تحديد موقع</span>.</p>
+          <p>
+            <img src="../../../Images/custom_overlays_and_locations.jpg" alt="" />
+          </p>
+          <p>لا يتم الربط بين التراكب والموقع. على سبيل المثال، يمكنك حذف الموقع أو إعادة تسميته دون تغيير التراكب والعكس صحيح.</p>
+          <p class="note">لتشغيل هذه الميزة ، راجع <a href="#SC_AddLocationsToCustomO.htm" class="MCXref xref">إضافة مواقع إلى التراكبات المخصصة (الخريطة الذكية)</a>.</p>
+        </div>
+        <div>
+          <h3>إضافة تراكب مخصص على الخريطة الذكية<a name="SC_AddCustomOverlayOnSma.htm"></a></h3>
+          <p>قم بزيادة مستوى التفاصيل على الخريطة الذكية لديك عن طريق إضافة تراكبات مخصصة. عند إضافة <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term8">تراكب مخصص<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>عنصر رسومي معرّف بواسطة المستخدم يمكن للمستخدمين إضافته إلى أي خريطة ذكية، لتوضيح مخطط الطوابق في مبنى ما، أو لتمييز الحدود بين المناطق على سبيل المثال. يمكن أن يكون التراكب المخصص صورة، أو رسم CAD أو ملف شكل.</span></a>، يقوم <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> بإنشاء موقع له نفس اسم التراكب.</p>
+          <p>الخطوات:</p>
+          <ol>
+            <li value="1">حدد طريقة العرض التي تحتوي على الخريطة الذكية، ثم انقر فوق <span class="uitext">إعداد</span>.</li>
+            <li value="2">انقر فوق <img src="../../../Images/add_custom_overlay_on_1.png" alt="" /><span class="uitext">إضافة تراكب مخصص</span>: <ul><li>إذا كان التراكب - الذي تضيفه - له إشارة مرجعية، فانقر في أي مكان على الخريطة الذكية. يستخدم <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> معلومات الإشارة المرجعية الجغرافية لوضع التراكب في الموقع الجغرافي الصحيح. إضافة إلى ذلك، ستركز الخريطة الذكية على التراكب عند مستوى تكبير/تصغير افتراضي</li><li>إذا كان التراكب ليس له إشارة مرجعية جغرافية، فانتقل إلى النقطة الموجودة على الخريطة والتي تريد إضافة العنصر بها، ثم انقر فوق تلك النقطة على الخريطة الذكية</li><p class="tip">قبل إضافة تراكب، سيكون من الجيد تكبير المكان الموجود على الخريطة والذي تريد وضع التراكب به. يُسهِّل هذا من وضع التراكب بدقة.</p></ul></li>
+            <li value="3">أدخل اسمًا للتراكب.</li>
+            <li value="4">استنادًا إلى نوع الملف الذي تحدده: <ul><li><span class="uitext">صورة</span> - حدد ملف الصورة، ثم انقر فوق <span class="uitext">موافق</span></li><li><span class="uitext">ملف أشكال</span> - حدد ملف SHP. إذا كان لديك ملف PRJ، فإن <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> سيجده، ويمكنك فقط النقر فوق <span class="uitext">موافق</span>. إذا لم يكن لديك ملف PRJ، فيمكنك إعادة تحديد موضع التراكب يدويًا بعد إضافته. يمكنك أيضًا وضع لون. على سبيل المثال، قد تؤدي إضافة لون إلى جعل ملف الأشكال مميزًا أكثر على الخريطة الذكية</li><li><span class="uitext">CAD</span> - حدد ملف DWG. إذا كان لديك ملف PRJ، فانقر فوق <span class="uitext">موافق</span>. إذا لم يكن لديك ملف PRJ، وكنت تريد استخدام الإشارة المرجعية الجغرافية لتحديد موضع الملف على الخريطة الذكية، فأدخل رمز التعريف المرجعي المكاني (SRID)، ثم انقر فوق <span class="uitext">موافق</span>. إذا لم يكن لديك ملف PRJ أو رمز SRID، فيمكنك إعادة تحديد موضع التراكب يدويًا بعد إضافته</li><p class="note">لمزيد من المعلومات حول أنواع التراكبات، راجع <a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">التراكبات المخصصة (موضح)</a>.</p></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>إضافة مواقع إلى التراكبات المخصصة (الخريطة الذكية)<a name="SC_AddLocationsToCustomO.htm"></a></h3>
+          <p>يمكنك تكوين <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> لإضافة المواقع تلقائيًاإلى <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term8">التراكبات المخصصة<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>عنصر رسومي معرّف بواسطة المستخدم يمكن للمستخدمين إضافته إلى أي خريطة ذكية، لتوضيح مخطط الطوابق في مبنى ما، أو لتمييز الحدود بين المناطق على سبيل المثال. يمكن أن يكون التراكب المخصص صورة، أو رسم CAD أو ملف شكل.</span></a> على خريطتك الذكية. يسمح لك هذا بالانتقال إلى التراكبات المخصصة من خلال قائمة <span class="uitext">حدد موقعًا</span>. </p>
+          <p>الخطوات:</p>
+          <ol>
+            <li value="1">في شريط أدوات التطبيق، انقر فوق <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> ثم <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">الإعدادات</span> لفتح نافذة <span class="uitext">الإعدادات</span>.</li>
+            <li value="2">انتقل إلى تبويب <span class="uitext">الخريطة الذكية</span>.</li>
+            <li value="3">في قائمة <span class="uitext">إنشاء موقع عند إضافة طبقة</span>، حدد <span class="uitext">نعم</span>.</li>
+            <li value="4">أغلق مربع الحوار لحفظ التغييرات.</li>
+          </ol>
+          <p class="note">لمزيد من المعلومات، انظر <a href="#SC_CustomOverlaysAndLoca.htm" class="MCXref xref">التراكبات المخصصة والمواقع (موضح)</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>حذف تراكب مخصص على الخريطة الذكية<a name="SC_DeleteCustomOverlayOn.htm"></a></h3>
+          <ol>
+            <li value="1">حدد طريقة العرض التي تحتوي على الخريطة الذكية، ثم انقر فوق <span class="uitext">إعداد</span>.</li>
+            <li value="2">من شريط الأدوات، انقر فوق <img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">إدارة الإعدادات الافتراضية</span>.</li>
+            <li value="3">قم بالتحويم بالماوس فوق التراكب المخصص، ثم انقر فوق <span class="uitext">حذف</span>.</li>
+            <li value="4">انقر فوق <span class="uitext">حفظ</span> لحذف التراكب المخصص.</li>
+            <li value="5">اختياري: إذا كان هناك موقع قم تم إنشاؤه للتراكب المخصص، فربما تريد حذفه كذلك. لمزيد من المعلومات، انظر <a href="#SC_AddingDeletingOrEditi_3.htm" class="MCXref xref">إضافة مواقع إلى الخريطة الذكية أو حذفها أو تحريرها</a>.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>جعل المناطق في ملفات الأشكال أكثر ظهورًا (الخريطة الذكية)<a name="SC_MakeAreasInShapefiles.htm"></a></h3>
+          <p class="note">يفيد هذا الموضوع في حالة استخدامك لملفات أشكال مع المضلعات.</p>
+          <p>إذا كنت تريد استخدام ملف أشكال على الخريطة الذكية التي تتكون من مضلعات قريبة من بعضها، ربما ستحتاج إلى تمييز المضلعات عن بعضها. يتم ذلك بتقليل شفافية اللون الذي تختاره لملف الأشكال. سوف تبرز حدود المضلعات.</p>
+          <p>الخطوات:</p>
+          <ol>
+            <li value="1">اتبع الخطوات الموضحة في <a href="#SC_AddCustomOverlayOnSma.htm" class="MCXref xref">إضافة تراكب مخصص على الخريطة الذكية</a>.</li>
+            <li value="2">
+              <p>عند اختيار اللون، اسحب شريط تمرير <span class="uitext">معدل الشفافية</span> إلى اليسار حتى تكون موافقًا على مستوى الشفافية.</p>
+              <p>
+                <img src="../../../Images/make_areas_in_shapefiles_more.jpg" alt="" />
+              </p>
+            </li>
+            <li value="3">انقر فوق <span class="uitext">حفظ</span>.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>ضبط الموضع والحجم والمحاذاة للتراكب المخصص<a name="SC_AdjustPositionSizeOrA.htm"></a></h3>
+          <p>يمكنك نقل تراكب إلى مكان مختلف على الخريطة، وجعله أكبر أو أصغر حجمًا، وكذلك تدويره. على سبيل المثال، سيكون هذا مفيدًا إذا كان التراكب لديك ليس له إشارة مرجعية جغرافية أو إذا كان التراكب له إشارة مرجعية جغرافية ولكن لسبب ما لا يتحاذى مع الخلفية الجغرافية تمامًا.</p>
+          <p>الخطوات:</p>
+          <ol>
+            <li value="1">حدد طريقة العرض التي تحتوي على الخريطة الذكية، ثم انقر فوق <span class="uitext">إعداد</span>.</li>
+            <li value="2">انقر بزر الماوس الأيمن فوق التراكب، وحدد <span class="uitext">تحرير الموضع</span>.</li>
+            <li value="3">لتغيير حجم التراكب أو تدويره: <ul><li>انقر فوق مقبض ركن واسحبه</li><li><p>لتدوير التراكب حول نقطة معينة، حرك النقطة المحورية إلى هذا المكان على الخريطة. ثم انقر فوق مقبض ركن واسحبه </p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/adjust_position_size_or_alignment.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="273" data-mc-height="261" src="../../../Images/adjust_position_size_or_alignment_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="" tabindex="" /></a></p></li></ul></li>
+            <li value="4">لتحريك التراكب على الخريطة، انقر فوق التراكب واسحبه.</li>
+            <li value="5">لحفظ التغيير، انقر فوق <span class="uitext">حفظ</span>.</li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>إضافة أجهزة إلى الخريطة الذكية أو حذفها أو تحريرها<a name="SC_AddingDeletingOrEditi_1.htm"></a></h2>
+        <p>يمكنك إضافة كاميرات إلى خريطة ذكية ما في مواضعها الفعلية في بيئتك. يمنحك هذا نظرة عامة جيدة على نظام المراقبة لديك، ويساعدك في الاستجابة لأي موقف. على سبيل المثال، إذا أردت متابعة مشتبه به خلال وقوع حادث، فيمكنك النقر فوق الكاميرات الموجودة على الخريطة لعرض اللقطات.</p>
+        <p>بعد إضافة كاميرا إلى خريطة ذكية، يمكنك ضبط حقل طريقة العرض لرمز الكاميرا بحيث يعكس حقل طريقة عرض الكاميرا الفعلية. يُسهِّل هذا إمكانية العثور على الكاميرا التي تغطي منطقة معينة. بالإضافة إلى ذلك، يمكنك تحديد رمز لتمثيل الكاميرا على الخريطة، وهو ما قد يساعدك في تحديد نوع الكاميرا على الخريطة.</p>
+        <p>يمكنك العمل باستخدام أنواع الأجهزة التالية على الخرائط الذكية:</p>
+        <ul>
+          <li>الكاميرات</li>
+          <li>أجهزة إدخال</li>
+          <li>الميكروفونات</li>
+        </ul>
+        <div data-mc-conditions="">
+          <h3>أضف أجهزة إلى (الخريطة الذكية)<a name="SC_AddCamerasToSmartMap.htm"></a></h3>
+          <p>إذا قلم مسؤول النظام الخاص بك بتحديد الإحداثيات الجغرافية للجهاز في <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> ، فسيتم وضع الجهاز تلقائيًا على الخريطة الذكية عند إضافته. في غير هذه الحالات، يجب عليك تحديد موضع الجهاز بنفسك في موقعه الجغرافي الدقيق.</p>
+          <ol>
+            <li value="1">حدد طريقة العرض التي تحتوي على الخريطة الذكية، ثم انقر فوق <span class="uitext">إعداد</span>.</li>
+            <li value="2">لإضافة جهاز أو مجموعة أجهزة: <p class="tip">قبل إضافة الجهاز، من الأفضل تكبير الموقع على الخريطة. يُسهِّل هذا من تحديد موقع الكاميرا بدقة.</p><ul><li>وسِّع جزء <span class="uitext">نظرة عامة على النظام</span> ، واعثر على الجهاز أو مجموعة الأجهزة، ثم اسحبها إلى النقطة الموجودة على الخريطة الذكية بالمكان الذي تريد عرضها به. يمكنك سحب الأجهزة بعد ذلك لتغيير موضعها</li><li>في شريط أدوات الخريطة الذكية، حدد <img src="../../../Images/add-a-device-to-smart-map.png" alt="" /><span class="uitext">إضافة جهاز</span> &gt; ثم حدد نوع الجهاز.<ul><li>مثال: في حالة الكاميرا، حدد<img src="../../../Images/add_cameras_to_map.png" alt="" /><span class="uitext">إضافة كاميرا</span> ، ثم حدد الكاميرا.</li></ul></li><li>اسحب جهازًا لإضافته إلى الخريطة الذكية</li><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_adddevice.png" data-mc-popup-alt="Add a device to your smart map."><img class="MCPopupThumbnail img" data-mc-width="709" data-mc-height="823" src="../../../Images/sc_smap_adddevice_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add a device to your smart map." tabindex="" /></a><br /></ul></li>
+            <li value="3">لحفظ التغييرات، انقر فوق <span class="uitext">إعداد</span> للخروج من وضع الإعداد.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>تغيير مجال رؤية الكاميرا واتجاهها<a name="SC_ChangeFieldOfViewAndD.htm"></a></h3>
+          <p>بمجرد إضافة الكاميرا إلى الخريطة الذكية، يمكن تغيير مجال الرؤية والاتجاه بضبط رمز الكاميرا.</p>
+          <p class="tip">في حالة إجراء تصغير على الخريطة، فقد يتعين عليك التكبير حتى يتم عرض مجال الرؤية.</p>
+          <ol>
+            <li value="1">حدد طريقة العرض التي تحتوي على الخريطة الذكية التي تريد العمل بها.</li>
+            <li value="2">انقر فوق <span class="uitext">إعداد</span> لتحرير رمز الكاميرا.</li>
+            <li value="3">
+              <p>انقر فوق رمز الكاميرا.</p>
+              <p>
+                <img src="../../../Images/change_field_of_view_and_direction.png" alt="" />
+              </p>
+            </li>
+            <li value="4">استخدم مقبض التدوير لتوجيه الكاميرا في الاتجاه الصحيح.</li>
+            <li value="5">لضبط طول وعرض وزاوية حقل طريقة العرض، انقر فوق المقابض واسحبها عند الطرف الأمامي من حقل طريقة العرض.</li>
+            <li value="6">لحفظ التغييرات التي أجريتها، انقر فوق <span class="uitext">إعداد</span> للخروج من وضع الإعداد.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>حدد رمز الجهاز أو قم بتغييره<a name="SC_SelectOrChangeTheIcon.htm"></a></h3>
+          <p>يمكنك اختيار رمز جهاز يتوافق مع نوع الجهاز الذي تستخدمه.</p>
+          <ol>
+            <li value="1">حدد طريقة العرض التي تحتوي على الخريطة الذكية التي تريد العمل بها.</li>
+            <li value="2">
+              <p>انقر فوق <span class="uitext">إعداد</span> ، ثم انقر نقرًا مزدوجًا فوق رمز الجهاز على الخريطة.</p>
+              <p>
+                <img src="../../../Images/select_or_change_the_icon.png" alt="" />
+              </p>
+            </li>
+            <li value="3">انقر فوق <span class="uitext">رمز الانتقاء</span> ، وحدد رمز الجهاز.</li>
+            <li value="4">انقر فوق <span class="uitext">إعداد</span> مرة أخرى لحفظ التغييرات.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>إظهار أو إخفاء معلومات الجهاز<a name="SC_ShowOrHideInformation.htm"></a></h3>
+          <p>يمكنك إظهار أو إخفاء المعلومات المتعلقة بالأجهزة على الخريطة الذكية. يكون هذا مفيدًا، على سبيل المثال، عندما تريد زيادة كمية المحتوى على خريطتك الذكية أو تقليله.</p>
+          <ol>
+            <li value="1">حدد طريقة العرض التي تحتوي على الخريطة الذكية التي تريد العمل بها.</li>
+            <li value="2">انقر فوق <img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">إظهار أو إخفاء الطبقات والتراكبات المخصصة</span>.</li>
+            <li value="3">حدد مربعات التحديد أو امسحها لإظهار المعلومات أو إخفاءها.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>استمع إلى الصوت من الميكروفون على الخريطة الذكية</h3>
+          <p>بعد إضافة الميكروفونات إلى خريطة ذكية ما، يمكنك الاستماع إلى الصوت من ميكروفون واحد في كل مرة في علامة تبويب <span class="uitext">مباشر</span>. </p>
+          <p>الخطوات:</p>
+          <ol>
+            <li value="1">
+              <p>في علامة التبويب <span class="uitext">مباشر </span>، انتقل إلى المكان على الخريطة الذكية حيث تم وضع الميكروفون.</p>
+            </li>
+            <li value="2">
+              <p>انقر نقرًا مزدوجًا فوق الميكروفون لكتم الصوت أو إلغاء كتمه.</p>
+              <p class="tip">بدلاً من ذلك ، انقر بزر الماوس الأيمن فوق الميكروفون وحدد <span class="uitext">كتم صوت الميكروفون</span> أو <span class="uitext">إلغاء كتم الصوت</span>.</p>
+            </li>
+          </ol>
+        </div>
+        <div>
+          <h3>إزالة الأجهزة من الخريطة الذكية<a name="SC_DeletingCamerasOnSmar.htm"></a></h3>
+          <p>يمكنك إزالة الأجهزة، ومعرفة إذا تمت إزالة الأجهزة فعليًا أو تمت إضافتها عن طريق الخطأمثلًا. عند إزالة جهاز ما، تتم إزالة معلومات تحديد الموقع الخاصة بالجهاز، على سبيل المثال الإحداثيات الجغرافية من نظام إدارة الفيديو الخاص بك.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" />المتطلبات</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>يجب تمكين حقوق المستخدم هذه في <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>:</p>
+              <ul>
+                <li>تحرير الخرائط الذكية</li>
+                <li>تحرير الأجهزة</li>
+              </ul>
+            </div>
+          </div>
+          <p>الخطوات:</p>
+          <ol>
+            <li value="1">انتقل إلى الجهاز الذي تريد إزالته.</li>
+            <li value="2"> انقر فوق <span class="uitext">إعداد</span> للدخول إلى وضع الإعداد. </li>
+            <li value="3">
+              <p>لإزالة جهاز واحد، انقر بزر الماوس الأيمن فوق الجهاز وانقر فوق <span class="uitext">إزالة</span>.</p>
+              <p>مثال: في حالة الكاميرا، انقر فوق <span class="uitext">إزالة كاميرا</span>.</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_removecamera.png" data-mc-popup-alt="Remove camera from your smart map.">
+                  <img class="MCPopupThumbnail img" data-mc-width="284" data-mc-height="209" src="../../../Images/sc_smap_removecamera_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: 0;" alt="Remove camera from your smart map." tabindex="" />
+                </a>
+              </p>
+            </li>
+            <li value="4">لإزالة عدة كاميرات:<ol><li value="1"><p>من شريط أدوات الخريطة الذكية، انقر على <img src="../../../Images/preview_videos_from_several.png" alt="" /><span class="uitext">تحديد كاميرات متعددة</span>.</p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_cluster_multiselect.png" data-mc-popup-alt="Select multipe cameras on your smart map."><img class="MCPopupThumbnail img" data-mc-width="1056" data-mc-height="672" src="../../../Images/sc_smap_cluster_multiselect_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: 0;" alt="Select multipe cameras on your smart map." tabindex="" /></a><br /></p></li><li value="2">انقر واسحب لتحديد عدة كاميرات. لا يتم تضمين الأنواع الأخرى من الأجهزة، على سبيل المثال أجهزة الإدخال، في الاختيار.</li><li value="3">انقر بزر الماوس الأيمن وحدد <span class="uitext">إعادة تسمية</span>.</li></ol></li>
+            <li value="5">لإزالة عدة أجهزة ليست بكاميرات:<ol><li value="1">على الخريطة الذكية، اضغط مع الاستمرار على Ctrl. </li><li value="2">أثناء الضغط باستمرار على Ctrl، انقر فوق الأجهزة التي تريد إزالتها.</li><li value="3">انقر بزر الماوس الأيمن فوق أحد الأجهزة المحددة واختر "إزالة".</li></ol></li>
+            <li value="6"> انقر فوق <span class="uitext">إعداد</span> مجددًا للخروج من وضع الإعداد. تم حفظ التغييرات الخاصة بك.</li>
+          </ol>
+          <p class="tip">يمكنك أيضًا حذف جهاز واحد من خلال تحديده ثم الضغط على <span class="uitext">حذف</span> من لوحة المفاتيح.</p>
+        </div>
+      </div>
+      <div>
+        <h2>إضافة روابط إلى الخريطة الذكية أو حذفها أو تحريرها<a name="SC_AddingDeletingOrEditi_2.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>الروابط على الخريطة الذكية (موضح)<a name="SC_LinksOnSmartMapExplai.htm"></a></h3>
+          <p>يمكنك إضافة روابط تنقلك إلى مواقع على الخريطة الذكية لديك، أو تنقلك إلى الخرائط الثابتة في <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. يتيح لك هذا إمكانية زيارة المواقع بسرعة، أو عرض نوع آخر من الخرائط دون التغيير إلى طريقة عرض أخرى. لا يمكنك إضافة روابط لأى خريطة ذكية أخرى. لمزيد من المعلومات، انظر <a href="#SC_DifferencesBetweenMap.htm" class="MCXref xref">الاختلافات بين الخرائط والخرائط الذكية (موضح)</a>.</p>
+          <p>تعرض الروابط المواقع والخرائط كما يلي:</p>
+          <ul>
+            <li>من خلال رابط إلى موقع، يتم عرض الموقع في طريقة العرض الحالية. للعودة إلى موقع قمت بعرضه سابقًا، انقر فوق <img src="../../../Images/backtracking_to_previous_locations.png" alt="" /><span class="uitext">الخلف</span> على شريط أدوات الخريطة الذكية</li>
+            <li>من خلال رابط إلى خريطة، يتم عرض الخريطة في إطار عائم. يتيح لك هذا إمكانية الوصول إلى جميع أنواع الخرائط في الوقت نفسه. يمكنك عرض الخريطة والتفاعل معها لكن لا يمكنك إجراء تغييرات في الإطار العائم، مثل إضافة كاميرات</li>
+          </ul>
+          <p class="note">إذا قمت بتلوين روابط الرموز، أو إذا كنت تريد جعلها أكثر بروزًا على الخريطة، فيمكنك تحديد لون للرابط. بشكل افتراضي، تكون الروابط إلى مواقع الخريطة الذكية باللون الأزرق، وتكون الروابط إلى الخرائط القديمة باللون الأحمر. في حالة استخدام لون مختلف، سيكون من الجيد استخدام نفس اللون لكل نوع من أنواع الروابط. على سبيل المثال، قد يُسهِّل هذا من التمييز بين الروابط عند استخدام طبقات لتصفية عناصر على الخريطة.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>إضافة رابط إلى خريطة أو إلى موقع خريطة ذكية<a name="SC_AddLinkToSmartMapLoca.htm"></a></h3>
+          <p>يتيح هذا إمكانية زيارة المواقع بسرعة، أو عرض نوع آخر من الخرائط دون التغيير إلى طريقة عرض أخرى.</p>
+          <p>الخطوات:</p>
+          <ol>
+            <li value="1">حدد طريقة العرض التي تحتوي على الخريطة الذكية، ثم انقر فوق <span class="uitext">إعداد</span>.</li>
+            <li value="2">انتقل إلى النقطة الموجودة على الخريطة حيثما تريد إضافة الرابط.</li>
+            <li value="3">في شريط أدوات الخريطة، انقر فوق <img src="../../../Images/add_link_to_map_location.png" alt="" /><span class="uitext">إضافة رابط</span>، ثم انقر فوق النقطة الموجودة على الخريطة حيث تريد أن يوجد الرابط.</li>
+            <li value="4">حدد ما إذا كنت تريد الربط بخريطة أو بموقع خريطة ذكية، ثم انقر فوق <span class="uitext">إضافة</span>.</li>
+            <li value="5">
+              <p>أدخل اسمًا للرابط.</p>
+              <p class="tip">يمكنك عرض عنوان للرابط على الخريطة الذكية إذا قمت بتحديد <span class="uitext">أيقونة ونص</span> باعتبارهما نمط العرض. عادةً، تدل الأسماء على المكان الذي سيأخذك الرابط إليه.</p>
+            </li>
+            <li value="6">في حقل <span class="uitext">الوجهة</span>، حدد الخريطة أو الموقع الذي ينتقل إليه الرابط.</li>
+            <li value="7">في الحقل <span class="uitext">نمط العرض</span>، حدد ما إذا كان يتم عرض رمز الرابط والاسم، أو يتم عرض رمز الرابط فقط على الخريطة.</li>
+            <li value="8">اختياري: انقر فوق <span class="uitext">اللون</span> لتحديد لون للارتباط.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>تحرير رابط على الخريطة الذكية أو حذفه<a name="SC_EditOrDeleteLinkOnSma.htm"></a></h3>
+          <p>بمجرد إضافة رابط على الخريطة الذكية، يمكن تحريره أو حذفه.</p>
+          <p>الخطوات:</p>
+          <ol>
+            <li value="1"> انقر فوق <span class="uitext">إعداد</span> للدخول إلى وضع الإعداد. </li>
+            <li value="2">لتحرير الرابط، انقر بزر الماوس الأيمن على الرابط وحدد <span class="uitext">تحرير الرابط</span>.</li>
+            <li value="3">لحذف الرابط، نفذ واحدًا مما يلي:<ul><li>انقر بزر الماوس الأيمن على الرابط وحدد <span class="uitext">حذف الرابط</span></li><li>حدد الرابط واضغط على <span class="uitext">حذف</span> في لوحة المفاتيح</li></ul></li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>إضافة مواقع إلى الخريطة الذكية أو حذفها أو تحريرها<a name="SC_AddingDeletingOrEditi_3.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>المواقع على الخريطة الذكية (موضح)<a name="SC_LocationsOnSmartMapEx.htm"></a></h3>
+          <p>يمكنك إنشاء مواقع في النقاط الموجودة على الخريطة الذكية والتي تهمك. على سبيل المثال، يمكنك إنشاء مواقع لمكتبك الرئيسي، ومكاتبك الفرعية. لا تمنحك المواقع صورة كاملة لبيئتك فحسب، ولكنها مفيدة أيضًا للتنقل عبر الخريطة الذكية. </p>
+          <p class="note">وفقًا للتكوين المستخدم، عند إضافة تراكب مخصص، قد ينشئ <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> موقعًا بالاسم نفسه الخاص بالتراكب. يسهِّل هذا - على سبيل المثال - من الانتقال إلى التراكب على الخريطة الذكية إذا تم تصغير الخريطة. ومع ذلك، لا يتم ربط التراكب والموقع. على سبيل المثال، يمكنك حذف الموقع أو إعادة تسميته دون تغيير التراكب والعكس صحيح. لمزيد من المعلومات، انظر <a href="#SC_AddingDeletingOrEditi.htm" class="MCXref xref">إضافة تراكبات مخصصة أو حذفها أو تحريرها</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>مواقع المنازل على الخريطة الذكية (موضح)<a name="SC_HomeLocationsForSmart.htm"></a></h3>
+          <p>ترتبط مواقع المنازل بعنصر العرض الذي تم إعدادها فيه. يمكن أن يكون لديك مواقع منزل مختلفة في عناصر عرض مختلفة. في حالة عدم تحديد موقع منزل لعنصر عرض، يعرض عنصر العرض العالم بأكمله، بغض النظر عن نوع الخلفية التي تستخدمها. هذا هو الأمر نفسه عند حذف موقع المنزل.</p>
+          <p>أثناء العمل باستخدام الخريطة الذكية، يمكنك النقر فوق <img src="../../../Images/home_locations_for_map.png" alt="" /><span class="uitext">رئيسي</span> للعودة إلى موقع المنزل. يشبه هذا إعادة تعيين الخريطة الذكية في طريقة العرض. يمكنك العودة إلى الإعدادات الافتراضية لعنصر العرض، وسيحذف النظام تاريخ المواقع التي قمت بزيارتها.</p>
+          <p class="note">يؤثر تحديد موقع رئيسي جديد على كل شخص يستخدم عنصر العرض. إذا قام شخص آخر بتعيين موقع آخر كموقع رئيسي، فأنت بذلك تغيِّر الإعداد الخاص به.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>إضافة موقع إلى الخريطة الذكية<a name="SC_AddLocationToSmartMap.htm"></a></h3>
+          <p>لتتبع الأماكن التي تهمك، يمكنك إضافة مواقع تسمح لك بالانتقال السريع إلى تلك الأماكن على الخريطة الذكية.</p>
+          <p>الخطوات:</p>
+          <ol>
+            <li value="1">حدد طريقة العرض التي تحتوي على الخريطة الذكية، ثم انقر فوق <span class="uitext">إعداد</span>.</li>
+            <li value="2">إذا لزم الأمر، قم بالدوران والتكبير إلى النقطة على الخريطة الذكية التي تريد إضافة الموقع إليها.</li>
+            <li value="3">من شريط الأدوات، انقر فوق <img src="../../../Images/add_location_to_map.png" alt="" /><span class="uitext">إضافة موقع</span>، ثم انقر فوق النقطة على الخريطة الذكية.</li>
+            <li value="4">أطلق اسمًا على الموقع، ثم أضف التفاصيل الاختيارية التالية. <ul><li>حدد مستوى تكبير/تصغير لتطبيقه عندما ينتقل شخص إلى الموقع على الخريطة الذكية.</li><li>حدد لونًا لرمز الموقع. تعد مواقع التصنيف حسب اللون مفيدة، على سبيل المثال، للتمييز بين أنواع المواقع. قد يستند هذا على وظيفة الموقع أو نوعه، أو يدل على أولوية الموقع.</li><li>اختياري: اجعل الموقع هو موقعك الرئيسي. تتمركز الخريطة الذكية على هذا الموقع، وتطبق إعداد التكبير/التصغير الافتراضي له، عند النقر فوق <img src="../../../Images/home_locations_for_map.png" alt="" /><span class="uitext">رئيسي</span></li></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>تحرير موقع على الخريطة الذكية أو حذفه<a name="SC_EditOrDeleteLocationO.htm"></a></h3>
+          <p>بمجرد إضافة المواقع على الخريطة الذكية، يمكنك حذفها أو تحرير إعداداتها، على سبيل المثال حذف موقع المنزل (الرئيسي).</p>
+          <p>الخطوات:</p>
+          <ol>
+            <li value="1"> انقر فوق <span class="uitext">إعداد</span> للدخول إلى وضع الإعداد. </li>
+            <li value="2">لتحرير موقع، انقر بزر الماوس الأيمن على الموقع وحدد <span class="uitext">تحرير الموقع</span>.</li>
+            <li value="3">لحذف موقع، نفذ واحدًا مما يلي:<ul><li>انقر بزر الماوس الأيمن على الموقع وحدد <span class="uitext">حذف الموقع</span></li><li>حدد الموقع واضغط على <span class="uitext">حذف</span> من لوحة المفاتيح</li></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>الربط بين المواقع (موضح)<a name="SC_LinkingBetweenLocatio.htm"></a></h3>
+          <p>على سبيل المثال، يمكنك إنشاء مسار دورية عن طريق إنشاء سلسلة من الروابط بين المواقع. قم بإنشاء رابط عند الموقع أ يصل إلى الموقع ب، ورابط عند الموقع ب يصل إلى الموقع ج، وهكذا. لمزيد من المعلومات، انظر <a href="#SC_AddingDeletingOrEditi_2.htm" class="MCXref xref">إضافة روابط إلى الخريطة الذكية أو حذفها أو تحريرها</a>.</p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>إضافة مباني إلى الخريطة الذكية أو حذفها أو تحريرها<a name="SC_AddingDeletingOrEditi_4.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>المباني على الخريطة الذكية (موضّح)<a name="SC_BuildingsOnSmartMapEx.htm"></a></h3>
+          <p>يتم تصوير المباني على <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">الخريطة الذكية<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>خاصية للخريطة تستخدم نظام المعلومات الجغرافية لتصوير الأجهزة (على سبيل المثال، الكاميرات والميكروفونات) والهياكل والعناصر الطوبوغرافية لنظام مراقبة ما في صورة واقعية جغرافية دقيقة. تسمى الخرائط التي تستخدم عناصر هذه الوظيفة بالخرائط الذكية.</span></a> على شكل مضلعات لها أربعة أضلاع. وبمجرد إضافتها، يمكنك ضبط الأبعاد والزوايا والحجم لتطابق الشكل الفعلي للمبنى ومكانه.</p>
+          <p>إذا كان المبنى متعدد الطوابق، فيمكنك بدء إضافة المستويات وإضافة الكاميرات إلى المستويات الفردية. يتيح لك ذلك نقل الكاميرا داخل المبنى، مستوى بمستوى.</p>
+          <p>ولمساعدتك في توضيح التصميم الداخلي للمستوى، يمكنك إضافة تراكبات مخصص إلى المستويات، على سبيل المثال صورة توضح مخطط مبنى. لمزيد من المعلومات، انظر <a href="#SC_AddFloorPlansToLevels.htm" class="MCXref xref">إضافة مخططات طوابق إلى المستويات (الخريطة الذكية)</a>.</p>
+          <p>يتم تحديد اسم للمباني تلقائيًا، على سبيل المثال <span class="uitext">Building 4</span>. يوصي <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> بتغيير الاسم. هذا يجعل من السهل عليك تمييز المباني عن بعضها البعض.</p>
+          <p>
+            <img src="../../../Images/buildings_on_map_explained.jpg" alt="" />
+          </p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>إضافة مباني إلى الخريطة الذكية<a name="SC_AddBuildingsToSmartMa.htm"></a></h3>
+          <p>بدلاً من استخدام الصور أو ملفات الأشكال لتوضيح المباني، يمكنك إضافة مخطط تفصيلي للمبنى. بعد ذلك، يمكنك تغيير الأبعاد والزوايا والحجم لتطابق شكل المبنى الفعلي وموضعه.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" />المتطلبات</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> تم تمكين تحرير الخريطة الذكية على ملفك تعريف <span class="mc-variable flvar-product.SC variable">Smart Client</span> في <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>الخطوات:</p>
+          <ol>
+            <li value="1"> انقر فوق <span class="uitext">إعداد</span> للدخول إلى وضع الإعداد. </li>
+            <li value="2">انتقل إلى المكان على الخريطة الذكية، حيث تريد لتحديد موضع المبنى.</li>
+            <li value="3">انقر فوق <img src="../../../Images/add_buildings_to_map.jpg" alt="" /> وضع المؤشر في الموضع المناسب على الخريطة الذكية.</li>
+            <li value="4">انقر من جديد. تتم إضافة مستطيل إلى الخريطة الذكية. إذا تم تصغيرها، فسيزيد مستوى التكبير/التصغير.</li>
+            <li value="5">إذا لزم الأمر، فاستخدم مقابض الزوايا لضبط شكل المبنى الفعلي وموضعه.</li>
+            <li value="6"> انقر فوق <span class="uitext">إعداد</span> مجددًا للخروج من وضع الإعداد. تم حفظ التغييرات الخاصة بك.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>تحرير المباني على الخريطة الذكية<a name="SC_EditBuildingsOnSmartM.htm"></a></h3>
+          <p>بعد إضافة مبنى إلى الخريطة الذكية، يمكنك تغيير اسم المبنى وضبط الموضع والحجم والأبعاد والزوايا. يمكنك أيضًا إضافة المستويات أو إزالتها أو إعادة ترتيبها.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" />المتطلبات</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> تم تمكين تحرير الخريطة الذكية على ملفك تعريف <span class="mc-variable flvar-product.SC variable">Smart Client</span> في <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>الخطوات:</p>
+          <ol>
+            <li value="1">انتقل إلى المبنى على الخريطة الذكية. إذا لزم الأمر، فقم بالتكبير.</li>
+            <li value="2"> انقر فوق <span class="uitext">إعداد</span> للدخول إلى وضع الإعداد. </li>
+            <li value="3">
+              <p>انقر فوق أي مكان داخل المبنى. يشير الحد ذو الحواف الزرقاء إلى أنه يمكنك تحرير المبنى.<br /></p>
+              <p>
+                <img src="../../../Images/buildings_on_map_explained.jpg" alt="" />
+              </p>
+            </li>
+            <li value="4">لإعادة تسمية المبنى، انتقل إلى أعلى الجزء الأيمن وانقر فوق <img src="../../../Images/edit_buildings_on_map.jpg" alt="" />. قم بتغيير الاسم وانقر فوق <img src="../../../Images/edit_buildings_on_map_1.jpg" alt="" />. للإلغاء، اضغط على <span class="uitext">Esc</span>.</li>
+            <li value="5">لضبط الزوايان انقر فوق موضح جديد واسحبها إليه.</li>
+            <li value="6">لإضافة أو إزالة المستويات، انظر <a href="#SC_AddOrRemoveLevelsFrom.htm" class="MCXref xref">إضافة مستويات إلى المباني أو إزالتها منها (الخريطة الذكية)</a>.</li>
+            <li value="7"> انقر فوق <span class="uitext">إعداد</span> مجددًا للخروج من وضع الإعداد. تم حفظ التغييرات الخاصة بك.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>حذف مباني على الخريطة الذكية<a name="SC_DeleteBuildingsOnSmar.htm"></a></h3>
+          <p>إذا لم تعد هناك حاجة إلى المبنى، فيمكنك حذفه. وعندما يقوم شخص ما بتسجيل الدخول إلى <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> أو إعادة تحميله في المرة القادمة، يصبح المبنى غير موجود.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" />المتطلبات</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> تم تمكين تحرير الخريطة الذكية على ملفك تعريف <span class="mc-variable flvar-product.SC variable">Smart Client</span> في <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>الخطوات:</p>
+          <ol>
+            <li value="1">افتح الخريطة الذكية.</li>
+            <li value="2"> انقر فوق <span class="uitext">إعداد</span> للدخول إلى وضع الإعداد. </li>
+            <li value="3">قم بإجراء واحد مما يلي:</li>
+            <ul>
+              <li>انقر بزر الماوس الأيمن على المبنى وحدد <span class="uitext">حذف</span></li>
+              <li>حدد المبنى واضغط على <span class="uitext">حذف</span> في لوحة المفاتيح </li>
+            </ul>
+          </ol>
+          <p class="tip">طريقة بديلة لحذف مبنى: في <img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">إدارة الإعدادات الافتراضية</span>، قم بالتمرير لأسفل إلى قسم <span class="uitext">المباني</span>، وقم بالمرور فوق المبنى، وانقر على <span class="uitext">حذف</span>، ثم <span class="uitext">حفظ</span>. </p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>إدارة المستويات والأجهزة في المباني (الخريطة الذكية)<a name="SC_ManagingLevelsAndCame.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>الأجهزة والمستويات في المباني (موضّح)<a name="SC_CamerasAndLevelsInBui.htm"></a></h3>
+          <p>عند إضافة الجهاز إلى أحد المباني، فبشكل افتراضي، يكون الجهاز مرتبطً ابالمستوى الافتراضي إذا تمت إضافة مستوى. وإلّا، سيتم تعيين الجهاز إلى المستوى الأول. ومع ذلك، يمكنك تغيير ذلك وربط الجهاز بأي مستوى آخر، أو عدة مستويات في نفس الوقت.</p>
+          <p>مزيد من الحقائق:</p>
+          <ul>
+            <li>إذا لم يتم تحديد أي مستويات، فيمكن رؤية الكاميرا في كل المستويات</li>
+            <li>إذا أضفت مبنى فوق جهازا تم تحديد موضعه بالفعل، فسيتم ربط الجهاز بجميع المستويات</li>
+            <li>إذا قمت بتوسعة حدود أحد المباني، بحيث تغطي جهازًا تم تحديد موضعه بالفعل، فسيتم ربط الكاميرا بالمستوى المحدد فقط</li>
+          </ul>
+          <p class="note">إذا أعدت ضبط حدود المبنى، بحيث لا يغطي الجهاز، فلن ترتبط الجهاز بالمبنى بعد ذلك.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>
+            <a name="SC_FloorPlansDevicesInBuildings"></a>مخططات الطوابق والأجهزة في المباني (شرح)</h3>
+          <p>لمساعدتك في استعراض التصميم الداخلي لمستويات لمبنى، يمكنك إضافة مخططات المبنى كتراكبات مخصصة. مع وضع مخطط المبنى في مكانه، يمكن تحديد موضع الجهاز بدقة. لمزيد من المعلومات، انظر <a href="#SC_AddFloorPlansToLevels.htm" class="MCXref xref">إضافة مخططات طوابق إلى المستويات (الخريطة الذكية)</a>.</p>
+          <p>ترتبط الأجهزة التي تحدد موضعها بالمستويات، وليس بالتراكبات المخصصة. إذا قمت بحذف مستوى داخل مبنى به أجهزة وتراكب مخصص، فإن الأجهزة تظل في موقعها الجغرافي، ولكنها لم تبقى مرتبطة بالمستوى. ولكن، يتم حذف التراكب المخصص تمامًا مع المستوى.</p>
+          <p>إذا أعدت ترتيب أحد المستويات، فستظل الأجهزة والتراكب المخصص مع المستوى. تحتفظ الأجهزة بموقعها الجغرافي.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>إضافة مستويات إلى المباني أو إزالتها منها (الخريطة الذكية)<a name="SC_AddOrRemoveLevelsFrom.htm"></a></h3>
+          <p>بعد إضافة مبنى إلى الخريطة الذكية، يمكنك إضافة أي عدد من المستويات. يتم تخصيص رقم <span class="uitext">1</span> للمستوى الأول، وللمستوى التالي <span class="uitext">2</span>، وهكذا. بعد ذلك، يمكنك إعادة تسمية المستويات الفريدية وإعادة ترتيبها.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" />المتطلبات</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> تم تمكين تحرير الخريطة الذكية على ملفك تعريف <span class="mc-variable flvar-product.SC variable">Smart Client</span> في <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>الخطوات:</p>
+          <ol>
+            <li value="1">انتقل إلى المبنى على الخريطة الذكية. إذا لزم الأمر، فقم بالتكبير.</li>
+            <li value="2">حدد المبنى. يظهر جزءًا بالجانب الأيمن.</li>
+            <li value="3">انقر فوق زر <span class="uitext">إعداد</span> للدخول في وضع الإعداد.</li>
+            <li value="4">انقر فوق <span class="uitext">إضافة مستوى</span><img src="../../../Images/add_or_remove_levels_from.jpg" alt="" />.</li>
+            <li value="5">لتحرير اسم المستوى: <ol><li value="1">انقر فوق النقاط <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> وحدد <span class="uitext">Rename (إعادة تسمية)</span>.</li><li value="2">أدخِل اسمًا جديدًا.</li></ol></li>
+            <li value="6">لحذف مستوى، انقر فوق النقاط <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> وحدد <span class="uitext">Delete (حذف)</span>. تبقى الأجهزة في هذا المستوى في موقعها الجغرافي، لكنها لم تعد مرتبطة بالمستوى.</li>
+            <li value="7">انقر فوق <span class="uitext">إعداد</span> للخروج من وضع الإعداد.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>تغيير ترتيب المستويات في المباني (الخريطة الذكية)<a name="SC_ChangeOrderOfLevels.htm"></a></h3>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" />المتطلبات</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> تم تمكين تحرير الخريطة الذكية على ملفك تعريف <span class="mc-variable flvar-product.SC variable">Smart Client</span> في <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>الخطوات:</p>
+          <ol>
+            <li value="1">انتقل إلى المبنى على الخريطة الذكية. إذا لزم الأمر، فقم بالتكبير.</li>
+            <li value="2">حدد المبنى. يظهر جزء على الجانب الأيمن يوضح مستويات المبنى.</li>
+            <li value="3"> انقر فوق <span class="uitext">إعداد</span> للدخول إلى وضع الإعداد. </li>
+            <li value="4">انقر فوق المنطقة المنقطة <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> واسحبها إلى الموضع الصحيح. تظل أي أجهزة مرتبطة وتراكبات مخصصة بنفس المستوى.</li>
+            <li value="5"> انقر فوق <span class="uitext">إعداد</span> مجددًا للخروج من وضع الإعداد. تم حفظ التغييرات الخاصة بك.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>اضبط المستوى الافتراضي للمباني (الخريطة الذكية)<a name="SC_SetDefaultLevelForBui.htm"></a></h3>
+          <p>إذا كان مستوى معين في أحد المباني أكثر ملائمة من المستويات الأخرى، على سبيل المثال الطابق الأرضي، فيمكنك تعيين المستوى كمستوى افتراضي. وعندما تفتح الخريطة الذكية وتنتقل إلى المبنى، يتم تحديد المستوى الافتراضي تلقائيًا.</p>
+          <p>في حالة الانتقال بعيدًا عن المبنى والعودة إليه، يعيدك <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> إلى المستوى الذي انتقلت منه.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" />المتطلبات</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> تم تمكين تحرير الخريطة الذكية على ملفك تعريف <span class="mc-variable flvar-product.SC variable">Smart Client</span> في <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>الخطوات:</p>
+          <ol>
+            <li value="1">انتقل إلى المبنى على الخريطة الذكية. إذا لزم الأمر، فقم بالتكبير.</li>
+            <li value="2">حدد المبنى. يظهر جزء على الجانب الأيمن يوضح مستويات المبنى. يتم تمييز المستوى الافتراضي.</li>
+            <li value="3">انقر فوق <span class="uitext">إعداد</span> للدخول إلى وضع الإعداد. لاحظ علامة النجمة <img src="../../../Images/set_default_level_for_buildings.jpg" alt="" />. تشير علامة النجمة إلى المستوى الافتراضي.</li>
+            <li value="4">في المستوى الذي ترغب في ذبطه كمستوى افتراضي، انقر فوق النقاط <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" />.</li>
+            <li value="5">حدد <span class="uitext">Set as default (تعيين كافتراضي)</span>.</li>
+            <li value="6"> انقر فوق <span class="uitext">إعداد</span> مجددًا للخروج من وضع الإعداد. تم حفظ التغييرات الخاصة بك.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>إضافة مخططات طوابق إلى المستويات (الخريطة الذكية)<a name="SC_AddFloorPlansToLevels.htm"></a></h3>
+          <p>يمكنك إضافة تراكبات مخصصة، على سبيل المثال صور مخطط الطابق، إلى المستويات في المبنى الخاص بك لمساعدتك على توضيح التصميم الداخلي لمستوى داخل المبنى. أثناء تنقلك بين المستويات، يتم عرض مخططات الطوابق المرتبطة بها تلقائيًا.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" />المتطلبات</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> تم تمكين تحرير الخريطة الذكية على ملفك تعريف <span class="mc-variable flvar-product.SC variable">Smart Client</span> في <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>الخطوات:</p>
+          <ol>
+            <li value="1">انتقل إلى المبنى على الخريطة الذكية. إذا لزم الأمر، فقم بالتكبير.</li>
+            <li value="2">حدد المبنى. يظهر جزء على الجانب الأيمن يوضح مستويات المبنى.</li>
+            <li value="3"> انقر فوق <span class="uitext">إعداد</span> للدخول إلى وضع الإعداد. </li>
+            <li value="4">حدد المستوى الذي تريد عنده إضافة التراكب المخصص.</li>
+            <li value="5">في الزاوية العليا اليسرى، انقر فوق <img src="../../../Images/add_custom_overlay_on_1.png" alt="" /><span class="uitext">إضافة تراكب مخصص</span>، ثم انقر فوق أي مكان داخل المخطط التفصيلي للمبنى. تظهر نافذة.</li>
+            <li value="6">حدد نوع التراكب المخصص. لمزيد من المعلومات، انظر <a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">التراكبات المخصصة (موضح)</a>.</li>
+            <li value="7">
+              <p>حدد الموقع المخزن به الملف على الكمبيوتر وانقر فوق <span class="uitext">Continue (متابعة)</span>. يتم عرض التراكب المخصص كحد خارجي أزرق.<br /></p>
+              <p>
+                <img src="../../../Images/add_floorplans_to_levels.jpg" alt="" />
+              </p>
+            </li>
+            <li value="8">اسحبه فوق المخطط التفصيلي للمبنى واستخدم نقطة التمركز ومقابض الزوايا لتدوير التراكب المخصص وتغيير موضعه.</li>
+            <li value="9">انقر فوق <span class="uitext">Save (حفظ)</span> في الشريط بالأعلى.</li>
+            <li value="10"> انقر فوق <span class="uitext">إعداد</span> مجددًا للخروج من وضع الإعداد. تم حفظ التغييرات الخاصة بك.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>حذف مخططات طوابق بالمستويات (الخريطة الذكية)<a name="SC_DeleteFloorPlansOnLev.htm"></a></h3>
+          <p>إذا تم تغيير مخطط طوابق بمستوى داخل أحد المباني، فقد يتعين استبدال التراكب المخصص الذي يوضح مخطط الطوابق. يوصي <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> بحذف مخطط الطابق الأرضي القديم قبل إضافة آخر جديد.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" />المتطلبات</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> تم تمكين تحرير الخريطة الذكية على ملفك تعريف <span class="mc-variable flvar-product.SC variable">Smart Client</span> في <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>الخطوات:</p>
+          <ol>
+            <li value="1">انتقل إلى المبنى على الخريطة الذكية. إذا لزم الأمر، فقم بالتكبير.</li>
+            <li value="2">حدد المبنى. يظهر جزء على الجانب الأيمن يوضح مستويات المبنى.</li>
+            <li value="3"> انقر فوق <span class="uitext">إعداد</span> للدخول إلى وضع الإعداد. </li>
+            <li value="4">حدد المستوى الذي يوجد به التراكب المخصص.</li>
+            <li value="5">انقر بزر الماوس الأيمن فوق التراكب المخصص وحدد <span class="uitext">حذف تراكب مخصص</span>.</li>
+            <li value="6"> انقر فوق <span class="uitext">إعداد</span> مجددًا للخروج من وضع الإعداد. تم حفظ التغييرات الخاصة بك.</li>
+          </ol>
+          <p class="tip">لتحرير موضع مخطط الطوابق أو حجمه، انقر بزر الماوس الأيمن فوق التراكب المخصص وحدد <span class="uitext">Edit position (تحرير موضع)</span>. يمكنك الآن نقل التراكب المخصص أو تدويره أو تغيير حجمه.</p>
+        </div>
+        <div>
+          <h3>أضف أجهزة إلى (الخريطة الذكية)<a name="SC_AddCamerasToBuildings.htm"></a></h3>
+          <p>بعد إنشاء المبنى وإضافة المستويات، يمكنك إضافة أجهزة إلى المبنى. إذا تم تحديد مستوى افتراضي ما، فسترتبط به الأجهزة. وإلّا، ترتبط الأجهزة بالمستوى الأول. يمكنك تغيير ذلك وربط الجهازا بأي مستويات في المبنى.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" />المتطلبات</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> تم تمكين تحرير الخريطة الذكية على ملفك تعريف <span class="mc-variable flvar-product.SC variable">Smart Client</span> في <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>الخطوات:</p>
+          <ol>
+            <li value="1">انتقل إلى المبنى على الخريطة الذكية. إذا لزم الأمر، فقم بالتكبير.</li>
+            <li value="2"> انقر فوق <span class="uitext">إعداد</span> للدخول إلى وضع الإعداد. </li>
+            <li value="3">لإضافة جهاز، انقر فوق الرمز الخاص به. <p>مثال: في حالة وجود الكاميرا، انقر فوق<img src="../../../Images/add_cameras_to_buildings.jpg" alt="" /><span class="uitext">إضافة كاميرا</span>.</p></li>
+            <li value="4">انقر مرة أخرى على المكان الذي تريد وضع الجهاز فيه. يظهر مربح حوار.</li>
+            <li value="5">حدد الجهاز المطلوب، ثم انقر فوق <span class="uitext">موافق</span>. كرر الخطوات من 3-5 لكل جهاز تريد إضافته.</li>
+            <li value="6">لربط جهاز بمستوى واحد أو أكثر، انقر بزر الماوس الأيمن فوق الجهاز وحدد المستويات المطلوبة.</li>
+            <li value="7"> انقر فوق <span class="uitext">إعداد</span> مجددًا للخروج من وضع الإعداد. تم حفظ التغييرات الخاصة بك.</li>
+          </ol>
+          <p class="note">إذا لم يتم تحديد أي مستويات، فيمكن رؤية الكاميرا في كل المستويات.</p>
+        </div>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">معلومات حول المفهوم</p>
+        <p class="containerItem_container_0">
+          <a href="sc_workingwithmap.htm">الخريطة الذكية (الاستخدام)</a>
+        </p>
+        <p class="referenceHeading_reference_0">مواد مرجعية</p>
+        <p class="referenceItem_reference_0">
+          <a href="sc_map_faq.htm">الأسئلة الشائعة: الخريطة الذكية</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

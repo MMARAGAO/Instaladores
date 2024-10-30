@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="ru-RU" xml:lang="ru-RU" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="Конфигурация" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Create scripts to control the login procudure and switch between views in XProtect Smart Client." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Разработчик" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Руководитель разработки" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Сценарии</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#standard_features/sf_sc/sf_configuration/sc_configuringloginthroughscripting.htm">Открыть тему с навигацией</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Навигация" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>Сценарии</h1>
+      <div>
+        <h2>Сценарий для входа в систему (объяснение)<a name="SC_StartupScripting.htm"></a></h2>
+        <p>Cценариями можно пользоваться для управления частями процедуры или всей процедурой входа в систему <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>.</p>
+        <ul>
+          <li>Если используется <span class="uitext">базовая аутентификация</span> или <span class="uitext">аутентификация в Windows</span>, систему можно настроить так, чтобы окно входа в <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> открывалось с уже заполненными полями адреса сервера и имени пользователя, чтобы пользователям только оставалось ввести пароль для входа в систему.</li>
+          <li>В случае использования <span class="uitext">аутентификации Windows (текущий пользователь)</span> можно сделать так, чтобы приложение <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> автоматически подключалось к системе наблюдения, исходя из входных данных текущего пользователя Windows.</li>
+        </ul>
+        <div class="important">
+          <p>Для создания сценария процедуры входа в систему на основе <span class="uitext">базовой проверки подлинности</span> или <span class="uitext">проверки подлинности Windows</span> требуется добавить незашифрованную конфиденциальную информацию в файл SCS, который вы храните локально, а также программные файлы <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>:</p>
+          <ul>
+            <li>Имя узла</li>
+            <li>Имя пользователя</li>
+            <li>Пароль</li>
+          </ul>
+          <p>Хранение незашифрованной информации может поставить под угрозу безопасность вашей системы или соответствие GDPR. Данные в файле SCS может считать:</p>
+          <ul>
+            <li>любой пользователь, который получает доступ к файлу.</li>
+            <li>В памяти приложения <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>, запущенного файлом SCS или из командной строки, которая передает имя пользователя и пароль.</li>
+          </ul>
+          <p>
+            <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> рекомендует использовать <span class="uitext">проверку подлинности Windows (текущий пользователь)</span>. Если вам нужна <span class="uitext">Базовая аутентификация</span> или <span class="uitext">Аутентификация Windows</span>, необходимо ограничить доступ к файлу SCS.</p>
+        </div>
+      </div>
+      <div>
+        <h2>Сценарий для входа — параметры<a name="SC_Scripting_Parameters.htm"></a></h2>
+        <p>Можно пользоваться следующими параметрами:</p>
+        <p>ServerAddress</p>
+        <p>URL сервера управления, к которому подключается <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>.</p>
+        <p>Ниже показано окно входа в <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> с адресом <span class="citationtext">http://ourserver</span> в поле <span class="uitext">Адрес сервера</span>:</p>
+        <p class="codechunk">Client.exe -ServerAddress="http://ourserver"</p>
+        <p>Методом аутентификации по умолчанию является <span class="uitext">Аутентификация в Windows (текущий пользователь)</span>. Если вы это не изменили, при использовании параметра <span class="uitext">AuthenticationType</span> (описан в следующем разделе) в окне входа в систему в поле <span class="uitext">Имя пользователя</span> автоматически отображается текущий пользователь Windows.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />UserName</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Относится к определенному имени пользователя.</p>
+            <p>В примере ниже показано окно входа в <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> с адресом <span class="citationtext">http://ourserver</span> в поле <span class="uitext">Адрес сервера</span> и именем <span class="specialbold">Tommy</span> в поле <span class="uitext">Имя пользователя</span>:</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -UserName="Tommy"</p>
+            <p class="note">Этот параметр относится только к методам <span class="uitext">Аутентификация в Windows</span> и <span class="uitext">Базовая аутентификация</span>. Параметр <span class="uitext">AuthenticationType</span> используется для указания используемого метода аутентификации.</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Пароль</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Относится к определенному паролю.</p>
+            <p>В примере ниже показано окно входа в <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> с адресом <span class="citationtext">http://ourserver</span> в поле <span class="uitext">Адрес сервера</span>, именем <span class="specialbold">Tommy</span> в поле <span class="uitext">Имя пользователя</span> и паролем <span class="specialbold">T0mMy5Pa55w0rD</span> в поле <span class="uitext">Пароль</span>:</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -UserName="Tommy" -Password="T0mMy5Pa55w0rD"</p>
+            <p class="note">Этот параметр относится только к методам <span class="uitext">Аутентификация в Windows</span> и <span class="uitext">Базовая аутентификация</span>. Параметр <span class="uitext">AuthenticationType</span> используется для указания используемого метода аутентификации.</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />AuthenticationType</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Относится к одному из трех возможных методов аутентификации в приложении <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>: <span class="uitext">Аутентификация в Windows (текущий пользователь)</span> (в сценариях запуска называется <span class="uitext">WindowsDefault</span>), <span class="uitext">Аутентификация в Windows</span> (в сценариях запуска называется <span class="uitext">Windows</span>) или <span class="uitext">Базовая аутентификация</span> (в сценариях запуска называется <span class="uitext">Simple</span>).</p>
+            <p>В примере ниже показано окно входа в <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> с адресом <span class="citationtext">http://ourserver</span> в поле <span class="uitext">Адрес сервера</span>, аутентификацией <span class="uitext">Базовая аутентификация</span> в поле <span class="uitext">Аутентификация</span>, именем <span class="specialbold">Tommy</span> в поле <span class="uitext">Имя пользователя</span> и паролем <span class="specialbold">T0mMy5Pa55w0rD</span> (скрыт звездочками) в поле <span class="uitext">Пароль</span>:</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -UserName="Tommy" -Password="T0mMy5Pa55w0rD" -AuthenticationType="Simple"</p>
+            <p>Пример использования метода <span class="uitext">Аутентификация в Windows</span>:</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -UserName="Tommy" -Password="T0mMy5Pa55w0rD" -AuthenticationType="Windows"</p>
+            <p>Если используется метод <span class="uitext">Аутентификация в Windows (текущий пользователь),</span> параметры <span class="uitext">UserName</span> и <span class="uitext">Password</span> не будут нужны, и пример будет выглядеть следующим образом:</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -AuthenticationType="WindowsDefault"</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Сценарий</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Полный путь к сценарию .scs (тип сценария для управления приложением <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>).</p>
+            <p>В следующем примере для входа в систему используется сценарий .scs:</p>
+            <p class="codechunk">Client.exe -Script=c:\startup.scs</p>
+            <p>Пример сценария .scs для входа на сервер <span class="citationtext">http://ourserver</span> с данными текущего пользователя Windows:</p>
+            <p class="codechunk">&lt;ScriptEngine&gt;</p>
+            <p class="codechunk"> &lt;Login&gt;</p>
+            <p class="codechunk">   &lt;ServerAddress&gt;http://ourserver&lt;/ServerAddress&gt;</p>
+            <p class="codechunk">   &lt;AuthenticationType&gt;WindowsDefault&lt;/AuthenticationType&gt;</p>
+            <p class="codechunk"> &lt;/Login&gt;</p>
+            <p class="codechunk">&lt;/ScriptEngine&gt;</p>
+            <p>Для добавления в сценарии .scs дополнительных возможностей можно пользоваться различными функциями <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> (см. Просмотр списка вызовов функций). В следующем примере сценария .scs добавлена командная строка, которая будет сворачивать приложение <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>:</p>
+            <p class="codechunk">&lt;ScriptEngine&gt;</p>
+            <p class="codechunk"> &lt;Login&gt;</p>
+            <p class="codechunk">   &lt;ServerAddress&gt;http://ourserver&lt;/ServerAddress&gt;</p>
+            <p class="codechunk">   &lt;AuthenticationType&gt;WindowsDefault&lt;/AuthenticationType&gt;</p>
+            <p class="codechunk"> &lt;/Login&gt;</p>
+            <p class="codechunk"> &lt;Script&gt;SCS. Application.Minimize();&lt;/Script&gt;</p>
+            <p class="codechunk">&lt;/ScriptEngine&gt;</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Формат</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Допустимы следующие форматы параметров:</p>
+            <p class="codechunk">{-,/,--}param{ ,=,:}((".')value(",'))</p>
+            <p>Примеры:</p>
+            <p class="codechunk">-UserName Tommy</p>
+            <p class="codechunk">--UserName Tommy /UserName:"Tommy" /UserName=Tommy -Password 'Tommy'</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_UseAnHTMLPageForNavig.htm"></a>Страница сценариев HTML для навигации</h2>
+        <p>Вы можете использовать сценарии для создания HTML-страниц, которые позволяют переключаться между представлениями. К представлениям могут добавляться HTML-страницы, поэтому они появляются вместе с видео с ваших камер.</p>
+        <p>Пример: на HTML-странице можно вставить активируемый щелчком мыши план этажа здания. Так операторы смогут просто нажимать на определенную часть плана, чтобы переключаться на представление, отображающее видео с камер в этой части здания. </p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Требования</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <ul>
+              <li>Если ваша система VMS <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> поддерживает профили <span class="mc-variable flvar-product.SC variable">Smart Client</span>, вам необходимо включить сценарии HTML в необходимых профилях <span class="mc-variable flvar-product.SC variable">Smart Client</span> в <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>.</li>
+              <li>Если ваша система VMS <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> не поддерживает профили <span class="mc-variable flvar-product.SC variable">Smart Client</span>, вам необходимо включить сценарии HTML в файле конфигурации <span class="uitext">Client.exe.config</span>.</li>
+            </ul>
+          </div>
+        </div>
+        <p>Ниже приведены примеры страниц HTML для навигации по <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>:</p>
+        <ul>
+          <li> Простая страница HTML с кнопками</li>
+          <li>Более сложная страница HTML с активной картой изображений</li>
+          <li>Контрольный список для администраторов, в котором перечислены задачи, связанные с созданием страниц HTML и их передаче операторам <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span></li>
+        </ul>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Пример HTML-страницы с кнопочной навигацией</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Очень быстрым решением является создание HTML-страницы с кнопками для навигации. На HTML-странице можно создать много различных кнопок. В этом примере рассматривается создание двух типов кнопок:</p>
+            <ul>
+              <li>
+                <span class="specialbold">Кнопки для переключения между видами <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span></span>
+                <p>Формат операторов HTML:</p>
+                <p class="codechunk">&lt;input type="button" value=" Buttontext" onclick="SCS. Views.SelectView('Viewstatus.Groupname. Viewname');"&gt;</p>
+                <p>Здесь <span class="uitext">Viewstatus</span> показывает, является ли вид личным или общим (если необходимо распределить HTML-страницу между несколькими пользователями, вид <span class="specialbold">должен</span> быть общим).</p>
+                <p>Пример настоящей кнопки:</p>
+                <p class="codechunk">&lt;input type="button" value="Go to Shared Group1 View2" onclick="SCS. Views.SelectView('Shared.Group1. View2');"&gt;</p>
+                <p>Это кнопка позволяет пользователям перейти к виду <span class="uitext">View2</span> в общей группе <span class="uitext">Group1</span>.</p>
+                <p>
+                  <span class="specialbold">Кнопки переключения между вкладками</span>: <span class="uitext">Наблюдение</span> и <span class="uitext">Просмотр</span> Помните, что в зависимости от присвоенных пользователям прав, у некоторых из них не будет доступа ко всем вкладкам.</p>
+                <p>Формат операторов HTML:</p>
+                <p>
+                  <span class="uitext">Вкладка Наблюдение</span>: <code class="codesnippet">&lt;input type="button" value="Buttontext" onclick="SCS. Application.ShowLive();"&gt;</code></p>
+                <p>
+                  <span class="uitext">Вкладка Просмотр</span>: <span class="codesnippet">&lt;input type="button" value="Buttontext" onclick="SCS. Application.ShowBrowse();"&gt;</span></p>
+              </li>
+            </ul>
+            <p class="tip">Опытные пользователи могут создавать много других кнопок с помощью около 100 различных функций, доступных в приложении <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. </p>
+            <p>Таким образом, мы создали две общие группы в приложении <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Мы назвали их <span class="uitext">Group1</span> и <span class="uitext">Group2</span>. Каждая группа содержит два вида: <span class="uitext">View1</span> и <span class="uitext">View2</span>.</p>
+            <p>Мы также создали страницу HTML с кнопками переключения между четырьмя различными видами и двумя вкладками <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> — <span class="uitext">Наблюдение</span> и <span class="uitext">Просмотр</span>. При просмотре в браузере HTML-страница выглядит следующим образом:</p>
+            <p>
+              <img src="../../../../Images/use_an_html_page_for_navigation.png" alt="" />
+            </p>
+            <p>HTML-страница с кнопками для перемещения между видами и вкладками</p>
+            <p>Мы сохранили HTML-страницу локально, в данном случае на диске С. Если для навигации используется страница HTML, страницу HTML необходимо сохранить локально, если потребуется открывать ее в режиме совместимости. См. также <a href="sc_configuringviews.htm#Web" class="MCXref xref">Свойства веб-страницы </a>.</p>
+            <p>Сохраняйте HTML-страницу в таком месте, к которому можно указать однозначный путь, например, в папке на диске С пользователя (пример: C:\ myfolder\file.htm). Не рекомендуется сохранять HTML-страницу на рабочем столе пользователя или в папке <span class="uitext">Мои документы</span>, поскольку из-за того, как Windows строит путь к подобным местоположениям, она не будет работать должным образом.</p>
+            <p>Затем, мы импортировали HTML-страницу в требуемые виды в приложении <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Пример HTML-страницы с навигацией в виде карты ссылок</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Также можно создать HTML-страницу с более сложным содержанием, таким как карта ссылок, которая позволяет пользователям переключаться между видами.</p>
+            <p>В следующем примере используются две группы и два вида из предыдущего примера. Вместо того, чтобы использовать кнопки, мы создали HTML-страницу с изображением плана этажа, а также основанную на этом плане карту ссылок. При просмотре в браузере HTML-страница выглядит следующим образом:</p>
+            <p>
+              <img src="../../../../Images/use_an_html_page_for_navigation_2.png" alt="" />
+            </p>
+            <p>HTML-страница с картой ссылок для навигации между видами</p>
+            <p>В этом примере план этажа поделен на четыре цветных зоны, и для каждой из этих зон определена область карты ссылок. Пользователи могут щелкнуть зону для перехода к виду отображения камер из этой зоны.</p>
+            <p>Например, в красной зоне на карте изображения представлена кнопку <span class="uitext">Перейти к: Group2 View2</span> из предыдущего примера. Нажав красную зону, можно перейти к виду <span class="uitext">View2</span> в группе <span class="uitext">Group2</span>.</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Импортирование HTML-страницы</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Импорт навигационной страницы HTML в вид не отличается от импорта любых других страниц HTML в вид в <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. См. <a href="sc_configuringviews.htm#Add" class="MCXref xref">Добавление веб-страниц в представления</a>. </p>
+            <div class="note">
+              <ul>
+                <li>Страница HTML должна храниться локально на компьютере оператора</li>
+                <li>Для правильной работы навигации можно импортировать страницу HTML в несколько видов</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Контрольный список для системных администраторов</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Для создания навигационных страниц HTML и их передачи операторам <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> выполните следующие действия:</p>
+            <ol>
+              <li value="1">
+                <span class="specialbold">Создать</span> необходимую HTML-страницу. Элементы управления навигации на странице HTML должны соответствовать видам, которые доступны пользователям в <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Например, чтобы работала кнопка переключения на вид <span class="uitext">View1</span>, необходимо, чтобы вид с именем <span class="uitext">View1</span> был в конфигурации пользователя <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Если вы намерены предоставить страницу HTML группе пользователей, то виды, в которых она будет применяться, следует разместить в общих группах.</li>
+              <li value="2">
+                <span class="specialbold">Сохранить</span> эту HTML-страницу локально на всех компьютерах, где она будет использоваться. Сохраняйте HTML-страницу в таком месте, к которому можно указать однозначный путь, например, в папке на диске С пользователя (пример: C:\ myfolder\file.htm). Не рекомендуется сохранять HTML-страницу на рабочем столе пользователя или в папке <span class="uitext">Мои документы</span>, поскольку из-за того, как Windows строит путь к подобным местоположениям, она не будет работать должным образом.</li>
+              <li value="3">
+                <span class="specialbold">Импортируйте</span> страницу HTML в необходимые виды в <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. См. <a href="sc_configuringviews.htm#Add" class="MCXref xref">Добавление веб-страниц в представления</a>. </li>
+              <li value="4">
+                <span class="specialbold">Проверьте</span>, чтобы элементы навигации на импортированной HTML-странице работали должным образом.</li>
+            </ol>
+            <p class="note">Информация об устранении неполадок приведена в разделе <a href="../sf_troubleshooting/sc_troubleshootinghtmlpages.htm" class="MCXref xref">Веб-страницы (устранение неполадок)</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Информация о концепции</p>
+        <p class="containerItem_container_0">
+          <a href="../sf_operation/sc_loggingin_366_.htm">Вход в систему</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

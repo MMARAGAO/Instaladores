@@ -1,0 +1,129 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="de-DE" xml:lang="de-DE" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="Konfiguration" data-mc-conditions="flcts-alias.sc-alias-content,flcts-add-on.xp-tra-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Configure XProtect Transact in XProtect Smart Client to view and investigate transactions from PoS systems in combination with video." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Transact" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Administrator" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Integrator" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Bediener" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>XProtect Transact (Konfiguration)</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#add-ons/add-on_transact/sc_configuringxprtransact.htm">Topic mit Navigation öffnen</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>
+        <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span> (Konfiguration)</h1>
+      <div>
+        <h2>Erste Schritte mit <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span><a name="SC_GettingStarted_Transa.htm"></a></h2>
+        <p>Vor der Aufzeichnung und Untersuchung Ihrer Transaktionen in <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> müssen Sie:</p>
+        <ol>
+          <li value="1">Sicherstellen, dass Ihre <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span>-Basislizenz während der Installation des VMS aktiviert wurde. Öffnen Sie hierfür <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> und prüfen Sie, ob die Registerkarte <span class="uitext">Transact</span> angezeigt wird. Auch wenn Sie über keine Basislizenz verfügen, können Sie <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span> trotzdem mit einer Testlizenz verwenden. Weitere Informationen finden Sie unter <a href="#SC_XPrTransactTrial.htm" class="MCXref xref">XProtect Transact Testlizenz</a>.</li>
+          <li value="2">Sicherstellen, dass Transaktionen ordnungsgemäß angezeigt werden. Hierzu zählen auch die einzelnen Transaktionszeilen und Eingänge. Klicken Sie hierfür auf die Registerkarte <span class="uitext">Transact</span> und wählen Sie eine Transaktionsquelle und ein Zeitintervall aus. Bei ordnungsgemäßer Konfiguration wird eine Liste an Transaktionszeilen angezeigt: Klicken Sie auf eine Zeile, wird das dazugehörige Videostandbild angezeigt (jeweils eins pro angeschlossener Kamera).</li>
+          <li value="3">Eine Ansicht für Transaktionen einrichten, sofern Sie Echtzeit-Transaktionen in der Registerkarte <span class="uitext">Live</span> überwachen bzw. Transaktionen in der Registerkarte <span class="uitext">Wiedergabe</span> untersuchen möchten. Weitere Informationen finden Sie unter <a href="#SC_SetUpAViewForTransact.htm" class="MCXref xref">Ansichten für Transaktionen einrichten</a>.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span> Testlizenz<a name="SC_XPrTransactTrial.htm"></a></h2>
+        <p>Mit einer <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span>-Testlizenz können Sie die Funktionalität von <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span> bis zu 30 Tage lang testen. Dabei sind alle verknüpften Funktionen freigegeben, und Sie können eine Transaktionsquelle hinzufügen, beispielsweise eine Registrierkasse. Nach Ablauf des Testzeitraums von 30 Tagen werden alle <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span>-Funktionen deaktiviert, einschließlich des Arbeitsbereichs <span class="uitext">Transact</span> und der Ansichtselemente für Transaktionen. Durch den Kauf und die Aktivierung einer <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span>-Basislizenz und der benötigten Transaktionsquellenlizenzen können Sie <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span> wieder nutzen. Ihre Einstellungen und Daten bleiben dabei erhalten.</p>
+        <p>Sie müssen von <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> die Testlizenz erwerben. Der Systemadministrator muss die Testlizenz in der Konfiguration aktivieren.</p>
+      </div>
+      <div>
+        <h2>Ansichten für Transaktionen einrichten<a name="SC_SetUpAViewForTransact.htm"></a></h2>
+        <p>Bevor Sie Transaktionen auf der Registerkarte <span class="uitext">Live</span> oder <span class="uitext">Wiedergabe</span> ansehen können, müssen Sie eine Ansicht einrichten, in der Sie ein Transaktions-Ansichtselement für jede Transaktionsquelle hinzufügen. Bei fortlaufenden Transaktionen bewegen sich die Eingänge über den Bildschirm im Ansichtselement, wenn Sie den Setup-Modus verlassen.</p>
+        <p>Schritte:</p>
+        <ol>
+          <li value="1">Klicken Sie auf der Registerkarte <span class="uitext">Live</span> oder <span class="uitext">Wiedergabe</span> auf die Option <span class="uitext">Einrichtung</span> in der oberen rechten Ecke, um den Setup-Modus aufzurufen.</li>
+          <li value="2">Erstellen Sie eine neue Ansicht oder wählen Sie eine vorhandene aus.</li>
+          <li value="3">Erweitern Sie den Bereich <span class="uitext">Systemübersicht</span>.</li>
+          <li value="4">
+            <p>Fügen sie das Element <span class="uitext">Transact</span> per Drag-and-Drop in das Ansichtselement ein, in dem die Transaktionen und der Videofeed angezeigt werden sollen. Ein Popup-Fenster wird angezeigt. </p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/tra_set_up_a_view_for_tra.png" data-mc-popup-alt="Add transaction sources to views in XProtect Smart Client.">
+                <img class="MCPopupThumbnail img" data-mc-width="422" data-mc-height="369" src="../../../Images/tra_set_up_a_view_for_tra_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add transaction sources to views in XProtect Smart Client." tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="5">Wählen Sie eine Transaktionsquelle (z. B. eine Registrierkasse) aus, und klicken Sie dann auf <span class="uitext">OK</span>. Eine Vorschau des Eingangs wird im Ansichtselement angezeigt.</li>
+          <li value="6">
+            <p>Erweitern Sie den Bereich <span class="uitext">Eigenschaften</span>, und wählen Sie das Kontrollkästchen <span class="uitext">Kameras anzeigen</span> aus, um mit der jeweiligen Transaktionsquelle verknüpfte Kameras hinzuzufügen. Standardmäßig wird die erste zur Transaktionsquelle in der Konfiguration hinzugefügte Kamera ausgewählt.<br /></p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/tra_set_up_a_view_for_tra_1.png" data-mc-popup-alt="Connect cash register with camera in XProtect Smart Client.">
+                <img class="MCPopupThumbnail img" data-mc-width="295" data-mc-height="238" src="../../../Images/tra_set_up_a_view_for_tra_1_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Connect cash register with camera in XProtect Smart Client." tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="7">Verwenden Sie die Dropdown-Listen <span class="uitext">Erste Kamera</span> und <span class="uitext">Zweite Kamera</span>, um festzulegen, welche Kameras in dem Ansichtselement angezeigt werden. Standardmäßig ist keine zweite Kamera ausgewählt. Falls Sie keine zweite Kamera verwenden wollen, lassen Sie die Einstellung so, wie sie ist.</li>
+          <li value="8">Falls Sie die Position der Kameras ändern wollen, wählen Sie einen Wert in der Dropdown-Liste <span class="uitext">Position</span> aus, z. B. links vom Eingang.</li>
+        </ol>
+        <p class="note">Wiederholen Sie die Schritte 4 bis 8 für jedes Transaktions-Ansichtselement, das Sie zur Ansicht hinzufügen wollen.</p>
+      </div>
+      <div>
+        <h2>Anpassen der Einstellungen für Transaktions-Ansichtselemente<a name="SC_AdjustSettingsForTran.htm"></a></h2>
+        <p>Nach der Erstellung einer Ansicht, die mindestens ein Transaktions-Ansichtselement enthält, können Sie:</p>
+        <ul>
+          <li>Ändern Sie die ausgewählten Kameras und deren Anzeigereihenfolge. Sie können maximal zwei Kameras pro Transaktions-Ansichtselement und nur mit der Transaktionsquelle verknüpfte Kameras auswählen</li>
+          <li>Ändern Sie, wie die Kameras in Relation zum Eingang positioniert werden.</li>
+          <li>Transaktions-Ansichtselemente hinzufügen (oder entfernen)</li>
+        </ul>
+        <p>Schritte:</p>
+        <ol>
+          <li value="1">Klicken Sie auf der Registerkarte <span class="uitext">Live</span> oder <span class="uitext">Wiedergabe</span> auf die Option <span class="uitext">Einrichtung</span> in der oberen rechten Ecke, um den Setup-Modus aufzurufen.</li>
+          <li value="2">Wählen Sie die Ansicht und dann das anzupassende Ansichtselement aus.</li>
+          <li value="3">
+            <p>Um die ausgewählten Kameras oder deren Position zu ändern, erweitern Sie den Bereich <span class="uitext">Eigenschaften</span> und verifizieren Sie, dass das Kontrollkästchen <span class="uitext">Kameras anzeigen</span> ausgewählt wurde.<br /></p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/tra_set_up_a_view_for_tra_1.png" data-mc-popup-alt="Adjust settings for views in XProtect Smart Client that display transactions.">
+                <img class="MCPopupThumbnail img" data-mc-width="295" data-mc-height="238" src="../../../Images/tra_set_up_a_view_for_tra_1_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Adjust settings for views in XProtect Smart Client that display transactions." tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="4">Verwenden Sie die Dropdown-Liste <span class="uitext">Position</span>, um festzulegen, wie viele Kameras in Relation zum Eingang angezeigt werden, z. B. unter dem Eingang.</li>
+          <li value="5">Verwenden Sie die Dropdown-Listen <span class="uitext">Erste Kamera</span> und <span class="uitext">Zweite Kamera</span>, um zu ändern, welche Kameras in dem Ansichtselement angezeigt werden.</li>
+          <li value="6">Wenn Sie zur Ansicht eine Transaktionsquelle hinzufügen wollen, folgen Sie den in <a href="#SC_SetUpAViewForTransact.htm" class="MCXref xref">Ansichten für Transaktionen einrichten</a> gezeigten Schritten 3-8.</li>
+        </ol>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Konzept-Informationen</p>
+        <p class="containerItem_container_0">
+          <a href="sc_workingwithtransact.htm">XProtect Transact (Verwendung)</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

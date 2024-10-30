@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LogMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <version>4.0.14</version>
+  <culture>zh-TW</culture>
+  <userfields>
+    <userfield type="string" uname="ResourceId"/>
+    <userfield type="string" uname="ResourceName"/>
+    <userfield type="enum" uname="ResourceType"/>
+    <userfield type="enum" uname="SourceType"/>
+    <userfield type="enum" uname="ListType"/>
+    <userfield type="string" uname="EventType"/>
+  </userfields>
+  <userEnums>
+    <userEnum fieldname="SourceType" fieldtype="user" uname="SourceType">
+      <enum uname="LPRService" value="LPR Server 服務"/>
+      <enum uname="LPRClient" value="LPR 用戶端"/>
+    </userEnum>
+    <userEnum fieldname="groupname" fieldtype="system" uname="group">
+      <enum uname="Audit" value="稽核"/>
+    </userEnum>
+    <userEnum fieldname="ResourceType" fieldtype="user" uname="ResourceType">
+      <enum uname="LPR" value="LPR"/>
+    </userEnum>
+    <userEnum fieldname="ListType" fieldtype="system" uname="ListType">
+      <enum uname="Edit_LPR_license_plate_list" value="編輯車牌清單"/>
+      <enum uname="Search_LPR_events" value="搜尋 LPR 事件"/>
+    </userEnum>
+    <userEnum fieldname="category" fieldtype="system" uname="category">
+      <enum uname="LPRList" value="LPR 清單"/>
+      <enum uname="LPRSearch" value="LPR 搜尋"/>
+    </userEnum>
+  </userEnums>
+  <application uname="LPRService">
+    <component uname="Service">
+      <entries>
+        <group field1="SourceType" field3="EventType" name="System">
+          <entry object_type="Service" severity="Info" status="Success" uname="ServiceStarted">LPR Server 服務已經啟動。</entry>
+          <entry object_type="Service" severity="Info" status="Success" uname="ServiceStopped">LPR Server 服務已經停止。</entry>
+          <entry object_type="Service" severity="Info" status="Success" uname="VideoSourceStateChangedToOK">LPR 攝影機狀態已變更為「良好」。</entry>
+          <entry object_type="Service" severity="Info" status="Success" uname="VideoSourceStateChangedToWarning">LPR 攝影機狀態已變更為「警告」。</entry>
+          <entry object_type="Service" severity="Info" status="Success" uname="VideoSourceStateChangedToError">LPR 攝影機狀態已變更為「錯誤」。</entry>
+        </group>
+        </entries>
+    </component>
+  </application>
+  <application uname="LPRClient">
+    <component uname="Client">
+      <entries>
+        <group category="Edit_LPR_license_plate_list" field1="SourceType" field3="ListType" name="Audit">
+          <entry field1="SourceType" field3="ListType" object_type="LPR license plate list" severity="Info" status="Success" uname="LPRListsAdd">車牌: {plateName} 已新增至 LPR 車牌清單: {listName}.</entry>
+          <entry field1="SourceType" field3="ListType" object_type="LPR license plate list" severity="Info" status="Success" uname="LPRListsDelete">車牌: {plateName} 已從 LPR 車牌清單刪除: {listName}.</entry>
+          <entry field1="SourceType" field3="ListType" object_type="LPR license plate list" severity="Info" status="Success" uname="LPRListsSearch">已搜尋的車牌: LPR 車牌清單中的 {plateName}: {listName}.</entry>
+        </group>
+        <group category="LPRSearch" field1="SourceType" field2="ResourceName" field3="ListType" field4="ResourceType" name="Audit" value1="" value2="LPR event" value4="LPR">
+          <entry field1="SourceType" field3="ListType" object_type="LPR event search" severity="Info" status="Success" uname="LPREventSearch">以該篩選器搜尋的車牌事件: {searchFilter}.</entry>
+        </group>
+      </entries>
+    </component>
+  </application>
+</LogMessages>

@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="ja-JP" xml:lang="ja-JP" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="設定" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Create scripts to control the login procudure and switch between views in XProtect Smart Client." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=開発者" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=開発マネージャー" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>スクリプト</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#standard_features/sf_sc/sf_configuration/sc_configuringloginthroughscripting.htm">ナビ付きでトピックを開く</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="パンくず" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>スクリプト</h1>
+      <div>
+        <h2>ログインのスクリプト化（説明付き）<a name="SC_StartupScripting.htm"></a></h2>
+        <p>スクリプトを使用すると、<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>でログイン手順の一部またはすべてをコントロールできます。</p>
+        <ul>
+          <li>
+            <span class="uitext">基本認証</span>または<span class="uitext">Windows認証</span>を使用している場合、<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>ログインウィンドウに、あらかじめ情報が入力されたサーバーアドレスフィールドとユーザー名フィールドを表示できます。これで、ユーザーはパスワードを入力するだけでログインできます。</li>
+          <li>
+            <span class="uitext">Windows認証(現行ユーザー)</span>を使用している場合、ユーザーの現在のWindowsログインにもとづいて<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>を監視システムに自動的に接続できます。</li>
+        </ul>
+        <div class="important">
+          <p>
+            <span class="uitext">基本的な認証</span>または<span class="uitext">Windows認証</span>に基づいてログイン手順のスクリプトを作成するには、暗号化されていない機密情報を、<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>プログラム ファイルでローカルに保存されているSCSファイルに追加する必要があります。</p>
+          <ul>
+            <li>ホスト名</li>
+            <li>ユーザー名</li>
+            <li>パスワード</li>
+          </ul>
+          <p>暗号化されていない情報を保存すると、システムのセキュリティまたはGDPRコンプライアンスに支障をきたす可能性があります。SCSファイルの情報を読み取ることができます。</p>
+          <ul>
+            <li>ファイルにアクセスできる任意の人物</li>
+            <li>SCSファイル、またはユーザー名とパスワードを提供するコマンドラインで開始された<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>アプリケーションのメモリ フットプリント</li>
+          </ul>
+          <p>
+            <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span>では、<span class="uitext">Windows認証 (現在のユーザー)</span> を使用するようお勧めしています。 <span class="uitext">基本的な認証</span>または<span class="uitext">Windows認証</span>を使用する必要がある場合は、SCSファイルへのアクセスを限定しなくてはなりません。</p>
+        </div>
+      </div>
+      <div>
+        <h2>ログインのスクリプト-パラメータ<a name="SC_Scripting_Parameters.htm"></a></h2>
+        <p>次のパラメータを使用できます：</p>
+        <p>ServerAddress</p>
+        <p>
+          <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>が接続する管理サーバーのURLを参照します。</p>
+        <p>次の例は、<span class="uitext">サーバーアドレス</span>フィールドに<span class="citationtext">http://ourserver</span>と入力された場合の<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>ログインウィンドウを示しています。</p>
+        <p class="codechunk">Client.exe -ServerAddress="http://ourserver"</p>
+        <p>デフォルト認証タイプは<span class="uitext">Windows認証(現行ユーザー)</span>です。これを変更しない限り、<span class="uitext">AuthenticationType</span>パラメータ(以下のセクションで説明)を使用すると、ログインウィンドウの<span class="uitext">ユーザー名</span>フィールドに現在のWindowsユーザーの名前が自動的に表示されます。</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />ユーザー名</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>特定のユーザー名を指します。</p>
+            <p>次の例は、ダイアログの<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>サーバーアドレス<span class="citationtext">フィールドに</span>http://ourserver<span class="uitext">、</span>ユーザー名<span class="specialbold">フィールドに</span>Tommy<span class="uitext">と入力された</span>のログインウィンドウを示しています。</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -UserName="Tommy"</p>
+            <p class="note">このパラメータは、<span class="uitext">Windows認証</span>および<span class="uitext">基本認証</span>にのみ適用されます。どの認証方法を使用するかは、<span class="uitext">AuthenticationType</span>パラメータを使って指定します。</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />パスワード</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>特定のパスワードを参照します。</p>
+            <p>次の例は、ダイアログの<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>サーバーアドレス<span class="citationtext">フィールドに</span>http://ourserver<span class="uitext">、</span>ユーザー名<span class="specialbold">フィールドに</span>Tommy<span class="uitext">、</span>パスワード<span class="specialbold">フィールドに</span>T0mMy5Pa55w0rD<span class="uitext">と入力された</span>のログインウィンドウを示しています。</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -UserName="Tommy" -Password="T0mMy5Pa55w0rD"</p>
+            <p class="note">このパラメータは、<span class="uitext">Windows認証</span>および<span class="uitext">基本認証</span>にのみ適用されます。どの認証方法を使用するかは、<span class="uitext">AuthenticationType</span>パラメータを使って指定します。</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />AuthenticationType</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>+<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>で使用できる3つの認証方法、<span class="uitext">Windows認証（現行ユーザー）</span>（起動スクリプトでは<span class="uitext">WindowsDefault</span>と呼ばれる）、<span class="uitext">Windows認証</span>（起動スクリプトでは<span class="uitext">Windows</span>と呼ばれる）、または<span class="uitext">基本認証</span>（起動スクリプトでは<span class="uitext">Simple</span>と呼ばれる）のうち1つを指します。</p>
+            <p>次の例は、ダイアログの<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>サーバーアドレス<span class="citationtext">フィールドに</span>http://ourserver<span class="uitext">、</span>認証<span class="uitext">フィールドに</span>基本認証<span class="uitext">、</span>ユーザー名<span class="specialbold">フィールドに</span>Tommy<span class="uitext">、</span>パスワード<span class="specialbold">フィールドに</span>T0mMy5Pa55w0rD<span class="uitext">（アスタリスクでマスキング）と入力された</span>のログインウィンドウを示しています。</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -UserName="Tommy" -Password="T0mMy5Pa55w0rD" -AuthenticationType="Simple"</p>
+            <p>
+              <span class="uitext">Windows認証</span>を使用する場合、例は次のようになります：</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -UserName="Tommy" -Password="T0mMy5Pa55w0rD" -AuthenticationType="Windows"</p>
+            <p>
+              <span class="uitext">Windows認証（現行ユーザー）</span>を使用している場合、<span class="uitext">UserName</span>パラメータと<span class="uitext">Password</span>パラメータは不要となるため、例は次のようになります。</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -AuthenticationType="WindowsDefault"</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />スクリプト</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>.scsスクリプト（<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>を制御するスクリプト タイプ）への完全なパスを指します。</p>
+            <p>次の例では、.scsスクリプトを使ってログインします：</p>
+            <p class="codechunk">Client.exe -Script=c:\startup.scs</p>
+            <p>現在のWindowsユーザーを使用して<span class="citationtext">http://ourserver</span>へログインする.scsは次のようになります。</p>
+            <p class="codechunk">&lt;ScriptEngine&gt;</p>
+            <p class="codechunk"> &lt;Login&gt;</p>
+            <p class="codechunk">   &lt;ServerAddress&gt;http://ourserver&lt;/ServerAddress&gt;</p>
+            <p class="codechunk">   &lt;AuthenticationType&gt;WindowsDefault&lt;/AuthenticationType&gt;</p>
+            <p class="codechunk"> &lt;/Login&gt;</p>
+            <p class="codechunk">&lt;/ScriptEngine&gt;</p>
+            <p>
+              <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>の関数呼び出しを使用して（関数呼び出しのリストを見る、を参照）、.scsスクリプトへ機能を追加できます。以下の例では、以前の例からの.scsスクリプトも<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>アプリケーションを最小化するように、行を追加しています。</p>
+            <p class="codechunk">&lt;ScriptEngine&gt;</p>
+            <p class="codechunk"> &lt;Login&gt;</p>
+            <p class="codechunk">   &lt;ServerAddress&gt;http://ourserver&lt;/ServerAddress&gt;</p>
+            <p class="codechunk">   &lt;AuthenticationType&gt;WindowsDefault&lt;/AuthenticationType&gt;</p>
+            <p class="codechunk"> &lt;/Login&gt;</p>
+            <p class="codechunk"> &lt;Script&gt;SCS.Application.Minimize（）;&lt;/Script&gt;</p>
+            <p class="codechunk">&lt;/ScriptEngine&gt;</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />フォーマット</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>有効なパラメータフォーマットは次のとおりです：</p>
+            <p class="codechunk">{-,/,--}param{ ,=,:}((".')value(",'))</p>
+            <p>例：</p>
+            <p class="codechunk">-UserNameTommy</p>
+            <p class="codechunk">--UserName Tommy /UserName:"Tommy" /UserName=Tommy -Password 'Tommy'</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_UseAnHTMLPageForNavig.htm"></a>ナビゲーション用のHTMLページのスクリプト</h2>
+        <p>スクリプトを使用すると、ビューを切り替えられるHTMLページを作成できます。HTMLページをビューに追加すると、カメラのビデオとともに表示できます。</p>
+        <p>例: HTMLページにはクリック可能な平面図を挿入できます。オペレーターは平面図の一部をクリックするだけで、すぐにビューを切り替えて建物の該当部分のビデオを表示できます。</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />要件</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <ul>
+              <li>お使いの<span class="mc-variable flvar-brand-company.XP variable">XProtect</span>VMSシステムが<span class="mc-variable flvar-product.SC variable">Smart Client</span>プロファイルに対応している場合、<span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>において、必要な<span class="mc-variable flvar-product.SC variable">Smart Client</span>プロファイルでHTMLスクリプトを有効にする必要があります。</li>
+              <li>お使いの<span class="mc-variable flvar-brand-company.XP variable">XProtect</span>VMSシステムが<span class="mc-variable flvar-product.SC variable">Smart Client</span>プロファイルに対応していない場合、<span class="uitext">Client.exe.config</span>ファイルでHTMLスクリプトを有効にする必要があります。</li>
+            </ul>
+          </div>
+        </div>
+        <p>
+          <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>ナビゲーションにおけるHTMLページの例を以下に示します：</p>
+        <ul>
+          <li> ボタン付きの簡易HTMLページ</li>
+          <li>クリック可能なイメージマップが付いた詳細HTMLページ</li>
+          <li>HTMLページの作成と<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>オペレータへの配布を伴うタスクについて概説された、管理者用のチェックリスト</li>
+        </ul>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />ボタンを使ったHTMLページのナビゲーション例</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>簡単な解決策として、ナビゲーションボタンのあるHTMLページを作成する方法があります。HTMLページでは、さまざまなボタンを作成できます。この例では、2種類のボタンを作成しています。</p>
+            <ul>
+              <li>
+              のビューを切り替えるボタン<span class="specialbold"><span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span></span><p>使用するHTML構文：</p><p class="codechunk">&lt;input type="button" value=" Buttontext" onclick="SCS. Views.SelectView('Viewstatus.Groupname. Viewname');"&gt;</p><p>ここで、<span class="uitext">Viewstatus</span>はビューが共有ビューか個人ビューかを示します（HTMLページを複数のユーザーへ配信する場合は、ビューが共有である<span class="specialbold">必要があります</span>）。</p><p>実際のボタンの例：</p><p class="codechunk">&lt;input type="button" value="Go to Shared Group1 View2" onclick="SCS. Views.SelectView('Shared.Group1. View2');"&gt;</p><p>このボタンを使って、ユーザーは<span class="uitext">Group1</span>という名前の共有グループにある<span class="uitext">View2</span>というビューへ移動することができます。</p><p><span class="specialbold">タブ切り替えボタン</span>：<span class="uitext">ライブ</span>および<span class="uitext">再生</span>。設定ユーザー権限によっては、タブすべてにアクセスできない場合があることに注意してください。</p><p>使用するHTML構文：</p><p><span class="uitext">ライブタブ</span>：<code class="codesnippet">&lt;input type="button" value="Buttontext" onclick="SCS. Application.ShowLive();"&gt;</code></p><p><span class="uitext">再生タブ</span>: <span class="codesnippet">&lt;input type="button" value="Buttontext" onclick="SCS. Application.ShowBrowse();"&gt;</span></p></li>
+            </ul>
+            <p class="tip">上級ユーザーの場合、<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>で提供されているおよそ100種類の関数呼び出しを使って、他にも多くの種類のボタンを作成できます。</p>
+            <p>ここでは、<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>で2つの共有グループを作成します。この2つのグループを<span class="uitext">Group1</span>と<span class="uitext">Group2</span>とします。各グループには、<span class="uitext">View1</span>と<span class="uitext">View2</span>という2つのビューがあります。</p>
+            <p>4つの異なるビューの間、<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>の<span class="uitext">ライブ</span>タブと<span class="uitext">再生</span>タブの2つのタブ間で切り替えられるボタンが付いたHTMLページも作成しました。ブラウザで開くと、作成したHTMLページは次のようになります：</p>
+            <p>
+              <img src="../../../../Images/use_an_html_page_for_navigation.png" alt="" />
+            </p>
+            <p>ビューとタブの間を移動するためのボタンが付いたHTMLページ</p>
+            <p>HTMLページをローカル（ここではユーザーのC:ドライブ）に保存します。HTMLページを使ってナビゲートする場合、互換性モードで開けるようにするにはHTMLページをローカルに保存する必要があります。「<a href="sc_configuringviews.htm#Web" class="MCXref xref">Webページのプロパティ</a>」も参照してください。</p>
+            <p>HTMLページをローカルに保存する場合、一意のパスを定義できる場所へ保存します。例えば、ユーザーのC:ドライブ内のフォルダー（例： C:\ myfolder\file.htm)などです。ユーザーのデスクトップや<span class="uitext">マイドキュメント</span>フォルダーにHTMLページを保存すると、Windowsがその場所へのパスを構築する方法が原因で正しく動作しない場合があります。</p>
+            <p>次に、必要な<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>ビューへHTMLページをインポートします。</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />画像マップ付きのHTMLページのナビゲーション例</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>ビューを切り替えるためのイメージマップなど、より高度なコンテンツを含むHTMLページを作成することもできます。</p>
+            <p>次の例では、前述の例で使用した2つのグループと2つのビューを使用します。ボタンを使用する代わりに、平面図の画像のあるHTMLページを作成し、その平面図に基づいてイメージマップを作成します。ブラウザで開くと、作成したHTMLページは次のようになります。</p>
+            <p>
+              <img src="../../../../Images/use_an_html_page_for_navigation_2.png" alt="" />
+            </p>
+            <p>ビューをナビゲートするためのイメージマップを含むHTMLページ</p>
+            <p>この例では、平面図を4つに色分けし、それぞれのゾーンにイメージマップエリアを定義しています。ゾーンをクリックするだけで、そのゾーンのカメラが表示されたビューへ移動することができます。</p>
+            <p>たとえば、このイメージマップの赤いゾーンは、前述の例の<span class="uitext">共有Group2のView2へ移動</span>ボタンに該当します。赤いゾーンをクリックすると、<span class="uitext">Group2</span>の<span class="uitext">View2</span>へ移動します。</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />HTMLページのインポート</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>ナビゲーションHTMLページをビューにインポートする操作は、基本的には他のタイプのHTMLページを<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>のビューにインポートする操作と変わりません。 <a href="sc_configuringviews.htm#Add" class="MCXref xref">HTMLページをビューに追加</a>を参照してください。 </p>
+            <div class="note">
+              <ul>
+                <li>HTMLページは、オペレータのコンピュータにローカルで保存する必要があります</li>
+                <li>ナビゲーションが正常に機能するよう、HTMLページを複数のビューにインポートするようお勧めします</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />システム管理者のためのチェックリスト</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>ナビゲーションHTMLページを作成して<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>オペレータに配布するには、以下の手順に従います：</p>
+            <ol>
+              <li value="1">
+              必要なHTMLページを<span class="specialbold">作成</span>します。HTMLページに含まれているナビゲーションコントロールは、<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>でユーザーに表示されるビューと一致している必要があります。たとえば、<span class="uitext">View1</span>へ移動するボタンを動作させるには、<span class="uitext">View1</span>という名前のビューがユーザーの<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>インストールに含まれていなくてはなりません。HTMLページをユーザーのグループへ送信する場合は、HTMLページで使用するビューがシェアードグループになければなりません。</li>
+              <li value="2">
+              HTMLページを使用するコンピュータに、HTMLページをローカルに<span class="specialbold">保存</span>します。HTMLページをローカルに保存する場合、一意のパスを定義できる場所へ保存します。例えば、ユーザーのC:ドライブ内のフォルダー（例： C:\ myfolder\file.htm)などです。ユーザーのデスクトップや<span class="uitext">マイドキュメント</span>フォルダーにHTMLページを保存すると、Windowsがその場所へのパスを構築する方法が原因で、正しく動作しない場合があります。</li>
+              <li value="3">
+                <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>内の該当するビューにHTMLページを<span class="specialbold">インポート</span>します。 <a href="sc_configuringviews.htm#Add" class="MCXref xref">HTMLページをビューに追加</a>を参照してください。 </li>
+              <li value="4">
+              インポートされたHTMLページのナビゲーションコントロールが正しく動作するかどうか<span class="specialbold">テスト</span>します。</li>
+            </ol>
+            <p class="note">トラブルシューティングの詳細については、<a href="../sf_troubleshooting/sc_troubleshootinghtmlpages.htm" class="MCXref xref">Webページ (トラブルシューティング)</a>を参照してください。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">概念情報</p>
+        <p class="containerItem_container_0">
+          <a href="../sf_operation/sc_loggingin_366_.htm">ログイン</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

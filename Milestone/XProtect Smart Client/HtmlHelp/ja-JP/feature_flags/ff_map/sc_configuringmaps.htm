@@ -1,0 +1,876 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="ja-JP" xml:lang="ja-JP" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="設定" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Configure smart map in XProtect Smart Client to get a geographical overview of your cameras, devices, and plug-in elements - in a one world experience." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=Recording Server" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=管理者" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=インテグレーター" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=オペレータ" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>スマートマップ（設定）</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#feature_flags/ff_map/sc_configuringmaps.htm">ナビ付きでトピックを開く</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="パンくず" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>スマートマップ（設定）</h1>
+      <p>スマートマップ機能を利用する前に、<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>で特定の設定作業を行う必要があります。 </p>
+      <p>スマートマップは、ビューに追加されている場合にのみ表示できます。<a href="#SC_AddSmartMapToView.htm" class="MCXref xref">スマートマップをビューに追加</a>も参照してください。 </p>
+      <p class="note">詳細については、「<a href="sc_workingwithmap.htm#SC_SmartMapExplained.htm" class="MCXref xref">スマートマップ（説明付き）</a>」を参照してください。</p>
+      <div>
+        <h2>マップとスマートマップの違い（説明付き）<a name="SC_DifferencesBetweenMap.htm"></a></h2>
+        <p>
+          <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>では、監視システムを視覚化し、インシデントに迅速に対応する上で役立つマップ機能を提供します。</p>
+        <ul>
+          <li>
+            <span class="uitext">マップ</span> - このマップは、地理的参照を含まない静止画像に基づいています。カメラ、マイク、録画サーバーなどのデバイスを追加できます。マップから監視システムを直接操作できるアラーム、イベント、およびアクセスコントロールなどの機能も追加できます。デバイスおよび機能の要素をマップ上に手動で配置する必要があります。詳細については、「<a href="../../standard_features/sf_sc/sf_operation/sc_workingwithmaps.htm#SC_IntroductionToMaps(796).htm" class="MCXref xref">マップ（説明付き）</a>」を参照してください。</li>
+          <li>
+            <span class="uitext">スマートマップ</span> - このタイプのマップでは地理情報システムを使用して、実世界の地理を正確に反映します。これにより、複数の場所にあるカメラのより正確な概要を把握することができます。以下も可能です:<ul><li>Bing MapsおよびGoogle Mapsサービスを使用する</li><li data-mc-conditions="flcts-features.oem-map-service-content">地理的背景として<span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>を使用する</li><li>地理的背景としてOpenStreetMapマッププロジェクトを使用する</li><li>コンピュータ支援設計（CAD）図面やシェープファイル、画像をオーバーレイとして追加する</li></ul><p> 詳細については<a href="sc_workingwithmap.htm#SC_SmartMapExplained.htm" class="MCXref xref">スマートマップ（説明付き）</a></p></li>
+        </ul>
+        <p class="note">マップ機能とスマートマップ機能は互いに代替可能ではありません。マップを使用している場合は、スマートマップなどの画像ファイルを使用できますが、再度デバイスを追加する必要があります。デバイスを含むマップはスマートマップに転送できません。ただし、スマートマップをマップにリンクすることはできます。詳細については、「<a href="#SC_AddingDeletingOrEditi_2.htm" class="MCXref xref">スマートマップ上のリンクの追加、削除および編集</a>」を参照してください。</p>
+      </div>
+      <div>
+        <h2>スマートマップをビューに追加<a name="SC_AddSmartMapToView.htm"></a></h2>
+        <p>
+          <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">スマートマップ<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>地理的情報システムを使用して、地理的に正確かつ実世界のイメージで、監視システムのデバイス（カメラ、マイクなど）、構造、およびトポグラフィカル要素を視覚化する地図機能。この機能の要素を使用するマップは、スマートマップと呼ばれます。</span></a>の使用を開始するには、ビューにスマートマップを追加します。デフォルトではベーシックな世界地図が表示されます。スマートマップを追加した後、地理的な背景を変更できます。</p>
+        <p>手順：</p>
+        <ol>
+          <li value="1">
+            <span class="uitext">ライブ</span>または<span class="uitext">再生</span>タブで、スマートマップに追加したいビューを選択します。</li>
+          <li value="2">
+            <span class="uitext">セットアップ</span>をクリックしてセットアップモードに移ります。 </li>
+          <li value="3">
+            <span class="uitext">システム概要</span>ペインを展開してから、<span class="uitext">スマートマップ</span>アイテムをビュー内で適切な位置にドラッグします。</li>
+          <li value="4">
+            <span class="uitext">セットアップ</span>を再度クリックし、セットアップモードを解除します。 変更が保存されました。</li>
+          <li value="5">これで地理的背景を変更できます。</li>
+        </ol>
+      </div>
+      <div>
+        <h2>スマートマップの地理的背景を変更する<a name="SC_ChangeTheGeographicBa.htm"></a></h2>
+        <p>デフォルトで、スマートマップをビューに追加すると、基本的な世界地図が表示されます。スマートマップをビューに追加すると、さまざまな地理的背景を選択できるようになります。スマートマップを使用している各ユーザーは、次回そのビューを開くと新しい背景が表示されます。</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />要件</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Bing MapsとGoogle Mapsの地理的背景は、システム管理者が<span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>でその設定を行った場合にのみ使用できます。</p>
+          </div>
+        </div>
+        <p>手順：</p>
+        <ol>
+          <li value="1">スマートマップが含まれるビューを選択します。</li>
+          <li value="2">ツールバーで、<img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">[レイヤーやカスタムオーバーレイを表示または非表示]</span>をクリックします。</li>
+          <li value="3">
+            <span class="uitext">地理的背景</span>で、背景と表示したい詳細情報を選択します。例えば、地形に関する情報を閲覧したい場合は、<span class="uitext">地形</span>を選択します。道路を見たいときは、<span class="uitext">道路</span>を選択します。</li>
+        </ol>
+      </div>
+      <div>
+        <h2>地理的背景（説明付き）<a name="SC_GeographicBackgrounds.htm"></a></h2>
+        <p>
+          <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">スマートマップ<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>地理的情報システムを使用して、地理的に正確かつ実世界のイメージで、監視システムのデバイス（カメラ、マイクなど）、構造、およびトポグラフィカル要素を視覚化する地図機能。この機能の要素を使用するマップは、スマートマップと呼ばれます。</span></a>の地理的背景として以下のサービスを利用できます。</p>
+        <ul>
+          <li>Bing Maps</li>
+          <li>Google Maps</li>
+          <li data-mc-conditions="flcts-features.oem-map-service-content">
+            <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+          </li>
+          <li> OpenStreetMap </li>
+        </ul>
+        <p>地理的背景を選択後、デバイス（カメラなど）とカスタムオーバーレイ（シェープファイルなど）を追加します。詳細については、「<a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">カスタムオーバーレイ（説明付き）</a>」を参照してください。</p>
+      </div>
+      <div data-mc-conditions="">
+        <h2>地理的背景の種類（説明付き）<a name="SC_TypesOfGeographicBack.htm"></a></h2>
+        <p>ビューに<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">スマートマップ<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>地理的情報システムを使用して、地理的に正確かつ実世界のイメージで、監視システムのデバイス（カメラ、マイクなど）、構造、およびトポグラフィカル要素を視覚化する地図機能。この機能の要素を使用するマップは、スマートマップと呼ばれます。</span></a>を追加すると、以下の地理的背景のいずれかを選ぶことができます。</p>
+        <ul>
+          <li>
+            <span class="uitext">基本的な世界地図</span> - <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>で提供される標準的な地理的背景を使用します。このマップは一般的な基準として使用することを意図しており、国境や都市、その他の詳細などの機能は含まれていません。ただし、他の地理的背景と同様、地理参照データは含まれています。</li>
+          <li>
+            <span class="uitext">Bing Maps</span> - Bing Mapsに接続します。</li>
+          <li>
+            <span class="uitext">Google Maps</span> - Google Mapsに接続します。<p class="note">Bing MapsとGoogle Mapsオプションでは、インターネットへのアクセスが必要です。MicrosoftまたはGoogleからキーを購入してください。</p></li>
+          <div data-mc-conditions="flcts-features.oem-map-service-content">
+            <li>
+              <span class="uitext">
+                <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+              </span> - 無料のマッププロバイダーに接続します。<span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>を有効にすると、さらなるセットアップは不要です。</li>
+            <p>
+              <a href="#Enable">Milestone Map Serviceを有効化</a>を参照</p>
+          </div>
+          <div>
+            <li>
+              <p>
+                <span class="uitext">OpenStreetMap</span> - 以下に接続します：</p>
+              <ul>
+                <li>選択したコマーシャルタイルサーバー</li>
+                <li>
+                  <p>自身、オンライン、またはローカルタイルサーバー</p>
+                </li>
+              </ul>
+              <p>
+                <a href="#SC_ChangeOpenstreetmapTi.htm">OpenStreetMapタイルサーバーを変更する</a>を参照</p>
+            </li>
+          </div>
+          <li>
+            <span class="uitext">なし</span> - このオプションを使うと、地理的背景が非表示になります。地理的な参照データは残る点に留意してください。<a href="#SC_LayersOnSmartMapExpla.htm" class="MCXref xref">スマートマップのレイヤー（説明付き）</a></li>
+        </ul>
+        <p>デフォルトで、Bing MapsとGoogle Mapsにはサテライト画像が表示されます。画像は、航空画像や地形表示などに変更して、他の情報を表示することもできます。</p>
+      </div>
+      <div data-mc-conditions="flcts-features.oem-map-service-content">
+        <h2>
+          <a name="Enable"></a>を有効化<span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span></h2>
+        <p>
+          <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>は、<span class="mc-variable flvar-brand-company.CompanyLong variable">Milestone Systems</span>のタイルサーバーに接続できるオンラインサービスです。このタイルサーバーは無料の市販マップサービスを使用しています。</p>
+        <p>スマートマップで<span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>を有効にすると、スマートマップは地理的な背景として<span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>を使用します。</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />要件</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>フィールドがグレーで表示されている場合、このサービスを有効/無効に設定するために必要なユーザー権限が付与されていません。この機能を<span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>で有効にしたい場合は、システム管理者に連絡してください。</p>
+            <p class="important">
+              <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>ではインターネットへのアクセスが必要です。</p>
+          </div>
+        </div>
+        <p>手順：</p>
+        <ol>
+          <li value="1">
+            <p>右上に表示される<img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" />をクリックした後、<img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">設定</span>をクリックして<span class="uitext">設定</span>ウィンドウを開きます。</p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_configuringmaps_mmapserv.png" data-mc-popup-alt="Enable Milestone Map Service.">
+                <img class="MCPopupThumbnail img" data-mc-width="786" data-mc-height="593" src="../../../Images/sc_configuringmaps_mmapserv_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Enable Milestone Map Service." tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="2">左側のセクションで<span class="uitext">スマートマップ</span>をクリックします。</li>
+          <li value="3">
+            <span class="uitext mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>フィールドで、<span class="uitext">利用可能</span>を選択します。</li>
+          <li value="4">
+            <span class="uitext">[閉じる]</span>をクリックします。次回スマートマップを読み込むと、地理的背景として<span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>が使用されます。</li>
+        </ol>
+      </div>
+      <div>
+        <h2>OpenStreetMapタイルサーバー（説明付き）<a name="SC_ChangingOpenstreetmap.htm"></a></h2>
+        <p>スマートマップの地理的背景としてOpenStreetMapを使用する場合は、タイルサーバーを指定する必要があります。所属組織に空港や港といった地域の独自の地図がある場合などはローカルタイルサーバーを指定できます。また、コマーシャルタイルサーバーを使用することも可能です。</p>
+        <p class="note">ローカルタイルサーバーを使用する場合、インターネットアクセスは不要です。</p>
+        <p>タイルサーバーのアドレスは以下の２つの方法で指定できます。</p>
+        <ul>
+          <li>
+            <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>では、タイルサーバーのアドレスを<span class="mc-variable flvar-product.SC variable">Smart Client</span>プロファイルで設定します。このサーバーアドレスは、<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>プロファイルに割り当てられている全<span class="mc-variable flvar-product.SC variable">Smart Client</span>ユーザーに適用されます</li>
+          <li>
+            <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>では、タイルサーバーのアドレスを<span class="uitext">設定</span>ダイアログで設定します。サーバーアドレスは、そのインストールにのみ適用されます。</li>
+        </ul>
+        <div>
+          <h2>OpenStreetMapタイルサーバーの変更<a name="SC_ChangeOpenstreetmapTi.htm"></a></h2>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />要件</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>サーバー側の指定タイルサーバーに編集ロックがかかっている場合、このフィールドはグレー表示となり、サーバーアドレスの変更は不可能になります。この機能を<span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>で有効にできるよう、システム管理者にサポートを要求してください。</p>
+            </div>
+          </div>
+          <p>手順：</p>
+          <ol>
+            <li value="1">
+              <p>右上に表示される<img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" />をクリックした後、<img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">設定</span>をクリックして<span class="uitext">設定</span>ウィンドウを開きます。</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_mapsettings.png" data-mc-popup-alt="Specify alternative tile server for the smart map.">
+                  <img class="MCPopupThumbnail img" data-mc-width="786" data-mc-height="593" src="../../../Images/sc_mapsettings_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Specify alternative tile server for the smart map." tabindex="" />
+                </a>
+                <br />
+              </p>
+            </li>
+            <li value="2">左側のセクションで<span class="uitext">スマートマップ</span>をクリックします。</li>
+            <li value="3">
+              <span class="uitext">OpenStreetMapサーバー</span>フィールドで以下のいずれかを実行します。<ul><li>サーバーのアドレスを入力します。フィールドがグレー表示になっている場合は、サーバー側でロックされています</li><li>サーバー側の指定サーバーを使用するには、<span class="uitext">サーバーに従う</span>チェックボックスを選択します</li></ul></li>
+            <li value="4">
+              <span class="uitext">[閉じる]</span>をクリックします。次回スマートマップを読み込むと、指定したOpenStreetMapサーバーが使用されます。</li>
+          </ol>
+          <p class="important">サーバーアドレスが指定されていない場合や、サーバーアドレスが無効な場合は、OpenStreetMapを地理的背景として使用することはできません。</p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>スマートマップでレイヤーを表示または非表示する<a name="SC_ShowingOrHidingLayers.htm"></a></h2>
+        <p>見たいものに応じて、スマートマップ上のレイヤーをオン/オフにできます。</p>
+        <div>
+          <h3>スマートマップのレイヤー（説明付き）<a name="SC_LayersOnSmartMapExpla.htm"></a></h3>
+          <p>
+            <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">スマートマップ<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>地理的情報システムを使用して、地理的に正確かつ実世界のイメージで、監視システムのデバイス（カメラ、マイクなど）、構造、およびトポグラフィカル要素を視覚化する地図機能。この機能の要素を使用するマップは、スマートマップと呼ばれます。</span></a>が表示する情報にフィルターをかける際は、レイヤーを利用します。スマートマップには３種類のレイヤーがあります。</p>
+          <ul>
+            <li>
+              <span class="uitext">システムエレメント</span> - カメラ、リンク、場所が含まれます。</li>
+            <li>
+              <span class="uitext">カスタムオーバーレイ</span> - ビットマップ画像、CAD図面、およびシェープファイル。</li>
+            <li>
+              <span class="uitext">地理的背景</span> - 基本的な世界地図または以下のサービスのいずれか：<ul><li>Bing Maps</li><li>Google Maps</li><li data-mc-conditions="flcts-features.oem-map-service-content"><span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span></li><li> OpenStreetMap </li></ul></li>
+          </ul>
+          <p class="note">Bing MapsとGoogle Mapsは、システム管理者が<span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>でこれを有効にしている場合に限り、地理的背景として使用できます。 詳細については、「<a href="#SC_GeographicBackgrounds.htm" class="MCXref xref">地理的背景（説明付き）</a>」を参照してください。</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>レイヤーの順番（説明付き）<a name="SC_OrderOfLayersExplaine.htm"></a></h3>
+          <p>同じ種類のシステムエレメントは全て、同一<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term26">レイヤー<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>スマートマップ上の地理的背景、カスタムオーバーレイ、あるいはカメラなどのシステム要素。レイヤーは、スマートマップ上に存在するすべての地理的要素です。</span></a>にあります。例えば、カメラは全て、同じレイヤーにあります。カメラレイヤーを非表示すると、すべてのカメラが非表示になります。上から順に、システムエレメントのレイヤーは、次の順に配列されています：ロケーション、カメラ、リンク、地理的背景。この順番を変更することはできません。</p>
+          <p>地理的背景は、スマートマップ中で常に最下のレイヤーに位置しています。異なる地理的背景同士を切り替えることはできますが、一度に1つの背景地図しか選択することはできません。</p>
+          <p>カスタムオーバーレイは、個別のレイヤーとして追加され、スマートマップに追加された順にスタックされます。地図のデフォルト設定を構成して順番を変更してください。</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />例</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>都市計画では、各市境を示すシェープファイルと市内の全ての主要道路を含むシェープファイルがあります。この計画では、レイヤーの順番を整理することにより、道路が市境の上に表示されるようにすることができます。こうすることにより、市内のどこにカメラがあるかを把握することができ、また、ズームインして特定のカメラが配置されている道の名前を閲覧することができます。</p>
+            </div>
+          </div>
+        </div>
+        <div data-mc-conditions="">
+          <h3>スマートマップ上のレイヤーを表示または非表示にする<a name="SC_ShowOrHideLayersOnSma.htm"></a></h3>
+          <p>背景地図を含め、スマートマップ上のレイヤーを表示または非表示にすることができます。これは例えば、特定のエレメントに集中したいときや、スマートマップが表示するコンテンツを簡略化したいときに便利です。</p>
+          <p>手順：</p>
+          <ol>
+            <li value="1">ツールバーで、<img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">レイヤーやカスタムオーバーレイを表示または非表示にする</span>をクリックします。</li>
+            <li value="2">システムエレメントとカスタムオーバーレイを表示または非表示にするには、チェックボックスを選択または選択解除します。</li>
+            <li value="3">地理的背景を非表示にする場合、<span class="uitext">なし</span>を選択します。</li>
+          </ol>
+          <p class="note">
+            <span class="uitext">なし</span>を選択すると、地理的背景が非表示になりますが、地理参照は引き続きスマートマップに適用されます。たとえば、空間参照が含まれる新しいシェープファイルを追加した場合でも、その空間参照を用いてファイルがマップ上に配置されます。</p>
+          <p class="note">マイクを非表示にすると、再びマイクを表示するまで、現在ミュート解除されているマイクがミュートになります。</p>
+        </div>
+        <div>
+          <h3>スマートマップのデフォルト設定を指定<a name="SC_ManageDefaultSettings(65803).htm"></a></h3>
+          <p>ビューにスマートマップを追加して、オーバーレイ、カメラ、リンクが追加された後、カスタムオーバーレイのデフォルト設定を指定できます。クリーンアップするためにカスタムオーバーレイを削除することもできます。</p>
+          <p>手順：</p>
+          <ol>
+            <li value="1">
+              <span class="uitext">セットアップ</span>をクリックします。</li>
+            <li value="2">
+              <img src="../../../Images/manage_default_settings_for.png" alt="" />
+              <span class="uitext">デフォルト設定の管理</span>をクリックします。</li>
+            <li value="3">以下のいずれかを行ってください：<ul><li>オーバーレイを表示または非表示にするには、チェックボックスを選択または選択解除します</li><li>並べ替えを行うには、オーバーレイ前部のドラッグハンドルを使い、オーバーレイをリスト内の新しい位置にドラッグします。レイヤーはリスト内で上から順に並べられます。</li><li>オーバーレイを削除するには、ポインターをカスタムオーバーレイ上に移動し、<span class="uitext">削除</span>をクリックします。</li></ul></li>
+            <li value="4">
+              <span class="uitext">保存</span>をクリックします。</li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>カスタムオーバーレイの追加、削除および編集<a name="SC_AddingDeletingOrEditi.htm"></a></h2>
+        <div>
+          <h3>カスタムオーバーレイ（説明付き）<a name="SC_CustomOverlaysExplain.htm"></a></h3>
+          <p>
+            <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>ではスマートマップ上のカスタムオーバーレイとして、次の種類のファイルを追加することができます。</p>
+          <ul>
+            <li>
+              <span class="uitext">シェープファイル</span> - 点、線、多角形などの地理空間ベクトルデータ、および壁、道路などマップ上のオブジェクトを表す属性、または川や湖などの地理的特徴を含むことができます。例えば、ズームイン時とズームアウト時に拡大縮小がしやすく、CAD図面またはビットマップ画像よりもファイルのサイズが小さいので、都市計画事務所や管理事務所などは、よくシェープファイルを利用します。</li>
+            <li>
+              <span class="uitext">CAD</span> - コンピュータ支援設計（CAD）図面は、シェープファイルのように、座標系や空間参照を使って正確な地理コンテキストを提供することができるので、スマートマップのオーバーレイとして便利です。例えば、あるロケーションの詳細な航空地図または道路地図を使うことができます。</li>
+            <li>
+              <span class="uitext">画像</span> - 建物の平面図などの画像ファイルがある場合、スマートマップ上のオーバーレイとして追加することができます。次のタイプの画像ファイルを使用できます。PNG、BMP、GIF、JPG、JPEG、PHG、TIF、TIFF</li>
+          </ul>
+          <p class="note">カスタムオーバーレイを見やすくするために、他のタイプのレイヤーを一時的に非表示にすることができます。<a href="#SC_LayersOnSmartMapExpla.htm" class="MCXref xref">スマートマップのレイヤー（説明付き）</a>を参照してください。</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>カスタムオーバーレイおよび場所<a name="SC_CustomOverlaysAndLoca.htm"></a></h3>
+          <p>
+            <a href="sc_workingwithmap.htm#SC_FindLocationOfCustomO.htm" class="MCXref xref">スマートマップ上でカスタムオーバーレイにジャンプする</a>で説明されているように、スマートマップにすでに追加したカスタムオーバーレイへすばやくジャンプできます。ただし、カスタムオーバーレイと場所の接続は、設定で確立できます。つまり新しいカスタムオーバーレイを追加した場合はいつでも、<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>はマップ上の全く同様のスポットにあるオーバーレイと同じ名前の場所を作成します。カスタムオーバーレイの場所は、これで<span class="uitext">場所を選択する</span>リストで使用可能になります。</p>
+          <p>
+            <img src="../../../Images/custom_overlays_and_locations.jpg" alt="" />
+          </p>
+          <p>オーバーレイと場所は、リンクしていません。例えば、オーバーレイを変更せずに、ロケーションの名前を変更したり削除したりすることができ、またその逆もできます。</p>
+          <p class="note">この機能を有効にするには、<a href="#SC_AddLocationsToCustomO.htm" class="MCXref xref">カスタムオーバーレイへ場所を追加する（スマートマップ）</a>を参照してください。</p>
+        </div>
+        <div>
+          <h3>スマートマップでカスタムオーバーレイを追加する<a name="SC_AddCustomOverlayOnSma.htm"></a></h3>
+          <p>カスタムオーバーレイを追加することにより、スマートマップの詳細レベルを上げます。<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term8">カスタムオーバーレイ<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>建物内の平面図を解説したり、地区の間に境界線をマークするなど、ユーザーがスマートマップに追加できるユーザー定義の地理的要素。カスタムオーバーレイは画像、CADドローイング、あるいはシェープファイルの可能性があります。</span></a>を追加すると、<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>は、そのオーバーレイと同じ名前のロケーションを作成します。</p>
+          <p>手順：</p>
+          <ol>
+            <li value="1">スマートマップを含むビューを選択し、<span class="uitext">セットアップ</span>をクリックします。</li>
+            <li value="2">
+              <img src="../../../Images/add_custom_overlay_on_1.png" alt="" />
+              <span class="uitext">カスタムオーバーレイを追加</span>をクリックします。<ul><li>追加するオーバーレイが地理参照されている場合、スマートマップの任意のロケーションをクリックします。<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>は、地理参照情報を使って、オーバーレイを正しい地理的位置に配置します。さらに、スマートマップは、デフォルトのズームレベルでオーバーレイを中心に位置させます。</li><li>追加するオーバーレイが地理参照されていない場合、地図上の要素を追加したい位置に移動し、スマートマップ上の点をクリックします。</li><p class="tip">オーバーレイを追加する前に、地図上の希望するロケーションにズームインしておくことをお勧めします。そうすることにより、オーバーレイを正確に位置させやすくなります。</p></ul></li>
+            <li value="3">オーバーレイの名前を入力します。</li>
+            <li value="4">選択したファイルの種類に応じて：<ul><li><span class="uitext">画像</span> - 画像ファイルを選択し、 <span class="uitext">OK</span>をクリックします。</li><li><span class="uitext">シェープファイル</span> - SHPファイルを選択します。PRJファイルがある場合には、<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>が画像ファイルを見つけるため、<span class="uitext">[OK]</span>をクリックするだけで済みます。PRJがない場合、追加後に、マニュアルでオーバーレイの位置を変更することができます。また、色を適用することもできます。例えば、色を追加することにより、スマートマップ上のシェープファイルをより目立たせることができます。</li><li><span class="uitext">CAD</span> - DWGファイルを選択します。PRJがある場合、<span class="uitext">OK</span>をクリックします。PRJファイルがない場合で、地理参照を使ってスマートマップ上にファイルを位置させたい場合、空間参照系識別子（SRID）を入力し、<span class="uitext">OK</span>をクリックします。PRJファイルまたはSRIDがない場合、追加後に、マニュアルでオーバーレイの位置を変更することができます。</li><p class="note">オーバーレイのタイプの詳細については、<a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">カスタムオーバーレイ（説明付き）</a>を参照してください。</p></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>カスタムオーバーレイへ場所を追加する（スマートマップ）<a name="SC_AddLocationsToCustomO.htm"></a></h3>
+          <p>場所が自動的にお使いのスマートマップの<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term8">カスタムオーバーレイ<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>建物内の平面図を解説したり、地区の間に境界線をマークするなど、ユーザーがスマートマップに追加できるユーザー定義の地理的要素。カスタムオーバーレイは画像、CADドローイング、あるいはシェープファイルの可能性があります。</span></a>に追加されるよう<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>を構成できます。 これにより、<span class="uitext">場所の選択</span>リストからカスタムオーバーレイに移動できるようになります。 </p>
+          <p>手順：</p>
+          <ol>
+            <li value="1">アプリケーションツールバーで<img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" />をクリックして、<span class="uitext">設定</span>ウィンドウを開くために<img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">設定</span>をクリックします。</li>
+            <li value="2">
+              <span class="uitext">スマートマップ</span>タブへ移動します。</li>
+            <li value="3">
+              <span class="uitext">カスタムオーバーレイ追加時に場所を作成する</span>リストで、<span class="uitext">はい</span>を選択します。</li>
+            <li value="4">ダイアログを閉じると変更が保存されます。</li>
+          </ol>
+          <p class="note">詳細については、「<a href="#SC_CustomOverlaysAndLoca.htm" class="MCXref xref">カスタムオーバーレイおよび場所</a>」を参照してください。</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>スマートマップ上でのカスタムオーバーレイの削除<a name="SC_DeleteCustomOverlayOn.htm"></a></h3>
+          <ol>
+            <li value="1">スマートマップを含むビューを選択し、<span class="uitext">セットアップ</span>をクリックします。</li>
+            <li value="2">ツールバーで、<img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">デフォルト設定の管理</span>をクリックします。</li>
+            <li value="3">ポインターをカスタムオーバーレイ上に移動し、<span class="uitext">削除</span>をクリックします。</li>
+            <li value="4">
+              <span class="uitext">保存</span>をクリックすると、カスタムオーバーレイが削除されます。</li>
+            <li value="5">オプション：カスタムオーバーレイ用の場所が作成されていた場合、これも削除してください。詳細については、「<a href="#SC_AddingDeletingOrEditi_3.htm" class="MCXref xref">スマートマップ上の場所の追加、削除および編集</a>」を参照してください。</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>シェープファイルのエリアをより見やすくする（スマートマップ）<a name="SC_MakeAreasInShapefiles.htm"></a></h3>
+          <p class="note">このトピックは多角形とシェープファイルを使用する場合のみ該当します。</p>
+          <p>スマートマップで近接した多角形から構成されるシェープファイルを使用したい場合は、お互いの多角形を個々に識別しなければならない場合があります。これをおこなうには、シェープファイルに対して選んだ色の不透明度を減少させます。多角形の枠線が目立つようになります。</p>
+          <p>手順：</p>
+          <ol>
+            <li value="1">
+              <a href="#SC_AddCustomOverlayOnSma.htm" class="MCXref xref">スマートマップでカスタムオーバーレイを追加する</a>で説明されている手順に従います。</li>
+            <li value="2">
+              <p>色を選択する際には、希望の透明度になるまで<span class="uitext">不透明度</span>スライダーを左にドラッグします。</p>
+              <p>
+                <img src="../../../Images/make_areas_in_shapefiles_more.jpg" alt="" />
+              </p>
+            </li>
+            <li value="3">
+              <span class="uitext">保存</span>をクリックします。</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>カスタムオーバーレイの位置、サイズ、または配置の調整をする<a name="SC_AdjustPositionSizeOrA.htm"></a></h3>
+          <p>オーバーレイは、地図上の別の位置に移動、拡大または縮小、回転させることができます。例えば、オーバーレイが地理参照されていない場合や、オーバーレイが地理参照されているのに何らかの理由で地理的背景ときれいに揃わない場合に便利です。</p>
+          <p>手順：</p>
+          <ol>
+            <li value="1">スマートマップを含むビューを選択し、<span class="uitext">セットアップ</span>をクリックします。</li>
+            <li value="2">オーバーレイを右クリックし、<span class="uitext">位置の編集</span>を選択します。</li>
+            <li value="3">オーバーレイをサイズ変更または回転するには：<ul><li>角にあるハンドルをクリックしてドラッグします。</li><li><p>オーバーレイを特定のポイント周辺で回転するには、ピボットポイントをマップの場所へ移動します。次にコーナーのハンドルをクリックしてドラッグします。</p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/adjust_position_size_or_alignment.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="273" data-mc-height="261" src="../../../Images/adjust_position_size_or_alignment_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="" tabindex="" /></a></p></li></ul></li>
+            <li value="4">マップ上のオーバーレイを移動させる場合、オーバーレイをクリックしてドラッグします。</li>
+            <li value="5">変更を保存するには、<span class="uitext">保存</span>をクリックします。</li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>スマートマップ上のデバイスの追加、削除、編集<a name="SC_AddingDeletingOrEditi_1.htm"></a></h2>
+        <p>実際の位置のスマートマップにデバイスを追加することができます。カメラを追加することにより、監視システムの概要をつかむことができ、異常事態への対応も早めることができます。例えば、発生中の事件について容疑者を追跡したい場合、地図上のカメラをクリックして映像を確認することができます。</p>
+        <p>スマートマップにカメラを追加した後は、カメラアイコンの視野を調整することにより、実際のカメラの視野を反映させることができます。こうすることにより、特定地域を監視しているカメラを探しやすくなります。更に、アイコンを選択して地図上のカメラを示すことにより、地図上のカメラの種類を特定しやすくなります。</p>
+        <p>スマートマップでは以下のタイプのデバイスを使用できます。</p>
+        <ul>
+          <li>カメラ</li>
+          <li>入力デバイス</li>
+          <li>マイク</li>
+        </ul>
+        <div data-mc-conditions="">
+          <h3>スマートマップにデバイスを追加する<a name="SC_AddCamerasToSmartMap.htm"></a></h3>
+          <p>
+            <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>でシステム管理者がデバイスの地理座標をで指定した場合、デバイスを追加すると、自動的にスマートマップ上に配置されます。そうならない場合は、自分でデバイスを正確な地理的位置に配置しなければなりません。</p>
+          <ol>
+            <li value="1">スマートマップを含むビューを選択し、<span class="uitext">セットアップ</span>をクリックします。</li>
+            <li value="2">個別のデバイスまたはデバイスのグループを追加するには：<p class="tip">デバイスを追加する前に、マップ上の場所にズームインしておくことをお勧めします。ズームインすることで、より簡単にデバイスを正確に配置できます。</p><ul><li><span class="uitext">システムの概要</span>ウィンドウを展開して個別のデバイスまたはデバイスのグループを探し、スマートマップ上の表示させたい点までドラッグします。後からデバイスをドラッグして位置を変更することができます。</li><li>スマートマップのツールバーで<img src="../../../Images/add-a-device-to-smart-map.png" alt="" /><span class="uitext">デバイスを追加</span>を選択してから、デバイスのタイプを選択します。<ul><li>例：カメラの場合は、<img src="../../../Images/add_cameras_to_map.png" alt="" /><span class="uitext">カメラを追加</span>を選択してからカメラを選択します。</li></ul></li><li>デバイスをスマートマップにドラッグする</li><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_adddevice.png" data-mc-popup-alt="Add a device to your smart map."><img class="MCPopupThumbnail img" data-mc-width="709" data-mc-height="823" src="../../../Images/sc_smap_adddevice_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add a device to your smart map." tabindex="" /></a><br /></ul></li>
+            <li value="3">変更を保存するには、<span class="uitext">セットアップ</span>をクリックしてセットアップモードを解除します。</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>カメラの視野および方向を変更する<a name="SC_ChangeFieldOfViewAndD.htm"></a></h3>
+          <p>カメラがスマートマップに追加されると、カメラアイコンを調節することで視野および方向を変更できます。</p>
+          <p class="tip">マップでズームアウトする場合視野が表示されるまでズームインしなければならない場合があります。</p>
+          <ol>
+            <li value="1">使用したいスマートマップが含まれているビューを選択します。</li>
+            <li value="2">カメラアイコンを編集するには、<span class="uitext">セットアップ</span>をクリックします。</li>
+            <li value="3">
+              <p>カメラアイコンをクリックします。</p>
+              <p>
+                <img src="../../../Images/change_field_of_view_and_direction.png" alt="" />
+              </p>
+            </li>
+            <li value="4">回転ハンドルを使って、カメラを正しい方向に向けます。</li>
+            <li value="5">視野の幅、長さ、角度を調整する場合、視野の先端にあるハンドルをクリック＆ドラッグします。</li>
+            <li value="6">変更を保存するには、<span class="uitext">セットアップ</span>をクリックしてセットアップモードを解除します。</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>デバイスアイコンを選択または変更する<a name="SC_SelectOrChangeTheIcon.htm"></a></h3>
+          <p>使用しているデバイスの種類に一致するデバイスアイコンを選択できます。</p>
+          <ol>
+            <li value="1">使用したいスマートマップが含まれているビューを選択します。</li>
+            <li value="2">
+              <p>
+                <span class="uitext">セットアップ</span>をクリックし、マップ上でデバイスアイコンをダブルクリックします。</p>
+              <p>
+                <img src="../../../Images/select_or_change_the_icon.png" alt="" />
+              </p>
+            </li>
+            <li value="3">
+              <span class="uitext">選択アイコン</span>をクリックし、デバイス用のアイコンを選択します。</li>
+            <li value="4">
+              <span class="uitext">セットアップ</span>を再度クリックして変更を保存します。</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>デバイス情報を表示または非表示にする<a name="SC_ShowOrHideInformation.htm"></a></h3>
+          <p>スマートマップ上ではデバイスに関する情報を表示または非表示にすることができます。これは、地図上のコンテンツを増やしたり減らしたりしたい場合などに便利です。</p>
+          <ol>
+            <li value="1">使用したいスマートマップが含まれているビューを選択します。</li>
+            <li value="2">
+              <img src="../../../Images/change_the_geographic_background.png" alt="" />
+              <span class="uitext">レイヤーとカスタムオーバーレイを表示または非表示にする</span>をクリックします。</li>
+            <li value="3">情報を表示または非表示するには、チェックボックスを選択または選択解除します。</li>
+          </ol>
+        </div>
+        <div>
+          <h3>スマートマップでマイクの音声を聞く</h3>
+          <p>スマートマップにマイクを追加すると、<span class="uitext">ライブ</span>タブで一度にひとつのマイクからの音声を聞くことができます。</p>
+          <p>手順：</p>
+          <ol>
+            <li value="1">
+              <p>
+                <span class="uitext">ライブ</span>タブで、マイクが配置されているスマートマップ上の場所までナビゲートします。</p>
+            </li>
+            <li value="2">
+              <p>マイクをダブルクリックすると、ミュートにしたりミュート解除したりできます。</p>
+              <p class="tip">もしくは、マイクを右クリックして、<span class="uitext">マイクのミュート</span>または<span class="uitext">マイクのミュート解除</span>を選択します。</p>
+            </li>
+          </ol>
+        </div>
+        <div>
+          <h3>スマートマップからデバイスを削除する<a name="SC_DeletingCamerasOnSmar.htm"></a></h3>
+          <p>不要なデバイス（物理的に除去されたデバイスや誤って追加されたデバイスなど）は削除できます。デバイスを削除すると、そのデバイスの位置情報（地理座標など）はVMSシステムから削除されます。</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />要件</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>以下のユーザー権限は<span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>で有効にする必要があります。</p>
+              <ul>
+                <li>スマートマップの編集</li>
+                <li>デバイスの編集</li>
+              </ul>
+            </div>
+          </div>
+          <p>手順：</p>
+          <ol>
+            <li value="1">削除したいデバイスまで移動します。</li>
+            <li value="2">
+              <span class="uitext">セットアップ</span>をクリックしてセットアップモードに移ります。 </li>
+            <li value="3">
+              <p>単一のデバイスを削除するには、そのデバイスを右クリックして<span class="uitext">削除</span>をクリックします。</p>
+              <p>例：カメラの場合は、<span class="uitext">カメラを削除</span>をクリックします。</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_removecamera.png" data-mc-popup-alt="Remove camera from your smart map.">
+                  <img class="MCPopupThumbnail img" data-mc-width="284" data-mc-height="209" src="../../../Images/sc_smap_removecamera_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: 0;" alt="Remove camera from your smart map." tabindex="" />
+                </a>
+              </p>
+            </li>
+            <li value="4">複数のカメラを削除するには：<ol><li value="1"><p>スマートマップのツールバーで、<img src="../../../Images/preview_videos_from_several.png" alt="" />[<span class="uitext">複数のカメラを選択</span>] をクリックします。</p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_cluster_multiselect.png" data-mc-popup-alt="Select multipe cameras on your smart map."><img class="MCPopupThumbnail img" data-mc-width="1056" data-mc-height="672" src="../../../Images/sc_smap_cluster_multiselect_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: 0;" alt="Select multipe cameras on your smart map." tabindex="" /></a><br /></p></li><li value="2">クリックしてドラッグし、複数のカメラを選択します。他のタイプのデバイス（入力デバイスなど）は選択肢に含まれていません。</li><li value="3">右クリックして<span class="uitext">カメラを削除</span>を選択します。</li></ol></li>
+            <li value="5">カメラではない複数のデバイスを削除するには：<ol><li value="1">スマートマップ上で、Ctrlを長押しします。 </li><li value="2">Ctrlを押している間に、削除したいデバイスをクリックします。</li><li value="3">選択したデバイスのひとつを右クリックし、［削除］を選択します。</li></ol></li>
+            <li value="6">
+              <span class="uitext">セットアップ</span>を再度クリックし、セットアップモードを解除します。 変更が保存されました。</li>
+          </ol>
+          <p class="tip">単一のデバイスを選択し、キーボードの<span class="uitext">DELETE</span>を押して単一のデバイスを削除することもできます。</p>
+        </div>
+      </div>
+      <div>
+        <h2>スマートマップ上のリンクの追加、削除および編集<a name="SC_AddingDeletingOrEditi_2.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>スマートマップ上のリンク（説明付き）<a name="SC_LinksOnSmartMapExplai.htm"></a></h3>
+          <p>スマートマップ上の場所に移動したり、<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>のマップに移動するリンクを追加したりできます。これにより、迅速に場所にアクセスしたり、別のビューに変更することなくマップの別のタイプを表示したりすることができます。他のスマートマップへはリンクできません。詳細については、「<a href="#SC_DifferencesBetweenMap.htm" class="MCXref xref">マップとスマートマップの違い（説明付き）</a>」を参照してください。</p>
+          <p>リンクでは次のように場所とマップが表示されます。</p>
+          <ul>
+            <li>場所へのリンクでは、現在のビュー内の場所が表示されます。以前表示した場所に戻るには、スマートマップのツールバーにある<img src="../../../Images/backtracking_to_previous_locations.png" alt="" /><span class="uitext">戻る</span>をクリックします。</li>
+            <li>マップへのリンクでは、フローティングウィンドウにマップが表示されます。これは、両方のタイプのマップに同時にアクセスすることができます。フローティングウィンドウでは、マップを表示して操作できますが、カメラの追加などの変更を行うことはできません。</li>
+          </ul>
+          <p class="note">リンクを色分けしたり、マップ上でより見やすくする必要がある場合は、リンクの色を指定できます。デフォルトでは、スマートマップの場所へのリンクは青で、従来のマップへのリンクは赤になっています。他の色を使用する場合は、リンクのタイプごとに同色を使用することをお勧めします。同色を使用することで、レイヤーを使用してマップ上のアイテムをフィルターするなどの場合にリンクの区別がより簡単になります。</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>スマートマップの場所またはマップへリンクを追加する<a name="SC_AddLinkToSmartMapLoca.htm"></a></h3>
+          <p>これにより、すばやく場所にアクセスしたり、別のビューに変更することなく別の種類のマップを表示することができます。</p>
+          <p>手順：</p>
+          <ol>
+            <li value="1">スマートマップを含むビューを選択し、<span class="uitext">セットアップ</span>をクリックします。</li>
+            <li value="2">リンクを追加するマップ上のポイントに移動します。</li>
+            <li value="3">マップツールバーで、<img src="../../../Images/add_link_to_map_location.png" alt="" /><span class="uitext"> リンクを追加</span>をクリックして、リンクさせたいマップ上のポイントをクリックします。</li>
+            <li value="4">スマートマップの場所またはマップにリンクするかどうかを指定し、<span class="uitext">追加</span>をクリックします。</li>
+            <li value="5">
+              <p>リンクの名前を入力します。</p>
+              <p class="tip">表示スタイルとして<span class="uitext">アイコンとテキスト</span>を選択した場合は、スマートマップ上のリンクのタイトルを表示できます。通常、名前によりリンク先が示されます。</p>
+            </li>
+            <li value="6">
+              <span class="uitext">宛先</span>フィールドでリンク先のマップまたは場所を選択します。</li>
+            <li value="7">
+              <span class="uitext">表示スタイル</span>フィールドでは、名前とリンクアイコンを表示するか、マップ上のリンクアイコンのみを表示するかを指定します。</li>
+            <li value="8">オプション：リンクの色を指定するには、<span class="uitext">カラー</span>をクリックします。</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>スマートマップのリンクを編集または削除する<a name="SC_EditOrDeleteLinkOnSma.htm"></a></h3>
+          <p>スマートマップにリンクが追加されると、編集や削除することができます。</p>
+          <p>手順：</p>
+          <ol>
+            <li value="1">
+              <span class="uitext">セットアップ</span>をクリックしてセットアップモードに移ります。 </li>
+            <li value="2">リンクを編集するには、リンクを右クリックして、<span class="uitext">リンクを編集</span>を選択します。</li>
+            <li value="3">リンクを削除するには、以下のいずれか1つを実行します。<ul><li>リンクを右クリックして<span class="uitext">リンクの削除</span>を選択します。</li><li>リンクを選択し、キーボードの<span class="uitext">DELETE</span>を押します。</li></ul></li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>スマートマップ上の場所の追加、削除および編集<a name="SC_AddingDeletingOrEditi_3.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>スマートマップ上の場所（説明付き）<a name="SC_LocationsOnSmartMapEx.htm"></a></h3>
+          <p>興味のあるスマートマップ上の点に場所を作成することができます。例えば、個人事務所やサテライトオフィスのロケーションを作成することができます。場所は環境の全体像を示すだけでなく、スマートマップの操作にも役立ちます。</p>
+          <p class="note">設定によってはカスタムオーバーレイを追加する場合、<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>がオーバーレイと同じ名前の場所を追加することがあります。このことにより、例えば、ズームアウト時に、スマートマップ上のオーバーレイにいきやすくなります。ただし、オーバーレイとロケーションは、リンクしていません。例えば、オーバーレイを変更せずに、ロケーションの名前を変更したり削除したりすることができ、またその逆もできます。詳細については、「<a href="#SC_AddingDeletingOrEditi.htm" class="MCXref xref">カスタムオーバーレイの追加、削除および編集</a>」を参照してください。</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>スマートマップのホームの場所（説明付き）<a name="SC_HomeLocationsForSmart.htm"></a></h3>
+          <p>ホームの場所はそれを設定した表示アイテムに対して特有のものです。異なる表示アイテムでは、異なるホームの場所を設定できます。ホームの場所が表示アイテムに指定されていない場合、表示アイテムは、使用している背景の種類に関わらず、全世界を表示します。これは、ホームの場所を削除した場合も同様です。</p>
+          <p>スマートマップで作業している間は、<img src="../../../Images/home_locations_for_map.png" alt="" /><span class="uitext">ホーム</span>をクリックするとホームの場所に戻ります。これは、ビューでスマートマップのリセットするのと同様です。表示アイテムのデフォルト設定に戻ると、システムにより、閲覧したロケーションの履歴は削除されます。</p>
+          <p class="note">新しいホームロケーションを選択した場合、表示アイテムを使用する全員が影響を受けます。誰かが別のロケーションをホームとして設定していた場合、その人の設定を変更することになります。</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>スマートマップに場所を追加する<a name="SC_AddLocationToSmartMap.htm"></a></h3>
+          <p>興味のあった場所の履歴を残すために、スマートマップ上ですばやく検索できる場所を追加することができます。</p>
+          <p>手順：</p>
+          <ol>
+            <li value="1">スマートマップを含むビューを選択し、<span class="uitext">セットアップ</span>をクリックします。</li>
+            <li value="2">必要な場合は、スマートマップ上の場所を追加したい地点を、パンまたはズームインします。</li>
+            <li value="3">ツールバーで、<img src="../../../Images/add_location_to_map.png" alt="" /><span class="uitext">場所を追加</span>をクリックし、スマートマップ上のポイントをクリックします。</li>
+            <li value="4">そのロケーションに名前を付けて、必要に応じて以下の詳細を追加します：<ul><li>誰かがスマートマップ上で該当場所に行った際に適用されるズームレベルを指定する</li><li>ロケーションアイコン用の色を選択します。ロケーションの色分けは、例えば、ロケーションの種類を見分ける際に便利です。これは、ロケーションの機能や種類、または優先度を示す基準となります。</li><li>オプション：その場所をホームの場所にします。スマートマップはこの場所が中心となり、<img src="../../../Images/home_locations_for_map.png" alt="" /><span class="uitext">ホームとして設定</span>をクリックすると、デフォルトのズームレベル設定が適用されます</li></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>スマートマップ上の場所を追加、編集または削除する<a name="SC_EditOrDeleteLocationO.htm"></a></h3>
+          <p>スマートマップに場所が追加されていれば、例えば、ホームの場所の削除のような、場所の削除や設定の編集ができます。</p>
+          <p>手順：</p>
+          <ol>
+            <li value="1">
+              <span class="uitext">セットアップ</span>をクリックしてセットアップモードに移ります。 </li>
+            <li value="2">場所の編集には、その場所を右クリックして<span class="uitext">場所を編集</span>を選択します。</li>
+            <li value="3">場所を削除するには、以下のいずれか1つを実行します。<ul><li>その場所を右クリックして、<span class="uitext">場所を削除</span>を選択します。</li><li>場所を選択し、キーボードの<span class="uitext">DELETE</span>を押します。</li></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>場所同士の間のリンク（説明付き）<a name="SC_LinkingBetweenLocatio.htm"></a></h3>
+          <p>例えば、異なるロケーション同士を結ぶリンクを作ることにより、巡回経路を作成することができます。ロケーションAからロケーションBへのリンクを作り、ロケーションBからロケーションCへのリンクを作る、といった具合にリンクを作成します。詳細については、「<a href="#SC_AddingDeletingOrEditi_2.htm" class="MCXref xref">スマートマップ上のリンクの追加、削除および編集</a>」を参照してください。</p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>スマートマップ上の建物の追加、削除および編集<a name="SC_AddingDeletingOrEditi_4.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>スマートマップ上の建物（説明付き）<a name="SC_BuildingsOnSmartMapEx.htm"></a></h3>
+          <p>
+            <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">スマートマップ<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>地理的情報システムを使用して、地理的に正確かつ実世界のイメージで、監視システムのデバイス（カメラ、マイクなど）、構造、およびトポグラフィカル要素を視覚化する地図機能。この機能の要素を使用するマップは、スマートマップと呼ばれます。</span></a>上の建物は4つの端のあるポリゴンとして描写されます。一度追加されると、建物の実際の形状とポジショニングに合わせて、面積、アングル、そしてサイズを調整することができます。</p>
+          <p>もし建物が複数階層の場合、まずレベルを追加し、そしてそれぞれのレベルに対してカメラを追加します。これにより、各レベルごとにカメラを操作できます。</p>
+          <p>建物のインテリアの解説をしやすくするために、各レベルに平面図をカスタムオーバーレイとして追加することが可能です。詳細については、「<a href="#SC_AddFloorPlansToLevels.htm" class="MCXref xref">平面図をレベルに追加（スマートマップ）</a>」を参照してください。</p>
+          <p>建物は、<span class="uitext">Building 4</span>といったように自動的に名称が振り分けられます。<span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span>は名前を変更することを推奨します。これにより、他の建物と区別しやすくなります。</p>
+          <p>
+            <img src="../../../Images/buildings_on_map_explained.jpg" alt="" />
+          </p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>スマートマップに建物を追加する<a name="SC_AddBuildingsToSmartMa.htm"></a></h3>
+          <p>建物の内観を解説する目的でイメージやシェープファイルを使用する代わりに、建物のアウトラインを追加することができます。後から、建物の実際の形状とポジショニングに合わせて、面積、アングル、そしてサイズを調整することができます。</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />要件</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>スマートマップの編集は、お使いの<span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>における<span class="mc-variable flvar-product.SC variable">Smart Client</span>プロファイルで有効でなければなりません。</p>
+            </div>
+          </div>
+          <p>手順：</p>
+          <ol>
+            <li value="1">
+              <span class="uitext">セットアップ</span>をクリックしてセットアップモードに移ります。 </li>
+            <li value="2">スマートマップ上で建物を設置させたい場所に位置させるために、ナビゲートします。</li>
+            <li value="3">
+              <img src="../../../Images/add_buildings_to_map.jpg" alt="" />をクリックし、スマートマップ上で関連する位置にカーソルを合わせます。</li>
+            <li value="4">もう一度クリックします。スマートマップに長方形が追加されます。ズームアウトすると、ズームレベルが自動的に引き上げられます。</li>
+            <li value="5">必要な場合は、コーナーハンドルを用い、実際の建物の形状とポジションを調整してください。</li>
+            <li value="6">
+              <span class="uitext">セットアップ</span>を再度クリックし、セットアップモードを解除します。 変更が保存されました。</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>スマートマップ上での建物の編集<a name="SC_EditBuildingsOnSmartM.htm"></a></h3>
+          <p>一度建物がスマートマップ上に追加されると、建物の名前を変更、位置、サイズ、面積、そしてアングルの調整が可能になります。さらに、レベルの追加、削除、再オーダーが可能になります。</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />要件</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>スマートマップの編集は、お使いの<span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>における<span class="mc-variable flvar-product.SC variable">Smart Client</span>プロファイルで有効でなければなりません。</p>
+            </div>
+          </div>
+          <p>手順：</p>
+          <ol>
+            <li value="1">スマートマップ上で建物まで移動します。必要な場合、ズームインします。</li>
+            <li value="2">
+              <span class="uitext">セットアップ</span>をクリックしてセットアップモードに移ります。 </li>
+            <li value="3">
+              <p>建物内の任意の場所をクリックします。青色の枠線は建物を編集できることを示します。<br /></p>
+              <p>
+                <img src="../../../Images/buildings_on_map_explained.jpg" alt="" />
+              </p>
+            </li>
+            <li value="4">建物の名前を変えるには、右側のペインの一番上で<img src="../../../Images/edit_buildings_on_map.jpg" alt="" />をクリックします。名前を変えて、<img src="../../../Images/edit_buildings_on_map_1.jpg" alt="" />をクリックします。キャンセルするには<span class="uitext">Esc</span>を押します。</li>
+            <li value="5">コーナーの調整には、新しいポジションまでクリック・アンド・ドラッグします。</li>
+            <li value="6">レベルを追加または削除するには、<a href="#SC_AddOrRemoveLevelsFrom.htm" class="MCXref xref">建物にレベルを追加、あるいは削除する（スマートマップ）</a>を参照してください。</li>
+            <li value="7">
+              <span class="uitext">セットアップ</span>を再度クリックし、セットアップモードを解除します。 変更が保存されました。</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>スマートマップ上の建物を消去します。<a name="SC_DeleteBuildingsOnSmar.htm"></a></h3>
+          <p>建物が不要になった場合は、消去が可能です。次回何らかの<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>にログインまたは、リロードがあった際には、建物は消滅します。</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />要件</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>スマートマップの編集は、お使いの<span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>における<span class="mc-variable flvar-product.SC variable">Smart Client</span>プロファイルで有効でなければなりません。</p>
+            </div>
+          </div>
+          <p>手順：</p>
+          <ol>
+            <li value="1">スマートマップをオープンする。</li>
+            <li value="2">
+              <span class="uitext">セットアップ</span>をクリックしてセットアップモードに移ります。 </li>
+            <li value="3">以下のいずれか1つを実行します。</li>
+            <ul>
+              <li>建物を右クリックし、<span class="uitext">削除</span>を選択します</li>
+              <li>建物を選択し、キーボードの<span class="uitext">DELETE</span>キーを押します</li>
+            </ul>
+          </ol>
+          <p class="tip">建物を削除する別の方法：<img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">デフォルト設定の管理</span>で<span class="uitext">建物</span>セクションが現れるまで下にスクロールし、建物の上にカーソルを置いた状態で<span class="uitext">削除</span>をクリックしてから<span class="uitext">保存</span>をクリックします。</p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>建物のレベルとデバイスの管理（スマートマップ）<a name="SC_ManagingLevelsAndCame.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>建物のデバイスとレベル（説明付き）<a name="SC_CamerasAndLevelsInBui.htm"></a></h3>
+          <p>建物にデバイスを追加すると、レベルがが指定されていない限り、デバイスはデフォルトのレベルに関連付けられます。その他の場合、デバイスは1番目のレベルに関連付けられます。ただし、この関連付けを変更し、デバイスをその他のレベル、あるいは一度に複数のレベルと関連付けることも可能です。</p>
+          <p>より詳しく：</p>
+          <ul>
+            <li>レベルが選択されていなければ、すべてのレベルでデバイスを表示できます。</li>
+            <li>すでに配置されているデバイスの上に建物を追加すると、デフォルトで、デバイスはすべてのレベルに関連付けられます。</li>
+            <li>すでに配置されているデバイスが含まれるように建物の境界線を拡大すると、デバイスは選択されているレベルにのみ関連付けられます。</li>
+          </ul>
+          <p class="note">デバイスをカメラを含まないように建物の境界線を調整すると、デバイスは建物と関連付られなくなります。</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>
+            <a name="SC_FloorPlansDevicesInBuildings"></a>平面図と建物内のデバイス（説明付き）</h3>
+          <p>建物のすべてのレベルにおけるインテリアの描写をしやすくするために、各レベルに平面図をカスタムオーバーレイとして追加することが可能です。平面図があれば、デバイスの正確な配置が容易になります。詳細については、「<a href="#SC_AddFloorPlansToLevels.htm" class="MCXref xref">平面図をレベルに追加（スマートマップ）</a>」を参照してください。</p>
+          <p>配置したデバイスが関連付けられるのはレベルであり、カスタムオーバーレイではありません。デバイスとカスタムオーバーレイを含む建物内のレベルを削除すると、デバイスは地理的位置にはとどまりますが、レベルとの関連付けはなくなります。しかしながら、カスタムオーバーレイはレベルと一緒に削除されます。</p>
+          <p>レベルの順序を変えた場合、デバイスとカスタムオーバーレイは両方とも、そのレベルにとどまります。デバイスはそれぞれの地理的位置を維持します。</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>建物にレベルを追加、あるいは削除する（スマートマップ）<a name="SC_AddOrRemoveLevelsFrom.htm"></a></h3>
+          <p>スマートマップに建物を追加したあと、レベルの数を追加することが可能です。一番はじめのレベルはナンバー <span class="uitext">1</span>として関連付けられ、次は<span class="uitext">2</span>、その後も順に続きます。最終的には、個々のレベルの名前を付けなおし、順序を変えることが可能です。</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />要件</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>スマートマップの編集は、お使いの<span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>における<span class="mc-variable flvar-product.SC variable">Smart Client</span>プロファイルで有効でなければなりません。</p>
+            </div>
+          </div>
+          <p>手順：</p>
+          <ol>
+            <li value="1">スマートマップ上で建物まで移動します。必要な場合、ズームインします。</li>
+            <li value="2">建物を選択します。右手サイドにペインが現れます。</li>
+            <li value="3">
+              <span class="uitext">セットアップ</span>ボタンをクリックしてセットアップモードに移ります。</li>
+            <li value="4">
+              <span class="uitext">レベルを追加</span>
+              <img src="../../../Images/add_or_remove_levels_from.jpg" alt="" />をクリックします。</li>
+            <li value="5">レベルの名前を編集するには：<ol><li value="1">ドット<img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" />をクリックし、 <span class="uitext">名称の変更</span>を選択します。</li><li value="2">新しい名前を入力：</li></ol></li>
+            <li value="6">レベルを削除するには、ドット<img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" />をクリックし、 <span class="uitext">削除</span>を選択します。このレベルのデバイスは個々の地理的位置にとどまりますが、レベルとの関連付けはなくなります。</li>
+            <li value="7">
+              <span class="uitext">セットアップ</span>をクリックし、セットアップモードを解除します。</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>建物内のレベルの変更順序（スマートマップ）<a name="SC_ChangeOrderOfLevels.htm"></a></h3>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />要件</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>スマートマップの編集は、お使いの<span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>における<span class="mc-variable flvar-product.SC variable">Smart Client</span>プロファイルで有効でなければなりません。</p>
+            </div>
+          </div>
+          <p>手順：</p>
+          <ol>
+            <li value="1">スマートマップ上で建物まで移動します。必要な場合、ズームインします。</li>
+            <li value="2">建物を選択します。右手サイドにペインが現れ、建物のレベルを表示します。</li>
+            <li value="3">
+              <span class="uitext">セットアップ</span>をクリックしてセットアップモードに移ります。 </li>
+            <li value="4">ドットで囲まれたエリア<img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" />を正しい位置にクリック・アンド・ドラッグします。関連付けのあるデバイスとカスタムオーバーレイは、同じレベルにとどまります。</li>
+            <li value="5">
+              <span class="uitext">セットアップ</span>を再度クリックし、セットアップモードを解除します。 変更が保存されました。</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>建物のためのデフォルトレベルを設定する（スマートマップ）<a name="SC_SetDefaultLevelForBui.htm"></a></h3>
+          <p>もし、例えばグラウンドフロアなど、建物内の特定のレベルが他のレベルより関連性が強い場合、そのレベルをデフォルトのレベルとして設定することが可能です。スマートマップを開き、建物に行くと、自動的にデフォルトレベルが選択されます。</p>
+          <p>もし建物からカーソルを離してまた戻った場合、<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>は、離れたレベルにまで戻します。</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />要件</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>スマートマップの編集は、お使いの<span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>における<span class="mc-variable flvar-product.SC variable">Smart Client</span>プロファイルで有効でなければなりません。</p>
+            </div>
+          </div>
+          <p>手順：</p>
+          <ol>
+            <li value="1">スマートマップ上で建物まで移動します。必要な場合、ズームインします。</li>
+            <li value="2">建物を選択します。右手サイドにペインが現れ、建物のレベルを表示します。デフォルトのレベルはハイライトで表示されます。</li>
+            <li value="3">
+              <span class="uitext">セットアップ</span>をクリックしてセットアップモードに移ります。アスタリスク<img src="../../../Images/set_default_level_for_buildings.jpg" alt="" />に留意してください。それは、どこが現在のデフォルトレベルかを示すものです。</li>
+            <li value="4">デフォルトレベルとして設定したいレベルでは、ドット<img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" />をクリックします。</li>
+            <li value="5">
+              <span class="uitext">デフォルトとして設定</span>を選択します。</li>
+            <li value="6">
+              <span class="uitext">セットアップ</span>を再度クリックし、セットアップモードを解除します。 変更が保存されました。</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>平面図をレベルに追加（スマートマップ）<a name="SC_AddFloorPlansToLevels.htm"></a></h3>
+          <p>カスタムオーバーレイの追加が可能です。例えば、平面図イメージを建物のレベルに追加することで、建物内のレベルのインテリアを解説するのを助けます。レベルをナビゲートするにおいて、関連付けられた平面図が自動的に表示されます。</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />要件</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>スマートマップの編集は、お使いの<span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>における<span class="mc-variable flvar-product.SC variable">Smart Client</span>プロファイルで有効でなければなりません。</p>
+            </div>
+          </div>
+          <p>手順：</p>
+          <ol>
+            <li value="1">スマートマップ上で建物まで移動します。必要な場合、ズームインします。</li>
+            <li value="2">建物を選択します。右手サイドにペインが現れ、建物のレベルを表示します。</li>
+            <li value="3">
+              <span class="uitext">セットアップ</span>をクリックしてセットアップモードに移ります。 </li>
+            <li value="4">カスタムオーバーレイを追加したいレベルを選択します。</li>
+            <li value="5">左上隅で、 <img src="../../../Images/add_custom_overlay_on_1.png" alt="" /><span class="uitext">カスタムオーバーレイを追加</span>をクリックし、その後、建物のアウトラインの内部をクリックします。ウィンドウが表示されます。</li>
+            <li value="6">カスタムオーバーレイのタイプを選択します。詳細については、「<a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">カスタムオーバーレイ（説明付き）</a>」を参照してください。</li>
+            <li value="7">
+              <p>お使いのコンピュータ上でファイルが保管されている場所を選択し、<span class="uitext">続行</span>をクリックします。カスタムオーバーレイは青色のアウトラインで表示されます。<br /></p>
+              <p>
+                <img src="../../../Images/add_floorplans_to_levels.jpg" alt="" />
+              </p>
+            </li>
+            <li value="8">それを建物のアウトラインまでドラッグし、ピボットポイントとコーナーハンドルを用いてカスタムオーバーレイを回転、および再ポジションさせます。</li>
+            <li value="9">最上部のバーで、<span class="uitext">保存</span>をクリックします</li>
+            <li value="10">
+              <span class="uitext">セットアップ</span>を再度クリックし、セットアップモードを解除します。 変更が保存されました。</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>平面図の削除（スマートマップ）<a name="SC_DeleteFloorPlansOnLev.htm"></a></h3>
+          <p>建物内のレベル上の平面図が変更された場合は、その平面図を解説するカスタムオーバーレイを置き換えなければならない可能性があります。<span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span>では、新しい平面図を追加する前に以前の平面図を削除するよう推奨しています。</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />要件</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>スマートマップの編集は、お使いの<span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>における<span class="mc-variable flvar-product.SC variable">Smart Client</span>プロファイルで有効でなければなりません。</p>
+            </div>
+          </div>
+          <p>手順：</p>
+          <ol>
+            <li value="1">スマートマップ上で建物まで移動します。必要な場合、ズームインします。</li>
+            <li value="2">建物を選択します。右手サイドにペインが現れ、建物のレベルを表示します。</li>
+            <li value="3">
+              <span class="uitext">セットアップ</span>をクリックしてセットアップモードに移ります。 </li>
+            <li value="4">カスタムオーバーレイがあるレベルを選択します。</li>
+            <li value="5">カスタムオーバーレイ上のどこかを右クリックし、<span class="uitext">カスタムオーバーレイの削除</span>を選択します。</li>
+            <li value="6">
+              <span class="uitext">セットアップ</span>を再度クリックし、セットアップモードを解除します。 変更が保存されました。</li>
+          </ol>
+          <p class="tip">平面図のポジションやサイズを変更するには、カスタムオーバーレイを右クリックし、<span class="uitext">ポジションを編集する</span>を選択します。これで、カスタムオーバーレイの移動、回転、そしてサイズの変更が可能になりました。</p>
+        </div>
+        <div>
+          <h3>建物にデバイスを追加する（スマートマップ）<a name="SC_AddCamerasToBuildings.htm"></a></h3>
+          <p>建物を作成してレベルを追加した後、デバイスを建物に追加できます。デフォルトのレベルが指定されている場合、デバイスはそのレベルに関連付けられます。その他の場合、デバイスは1番目のレベルに関連付けられます。これは変更が可能で、建物内のどのレベルにでもデバイスを関連付けることができます。</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />要件</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>スマートマップの編集は、お使いの<span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>における<span class="mc-variable flvar-product.SC variable">Smart Client</span>プロファイルで有効でなければなりません。</p>
+            </div>
+          </div>
+          <p>手順：</p>
+          <ol>
+            <li value="1">スマートマップ上で建物まで移動します。必要な場合、ズームインします。</li>
+            <li value="2">
+              <span class="uitext">セットアップ</span>をクリックしてセットアップモードに移ります。 </li>
+            <li value="3">デバイスを追加するには、このアイコンをクリックします。<p>例：カメラの場合は、[<img src="../../../Images/add_cameras_to_buildings.jpg" alt="" /><span class="uitext">カメラを追加</span>] をクリックします。</p></li>
+            <li value="4">デバイスを配置したい場所を再度クリックします。ダイアログボックスが表示されます。</li>
+            <li value="5">デバイスを選択して、<span class="uitext">OK</span>をクリックします。追加したい各デバイスで、ステップ3～5を繰り返します。</li>
+            <li value="6">デバイスを単一または複数のレベルと関連付けるには、デバイスを右クリックし、必要なレベルを選択します。</li>
+            <li value="7">
+              <span class="uitext">セットアップ</span>を再度クリックし、セットアップモードを解除します。 変更が保存されました。</li>
+          </ol>
+          <p class="note">レベルが選択されていなければ、すべてのレベルでデバイスが表示されます。</p>
+        </div>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">概念情報</p>
+        <p class="containerItem_container_0">
+          <a href="sc_workingwithmap.htm">スマートマップ（使用）</a>
+        </p>
+        <p class="referenceHeading_reference_0">参考資料</p>
+        <p class="referenceItem_reference_0">
+          <a href="sc_map_faq.htm">FAQ：スマートマップ</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

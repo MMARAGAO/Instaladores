@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="ko-KR" xml:lang="ko-KR" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="최적화" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Get familiar with and read how to set up hardware acceleration to improve the performance of computers running XProtect Smart Client." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=관리자" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=통합자" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>하드웨어 가속 사용</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#standard_features/sf_sc/sf_optimization/sc_enablinghardwareaccel.htm">탐색기로 항목 열기</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="브레드크럼즈" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>하드웨어 가속 사용</h1>
+      <h2>하드웨어 가속(설명됨)<a name="SC_HardwareAccelerationExplained"></a></h2>
+      <p>하드웨어 가속은 디코딩 기능과 현재 실행 중인 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 의 성능을 개선합니다. 이는 높은 <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term14">프레임 속도<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>모션 비디오에 포함된 정보의 양을 나타내는 측정 단위입니다. 일반적으로 FPS(Frames Per second)로 측정됩니다.</span></a>와 높은 해상도를 가진 다수의 비디오 스트림을 보는 경우에 특히 유용합니다.</p>
+      <p class="note">
+        <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 은(는) Intel<sup>®</sup>과 NVIDIA<sup>®</sup> GPU를 사용한 하드웨어 가속 디코딩을 지원합니다. <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> 은(는) NVIDIA 디스플레이 어댑터의 Scalable Link Interface(SLI) 구성을 사용하지 않을 것을 권장합니다.</p>
+      <h2>하드웨어 가속 설정 확인<a name="SC_CheckHardwareAccelerationSettings"></a></h2>
+      <ol>
+        <li value="1">
+          <span class="uitext">설정</span> &gt; <span class="uitext">고급</span> &gt; <span class="uitext">하드웨어 가속</span> 으로 이동합니다.</li>
+        <li value="2">하드웨어 가속을 위해 두 개의 설정이 있습니다. <span class="uitext">자동</span> 및 <span class="uitext">끄기</span>. <p>기본 설정인 <span class="uitext">자동</span> 을 선택합니다.</p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/check_hardware_acceleration.png" data-mc-popup-alt="Hardware acceleration settings in XProtect Smart Client."><img class="MCPopupThumbnail img" data-mc-width="798" data-mc-height="371" src="../../../../Images/check_hardware_acceleration_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Hardware acceleration settings in XProtect Smart Client." tabindex="" /></a></p></li>
+        <li value="3">
+          <span class="uitext">비디오 진단 오버레이</span> 로 이동합니다.</li>
+        <li value="4">하드웨어 가속에 사용된 GPU 리소스를 비롯해 스트림의 현재 상태를 표시하려면 <span class="uitext">수준 2</span>를 선택합니다.</li>
+        <p class="note">이 설정은 모든 항목 보기에 적용됩니다. <span class="uitext">숨기기</span> 가 기본 설정입니다.</p>
+        <p>
+          <span class="uitext">하드웨어 가속</span> 에 대한 비디오 진단 오버레이 상태는 다음과 같을 수 있습니다. <span class="uitext">Intel</span>, <span class="uitext">NVIDIA</span> 또는 <span class="uitext">끄기</span>.</p>
+        <p>
+          <img src="../../../../Images/check_hardware_acceleration_1.png" alt="The video diagnostics status for hardware acceleration in XProtect Smart Client." />
+        </p>
+        <p>상태가 <span class="uitext">끄기</span> 일 경우, 하드웨어 가속을 활성화할 수 있도록, 그리고 모든 하드웨어 가속 리소스를 사용할 수 있는지 여부를 확인하도록 컴퓨터를 계속 검사하십시오.</p>
+        <li value="5">
+          <p class="note">
+            <span class="uitext">시스템 모니터</span> 를 사용하여 현재 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 디코딩 성능을 확인합니다. <a href="../../../feature_flags/ff_systemmonitor/sc_monitoryoursystem.htm#Monitor_client_resources" class="MCXref xref">클라이언트 리소스 모니터</a>를 참조하십시오.</p>
+        </li>
+      </ol>
+      <h2>운영 체제 확인<a name="SC_VerifyOperatingSystem"></a></h2>
+      <p>운영 체제가 Microsoft<sup>10</sup> Windows<sup>®</sup> ®(빌드 1809), Windows<sup>®</sup> 서버 2012 R2, 또는 최신 버전인지 확인하십시오.</p>
+      <div>
+        <p class="note">오직 비가상 환경만 지원합니다.</p>
+      </div>
+      <h2>CPU Quick Sync 지원 확인<a name="SC_CheckCPUQuickSyncSupport"></a></h2>
+      <p>프로세서가 Intel Quick Sync Video 지원하는지 확인하려면:</p>
+      <ol>
+        <li value="1">Intel 웹사이트(<a href="https://ark.intel.com/Search/FeatureFilter?productType=processors/" target="_blank">https://ark.intel.com/Search/FeatureFilter?productType=processors/</a>)를 방문합니다.</li>
+        <li value="2">메뉴에서 <span class="uitext">프로세스</span> 및 <span class="uitext">Intel Quick Sync Video</span> 필터를 <span class="uitext">예</span> 로 설정합니다.</li>
+        <li value="3">목록에서 CPU를 찾으십시오. <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/check_cpu_quick_sync_support.png" data-mc-popup-alt="Hardware acceleration in XProtect Smart Client - check support for CPU Quick Sync."><img class="MCPopupThumbnail img" data-mc-width="766" data-mc-height="554" src="../../../../Images/check_cpu_quick_sync_support_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Hardware acceleration in XProtect Smart Client - check support for CPU Quick Sync." tabindex="" /></a></p></li>
+      </ol>
+      <h2>장치 관리자 조사<a name="SC_ExamineDeviceManager"></a></h2>
+      <p>Intel 또는 NVIDIA 디스플레이 어댑터가 Windows 장치 관리자에 존재하는지 확인합니다.</p>
+      <p>
+        <img src="../../../../Images/examine_the_device_manager.png" alt="Hardware acceleration in XProtect Smart Client - examine the device manager." />
+      </p>
+      <div>
+        <p class="important">이용 가능한 모든 어댑터에 디스플레이를 연결할 수 있습니다. 컴퓨터에서 보통 NVIDIA 또는 AMD<sup>®</sup>와 같이 더 강력한 디스플레이 어댑터를 사용할 수 있는 경우, 하드웨어 가속 디코딩 및 렌더링을 위해 이용 가능한 모든 GPU 리소스를 사용하기 위해 이 어댑터에 디스플레이를 연결하십시오.</p>
+        <p class="important">모든 NVIDIA 디스플레이 어댑터가 하드웨어 가속을 지원하지는 않습니다. <a href="#Check_NVIDIA_hardware_acceleration_support" class="MCXref xref">NVIDIA 하드웨어 가속 지원 확인</a>를 참조하십시오.</p>
+      </div>
+      <p>Intel 디스플레이 어댑터가 없다면, BIOS에서 Intel 디스플레이 어댑터를 활성화합니다(<a href="#Enable_the_Intel_display_adapter_in_the_BIOS" class="MCXref xref">BIOS에서 Intel 디스플레이 어댑터 활성화</a> 참조).</p>
+      <h2>
+        <a name="Check_NVIDIA_hardware_acceleration_support"></a>NVIDIA 하드웨어 가속 지원 확인</h2>
+      <p>NVIDIA 제품은 다양한 연산 능력을 가지고 있습니다.</p>
+      <p class="note">NVIDIA GPU를 사용한 하드웨어 가속 디코딩에는 6.x (Pascal) 또는 그 이후 버전의 연산 능력을 필요로 합니다.</p>
+      <p>NVIDIA 제품의 연산 능력 버전을 확인하려면 NVIDIA 웹사이트(<a href="https://developer.nvidia.com/cuda-gpus/" target="_blank">https://developer.nvidia.com/cuda-gpus/</a>)를 방문하십시오.</p>
+      <h2>
+        <a name="Enable_the_Intel_display_adapter_in_the_BIOS"></a>BIOS에서 Intel 디스플레이 어댑터 활성화</h2>
+      <p>만일 컴퓨터에서 예를 들어 NVIDIA 또는 AMD 와 같은 또 다른 디스플레이 어댑터 카드를 이용할 수 있고, 온보드 Intel 디스플레이 어댑터가 비활성화되어 있다면, 이를 활성화해야 합니다.</p>
+      <p>Intel 디스플레이 어댑터는 CPU 의 일부로서 마더 보드에 있습니다. 이를 활성화하려면 컴퓨터 BIOS에서 그래픽, CPU 또는 디스플레이 설정을 확인하십시오. 관련 설정을 찾는 데 벤더의 마더보드 설명서가 유용할 수 있습니다.</p>
+      <p class="tip">설정을 변경해도 온보드 Intel 디스플레이 어댑터를 활성화할 수 없다면, 디스플레이 어댑터 카드를 다른 슬롯으로 옮긴 다음 마더 보드에 디스플레이를 연결해 보십시오. 일부의 경우, 이렇게 하면 온보드 디스플레이 어댑터를 활성화할 수 있습니다.</p>
+      <h2>비디오 드라이버 업데이트<a name="SC_UpdateVideoDriver"></a></h2>
+      <p>모든 디스플레이 어댑터에 대한 드라이버 버전이 Intel 이나 NVIDIA 가 제공하는 최신 버전으로 업데이트되었는지 확인합니다.</p>
+      <p class="note">PC 벤더가 제공하는 Intel 드라이버 버전은 이전 버전일 수 있으며 Intel Quick Sync Video 지원하지 못할 수 있습니다.</p>
+      <p>두 가지 방법으로 비디오 드라이버를 업데이트할 수 있습니다. 수동 다운로드 및 설치 또는 드라이버 업데이트 유틸리티 사용.</p>
+      <p class="subheading">Intel</p>
+      <p>수동 다운로드 및 설치:</p>
+      <ol>
+        <li value="1">Intel 다운로드 웹사이트(<a href="https://downloadcenter.intel.com/" target="_blank">https://downloadcenter.intel.com/</a>)로 이동합니다.</li>
+        <li value="2">통합 디스플레이 어댑터의 이름을 입력합니다.</li>
+        <li value="3">드라이버를 수동으로 다운로드하여 설치합니다.</li>
+      </ol>
+      <p>Intel 구성요소 및 드라이버의 자동 감지 및 업데이트:</p>
+      <ol>
+        <li value="1">Intel 드라이버 및 지원 어시스턴트(<a href="https://www.intel.com/p/en_us/support/detect/" target="_blank">https://www.intel.com/p/en_us/support/detect/</a>)를 다운로드합니다.</li>
+        <li value="2">어시스턴트를 실행하여 드라이버를 자동 검색합니다.</li>
+        <li value="3">Graphics용 드라이버를 업데이트하도록 선택합니다.</li>
+      </ol>
+      <p class="subheading">NVIDIA</p>
+      <p>옵션 1: 내 NVIDIA 제품용 드라이브를 수동으로 찾습니다.</p>
+      <ol>
+        <li value="1">NVIDIA 드라이버 다운로드 웹사이트(<a href="https://www.nvidia.com/Download/index.aspx/" target="_blank">https://www.nvidia.com/Download/index.aspx/</a>)로 이동합니다.</li>
+        <li value="2">제품과 운영 체제의 이름을 입력합니다.</li>
+        <li value="3">드라이버를 수동으로 다운로드하여 설치합니다.</li>
+      </ol>
+      <p>옵션 2: 내 NVIDIA 제품용 드라이브를 자동으로 찾습니다.</p>
+      <ol>
+        <li value="1">NVIDIA 드라이버 다운로드 웹사이트(<a href="https://www.nvidia.com/Download/index.aspx/" target="_blank">https://www.nvidia.com/Download/index.aspx/</a>)로 이동합니다.</li>
+        <li value="2">
+          <span class="uitext">GRAPHICS 드라이버</span> 를 클릭합니다.</li>
+        <li value="3">시스템이 스캔됩니다.</li>
+        <li value="4">드라이버를 다운로드하여 업데이트합니다.</li>
+      </ol>
+      <h2>메모리 모듈 구성 확인<a name="SC_CheckMemoryModulesConfig"></a></h2>
+      <p>시스템이 둘 이상의 메모리 채널을 지원할 경우, 최소 두 개의 채널이 올바른 DIMM 슬롯에 삽입되도록 하여 시스템 성능을 높일 수 있습니다. 올바른 DIMM 채널을 찾으려면 마더보드 설명서를 참조하십시오.</p>
+      <p>예:</p>
+      <p>두 개의 메모리 채널과 총 8 GB의 메모리를 가진 시스템은 2 x 4 GB 메모리 모듈 구성으로 최고의 성능을 얻을 수 있습니다.</p>
+      <p>1 x 8 GB 메모리 모듈 구성을 사용할 경우 메모리 채널 중 하나만 사용합니다.</p>
+    </div>
+    <p></p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

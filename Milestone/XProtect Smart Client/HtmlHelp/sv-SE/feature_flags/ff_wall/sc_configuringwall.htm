@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="sv-SE" xml:lang="sv-SE" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="Konfiguration" data-mc-conditions="flcts-add-on.xp-wall-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Konfigurera din Smart Wall i XProtect Smart Client att kontrollera layouten och vilket innehåll som ska visas." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Wall" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Administratör" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Integratör" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Operatör" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>XProtect Smart Wall (konfiguration)</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#feature_flags/ff_wall/sc_configuringwall.htm">Öppna ämne med navigering</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>
+        <span class="mc-variable flvar-product.SWName_XP variable">XProtect Smart Wall</span> (konfiguration)</h1>
+      <p>Efter den initiala konfigurationen i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>, kan operatörer börja använda videoväggen genom att skicka <span class="mc-variable flvar-product.SWName variable">Smart Wall</span>-bildskärmar till de fysiska bildskärmarna anslutna till systemet. Detta kan inkludera ett eller båda dessa alternativ:</p>
+      <ul>
+        <li>
+          <p>Statiska vyer</p>
+        </li>
+        <li>
+          <p>Vyer som ändras dynamiskt baserat på regler</p>
+        </li>
+      </ul>
+      <p>Ytterligare konfiguration krävs om du vill:</p>
+      <ul>
+        <li>Möjliggör för operatörer att kontrollera och manuellt ändra vad som visas på de fysiska bildskärmarna. I detta fall måste du lägga till <span class="mc-variable flvar-product.SWName variable">Smart Wall</span>-kontrollen till angivna vyer.  <MadCap:conditionalText data-mc-conditions="flcts-format.builtin-sc-manual-only">Se även <a href="#Wall_AddOverviewToViews" class="MCXref xref">Lägg till Smart Wall-kontroller till vyer</a></MadCap:conditionalText></li>
+        <li>Ändra befintlig vylayout på individuella bildskärmar.  <MadCap:conditionalText data-mc-conditions="flcts-format.builtin-sc-manual-only">Se även <a href="#Wall_ChangeMonitorLayout" class="MCXref xref">Ändra vylayout för Smart Wall-bildskärmar</a></MadCap:conditionalText></li>
+        <li> Återställ eller ändra de <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term38">förinställningar<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>En fördefinierad layout för en eller fler Smart Wall-bildskärmar i XProtect Smart Client. Förinställningar fastställer vilka kameror som visas och hur innehåll struktureras på respektive bildskärm på videoväggen.</span></a> som redan används i <span class="mc-variable flvar-product.SWName variable">Smart Wall</span>-definitionen.  <MadCap:conditionalText data-mc-conditions="flcts-format.builtin-sc-manual-only">Se även <a href="#Wall_ChangePreset" class="MCXref xref">Återställ eller ändra Smart Wall-förinställningar</a></MadCap:conditionalText></li>
+      </ul>
+      <h2>
+        <a name="Wall_AddOverviewToViews"></a>Lägg till <span class="mc-variable flvar-product.SWName variable">Smart Wall</span>-kontroller till vyer</h2>
+      <p>Innan du kan börja pusha video och andra typer av innehåll till din videovägg måste du lägga till <span class="mc-variable flvar-product.SWName variable">Smart Wall</span>-kontrollen till en eller fler vyer. Kontrollen är en grafisk representation av videoväggen. Se även <a href="sc_workingwithwalle.htm#SC_ContentInWall.htm" class="MCXref xref">Smart Wall-kontroll (förklaring)</a>.</p>
+      <ol>
+        <li value="1"> Klicka på <span class="uitext">Inställning</span> för att aktivera inställningsläget. </li>
+        <li value="2">Välj den vy som du vill lägga till <span class="mc-variable flvar-product.SWName variable">Smart Wall</span>-kontrollen till.</li>
+        <li value="3">
+          <p>I fönstret <span class="uitext">Systemöversikt</span>, dra objektet <span class="uitext"><span class="mc-variable flvar-product.SWName variable">Smart Wall</span></span> till relevant visningselement. </p>
+          <p>
+            <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_addswoverviewtoview.jpg" data-mc-popup-alt="Lägg till Smart Wall-kontroll till vyer i XProtect Smart Client.">
+              <img class="MCPopupThumbnail img" data-mc-width="1307" data-mc-height="846" src="../../../Images/sc_addswoverviewtoview_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Lägg till Smart Wall-kontroll till vyer i XProtect Smart Client." tabindex="" />
+            </a>
+          </p>
+        </li>
+        <li value="4"> Klicka på <span class="uitext">Inställning</span> igen så att inställningsläget avslutas. Dina ändringar har sparats.</li>
+        <li value="5">Nu kan du börja pusha kameror och andra typer av innehåll till din videovägg. </li>
+      </ol>
+      <h2>Ändra vylayout för <span class="mc-variable flvar-product.SWName variable">Smart Wall</span>-bildskärmar<a name="Wall_ChangeMonitorLayout"></a></h2>
+      <p>Du kan ändra de fördefinierade vylayouterna på <span class="mc-variable flvar-product.SWName variable">Smart Wall</span>-bildskärmarna. Detta är användbart om du behöver visa ytterligare kameror eller andra typer av innehåll.</p>
+      <div class="MCDropDown MCDropDown_Closed dropDown">
+        <span class="MCDropDownHead dropDownHead">
+          <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+            <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Stängd" data-mc-alt2="Öppen" />Exempel</a>
+        </span>
+        <div class="MCDropDownBody dropDownBody">
+          <p>En incident har spelas in på fem kameror, och du har till och med en bild på en misstänkt. Du vill visa video och bild på videoväggen, så säkerhetspersonalen kan se incidenten och omhänderta den misstänkte. Eftersom de nuvarande bildskärmarna i din videovägg är förinställda att bara visa <span class="uitext">2x2</span> kameror, behöver du ändra vylayouten till <span class="uitext">2x3</span> för att kunna lägga till den femte kameran och bilden.</p>
+        </div>
+      </div>
+      <p>Gör så här:</p>
+      <ol>
+        <li value="1">På fliken <span class="uitext">Live</span> eller fliken <span class="uitext">Uppspelning</span>, öppna den vy som innehåller din <span class="mc-variable flvar-product.SWName variable">Smart Wall</span>-kontroll.</li>
+        <li value="2">
+          <p>Klicka på ikonen <img src="../../../Images/change_the_layout_of_a_1.png" alt="" /> för bildskärmen, välj <span class="uitext">Ändra vylayout</span> och sedan visningsformat, till exempel <span class="uitext">4:3</span>.</p>
+          <p>
+            <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/change_the_layout_of_a_1_1.jpg" data-mc-popup-alt="Ändra vylayouten för en Smart Wall-bildskärm.">
+              <img class="MCPopupThumbnail img" data-mc-width="1247" data-mc-height="736" src="../../../Images/change_the_layout_of_a_1_1_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Ändra vylayouten för en Smart Wall-bildskärm." tabindex="" />
+            </a>
+          </p>
+        </li>
+        <li value="3">
+          <p>Välj vylayouten. I detta exempel, välj <span class="uitext">2x3</span>. Två utgråade visningselement läggs till vylayouten. </p>
+          <p>
+            <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_wall_changedviewlayout.jpg" data-mc-popup-alt="2x3-vylayout för en Smart Wall-bildskärm.">
+              <img class="MCPopupThumbnail img" data-mc-width="758" data-mc-height="427" src="../../../Images/sc_wall_changedviewlayout_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="2x3-vylayout för en Smart Wall-bildskärm." tabindex="" />
+            </a>
+          </p>
+        </li>
+        <li value="4">Nu kan du lägga till ytterligare innehåll. Se även <a href="sc_workingwithwalle.htm#SC_DisplayingContentOnSm.htm" class="MCXref xref">Visa innehåll på videoväggar</a>.</li>
+      </ol>
+      <h2>Återställ eller ändra <span class="mc-variable flvar-product.SWName variable">Smart Wall</span>-förinställningar<a name="Wall_ChangePreset"></a></h2>
+      <p>
+        <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term38">Förinställningar<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>En fördefinierad layout för en eller fler Smart Wall-bildskärmar i XProtect Smart Client. Förinställningar fastställer vilka kameror som visas och hur innehåll struktureras på respektive bildskärm på videoväggen.</span></a> ändras ofta enligt regler eller tidsscheman, eller andra operatörer kan ändra förinställningen. Ibland vill du dock kanske återställa videoväggen eller tillämpa en specifik förinställning under loppet av vissa händelser.</p>
+      <p>Gör så här:</p>
+      <ol>
+        <li value="1">Öppna vyn som innehåller <span class="mc-variable flvar-product.SWName variable">Smart Wall</span>-kontrollen.</li>
+        <li value="2">I listan <span class="uitext">Välj förinställning</span>, hovra över den förinställning du vill använda.</li>
+        <li value="3">
+          <p>Klicka på <span class="uitext">Aktivera</span>. De berörda fysiska bildskärmarna i videoväggen ändras på samma sätt.</p>
+          <p>
+            <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_resetsw.jpg" data-mc-popup-alt="Aktivera eller återställ förinställningen av en Smart Wall-bildskärm.">
+              <img class="MCPopupThumbnail img" data-mc-width="977" data-mc-height="387" src="../../../Images/sc_resetsw_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Aktivera eller återställ förinställningen av en Smart Wall-bildskärm." tabindex="" />
+            </a>
+          </p>
+        </li>
+      </ol>
+      <div>
+        <a name="SC_ChangeTheLayoutOfASma.htm"></a>
+      </div>
+    </div>
+    <p></p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

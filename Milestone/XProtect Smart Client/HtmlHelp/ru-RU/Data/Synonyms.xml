@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MadCapSynonyms xml:lang="ru-RU">
+    <!-- saved from url=(0016)http://localhost -->
+    <Groups>
+        <SynonymGroup Stem="true">
+            <Word Stem="изображен">изображение</Word>
+            <Word Stem="виде">видео</Word>
+        </SynonymGroup>
+    </Groups>
+    <Directional>
+        <DirectionalSynonym Stem="true" From="изменить" To="изменить = модифицировать = адаптировать = настроить = редактирова" FromStem="измен" />
+    </Directional>
+</MadCapSynonyms>

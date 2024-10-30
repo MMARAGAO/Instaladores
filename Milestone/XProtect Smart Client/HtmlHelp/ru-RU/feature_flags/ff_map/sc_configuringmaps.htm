@@ -1,0 +1,810 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="ru-RU" xml:lang="ru-RU" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="Конфигурация" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Configure smart map in XProtect Smart Client to get a geographical overview of your cameras, devices, and plug-in elements - in a one world experience." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=Recording Server" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Администратор" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Интегратор" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Оператор" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Интеллектуальная карта (настройка)</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#feature_flags/ff_map/sc_configuringmaps.htm">Открыть тему с навигацией</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Навигация" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>Интеллектуальная карта (настройка)</h1>
+      <p>Перед началом работы с интеллектуальной картой ее нужно настроить в <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>.</p>
+      <p>Интеллектуальную карту можно просматривать только в случае, если она добавлена в вид. См. также <a href="#SC_AddSmartMapToView.htm" class="MCXref xref">Добавить интеллектуальную карту в виды</a>. </p>
+      <p class="note">Дополнительные сведения приведены в разделе <a href="sc_workingwithmap.htm#SC_SmartMapExplained.htm" class="MCXref xref">Интеллектуальная карта (объяснение)</a>.</p>
+      <div>
+        <h2>Различия между обычными картами и интеллектуальной картой (объяснение)<a name="SC_DifferencesBetweenMap.htm"></a></h2>
+        <p>
+        В <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> имеется функция карт, которая дает возможность визуально представить структуру системы наблюдения и быстро реагировать на инциденты.</p>
+        <ul>
+          <li>
+            <span class="uitext">Карты</span> — эти карты основаны на статических изображениях без привязки к географическим координатам. На них можно добавлять устройства, например камеры, микрофоны и серверы записи. а также элементы, например сигналы тревоги, события и элементы управления доступом, которые позволяют взаимодействовать с системой наблюдения непосредственно с карты. Устройства и элементы необходимо размещать на карте вручную. Дополнительные сведения приведены в разделе <a href="../../standard_features/sf_sc/sf_operation/sc_workingwithmaps.htm#SC_IntroductionToMaps(796).htm" class="MCXref xref">Карты (объяснение)</a></li>
+          <li>
+            <span class="uitext">Интеллектуальная карта</span> — этот тип карты использует геоинформационную систему для точного отображения реальных географических объектов на карте. Это может дать более точное представление о расположении камер в разных местах. Также можно:<ul><li>Пользуйтесь службами Bing Maps и Google Maps</li><li data-mc-conditions="flcts-features.oem-map-service-content">Пользуйтесь <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> в качестве географического фона</li><li>Пользуйтесь проектом OpenStreetMap в качестве географического фона</li><li>Добавляйте чертежи CAD, файлы форм и изображения в качестве наложений</li></ul><p> Дополнительные сведения приведены в разделе <a href="sc_workingwithmap.htm#SC_SmartMapExplained.htm" class="MCXref xref">Интеллектуальная карта (объяснение)</a></p></li>
+        </ul>
+        <p class="note">Обычные и интеллектуальные карты не являются взаимозаменяемыми. Если вы пользуетесь картами, файл изображения можно использовать в качестве интеллектуальной карты, но при этом нужно вновь добавить устройства. Карты с устройствами нельзя переносить на интеллектуальную карту. При этом можно поставить на обычной карте ссылку на интеллектуальную карту. Дополнительные сведения приведены в разделе <a href="#SC_AddingDeletingOrEditi_2.htm" class="MCXref xref">Добавление, удаление и изменение ссылок на интеллектуальной карте</a>.</p>
+      </div>
+      <div>
+        <h2>Добавить интеллектуальную карту в виды<a name="SC_AddSmartMapToView.htm"></a></h2>
+        <p>Для работы с <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">интеллектуальной картой<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Набор функций карты, заключающаяся в применении географической информационной системы для визуализации устройств (например, камер и микрофонов), конструкций и топографических элементов системы наблюдения в географически точном и визуально реалистичном контексте. Карты, в которых используются такие функции, называются интеллектуальными картами.</span></a> сначала добавьте ее в вид. По умолчанию используется общая карта мира. После добавления интеллектуальной карты картографический фон можно изменить.</p>
+        <p>Действия:</p>
+        <ol>
+          <li value="1">На вкладке <span class="uitext">Наблюдение</span> или <span class="uitext">Воспроизведение</span> выберите вид, который нужно добавить на интеллектуальную карту.</li>
+          <li value="2"> Нажмите кнопку <span class="uitext">Настройка</span> для перехода в режим настройки. </li>
+          <li value="3">Разверните панель <span class="uitext">Обзор системы</span> и перенесите элемент <span class="uitext">Интеллектуальная карта</span> в нужное место вида.</li>
+          <li value="4"> Снова нажмите кнопку <span class="uitext">Настройка</span> для выхода из режима настройки. Ваши изменения сохранены.</li>
+          <li value="5">Теперь вы можете изменить картографический фон. </li>
+        </ol>
+      </div>
+      <div>
+        <h2>Изменение картографического фона на интеллектуальных картах<a name="SC_ChangeTheGeographicBa.htm"></a></h2>
+        <p>По умолчанию при добавлении интеллектуальной карты в вид показана базовая карта мира. После добавления интеллектуальной карты в вид можно выбрать другой географический фон. Новый географический фон будет показан всем пользователям интеллектуальной карты при следующем просмотре этого вида.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Требования</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Географические фоны Bing Maps и Google Maps доступны только в случае, если администратор системы сделал их доступными в <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>.</p>
+          </div>
+        </div>
+        <p>Действия:</p>
+        <ol>
+          <li value="1">Выберите вид, содержащий интеллектуальную карту.</li>
+          <li value="2">На панели инструментов нажмите кнопку <img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">Показать или скрыть слои и пользовательские наложения</span>.</li>
+          <li value="3">В разделе <span class="uitext">Картографические фоны</span> выберите фон и тип деталей, которые необходимо отображать. Например, если нужна топографическая информация, выберите опцию <span class="uitext">Карта местности</span>. Если требуется отображать дороги, выберите опцию <span class="uitext">Дорога</span>.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>Картографический фон (объяснение)<a name="SC_GeographicBackgrounds.htm"></a></h2>
+        <p>В качестве географических фонов <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">интеллектуальной карты<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Набор функций карты, заключающаяся в применении географической информационной системы для визуализации устройств (например, камер и микрофонов), конструкций и топографических элементов системы наблюдения в географически точном и визуально реалистичном контексте. Карты, в которых используются такие функции, называются интеллектуальными картами.</span></a> можно пользоваться следующими службами:</p>
+        <ul>
+          <li>Bing Maps</li>
+          <li>Google Maps</li>
+          <li data-mc-conditions="flcts-features.oem-map-service-content">
+            <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+          </li>
+          <li> OpenStreetMap </li>
+        </ul>
+        <p>После выбора географического фона можно добавить устройства, например камеры, и пользовательские наложения, например файлы форм. Дополнительные сведения приведены в разделе <a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">Пользовательские наложения (объяснение)</a>.</p>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Типы картографических фонов (объяснение)<a name="SC_TypesOfGeographicBack.htm"></a></h2>
+        <p>После добавления <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">интеллектуальной карты<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Набор функций карты, заключающаяся в применении географической информационной системы для визуализации устройств (например, камер и микрофонов), конструкций и топографических элементов системы наблюдения в географически точном и визуально реалистичном контексте. Карты, в которых используются такие функции, называются интеллектуальными картами.</span></a> в вид можно воспользоваться одним из следующих географических фонов:</p>
+        <ul>
+          <li>
+            <span class="uitext">Общая карта мира</span> — используется стандартный картографический фон <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Эту карту можно использовать для общего ориентирования, и она не содержит подробностей, таких как границы стран, города и т. д. При этом она имеет геопространственную привязку, аналогично другим картографическим фонам</li>
+          <li>
+            <span class="uitext">Bing Maps</span> — подключение Bing Maps</li>
+          <li>
+            <span class="uitext">Google Maps</span> — подключение Google Maps <p class="note">Для использования Bing Maps и Google Maps требуется подключение к Интернету и платный ключ API, предоставляемый компанией Microsoft или Google.</p></li>
+          <div data-mc-conditions="flcts-features.oem-map-service-content">
+            <li>
+              <span class="uitext">
+                <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+              </span> - подключение к поставщику бесплатных карт. После включения <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> дополнительная настройка не требуется.</li>
+            <p>См. <a href="#Enable">Включить Milestone Map Service</a></p>
+          </div>
+          <div>
+            <li>
+              <p>
+                <span class="uitext">OpenStreetMap</span> - подключение:</p>
+              <ul>
+                <li>Коммерческий сервер фрагментов</li>
+                <li>
+                  <p>Ваш собственный, локальный или онлайн-сервер фрагментов</p>
+                </li>
+              </ul>
+              <p>См. <a href="#SC_ChangeOpenstreetmapTi.htm">Изменение сервера фрагментов OpenStreetMap</a></p>
+            </li>
+          </div>
+          <li>
+            <span class="uitext">Нет</span> — географического фона не будет. Учтите, что данные географической привязки останутся. См. также <a href="#SC_LayersOnSmartMapExpla.htm" class="MCXref xref">Слои на интеллектуальной карте (объяснение)</a></li>
+        </ul>
+        <p>По умолчанию карты Bing Maps и Google Maps показывают спутниковые изображения. Для изменения визуализации можно менять вид карты, например, с гибридного на вид местности.</p>
+      </div>
+      <div data-mc-conditions="flcts-features.oem-map-service-content">
+        <h2>
+          <a name="Enable"></a>Включить <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span></h2>
+        <p>
+          <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> — это онлайн-служба, позволяющая подключиться к серверу фрагментов <span class="mc-variable flvar-brand-company.CompanyLong variable">Milestone Systems</span>. Данный сервер фрагментов использует бесплатную картографическую службу. </p>
+        <p>После включения <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> на интеллектуальной карте интеллектуальная карта использует <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> в качестве географического фона.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Требования</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Если поле <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> недоступно, у вас нет прав на включение и отключение данной службы. Обратитесь к администратору системы за помощью с включением этой функции в <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>.</p>
+            <p class="important">
+              <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> необходим доступ в Интернет.</p>
+          </div>
+        </div>
+        <p>Действия:</p>
+        <ol>
+          <li value="1">
+            <p>В правом верхнем углу нажмите <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" />, а затем <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">Параметры</span> для перехода в окно <span class="uitext">Параметры</span>.</p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_configuringmaps_mmapserv.png" data-mc-popup-alt="Enable Milestone Map Service.">
+                <img class="MCPopupThumbnail img" data-mc-width="786" data-mc-height="593" src="../../../Images/sc_configuringmaps_mmapserv_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Enable Milestone Map Service." tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="2">В левом разделе нажмите кнопку <span class="uitext">Интеллектуальная карта</span>.</li>
+          <li value="3">В поле <span class="uitext mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> выберите <span class="uitext">Доступно</span>.</li>
+          <li value="4">Нажмите <span class="uitext">Закрыть</span>. При следующей загрузке интеллектуальной карты <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> станет географическим фоном.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>Сервер фрагментов карты OpenStreetMap (описание)<a name="SC_ChangingOpenstreetmap.htm"></a></h2>
+        <p>Если вы пользуетесь OpenStreetMap в качестве картографического фона интеллектуальной карты, следует указать сервер фрагментов. Вы можете указать локальный сервер фрагментов, например, если ваша организация имеет собственные карты для таких областей, как аэропорты или гавани, или же использовать коммерческий сервер фрагментов карты.</p>
+        <p class="note">Для использования локального сервера фрагментов доступ в Интернет не нужен.</p>
+        <p>Адрес сервера фрагментов карты можно определить двумя способами:</p>
+        <ul>
+          <li>В <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> — адрес сервера фрагментов карты задается в профилях <span class="mc-variable flvar-product.SC variable">Smart Client</span>. Адрес сервера распространяется на всех пользователей <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>, прикрепленных к профилям <span class="mc-variable flvar-product.SC variable">Smart Client</span></li>
+          <li>В <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> — можно задать адрес сервера фрагментов карты в окне <span class="uitext">Параметры</span>. Адрес сервера относится только к этой установке</li>
+        </ul>
+        <div>
+          <h2>Изменение сервера фрагментов карты OpenStreetMap<a name="SC_ChangeOpenstreetmapTi.htm"></a></h2>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Требования</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>Если сервер фрагментов, указанный на стороне сервера, заблокирован для редактирования, соответствующее поле будет недоступно, и вы не сможете изменить адрес сервера. Обратитесь к администратору системы за помощью с включением этой функции в <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>.</p>
+            </div>
+          </div>
+          <p>Действия:</p>
+          <ol>
+            <li value="1">
+              <p>В правом верхнем углу нажмите <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" />, а затем <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">Параметры</span> для перехода в окно <span class="uitext">Параметры</span>.</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_mapsettings.png" data-mc-popup-alt="Specify alternative tile server for the smart map.">
+                  <img class="MCPopupThumbnail img" data-mc-width="786" data-mc-height="593" src="../../../Images/sc_mapsettings_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Specify alternative tile server for the smart map." tabindex="" />
+                </a>
+                <br />
+              </p>
+            </li>
+            <li value="2">В левом разделе нажмите кнопку <span class="uitext">Интеллектуальная карта</span>.</li>
+            <li value="3">В поле <span class="uitext">Сервер OpenStreetMap</span> укажите одно из следующих значений: <ul><li>Введите адрес сервера. Если это поле недоступно, оно было блокировано на стороне сервера</li><li>Чтобы использовать сервер, указанный на стороне сервера, установите флажок <span class="uitext">По серверу</span>.</li></ul></li>
+            <li value="4">Нажмите <span class="uitext">Закрыть</span>. При следующей загрузке интеллектуальной карты будет использоваться указанный сервер OpenStreetMap.</li>
+          </ol>
+          <p class="important">Если адрес сервера не указан или указан неверно, картографический фон OpenStreetMap будет недоступен.</p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Отображение и скрытие слоев интеллектуальной карты<a name="SC_ShowingOrHidingLayers.htm"></a></h2>
+        <p>Слои интеллектуальной карты можно включать и выключать в зависимости от того, что вы хотите увидеть.</p>
+        <div>
+          <h3>Слои на интеллектуальной карте (объяснение)<a name="SC_LayersOnSmartMapExpla.htm"></a></h3>
+          <p>Для фильтрации информации, отображаемой на <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">интеллектуальной карте<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Набор функций карты, заключающаяся в применении географической информационной системы для визуализации устройств (например, камер и микрофонов), конструкций и топографических элементов системы наблюдения в географически точном и визуально реалистичном контексте. Карты, в которых используются такие функции, называются интеллектуальными картами.</span></a>, можно использовать слои. Существует три типа слоев на интеллектуальной карте:</p>
+          <ul>
+            <li>
+              <span class="uitext">Элементы системы</span> — камеры, ссылки и точки на карте</li>
+            <li>
+              <span class="uitext">Пользовательские наложения</span> — растровые изображения, чертежи CAD и файлы форм</li>
+            <li>
+              <span class="uitext">Географические фоны</span> — базовая карта мира или одна из следующих служб:<ul><li>Bing Maps</li><li>Google Maps</li><li data-mc-conditions="flcts-features.oem-map-service-content"><span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span></li><li> OpenStreetMap </li></ul></li>
+          </ul>
+          <p class="note">Карты Bing Maps и Google Maps будут доступны в качестве картографического фона, только если администратор системы активировал их в <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. Дополнительные сведения приведены в разделе <a href="#SC_GeographicBackgrounds.htm" class="MCXref xref">Картографический фон (объяснение)</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Последовательность слоев (объяснение)<a name="SC_OrderOfLayersExplaine.htm"></a></h3>
+          <p>Все элементы системы каждого типа находятся на одном <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term26">слое<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Фон интеллектуальной карты, пользовательское наложение или системный элемент, такой как камера. Все графические элементы интеллектуальной карты представляют собой слои.</span></a>. Например, все камеры находятся на одном и том же слое. Если вы скроете слой камер, все камеры будут скрыты. Слои с элементами системы расположены в следующем порядке сверху вниз: точки на карте, камеры, ссылки и картографический фон. Этот порядок нельзя изменить.</p>
+          <p>Картографический фон всегда находится ниже остальных слоев на интеллектуальной карте. Можно переключаться между разными картографическими фонами, но одновременно может быть выбран только один фон.</p>
+          <p>Пользовательские наложения добавляются в качестве отдельных слоев в том порядке, в котором они были добавлены на интеллектуальную карту. Этот порядок можно изменить в настройках карты по умолчанию. </p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Пример</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>У территориального планировщика есть файл формы, соответствующий границам города, и файл формы со всеми основными дорогами в городе. Планировщик может настроить порядок слоев таким образом, чтобы дороги отображались поверх границ города. Это дает общее представление о размещении камер в городе и возможность увеличить масштаб для просмотра названия улицы, где находится определенная камера.</p>
+            </div>
+          </div>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Отображение и скрытие слоев на интеллектуальной карте<a name="SC_ShowOrHideLayersOnSma.htm"></a></h3>
+          <p>Можно показать или скрыть слои, в том числе картографический фон, на интеллектуальной карте. Это может быть полезно, когда требуется акцентировать внимание на конкретном элементе или просто убрать лишнюю информацию с интеллектуальной карты.</p>
+          <p>Действия:</p>
+          <ol>
+            <li value="1">На панели инструментов нажмите кнопку <img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">Показать или скрыть слои и пользовательские наложения</span>.</li>
+            <li value="2">Чтобы отобразить или скрыть элементы системы и пользовательские наложения, установите или снимите соответствующие флажки.</li>
+            <li value="3">Чтобы скрыть картографический фон, выберите <span class="uitext">Нет</span>.</li>
+          </ol>
+          <p class="note">При выборе пункта <span class="uitext">Нет</span> картографический фон не отображается, но геопространственная привязка к интеллектуальной карте по-прежнему активна. Например, если вы добавите новый файл форм с геопространственной привязкой, система воспользуется геопространственной привязкой для размещения файла на карте.</p>
+          <p class="note">Скрытие микрофона приводит к его отключению до тех пор, пока микрофон вновь не будет показан.</p>
+        </div>
+        <div>
+          <h3>Укажите параметры по умолчанию для интеллектуальной карты<a name="SC_ManageDefaultSettings(65803).htm"></a></h3>
+          <p>После добавления интеллектуальной карты к виду и добавления наложений, камер и ссылок можно определить настройки по умолчанию для пользовательских наложений. Также можно удалить пользовательские наложения для облегчения карты.</p>
+          <p>Действия:</p>
+          <ol>
+            <li value="1">Нажмите кнопку <span class="uitext">Настройка</span>.</li>
+            <li value="2">Нажмите <img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">Управление настройками по умолчанию</span>.</li>
+            <li value="3">Выполните любое из следующих действий: <ul><li>Чтобы отобразить или скрыть наложение, установите или снимите соответствующий флажок</li><li>Для изменения последовательности используйте маркер перед наложением, чтобы перетащить его на новую позицию списка. Слои в списке расположены сверху вниз</li><li>Для удаления наложения наведите курсор мыши на наложение и нажмите кнопку <span class="uitext">Удалить</span></li></ul></li>
+            <li value="4">Нажмите <span class="uitext">Сохранить</span>.</li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Добавление, удаление и изменение пользовательских наложений<a name="SC_AddingDeletingOrEditi.htm"></a></h2>
+        <div>
+          <h3>Пользовательские наложения (объяснение)<a name="SC_CustomOverlaysExplain.htm"></a></h3>
+          <p>Следующие типы файлов можно добавить в качестве пользовательских наложений на интеллектуальную карту в <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>:</p>
+          <ul>
+            <li>
+              <span class="uitext">Файл формы</span> — может содержать геопространственные векторные данные, такие как точки, линии и многоугольники, а также свойства, представляющие объекты на карте, такие как стены, дороги и географические объекты — например реки и озера. Например, отделения территориального планирования и администрации городов часто используют файлы формы, потому что они очень хорошо масштабируются при приближении и удалении, а размер такого файла зачастую меньше, чем размер чертежей CAD и растровых изображений</li>
+            <li>
+              <span class="uitext">CAD</span> — чертеж, выполненный в среде автоматизированного проектирования (CAD), может быть полезен в качестве картографического фона, так как, аналогично файлам формы, формат CAD поддерживает систему координат и может иметь пространственную привязку для обеспечения точного позиционирования объектов. Например, можно использовать подробные карты дорог или аэрофотосъемку</li>
+            <li>
+              <span class="uitext">Изображение</span> — если у вас есть файл с изображением, например план этажа здания, можно добавить его в качестве наложения на интеллектуальной карте. Поддерживаются следующие типы графических файлов: PNG, BMP, GIF, JPG, JPEG, PHG, TIF и TIFF</li>
+          </ul>
+          <p class="note">Для переключения фокуса на пользовательское наложение можно временно скрыть остальные слои. См. раздел <a href="#SC_LayersOnSmartMapExpla.htm" class="MCXref xref">Слои на интеллектуальной карте (объяснение)</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Пользовательские наложения и местоположения (объяснение)<a name="SC_CustomOverlaysAndLoca.htm"></a></h3>
+          <p>Можно быстро перейти к пользовательскому наложению, добавленному на интеллектуальную карту, согласно инструкциям в разделе <a href="sc_workingwithmap.htm#SC_FindLocationOfCustomO.htm" class="MCXref xref">Переход к пользовательским наложениям на интеллектуальной карте</a>. Однако в параметрах можно также привязывать пользовательские наложения к местонахождениям. Это значит, что при каждом добавлении пользовательского наложения <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> создает местоположение с тем же названием, что у пользовательского наложения, в той же самой точке карты. В результате появляется возможность выбрать пользовательское наложение в списке <span class="uitext">Выберите местоположение</span>.</p>
+          <p>
+            <img src="../../../Images/custom_overlays_and_locations.jpg" alt="" />
+          </p>
+          <p>Однако наложение и местоположение не связаны между собой. Например, можно удалить или переименовать местоположение, не меняя наложение, и наоборот.</p>
+          <p class="note">Инструкции по включению этой функции приведены в разделе <a href="#SC_AddLocationsToCustomO.htm" class="MCXref xref">Добавьте местоположения к пользовательским наложениям (интеллектуальная карта)</a>.</p>
+        </div>
+        <div>
+          <h3>Добавление пользовательских наложений на интеллектуальную карту<a name="SC_AddCustomOverlayOnSma.htm"></a></h3>
+          <p>Увеличьте уровень детализации интеллектуальной карты, добавляя пользовательские наложения. При добавлении <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term8">пользовательского наложения<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Пользовательский графический элемент, который можно добавить на интеллектуальную карту, например планировка этажа здания или граница между областями. Пользовательские наложения могут быть изображениями, чертежами CAD и файлами форм.</span></a><span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> создает местоположение с таким же именем, что и у наложения.</p>
+          <p>Действия:</p>
+          <ol>
+            <li value="1">Выберите вид с интеллектуальной картой, затем нажмите кнопку <span class="uitext">Настройка</span>.</li>
+            <li value="2">Нажмите <img src="../../../Images/add_custom_overlay_on_1.png" alt="" /><span class="uitext">Добавить пользовательское наложение</span>: <ul><li>Если добавляемое наложение имеет привязку к местности, нажмите в любом месте интеллектуальной карты. <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> использует привязку к местности для размещения наложения в правильном географическом местоположении. Кроме того, интеллектуальная карта центрируется на наложении с масштабом по умолчанию</li><li>Если в наложении нет привязки к местности, перейдите в точку на карте, куда необходимо добавить элемент, и щелкните точку на интеллектуальной карте</li><p class="tip">Перед тем как добавить наложение, увеличьте масштаб карты в точке добавления. Это упрощает точное позиционирование наложения.</p></ul></li>
+            <li value="3">Укажите имя наложения.</li>
+            <li value="4">В зависимости от выбранного типа файла: <ul><li><span class="uitext">Кадр</span> – выберите файл кадра и нажмите <span class="uitext">ОК</span></li><li><span class="uitext">Файл формы</span> – выберите файл SHP. Если есть файл PRJ, <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> найдет его, после чего можно просто нажать <span class="uitext">ОК</span>. Если файла PRJ нет, можно переместить наложение вручную после добавления. Можно также применить цвет. Например, добавление цвета сделает файл формы на интеллектуальной карте более заметным</li><li><span class="uitext">CAD</span> – выберите файл DWG. Если есть файл PRJ, нажмите <span class="uitext">ОК</span>. Если файл PRJ отсутствует и вы хотите использовать привязку к местности для размещения файла на интеллектуальной карте, введите идентификатор пространственной ориентации (SRID) и нажмите <span class="uitext">ОК</span>. Если файла PRJ или SRID нет, можно переместить наложение вручную после добавления</li><p class="note">Дополнительные сведения о типах наложений приведены в разделе <a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">Пользовательские наложения (объяснение)</a>.</p></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Добавьте местоположения к пользовательским наложениям (интеллектуальная карта)<a name="SC_AddLocationsToCustomO.htm"></a></h3>
+          <p>Можно настроить <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> для автоматического добавления мест на <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term8">пользовательские наложения<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Пользовательский графический элемент, который можно добавить на интеллектуальную карту, например планировка этажа здания или граница между областями. Пользовательские наложения могут быть изображениями, чертежами CAD и файлами форм.</span></a> на интеллектуальной карте. Это дает возможность переходить на пользовательские наложения в списке <span class="uitext">Выберите местоположение</span>. </p>
+          <p>Действия:</p>
+          <ol>
+            <li value="1">На панели инструментов приложения нажмите <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" />, а затем <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">Параметры</span> для перехода в окно <span class="uitext">Параметры</span>.</li>
+            <li value="2">Откройте вкладку <span class="uitext">Интеллектуальная карта</span>.</li>
+            <li value="3">В списке <span class="uitext">Создавать местоположение при добавлении слоя</span> выберите <span class="uitext">Да</span>.</li>
+            <li value="4">Закройте окно для сохранения изменений.</li>
+          </ol>
+          <p class="note">Дополнительные сведения приведены в разделе <a href="#SC_CustomOverlaysAndLoca.htm" class="MCXref xref">Пользовательские наложения и местоположения (объяснение)</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Добавление пользовательского наложения на интеллектуальную карту<a name="SC_DeleteCustomOverlayOn.htm"></a></h3>
+          <ol>
+            <li value="1">Выберите вид с интеллектуальной картой, затем нажмите кнопку <span class="uitext">Настройка</span>.</li>
+            <li value="2">На панели инструментов нажмите <img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">Управление настройками по умолчанию</span>.</li>
+            <li value="3">Наведите курсор мыши на пользовательское наложение и нажмите кнопку <span class="uitext">Удалить</span>.</li>
+            <li value="4">Нажмите <span class="uitext">Сохранить</span>, чтобы удалить пользовательское наложение.</li>
+            <li value="5">Не обязательно: Если для пользовательского наложения было создано местоположение, возможно, вы захотите удалить и его. Дополнительные сведения приведены в разделе <a href="#SC_AddingDeletingOrEditi_3.htm" class="MCXref xref">Добавление, удаление и изменение местоположений на интеллектуальной карте</a>.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Как сделать области в файлах форм более заметными (интеллектуальная карта)<a name="SC_MakeAreasInShapefiles.htm"></a></h3>
+          <p class="note">Этот раздел актуален только в случае, если вы пользуетесь файлами форм с многоугольниками.</p>
+          <p>Если вы хотите поместить на интеллектуальную карту файл формы с большим количеством близко расположенных многоугольников, вам может потребоваться различать эти многоугольники. Для этого нужно уменьшить прозрачность цвета, выбранного для файла формы. Тогда границы многоугольников станут заметны.</p>
+          <p>Действия:</p>
+          <ol>
+            <li value="1">Выполните шаги, описанные в разделе <a href="#SC_AddCustomOverlayOnSma.htm" class="MCXref xref">Добавление пользовательских наложений на интеллектуальную карту</a>.</li>
+            <li value="2">
+              <p>Выбирая цвет, переместите регулятор <span class="uitext">Прозрачность</span> налево в удобное для вас положение.</p>
+              <p>
+                <img src="../../../Images/make_areas_in_shapefiles_more.jpg" alt="" />
+              </p>
+            </li>
+            <li value="3">Нажмите <span class="uitext">Сохранить</span>.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Отрегулируйте положение, размер и совмещение пользовательского наложения<a name="SC_AdjustPositionSizeOrA.htm"></a></h3>
+          <p>Наложение можно перемещать в другое место на карте, увеличивать/уменьшать его и поворачивать. Например, это удобно, если наложение не имеет привязки к местности или имеет, но по какой-то причине не удается добиться точного совмещения с картографическим фоном.</p>
+          <p>Действия:</p>
+          <ol>
+            <li value="1">Выберите вид с интеллектуальной картой, затем нажмите кнопку <span class="uitext">Настройка</span>.</li>
+            <li value="2">Щелкните наложение правой кнопкой мыши и выберите команду <span class="uitext">Изменить положение</span>.</li>
+            <li value="3">Для изменения размера или поворота наложения: <ul><li>Нажмите на угол наложения и переместите его в нужное место</li><li><p>Чтобы повернуть наложение вокруг какой-нибудь точки, поместите точку поворота в нужное место. Затем нажмите на угол наложения и переместите его в нужное место </p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/adjust_position_size_or_alignment.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="273" data-mc-height="261" src="../../../Images/adjust_position_size_or_alignment_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="" tabindex="" /></a></p></li></ul></li>
+            <li value="4">Чтобы переместить наложение на карте, нажмите на него и перенесите его в нужное место.</li>
+            <li value="5">Чтобы сохранить изменения, нажмите кнопку <span class="uitext">Сохранить</span>.</li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Добавление, удаление и изменение устройств на интеллектуальной карте<a name="SC_AddingDeletingOrEditi_1.htm"></a></h2>
+        <p>Устройства можно добавить на интеллектуальную карту в их текущем местонахождении в вашей среде. Это позволит получить визуальное представление о системе наблюдения и облегчит реакцию на инциденты. Например, чтобы следить за подозрительным лицом во время инцидента, можно щелкать по камерам на карте для отображения видео с этих камер.</p>
+        <p>После добавления камеры на интеллектуальную карту щелкните значок камеры, чтобы настроить ее поле зрения в соответствии с полем зрения физической камеры. Это облегчает поиск камер, охватывающих определенную область. Кроме того, можно задать значок, которым камера обозначается на карте, что облегчает распознавание типа камеры на карте.</p>
+        <p>На интеллектуальной карте можно работать со следующими типами устройств:</p>
+        <ul>
+          <li>Камеры</li>
+          <li>Устройства ввода</li>
+          <li>Микрофоны</li>
+        </ul>
+        <div data-mc-conditions="">
+          <h3>Добавление устройств на интеллектуальную карту<a name="SC_AddCamerasToSmartMap.htm"></a></h3>
+          <p>Если географические координаты устройства указаны в <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> администратором, устройство будет автоматически помещено в нужную точку интеллектуальной карты при добавлении. Если это не было сделано, вам нужно будет самостоятельно поместить устройство в нужную точку.</p>
+          <ol>
+            <li value="1">Выберите вид с интеллектуальной картой, затем нажмите кнопку <span class="uitext">Настройка</span>.</li>
+            <li value="2">Добавление устройства или группы устройств: <p class="tip">Перед добавлением устройства рекомендуется навести карту на нужную точку в удобном масштабе. Это упрощает точное позиционирование устройства.</p><ul><li>Разверните панель <span class="uitext">Обзор системы</span>, найдите устройство или группу устройств, а затем поместите его в нужную точку интеллектуальной карты. В дальнейшем устройство можно будет перемещать с помощью мыши</li><li>На панели инструментов интеллектуальной карты выберите <img src="../../../Images/add-a-device-to-smart-map.png" alt="" /><span class="uitext">Добавить устройство</span> &gt; выберите тип устройства.<ul><li>Пример: В случае камеры выберите <img src="../../../Images/add_cameras_to_map.png" alt="" /><span class="uitext">Добавить камеру</span>, а затем выберите камеру.</li></ul></li><li>Перенесите устройство на интеллектуальную карту</li><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_adddevice.png" data-mc-popup-alt="Add a device to your smart map."><img class="MCPopupThumbnail img" data-mc-width="709" data-mc-height="823" src="../../../Images/sc_smap_adddevice_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add a device to your smart map." tabindex="" /></a><br /></ul></li>
+            <li value="3">Чтобы сохранить изменения, нажмите кнопку <span class="uitext">Настройка</span> для выхода из режима настройки.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Изменение поля зрения и направления камеры<a name="SC_ChangeFieldOfViewAndD.htm"></a></h3>
+          <p>После добавления камеры на интеллектуальную карту можно изменить поле зрения и направление камеры с помощью значка камеры.</p>
+          <p class="tip">Если вы просматриваете карту в мелком масштабе, возможно, потребуется увеличить масштаб для отображения поля зрения.</p>
+          <ol>
+            <li value="1">Выберите вид, содержащий нужную интеллектуальную карту.</li>
+            <li value="2">Нажмите кнопку <span class="uitext">Настройка</span> для изменения значка камеры.</li>
+            <li value="3">
+              <p>Нажмите на значок камеры.</p>
+              <p>
+                <img src="../../../Images/change_field_of_view_and_direction.png" alt="" />
+              </p>
+            </li>
+            <li value="4">Используя указатель поворота, сориентируйте камеру в правильном направлении.</li>
+            <li value="5">Чтобы настроить ширину, длину и угол поля зрения, перетащите соответствующие маркеры в передней части поля зрения.</li>
+            <li value="6">Чтобы сохранить изменения, нажмите кнопку <span class="uitext">Настройка</span> для выхода из режима настройки.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Выберите или измените значок устройства<a name="SC_SelectOrChangeTheIcon.htm"></a></h3>
+          <p>Можно выбрать устройство, соответствующее типу используемого устройства.</p>
+          <ol>
+            <li value="1">Выберите вид, содержащий нужную интеллектуальную карту.</li>
+            <li value="2">
+              <p>Нажмите <span class="uitext">Настроить</span>, а затем дважды нажмите значок устройства на карте.</p>
+              <p>
+                <img src="../../../Images/select_or_change_the_icon.png" alt="" />
+              </p>
+            </li>
+            <li value="3">Нажмите <span class="uitext">Выбрать значок</span>, а затем выберите значок для устройства.</li>
+            <li value="4">Нажмите кнопку <span class="uitext">Настройка</span> еще раз для сохранения изменений.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Показать или скрыть информацию об устройстве<a name="SC_ShowOrHideInformation.htm"></a></h3>
+          <p>На интеллектуальной карте можно показать или скрыть информацию об устройствах. Это удобно, например, в случаях, когда требуется увеличить или уменьшить объем информации на интеллектуальной карте.</p>
+          <ol>
+            <li value="1">Выберите вид, содержащий нужную интеллектуальную карту.</li>
+            <li value="2">Нажмите <img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">Показать или скрыть системные слои и пользовательские наложения</span>.</li>
+            <li value="3">Поставьте или снимите отметки в соответствии с тем, какая информация должна быть показана.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Прослушивание микрофона с интеллектуальной карты</h3>
+          <p>После добавления микрофонов на интеллектуальную карту можно включать звук (только с одного микрофона в каждый момент времени) на вкладке <span class="uitext">Наблюдение</span>. </p>
+          <p>Действия:</p>
+          <ol>
+            <li value="1">
+              <p>На вкладке <span class="uitext">Наблюдение</span> перейдите на точку интеллектуальной карты, на которой расположен микрофон.</p>
+            </li>
+            <li value="2">
+              <p>Дважды нажмите значок микрофона, чтобы включить или выключить звук.</p>
+              <p class="tip">Также можно нажать микрофон правой кнопкой мыши и выбрать <span class="uitext">Отключить микрофон</span> или <span class="uitext">Включить</span>.</p>
+            </li>
+          </ol>
+        </div>
+        <div>
+          <h3>Удаление устройств с интеллектуальной карты<a name="SC_DeletingCamerasOnSmar.htm"></a></h3>
+          <p>Устройства можно удалять с интеллектуальной карты, например, если они были физически удалены или добавлены по ошибке. Удаление устройства приводит к удалению информации о его местонахождении, например координат, из системы управления видео.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Требования</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>Следующие права пользователей должны быть включены в <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>:</p>
+              <ul>
+                <li>Изменение интеллектуальных карт</li>
+                <li>Изменение устройств</li>
+              </ul>
+            </div>
+          </div>
+          <p>Действия:</p>
+          <ol>
+            <li value="1">Перейдите к устройству, которое требуется удалить.</li>
+            <li value="2"> Нажмите кнопку <span class="uitext">Настройка</span> для перехода в режим настройки. </li>
+            <li value="3">
+              <p>Для удаления одного устройства нажмите его правой кнопкой и выберите <span class="uitext">Удалить</span>.</p>
+              <p>Пример: В случае камеры нажмите <span class="uitext">Удалить камеру</span>.</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_removecamera.png" data-mc-popup-alt="Remove camera from your smart map.">
+                  <img class="MCPopupThumbnail img" data-mc-width="284" data-mc-height="209" src="../../../Images/sc_smap_removecamera_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: 0;" alt="Remove camera from your smart map." tabindex="" />
+                </a>
+              </p>
+            </li>
+            <li value="4">Для удаления нескольких камер:<ol><li value="1"><p>На панели инструментов интеллектуальной карты нажмите <img src="../../../Images/preview_videos_from_several.png" alt="" /><span class="uitext">Выбрать несколько камер</span>.</p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_cluster_multiselect.png" data-mc-popup-alt="Select multipe cameras on your smart map."><img class="MCPopupThumbnail img" data-mc-width="1056" data-mc-height="672" src="../../../Images/sc_smap_cluster_multiselect_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: 0;" alt="Select multipe cameras on your smart map." tabindex="" /></a><br /></p></li><li value="2">Для выбора нескольких камер нажмите кнопку мыши и выделите нужную область. Устройства других типов, например устройства ввода, не будут выделяться.</li><li value="3">Нажмите правую кнопку мыши и выберите <span class="uitext">Удалить камеры</span>.</li></ol></li>
+            <li value="5">Удаление нескольких устройств, отличных от камер:<ol><li value="1">Откройте интеллектуальную карту и нажмите Ctrl. </li><li value="2">Удерживая клавишу Ctrl, нажмите устройства, которые нужно удалить.</li><li value="3">Нажмите правой кнопкой одно из выбранных устройств и выберите Удалить.</li></ol></li>
+            <li value="6"> Снова нажмите кнопку <span class="uitext">Настройка</span> для выхода из режима настройки. Ваши изменения сохранены.</li>
+          </ol>
+          <p class="tip">Также можно удалить одно устройство, выбрав его и нажав клавишу <span class="uitext">DELETE</span> на клавиатуре.</p>
+        </div>
+      </div>
+      <div>
+        <h2>Добавление, удаление и изменение ссылок на интеллектуальной карте<a name="SC_AddingDeletingOrEditi_2.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Ссылки на интеллектуальной карте (объяснение)<a name="SC_LinksOnSmartMapExplai.htm"></a></h3>
+          <p>Можно добавлять ссылки на местоположения на интеллектуальной карте или пользоваться статическими картами в <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Это позволяет быстро переходить к нужным точкам или отобразить карту другого типа без изменения вида. Добавлять ссылки на другую интеллектуальную карту нельзя. Дополнительные сведения приведены в разделе <a href="#SC_DifferencesBetweenMap.htm" class="MCXref xref">Различия между обычными картами и интеллектуальной картой (объяснение)</a>.</p>
+          <p>Карты и точки отображаются по ссылкам следующим образом:</p>
+          <ul>
+            <li>Ссылка на точку открывает целевое расположение в текущем виде. Для перехода к ранее просмотренной точке нажмите кнопку <img src="../../../Images/backtracking_to_previous_locations.png" alt="" /><span class="uitext">Назад</span> на панели инструментов интеллектуальной карты.</li>
+            <li>Ссылка на карту открывает эту карту в плавающем окне. Это позволяет одновременно работать с картами обоих типов. Можно просматривать карту и взаимодействовать с ней, но в плавающем окне нельзя вносить изменения, например добавлять камеры</li>
+          </ul>
+          <p class="note">Можно указать цвет для ссылки, чтобы различать ссылки по цветам или сделать их более заметными на карте. По умолчанию ссылки на интеллектуальной карте имеют синий цвет, а ссылки на карты старого типа — красный. При использовании других цветов рекомендуется назначать всем ссылкам одного типа один и тот же цвет. В частности, это позволит проще различать ссылки при использовании слоев для фильтрации элементов на карте.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Добавление ссылки на карту или на точку на интеллектуальной карте<a name="SC_AddLinkToSmartMapLoca.htm"></a></h3>
+          <p>Добавление ссылок на интеллектуальную карту позволяет быстро переходить к нужным точкам или отобразить карту другого типа без изменения вида.</p>
+          <p>Действия:</p>
+          <ol>
+            <li value="1">Выберите вид с интеллектуальной картой, затем нажмите кнопку <span class="uitext">Настройка</span>.</li>
+            <li value="2">Перейдите к точке на карте, на которую требуется добавить ссылку.</li>
+            <li value="3">На панели инструментов карты нажмите кнопку <img src="../../../Images/add_link_to_map_location.png" alt="" /><span class="uitext">Добавить ссылку</span>, затем нажмите точку на карте, куда должна вести ссылка.</li>
+            <li value="4">Укажите, следует ли добавить ссылку на карту или на точку на интеллектуальной карте, затем нажмите кнопку <span class="uitext">Добавить</span>.</li>
+            <li value="5">
+              <p>Введите название для новой ссылки.</p>
+              <p class="tip">Можно отобразить название ссылки на интеллектуальной карте, если в качестве стиля отображения выбран <span class="uitext">Значок и текст</span>. Как правило, по имени ссылки можно определить, куда она ведет.</p>
+            </li>
+            <li value="6">В поле <span class="uitext">Назначение</span> выберите карту или точку, на которую ведет ссылка.</li>
+            <li value="7">В поле <span class="uitext">Стиль отображения</span> укажите, следует ли отображать на карте имя и значок ссылки или только значок.</li>
+            <li value="8">Не обязательно: Нажмите кнопку <span class="uitext">Цвет</span> и выберите цвет ссылки.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Изменение и удаление ссылок на интеллектуальной карте<a name="SC_EditOrDeleteLinkOnSma.htm"></a></h3>
+          <p>Ссылку, добавленную на интеллектуальную карту, можно изменить и удалить.</p>
+          <p>Действия:</p>
+          <ol>
+            <li value="1"> Нажмите кнопку <span class="uitext">Настройка</span> для перехода в режим настройки. </li>
+            <li value="2">Для изменения ссылки нажмите ее правой кнопкой мыши и выберите <span class="uitext">Изменить ссылку</span>.</li>
+            <li value="3">Для удаления ссылки выполните одно из следующих действий:<ul><li>Нажмите правой кнопкой на ссылку и выберите <span class="uitext">Удалить ссылку</span></li><li>Выберите здание и нажмите клавишу <span class="uitext">DELETE</span> на клавиатуре</li></ul></li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Добавление, удаление и изменение местоположений на интеллектуальной карте<a name="SC_AddingDeletingOrEditi_3.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Местоположения на интеллектуальной карте (объяснение)<a name="SC_LocationsOnSmartMapEx.htm"></a></h3>
+          <p>На интеллектуальную карту можно добавить важные для вас точки. Например, можно создать точки, показывающие главный офис и филиалы. Эти точки не только дают полное представление о системе, но и облегчают навигацию по интеллектуальной карте. </p>
+          <p class="note">В зависимости от конфигурации, при добавлении пользовательского наложения <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> добавляет местоположение с таким же именем, что у наложения. Например, это облегчает переход к наложению на интеллектуальной карте при уменьшенном масштабе. Однако наложение и местоположение не связаны между собой. Например, можно удалить или переименовать местоположение, не меняя наложение, и наоборот. Дополнительные сведения приведены в разделе <a href="#SC_AddingDeletingOrEditi.htm" class="MCXref xref">Добавление, удаление и изменение пользовательских наложений</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Начальные положения на интеллектуальной карте (объяснение)<a name="SC_HomeLocationsForSmart.htm"></a></h3>
+          <p>Начальные положения относятся к элементу вида, в котором они созданы. В разных элементах видов можно создавать разные начальные положения. Если для элемента вида не задано начальное положение, в элементе вида будет показан весь мир вне зависимости от выбранного фона. Это же относится к случаю, если начальное положение будет удалено.</p>
+          <p>При работе с интеллектуальной картой можно нажать кнопку <img src="../../../Images/home_locations_for_map.png" alt="" /><span class="uitext">Начальное положение</span>, чтобы вернуться к начальному положению. Это действие аналогично сбросу настроек интеллектуальной карты в виде. При этом для элемента просмотра применяются настройки по умолчанию, а журнал просмотренных точек очищается.</p>
+          <p class="note">Изменение начального положения относится ко всем пользователям, работающим с этим элементом просмотра. Если начальное положение было ранее задано другим пользователем, его настройка будет изменена.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Добавление местоположения на интеллектуальную карту<a name="SC_AddLocationToSmartMap.htm"></a></h3>
+          <p>На интеллектуальную карту можно добавлять местоположения мест особого интереса для быстрого перехода к ним.</p>
+          <p>Действия:</p>
+          <ol>
+            <li value="1">Выберите вид с интеллектуальной картой и нажмите кнопку <span class="uitext">Настройка</span>.</li>
+            <li value="2">На интеллектуальной карте перейдите к расположению, в котором требуется добавить точку.</li>
+            <li value="3">На панели инструментов нажмите кнопку <img src="../../../Images/add_location_to_map.png" alt="" /><span class="uitext">Добавить местоположение</span> и нажмите точку на интеллектуальной карте.</li>
+            <li value="4">Задайте новой точке имя. Можно также указать следующую необязательную информацию: <ul><li>Укажите значение масштаба, используемое при переходе к этой точке на интеллектуальной карте.</li><li>Выберите цвет для значка точки. Цветовая маркировка помогает различать точки разных типов. Цвет точки может отражать предназначение местоположения, его тип или важность.</li><li>Не обязательно: Точку можно назначить в качестве начального положения. По нажатию кнопки <img src="../../../Images/home_locations_for_map.png" alt="" /><span class="uitext">Начальное положение</span> интеллектуальная карта центрируется на этой точке и применяет значение масштаба по умолчанию.</li></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Добавление, изменение и удаление точек на интеллектуальной карте<a name="SC_EditOrDeleteLocationO.htm"></a></h3>
+          <p>Местоположения, добавленные на интеллектуальную карту, можно удалять и изменять. В частности, можно удалить начальное положение.</p>
+          <p>Действия:</p>
+          <ol>
+            <li value="1"> Нажмите кнопку <span class="uitext">Настройка</span> для перехода в режим настройки. </li>
+            <li value="2">Для изменения местоположения нажмите его правой кнопкой мыши и выберите <span class="uitext">Изменить местоположение</span>.</li>
+            <li value="3">Для удаления местоположения выполните одно из следующих действий:<ul><li>Нажмите местоположение правой кнопкой мыши и выберите <span class="uitext">Удалить местоположение</span></li><li>Выберите местонахождение и нажмите клавишу <span class="uitext">DELETE</span> на клавиатуре</li></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Создание ссылок между местоположениями (объяснение)<a name="SC_LinkingBetweenLocatio.htm"></a></h3>
+          <p>Например, можно создать маршрут патрулирования, сформировав набор ссылок на точки на карте. Создайте ссылку в точке A, которая идет на точку Б, ссылку в точке Б, которая ведет на точку В, и так далее. Дополнительные сведения приведены в разделе <a href="#SC_AddingDeletingOrEditi_2.htm" class="MCXref xref">Добавление, удаление и изменение ссылок на интеллектуальной карте</a>.</p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Добавление, удаление и изменение зданий на интеллектуальной карте<a name="SC_AddingDeletingOrEditi_4.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Здания на интеллектуальной карте (объяснение)<a name="SC_BuildingsOnSmartMapEx.htm"></a></h3>
+          <p>Здания на <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">интеллектуальной карте<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Набор функций карты, заключающаяся в применении географической информационной системы для визуализации устройств (например, камер и микрофонов), конструкций и топографических элементов системы наблюдения в географически точном и визуально реалистичном контексте. Карты, в которых используются такие функции, называются интеллектуальными картами.</span></a> изображаются в виде прямоугольников. Добавив здание, можно изменять его размеры и форму, чтобы они соответствовали актуальным.</p>
+          <p>Если в здании несколько этажей, можно добавлять этажи и камеры на них. Это дает возможность переключаться между камерами на разных этажах.</p>
+          <p>Чтобы было проще ориентироваться в здании, к этажам можно добавлять планировки, например изображение с планом этажа. Дополнительные сведения приведены в разделе <a href="#SC_AddFloorPlansToLevels.htm" class="MCXref xref">Добавление планировок этажей (интеллектуальная карта)</a>.</p>
+          <p>Зданиям автоматически присваиваются названия, например <span class="uitext">Здание 4</span>. <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> рекомендует изменять стандартные названия. Так будет проще отличать здания друг от друга.</p>
+          <p>
+            <img src="../../../Images/buildings_on_map_explained.jpg" alt="" />
+          </p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Добавление зданий на интеллектуальную карту<a name="SC_AddBuildingsToSmartMa.htm"></a></h3>
+          <p>Вместо изображений и файлов форм для иллюстрирования зданий можно пользоваться контурами. Добавив контур, можно изменять его размеры и форму, чтобы они соответствовали реальному зданию.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Требования</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> В профиле <span class="mc-variable flvar-product.SC variable">Smart Client</span> в <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> было разрешено редактирование интеллектуальной карты. </p>
+            </div>
+          </div>
+          <p>Действия:</p>
+          <ol>
+            <li value="1"> Нажмите кнопку <span class="uitext">Настройка</span> для перехода в режим настройки. </li>
+            <li value="2">Выберите точку интеллектуальной карты, на которую нужно поместить здание.</li>
+            <li value="3">Нажмите <img src="../../../Images/add_buildings_to_map.jpg" alt="" /> и поместите указатель на нужную точку интеллектуальной карты.</li>
+            <li value="4">Нажмите еще раз. На интеллектуальную карту будет добавлен прямоугольник. При необходимости масштаб будет автоматически увеличен.</li>
+            <li value="5">Форму и расположение значка можно изменить таким образом, чтобы они соответствовали реальному зданию.</li>
+            <li value="6"> Снова нажмите кнопку <span class="uitext">Настройка</span> для выхода из режима настройки. Ваши изменения сохранены.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Изменение зданий на интеллектуальной карте<a name="SC_EditBuildingsOnSmartM.htm"></a></h3>
+          <p>После того как здание будет добавлено на интеллектуальную карту, можно изменить его название, расположение, размеры и ориентацию. Также можно добавлять и удалять этажи и изменять их взаимное расположение.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Требования</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> В профиле <span class="mc-variable flvar-product.SC variable">Smart Client</span> в <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> было разрешено редактирование интеллектуальной карты. </p>
+            </div>
+          </div>
+          <p>Действия:</p>
+          <ol>
+            <li value="1">Выберите здание на интеллектуальной карте. При необходимости увеличьте масштаб.</li>
+            <li value="2"> Нажмите кнопку <span class="uitext">Настройка</span> для перехода в режим настройки. </li>
+            <li value="3">
+              <p>Нажмите на любую точку внутри здания. Если контур здания станет синим, это значит, что здание можно изменять.<br /></p>
+              <p>
+                <img src="../../../Images/buildings_on_map_explained.jpg" alt="" />
+              </p>
+            </li>
+            <li value="4">Чтобы переименовать здание, нажмите <img src="../../../Images/edit_buildings_on_map.jpg" alt="" /> в верхней части правой панели. Введите новое название и нажмите <img src="../../../Images/edit_buildings_on_map_1.jpg" alt="" />. Для отмены нажмите <span class="uitext">Esc</span>.</li>
+            <li value="5">Для изменения расположения углов нажмите на них мышью и переместите их в нужное место.</li>
+            <li value="6">Информация о добавлении и удалении этажей приведена в разделе <a href="#SC_AddOrRemoveLevelsFrom.htm" class="MCXref xref">Добавление и удаление этажей (интеллектуальная карта)</a>.</li>
+            <li value="7"> Снова нажмите кнопку <span class="uitext">Настройка</span> для выхода из режима настройки. Ваши изменения сохранены.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Удаление зданий с интеллектуальной карты<a name="SC_DeleteBuildingsOnSmar.htm"></a></h3>
+          <p>Если здание уже не нужно, его можно удалить. При следующем входе в <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> или перезагрузке карты здание исчезнет.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Требования</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> В профиле <span class="mc-variable flvar-product.SC variable">Smart Client</span> в <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> было разрешено редактирование интеллектуальной карты. </p>
+            </div>
+          </div>
+          <p>Действия:</p>
+          <ol>
+            <li value="1">Откройте интеллектуальную карту.</li>
+            <li value="2"> Нажмите кнопку <span class="uitext">Настройка</span> для перехода в режим настройки. </li>
+            <li value="3">Выполните одно из следующих действий:</li>
+            <ul>
+              <li>Нажмите здание правой кнопкой мыши и выберите <span class="uitext">Удалить</span></li>
+              <li>Выберите здание и нажмите клавишу <span class="uitext">DELETE</span></li>
+            </ul>
+          </ol>
+          <p class="tip">Еще один способ удаления здания: В списке <img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">Управление параметрами по умолчанию</span> выберите раздел <span class="uitext">Здания</span>, наведите мышь на здание, нажмите <span class="uitext">Удалить</span>, а затем <span class="uitext">Сохранить</span>. </p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Работа с этажами и устройствами в здании (интеллектуальная карта)<a name="SC_ManagingLevelsAndCame.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Устройства и этажи в здании (описание)<a name="SC_CamerasAndLevelsInBui.htm"></a></h3>
+          <p>По умолчанию добавляемые устройства размещаются на этаже по умолчанию, если он задан. В противном случае они размещаются на первом этаже. Однако устройства можно размещать и на других этажах, и в том числе на нескольких этажах одновременно.</p>
+          <p>Дополнительные сведения:</p>
+          <ul>
+            <li>Если этажи не выбраны, устройство видно на всех этажах</li>
+            <li>Если здание будет добавлено поверх уже имеющегося устройства, по умолчанию устройство будет привязано ко всем этажам</li>
+            <li>Если периметр здания будет увеличен и захватит ранее установленное устройство, то устройство будет привязано только к выбранному этажу</li>
+          </ul>
+          <p class="note">Если периметр здания будет изменен и перестанет захватывать устройство, устройство будет отвязано от здания.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>
+            <a name="SC_FloorPlansDevicesInBuildings"></a>Планировка этажей и устройства в зданиях (описание)</h3>
+          <p>Чтобы в здании было проще ориентироваться, к этажам можно добавлять планировки в виде пользовательских наложений. Наличие планировки этажа упрощает точное позиционирование устройства. Дополнительные сведения приведены в разделе <a href="#SC_AddFloorPlansToLevels.htm" class="MCXref xref">Добавление планировок этажей (интеллектуальная карта)</a>.</p>
+          <p>Размещаемые устройства привязываются к этажам, а не пользовательским наложениям. Если этаж будет удален из здания с устройствами и пользовательским наложением, устройства сохранят свое расположение, но более не будут привязаны к этажу. Однако пользовательское наложение будет удалено вместе с этажом.</p>
+          <p>Изменение порядка следования этажей не влияет на привязку устройств и пользовательских наложений. Устройства сохраняют свое географическое местонахождение.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Добавление и удаление этажей (интеллектуальная карта)<a name="SC_AddOrRemoveLevelsFrom.htm"></a></h3>
+          <p>После добавления здания на интеллектуальную карту можно добавить в него произвольное количество этажей. Первому этажу присваивается номер <span class="uitext">1</span>, следующему — <span class="uitext">2</span> и так далее. Впоследствии этажи можно переименовать и перенумеровать.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Требования</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> В профиле <span class="mc-variable flvar-product.SC variable">Smart Client</span> в <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> было разрешено редактирование интеллектуальной карты. </p>
+            </div>
+          </div>
+          <p>Действия:</p>
+          <ol>
+            <li value="1">Выберите здание на интеллектуальной карте. При необходимости увеличьте масштаб.</li>
+            <li value="2">Выберите здание. В правой части окна появится новая панель.</li>
+            <li value="3">Нажмите кнопку <span class="uitext">Настройка</span> для входа в режим настройки.</li>
+            <li value="4">Нажмите <span class="uitext">Добавить этаж</span><img src="../../../Images/add_or_remove_levels_from.jpg" alt="" />.</li>
+            <li value="5">Переименование этажа: <ol><li value="1">Нажмите точки <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> и нажмите <span class="uitext">Переименовать</span>.</li><li value="2">Введите новое имя.</li></ol></li>
+            <li value="6">Для удаления этажа нажмите точки <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> и выберите <span class="uitext">Удалить</span>. Устройства на этом этаже сохраняют свое местонахождение, но не привязку к этажу.</li>
+            <li value="7">Нажмите кнопку <span class="uitext">Настройка</span> для выхода из режима настройки.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Изменение порядка этажей в здании (интеллектуальная карта)<a name="SC_ChangeOrderOfLevels.htm"></a></h3>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Требования</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> В профиле <span class="mc-variable flvar-product.SC variable">Smart Client</span> в <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> было разрешено редактирование интеллектуальной карты. </p>
+            </div>
+          </div>
+          <p>Действия:</p>
+          <ol>
+            <li value="1">Выберите здание на интеллектуальной карте. При необходимости увеличьте масштаб.</li>
+            <li value="2">Выберите здание. Справа появится панель со списком этажей здания.</li>
+            <li value="3"> Нажмите кнопку <span class="uitext">Настройка</span> для перехода в режим настройки. </li>
+            <li value="4">Перенесите заполненную точками область <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> в нужное положение. Все привязанные устройства и пользовательские наложения сохраняют привязку к этажу.</li>
+            <li value="5"> Снова нажмите кнопку <span class="uitext">Настройка</span> для выхода из режима настройки. Ваши изменения сохранены.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Выбор этажа по умолчанию для здания (интеллектуальная карта)<a name="SC_SetDefaultLevelForBui.htm"></a></h3>
+          <p>Если один из этажей здания важнее других (например, первый этаж), его можно сделать этажом по умолчанию. При переходе к зданию на интеллектуальной карте будет автоматически выбираться этаж по умолчанию.</p>
+          <p>Если вы покинете здание, а затем вновь вернетесь к нему, <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> вернет вас на этаж, который был выбран ранее.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Требования</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> В профиле <span class="mc-variable flvar-product.SC variable">Smart Client</span> в <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> было разрешено редактирование интеллектуальной карты. </p>
+            </div>
+          </div>
+          <p>Действия:</p>
+          <ol>
+            <li value="1">Выберите здание на интеллектуальной карте. При необходимости увеличьте масштаб.</li>
+            <li value="2">Выберите здание. Справа появится панель со списком этажей здания. Будет выделен этаж по умолчанию.</li>
+            <li value="3">Нажмите кнопку <span class="uitext">Настройка</span> для перехода в режим настройки. Обратите внимание на звездочку <img src="../../../Images/set_default_level_for_buildings.jpg" alt="" />. Она указывает текущее положение этажа по умолчанию.</li>
+            <li value="4">На этаже, который нужно выбрать в качестве этажа по умолчанию, нажмите точки <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" />.</li>
+            <li value="5">Выберите <span class="uitext">Выбирать по умолчанию</span>.</li>
+            <li value="6"> Снова нажмите кнопку <span class="uitext">Настройка</span> для выхода из режима настройки. Ваши изменения сохранены.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Добавление планировок этажей (интеллектуальная карта)<a name="SC_AddFloorPlansToLevels.htm"></a></h3>
+          <p>К этажам здания можно добавлять пользовательские наложения, например изображения с планировками, для иллюстрирования их внутренней организации. При переходе на другой этаж будет автоматически показываться его планировка.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Требования</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> В профиле <span class="mc-variable flvar-product.SC variable">Smart Client</span> в <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> было разрешено редактирование интеллектуальной карты. </p>
+            </div>
+          </div>
+          <p>Действия:</p>
+          <ol>
+            <li value="1">Выберите здание на интеллектуальной карте. При необходимости увеличьте масштаб.</li>
+            <li value="2">Выберите здание. Справа появится панель со списком этажей здания.</li>
+            <li value="3"> Нажмите кнопку <span class="uitext">Настройка</span> для перехода в режим настройки. </li>
+            <li value="4">Выберите этаж, к которому нужно добавить пользовательское наложение.</li>
+            <li value="5">В верхнем левом углу выберите <img src="../../../Images/add_custom_overlay_on_1.png" alt="" /><span class="uitext">Добавить пользовательское наложение</span>, а затем нажмите на любую точку здания. Появится новое окно.</li>
+            <li value="6">Выберите тип пользовательского наложения. Дополнительные сведения приведены в разделе <a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">Пользовательские наложения (объяснение)</a>.</li>
+            <li value="7">
+              <p>Выберите файл и нажмите кнопку <span class="uitext">Продолжить</span>. Пользовательское наложение будет показано в виде голубого контура.<br /></p>
+              <p>
+                <img src="../../../Images/add_floorplans_to_levels.jpg" alt="" />
+              </p>
+            </li>
+            <li value="8">Поставьте наложение в нужное положение с помощью углов и точки вращения.</li>
+            <li value="9">В строке меню в верхней части окна выберите <span class="uitext">Сохранить</span>.</li>
+            <li value="10"> Снова нажмите кнопку <span class="uitext">Настройка</span> для выхода из режима настройки. Ваши изменения сохранены.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Удаление планировок этажей (интеллектуальная карта)<a name="SC_DeleteFloorPlansOnLev.htm"></a></h3>
+          <p>Если планировка этажа изменится, может потребоваться заменить соответствующее пользовательское наложение. <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> рекомендует удалять старую планировку перед добавлением новой.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Требования</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> В профиле <span class="mc-variable flvar-product.SC variable">Smart Client</span> в <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> было разрешено редактирование интеллектуальной карты. </p>
+            </div>
+          </div>
+          <p>Действия:</p>
+          <ol>
+            <li value="1">Выберите здание на интеллектуальной карте. При необходимости увеличьте масштаб.</li>
+            <li value="2">Выберите здание. Справа появится панель со списком этажей здания.</li>
+            <li value="3"> Нажмите кнопку <span class="uitext">Настройка</span> для перехода в режим настройки. </li>
+            <li value="4">Выберите этаж, к которому прикреплено пользовательское наложение.</li>
+            <li value="5">Нажмите на оверлей правой кнопкой мыши и выберите <span class="uitext">Удалить пользовательское наложение</span>.</li>
+            <li value="6"> Снова нажмите кнопку <span class="uitext">Настройка</span> для выхода из режима настройки. Ваши изменения сохранены.</li>
+          </ol>
+          <p class="tip">Для изменения положения или размера планировки щелкните наложение правой кнопкой мыши и выберите <span class="uitext">Изменить положение</span>. Теперь можно переместить и повернуть наложение, а также изменить его размер.</p>
+        </div>
+        <div>
+          <h3>Добавление устройств к зданиям (интеллектуальная карта)<a name="SC_AddCamerasToBuildings.htm"></a></h3>
+          <p>После создания здания и добавления этажей можно добавлять устройства. Если задан этаж по умолчанию, устройства привязываются к нему. В противном случае они размещаются на первом этаже. Это поведение можно изменить; устройства можно привязывать к любым этажам здания.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Требования</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> В профиле <span class="mc-variable flvar-product.SC variable">Smart Client</span> в <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> было разрешено редактирование интеллектуальной карты. </p>
+            </div>
+          </div>
+          <p>Действия:</p>
+          <ol>
+            <li value="1">Выберите здание на интеллектуальной карте. При необходимости увеличьте масштаб.</li>
+            <li value="2"> Нажмите кнопку <span class="uitext">Настройка</span> для перехода в режим настройки. </li>
+            <li value="3">Для добавления устройства нажмите его значок. <p>Пример: В случае камеры нажмите <img src="../../../Images/add_cameras_to_buildings.jpg" alt="" /><span class="uitext">Добавить камеру</span>.</p></li>
+            <li value="4">Нажмите еще раз на точку, в которой нужно разместить устройство. Появится окно.</li>
+            <li value="5">Выберите устройство и нажмите <span class="uitext">ОК</span>. Повторите шаги 3-5 для всех добавляемых устройств.</li>
+            <li value="6">Чтобы привязать устройство к одному или нескольким этажам, нажмите его правой кнопкой и выберите нужные этажи.</li>
+            <li value="7"> Снова нажмите кнопку <span class="uitext">Настройка</span> для выхода из режима настройки. Ваши изменения сохранены.</li>
+          </ol>
+          <p class="note">Если этажи не выбраны, устройство видно на всех этажах.</p>
+        </div>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Информация о концепции</p>
+        <p class="containerItem_container_0">
+          <a href="sc_workingwithmap.htm">Интеллектуальная карта (описание)</a>
+        </p>
+        <p class="referenceHeading_reference_0">Справочные материалы</p>
+        <p class="referenceItem_reference_0">
+          <a href="sc_map_faq.htm">Вопросы и ответы: интеллектуальная карта</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

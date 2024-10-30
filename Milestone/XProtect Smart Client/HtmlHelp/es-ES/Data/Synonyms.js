@@ -1,0 +1,15 @@
+var xmlSynonymsData = "";
+xmlSynonymsData += '<?xml version=\"1.0\" encoding=\"utf-8\"?>';
+xmlSynonymsData += '<MadCapSynonyms xml:lang=\"es-ES\">';
+xmlSynonymsData += '    <!-- saved from url=(0016)http://localhost -->';
+xmlSynonymsData += '    <Groups>';
+xmlSynonymsData += '        <SynonymGroup Stem=\"true\">';
+xmlSynonymsData += '            <Word Stem=\"imag\">imagen</Word>';
+xmlSynonymsData += '            <Word Stem=\"vide\">vídeo</Word>';
+xmlSynonymsData += '        </SynonymGroup>';
+xmlSynonymsData += '    </Groups>';
+xmlSynonymsData += '    <Directional>';
+xmlSynonymsData += '        <DirectionalSynonym Stem=\"true\" From=\"cambiar\" To=\"alterar=modificar=personalizar=editar.\" FromStem=\"cambi\" />';
+xmlSynonymsData += '    </Directional>';
+xmlSynonymsData += '</MadCapSynonyms>';
+MadCap.Utilities.Xhr._FilePathToXmlStringMap.Add('Synonyms', xmlSynonymsData);

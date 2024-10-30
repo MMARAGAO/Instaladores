@@ -1,0 +1,593 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="ko-KR" xml:lang="ko-KR" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="구성" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Configure views in XProtect Smart Client to view video from cameras and other types of content." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=관리자" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=통합자" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=운영자" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>뷰(구성)</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#standard_features/sf_sc/sf_configuration/sc_configuringviews.htm">탐색기로 항목 열기</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="브레드크럼즈" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>뷰(구성)</h1>
+      <p>설정 모드에서 뷰를 생성하고 각 뷰에 포함시킬 카메라 또는 다른 유형의 콘텐츠를 지정할 수 있습니다. 뷰를 조직화하려면 최소한 1개의 뷰 그룹을 생성해야 합니다. 이 작업은 종종 시스템 관리자가 수행합니다.</p>
+      <p class="note">사용자 권한에 따라 뷰 및 그룹을 편집할 수 있습니다. 뷰 또는 그룹을 생성할 수 있으면 해당 항목을 편집할 수도 있습니다. </p>
+      <div>
+        <h2>
+          <a name="SC_ViewsExplained"></a>뷰와 뷰 그룹(설명됨)</h2>
+        <p>
+          <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 에서 비디오가 표시되는 방법을 뷰라 부릅니다. <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 은(는) 무제한으로 뷰를 처리할 수 있기 때문에 다양한 카메라 그룹에서의 비디오 간을 전환할 수 있습니다. 뷰는 한 개에서 백여 개 카메라를 보유할 수 있으며 또한 다른 유형의 콘텐츠도 포함할 수 있습니다(예: 이미지 및 텍스트). </p>
+        <p>뷰는 뷰를 조직화하는데 도움이 되는 뷰 그룹에 포함되어야 합니다.</p>
+        <p>뷰는 <span class="uitext">라이브</span> 및 <span class="uitext">재생</span> 탭에서 사용할 수 있습니다. 뷰를 개인용으로 사용하거나 공유할 수 있습니다.</p>
+        <div>
+          <ul>
+            <li>개인 뷰는 해당 뷰를 생성한 사용자만 액세스할 수 있습니다. 뷰를 개인용으로 만들려면, <span class="uitext">개인</span> 폴더에서 생성하십시오</li>
+            <li>공유 뷰를 통해 다수의 운영자가 동일한 뷰를 공유하도록 할 수 있습니다. <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS 시스템에 따라: <ul><li><span class="uitext">공유</span> 또는 <span class="uitext">기본 그룹</span> 이라는 이름의 공유 뷰에 대한 기본 폴더가 존재할 수 있습니다.</li><li>공유 뷰를 모든 운영자가 공유하거나 선택한 공유 뷰에 대한 액세스 권한을 특정 운영자에게 부여할 수 있습니다. 일반적으로 조직에서 공유 뷰를 생성하고 편집할 수 있는 사람은 적습니다(예: 시스템 관리자).</li></ul></li>
+          </ul>
+          <p class="note">모든 사용자가 <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS 시스템에서 모든 카메라에 액세스 권한을 가질 수 있는 것은 아닙니다. 공유 뷰에 포함하는 일부 기능은 이전 버전의 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 에서 지원되지 않을 수도 있습니다. 사용자가 공유하려는 사람이 필요한 권한을 가지고 있고 사용자와 동일한 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 버전을 실행하고 있는지 항상 확인하십시오.</p>
+        </div>
+        <p>뷰에 관한 정보를 비롯한 사용자 설정이 <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS 서버에서 중앙에 저장되므로 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 이(가) 설치되어 있는 모든 컴퓨터에서 뷰를 사용할 수 있습니다.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />2x2 뷰의 예</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <img src="../../../../Images/views_explained.jpg" alt="2x2 view in XProtect Smart Client." />
+            </p>
+          </div>
+        </div>
+        <div>
+          <h2>
+            <a name="SC_ContentInsideViewsExp.htm"></a>뷰가 포함할 수 있는 것은?</h2>
+          <p>
+            <span class="uitext">시스템 개요</span> 창의 설정 모드에서 뷰에 추가할 수 있는 요소를 볼 수 있습니다.</p>
+          <p>
+            <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_systemoverview.jpg" data-mc-popup-alt="What can views contain in XProtect Smart Client?">
+              <img class="MCPopupThumbnail img" data-mc-width="295" data-mc-height="609" src="../../../../Images/sc_systemoverview_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="What can views contain in XProtect Smart Client?" tabindex="" />
+            </a>
+          </p>
+          <table cellspacing="3">
+            <col />
+            <col />
+            <thead>
+              <tr>
+                <th>항목</th>
+                <th>설명</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p>알람</p>
+                </td>
+                <td>
+                  <p>알람 목록 또는 알람 미리보기를 표시하도록 해줍니다. 또한 두 요소 모두 <span class="uitext">알람 관리자</span> 탭에서 사용할 수 있습니다.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>액세스 모니터</td>
+                <td>
+                  <p>액세스 모니터 - <span class="mc-variable flvar-product.ACMName_XPtm variable">XProtect® Access </span>와(과) 함께 설치된 경우, 예를 들면 특정 도어에 대한 뷰에서 액세스 모니터를 표시할 수 있습니다.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>카메라</p>
+                </td>
+                <td>
+                  <p>라이브 카메라 또는 재생된 비디오의 비디오 피드를 표시하도록 해줍니다. 카메라는 시스템 관리자가 정의한 사이트 이름 아래에 표시됩니다.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>순환보기</p>
+                </td>
+                <td>
+                  <p>사용자가 설정한 속도로 카메라 간에 전환할 수 있게 해줍니다.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>핫스팟</p>
+                </td>
+                <td>
+                  <p>카메라가 고해상도 또는 높은 프레임 속도로 초점을 맞춘 모든 것을 표시하도록 해줍니다.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>HTML 페이지</p>
+                </td>
+                <td>
+                  <p> 웹 페이지를 표시하도록 해줍니다(예: 온라인 뉴스 채널).</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>이미지</p>
+                </td>
+                <td>
+                  <p>이미지를 표시하도록 해줍니다(예: 용의자의 사진을 배포하고자 하는 경우).</p>
+                </td>
+              </tr>
+              <tr data-mc-conditions="flcts-add-on.xp-lp-content">
+                <td>LPR</td>
+                <td>
+                  <p>
+                    <span class="mc-variable flvar-product.LPRName_XPtm variable">XProtect® LPR</span> 이(가) 설치된 상태에서 LPR 카메라를 뷰에 추가할 수 있습니다.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>맵</p>
+                </td>
+                <td>평면도 또는 지리적 영역을 표시하도록 해줍니다.</td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="mc-variable flvar-brand-company.MMName_short variable">Matrix</span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    <span class="mc-variable flvar-brand-company.MMName_short variable">Matrix</span> 위치를 표시하도록 해줍니다. 또한 <a href="sc_workingwithmatrix_715_.htm#SC_MatrixExplained.htm" class="MCXref xref">Matrix (설명됨)</a>를 참조하십시오.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>스마트 맵 </p>
+                </td>
+                <td>
+                  <p>다음 온라인 맵 서비스에 기반한 지리적 세계 지도에서 카메라를 탐색하도록 해줍니다.</p>
+                  <ul>
+                    <li>Bing Maps</li>
+                    <li>Google Maps</li>
+                    <li data-mc-conditions="flcts-features.oem-map-service-content">
+                      <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+                    </li>
+                    <li> OpenStreetMap </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="mc-variable flvar-product.SWName variable">Smart Wall</span> 컨트롤</p>
+                </td>
+                <td>
+                  <p>시스템 관리자가 <span class="mc-variable flvar-product.SWName_XP variable">XProtect Smart Wall</span>을(를) 구성한 경우, <span class="mc-variable flvar-product.SWName variable">Smart Wall</span> 컨트롤을 통해 카메라 및 기타 유형의 콘텐츠를 비디오 월로 푸시할 수 있습니다.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>텍스트 </p>
+                </td>
+                <td>
+                  <p>텍스트를 표시하도록 해줍니다(예: 다른 운영자에게 지침을 제공하고자 하는 경우).</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="mc-variable flvar-product.TName variable">Transact</span>
+                  <p> </p>
+                </td>
+                <td>
+                  <p>
+                    <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span> 이(가) 시스템에 설치된 경우, 카메라와 함께 POS 시스템을 추가할 수 있습니다.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_CreateAViewGroup.htm"></a>뷰 그룹 만들기</h2>
+        <p>
+          <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 은(는) 뷰를 추가하고자 하는 뷰 그룹을 표시하도록 사전 구성되었을 수도 있습니다. 그러나 뷰를 조직화하기 위해 뷰 그룹을 생성할 수 있습니다.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />예제</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>층 수가 많은 빌딩에서 10개 층에 걸쳐 카메라를 설치하는 경우를 상상해 보십시오. 각 층에 대한 뷰 그룹을 생성하고 적절히 이름을 지어줍니다. <span class="uitext">지상층</span>, <span class="uitext">1층</span>, <span class="uitext">2층</span> 등.</p>
+          </div>
+        </div>
+        <p>단계:</p>
+        <ol>
+          <li value="1">설정 모드의 <span class="uitext">뷰</span> 창에서 그룹을 추가할 <span class="uitext">개인</span> 또는 <span class="uitext">공유</span> 상위 수준 폴더를 선택합니다.</li>
+          <li value="2">
+            <span class="uitext">새 그룹 만들기</span>를 클릭합니다. <p><img src="../../../../Images/create_a_view_group.png" alt="" /></p><p><span class="uitext">새 그룹</span>이라는 이름으로 새 그룹이 생성됩니다.</p></li>
+          <li value="3">
+            <span class="uitext">새 그룹</span>을 선택하고 클릭하여 그 이름을 덮어씁니다.</li>
+          <li value="4">이제 이 그룹 내에서 뷰를 만들 수 있습니다.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_CreateView.htm"></a>뷰 생성</h2>
+        <p>
+          <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 에서 비디오를 보거나 재생하려면 먼저 뷰를 만들어 필요한 카메라를 추가해야 합니다.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />요구사항 </a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>뷰를 생성하기 전에, 뷰를 추가할 수 있는 그룹이 필요합니다. 또한 <a href="#SC_CreateAViewGroup.htm" class="MCXref xref">뷰 그룹 만들기</a>를 참조하십시오.</p>
+          </div>
+        </div>
+        <p>단계:</p>
+        <ol>
+          <li value="1">오른쪽 모서리에서 <span class="uitext">설정</span> 을 클릭해 설정 모드로 들어갑니다.</li>
+          <li value="2">
+            <span class="uitext">뷰</span> 창에서 뷰를 추가하기 원하는 그룹을 선택합니다.</li>
+          <li value="3">새 뷰를 만들려면 <img src="../../../../Images/create_view.png" alt="" /> 을(를) 클릭하십시오.</li>
+          <li value="4">카메라를 선택합니다. 레이아웃은 <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term2">가로 세로 비율<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>이미지의 높이/너비 관계입니다.</span></a>에 따라, 일반 콘텐츠로 최적화되어 있는지, 세로 모드(여기서는 높이가 너비보다 더 큼)의 콘텐츠로 최적화되어 있는지 여부에 따라 그룹화됩니다. <p><img src="../../../../Images/create_view.jpg" alt="View layouts in XProtect Smart Client." /></p></li>
+          <li value="5">기본 <span class="uitext">새 뷰</span> 이름을 덮어써서 뷰의 이름을 입력합니다.</li>
+          <li value="6"> 다시 <span class="uitext">설정</span> 을 클릭하여 설정 모드를 종료합니다. 변경 사항이 저장됩니다.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_CopyRenameOrDeleteAVi.htm"></a>뷰 또는 그룹 복사 또는 이름 변경, 삭제</h2>
+        <p>가지고 있는 뷰를 다시 사용하려는 경우 해당 뷰를 복사할 수 있습니다. 또한 뷰 그룹이나 개인 뷰를 공유 뷰로 복사할 수 있습니다.</p>
+        <p>단계:</p>
+        <ol>
+          <li value="1">설정 모드의 탐색 창에서 뷰를 선택합니다.</li>
+          <li value="2">
+            <span class="uitext">복사</span>를 클릭하거나 <span class="uitext">CTRL</span> + <span class="uitext">C</span>를 누릅니다. <p><img src="../../../../Images/copy_rename_or_delete_a_view.png" alt="" /></p></li>
+          <li value="3">복사한 뷰를 붙여넣을 위치로 이동하여 <span class="uitext">붙여넣기</span>를 선택하거나 <span class="uitext">CTRL</span> + <span class="uitext">V</span>를 누릅니다. <p><img src="../../../../Images/copy_rename_or_delete_a_view_1.png" alt="" /></p><p class="tip">또는 뷰를 선택하여 다른 폴더로 드래그할 수 있습니다.</p></li>
+          <li value="4">기본적으로 복사된 뷰는 원본과 동일하게 이름이 지정되고 (2)가 붙습니다. 이름을 변경하려면 마우스 오른쪽 버튼으로 클릭하고 <span class="uitext">이름 바꾸기</span> 를 선택합니다.<p><img src="../../../../Images/copy_rename_or_delete_a_view_2.png" alt="" /></p></li>
+          <li value="5">뷰를 삭제하려면 마우스 오른쪽 버튼으로 클릭하고 <span class="uitext">삭제</span>를 선택합니다. <p><img src="../../../../Images/copy_rename_or_delete_a_view_3.png" alt="" /></p></li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_AddingContentToViews.htm"></a>카메라 및 기타 요소를 뷰에 추가</h2>
+        <p>예를 들어 카메라와 같은 다양한 유형의 요소를 보기에 추가할 수 있습니다. 또한 <a href="#SC_ContentInsideViewsExp.htm" class="MCXref xref">뷰가 포함할 수 있는 것은?</a>를 참조하십시오.</p>
+        <p>단계: </p>
+        <ol>
+          <li value="1">수정하고자 하는 뷰를 엽니다.</li>
+          <li value="2">
+            <span class="uitext">설정</span> 을 클릭하여 설정 모드로 들어갑니다. </li>
+          <li value="3">
+            <p>
+              <span class="uitext">시스템 개요</span> 창에서 필요한 요소를 뷰 항목으로 끌어서 옮깁니다. </p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_systemoverview.jpg" data-mc-popup-alt="What can views contain in XProtect Smart Client?">
+                <img class="MCPopupThumbnail img" data-mc-width="295" data-mc-height="609" src="../../../../Images/sc_systemoverview_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="What can views contain in XProtect Smart Client?" tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="4">요소에 관한 추가 정보를 입력합니다.</li>
+          <li value="5"> 다시 <span class="uitext">설정</span> 을 클릭하여 설정 모드를 종료합니다. 변경 사항이 저장됩니다.</li>
+        </ol>
+      </div>
+      <p class="note">자세한 정보는 <a href="#SC_AddingContentToViewsDetailed" class="MCXref xref">뷰에 콘텐츠 추가(상세)</a>를 참조하십시오.</p>
+      <div>
+        <h2>
+          <a name="SC_AssignAShortcutNumber.htm"></a>뷰에 단축키 번호 할당</h2>
+        <p>사용자가 표준 키보드 단축키(<a href="../sf_operation/sc_workingwithnavelements.htm#SC_KeyboardShortcutsExpl.htm" class="MCXref xref">키보드 단축키(개요)</a> 참조)를 사용하여 뷰를 선택할 수 있도록 설정 모드에서 뷰에 단축키 번호를 할당할 수 있습니다.</p>
+        <ol>
+          <li value="1">
+            <span class="uitext">설정</span> 을 클릭하여 설정 모드로 들어갑니다. </li>
+          <li value="2">
+            <span class="uitext">뷰</span> 창에서 단축키를 할당할 뷰를 선택합니다.</li>
+          <li value="3">
+            <span class="uitext">단축키</span> 필드에서 단축키 번호를 지정한 다음 ENTER를 누릅니다. 단축키 번호가 뷰 이름 앞의 괄호 안에 표시됩니다.</li>
+          <li value="4">필요에 따라 다른 뷰에 대해 이 과정을 반복하십시오.</li>
+          <li value="5"> 다시 <span class="uitext">설정</span> 을 클릭하여 설정 모드를 종료합니다. 변경 사항이 저장됩니다.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_AddingContentToViewsDetailed"></a>뷰에 콘텐츠 추가(상세)</h2>
+        <p>
+          <a href="#SC_AddingContentToViews.htm" class="MCXref xref">카메라 및 기타 요소를 뷰에 추가</a>에 설명된 대로, 뷰에 카메라 및 기타 유형의 요소를 추가할 수 있습니다. 이 섹션에서는 추가 방버에 관한 자세한 사항을 제공합니다.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />뷰에 알람 추가</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="../../../feature_flags/ff_managealarms/sc_configuringalarmsandevents.htm#SC_AddAlarmsToViews" class="MCXref xref">뷰에 알람 추가</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />뷰에 카메라 추가</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>카메라에서 비디오를 보려면 우선 뷰에 카메라를 추가해야 합니다.</p>
+            <ol>
+              <li value="1">설정 모드에서 카메라를 추가할 뷰를 선택합니다.</li>
+              <li value="2">
+                <span class="uitext">개요</span> 창에서 필요한 서버 <img src="../../../../Images/add_a_camera_to_a_view.png" alt="" /> 를 확장하여 해당 서버에서 사용 가능한 카메라 목록을 확인합니다. <p class="note">서버 옆에 빨간색 아이콘이 함께 표시되는 경우에는 해당 서버를 사용할 수 없으므로 해당 서버에서 카메라를 볼 수 없습니다.</p></li>
+              <li value="3">
+                <p>목록에서 카메라를 선택하고 뷰 내의 뷰 항목에 끌어다 놓습니다. 카메라의 이미지가 선택한 뷰에 나타납니다. </p>
+                <p class="note">비디오의 영역이 흐릿하거나 회색이 될 경우, 이는 시스템 관리자가 <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term55">사생활 보호<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>카메라 뷰에서 비디오 영역을 덮는 흐린색 또는 단색. 정의된 영역은 클라이언트의 실시간, 재생, 핫스팟, 순환보기, 스마트 맵, 스마트 검색 및 내보내기 모드에서 흐리게 표시되거나 덮여 있습니다.</span></a>로 이러한 영역을 숨겼기 때문입니다(<a href="../../../feature_flags/ff_extendedprivacymasking/sc_workingwithprivacymasking.htm#SC_PrivacyMaskingExplain.htm" class="MCXref xref">사생활 보호(설명됨)</a> 참조).</p>
+              </li>
+              <li value="4">
+                <span class="uitext">속성</span> 창에서 카메라 속성(예: 품질, <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term14">프레임 속도<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>모션 비디오에 포함된 정보의 양을 나타내는 측정 단위입니다. 일반적으로 FPS(Frames Per second)로 측정됩니다.</span></a> 등)을 지정할 수 있습니다. 자세한 정보는 <a href="sc_configuringcamerasettings.htm#SC_CameraSettings.htm" class="MCXref xref">카메라 설정</a>를 참조하십시오.</li>
+              <li value="5">추가하고 싶은 각 카메라에 대해, 위 단계를 반복합니다.</li>
+              <li value="6">뷰에 여러 개의 카메라를 추가하려면(예: 카메라 폴더의 모든 카메라) 폴더를 뷰로 드래그하기만 하면 됩니다. 뷰에 사용 가능한 충분한 수의 뷰 항목이 있어야 합니다.</li>
+            </ol>
+            <p class="tip">다른 카메라를 해당 뷰 항목으로 드래그하여 뷰에 포함된 카메라를 쉽게 변경할 수 있습니다.</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />뷰에 순환보기 추가</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="sc_configuringcarousels.htm#SC_AddCarouselToViews.htm" class="MCXref xref">뷰에 순환보기 추가</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />뷰에 이미지 추가</a>
+            <a name="SC_AddImageToViews.htm"></a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>뷰에 정적 이미지를 표시할 수 있습니다. 예를 들어, 용의자의 스냅샷 또는 비상 탈출구 안내도를 공유하려는 경우에 유용합니다.</p>
+            <p>단계:</p>
+            <ol>
+              <li value="1">
+                <span class="uitext">설정</span> 을 클릭하여 설정 모드로 들어갑니다. </li>
+              <li value="2">
+                <p>
+                  <span class="uitext">시스템 개요</span> 창에서 <span class="uitext">이미지</span> 항목을 뷰 항목로 끌어다 놓습니다. 창이 표시됩니다.</p>
+                <p>
+                  <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_addimagetoview.jpg" data-mc-popup-alt="Add images to views in XProtect Smart Client.">
+                    <img class="MCPopupThumbnail img" data-mc-width="306" data-mc-height="946" src="../../../../Images/sc_addimagetoview_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add images to views in XProtect Smart Client." tabindex="" />
+                  </a>
+                </p>
+              </li>
+              <li value="3">추가하려는 하는 이미지 파일을 찾은 다음 선택하니다.</li>
+              <li value="4">
+                <span class="uitext">열기</span> 를 클릭합니다. 이미지가 뷰 항목 내에 표시됩니다.</li>
+              <li value="5">이미지 파일의 위치에 액세스할 수 없는 다른 사람이 이미지를 이용 가능하게 만들려면 <span class="uitext">속성</span> 창에서 <span class="uitext">포함</span> 을 클릭하십시오. 파일이 시스템에 저장됩니다.</li>
+              <li value="6"> 다시 <span class="uitext">설정</span> 을 클릭하여 설정 모드를 종료합니다. 변경 사항이 저장됩니다.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />뷰에 핫스팟 추가</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="sc_configuringhotspots.htm#SC_AddHotspotToViews.htm" class="MCXref xref">뷰에 핫스팟 추가</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />뷰에 맵 추가</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="sc_configuringmaps.htm#SC_AddMapToViews.htm" class="MCXref xref">뷰에 맵 추가</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />뷰에 스마트 맵 추가</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="../../../feature_flags/ff_map/sc_configuringmaps.htm#SC_AddSmartMapToView.htm" class="MCXref xref">뷰에 스마트 맵 추가</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />뷰에 텍스트 추가</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>텍스트를 뷰 내에 있는 하나 이상의 뷰 항목에 추가할 수 있습니다. 예를 들어, 운영자에게 메시지나 지시를 보내거나 보안 요원의 근무 일정을 게시하려는 경우 유용합니다. 최대 1,000자의 메시지를 작성할 수 있습니다.</p>
+            <p>단계:</p>
+            <ol>
+              <li value="1">
+                <span class="uitext">설정</span> 을 클릭하여 설정 모드로 들어갑니다. </li>
+              <li value="2">
+                <span class="uitext">시스템 개요</span> 창에서 텍스트가 표시될 항목 보기로 <span class="uitext">텍스트</span> 요소를 끌어다 놓습니다. 창이 표시됩니다.</li>
+              <li value="3">텍스트를 입력하십시오.</li>
+              <li value="4">
+                <span class="uitext">저장</span> 을 클릭하십시오.</li>
+              <li value="5">저장한 후 텍스트를 변경하려면, 설정 모드의 <span class="uitext">속성</span> 창에서 <span class="uitext">텍스트 편집</span> 을 클릭합니다.</li>
+            </ol>
+            <div>
+              <p class="note">Microsoft Word 및 Microsoft Excel 등의 프로그램에서 가져온 표를 삽입할 수 있지만 표의 내용은 변경할 수 없습니다. </p>
+            </div>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />
+            </a>
+            <a name="Add"></a>
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">뷰에 웹 페이지 추가</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>뷰에 웹 페이지를 추가할 수 있습니다(예: HTML, PHP 또는 ASP 페이지). 이는 예를 들어 온라인 지침을 제공하거나 회사 웹 페이지를 카메라 또는 기타 콘텐츠 유형과 함께 표시할 때 유용합니다.</p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/add_html_page_to_view_or_1.jpg" data-mc-popup-alt="Add webpages to views in XProtect Smart Client to display web context next to video feeds.">
+                <img class="MCPopupThumbnail img" data-mc-width="1320" data-mc-height="854" src="../../../../Images/add_html_page_to_view_or_1_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add webpages to views in XProtect Smart Client to display web context next to video feeds." tabindex="" />
+              </a>
+            </p>
+            <p>단계:</p>
+            <ol>
+              <li value="1">수정하고자 하는 뷰를 엽니다.</li>
+              <li value="2">
+                <span class="uitext">설정</span> 을 클릭하여 설정 모드로 들어갑니다. </li>
+              <li value="3">
+                <span class="uitext">시스템 개요</span> 창에서 <span class="uitext">HTML 페이지</span> 항목을 클릭하고 뷰 항목 중 하나로 끌어서 옮깁니다. 창이 표시됩니다.<p><img src="../../../../Images/add_html_page_to_view_or_1.png" alt="Enter URL when adding webpage to views in XProtect Smart Client." /></p></li>
+              <li value="4">
+                <p>
+                  <span class="uitext">열기</span> 필드에서 해당 웹 페이지의 웹 주소를 입력합니다.</p>
+                <p class="important">로컬 컴퓨터나 네트워크, FTP 서버에 저장된 웹 페이지를 사용하려면 디스플레이 모드가 해당 웹 페이지의 속성에서 <span class="uitext">호환성</span> 으로 설정되어 있는지 확인하십시오. <a href="#Web" class="MCXref xref">웹 페이지 속성 </a>를 참조하십시오. 이렇게 하지 않을 경우, 오류 메시지가 뜨게 됩니다. <a href="../sf_troubleshooting/sc_troubleshootinghtmlpages.htm" class="MCXref xref">웹 페이지(문제 해결)</a>를 참조하십시오.</p>
+              </li>
+              <li value="5">
+                <span class="uitext">확인</span> 을 클릭합니다.</li>
+              <li value="6">속성을 설정하려면 <span class="uitext">속성</span> 창을 확장합니다.</li>
+              <li value="7"> 다시 <span class="uitext">설정</span> 을 클릭하여 설정 모드를 종료합니다. 변경 사항이 저장됩니다.</li>
+            </ol>
+            <p class="note">설정 모드에서는 웹 페이지를 탐색할 수 없습니다. </p>
+            <h3>
+              <a name="Web"></a>웹 페이지 속성 </h3>
+            <table cellspacing="3">
+              <col />
+              <col style="width: 376px;" />
+              <thead>
+                <tr>
+                  <th>
+                    <p>이름</p>
+                  </th>
+                  <th>
+                    <p>설명</p>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">편집</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>해당 웹 페이지의 새 URL 또는 파일 위치를 지정합니다.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">디스플레이 모드</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>브라우저 엔진을 선택하여 웹 페이지를 렌더링합니다. 여기에는 두 가지 옵션이 있습니다.</p>
+                    <ul>
+                      <li>
+                        <span class="uitext">표준</span> - 이 설정은 Microsoft Edge를 사용합니다. 해당 웹 페이지가 웹 서버에 있으며 네트워크 프로토콜이 HTTP나 HTTPS를 사용하는 경우, <span class="uitext">표준</span> 을 선택하십시오.</li>
+                      <li>
+                        <span class="uitext">호환성</span> - 이 설정은 Internet Explorer를 사용합니다. 다음과 같은 경우 <span class="uitext">호환성</span> 을 선택하십시오.<ul><li> 로컬에 저장된 경우</li><li>HTTP 및 HTTPS가 아닌 네트워크 프로토콜을 사용하는 경우</li><li>상호작용을 목적으로 하는 스크립트를 포함하는 경우 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span></li><li>구 버전의 HTML을 사용하는 경우</li></ul></li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">배율</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>웹 페이지의 배율을 선택합니다. 최적의 배율은 가져오기한 웹 페이지의 콘텐츠 및 이 콘텐츠를 표시하는 방법에 따라 다릅니다. </p>
+                    <p class="note">이 설정은 <span class="uitext">호환성</span> 모드에서만 사용할 수 있습니다.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">도구 모음 숨기기</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>가져오기한 각 웹 페이지 위에 삽입되는 탐색 도구 모음을 숨기려면 확인란을 선택합니다.</p>
+                    <p>
+                      <img src="../../../../Images/set_properties_for_html_page.png" alt="" />
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />뷰에 오버레이 버튼 추가</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <span class="uitext">라이브</span> 탭의 뷰에서 개별 카메라 위치에 마우스를 이동할 때 나타나는 <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term34">오버레이 버튼<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>라이브 탭 뷰에서 개별 카메라 위치에 마우스 커서를 이동할 때 비디오 위에 하나의 층으로 표시되는 버튼입니다. 오버레이 버튼을 사용하면 카메라에서 스피커, 이벤트, 출력을 작동시키고 PTZ 카메라를 이동하며 녹화를 시작하고 신호를 지울 수 있습니다.</span></a>을 통해 스피커, 이벤트, <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term33">출력<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>컴퓨터에서 나가는 데이터입니다. IP 감시 시스템에서 출력은 게이트, 사이렌, 스트로보 라이트 등과 같은 장치를 활성화하는 데 자주 사용됩니다.</span></a> 등을 활성화할 수 있습니다.</p>
+            <p>필요한 버튼 수만큼 추가할 수 있습니다.</p>
+            <ol>
+              <li value="1">
+                <span class="uitext">설정</span> 을 클릭하여 설정 모드로 들어갑니다. </li>
+              <li value="2">
+                <span class="uitext">오버레이 버튼</span> 창에서 동작을 선택해 카메라 뷰 항목으로 끌어다 놓습니다.</li>
+              <li value="3">마우스를 놓으면 오버레이 버튼이 나타납니다. 버튼의 크기를 변경하려면 나타나는 핸들을 끌어서 놓습니다. <p><img src="../../../../Images/add_an_overlay_button_to_a.jpg" alt="" /></p></li>
+              <li value="4">오버레이 버튼의 텍스트를 변경하려면 해당 텍스트를 두 번 클릭하고 덮어쓴 후 확인란 <img src="../../../../Images/add_an_overlay_button_to_a.png" alt="" /> 을 선택하여 저장합니다. 실행 취소하려면 취소 버튼 <img src="../../../../Images/add_an_overlay_button_to_a_1.png" alt="" /> 을 클릭합니다. 저장할 때 텍스트가 버튼에서 가장 큰 크기로 크기 조정됩니다.</li>
+              <li value="5"> 다시 <span class="uitext">설정</span> 을 클릭하여 설정 모드를 종료합니다. 변경 사항이 저장됩니다.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <p>
+        <a name="SC_AssignAShortcutNumber.htm"></a>
+      </p>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">컨셉트 정보</p>
+        <p class="containerItem_container_0">
+          <a href="../sf_operation/sc_workingwithviews.htm">뷰 관리</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

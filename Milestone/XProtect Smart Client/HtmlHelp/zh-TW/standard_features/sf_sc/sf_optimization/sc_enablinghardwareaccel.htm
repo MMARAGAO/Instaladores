@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="zh-TW" xml:lang="zh-TW" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="最佳化" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Get familiar with and read how to set up hardware acceleration to improve the performance of computers running XProtect Smart Client." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=管理員" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=整合商" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>啟用硬體加速</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#standard_features/sf_sc/sf_optimization/sc_enablinghardwareaccel.htm">使用瀏覽打開主題</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="階層連結" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>啟用硬體加速</h1>
+      <h2>硬體加速（說明）<a name="SC_HardwareAccelerationExplained"></a></h2>
+      <p>硬體加速可改善執行 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 之電腦的解碼功能與效能。在您檢視具有高<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term14">影格速率<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>一種表示移動視訊內含資訊量的度量方法。通常以 FPS (每秒影格數) 進行度量。</span></a>與高解析度的多個視訊串流時，此功能尤其有用。</p>
+      <p class="note">
+        <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 使用 Intel<sup>®</sup> 和 NVIDIA<sup>®</sup> GPU 支持硬件加速解码。 <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> 不建議使用 NVIDIA 顯示介面卡的可擴充連結介面 (SLI) 設定。</p>
+      <h2>檢查硬體加速設定<a name="SC_CheckHardwareAccelerationSettings"></a></h2>
+      <ol>
+        <li value="1">移至<span class="uitext">設定 </span>&gt;<span class="uitext"> 進階 </span> &gt; <span class="uitext">硬體加速</span>。</li>
+        <li value="2">有兩種硬體加速設定：<span class="uitext">自動</span>和<span class="uitext">關閉</span>。<p>選取預設的<span class="uitext">自動</span>設定。</p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/check_hardware_acceleration.png" data-mc-popup-alt="Hardware acceleration settings in XProtect Smart Client."><img class="MCPopupThumbnail img" data-mc-width="798" data-mc-height="371" src="../../../../Images/check_hardware_acceleration_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Hardware acceleration settings in XProtect Smart Client." tabindex="" /></a></p></li>
+        <li value="3">移至<span class="uitext">視訊診斷覆蓋</span>。</li>
+        <li value="4">若要讓串流的目前狀態 (包括用於硬體加速的 GPU 資源) 可見，請選取<span class="uitext">等級 2</span>。</li>
+        <p class="note">此設定將套用至所有檢視項目。預設設定為<span class="uitext">隱藏</span>。</p>
+        <p>
+          <span class="uitext">硬體加速</span>的視訊診斷覆蓋狀態可以是：<span class="uitext">Intel</span>、<span class="uitext">NVIDIA</span> 或<span class="uitext">關閉</span>。</p>
+        <p>
+          <img src="../../../../Images/check_hardware_acceleration_1.png" alt="The video diagnostics status for hardware acceleration in XProtect Smart Client." />
+        </p>
+        <p>若狀態為<span class="uitext">關閉</span>，請繼續檢查電腦，以便您可以啟用硬體加速 (若可以)，並確保使用所有硬體加速資源。</p>
+        <li value="5">
+          <p class="note">使用<span class="uitext">系統監視器</span>檢查目前的 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 解碼效能。 請參閱<a href="../../../feature_flags/ff_systemmonitor/sc_monitoryoursystem.htm#Monitor_client_resources" class="MCXref xref">監控用戶端資源</a>。</p>
+        </li>
+      </ol>
+      <h2>驗證您的作業系統<a name="SC_VerifyOperatingSystem"></a></h2>
+      <p>確保您的作業系統是 <sup>®</sup> Windows<sup>®</sup> 10 (build 1809)、Windows<sup>®</sup> Server 2012 R2，或更新版本。</p>
+      <div>
+        <p class="note">僅支援非虛擬環境。</p>
+      </div>
+      <h2>檢查 CPU Quick Sync 支援<a name="SC_CheckCPUQuickSyncSupport"></a></h2>
+      <p>驗證您的處理器是否支援 Intel Quick Sync Video：</p>
+      <ol>
+        <li value="1">造訪 Intel 網站 (<a href="https://ark.intel.com/Search/FeatureFilter?productType=processors/" target="_blank">https://ark.intel.com/Search/FeatureFilter?productType=processors/</a>)。</li>
+        <li value="2">在功能表中，將<span class="uitext">處理器</span>與 <span class="uitext"> Intel Quick Sync Video</span> 篩選器設定為<span class="uitext">是</span>。</li>
+        <li value="3">在清單中尋找您的 CPU。<p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/check_cpu_quick_sync_support.png" data-mc-popup-alt="Hardware acceleration in XProtect Smart Client - check support for CPU Quick Sync."><img class="MCPopupThumbnail img" data-mc-width="766" data-mc-height="554" src="../../../../Images/check_cpu_quick_sync_support_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Hardware acceleration in XProtect Smart Client - check support for CPU Quick Sync." tabindex="" /></a></p></li>
+      </ol>
+      <h2>檢查裝置管理員<a name="SC_ExamineDeviceManager"></a></h2>
+      <p>確保 Windows 裝置管理員中顯示 Intel 或 NVIDIA 顯示介面卡。</p>
+      <p>
+        <img src="../../../../Images/examine_the_device_manager.png" alt="Hardware acceleration in XProtect Smart Client - examine the device manager." />
+      </p>
+      <div>
+        <p class="important">您可以將顯示器連接至任何可供使用的顯示器介面卡。如果计算机中有更强大的显示适配器（通常是 NVIDIA 或 AMD<sup>®</sup>）,请将显示器连接到此适配器，以使用所有可用的 GPU 资源进行硬件加速解码和渲染。</p>
+        <p class="important">並非所有 NVIDIA 顯示介面卡都支援硬體加速。請參閱<a href="#Check_NVIDIA_hardware_acceleration_support" class="MCXref xref">檢查 NVIDIA 硬體加速支援</a>。</p>
+      </div>
+      <p>若未顯示 Intel 顯示介面卡，請在 BIOS 中啟用 Intel 顯示介面卡 (參閱 <a href="#Enable_the_Intel_display_adapter_in_the_BIOS" class="MCXref xref">在 BIOS 中啟用 Intel 顯示器介面卡</a>)。</p>
+      <h2>
+        <a name="Check_NVIDIA_hardware_acceleration_support"></a>檢查 NVIDIA 硬體加速支援</h2>
+      <p>NVIDIA 產品具有不同的運算功能。</p>
+      <p class="note">使用 NVIDIA GPU 的硬體加速解碼要求 6.x (Pascal) 或更新的運算功能版本。</p>
+      <p>若要尋找您 NVIDIA 產品的運算功能版本，請造訪 NVIDIA 網站 (<a href="https://developer.nvidia.com/cuda-gpus/" target="_blank">https://developer.nvidia.com/cuda-gpus/</a>)。</p>
+      <h2>
+        <a name="Enable_the_Intel_display_adapter_in_the_BIOS"></a>在 BIOS 中啟用 Intel 顯示器介面卡</h2>
+      <p>如果您的電腦中有另一張顯示器介面卡，如 NVIDIA 或 AMD，主機板上的 Intel 顯示器介面卡可能會被停用，而您必須啟用它。</p>
+      <p>Intel 顯示器介面卡位於主機板上，是 CPU 的一部分。若要啟用，請在電腦 BIOS 中找出繪圖卡、CPU 或顯示器設定。供應商的主機板手冊對於尋找相關設定方面可能會有幫助。</p>
+      <p class="tip">如果變更設定無法啟用主機板上的 Intel 顯示器介面卡，您可以試著將顯示器介面卡移至另一個插槽，然後將顯示器連接至主機板。在某些情況下，這個做法能啟用主機板的顯示器介面卡。</p>
+      <h2>更新視訊驅動程式<a name="SC_UpdateVideoDriver"></a></h2>
+      <p>確保已將您所有顯示介面卡的驅動程式更新到 Intel 或 NVIDIA 提供的最新版本。</p>
+      <p class="note">電腦廠商提供的 Intel 驅動程式可能是較舊的版本，可能不支援 Intel Quick Sync Video。</p>
+      <p>可以採用兩種方式更新您的視訊驅動程式。手動下載並安裝，或使用驅動程式更新公用程式。</p>
+      <p class="subheading">Intel</p>
+      <p>手動下載並安裝：</p>
+      <ol>
+        <li value="1">前往 Intel 下載網站 (<a href="https://downloadcenter.intel.com/" target="_blank">https://downloadcenter.intel.com/</a>)。</li>
+        <li value="2">輸入整合式顯示器介面卡的名稱。</li>
+        <li value="3">手動下載並安裝驅動程式。</li>
+      </ol>
+      <p>若為自動偵測並更新 Intel 元件和驅動程式：</p>
+      <ol>
+        <li value="1">下載 Intel 驅動程式與支援輔助程式 (<a href="https://www.intel.com/p/en_us/support/detect/" target="_blank">https://www.intel.com/p/en_us/support/detect/</a>)。</li>
+        <li value="2">執行該輔助程式，以自動搜尋驅動程式。</li>
+        <li value="3">選擇更新 Graphics 的驅動程式。</li>
+      </ol>
+      <p class="subheading">NVIDIA</p>
+      <p>選項 1：手動尋找 NVIDIA 產品的驅動程式。</p>
+      <ol>
+        <li value="1">移至 NVIDIA 下載驅動程式網站 (<a href="https://www.nvidia.com/Download/index.aspx/" target="_blank">https://www.nvidia.com/Download/index.aspx/</a>)。</li>
+        <li value="2">輸入您產品與作業系統的名稱。</li>
+        <li value="3">手動下載並安裝驅動程式。</li>
+      </ol>
+      <p>選項 2：自動尋找我的 NVIDIA 產品的驅動程式。</p>
+      <ol>
+        <li value="1">移至 NVIDIA 下載驅動程式網站 (<a href="https://www.nvidia.com/Download/index.aspx/" target="_blank">https://www.nvidia.com/Download/index.aspx/</a>)。</li>
+        <li value="2">按一下 <span class="uitext">GRAPHICS 驅動程式</span>。</li>
+        <li value="3">接下來將掃描您的系統。</li>
+        <li value="4">下載並更新驅動程式。</li>
+      </ol>
+      <h2>檢查記憶體模組配置<a name="SC_CheckMemoryModulesConfig"></a></h2>
+      <p>如果您的系統支援超過一個的記憶體通道，請確定至少有兩個通道的記憶體模組安插在正確的 DIMM 插槽中，如此可增加系統效能。請參閱主機板手冊來找出正確的 DIMM 插槽。</p>
+      <p>範例： </p>
+      <p>具有兩個記憶體通道和總計 8 GB 記憶體的系統，在使用 2 x 4 GB 記憶體模組的配置下可獲得最佳效能。</p>
+      <p>如果使用的是 1 x 8 GB 記憶體模組配置，則僅會使用其中一個記憶體通道。</p>
+    </div>
+    <p></p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

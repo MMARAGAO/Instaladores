@@ -1,0 +1,561 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="nl-NL" xml:lang="nl-NL" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="Configuratie" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Configure views in XProtect Smart Client to view video from cameras and other types of content." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Beheerder" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Integrator" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Gebruiker" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Weergaven (configuratie)</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#standard_features/sf_sc/sf_configuration/sc_configuringviews.htm">Open onderwerp met navigatie</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>Weergaven (configuratie)</h1>
+      <p>In de instelmodus kunt u weergaven maken en opgeven welke camera’s of andere soorten inhoud elke weergave moet bevatten. Als u uw weergaven wilt organiseren, moet u ten minste één weergavegroep maken. Dit wordt doorgaans gedaan door de systeembeheerder.</p>
+      <p class="note">De mogelijkheid om weergaven en groepen te bewerken is afhankelijk van uw gebruikersrechten. Als u de weergave of groep kunt maken, dan kunt u deze ook bewerken. </p>
+      <div>
+        <h2>
+          <a name="SC_ViewsExplained"></a>Weergaven en weergavegroepen (uitleg)</h2>
+        <p>De manier waarop beelden in <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> worden getoond, wordt een weergave genoemd. <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> kan een onbeperkt aantal weergaven verwerken, zodat u kunt schakelen tussen beelden van verschillende cameragroepen. Weergaven kunnen tussen één en honderd camera’s bevatten, maar ook andere soorten inhoud, bijvoorbeeld afbeeldingen en tekst. </p>
+        <p>Weergaven moeten deel uitmaken van weergavegoepen waarmee u de weergaven kunt organiseren.</p>
+        <p>Weergave zijn beschikbaar in de tabbladen <span class="uitext">Live</span> en <span class="uitext">Afspelen</span>. Weergaven kunnen persoonlijk of gedeeld zijn:</p>
+        <div>
+          <ul>
+            <li>Persoonlijke weergaven zijn alleen toegankelijk voor de gebruiker die deze heeft gemaakt. Als u de weergave persoonlijk wilt maken, maakt u deze binnen de map <span class="uitext">Persoonlijk</span></li>
+            <li>Met gedeelde weergaven kunnen meerdere gebruikers dezelfde weergaven delen. Afhankelijk van uw <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS-systeem: <ul><li>Er kan een standaardmap zijn voor gedeelde weergaven met de naam <span class="uitext">Gedeeld</span> of <span class="uitext">Standaardgroep</span>.</li><li>Gedeelde weergaven kunnen door alle gebruikers worden gedeeld of er kan toegang tot specifieke gedeelde weergaven worden toegewezen aan bepaalde gebruikers. Doorgaans kunnen slechts enkele gebruikers binnen een organisatie gedeelde weergaven maken en bewerken, bijvoorbeeld de systeembeheerders.</li></ul></li>
+          </ul>
+          <p class="note">Mogelijk hebben niet alle gebruikers toegang tot alle camera’s van het <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS-systeem. Bepaalde functies die u in uw gedeelde weergave kunt opnemen, worden mogelijk niet ondersteund in eerdere versies van <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Zorg daarom altijd dat de gebruikers waarmee u een weergave wilt delen over de vereiste toegangsrechten beschikken en met dezelfde versie van <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> werken als uzelf.</p>
+        </div>
+        <p>Uw gebruikersinstellingen, waaronder informatie over uw weergaven, worden centraal opgeslagen op de <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS-server. Zo kunt u uw weergaven gebruiken op elke computer waarop <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> is geïnstalleerd.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Gesloten" data-mc-alt2="Open" />Voorbeeld van een 2x2-weergave</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <img src="../../../../Images/views_explained.jpg" alt="2x2 view in XProtect Smart Client." />
+            </p>
+          </div>
+        </div>
+        <div>
+          <h2>
+            <a name="SC_ContentInsideViewsExp.htm"></a>Wat kunnen weergaven bevatten?</h2>
+          <p>In het deelvenster <span class="uitext">Systeemoverzicht</span> in de instelmodus kunt u de elementen zien die u aan uw weergaven kunt toevoegen:</p>
+          <p>
+            <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_systemoverview.jpg" data-mc-popup-alt="What can views contain in XProtect Smart Client?">
+              <img class="MCPopupThumbnail img" data-mc-width="295" data-mc-height="609" src="../../../../Images/sc_systemoverview_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="What can views contain in XProtect Smart Client?" tabindex="" />
+            </a>
+          </p>
+          <table cellspacing="3">
+            <col />
+            <col />
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Beschrijving</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p>Alarmen</p>
+                </td>
+                <td>
+                  <p>Hiermee kunt u een lijst met alarmen of een alarmvoorbeeld bekijken. Beide elementen zijn ook beschikbaar op het tabblad <span class="uitext">Alarmbeheer</span>.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>Toegangsmonitor</td>
+                <td>
+                  <p>Toegangsmonitor: als <span class="mc-variable flvar-product.ACMName_XPtm variable">XProtect® Access </span> is geïnstalleerd, kunt u toegangsmonitoren tonen in uw weergaven, bijvoorbeeld voor een specifieke deur.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Camera’s</p>
+                </td>
+                <td>
+                  <p>Hiermee kunt u een videofeed tonen van een livecamera of videobeelden afspelen. De camera’s worden weergegeven onder de locatienaam, die wordt gedefinieerd door de systeembeheerder.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Carrousels</p>
+                </td>
+                <td>
+                  <p>Hiermee kunt u schakelen tussen camera’s met een snelheid die u definieert.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Hotspots</p>
+                </td>
+                <td>
+                  <p>Hiermee kunt u de camera die de focus heeft tonen in een hoge resolutie of framesnelheid.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>HTML-pagina’s</p>
+                </td>
+                <td>
+                  <p> Hiermee kunt u een webpagina weergeven, bijvoorbeeld een online nieuwskanaal.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Afbeeldingen</p>
+                </td>
+                <td>
+                  <p>Hiermee kunt u een afbeelding weergeven, bijvoorbeeld als u een foto van een verdachte wilt verspreiden.</p>
+                </td>
+              </tr>
+              <tr data-mc-conditions="flcts-add-on.xp-lp-content">
+                <td>LPR</td>
+                <td>
+                  <p>Als <span class="mc-variable flvar-product.LPRName_XPtm variable">XProtect® LPR</span> is geïnstalleerd, kunt u LPR-camera’s toevoegen aan weergaven.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Kaarten</p>
+                </td>
+                <td>Hiermee kunt u een plattegrond of een geografisch gebied weergeven.</td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="mc-variable flvar-brand-company.MMName_short variable">Matrix</span>
+                  </p>
+                </td>
+                <td>
+                  <p>Hiermee kunt u een <span class="mc-variable flvar-brand-company.MMName_short variable">Matrix</span>-positie weergeven. Raadpleeg ook <a href="sc_workingwithmatrix_715_.htm#SC_MatrixExplained.htm" class="MCXref xref">Matrix (uitleg)</a>.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Smart Maps </p>
+                </td>
+                <td>
+                  <p>Hiermee kunt u door de camera’s navigeren op een geografische kaart van de wereld op basis van een van deze online kaartdiensten:</p>
+                  <ul>
+                    <li>Bing Maps</li>
+                    <li>Google Maps</li>
+                    <li data-mc-conditions="flcts-features.oem-map-service-content">
+                      <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+                    </li>
+                    <li> OpenStreetMap </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="mc-variable flvar-product.SWName variable">Smart Wall</span>-besturing</p>
+                </td>
+                <td>
+                  <p>Als <span class="mc-variable flvar-product.SWName_XP variable">XProtect Smart Wall</span> is geconfigureerd door de systeembeheerder, kunt u met de <span class="mc-variable flvar-product.SWName variable">Smart Wall</span>-besturing camera’s en andere soorten inhoud pushen naar de videowalls.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Tekst </p>
+                </td>
+                <td>
+                  <p>Hiermee kunt u tekst weergeven, bijvoorbeeld als u instructies aan andere gebruikers wilt geven.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="mc-variable flvar-product.TName variable">Transact</span>
+                  <p> </p>
+                </td>
+                <td>
+                  <p>Als <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span> op het systeem is geïnstalleerd, kunt u systemen van verkooppunten toevoegen, samen met camera’s.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_CreateAViewGroup.htm"></a>Weergavegroepen maken</h2>
+        <p>De <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> kan vooraf zijn geconfigureerd om weergavegroepen weer te geven waaraan uw weergaven kunnen worden toegevoegd. U kunt echter uw eigen weergavegroepen maken om uw weergaven op de gewenste manier te organiseren.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Gesloten" data-mc-alt2="Open" />Voorbeeld</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>U hebt op tien verschillende etages van een gebouw met meerdere verdiepingen camera’s geïnstalleerd. U besluit om voor elke etage een weergavegroep te maken en deze de naam te geven van de betreffende etage: <span class="uitext">Begane grond</span>, <span class="uitext">Eerste etage</span>, <span class="uitext">Tweede etage</span>, enzovoort.</p>
+          </div>
+        </div>
+        <p>Volg deze stappen:</p>
+        <ol>
+          <li value="1">Selecteer in de instelmodus in het deelvenster <span class="uitext">Weergaven</span> op het hoogste niveau de map <span class="uitext">Persoonlijk</span> of <span class="uitext">Gedeeld</span> waaraan u een groep wilt toevoegen.</li>
+          <li value="2">Klik op <span class="uitext">Nieuwe groep maken</span>: <p><img src="../../../../Images/create_a_view_group.png" alt="" /></p><p>Er wordt een nieuwe groep gemaakt met de naam <span class="uitext">Nieuwe groep</span>.</p></li>
+          <li value="3">Selecteer de <span class="uitext">Nieuwe groep</span> om de naam te overschrijven.</li>
+          <li value="4">U kunt nu weergaven maken in deze groep.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_CreateView.htm"></a>Weergaven maken</h2>
+        <p>Om video te bekijken of af te spelen in <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> moet u eerst een weergave maken, waar u de camera’s toevoegt die u nodig heeft.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Gesloten" data-mc-alt2="Open" />Vereisten </a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Voor het maken van de weergave moet een u groep hebben waar u de weergave aan toe kunt voegen. Raadpleeg ook <a href="#SC_CreateAViewGroup.htm" class="MCXref xref">Weergavegroepen maken</a>.</p>
+          </div>
+        </div>
+        <p>Volg deze stappen:</p>
+        <ol>
+          <li value="1">Klik op <span class="uitext">Instellingen</span> rechts om de instelmodus te openen.</li>
+          <li value="2">In het deelvenster voor <span class="uitext">Weergaven</span> selecteert u de groep waaraan u de weergave wilt toevoegen.</li>
+          <li value="3">Klik op <img src="../../../../Images/create_view.png" alt="" /> om een nieuwe weergave te maken.</li>
+          <li value="4">Selecteer een indeling. De indelingen worden gegroepeerd op <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term2">hoogte-breedteverhouding<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>hoogte-breedteverhouding van een beeld.</span></a> en afhankelijk van hoe de indeling is geoptimaliseerd; voor normale inhoud of voor inhoud in staande modus (waarbij de hoogte groter is dan de breedte). <p><img src="../../../../Images/create_view.jpg" alt="View layouts in XProtect Smart Client." /></p></li>
+          <li value="5">Voer een naam in voor de weergave door de standaardnaam <span class="uitext">Nieuwe weergave</span> te overschrijven.</li>
+          <li value="6"> Klik opnieuw op <span class="uitext">Instellingen</span> om de instelmodus af te sluiten. Uw wijzigingen worden opgeslagen.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_CopyRenameOrDeleteAVi.htm"></a>Weergaven of groepen kopiëren, hernoemen of verwijderen</h2>
+        <p>Als u een weergave hebt en deze wilt hergebruiken, kunt u deze kopiëren. U kunt ook een groep met weergaven of een persoonlijke weergave kopiëren naar een gedeelde weergave.</p>
+        <p>Volg deze stappen:</p>
+        <ol>
+          <li value="1">Selecteer in de instelmodus de weergave in het navigatievenster.</li>
+          <li value="2">Klik op <span class="uitext">Kopiëren</span> of druk op <span class="uitext">Ctrl</span>+<span class="uitext">C</span>. <p><img src="../../../../Images/copy_rename_or_delete_a_view.png" alt="" /></p></li>
+          <li value="3">Blader naar de locatie waar u de weergave wilt plakken en selecteer <span class="uitext">Plakken</span> of druk op <span class="uitext">Ctrl</span>+<span class="uitext">V</span>. <p><img src="../../../../Images/copy_rename_or_delete_a_view_1.png" alt="" /></p><p class="tip">U kunt de weergave ook selecteren en naar een andere map slepen.</p></li>
+          <li value="4">De gekopieerde weergave krijgt standaard dezelfde naam als het origineel, gevolgd door (2). Rechtsklik en selecteer <span class="uitext">Naam wijzigen</span> om de naam te wijzigen.<p><img src="../../../../Images/copy_rename_or_delete_a_view_2.png" alt="" /></p></li>
+          <li value="5">Rechtsklik en selecteer <span class="uitext">Verwijderen</span> om een weergave te verwijderen. <p><img src="../../../../Images/copy_rename_or_delete_a_view_3.png" alt="" /></p></li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_AddingContentToViews.htm"></a>Camera’s en andere elementen toevoegen aan weergaven</h2>
+        <p>U kunt verschillende soorten elementen toevoegen aan uw weergaven, bijvoorbeeld camera’s. Raadpleeg ook <a href="#SC_ContentInsideViewsExp.htm" class="MCXref xref">Wat kunnen weergaven bevatten?</a></p>
+        <p>Volg deze stappen: </p>
+        <ol>
+          <li value="1">Open de weergave die u wilt wijzigen.</li>
+          <li value="2"> Klik op <span class="uitext">Instellingen</span> om de instelmodus te openen. </li>
+          <li value="3">
+            <p>In het deelvenster <span class="uitext">Systeemoverzicht</span> sleept u het gewenste element naar een weergave-item. </p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_systemoverview.jpg" data-mc-popup-alt="What can views contain in XProtect Smart Client?">
+                <img class="MCPopupThumbnail img" data-mc-width="295" data-mc-height="609" src="../../../../Images/sc_systemoverview_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="What can views contain in XProtect Smart Client?" tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="4">Vul eventuele aanvullende gegevens over het element in.</li>
+          <li value="5"> Klik opnieuw op <span class="uitext">Instellingen</span> om de instelmodus af te sluiten. Uw wijzigingen worden opgeslagen.</li>
+        </ol>
+      </div>
+      <p class="note">Raadpleeg <a href="#SC_AddingContentToViewsDetailed" class="MCXref xref">Inhoud toevoegen aan weergaven (in detail)</a> voor gedetailleerde informatie.</p>
+      <div>
+        <h2>
+          <a name="SC_AssignAShortcutNumber.htm"></a>Nummers toewijzen aan weergaven</h2>
+        <p>U kunt nummers toewijzen aan weergaven zodat gebruikers weergaven kunnen selecteren met standaardsneltoetsen (zie <a href="../sf_operation/sc_workingwithnavelements.htm#SC_KeyboardShortcutsExpl.htm" class="MCXref xref">Sneltoetsen (overzicht)</a>).</p>
+        <ol>
+          <li value="1"> Klik op <span class="uitext">Instellingen</span> om de instelmodus te openen. </li>
+          <li value="2">Selecteer in het deelvenster <span class="uitext">Weergaven</span> de weergave waaraan u een sneltoets wilt toewijzen.</li>
+          <li value="3">Voer in het veld <span class="uitext">Sneltoets</span> een nummer in en druk vervolgens op Enter. Het nummer wordt tussen haakjes weergegeven voor de naam van de weergave.</li>
+          <li value="4">Herhaal bovenstaande stappen voor andere weergaven, indien gewenst.</li>
+          <li value="5"> Klik opnieuw op <span class="uitext">Instellingen</span> om de instelmodus af te sluiten. Uw wijzigingen worden opgeslagen.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_AddingContentToViewsDetailed"></a>Inhoud toevoegen aan weergaven (in detail)</h2>
+        <p>Zoals beschreven in <a href="#SC_AddingContentToViews.htm" class="MCXref xref">Camera’s en andere elementen toevoegen aan weergaven</a> kunt u camera’s en andere soorten elementen toevoegen aan uw weergaven. Dit gedeelte biedt meer gedetailleerde instructies:</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Gesloten" data-mc-alt2="Open" />Alarmen toevoegen aan weergaven</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="../../../feature_flags/ff_managealarms/sc_configuringalarmsandevents.htm#SC_AddAlarmsToViews" class="MCXref xref">Alarmen toevoegen aan weergaven</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Gesloten" data-mc-alt2="Open" />Camera’s toevoegen aan weergaven</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Om beelden van een camera te bekijken, moet de camera eerst aan een weergave worden toegevoegd.</p>
+            <ol>
+              <li value="1">Selecteer in de instelmodus de weergave waaraan u een camera wilt toevoegen.</li>
+              <li value="2">Vouw in het venster <span class="uitext">Overzicht</span> de gewenste server <img src="../../../../Images/add_a_camera_to_a_view.png" alt="" /> uit om een lijst met beschikbare camera’s van die server weer te geven. <p class="note">Als bij een server een rood pictogram wordt weergegeven, is de server niet beschikbaar. In dat geval kunt u geen camera’s van die server weergeven.</p></li>
+              <li value="3">
+                <p>Selecteer de camera in de lijst en sleep deze naar een weergave-item in de weergave. In het geselecteerde weergave-item worden beelden van de camera weergegeven. </p>
+                <p class="note">Als er gedeelten in de videobeelden wazig of grijs gemaakt zijn, komt dat doordat de systeembeheerder deze gedeelten heeft bedekt met <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term55">privacymaskers<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Een wazige of effen kleur die een gebied van de beelden bedekt in de cameraweergave. De gedefinieerde gebieden worden wazig weergegeven of bedekt in de modus voor livebeelden, afspelen, hotspots, carrousels, Smart Maps, slim zoeken en exporteren in de clients.</span></a> (zie <a href="../../../feature_flags/ff_extendedprivacymasking/sc_workingwithprivacymasking.htm#SC_PrivacyMaskingExplain.htm" class="MCXref xref">Privacymaskers (uitleg)</a>).</p>
+              </li>
+              <li value="4">U kunt de camera-eigenschappen (zoals kwaliteit, <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term14">framesnelheid<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Een grootheid die de hoeveelheid informatie in bewegende videobeelden aangeeft. Deze grootheid wordt meestal uitgedrukt in fps (frames per seconde).</span></a>, etc.) opgeven in het deelvenster <span class="uitext">Eigenschappen</span>. Raadpleeg <a href="sc_configuringcamerasettings.htm#SC_CameraSettings.htm" class="MCXref xref">Camera-instellingen</a> voor meer informatie.</li>
+              <li value="5">Herhaal de bovenstaande stappen voor elke camera die u wilt toevoegen.</li>
+              <li value="6">Als u meerdere camera’s aan een weergave wilt toevoegen, bijvoorbeeld alle camera’s in een cameramap, sleept u de map naar de weergave. Zorg dat er voldoende weergave-items in de weergave beschikbaar zijn.</li>
+            </ol>
+            <p class="tip">U kunt eenvoudig wijzigen welke camera’s zijn opgenomen in de weergave door een andere camera naar het weergave-item te slepen.</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Gesloten" data-mc-alt2="Open" />Carrousels toevoegen aan weergaven</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="sc_configuringcarousels.htm#SC_AddCarouselToViews.htm" class="MCXref xref">Carrousels toevoegen aan weergaven</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Gesloten" data-mc-alt2="Open" />Afbeeldingen toevoegen aan weergaven</a>
+            <a name="SC_AddImageToViews.htm"></a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>U kunt statische beelden tonen in een weergave. Dit is bijvoorbeeld nuttig wanneer u een momentopname van een verdachte wilt delen, of een diagram met nooduitgangen.</p>
+            <p>Volg deze stappen:</p>
+            <ol>
+              <li value="1"> Klik op <span class="uitext">Instellingen</span> om de instelmodus te openen. </li>
+              <li value="2">
+                <p>Sleep in het deelvenster <span class="uitext">Systeemoverzicht</span> het item <span class="uitext">Afbeelding</span> naar een weergave-item. Er wordt een venster weergegeven.</p>
+                <p>
+                  <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_addimagetoview.jpg" data-mc-popup-alt="Add images to views in XProtect Smart Client.">
+                    <img class="MCPopupThumbnail img" data-mc-width="306" data-mc-height="946" src="../../../../Images/sc_addimagetoview_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add images to views in XProtect Smart Client." tabindex="" />
+                  </a>
+                </p>
+              </li>
+              <li value="3">Zoek en selecteer het afbeeldingsbestand dat u wilt toevoegen.</li>
+              <li value="4">Klik op <span class="uitext">Openen</span>. De afbeelding wordt nu binnen het weergave-item weergegeven.</li>
+              <li value="5">Om een afbeelding beschikbaar te maken voor anderen die geen toegang hebben tot de locatie van het afbeeldingsbestand, klikt u in het deelvenster <span class="uitext">Eigenschappen</span> op <span class="uitext">Insluiten</span>. Het bestand wordt in het systeem opgeslagen.</li>
+              <li value="6"> Klik opnieuw op <span class="uitext">Instellingen</span> om de instelmodus af te sluiten. Uw wijzigingen worden opgeslagen.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Gesloten" data-mc-alt2="Open" />Hotspots toevoegen aan weergaven</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="sc_configuringhotspots.htm#SC_AddHotspotToViews.htm" class="MCXref xref">Hotspots toevoegen aan weergaven</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Gesloten" data-mc-alt2="Open" />Kaarten toevoegen aan weergaven</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="sc_configuringmaps.htm#SC_AddMapToViews.htm" class="MCXref xref">Kaarten toevoegen aan weergaven</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Gesloten" data-mc-alt2="Open" />Smart Maps toevoegen aan weergaven</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="../../../feature_flags/ff_map/sc_configuringmaps.htm#SC_AddSmartMapToView.htm" class="MCXref xref">Smart Map toevoegen aan weergaven</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Gesloten" data-mc-alt2="Open" />Tekst toevoegen aan weergaven</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>U kunt tekst toevoegen aan een of meer weergave-items binnen een weergave. Dit is bijvoorbeeld nuttig wanneer u een bericht of instructies naar gebruikers wilt sturen, of een werkschema voor beveiligingspersoneel wilt publiceren. U kunt maximaal 1.000 tekens gebruiken.</p>
+            <p>Volg deze stappen:</p>
+            <ol>
+              <li value="1"> Klik op <span class="uitext">Instellingen</span> om de instelmodus te openen. </li>
+              <li value="2">Sleep het element <span class="uitext">Tekst</span> in het deelvenster <span class="uitext">Systeemoverzicht</span> naar het weergave-item waar u de tekst wilt weergeven. Er wordt een venster weergegeven.</li>
+              <li value="3">Voer de tekst in.</li>
+              <li value="4">Klik op <span class="uitext">Opslaan</span>.</li>
+              <li value="5">Om de tekst na het bewaren te wijzigen, klikt u in de modus Instellingen op <span class="uitext">Wijzig tekst</span> in het deelvenster <span class="uitext">Eigenschappen</span>.</li>
+            </ol>
+            <div>
+              <p class="note">U kunt tabellen invoegen van producten zoals Microsoft Word en Microsoft Excel, maar u kunt geen wijzigingen aanbrengen in tabellen. </p>
+            </div>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Gesloten" data-mc-alt2="Open" />
+            </a>
+            <a name="Add"></a>
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Webpagina’s toevoegen aan weergaven</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>U kunt webpagina’s toevoegen aan weergaven, bijvoorbeeld HTML-, PHP- of ASP-pagina’s. Dit is bijvoorbeeld nuttig voor het aanbieden van online instructies of weergeven van bedrijfswebpagina’s in combinatie met camera’s of andere soorten inhoud.</p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/add_html_page_to_view_or_1.jpg" data-mc-popup-alt="Add webpages to views in XProtect Smart Client to display web context next to video feeds.">
+                <img class="MCPopupThumbnail img" data-mc-width="1320" data-mc-height="854" src="../../../../Images/add_html_page_to_view_or_1_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add webpages to views in XProtect Smart Client to display web context next to video feeds." tabindex="" />
+              </a>
+            </p>
+            <p>Volg deze stappen:</p>
+            <ol>
+              <li value="1">Open de weergave die u wilt wijzigen.</li>
+              <li value="2"> Klik op <span class="uitext">Instellingen</span> om de instelmodus te openen. </li>
+              <li value="3">Klik in het deelvenster <span class="uitext">Systeemoverzicht</span> op het onderdeel <span class="uitext">HTML-pagina</span> en sleep dit naar de weergave-items. Er wordt een venster weergegeven.<p><img src="../../../../Images/add_html_page_to_view_or_1.png" alt="Enter URL when adding webpage to views in XProtect Smart Client." /></p></li>
+              <li value="4">
+                <p>Voer in het veld <span class="uitext">Openen</span> het webadres van de webpagina in.</p>
+                <p class="important">Als u een webpagina wilt gebruiken die is opgeslagen op uw lokale computer, netwerk of FTP-server, moet u zorgen dat de weergavemodis is ingesteld op <span class="uitext">Compatibiliteit</span> in de eigenschappen van de webpagina. Raadpleeg <a href="#Web" class="MCXref xref">Eigenschappen voor webpagina </a>. Anders krijgt u een foutbericht te zien. Raadpleeg <a href="../sf_troubleshooting/sc_troubleshootinghtmlpages.htm" class="MCXref xref">Webpagina’s (probleemoplossing)</a>.</p>
+              </li>
+              <li value="5">Klik op <span class="uitext">OK</span>.</li>
+              <li value="6">Om de eigenschappen in te stellen, vouwt u het deelvenster <span class="uitext">Eigenschappen</span> uit.</li>
+              <li value="7"> Klik opnieuw op <span class="uitext">Instellingen</span> om de instelmodus af te sluiten. Uw wijzigingen worden opgeslagen.</li>
+            </ol>
+            <p class="note">U kunt niet door de webpagina navigeren in de instelmodus. </p>
+            <h3>
+              <a name="Web"></a>Eigenschappen voor webpagina </h3>
+            <table cellspacing="3">
+              <col />
+              <col style="width: 376px;" />
+              <thead>
+                <tr>
+                  <th>
+                    <p>Naam</p>
+                  </th>
+                  <th>
+                    <p>Beschrijving</p>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">Bewerken</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>Geef een nieuwe URL of bestandslocatie van de webpagina op.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">Weergavemodus</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>Selecteer de browser om de webpagina weer te geven. Er zijn twee opties:</p>
+                    <ul>
+                      <li>
+                        <span class="uitext">Standaard</span>: deze instelling gebruikt Microsoft Edge. Kies <span class="uitext">Standaard</span> als de webpagina zich op een webserver bevindt en het gebruikte netwerkprotocol HTTP of HTTPS is</li>
+                      <li>
+                        <span class="uitext">Compatibiliteit</span>: deze instelling gebruikt Internet Explorer. Kies <span class="uitext">Compatibiliteit</span> als de webpagina:<ul><li> lokaal is opgeslagen</li><li>andere netwerkprotocollen dan HTTP en HTTPS gebruikt</li><li>scripts bevat die zijn ontworpen voor interactie met <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span></li><li>een oudere HTML-versie gebruikt</li></ul></li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">Schaal aanpassen</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>Selecteer de schaalwaarde van de webpagina. De optimale schaalwaarde is afhankelijk van de inhoud van de geïmporteerde webpagina en hoe u deze wilt weergeven </p>
+                    <p class="note">Deze instelling is alleen beschikbaar in de modus <span class="uitext">Compatibiliteit</span>.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">Werkbalk verbergen</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>Schakel het selectievakje in om de navigatiewerkbalk te verbergen die boven elke geïmporteerde webpagina wordt ingevoegd.</p>
+                    <p>
+                      <img src="../../../../Images/set_properties_for_html_page.png" alt="" />
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Gesloten" data-mc-alt2="Open" />Overlayknoppen aan weergaven toevoegen</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>U kunt luidsprekers, gebeurtenissen, <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term33">uitvoer<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Gegevens die een computer verlaten. Op IP-bewakingssystemen wordt uitvoer vaak gebruikt voor het activeren van objecten zoals toegangsdeuren, sirenes, knipperlichten, enzovoort.</span></a>, enzovoort activeren via <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term34">overlayknoppen<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Knop die als een laag boven op de beelden wordt weergegeven wanneer u in het tabblad Live de muisaanwijzer op een specifieke camerapositie in een weergave plaatst. Met overlayknoppen kunt u luidsprekers, gebeurtenissen en uitvoer activeren, PTZ-camera’s verplaatsen, opnamen starten en indicatoren van camera’s wissen.</span></a> die worden weergegeven wanneer u in het tabblad <span class="uitext">Live</span> de muis op specifieke cameraposities in weergaven plaatst.</p>
+            <p>U kunt zoveel knoppen toevoegen als u wenst.</p>
+            <ol>
+              <li value="1"> Klik op <span class="uitext">Instellingen</span> om de instelmodus te openen. </li>
+              <li value="2">Selecteer de actie in het deelvenster <span class="uitext">Overlayknoppen</span> en sleep deze naar het cameraweergave-item.</li>
+              <li value="3">Wanneer u de muis loslaat, wordt de overlayknop weergegeven. Als u de grootte van de knop wilt aanpassen, sleept u de weergegeven grepen. <p><img src="../../../../Images/add_an_overlay_button_to_a.jpg" alt="" /></p></li>
+              <li value="4">Als u de tekst van de overlayknop wilt wijzigen, dubbelklikt u op de tekst, overschrijft u deze en schakelt u vervolgens het selectievakje <img src="../../../../Images/add_an_overlay_button_to_a.png" alt="" /> in om de tekst op te slaan. Als u de wijziging ongedaan wilt maken, klikt u op de annuleerknop <img src="../../../../Images/add_an_overlay_button_to_a_1.png" alt="" />. Bij het opslaan wordt de tekst aangepast aan de grootst mogelijke ruimte op de knop.</li>
+              <li value="5"> Klik opnieuw op <span class="uitext">Instellingen</span> om de instelmodus af te sluiten. Uw wijzigingen worden opgeslagen.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <p>
+        <a name="SC_AssignAShortcutNumber.htm"></a>
+      </p>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Conceptinformatie</p>
+        <p class="containerItem_container_0">
+          <a href="../sf_operation/sc_workingwithviews.htm">Weergaven beheren</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

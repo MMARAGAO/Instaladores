@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" dir="rtl" lang="ar-SA" xml:lang="ar-SA" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="التحسينات" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Get familiar with and read how to set up adaptive streaming to improve the performance of computers running XProtect Smart Client." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=المسؤول" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=المدمج" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>تمكين الدفق التكيفي</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/purify.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#feature_flags/ff_adaptivestreaming/sc_enablingadaptivestreaming.htm">فَتح موضوع مع التصفح</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="مسارات التنقل" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>تمكين الدفق التكيفي</h1>
+      <h2>الدفق التكيفي (شرح)<a name="SC_AdaptiveStreamingExplained"></a></h2>
+      <p>يُحسن الدفق التكيفي إمكانية فك الترميز وكذلك أداء الكمبيوتر الذي يعمل بنظام <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. يكون هذا مفيدًا عند عرض عدة تدفقات فيديو مباشر في نفس العرض.</p>
+      <p>للاستفادة من الدفق التكيفي، يجب أن تحتوي الكاميرات على تدفقات متعددة محددة بدقة مختلفة. هذا يمكّن <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> لتحديد الأقرب مطابقة للقرار المطلوب بواسطة عنصر العرض تلقائيًا. الآن لا يتعين على <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> تقليل التدفقات الافتراضية بدقة عالية غير ضرورية. هذا يقلل الحمل على موارد وحدة المعالجة المركزية وفك التشفير.</p>
+      <p>لضمان جودة الفيديو، يتم تحديد أقرب تطابق على أنه مساو أو أعلى من الدقة المطلوبة بواسطة عنصر العرض إن أمكن. هذا لتجنب رفع التدفقات. يُظهر الجدول أدناه تدفقات الفيديو التي يحددها الدفق التكيفي بناءً على طلبات عناصر العرض من <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>.</p>
+      <table cellspacing="3">
+        <col style="width: 40%;" />
+        <col />
+        <col />
+        <thead>
+          <tr>
+            <th>الدقة المطلوبة بواسطة عنصر عرض</th>
+            <th colspan="2">أقرب تطابق لتدفقات الفيديو المتاحة</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>636 x 477</td>
+            <td style="text-align: right;">دفق الفيديو 1</td>
+            <td>640 x 480 (VGA)</td>
+          </tr>
+          <tr>
+            <td>644 x 483</td>
+            <td style="text-align: right;">دفق الفيديو 2</td>
+            <td>1280 x 720 (WXGA-H)</td>
+          </tr>
+          <tr>
+            <td>1920 x 1080</td>
+            <td style="text-align: right;">دفق الفيديو 3</td>
+            <td>1920 x 1080 (FHD)</td>
+          </tr>
+          <tr>
+            <td>1920 x 1440</td>
+            <td style="text-align: right;">دفق الفيديو 4</td>
+            <td>3840 x 2160 (4K UHD-1)</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="note">
+        <p>عند التكبير، يكون دفق الفيديو المباشر المطلوب دائمًا هو الأكثر دقة.</p>
+        <p>يتم تقليل استخدام عرض النطاق الترددي غالبًا عند تقليل دقة التدفقات المطلوبة. يعتمد استخدام النطاق الترددي أيضًا على الإعدادات الأخرى في تكوين التدفقات المعرفة.</p>
+      </div>
+      <h2>تحقق من إعدادات الدفق التكيفي<a name="SC_CheckAdaptiveStreamingSettings"></a></h2>
+      <ol>
+        <li value="1">انتقل إلى <span class="uitext">الإعدادات</span> &gt;<span class="uitext"> المتقدمة</span> &gt;<span class="uitext"> الدفق التكيفي</span>.</li>
+        <li value="2">هناك نوعان من الإعدادات للتدفق التكيفي: <span class="uitext">تعطيل</span> و <span class="uitext">تمكين</span>. <p>حدد <span class="uitext"><span class="uitext">تمكين</span></span>.</p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_settings_advanced_adaptivestreamingdiagnosticsoverlaycut.png" data-mc-popup-alt="Adaptive streaming settings in XProtect Smart Client."><img class="MCPopupThumbnail img" data-mc-width="800" data-mc-height="480" src="../../../Images/sc_settings_advanced_adaptivestreamingdiagnosticsoverlaycut_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Adaptive streaming settings in XProtect Smart Client." tabindex="" /></a></p></li>
+        <li value="3">انتقل إلى <span class="uitext">تراكب تشخيصات الفيديو</span>.</li>
+        <li value="4">لجعل دقة الفيديو الحالية للدفق مرئية، حدد <span class="uitext">المستوى 2</span>.</li>
+        <p class="note">ينطبق هذا الإعداد على جميع عناصر العرض. الإعداد الافتراضي هو <span class="uitext">إخفاء</span>.</p>
+        <li value="5">يجب الآن <span class="uitext">تمكين</span> تراكب تشخيص الفيديو. </li>
+        <p>حاول تغيير حجم نافذة العرض من صغيرة إلى كبيرة ومن كبيرة إلى صغيرة وتحقق مما إذا كانت قيمة <span class="uitext">دقة الفيديو</span> تتغير.</p>
+        <p>
+          <img src="../../../Images/sc_viewitem_diagnosticsoverlay_resolution320x180.png" alt="" />
+          <img src="../../../Images/sc_viewitem_diagnosticsoverlay_resolution480x270.png" alt="" />
+          <img src="../../../Images/sc_viewitem_diagnosticsoverlay_resolution1280x720.png" alt="" />
+        </p>
+        <p>إذا لم تتغير القيمة، فاستمر في فحص دفق الفيديو المباشر المتاح من الكاميرات حتى تتمكن من تمكين البث المتكيف، إن أمكن ذلك.</p>
+      </ol>
+      <h2>تحقق من تدفقات الفيديو المباشر المتاحة<a name="SC_CheckAvailableLiveVideoStreams"></a></h2>
+      <p>للاستفادة من الدفق التكيفي، يجب تكوين دفقين فيديو مباشرين أو أكثر بدقة مختلفة في إعدادات الكاميرا.</p>
+      <p class="note"> تنسيق دقة الفيديو المدعوم الوحيد للتدفق التكيفي هو <span class="inputtext">العرض × الارتفاع</span>. لا يتم دعم تنسيقات دقة الفيديو المقدمة من الكاميرا مثل 720p أو mode2أو VGAأو ما شابه.</p>
+      <p class="note">لا تدعم جميع الكاميرات الدفق المتعدد.</p>
+      <p>يسمح الدفق المتعدد بتدفقات متعددة لكل جهاز على الخادم. إذا تم تكوين تدفقات متعددة وتم تمكين التدفق المتكيف، يمكنك تحديد<span class="uitext"> الدفق التكيفي</span> أو واحد من التدفقات الأخرى المتاحة.</p>
+      <p>للتأكد من تكوين <span class="uitext">الدفق التكيفي</span> في عرض:</p>
+      <ol>
+        <li value="1">انقر فوق <span class="uitext">إعداد</span> لتكوين العرض.</li>
+        <li value="2">في <span class="uitext">خصائص</span> ، انقر فوق القائمة المنسدلة <span class="uitext">الدفق المباشر</span> ، وستظهر قائمة تدفقات الفيديو المباشر المتاحة.</li>
+        <li value="3">
+          <p>تحقق مما إذا كان هناك دفقان فيديو مباشران أو أكثر متاحان وحدد <span class="uitext">الدفق التكيفي</span>.</p>
+          <p>
+            <img src="../../../Images/sc_viewitem_setup_properties_livestream_adaptivestreamingselect.png" alt="Verify that adaptive streaming is selected in the camera properties." />
+          </p>
+          <p class="note">في حالة توفر دفق فيديو مباشر واحد فقط، قم بإضافة المزيد من دفق الفيديو المباشر للكاميرا في <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>.</p>
+        </li>
+        <li value="4">انقر فوق <span class="uitext">إعداد</span> لإغلاق تكوين العرض.</li>
+      </ol>
+      <p>للتأكد من تحديد <span class="uitext">الدفق التكيفي</span> في عنصر العرض <span class="uitext">المباشر</span>:</p>
+      <ol>
+        <li value="1">انقر فوق <span class="uitext">المزيد</span> لعرض القائمة المنسدلة.</li>
+        <li value="2">حدد <span class="uitext">الدفق المباشر</span> ، وستظهر تدفقات الفيديو المباشر المتاحة.</li>
+        <li value="3">
+          <p>تحقق مما إذا كان هناك دفقان فيديو مباشران أو أكثر متاحان وحدد <span class="uitext">الدفق التكيفي</span>.</p>
+          <p>
+            <img src="../../../Images/sc_viewitem_more_livestream_adaptivestreaming.png" alt="Verify that adaptive streaming is selected in the camera view item." />
+          </p>
+        </li>
+      </ol>
+    </div>
+    <p></p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

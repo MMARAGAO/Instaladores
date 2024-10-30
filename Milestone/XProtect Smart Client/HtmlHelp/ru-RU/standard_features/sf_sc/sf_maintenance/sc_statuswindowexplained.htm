@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="ru-RU" xml:lang="ru-RU" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="Обслуживание" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="The Status window in XProtect Smart Client gives you an overview of connected XProtect VMS systems, retrieval of data from interconnected devices, and evidence locks." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Администратор" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Оператор" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Специалист по поддержке" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Окно статуса (объяснение)</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#standard_features/sf_sc/sf_maintenance/sc_statuswindowexplained.htm">Открыть тему с навигацией</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Навигация" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>Окно статуса (объяснение)</h1>
+      <div>
+        <a name="SC_StatusWindowExplained(688).htm"></a>
+        <p>Чтобы открыть окно <span class="uitext">Состояние</span>, нажмите кнопку <span class="uitext">Состояние</span> в панели инструментов приложения:<br /><img src="../../../../Images/status_window_explained.png" alt="Open the Status window in XProtect Smart Client." /></p>
+        <p>В окне <span class="uitext">Статус</span> показана следующая информация:</p>
+        <ul>
+          <li>Статус <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> серверов VMS, к которым система <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> подключена через <span class="mc-variable flvar-brand-company.FedArch variable">Milestone Federated Architecture</span>. См. также <a href="#SC_StatusWindow_Login" class="MCXref xref">Окно статуса - Идентификационные данные</a>.</li>
+          <li>Задания, созданные для получения данных со взаимосвязанного оборудования или камер, поддерживающих накопитель для хранения данных. См. также <a href="#SC_StatusWindow_Jobs" class="MCXref xref">Окно статуса - Задания</a>.</li>
+          <li>Существующие защиты доказательств, на которые у вас есть права пользователя. См. также <a href="#SC_Status_Window_EvidenceLockList" class="MCXref xref">Окно статуса - Список защищенных доказательств</a>.</li>
+        </ul>
+        <p class="note">Если кнопка показана внутри красного круга <img src="../../../../Images/sc_statuswindow_buttonicon_red.jpg" alt="" />, один или несколько серверов недоступны. После просмотра состояния, кнопка больше не будет мигать красным цветом даже в случае, если серверы по-прежнему недоступны.<br /></p>
+        <h2>
+          <a name="SC_StatusWindow_Login"></a>Окно статуса - Идентификационные данные</h2>
+        <p>Здесь вы можете просмотреть статус <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> серверов VMS, к которым подключена ваша система <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Это окно полезно, если вы подключаетесь к системе <span class="mc-variable flvar-brand-company.XP variable">XProtect</span>, настроенной для применения <span class="mc-variable flvar-brand-company.FedArch variable">Milestone Federated Architecture</span>. <span class="mc-variable flvar-brand-company.FedArch variable">Milestone Federated Architecture</span> – это способ подключения связанных, но физически отдельных <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> систем VMS. Такая настройка может быть актуальна, например, для сетей магазинов.</p>
+        <p>Если серверы доступны, они будут показаны серым цветом:</p>
+        <p>
+          <img src="../../../../Images/sc_statuswindow_serveravailable_icon.png" alt="" />
+        </p>
+        <p>Если серверы недоступны в момент входа, использовать камеры или функции, связанные с этими серверами, невозможно. Недоступные серверы показываются красным цветом:</p>
+        <p>
+          <img src="../../../../Images/sc_statuswindow_servernotavailable.png" alt="" />
+        </p>
+        <p>Количество серверов, которые вы увидите, будет зависеть от того, сколько серверов предоставит <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> система VMS в момент входа в систему. В частности, при работе с иерархическими системами с большим количеством серверов после входа в систему может стать доступно больше серверов. Список серверов содержит статическую информацию о статусе серверов. Если сервер недоступен, в поле <span class="uitext">Состояние</span> для него будет показана причина (нужно выбрать сервер). Чтобы подключиться к серверу, нажмите кнопку <span class="uitext">Загрузить сервер</span>. При этом для этого сервера будет обновлено состояние. Если сервер остается недоступным в течение длительного времени, обратитесь к своему администратору системы наблюдения.</p>
+        <h2>
+          <a name="SC_StatusWindow_Jobs"></a>Окно статуса - Задания</h2>
+        <p>Если <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> является частью системы <span class="mc-variable flvar-brand-company.MilInt_tm variable">Milestone Interconnect™</span> и у вас есть достаточные права для получения данных со взаимосвязанного оборудования или камер, поддерживающих накопитель для хранения данных, то можно просматривать задания, созданные для каждого запроса получения данных для этих устройств.</p>
+        <p>Каждая камера, для которой был выполнен запрос получения данных, отображается в качестве отдельного задания. Здесь можно просматривать степень выполнения запущенных заданий и остановить выполнение заданий. Также будет выполнено получение соответствующих аудиоданных, однако такие задания не будут отображены. После выполнения задания шкала времени для устройства будет автоматически обновлена.</p>
+        <p>Если вы хотите видеть только запрошенные задания, выберите фильтр <span class="uitext">Отображать только мои задания</span>.</p>
+        <h2>
+          <a name="SC_Status_Window_EvidenceLockList"></a>Окно статуса - Список защищенных доказательств</h2>
+        <p>Можно сортировать, фильтровать и осуществлять поиск по списку защит доказательств и просмотреть дополнительную информацию о них. Можно увидеть только защиты доказательств с устройствами, на которые у вас есть права пользователя. Дополнительные сведения приведены в разделе <a href="../../../feature_flags/ff_evidencelock/sc_workingwithevidencelocks.htm#SC_ViewExistingEvidenceL.htm" class="MCXref xref">Показать защищенные доказательства</a>.</p>
+      </div>
+    </div>
+    <p></p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

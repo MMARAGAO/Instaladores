@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MadCapSynonyms xml:lang="zh-TW">
+    <!-- saved from url=(0016)http://localhost -->
+    <Groups>
+        <SynonymGroup Stem="true">
+            <Word Stem="影像">影像</Word>
+            <Word Stem="視訊">視訊</Word>
+        </SynonymGroup>
+    </Groups>
+    <Directional>
+        <DirectionalSynonym Stem="true" From="變更" To="alter=modify=customise=customize=edit" FromStem="變更" />
+    </Directional>
+</MadCapSynonyms>

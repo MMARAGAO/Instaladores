@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LogMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <version>0.0.0.1</version>
+  <culture>sk-SK</culture>
+  <userfields>
+    <userfield type="string" uname="ResourceId"/>
+    <userfield type="string" uname="ResourceName"/>
+    <userfield type="enum" uname="ResourceType"/>
+    <userfield type="string" uname="ResourceLocation"/>
+    <userfield type="enum" uname="AccessGranted"/>
+    <userfield type="enum" uname="AuditType"/>
+  </userfields>
+  <userEnums>
+    <userEnum fieldname="groupname" fieldtype="system" uname="group">
+      <enum uname="Audit" value="Audit"/>
+    </userEnum>
+    <userEnum fieldname="severity" fieldtype="system" uname="severity">
+      <enum uname="Info" value="Informácie"/>
+    </userEnum>
+    <userEnum fieldname="status" fieldtype="system" uname="status">
+      <enum uname="Success" value="Úspech"/>
+    </userEnum>
+    <userEnum fieldname="AccessGranted" fieldtype="user" uname="AccessGranted">
+      <enum uname="Granted" value="Povolené"/>
+      <enum uname="Denied" value="Nepovolené"/>
+      <enum uname="Default" value="Predvolené"/>
+    </userEnum>
+    <userEnum fieldname="objecttype" fieldtype="system" uname="objecttype">
+      <enum uname="Alarms" value="Signalizácie"/>
+    </userEnum>
+    <userEnum fieldname="ResourceType" fieldtype="user" uname="ResourceType">
+      <enum uname="Alarms" value="Signalizácie"/>
+    </userEnum>
+    <userEnum fieldname="category" fieldtype="system" uname="category">
+      <enum uname="View_alarm" value="Zobraziť signalizáciu"/>
+      <enum uname="Print_alarm" value="Tlač signalizácie"/>
+      <enum uname="View_alarm_list" value="Zobraziť zoznam signalizácií"/>
+    </userEnum>
+    <userEnum fieldname="AuditType" fieldtype="user" uname="AuditType">
+      <enum uname="View_alarm" value="Zobraziť signalizáciu"/>
+      <enum uname="Print_alarm" value="Tlač signalizácie"/>
+      <enum uname="View_alarm_list" value="Zobraziť zoznam signalizácií"/>
+    </userEnum>
+  </userEnums>
+  <application uname="AlarmPlugin">
+    <component uname="Alarms">
+      <entries>
+        <group category="View alarm" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+          <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Alarms" severity="Info" status="Success" uname="ViewAlarmClient" value1="Granted" value2="Alarms" value3="View_alarm">Signalizácia zobrazená</entry>
+        </group>
+        <group category="Print alarm" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+          <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Alarms" severity="Info" status="Success" uname="PrintAlarmClient" value1="Granted" value2="Alarms" value3="Print_alarm">Signalizácia vytlačená</entry>
+        </group>
+        <group category="View alarm list" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+          <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Alarms" severity="Info" status="Success" uname="ViewAlarmListStartClient" value1="Granted" value2="Alarms" value3="View_alarm_list">Zoznam signalizácií zobrazený s nasledujúcim filtrom; „{filterSettings}“</entry>
+          <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Alarms" severity="Info" status="Success" uname="ViewAlarmListStopClient" value1="Granted" value2="Alarms" value3="View_alarm_list">Zobrazenie zoznamu signalizácií zastavené</entry>
+        </group>
+      </entries>
+    </component>
+  </application>
+</LogMessages>

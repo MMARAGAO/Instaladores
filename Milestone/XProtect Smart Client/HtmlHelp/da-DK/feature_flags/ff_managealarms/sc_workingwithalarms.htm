@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="da-DK" xml:lang="da-DK" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="Drift" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Events are predefined incidents on the XProtect VMS system that can be set up to trigger an alarm. You can acknowledge and ignore alarms or print alarm reports." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Operatør" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Alarmer og hændelser (anvendelse)</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#feature_flags/ff_managealarms/sc_workingwithalarms.htm">Åbn emne med navigation</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Brødkrummer" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>Alarmer og hændelser (anvendelse)</h1>
+      <div>
+        <h2>Alarmer (forklaret)<a name="SC_AboutAlarms.htm"></a></h2>
+        <div>
+          <p class="note">Denne funktion er kun tilgængelig i betemte <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS-systemer. For oplysninger om funktionerne i dit system, se <a href="../../standard_features/sf_sc/sf_considerationsrequirements/sc_surveillancesystemdif.htm" class="MCXref xref">Forskelle mellem overvågningssystemer</a>.</p>
+        </div>
+        <p>På <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS-serveren kan stort set alle slags begivenheder eller tekniske problemer - hændelser - indstilles til at udløse en alarm. Alarmer og hændelser kan ses på fanen <span class="uitext">Alarmstyring</span>, hvor du kan se en central oversigt over dine VMS-begivenheder, status og mulige tekniske problemer.</p>
+        <p>Du kan ikke opsætte alarm-udløsere i <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Din systemadministrator gør dette under konfiguration af <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS-systemet.</p>
+        <p class="note">Fanen <span class="uitext">Alarmstyring</span> er skjult eller vist afhængigt af indstillinger, som din systemadministrator har defineret.</p>
+        <p>Fanen <span class="uitext">Alarmstyring</span> stiller et decideret visning til rådighed for din alarm- eller hændelseshåndtering. Selve fanen viser antallet af aktive alarmer. Mere end ni alarmer bliver vist med et <img src="../../../Images/about_alarms.png" alt="9+ alarmer" />. Fanen <span class="uitext">Alarmstyring</span> indeholder en alarmliste, forhåndsvisning af alarmer til video, der knyttet til individuelle alarmer eller hændelser, og muligvis også et kort, som viser den geografiske placering af det kamera, der er knyttet til alarmen. </p>
+      </div>
+      <div>
+        <h2>Alarmliste (forklaret)<a name="SC_TheAlarmList.htm"></a></h2>
+        <p>Som standard viser <span class="uitext">Alarmliste</span>n indgående alarmer med de nyeste alarmer i toppen af listen. Alternativt kan Alarmliste vise en liste af <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term17">MIP<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Forkortelse af "Milestone Integration Platform".</span></a>-plug-ins og analysehændelser, for eksempel adgangskontrol eller Nummerpladegenkendelse (LPR). </p>
+        <p>Alarmer eller hændelser med tilknyttet video bliver vist med et ikon <img src="../../../Images/sc_alarmorevent_withvideo_icon.png" alt="" />. For at se et stillbillede fra tidspunktet for alarmen eller hændelsen skal du pege på ikonet. For at se optaget video fra kameraet eller kameraerne forbundet med alarmen eller hændelsen, vælg alarmen eller hændelsen i listen. For at stoppe en alarmlyd, der bliver gentaget, skal du vælge alarmen, som er forbundet med lyden i listen.</p>
+        <p>Du kan vælge, hvordan du ønsker, at listen skal vises, du kan filtrere søjlerne, du kan trække søjlerne til forskellige positioner og du kan højreklikke for at vise eller gemme visse søjler.</p>
+        <p class="note">Hændelseslisten viser ikke system- eller brugergenererede hændelser som bevægelsesregistrering eller arkiveringsfejl.</p>
+        <p>Listen opdateres hver 3. sekund.</p>
+        <p>
+          <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/the_alarm_list.png" data-mc-popup-alt="The alarm list in XProtect Smart Client.">
+            <img class="MCPopupThumbnail img" data-mc-width="500" data-mc-height="173" src="../../../Images/the_alarm_list_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="The alarm list in XProtect Smart Client." tabindex="" />
+          </a>
+        </p>
+        <p class="tip">For at se en liste over hændelser skal du gå i opsætningstilstand og vælge <span class="uitext">Hændelse</span> i ruden <span class="uitext">Egenskaber</span>. Se også <a href="sc_configuringalarmsandevents.htm#SC_AlarmListSettings.htm" class="MCXref xref">Indstillinger for alarmliste</a>.</p>
+      </div>
+      <div>
+        <h2>Servere i alarmliste (forklaret)<a name="SC_Servers.htm"></a></h2>
+        <p>På venstre side af alarmlisten kan du se serverne, som alarmerne stammer fra. Mange <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS-systemer har kun en enkelt server, men nogle systemer kan have mange server i et hierarki. Alle de servere, du har adgang til, er med på listen, og du kan filtrere alarmer efter servere.</p>
+      </div>
+      <div>
+        <h2>Alarmtilstande (forklaret)<a name="SC_Filters.htm"></a></h2>
+        <p>Alarmer kan have en af følgende tilstande: Ny, Under udførsel, I venteposition eller Lukket. Du kan se tilstanden for hver alarm i <span class="uitext">Alarmliste</span> i kolonnen <span class="uitext">Tilstand</span>. I ruden <span class="uitext">Filtre</span> kan du filtrere efter forskellige kriterier. I begyndelsen vil alle alarmer være i tilstanden <span class="uitext">Ny</span>, men når en alarm håndteres, opdateres dens status.</p>
+      </div>
+      <div>
+        <h2>Filtrer alarmer<a name="SC_FilterAlarms.htm"></a></h2>
+        <p>Der er flere måder du kan filtrere alarmlisten, så den kun viser alarmer eller hændelser, som du er interesseret i.</p>
+        <p>Trin: </p>
+        <ol>
+          <li value="1">
+            <p>I alarmlistens værktøjslinje skal du klikke på teksten <span class="uitext">Brugerdefineret (filter anvendt)</span> eller <span class="uitext">Intet filter</span>. Teksten kan være forskellig afhængigt af det valgte filter.<br /></p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/filter_alarms.png" data-mc-popup-alt="Filter alarms in XProtect Smart Client.">
+                <img class="MCPopupThumbnail img" data-mc-width="1217" data-mc-height="286" src="../../../Images/filter_alarms_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Filter alarms in XProtect Smart Client." tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="2">Angiv filterkriteriet på enhver på de kolonner, du ønsker at filtrere. Hvis du, for eksempel, angiver et bruger ID i feltet <span class="uitext">ID</span>, vil listen kun vise alarmer, der er tildelt den specifikke bruger.</li>
+          <li value="3">Du kan kombinere filtre, for eksempel <span class="uitext">Navn på tilstand</span> og <span class="uitext">Ejer</span> (tildelt til).</li>
+          <li value="4">For at vende tilbage til en ikke-filtreret alarmliste, skal du klikke på knappen <span class="uitext">Nulstil filter</span>.</li>
+          <li value="5">For at sortere i alarmlistens indhold skal du klikke på titlen for kolonnen.</li>
+        </ol>
+        <p class="tip">Hvis dine visninger af til alarmhåndtering indeholder kort, kan du også filtrere alarmlisten ved at højreklikke på et element (kamera, server eller lignende) på kortet og derefter vælge <span class="uitext">Vis alarmer</span>. Så er det kun alarmer fra det valgte element, der vil blive vist i alarmlisten.</p>
+      </div>
+      <div>
+        <h2>Besvare alarmer<a name="SC_ResponsdingToAlarms.htm"></a></h2>
+        <div>
+          <h3>Se og rediger detaljer for en alarm<a name="SC_ViewingAndEditingDeta.htm"></a></h3>
+          <p>Du kan svare på alarmer på forskellige måder. Du kan gå til alle visninger, hvor du har tilføjet en <span class="uitext">Alarmliste</span>, og dobbeltklikke på en alarm. Alarmen åbner i et separat vindue, hvor du se en forhåndsvisning af alarmbegivenheden og live video. Du kan også svare på alarmen ved at ændre på felterne i tabellen nedenfor. </p>
+        </div>
+      </div>
+      <p>Afhængigt af konfigurationen på dit <span class="mc-variable flvar-brand-company.XP variable">XProtect</span><a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term50"> VMS<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>VMS er en forkortelse for "Video Management Software" (videoadministrationssoftware).</span></a>-system kan du også modtage skrivebordsmeddelelser for alarmer. Den slags beskeder bliver på din skærm i 15 sekunder. Når du klikke på en besked, tager den dig direkte til fanen <span class="uitext">Alarmstyring</span> og åbner alarmvinduet.</p>
+      <div>
+        <div>
+          <table cellspacing="3">
+            <col />
+            <col />
+            <thead>
+              <tr>
+                <th>Felt</th>
+                <th>Beskrivelse</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">Tilstand</span>
+                  </p>
+                </td>
+                <td>
+                  <p>Alarmens tilstand indikerer om nogen har håndteret hændelsen. Du kan ændre alarmens tilstand. Typisk vil du ændre tilstanden fra <span class="uitext">Ny</span> til <span class="uitext">Under udførsel</span> og senere til <span class="uitext">I venteposition</span> eller <span class="uitext">Lukket</span>. </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">Prioritet</span>
+                  </p>
+                </td>
+                <td>
+                  <p>Her kan du ændre alarmens tilstand.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">Tildelt til</span>
+                  </p>
+                </td>
+                <td>
+                  <p>Her kan du tildele alarmen til en bruger i din organisation - også til dig selv. Personen, som du tildeler alarmen, bliver alarmens ejer, hvilket vil fremgå af kolonnen <span class="uitext">Ejer</span> i alarmlisten.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">Kommentar</span>
+                  </p>
+                </td>
+                <td>
+                  <p>Her kan du skrive kommentarer eller bemærkninger, som tilføjes i sektionen <span class="uitext">Aktiviteter</span>. Kommentarer relaterer sig typisk til aktioner, du har foretaget. For eksempel "Mistænkte tilbageholdt af sikkerhedsvagten", "Mistænkte overleveret til politiet" eller "Falsk alarm". <span class="uitext">Kommentar</span>feltet vises i bunden af vinduet.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">Aktiviteter</span>
+                  </p>
+                </td>
+                <td>
+                  <p>Aktiviteterne opsummerer, hvordan du har håndteret alarmen. Alle ændringer, du eller dine kollegaer har foretaget på alarmens tilstand eller prioritet, alle tildelinger af alarmen mellem brugere samt tilføjede kommentarer inkluderes automatisk i sektionen <span class="uitext">Aktiviteter</span>.</p>
+                  <p class="note">Afhængig af konfigurationen af <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS-serveren kan alarmen indeholde instruktioner til, hvordan alarmen skal håndteres. Instruktionerne bliver defineret fra serveren som del af alarmdefinitionen. Når det er tilfældet, vises aktiviteterne automatisk, når du redigerer alarmen.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">Udskrive</span>
+                  </p>
+                </td>
+                <td>
+                  <p>Du kan udskrive en rapport med oplysninger om alarmen, herunder alarm-historikken og et <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term19">stillbillede<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Et enkelt statisk billede.</span></a> fra tidspunktet for alarmen, hvis et billede er tilgængeligt.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h3>Godkend alarmer<a name="SC_AcknowledgeAnAlarm.htm"></a></h3>
+          <p>Når du har modtaget en alarm, kan du acceptere den, for at dokumentere at du vil gøre noget ved den.</p>
+          <p>Trin:</p>
+          <ol>
+            <li value="1">
+              <p>I alarmlisten skal du højreklikke på alarmen og vælge <span class="uitext">Accepter</span>. Alarmens tilstand ændres til <span class="uitext">Under udførsel</span>.</p>
+              <p class="note">Du kan kun acceptere nye alarmer.</p>
+            </li>
+            <li value="2">For at acceptere flere alarmer på samme tid tryk og hold <span class="uitext">CTRL</span>-knappen nede, og vælg så de alarmer, du ønsker at acceptere.</li>
+            <li value="3">Dobbeltklik på en alarm for at redigere detaljer om alarmen. Det kan for eksempel være at tildele alarmen til en anden eller tilføje instruktioner.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>
+            <a name="Disable"></a>Deaktiver alle nye alarmer på valgte hændelsestyper</h3>
+          <p>Hvis en hændelse udløser falske alarmer, vil du måske gerne deaktivere alle nye alarmer fra denne type hændelse i et stykke tid.</p>
+          <p>Hvis der for eksempel er en masse bevægelse i nærheden af et kamera, og dette forårsager flere falske alarmer, så kan du deaktivere alarmer ved bevægelsesregistrering for dette kamera i 10 minutter. Så vil bevægelsesregistrering på dette kamera ikke udløse alarmer i 10 minutter. På denne måde vil du ikke blive forstyrret af falske alarmer, og du kan fokusere på de alarmer, der har brug for din opmærksomhed.</p>
+          <p class="important">Deaktivering af alarmer påvirker alle operatører, der er forbundet til <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS-systemet, som du også er forbundet til. </p>
+          <p>Du kan deaktivere alle nye alarmer med <span class="uitext">Alarmstyring</span> eller et kort.</p>
+          <ol>
+            <li value="1">
+              <p>Brug <span class="uitext">Alarmstyring</span>: i alarmlisten skal du højreklikke en alarm og vælge <span class="uitext">Deaktiver alle nye alarmer</span>.</p>
+              <p>Brug et kort: højreklik på en alarm og vælg <span class="uitext">Deaktiver alle nye alarmer</span> &gt; <span class="uitext">Deaktiver</span>.</p>
+              <p>Vinduet <span class="uitext">Deaktiver alle nye alarmer</span> bliver vist.</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_disablealarmsoneventtypes.png" data-mc-popup-alt="Disable alarms based on event types in XProtect Smart Client.">
+                  <img class="MCPopupThumbnail img" data-mc-width="459" data-mc-height="790" src="../../../Images/sc_disablealarmsoneventtypes_thumb_200_0.png" style="max-width: 400px;mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Disable alarms based on event types in XProtect Smart Client." tabindex="" />
+                </a>
+              </p>
+            </li>
+            <li value="2">I listen <span class="uitext">Hændelser, der ikke udløser alarmer</span><img src="../../../Images/1.png" alt="" />, skal du vælge hvilke hændelsestyper, der ikke skal udløse alarmer.</li>
+            <li value="3">Angiv indtil hvornår eller hvor længe, de valgte hændelsestyper ikke skal udløse alarmer <img src="../../../Images/2.png" alt="" />.</li>
+            <li value="4">Det er også muligt, at tilføje en kommentar om, hvorfor du deaktiverer alarmer fra de valgte hændelsestyper <img src="../../../Images/3.png" alt="" />.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Ignorer alarmer på kort<a name="SC_IgnoreAnAlarm.htm"></a></h3>
+          <p>På et kort kan du ignorere en alarm for et element i en tidsperiode. Hvis for eksempel et kamera er i gang med at blive repareret og derfor er slået fra, kunne det være, at du gerne vil ignorere fejlen, der dukker på kortet i løbet af reparationstiden. Når du ignorerer en alarm på et kort, fjerner dette ikke alarmen fra alarmlisten, kun fra kortet.</p>
+          <p>
+            <img src="../../../Images/sc_ignorealarmonmap.png" alt="Ignore alarms on maps in XProtect Smart Client." />
+          </p>
+        </div>
+        <div>
+          <h3>Luk alarmer<a name="SC_CloseAlarms.htm"></a></h3>
+          <p>Efter du har accepteret en alarm, tildeler du den typisk til en anden, som vil efterforske, hvad der sker. I mellemtiden vil alarmen have tilstanden <span class="uitext">Under udførsel</span>. Når du har håndteret alarmen, kan du lukke den.</p>
+          <p>For at lukke en alarm gør et af følgende i <span class="uitext">Alarmliste</span>:</p>
+          <ul>
+            <li>Højreklik på alarmen og vælg <span class="uitext">Luk</span>.</li>
+            <li>Dobbeltklik på alarmen og i listen <span class="uitext">Tilstand</span> vælg <span class="uitext">Lukket</span>.</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <h2>Udskriv alarmrapporter<a name="SC_PrintAReportWithAlarm.htm"></a></h2>
+        <p>Du kan udskrive en rapport med oplysninger om alarmen herunder alarm-historikken og et billede (hvis det findes) fra tidspunktet for alarmen. Hvis du har valgt flere alarmer i alarmlisten, kan du ikke bruge denne funktion.</p>
+        <p>Trin:</p>
+        <ol>
+          <li value="1">Højreklik på alarmen i Alarmlisten.</li>
+          <li value="2">Vælg <span class="uitext">Udskriv</span>. Et vindue åbnes.</li>
+          <li value="3">For at tilføje en bemærkning skal du angive teksten i feltet <span class="uitext">Bemærk</span>.</li>
+          <li value="4">Klik på knappen <span class="uitext">Udskriv</span>.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_GetAlarmStatistics"></a>Få statistik om alarmer</h2>
+        <p>Få statiske data om de alarmer, der er blevet udløst i dit <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS-system inden for:</p>
+        <ul>
+          <li>
+            <span class="uitext">Sidste 24 timer</span>
+          </li>
+          <li>
+            <span class="uitext">Sidste 7 dage</span>
+          </li>
+          <li>
+            <span class="uitext">Sidste 30 dage</span>
+          </li>
+          <li>
+            <span class="uitext">Sidste 6 måneder</span>
+          </li>
+          <li>
+            <span class="uitext">Sidste år</span>
+          </li>
+        </ul>
+        <p>I vinduet <span class="uitext">Alarmrapport</span> viser to grafer antallet af alarmer filtreret efter kategorier, for eksempel <span class="uitext">Prioritet</span> eller <span class="uitext">Tilstand</span>, og du kan sammenligne de to grafer ved siden af hinanden. </p>
+        <p>Trin:</p>
+        <ol>
+          <li value="1">I <span class="uitext">Alarmliste</span>n skal du klikke på knappen <span class="uitext">Rapporter</span>. Et vindue åbnes.</li>
+          <li value="2">Oven over graferne skal du vælge tidsperioden, for eksempel <span class="uitext">Sidste 24 timer</span>. </li>
+          <li value="3">I listen <span class="uitext">Vælg rapport</span> skal du vælge en af disse kategorier:<ul><li><span class="uitext">Kategori</span></li><li><span class="uitext">Tilstand</span></li><li><span class="uitext">Prioritet</span></li><li><span class="uitext">Årsager til lukning</span></li><li><span class="uitext">System</span></li><li><span class="uitext">Svartid</span></li></ul></li>
+          <li value="4">For hver graf skal du vælge et under-filter. Hvis du for eksempel valgte <span class="uitext">Tilstand</span>, kan du vælge <span class="uitext">Ny</span> i den første graf og <span class="uitext">Under udførsel</span> i den anden. Graferne er fyldt ud.</li>
+          <li value="5">For at udskrive graferne som en PDF-rapport skal du klikke på <img src="../../../Images/sc_printalarmstatisticsicon.png" alt="" />.</li>
+        </ol>
+        <p>
+          <a name="SC_ViewAlarmReports.htm"></a>
+        </p>
+      </div>
+      <div>
+        <h2>Alarmer kort (forklaret)<a name="SC_AlarmsOnMaps.htm"></a></h2>
+        <p>Hvis din visning til alarmhåndtering indeholder et eller flere kort, så kan du også se alarmerne på kortene. Kort viser alarmer baseret på den geografiske lokation for kameraer, servere eller andre enheder, der udløser alarmerne, så du med det samme kan se, hvor alarmen stammer fra. Du kan højreklikke og acceptere, deaktivere eller ignorere alarmen direkte fra kortet.</p>
+        <p>Kameraelementer viser video i miniature-format, når du bevæger musen henover det. Når de bliver brugt sammen med alarmer, vil grafiske elementer på kort blive vist med røde cirkler omkring sig, hvis der er en alarm. Hvis der for eksempel kommer en alarm, der er forbundet med et bestemt kamera, vil det grafiske element, der repræsenterer dét kamera, med det samme få en rød cirkel rundt om sig, og du kan så klikke på kamera-elementet og ikke bare se video fra kameraet, men også håndtere alarmen gennem den menu, som bliver vist.</p>
+        <p class="tip">Hvis rød ikke er en god farve til at angive alarmer med på dine kort, kan du ændre farven.</p>
+        <p>Lad os antage, at det kamera, som er forbundet med en alarm, befinder sig på et kort på gade-niveau, men at du ser på et kort på by-niveau. Hvordan vil du så lægge mærke til alarmen? Det vil være helt uproblematisk takket være hotzoner, som er grafiske repræsentationer, der forbinder kort på forskellige niveauer med hinanden. Hvis en alarm er blevet registreret på et kort på gadeniveau, vil hotzonen blive rød på kortet på byniveau og dermed vise, at der er en alarm på et kort på et lavere niveau - selv hvis der er flere kortniveauer imellem.</p>
+        <p>For at få alarmlisten tilbage til en tilstand, hvor du kan se alarmer fra mere end bare det ene element, skal du klikke på den ønskede server, prioritet eller tilstand i alarmlisten.</p>
+      </div>
+      <div>
+        <h2>
+          <a name="Alarms"></a>Alarmer på smart kort (forklaret)</h2>
+        <p>Smart kort viser alarmer, hvis de er udløst af en enhed, og hvis den enhed er føjet til smart kortet. Se også <a href="../ff_map/sc_configuringmaps.htm#SC_AddingDeletingOrEditi_1.htm" class="MCXref xref">Tilføj, slet eller rediger enheder på et smart kort</a>.</p>
+      </div>
+      <p>For yderligere oplysninger om smart kort-ikoner, se <a href="../../standard_features/sf_sc/sf_operation/sc_searchingadditionalinfo.htm#Camera" class="MCXref xref">Kameraikoner (forklaret)</a>.</p>
+      <div>
+        <h2>Hændelser (forklaret)<a name="SC_Events.htm"></a></h2>
+        <p>En hændelse er et foruddefineret begivenhed på <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS-systemet, som kan indstilles til at udløse en alarm. Hændelser er enten foruddefinerede systembegivenheder eller brugerdefinerede hændelser, for eksempel analysehændelser eller generiske hændelser. Hændelser er ikke nødvendigvis tilknyttet en alarm, men de kan være det.</p>
+        <p>Hændelser aktiveres typisk automatisk og i baggrunden, for eksempel som et resultat af input fra eksterne sensorer, bevægelsesregistrering eller data fra andre applikationer. Hændelser kan dog også aktiveres manuelt. Hændelser bruges af VMS-systemet til at udløse handlinger, såsom at starte eller stoppe en optagelse, ændre videoindstillinger, aktivere <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term33">output<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Data, der sendes fra en computer. I IP-overvågningssystemer bruges output ofte til at aktivere enheder som porte, sirener, kraftigt blinklys mv.</span></a> eller kombinationer af handlinger. Når du aktiverer en hændelse fra din <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>, bliver der automatisk udløst handlinger på VMS-systemet, for eksempel optagelse på en bestemt kamera med en bestemt <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term14">billedhastighed<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>En måleenhed der indikerer mængden af information i video med bevægelse. Typisk målt i FPS (Frames Per second/billeder per sekund).</span></a> i et bestemt stykke tid.</p>
+        <p>Dit systemadministrator bestemmer, hvad der sker, når du manuelt aktiverer en hændelse. </p>
+        <div>
+          <h3>Aktiver hændelser manuelt<a name="SC_ManuallyActivateAnEve.htm"></a></h3>
+          <p>Listen af valgbare <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term11">hændelser<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>En foruddefineret begivenhed, der opstår på overvågningssystemet. Bruges af overvågningssystemet til at udløse handlinger. Afhængig af overvågningssystemets konfiguration kan hændelser udløses af input fra eksterne sensorer, af registreret bevægelse, af data der modtages fra andre applikationer eller manuelt via brugervalg. Forekomsten af en hændelse kan for eksempel bruges til at få et kamera til at optage med en bestemt billedhastighed, til at aktivere outputs, til at sende e-mail eller en kombination af alle.</span></a> er grupperet efter server og kameraet eller enheden, som hændelsen er tilknyttet til. Du kan manuelt aktivere en hændelse. Der kommer ingen bekræftelse, når du har aktiveret en hændelse.</p>
+          <ol>
+            <li value="1">På fanen <span class="uitext">Live</span> udvis ruden <span class="uitext">Hændelse</span>.</li>
+            <li value="2">Klik på <span class="uitext">Aktiver</span>.</li>
+            <li value="3">Alternativt, hvis det er tilgængeligt for kameraet, kan du klikke på <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term34">overlejringsknappen<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>En knap der vises ovenpå videoen, når du flytter musen ind over individuelle kamerapositioner i visninger på fanen Live. Brug overlejringsknapper til at aktivere højttalere, hændelser, output og bevæge PTZ-kameraer, start optagelse, nulstille beskeder fra kameraerne.</span></a>, som dukker frem, når du bevæger din mus hen over billedet.</li>
+          </ol>
+          <p class="note">Globale hændelser vises under den relevante server. Hvis en server er vist med et rødt ikon, er den ikke tilgængelig og du kan ikke aktivere hændelser på den server.</p>
+        </div>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Konceptinformation</p>
+        <p class="containerItem_container_0">
+          <a href="sc_configuringalarmsandevents.htm">Alarmer og hændelser (konfiguration)</a>
+        </p>
+        <p class="referenceHeading_reference_0">Referencematerialer</p>
+        <p class="referenceItem_reference_0">
+          <a href="sc_faq_alarms.htm">Ofte stillede spørgsmål: alarmer</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

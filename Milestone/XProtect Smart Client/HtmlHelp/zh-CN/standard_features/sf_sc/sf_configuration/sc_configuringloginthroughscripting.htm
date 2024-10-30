@@ -1,0 +1,279 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="zh-CN" xml:lang="zh-CN" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="配置" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Create scripts to control the login procudure and switch between views in XProtect Smart Client." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=开发人员" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=开发经理" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>脚本</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#standard_features/sf_sc/sf_configuration/sc_configuringloginthroughscripting.htm">用导航打开主题</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="痕迹" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>脚本</h1>
+      <div>
+        <h2>登录脚本（已解释）<a name="SC_StartupScripting.htm"></a></h2>
+        <p>可以使用脚本控制部分或全部 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 登录程序。</p>
+        <ul>
+          <li>如果采用<span class="uitext">基本身份验证</span>或 <span class="uitext">Windows 身份验证</span>，则可以打开预填写了服务器地址和用户名字段的 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 登录窗口，用户只要输入密码即可登录。</li>
+          <li>如果采用 <span class="uitext">Windows 身份验证（当前用户）</span>，则可在用户当前的 Windows 登录的基础上使 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 自动连接到监控系统。</li>
+        </ul>
+        <div class="important">
+          <p>如果基于<span class="uitext">基本身份验证</span>或 <span class="uitext">Windows 身份验证</span>编写登录程序的脚本，则需要将未加密的敏感信息添加到与 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 程序文件一起进行本地存储的 SCS 文件中：</p>
+          <ul>
+            <li>主机名称</li>
+            <li>用户名</li>
+            <li>密码</li>
+          </ul>
+          <p>存储未加密的信息可能会影响系统的安全性或 GDPR 合规性。可以读取 SCS 文件中的信息：</p>
+          <ul>
+            <li>任何可以访问该文件的人员</li>
+            <li>在由 SCS 文件启动的 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 应用程序或提供用户名和密码的命令行的内存占用中</li>
+          </ul>
+          <p>
+            <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> 建议您使用 <span class="uitext">Windows 身份验证（当前用户）</span>。如果必须使用<span class="uitext">基本身份验证</span>或 <span class="uitext">Windows 身份验证</span>，则应限制对 SCS 文件的访问。</p>
+        </div>
+      </div>
+      <div>
+        <h2>登录脚本 - 参数<a name="SC_Scripting_Parameters.htm"></a></h2>
+        <p>您可以使用以下参数：</p>
+        <p>ServerAddress</p>
+        <p>指 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 所连接管理服务器的 URL。</p>
+        <p>下面的示例将显示 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 的登录窗口，其中<span class="uitext">服务器地址</span>字段为<span class="citationtext">http://ourserver</span>：</p>
+        <p class="codechunk">Client.exe -ServerAddress="http://ourserver"</p>
+        <p>默认身份验证类型为<span class="uitext"> Windows 身份验证（当前用户）</span>。 除非使用 <span class="uitext">AuthenticationType</span> 参数（参见下文）对此进行更改，否则登录窗口会在<span class="uitext">用户名字</span>段自动显示当前 Windows 用户。</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="关闭" data-mc-alt2="打开" />用户名</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>表示特定的用户名。</p>
+            <p>下面的示例将显示 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 登录窗口，其中<span class="citationtext">服务器地址</span>字段为 <span class="uitext">http://ourserver</span>，<span class="specialbold">用户名</span>字段为 <span class="uitext">Tommy</span>：</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -UserName="Tommy"</p>
+            <p class="note">此参数只与 <span class="uitext">Windows 身份验证</span>和<span class="uitext">基本身份验证</span>相关。 <span class="uitext">可使用 </span>AuthenticationType 参数选择身份验证方法。</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="关闭" data-mc-alt2="打开" />密码</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>表示特定的密码。</p>
+            <p>下面的示例显示 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 的登录窗口，其中<span class="uitext">服务器地址</span>字段为 <span class="citationtext">http://ourserver</span>，<span class="uitext">用户名</span>字段为 <span class="specialbold">Tommy</span>，<span class="uitext">密码</span>字段为 <span class="specialbold">T0mMy5Pa55w0rD</span>：</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -UserName="Tommy" -Password="T0mMy5Pa55w0rD"</p>
+            <p class="note">此参数只与 <span class="uitext">Windows 身份验证</span>和<span class="uitext">基本身份验证</span>相关。 <span class="uitext">可使用 </span>AuthenticationType 参数选择身份验证方法。</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="关闭" data-mc-alt2="打开" />AuthenticationType</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>表示 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 三种身份验证方法中的一种：<span class="uitext">Windows 身份验证（当前用户）</span>（在启动脚本中称为 <span class="uitext">WindowsDefault</span>）、<span class="uitext">Windows 身份验证</span>（在启动脚本中称为 <span class="uitext">Windows</span>）或<span class="uitext">基本身份验证</span>（在启动脚本中称为 <span class="uitext">Simple</span>）。</p>
+            <p>下面的示例显示 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 的登录窗口，其中<span class="uitext">服务器地址</span>字段为 <span class="citationtext">http://ourserver</span>，<span class="uitext">身份验证</span>字段为<span class="uitext">基本身份验证</span>，<span class="uitext">用户名</span>字段为 <span class="specialbold">Tommy</span>，<span class="uitext">密码</span>字段为 <span class="specialbold">T0mMy5Pa55w0rD</span>（显示为星号）：</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -UserName="Tommy" -Password="T0mMy5Pa55w0rD" -AuthenticationType="Simple"</p>
+            <p>如果使用 <span class="uitext">Windows 身份验证</span>，则示例为：</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -UserName="Tommy" -Password="T0mMy5Pa55w0rD" -AuthenticationType="Windows"</p>
+            <p>
+              <span class="uitext">如果使用 <span class="uitext">Windows 身份验证</span>（当前用户），则不需要指定 UserName </span>和<span class="uitext"> Password</span> 参数，示例应为：</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -AuthenticationType="WindowsDefault"</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="关闭" data-mc-alt2="打开" />Script</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>表示 .scs 脚本（用于控制 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 的脚本类型）的完整路径。</p>
+            <p>以下是使用 .scs 脚本登录的示例：</p>
+            <p class="codechunk">Client.exe -Script=c:\startup.scs</p>
+            <p>使用 .scs 脚本以当前 Windows 用户登录 <span class="citationtext">http://ourserver</span> 的示例：</p>
+            <p class="codechunk">&lt;ScriptEngine&gt;</p>
+            <p class="codechunk"> &lt;Login&gt;</p>
+            <p class="codechunk">   &lt;ServerAddress&gt;http://ourserver&lt;/ServerAddress&gt;</p>
+            <p class="codechunk">   &lt;AuthenticationType&gt;WindowsDefault&lt;/AuthenticationType&gt;</p>
+            <p class="codechunk"> &lt;/Login&gt;</p>
+            <p class="codechunk">&lt;/ScriptEngine&gt;</p>
+            <p>可使用大量 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 函数调用（请参阅查看函数调用列表）向 .scs 脚本添加更多功能。在以下示例中，我们在脚本中加入一行，以使以前示例中的 .scs 脚本同样可以最小化 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 应用程序：</p>
+            <p class="codechunk">&lt;ScriptEngine&gt;</p>
+            <p class="codechunk"> &lt;Login&gt;</p>
+            <p class="codechunk">   &lt;ServerAddress&gt;http://ourserver&lt;/ServerAddress&gt;</p>
+            <p class="codechunk">   &lt;AuthenticationType&gt;WindowsDefault&lt;/AuthenticationType&gt;</p>
+            <p class="codechunk"> &lt;/Login&gt;</p>
+            <p class="codechunk"> &lt;Script&gt;SCS. Application.Minimize();&lt;/Script&gt;</p>
+            <p class="codechunk">&lt;/ScriptEngine&gt;</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="关闭" data-mc-alt2="打开" />格式</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>有效的参数格式为：</p>
+            <p class="codechunk">{-,/,--}param{ ,=,:}((".')value(",'))</p>
+            <p>示例：</p>
+            <p class="codechunk">-UserName Tommy</p>
+            <p class="codechunk">--UserName Tommy /UserName:"Tommy" /UserName=Tommy -Password 'Tommy'</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_UseAnHTMLPageForNavig.htm"></a>导航脚本 HTML 页面</h2>
+        <p>您可以使用脚本来创建能在视图之间切换的 HTML 页面。HTML 页面可以添加到您的视图中，以便它们与来自您摄像机的视频一起显示。</p>
+        <p>示例： 在 HTML 页面中，可插入一张可单击的建筑平面图，操作员只需单击该平面图的某一部分即可直接切换到特定视图，显示此建筑中所要查看部分的视频。</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="关闭" data-mc-alt2="打开" />要求</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <ul>
+              <li>如果您的 <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> 视频管理软件系统支持 <span class="mc-variable flvar-product.SC variable">Smart Client</span> 配置文件，则必须在 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> 中对所需的 <span class="mc-variable flvar-product.SC variable">Smart Client</span> 配置文件启用 HTML 脚本。</li>
+              <li>如果您的 <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> 视频管理软件系统不支持 <span class="mc-variable flvar-product.SC variable">Smart Client</span> 配置文件，则必须在 <span class="uitext">Client.exe.config</span> 文件中启用 HTML 脚本。</li>
+            </ul>
+          </div>
+        </div>
+        <p>在下面的内容中，您将看到用于 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 导航的 HTML 页面示例：</p>
+        <ul>
+          <li> 一个带有按钮的简单 HTML 页面</li>
+          <li>一个带有可单击图像映射的更高级 HTML 页面</li>
+          <li>一个供系统管理员使用的检查表，它列出了创建 HTML 页面并将其分发给 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 操作员所涉及的任务</li>
+        </ul>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="关闭" data-mc-alt2="打开" />带有导航按钮的 HTML 页面示例</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>一种非常快捷的解决方案是创建带有导航按钮的 HTML 页面。可在 HTML 页面上创建各种按钮。在本例中，只创建两种类型的按钮：</p>
+            <ul>
+              <li>
+                <span class="specialbold">用于切换 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 的视图的按钮</span>
+                <p>所需的 HTML 语句：</p>
+                <p class="codechunk">&lt;input type="button" value=" Buttontext" onclick="SCS. Views.SelectView('Viewstatus.Groupname. Viewname');"&gt;</p>
+                <p>其中 <span class="uitext">Viewstatus</span> 表示视图是共享视图还是私有视图（如果要向多个用户分发 HTML 页面，则<span class="specialbold">必定</span>是共享视图）。</p>
+                <p>实际按钮示例：</p>
+                <p class="codechunk">&lt;input type="button" value="Go to Shared Group1 View2" onclick="SCS. Views.SelectView('Shared.Group1. View2');"&gt;</p>
+                <p>此按钮允许用户在称为 <span class="uitext">Group1</span> 的共享组中进入称为 <span class="uitext">View2</span> 的视图。</p>
+                <p>
+                  <span class="specialbold">用于在选项卡之间切换的按钮</span>：<span class="uitext">实时</span>和<span class="uitext">播放</span> 请记住，根据用户权限的不同，某些用户可能无法访问所有选项卡。</p>
+                <p>所需的 HTML 语句：</p>
+                <p>
+                  <span class="uitext">实时选项卡</span>：<code class="codesnippet">&lt;input type="button" value="Buttontext" onclick="SCS. Application.ShowLive();"&gt;</code></p>
+                <p>
+                  <span class="uitext">播放选项卡</span>：<span class="codesnippet">&lt;input type="button" value="Buttontext" onclick="SCS. Application.ShowBrowse();"&gt;</span></p>
+              </li>
+            </ul>
+            <p class="tip">高级用户可在 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 中使用约 100 种不同类型的函数调用，创建大量其他类型的按钮。</p>
+            <p>在下例中，我们在 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 中创建了两个共享组。将它们分别命名为 <span class="uitext">Group1</span> 和 <span class="uitext">Group2</span>。每个组包含两个视图，名称分别为 <span class="uitext">View1</span> 和 <span class="uitext">View2</span>。</p>
+            <p>我们还创建了一个带按钮的 HTML 页面，允许用户在上述四个不同视图之间以及 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 的两个选项卡（<span class="uitext">实时</span>和<span class="uitext">播放</span>）之间进行切换。在浏览器中查看此 HTML 页面时，其显示效果如下：</p>
+            <p>
+              <img src="../../../../Images/use_an_html_page_for_navigation.png" alt="" />
+            </p>
+            <p>带有视图和选项卡导航按钮的 HTML 页面</p>
+            <p>我们将 HTML 页面在本地保存，本例保存在用户的 C: 盘。当 HTML 页面用于导航时，需要在本地保存 HTML 页面才能在兼容模式下打开它。另请参阅 <a href="sc_configuringviews.htm#Web" class="MCXref xref">网页属性</a>。</p>
+            <p>在本地保存 HTML 页面时，请将其保存在路径唯一的位置，例如保存在用户 C: 盘中的文件夹内（示例：C:\ myfolder\file.htm）。由于 Windows 构造用户的桌面或<span class="uitext">我的文档</span>文件夹路径的方式方面的原因，如果将 HTML 页面保存在这些位置，此页面将无法正常工作）。</p>
+            <p>然后，我们将 HTML 页面导入所需的 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 视图中。</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="关闭" data-mc-alt2="打开" />带有图像地图导航的 HTML 页面示例</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>也可创建带有更多高级内容的 HTML 页面，如创建一个让用户能切换视图的图像地图。</p>
+            <p>在下例中，我们保留了上例的两个组和两个视图。不再使用按钮，而是创建了一个带有平面图图像的 HTML 页面，并基于此平面图创建一个图像地图。在浏览器中查看此 HTML 页面时，其显示效果如下：</p>
+            <p>
+              <img src="../../../../Images/use_an_html_page_for_navigation_2.png" alt="" />
+            </p>
+            <p>带有视图导航式图像地图的 HTML 页面</p>
+            <p>在本例中，我们将此平面图划分为四个彩色区域，并将每个区域定义为一个图像地图区域。用户可单击区域以转到显示该区域的摄像机的视图。</p>
+            <p>例如，我们图像地图上的红色区域映射上例中的 <span class="uitext">Go to Shared Group2 View2</span> 按钮。如果在红色区域内单击，将转到<span class="uitext">组2</span> 的<span class="uitext">视图2</span>。</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="关闭" data-mc-alt2="打开" />导入 HTML 页面</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>在 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 中，将 HTML 导航页面导入视图的原理与将其他任何类型的 HTML 页面导入视图的原理并无差别。 请参阅 <a href="sc_configuringviews.htm#Add" class="MCXref xref">将网页添加到视图</a>。</p>
+            <div class="note">
+              <ul>
+                <li>HTML 页面应存储在操作员的本地计算机上</li>
+                <li>为了使导航正常工作，您可能需要将 HTML 页面导入若干个视图中</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="关闭" data-mc-alt2="打开" />系统管理员检查表</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>要创建 HTML 导航页面并向 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 操作员分发，请执行以下操作：</p>
+            <ol>
+              <li value="1">
+                <span class="specialbold">创建</span>所需的 HTML 页面。HTML 页面中的导航控件必须与用户在 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 中看到的视图相匹配。例如，要使一个转向 <span class="uitext">View1</span> 的按钮起作用，用户的 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 安装中必须存在一个名为 <span class="uitext">View1</span> 的视图。如果要向一组用户发布 HTML 页面，应将使用该 HTML 页面的视图放在共享组中。</li>
+              <li value="2">
+              将 HTML 页面<span class="specialbold">保存</span>在使用该页面的所有本地计算机上。在本地保存 HTML 页面时，请将其保存在路径唯一的位置，例如保存在用户 C: 盘中的文件夹内（示例：C:\ myfolder\file.htm）。由于 Windows 构造用户的桌面或<span class="uitext">我的文档</span>文件夹路径的方式方面的原因，如果将 HTML 页面保存在这些位置，此页面将无法正常工作）。</li>
+              <li value="3">
+              将 HTML 页面<span class="specialbold">导入</span><span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 中所需的视图中。 请参阅 <a href="sc_configuringviews.htm#Add" class="MCXref xref">将网页添加到视图</a>。</li>
+              <li value="4">
+                <span class="specialbold">测试</span>导入的 HTML 页面上的导航控件是否能正常工作。</li>
+            </ol>
+            <p class="note">有关故障排除的信息，请参阅 <a href="../sf_troubleshooting/sc_troubleshootinghtmlpages.htm" class="MCXref xref">网页（故障排除）</a>。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">概念信息</p>
+        <p class="containerItem_container_0">
+          <a href="../sf_operation/sc_loggingin_366_.htm">登录</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

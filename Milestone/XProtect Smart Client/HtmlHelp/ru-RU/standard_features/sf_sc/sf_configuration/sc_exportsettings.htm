@@ -1,0 +1,347 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="ru-RU" xml:lang="ru-RU" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="Эксплуатация" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Decide what to export and where to create the export. Add privacy masks to your export and encrypt it with a password using the AES-256 standard." />
+    <meta class="addSearch product" content="product=Recording Server" data-type="text" name="addsearch-custom-field" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=Recording Server" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Оператор" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client – Player" class="addSearch product" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Параметры экспорта</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#standard_features/sf_sc/sf_configuration/sc_exportsettings.htm">Открыть тему с навигацией</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Навигация" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>Параметры экспорта</h1>
+      <p>На вкладке <span class="uitext">Экспорты</span> можно выбрать, какие форматы следует использовать для экспорта, а для каждого формата можно изменить <span class="uitext">Параметры экспорта</span>:</p>
+      <ul>
+        <li>
+          <p>
+            <a href="#format" class="MCXref xref"> Параметры формата XProtect</a>
+          </p>
+        </li>
+        <li>
+          <p>
+            <a href="#SC_MediaPlayerFormat" class="MCXref xref">Параметры формата универсального проигрывателя</a>
+          </p>
+        </li>
+        <li>
+          <p>
+            <a href="#Still" class="MCXref xref">Параметры кадров</a>
+          </p>
+        </li>
+      </ul>
+      <p>
+        <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_exportstab_exportsettings_1.jpg" data-mc-popup-alt="The Export settings window in XProtect Smart Client. The window has tabs for each export format: XProtect format, Media player format, Still images.">
+          <img class="MCPopupThumbnail img" data-mc-width="1361" data-mc-height="821" src="../../../../Images/sc_exportstab_exportsettings_1_thumb_200_0.jpg" style="mc-thumbnail-max-height: auto;mc-thumbnail-max-width: 200px;mc-thumbnail: popup;" alt="The Export settings window in XProtect Smart Client. The window has tabs for each export format: XProtect format, Media player format, Still images." tabindex="" />
+        </a>
+      </p>
+      <div class="note">
+        <p>Ваш системный администратор указывает, какие форматы и какие параметры экспорта будут вам доступны.</p>
+        <p>В целях обеспечения безопасности по умолчанию доступен только формат <span class="mc-variable flvar-brand-company.XP variable">XProtect</span>. Чтобы включить другие форматы экспорта, обратитесь к администратору системы.</p>
+      </div>
+      <p>Заданные вами параметры экспорта хранятся и отображаются при следующем экспорте.</p>
+      <p>Если параметр затенен, он заблокирован администратором системы.</p>
+      <div>
+        <h2>
+          <a name="format"></a> Параметры формата <span class="mc-variable flvar-brand-company.XP variable">XProtect</span></h2>
+        <p>Выберите формат <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> для создания экспорта, который можно открыть только на компьютере Windows в <span class="mc-variable flvar-product.SCplayer_XP variable">XProtect Smart Client – Player</span>.</p>
+        <p class="note">Для открытия экспортов, созданных в <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> версии 2020 R1 или выше, нужно пользоваться системой <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> версии 2020 R1 или выше.</p>
+        <table cellspacing="3">
+          <col />
+          <col />
+          <thead>
+            <tr>
+              <th>
+                <p>Название</p>
+              </th>
+              <th>
+                <p>Описание</p>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <p>
+                  <span class="uitext">Включить <span class="mc-variable flvar-product.SCplayer_XP variable">XProtect Smart Client – Player</span></span>
+                </p>
+              </td>
+              <td>
+                <p>Добавьте приложение <span class="mc-variable flvar-product.SCplayer_XP variable">XProtect Smart Client – Player</span> в экспортируемые данные. Экспортированные данные могут быть просмотрены только с помощью <span class="mc-variable flvar-product.SCplayer_XP variable">XProtect Smart Client – Player</span>.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>
+                  <span class="uitext">Запретить повторный экспорт</span>
+                </p>
+              </td>
+              <td>
+                <p>Предотвращает повторный экспорт данных получателями в любом формате.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>
+                  <span class="uitext">Зашифровать с помощью пароля</span>
+                </p>
+              </td>
+              <td>
+                <p>Шифруйте экспорт с помощью стандарта шифрования AES-256. При выборе <span class="uitext">Экспорт</span> &gt; <span class="uitext">Создать экспорт</span> вы должны ввести пароль, длина которого составляет не менее восьми символов.</p>
+                <p>Чтобы открыть и просмотреть экспортированные данные, получатель экспорта должен ввести пароль.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>
+                  <span class="uitext">Добавить цифровую подпись</span>
+                </p>
+              </td>
+              <td>
+                <p>Включите цифровую подпись в экспортированную базу данных. В зависимости от настроек системы наблюдения видео или аудио уже могут содержать подпись. В этом случае эти подписи будут проверены при экспорте, и в случае успешной проверки они будут добавлены в экспорт. Если проверка выдаст ошибку, экспорт для устройства также не будет выполнен. Открывая экспортированные файлы, получатели могут проверить подпись в <span class="mc-variable flvar-product.SCplayer_XP variable">XProtect Smart Client – Player</span>. См. также <a href="../sf_operation/sc_xprscpl_1.htm#SC_VerifyDigitalSignatur.htm" class="MCXref xref">Проверка цифровых подписей</a>.</p>
+                <p class="note">Если цифровая подпись не добавляется, не будут добавлены подписи ни с сервера, ни для экспорта, а экспорт будет успешно выполнен, даже если видео или аудио были изменены.</p>
+                <p>Существует два сценария, в соответствии с которыми цифровые подписи могут исключаться во время экспорта:</p>
+                <ul>
+                  <li>При наличии областей с <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term55">масками конфиденциальности<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Размытый или залитый определенным цветом участок в поле зрения камеры. Определенные участки размываются или заливаются в режимах наблюдения, просмотра, областях внимания, на каруселях, интеллектуальной карте, в интектуальном поиске и при экспорте видео.</span></a> цифровые подписи сервера записи удаляются из экспорта.</li>
+                  <li>Если экспортируемые данные очень близки по времени к текущей дате и времени, цифровая подпись для сервера записи может не быть включена для всей последовательности. В этом случае цифровые подписи будут добавлены только к части экспорта</li>
+                </ul>
+                <p>Экспорт будет завершен, однако при проверке подписей обнаружится, что цифровые подписи для сервера записи были удалены или только частично приемлемы.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>
+                  <span class="uitext">Комментарии</span>
+                </p>
+              </td>
+              <td>
+                <p>Открывает окно <span class="uitext">Добавить комментарии к экспортируемому файлу</span>, где можно добавить комментарии к отдельным камерам или ко всему проекту экспорта.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_MediaPlayerFormat"></a>Параметры формата универсального проигрывателя</h2>
+        <p>Выберите формат универсального проигрывателя для экспорта в стандартный видеофрагмент или аудиофрагмент, которые можно просматривать или прослушивать на компьютерах, где установлен стандартный универсальный проигрыватель. На компьютере также должен быть установлен кодек, используемый для экспорта.</p>
+        <p>Чтобы получить минимально возможный размер экспорта, выберите формат MKV. Если не включено, обратитесь к администратору системы.</p>
+        <table cellspacing="3">
+          <col />
+          <col />
+          <thead>
+            <tr>
+              <th>
+                <p>Название</p>
+              </th>
+              <th>
+                <p>Описание</p>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="uitext">Экспортировать содержимое</span>
+              </td>
+              <td>
+                <p>Экспорт только видео, только аудио или и аудио, и видео.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Формат экспорта</span>
+              </td>
+              <td>
+                <p>Экспорт видео в формате <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term3">AVI<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Популярный формат видеофайлов. Файлы этого формата имеют расширение .avi.</span></a> или <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term69">MKV<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Краткое обозначение формата Matroska Video. Файл MKV — это видеофайл, сохраненный в формате мультимедийного контейнера Matroska. Данный формат поддерживает разные аудио- и видеокодеки.</span></a>.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Кодек</span>
+              </td>
+              <td>
+                <p>Ваш выбор <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term7">кодека<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Технология сжатия и распаковки аудио- и видеоданных, например в экспортированном AVI-файле.</span></a> повлияет на качество и размер AVI-файла.</p>
+                <p>Вы можете изменить кодек, но мы рекомендуем сохранить стандартные настройки кодека, если только у вас нет веских причин для их изменения.</p>
+                <p class="note">Используемый кодек должен быть аналогичен кодеку, установленному на компьютере, на котором будет воспроизводиться экспортированное видео.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Добавить временные метки</span>
+              </td>
+              <td>
+                <p>Добавьте дату и время из системы VMS в экспортированные видео. Временная метка будет отображаться в верхней части экспортируемого видео.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Уменьшить частоту кадров</span>
+              </td>
+              <td>
+                <p>Уменьшите частоту кадров для экспорта. Будет включен каждый второй кадр, но воспроизведение по-прежнему будет выполняться в реальном времени.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Текстовые подписи в видеофайле</span>
+              </td>
+              <td>
+                <p>Откройте окно <span class="uitext">Текст подписей в видеофайле</span> для создания подписей для AVI-файла. Эти подписи при экспорте будут добавлены ко всем камерам и будут показываться в виде кадров перед видео (<span class="uitext">Вступительные слайды</span>) или после видео (<span class="uitext">Заключительные слайды</span>).</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="important">Формат MKV: если вы не использовали маски конфиденциальности и видео было записано в формате JPEG или MPEG-4/H.264/H.265, то в процессе экспорта преобразование видео не осуществляется. Записанное видео сохраняется в оригинальном качестве. Если же использовались маски конфиденциальности или видео было записано с использованием другого кодека, то в процессе экспорта осуществляется преобразование видео в формат JPEG.</p>
+      </div>
+      <div>
+        <h2>
+          <a name="Still"></a>Параметры кадров</h2>
+        <p>Выберите формат для экспорта кадров применительно к каждому кадру видеопоследовательности. Изображения приведены в формате <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term23">JPEG<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Способ сжатия изображений, также известный как JPG — аббревиатура названия Joint Photographic Expert Group, Объединенная группа экспертов в области фотографии. Данный способ является так называемым сжатием с потерями, так как при сжатии некоторые детали изображения теряются. Сжатые таким образом изображения известны как файлы JPG или JPEG.</span></a>.</p>
+        <table cellspacing="3">
+          <col />
+          <col />
+          <thead>
+            <tr>
+              <th>
+                <p>Название</p>
+              </th>
+              <th>
+                <p>Описание</p>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="uitext">Добавить временные метки</span>
+              </td>
+              <td>
+                <p>Добавьте дату и время из системы VMS в экспортированные изображения. Временная метка будет отображаться в верхней части экспортируемых изображений.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2>
+          <a name="Exports"></a>Вкладка «Экспорты» (обзор)</h2>
+        <table cellspacing="3">
+          <col />
+          <col />
+          <thead>
+            <tr>
+              <th>
+                <p>Название</p>
+              </th>
+              <th>
+                <p>Описание</p>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="uitext">Список экспорта</span>
+              </td>
+              <td>
+                <p>Содержит элементы, выбранные для экспорта, например, видеоэпизоды.</p>
+                <p>Вы можете изменить временной интервал для каждого элемента, щелкнув время начала или окончания. После выбора новой даты и нового времени нажмите кнопку <span class="uitext">Перейти к</span>. Вы также можете изменить временной интервал, перетащив маркеры под областью предварительного просмотра.</p>
+                <p>Щелкните элемент, чтобы увидеть предварительную версию экспортированного клипа в области предварительного просмотра. Для предварительного просмотра нескольких элементов одновременно нажмите и удерживайте клавишу <span class="uitext">SHIFT</span> или <span class="uitext">CTRL</span>, нажимая на соответствующие элементы. </p>
+                <p>Удалить элемент из списка <span class="uitext">элементов</span> можно, нажав красный значок <span class="uitext">x</span> рядом с элементом. Данный символ отображается при наведении курсора мыши на элемент. Если вы хотите разделить элемент на два, нажмите значок <span class="uitext">Разделить</span> в области предварительного просмотра.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Добавить элемент</span>
+              </td>
+              <td>
+                <p>Используйте кнопку <span class="uitext">Добавить элемент</span>, чтобы выбрать другие элементы, которые вы хотите добавить в экспорт. </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Удалить все</span>
+              </td>
+              <td>Нажмите кнопку <span class="uitext">Удалить все</span> для очистки <span class="uitext">списка экспорта</span>.</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Имя экспортируемого файла</span>
+              </td>
+              <td>Программа автоматически указывает в этом поле локальную дату и время, но вы можете изменить это. </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Куда экспортировать</span>
+              </td>
+              <td>
+                <p>
+                  <span class="uitext">Путь</span>. Задавая путь, не обязательно указывать папки, существовавшие ранее. Если их пока нет, они будут созданы автоматически. </p>
+                <p>Для этого поля уже может быть указан путь.</p>
+                <p>
+                  <span class="uitext">Устройство для записи медиа</span>. Можно указать целевое устройство записи для экспорта. Это позволяет создавать экспорт с непосредственной записью на оптический носитель.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Маска конфиденциальности</span>
+              </td>
+              <td>
+                <p>Нажмите, чтобы добавить маски конфиденциальности. Маски конфиденциальности позволяют закрыть выбранные области сплошным черным цветом.</p>
+                <p>Добавленные в этом окне маски конфиденциальности распространяются только на текущую операцию экспорта и выбранное видео. При этом в экспортированном видео уже могут быть маски конфиденциальности, настроенные администратором системы. Дополнительные сведения приведены в разделе <a href="../../../feature_flags/ff_extendedprivacymasking/sc_workingwithprivacymasking.htm#SC_PrivacyMaskingExplain.htm" class="MCXref xref">Маски конфиденциальности (объяснение)</a>.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Информация о концепции</p>
+        <p class="containerItem_container_0">
+          <a href="../../../feature_flags/ff_extendedprivacymasking/sc_workingwithprivacymasking.htm">Маски конфиденциальности (использование)</a>
+        </p>
+        <p class="containerItem_container_0">
+          <a href="../sf_operation/sc_exportingevidence.htm">Создание видеодоказательств</a>
+        </p>
+        <p class="containerItem_container_0">
+          <a href="../../../feature_flags/ff_evidencelock/sc_workingwithevidencelocks.htm">Блокировка видеодоказательств</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

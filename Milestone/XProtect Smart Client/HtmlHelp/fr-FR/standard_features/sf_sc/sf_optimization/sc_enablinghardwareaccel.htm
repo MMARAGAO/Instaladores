@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="fr-FR" xml:lang="fr-FR" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="Optimisation" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Get familiar with and read how to set up hardware acceleration to improve the performance of computers running XProtect Smart Client." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Administrateur" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Intégrateur" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Activer l'accélération matérielle</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#standard_features/sf_sc/sf_optimization/sc_enablinghardwareaccel.htm">Ouvrir la rubrique avec les liens de navigation</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Pistes de navigation" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>Activer l'accélération matérielle</h1>
+      <h2>Accélération matérielle (explications)<a name="SC_HardwareAccelerationExplained"></a></h2>
+      <p>L’accélération matérielle améliore la capacité de décodage et les performances de l’ordinateur exécutant <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Cela est particulièrement utile lorsque vous affichez plusieurs flux vidéo avec une <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term14">fluidité d’images<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Mesure indiquant le nombre d'informations contenues dans une vidéo de mouvement. Généralement mesuré en FPS (nombre d'images par seconde).</span></a> élevée et une haute résolution.</p>
+      <p class="note">
+        <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> supporte des décodages avec accélération matérielle utilisant des GPU d'Intel<sup>®</sup> et de NVIDIA<sup>®</sup>. <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> ne recommande pas l’utilisation de Scalable Link Interface (SLI) pour la configuration de vos adaptateurs graphiques NVIDIA.</p>
+      <h2>Vérifier les paramètres d’accélération matérielle<a name="SC_CheckHardwareAccelerationSettings"></a></h2>
+      <ol>
+        <li value="1">Allez dans <span class="uitext">Paramètres</span> &gt; <span class="uitext">Avancé</span> &gt; <span class="uitext">Accélération matérielle</span>.</li>
+        <li value="2">Il existe deux réglages pour l'accélération matérielle : <span class="uitext">Auto</span> et <span class="uitext">Off</span>. <p>Sélectionnez le réglage par défaut <span class="uitext">Auto</span>.</p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/check_hardware_acceleration.png" data-mc-popup-alt="Hardware acceleration settings in XProtect Smart Client."><img class="MCPopupThumbnail img" data-mc-width="798" data-mc-height="371" src="../../../../Images/check_hardware_acceleration_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Hardware acceleration settings in XProtect Smart Client." tabindex="" /></a></p></li>
+        <li value="3">Allez dans <span class="uitext">Recouvrement de diagnostic vidéo</span>.</li>
+        <li value="4">Pour afficher l’état actuel du flux, comprenant les ressources GPU utilisées pour l’accélération matérielle, sélectionnez <span class="uitext">Niveau 2</span>.</li>
+        <p class="note">Ce paramètre s’applique à tous les éléments de vue. <span class="uitext">Hide</span> est le paramètre par défaut.</p>
+        <p>L’état du recouvrement de diagnostic vidéo pour <span class="uitext">Accélération matérielle</span> peut être : <span class="uitext">Intel</span>, <span class="uitext">NVIDIA</span> ou <span class="uitext">Off</span>.</p>
+        <p>
+          <img src="../../../../Images/check_hardware_acceleration_1.png" alt="The video diagnostics status for hardware acceleration in XProtect Smart Client." />
+        </p>
+        <p>Si l’état est <span class="uitext">Off</span>, continuez à examiner votre ordinateur afin de pouvoir, si possible, activer l’accélération matérielle et vous assurer que toutes les ressources d’accélération matérielle sont utilisées.</p>
+        <li value="5">
+          <p class="note">Utilisez le <span class="uitext">Moniteur système</span> pour vérifier la performance du décryptage actuel de <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Voir <a href="../../../feature_flags/ff_systemmonitor/sc_monitoryoursystem.htm#Monitor_client_resources" class="MCXref xref">Ressources du moniteur client</a>.</p>
+        </li>
+      </ol>
+      <h2>Vérifiez votre système d'exploitation<a name="SC_VerifyOperatingSystem"></a></h2>
+      <p>Assurez-vous que votre système d’exploitation est Microsoft<sup>®</sup> Windows<sup>®</sup> 10 (intégrer 1809), Windows<sup>®</sup> Server 2012 R2, ou des versions plus récentes.</p>
+      <div>
+        <p class="note">Seuls sont pris en charge les environnements non virtuels.</p>
+      </div>
+      <h2>Vérifiez que votre processeur prend en charge Quick Sync<a name="SC_CheckCPUQuickSyncSupport"></a></h2>
+      <p>Pour vérifier que votre processeur prend en charge Intel Quick Sync Video :</p>
+      <ol>
+        <li value="1">Consultez le site Web Intel (<a href="https://ark.intel.com/Search/FeatureFilter?productType=processors/" target="_blank">https://ark.intel.com/Search/FeatureFilter?productType=processors/</a>).</li>
+        <li value="2">Dans le menu, assurez-vous que les filtres <span class="uitext">Processeurs</span> et <span class="uitext">Intel Quick Sync Video</span> indiquent <span class="uitext">Oui</span>.</li>
+        <li value="3">Trouvez votre UC dans la liste. <p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/check_cpu_quick_sync_support.png" data-mc-popup-alt="Hardware acceleration in XProtect Smart Client - check support for CPU Quick Sync."><img class="MCPopupThumbnail img" data-mc-width="766" data-mc-height="554" src="../../../../Images/check_cpu_quick_sync_support_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Hardware acceleration in XProtect Smart Client - check support for CPU Quick Sync." tabindex="" /></a></p></li>
+      </ol>
+      <h2>Ouvrez votre Gestionnaire de périphériques<a name="SC_ExamineDeviceManager"></a></h2>
+      <p>Assurez-vous que l’adaptateur graphique Intel ou NVIDIA est présent dans votre Gestionnaire de périphériques Windows.</p>
+      <p>
+        <img src="../../../../Images/examine_the_device_manager.png" alt="Hardware acceleration in XProtect Smart Client - examine the device manager." />
+      </p>
+      <div>
+        <p class="important">Vous pouvez connecter vos écrans à tout pilote d'affichage disponible. Si un adaptateur d'affichage plus puissant est disponible dans votre ordinateur, normalement NVIDIA ou AMD<sup>®</sup>, connectez vos affichages à cet adaptateur afin d'utiliser toutes les ressources du GPU disponibles pour le décodage et le rendu avec accélération matérielle.</p>
+        <p class="important">Tous les adaptateurs graphiques NVIDIA ne prennent pas en charge l’accélération matérielle. Voir <a href="#Check_NVIDIA_hardware_acceleration_support" class="MCXref xref">Vérifier la prise en charge de l’accélération matérielle par NVIDIA</a>.</p>
+      </div>
+      <p>Si l’adaptateur graphique Intel n’apparaît pas, activez l’adaptateur graphique Intel dans le BIOS. Voir <a href="#Enable_the_Intel_display_adapter_in_the_BIOS" class="MCXref xref">Activez le pilote d’affichage Intel dans le BIOS</a>.</p>
+      <h2>
+        <a name="Check_NVIDIA_hardware_acceleration_support"></a>Vérifier la prise en charge de l’accélération matérielle par NVIDIA</h2>
+      <p>Les produits NVIDIA possèdent différentes capacités de calcul.</p>
+      <p class="note">Le décodement accéléré utilisant les GPU NVIDIA requiert une version de capacité de traitement 6.x (Pascal) ou plus récente.</p>
+      <p>Pour trouver la version de capacité de calcul de votre produit NVIDIA, consultez le site Internet NVIDIA (<a href="https://developer.nvidia.com/cuda-gpus/" target="_blank">https://developer.nvidia.com/cuda-gpus/</a>).</p>
+      <h2>
+        <a name="Enable_the_Intel_display_adapter_in_the_BIOS"></a>Activez le pilote d’affichage Intel dans le BIOS</h2>
+      <p>Si une autre carte de pilote d’affichage, par exemple NVIDIA ou AMD, est disponible sur votre ordinateur, il se peut que le pilote d’affichage Intel embarqué soit désactivé et que vous deviez le réactiver.</p>
+      <p>Le pilote d’affichage Intel fait partie du processeur, sur la carte-mère. Pour l'activer, vérifiez les paramètres graphiques, du processeur ou d'affichage dans le BIOS de votre ordinateur. Le manuel de la carte-mère du fabricant pourra vous être utile pour trouver les paramètres correspondants.</p>
+      <p class="tip">Si après avoir modifié les paramètres, le pilote d’affichage Intel embarqué n’est toujours pas activé, essayez de déplacer la carte de pilote d’affichage vers un autre port, puis connectez l’écran à la carte-mère. Dans certains cas, cela permettra d'activer le pilote d'affichage embarqué.</p>
+      <h2>Mettre à jour le pilote vidéo<a name="SC_UpdateVideoDriver"></a></h2>
+      <p>Vérifiez que tous vos pilotes d’affichage sont à jour avec la dernière version de pilotes disponible chez Intel ou NVIDIA.</p>
+      <p class="note">La version du pilote Intel fournie par le fabricant de l'ordinateur peut être plus ancienne et ne pas prendre en charge Intel Quick Sync Video.</p>
+      <p>Vous pouvez mettre à jour votre pilote vidéo de deux façons. En le téléchargeant manuellement et en l'installant, ou à l'aide d'un pilote utilitaire de mise à jour.</p>
+      <p class="subheading">Intel</p>
+      <p>Téléchargement manuel et installation :</p>
+      <ol>
+        <li value="1">Allez sur le site Internet de téléchargements d’Intel (<a href="https://downloadcenter.intel.com/" target="_blank">https://downloadcenter.intel.com/</a>).</li>
+        <li value="2">Saisissez le nom de votre pilote d'affichage fourni avec l'appareil.</li>
+        <li value="3">Téléchargez le pilote manuellement et installez-le.</li>
+      </ol>
+      <p>Pour détecter et mettre à jour automatiquement les composants et pilotes Intel :</p>
+      <ol>
+        <li value="1">Téléchargez le pilote Intel et l’assistant de prise en charge (<a href="https://www.intel.com/p/en_us/support/detect/" target="_blank">https://www.intel.com/p/en_us/support/detect/</a>).</li>
+        <li value="2">Lancez l’assistant pour rechercher automatiquement les pilotes.</li>
+        <li value="3">Choisissez de mettre à jour le pilote pour Graphics.</li>
+      </ol>
+      <p class="subheading">NVIDIA</p>
+      <p>Option 1: Trouver manuellement les pilotes pour mes produits NVIDIA.</p>
+      <ol>
+        <li value="1">Allez sur la page Internet de téléchargements des pilotes NVIDIA (<a href="https://www.nvidia.com/Download/index.aspx/" target="_blank">https://www.nvidia.com/Download/index.aspx/</a>).</li>
+        <li value="2">Entrez le nom de votre produit ainsi que votre système d’exploitation.</li>
+        <li value="3">Téléchargez le pilote manuellement et installez-le.</li>
+      </ol>
+      <p>Option 2 : Trouver automatiquement les pilotes pour mes produits NVIDIA.</p>
+      <ol>
+        <li value="1">Allez sur la page Internet de téléchargements des pilotes NVIDIA (<a href="https://www.nvidia.com/Download/index.aspx/" target="_blank">https://www.nvidia.com/Download/index.aspx/</a>).</li>
+        <li value="2">Cliquez sur <span class="uitext">PILOTES GRAPHIQUES</span>.</li>
+        <li value="3">Votre système est scanné.</li>
+        <li value="4">Téléchargez et actualisez le pilote.</li>
+      </ol>
+      <h2>Vérifiez la configuration des modules mémoire<a name="SC_CheckMemoryModulesConfig"></a></h2>
+      <p>Si votre système prend en charge plusieurs canaux mémoire, vous pouvez améliorer ses performances en vérifiant qu'au moins deux canaux ont un module mémoire, inséré dans le bon port DIMM. Pour connaître les ports DIMM corrects, reportez-vous au manuel de la carte-mère.</p>
+      <p>Exemple :</p>
+      <p>Un système à deux canaux de mémoire et 8 Go de mémoire donne les meilleures performances avec une configuration de modules mémoire 2 x 4 Go.</p>
+      <p>Si vous avez une configuration de module mémoire 1 x 8 Go, vous n'utilisez qu'un seul de vos canaux mémoire.</p>
+    </div>
+    <p></p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

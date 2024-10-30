@@ -1,0 +1,561 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="da-DK" xml:lang="da-DK" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="Konfiguration" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Configure views in XProtect Smart Client to view video from cameras and other types of content." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Administrator" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Integrator" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Operatør" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Visninger (konfiguration)</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#standard_features/sf_sc/sf_configuration/sc_configuringviews.htm">Åbn emne med navigation</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Brødkrummer" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>Visninger (konfiguration)</h1>
+      <p>I opsætningstilstand kan du oprette visninger og specificere, hvilke kameraer eller andre typer indhold, der skal inkluderes i hver visning. For at organisere dine visninger skal du oprette mindst en visningsgruppe. Dette gøres ofte af din systemadministrator.</p>
+      <p class="note">Om du kan ændre visninger og grupper, afhænger af dine brugerrettigheder. Hvis du kan oprette en visning eller gruppe, kan du også redigere i den. </p>
+      <div>
+        <h2>
+          <a name="SC_ViewsExplained"></a>Visninger og visningsgrupper (forklaret)</h2>
+        <p>Den måde, video vises på i <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>, kaldes en visning. Din <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> kan håndtere et ubegrænset antal visninger, hvilket giver dig mulighed for, at du kan skifte mellem video fra forskellige grupper af kameraer. Visninger kan have mellem et og hundrede kameraer, men kan også indeholde andre typer indhold, for eksempel billeder og tekst. </p>
+        <p>Visninger skal være indeholdt i visningsgrupper, som kan hjælpe dig med at organisere dine visninger.</p>
+        <p>Visninger er tilgængelige på fanerne <span class="uitext">Live</span> og <span class="uitext">Afspilning</span>. Visninger kan være private eller delte:</p>
+        <div>
+          <ul>
+            <li>Private visninger kan kun ses og åbnes af brugeren, der har oprettet dem. For at gøre en visning privat skal du oprette den i mappen <span class="uitext">Privat</span></li>
+            <li>Delte visninger gør det muligt for flere operatører at dele de samme visninger. Afhængigt af dit <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS-system: <ul><li>Der kan være en standard mappe, der hedder <span class="uitext">Delt</span> eller <span class="uitext">Standardgruppe</span></li><li>Delte visninger kan deles af alle operatører, eller adgangen til visse delte visninger kan være begrænset til en gruppe af operatører. Typisk er det kun få mennesker i en organisation, der kan oprette og redigere delte visninger, for eksempel systemadministratorer</li></ul></li>
+          </ul>
+          <p class="note">Det er muligt, at ikke alle brugere har adgang til alle kameraer på <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS-systemet. Tidligere versioner af <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> understøtter muligvis ikke al den funktionalitet, som du lader din delte visning indeholde. Derfor bør du altid sikre dig, at de brugere, som du ønsker at dele med, har de nødvendige rettigheder og kører samme version af <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> som dig selv.</p>
+        </div>
+        <p>Dine brugerindstillinger, inklusiv information om dine visninger, gemmes centralt på <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS-systemets server, så du kan bruge dine visninge på enhver computer, der har en <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> installeret.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Eksempel på en 2x2-visning</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <img src="../../../../Images/views_explained.jpg" alt="2x2 view in XProtect Smart Client." />
+            </p>
+          </div>
+        </div>
+        <div>
+          <h2>
+            <a name="SC_ContentInsideViewsExp.htm"></a>Hvad kan visninger indeholde?</h2>
+          <p>I opsætningstilstand kan du på ruden <span class="uitext">Systemoversigt</span> se de elementer, du kan føje til dine visninger:</p>
+          <p>
+            <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_systemoverview.jpg" data-mc-popup-alt="What can views contain in XProtect Smart Client?">
+              <img class="MCPopupThumbnail img" data-mc-width="295" data-mc-height="609" src="../../../../Images/sc_systemoverview_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="What can views contain in XProtect Smart Client?" tabindex="" />
+            </a>
+          </p>
+          <table cellspacing="3">
+            <col />
+            <col />
+            <thead>
+              <tr>
+                <th>Element</th>
+                <th>Beskrivelse</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p>Alarmer</p>
+                </td>
+                <td>
+                  <p>Giver dig mulighed for at vise en liste over alarmer eller en forhåndsvisning af en alarm. Begge elementer er også tilgængelige på fanen <span class="uitext">Alarmstyring</span>.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>Adgangsoversigt</td>
+                <td>
+                  <p>Adgangsoversigt - med <span class="mc-variable flvar-product.ACMName_XPtm variable">XProtect® Access </span> installeret kan du præsentere adgangsoversigter i dine visninger, for eksempel til en bestemt dør.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Kameraer</p>
+                </td>
+                <td>
+                  <p>Giver dig mulighed for at vise videofeed fra et live kamera eller at afspille video. Kameraerne bliver vist under systemnavnet, som er defineret af din systemadministrator.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Karruseller</p>
+                </td>
+                <td>
+                  <p>Giver dig mulighed for at skifte mellem kameraer i en hastighed, du selv definerer.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Hotspots</p>
+                </td>
+                <td>
+                  <p>Giver dig mulighed for fokuseret at vise et kamera med høj opløsning eller billedhastighed.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>HTML-sider</p>
+                </td>
+                <td>
+                  <p> Giver dig mulighed for at vise en webside, for eksempel en online-nyhedskanal.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Billeder</p>
+                </td>
+                <td>
+                  <p>Giver dig mulighed for at vise et billede, for eksempel hvis du vil distribuere et billede af en mistænkt.</p>
+                </td>
+              </tr>
+              <tr data-mc-conditions="flcts-add-on.xp-lp-content">
+                <td>LPR</td>
+                <td>
+                  <p>Med <span class="mc-variable flvar-product.LPRName_XPtm variable">XProtect® LPR</span> installeret, kan du tilføje LPR-kameraer til visninger.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Kort</p>
+                </td>
+                <td>Giver dig mulighed for at vise en plantegning eller et geografisk område.</td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="mc-variable flvar-brand-company.MMName_short variable">Matrix</span>
+                  </p>
+                </td>
+                <td>
+                  <p>Giver dig mulighed for at vise en <span class="mc-variable flvar-brand-company.MMName_short variable">Matrix</span>-position. Se også <a href="sc_workingwithmatrix_715_.htm#SC_MatrixExplained.htm" class="MCXref xref">Matrix (forklaret)</a>.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Smart kort </p>
+                </td>
+                <td>
+                  <p>Giver dig mulighed for at navigere mellem dine kameraer på et geografisk verdenskort baseret på en af disse online korttjenester:</p>
+                  <ul>
+                    <li>Bing Maps</li>
+                    <li>Google Maps</li>
+                    <li data-mc-conditions="flcts-features.oem-map-service-content">
+                      <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+                    </li>
+                    <li> OpenStreetMap </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="mc-variable flvar-product.SWName variable">Smart Wall</span>-styring</p>
+                </td>
+                <td>
+                  <p>Hvis <span class="mc-variable flvar-product.SWName_XP variable">XProtect Smart Wall</span> er blevet konfigureret af din systemadministrator, så vil <span class="mc-variable flvar-product.SWName variable">Smart Wall</span>-styring gøre det muligt for dig at skubbe kameraer og andre typer af indhold ind på dine videovægge.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Tekst </p>
+                </td>
+                <td>
+                  <p>Giver dig mulighed for at vise tekst, for eksempel hvis du ønsker at give instruktioner til andre operatører.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="mc-variable flvar-product.TName variable">Transact</span>
+                  <p> </p>
+                </td>
+                <td>
+                  <p>Hvis <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span> er installeret på dit system, kan du tilføje kasseapparatsystemer sammen med kameraer.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_CreateAViewGroup.htm"></a>Opret visningsgrupper</h2>
+        <p>Din <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> kan på forhånd være konfiguereret til at vise visningsgrupper, som du kan føje dine visninger til. Du kan imidlertid også oprette dine egne visningsgrupper, så du bedre kan organisere dine visninger.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Eksempel</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Forestil dig, at du har kameraer installeret på ti forskellige etager i et højhus. Du beslutter dig for at oprette en visningsgruppe for hver etage og navngive dem derefter: <span class="uitext">Stuen</span>, <span class="uitext">Første etage</span>, <span class="uitext">Anden etage</span> og så videre.</p>
+          </div>
+        </div>
+        <p>Trin:</p>
+        <ol>
+          <li value="1">I Opsætningstilstand, i ruden <span class="uitext">Visninger</span>, vælg den <span class="uitext">Private</span> eller <span class="uitext">Delte</span> mappe på øverste niveau, som du ønsker at tilføje grupper til.</li>
+          <li value="2">Klik på <span class="uitext">Opret ny gruppe</span>: <p><img src="../../../../Images/create_a_view_group.png" alt="" /></p><p>En ny gruppe oprettes og kaldes <span class="uitext">Ny gruppe</span>.</p></li>
+          <li value="3">Vælg og klik på <span class="uitext">Ny gruppe</span> for at overskrive navnet.</li>
+          <li value="4">Du kan nu oprette vinduer inden for denne gruppe.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_CreateView.htm"></a>Opret visninger</h2>
+        <p>For at se eller afspille video i <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> skal du først oprette en visning, hvor du tilføjer alle de kameraer, du har brug for.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Krav </a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Før du opretter visningen, skal du have en gruppe, du kan føje visningen til. Se også <a href="#SC_CreateAViewGroup.htm" class="MCXref xref">Opret visningsgrupper</a>.</p>
+          </div>
+        </div>
+        <p>Trin:</p>
+        <ol>
+          <li value="1">I hjørnet til højre skal du klikke på <span class="uitext">Opsætning</span> for at komme i opsætningstilstand.</li>
+          <li value="2">Vælg den gruppe, som du ønsker at oprette en visning under, i ruden <span class="uitext">Visninger</span>.</li>
+          <li value="3">Klik på <img src="../../../../Images/create_view.png" alt="" /> for at oprette en ny visning.</li>
+          <li value="4">Vælg et layout. Layouts er delt op i grupper efter deres <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term2">højde-bredde-forhold<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Forholdet mellem højden og bredden af et billede.</span></a> og efter om de er optimeret til almindeligt indhold eller om indholdet er stående, altså hvor højden er større end bredden. <p><img src="../../../../Images/create_view.jpg" alt="View layouts in XProtect Smart Client." /></p></li>
+          <li value="5">Indtast et navn for visningen ved at overskrive standardnavnet for <span class="uitext">Ny visning</span>.</li>
+          <li value="6"> Klik på <span class="uitext">Opsætning</span> igen for at forlade opsætningstilstand. Dine ændringer bliver gemt.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_CopyRenameOrDeleteAVi.htm"></a>Kopier, omdøb eller slet visninger eller grupper</h2>
+        <p>Hvis du har en visning og du ønsker at genbruge den, kan du kopiere den. Du kan også kopiere en gruppe af visninger eller en privat visning til en delt visning.</p>
+        <p>Trin:</p>
+        <ol>
+          <li value="1">I Opsætning, ruden Navigation, vælg visningen.</li>
+          <li value="2">Klik <span class="uitext">Kopier</span> eller tryk <span class="uitext">CTRL</span>+<span class="uitext">C</span>. <p><img src="../../../../Images/copy_rename_or_delete_a_view.png" alt="" /></p></li>
+          <li value="3">Find det sted, hvortil du vil kopiere visningen og vælg <span class="uitext">Indsæt</span> eller tryk <span class="uitext">CTRL</span>+<span class="uitext">V</span>. <p><img src="../../../../Images/copy_rename_or_delete_a_view_1.png" alt="" /></p><p class="tip">Alternativt kan du vælge og trække visningen til en anden mappe.</p></li>
+          <li value="4">Den kopierede visning er som standard blevet tildelt det samme navn som originalen efterfulgt af (2). For at ændre navnet skal du højreklikke og vælge <span class="uitext">Omdøb</span>.<p><img src="../../../../Images/copy_rename_or_delete_a_view_2.png" alt="" /></p></li>
+          <li value="5">For at slette en visning skal du højreklikke og vælge <span class="uitext">Slet</span>. <p><img src="../../../../Images/copy_rename_or_delete_a_view_3.png" alt="" /></p></li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_AddingContentToViews.htm"></a>Føj kameraer og andre elementer til visninger</h2>
+        <p>Du kan føje forskelle typer af elementer til dine visninger, for eksempel kameraer. Se også <a href="#SC_ContentInsideViewsExp.htm" class="MCXref xref">Hvad kan visninger indeholde?</a></p>
+        <p>Trin: </p>
+        <ol>
+          <li value="1">Åbn den visning, du ønsker at ændre.</li>
+          <li value="2"> Klik på <span class="uitext">Opsætning</span> for at komme til opsætningstilstand. </li>
+          <li value="3">
+            <p>I ruden <span class="uitext">Systemoversigt</span> skal du trække det ønskede element ind på et visningselement. </p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_systemoverview.jpg" data-mc-popup-alt="What can views contain in XProtect Smart Client?">
+                <img class="MCPopupThumbnail img" data-mc-width="295" data-mc-height="609" src="../../../../Images/sc_systemoverview_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="What can views contain in XProtect Smart Client?" tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="4">Indtast eventuelle yderligere oplysninger om elementet.</li>
+          <li value="5"> Klik på <span class="uitext">Opsætning</span> igen for at forlade opsætningstilstand. Dine ændringer bliver gemt.</li>
+        </ol>
+      </div>
+      <p class="note">For detaljerede oplysninger, se <a href="#SC_AddingContentToViewsDetailed" class="MCXref xref">Føje indhold til visninger (detaljeret)</a>.</p>
+      <div>
+        <h2>
+          <a name="SC_AssignAShortcutNumber.htm"></a>Tildel et genvejstal til visninger</h2>
+        <p>Du kan tildele genvejstal til visninger, så brugere kan vælge visninger ved at bruge standard-tastaturgenveje (se <a href="../sf_operation/sc_workingwithnavelements.htm#SC_KeyboardShortcutsExpl.htm" class="MCXref xref">Tastaturgenveje (oversigt)</a>).</p>
+        <ol>
+          <li value="1"> Klik på <span class="uitext">Opsætning</span> for at komme til opsætningstilstand. </li>
+          <li value="2">I ruden <span class="uitext">Visninger</span> skal du vælge den visning, du ønsker at lave en genvej til.</li>
+          <li value="3">I feltet <span class="uitext">Genvej</span> skal du angive et genvejstal og så trykke ENTER. Genvejstallet bliver vist i parentes foran visningsnavnet.</li>
+          <li value="4">Gentag hvis nødvendigt for andre visninger.</li>
+          <li value="5"> Klik på <span class="uitext">Opsætning</span> igen for at forlade opsætningstilstand. Dine ændringer bliver gemt.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_AddingContentToViewsDetailed"></a>Føje indhold til visninger (detaljeret)</h2>
+        <p>Som beskrevet i <a href="#SC_AddingContentToViews.htm" class="MCXref xref">Føj kameraer og andre elementer til visninger</a> kan du føje kameraer og andre slags elementer til dine visninger. Dette afsnit giver mere detaljerede forklaringer:</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Føj alarmer til visninger</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="../../../feature_flags/ff_managealarms/sc_configuringalarmsandevents.htm#SC_AddAlarmsToViews" class="MCXref xref">Føj alarmer til visninger</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Føj kameraer til visninger</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>For at se video fra et kamera skal du først føje kameraet til en visning.</p>
+            <ol>
+              <li value="1">I opsætningstilstand skal du vælge den visning, som ønsker at tilføje et kamera til.</li>
+              <li value="2">I ruden <span class="uitext">Oversigt</span> udvid den ønskede server <img src="../../../../Images/add_a_camera_to_a_view.png" alt="" /> for at se en liste af tilgængelige kameraer fra den server. <p class="note">Hvis en server vises med et rødt ikon, er den ikke tilgængelig. I det tilfælde kan du ikke se kameraer fra den server.</p></li>
+              <li value="3">
+                <p>Vælg kameraet fra listen og træk det til et visningselement inde i visningen. Et billede fra kameraet bliver vist i det valgte visningselement. </p>
+                <p class="note">Hvis områder i videoen er sløret eller grået ud, er det fordi din systemadministrator har dækket disse områder med <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term55">beskyttelse af privatområder<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Et sløret eller ugennemsigtig farve der dækker et område af videoen i kameraetsvisning. Det definerede område er sløret eller dækket i følgende tilstande i klienterne: live, afspilning, hotspot, karrusel, smart kort, smart søgning og eksport.</span></a> (se <a href="../../../feature_flags/ff_extendedprivacymasking/sc_workingwithprivacymasking.htm#SC_PrivacyMaskingExplain.htm" class="MCXref xref">Beskyttelse af privatområder (forklaret)</a>).</p>
+              </li>
+              <li value="4">Du kan specificere kameraegenskaber (såsom kvalitet, <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term14">billedhastighed<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>En måleenhed der indikerer mængden af information i video med bevægelse. Typisk målt i FPS (Frames Per second/billeder per sekund).</span></a>, osv.) i ruden <span class="uitext">Egenskaber</span>. For yderligere oplysninger, se <a href="sc_configuringcamerasettings.htm#SC_CameraSettings.htm" class="MCXref xref">Kameraindstillinger</a>.</li>
+              <li value="5">For hvert kamera, du ønsker at tilføje, skal du gentage trinene ovenfor.</li>
+              <li value="6">For at føje flere kameraer til en visning, for eksempel alle kameraerne fra en kameramappe, skal du trække mappen til visningen. Du skal sikre dig, at der er nok visningselementer tilgængelige i visningen.</li>
+            </ol>
+            <p class="tip">Du kan let ændre på, hvilke kameraer der er indeholdt i din visning ved at trække et andet kamera til visningselementet.</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Føj karruseller til visninger</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="sc_configuringcarousels.htm#SC_AddCarouselToViews.htm" class="MCXref xref">Føj karruseller til visninger</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Føj billeder til visninger</a>
+            <a name="SC_AddImageToViews.htm"></a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Du kan vise statiske billeder i en visning. Det kan for eksempel være nyttigt, hvis du vil dele et snapshot af en mistænkt eller en oversigt over nødudgange.</p>
+            <p>Trin:</p>
+            <ol>
+              <li value="1"> Klik på <span class="uitext">Opsætning</span> for at komme til opsætningstilstand. </li>
+              <li value="2">
+                <p>I ruden <span class="uitext">Systemoversigt</span> skal du trække <span class="uitext">Billed</span>-elementet til et visningselement. Et vindue åbnes.</p>
+                <p>
+                  <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_addimagetoview.jpg" data-mc-popup-alt="Add images to views in XProtect Smart Client.">
+                    <img class="MCPopupThumbnail img" data-mc-width="306" data-mc-height="946" src="../../../../Images/sc_addimagetoview_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add images to views in XProtect Smart Client." tabindex="" />
+                  </a>
+                </p>
+              </li>
+              <li value="3">Find og vælg den billedfil, du ønsker at tilføje.</li>
+              <li value="4">Klik på <span class="uitext">Åbn</span>. Billedet bliver nu vist inde i visningselementet.</li>
+              <li value="5">For at gøre billedet tilgængeligt for andre, som ikke har adgang til billedfilens placering skal du klikke på <span class="uitext">Integrer</span> på ruden <span class="uitext">Egenskaber</span>. Filen bliver lagret i systemet.</li>
+              <li value="6"> Klik på <span class="uitext">Opsætning</span> igen for at forlade opsætningstilstand. Dine ændringer bliver gemt.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Føj hotspots til visninger</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="sc_configuringhotspots.htm#SC_AddHotspotToViews.htm" class="MCXref xref">Føj hotspots til visninger</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Føj kort til visninger</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="sc_configuringmaps.htm#SC_AddMapToViews.htm" class="MCXref xref">Føj kort til visninger</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Føj smart kort til visninger</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="../../../feature_flags/ff_map/sc_configuringmaps.htm#SC_AddSmartMapToView.htm" class="MCXref xref">Føj smart kort til visninger</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Føj tekst til visninger</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Du kan føje tekst til et eller flere visningselementer inde i en visning. Det kan for eksempel være nyttigt, hvis du ønsker at sende en besked eller instruktioner til operatører eller vise vagtskemaet for sikkerhedsfolkene. Du kan bruge op til 1000 tegn.</p>
+            <p>Trin:</p>
+            <ol>
+              <li value="1"> Klik på <span class="uitext">Opsætning</span> for at komme til opsætningstilstand. </li>
+              <li value="2">På ruden <span class="uitext">Systemoversigt</span> skal du trække <span class="uitext">Tekst</span>-elementet til det visningselement, hvor du vil vise teksten. Et vindue åbnes.</li>
+              <li value="3">Angiv teksten.</li>
+              <li value="4">Klik på <span class="uitext">Gem</span>.</li>
+              <li value="5">For at ændre teksten efter at du har gemt den skal du i opsætningstilstand klikke på <span class="uitext">Rediger tekst</span> i ruden <span class="uitext">Egenskaber</span>.</li>
+            </ol>
+            <div>
+              <p class="note">Du kan indsætte tabeller fra produkter som Microsoft Word og Microsoft Excel, men du kan ikke lave ændringer i tabellerne. </p>
+            </div>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />
+            </a>
+            <a name="Add"></a>
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Føj websider til visninger</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Du kan føje websider til visninger, for eksempel HTML-, PHP- eller ASP-sider. Dette kan være nyttigt, hvis du for eksempel vil give instruktioner online eller vil vise websider sammen med kameraer eller andre typer af indhold.</p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/add_html_page_to_view_or_1.jpg" data-mc-popup-alt="Add webpages to views in XProtect Smart Client to display web context next to video feeds.">
+                <img class="MCPopupThumbnail img" data-mc-width="1320" data-mc-height="854" src="../../../../Images/add_html_page_to_view_or_1_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add webpages to views in XProtect Smart Client to display web context next to video feeds." tabindex="" />
+              </a>
+            </p>
+            <p>Trin:</p>
+            <ol>
+              <li value="1">Åbn den visning, du ønsker at ændre.</li>
+              <li value="2"> Klik på <span class="uitext">Opsætning</span> for at komme til opsætningstilstand. </li>
+              <li value="3">I ruden <span class="uitext">Systemoversigt</span> skal du klikke og trække elementet <span class="uitext">HTML-side</span> til et af visningselementerne Et vindue åbnes.<p><img src="../../../../Images/add_html_page_to_view_or_1.png" alt="Enter URL when adding webpage to views in XProtect Smart Client." /></p></li>
+              <li value="4">
+                <p>I feltet <span class="uitext">Åbn</span> skal du indtaste websidens webadresse.</p>
+                <p class="important">For at bruge en webside, der ligger på din lokale computer, netwværk eller på en FTP-server, skal du sikre dig, at visningstilstanden er sat til <span class="uitext">Kompatibilitet</span> i egenskaberne på websiden. Se <a href="#Web" class="MCXref xref">Egenskaber for webside </a>. Ellers vil du få en fejlmeddelelse. Se <a href="../sf_troubleshooting/sc_troubleshootinghtmlpages.htm" class="MCXref xref">Websider (fejlfinding)</a>.</p>
+              </li>
+              <li value="5">Klik på <span class="uitext">OK</span>.</li>
+              <li value="6">For at indstille egenskaberne skal du udvide ruden <span class="uitext">Egenskaber</span>.</li>
+              <li value="7"> Klik på <span class="uitext">Opsætning</span> igen for at forlade opsætningstilstand. Dine ændringer bliver gemt.</li>
+            </ol>
+            <p class="note">Du kan ikke navigere på websiden i opsætningstilstand. </p>
+            <h3>
+              <a name="Web"></a>Egenskaber for webside </h3>
+            <table cellspacing="3">
+              <col />
+              <col style="width: 376px;" />
+              <thead>
+                <tr>
+                  <th>
+                    <p>Navn</p>
+                  </th>
+                  <th>
+                    <p>Beskrivelse</p>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">Rediger</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>Angiv en ny URL eller filplacering for websiden.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">Visningstilstand</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>Vælg den browser, der skal vise websiden. Der er to muligheder:</p>
+                    <ul>
+                      <li>
+                        <span class="uitext">Standard</span> - denne indstilling bruger Microsoft Edge. Vælg <span class="uitext">Standard</span>, hvis websiden er placeret på en webserver, og den anvendte netværksprotokol er enten HTTP eller HTTPS</li>
+                      <li>
+                        <span class="uitext">Kompatibilitet</span> - denne indstilling bruger Internet Explorer. Vælg <span class="uitext">Kompatibilitet</span>, hvis websiden:<ul><li> er lagret lokalt</li><li>bruger andre netværksprotokoller end HTTP og HTTPS</li><li>indeholder scripts, der er designet til at interagere med <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span></li><li>bruger en ældre version af HTML</li></ul></li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">Skalering</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>Vælg websidens skalering. Den optimale skalering afhænger af indholdet på den importerede webside og af hvordan, du ønsker den vist </p>
+                    <p class="note">Denne indstilling er kun tilgængelig i <span class="uitext">Kompatibilitet</span>stilstand.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">Skjul værktøjslinje</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>Marker afkrydsningsfeltet for at skjule navigationsværktøjslinjen, som bliver indsat over hver importerede webside.</p>
+                    <p>
+                      <img src="../../../../Images/set_properties_for_html_page.png" alt="" />
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Tilføj overlejringsknapper til visninger</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Du kan aktivere højttalere, hændelser, <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term33">output<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Data, der sendes fra en computer. I IP-overvågningssystemer bruges output ofte til at aktivere enheder som porte, sirener, kraftigt blinklys mv.</span></a> og mere ved hjælp af <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term34">overlejringsknapperne<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>En knap der vises ovenpå videoen, når du flytter musen ind over individuelle kamerapositioner i visninger på fanen Live. Brug overlejringsknapper til at aktivere højttalere, hændelser, output og bevæge PTZ-kameraer, start optagelse, nulstille beskeder fra kameraerne.</span></a>, som kommer til syne, når du bevæger din mus over individuelle kameraer i visninger på fanen <span class="uitext">Live</span>.</p>
+            <p>Du kan tilføje så mange knapper, som du ønsker.</p>
+            <ol>
+              <li value="1"> Klik på <span class="uitext">Opsætning</span> for at komme til opsætningstilstand. </li>
+              <li value="2">I ruden <span class="uitext">Overlejringsknapper</span> skal du vælge og trække handlingen ind på kameraets visningsposition.</li>
+              <li value="3">Når du slipper musen, dukker overlejringsknappen op. For at ændre på størrelsen på knappen, træk i de viste håndtag. <p><img src="../../../../Images/add_an_overlay_button_to_a.jpg" alt="" /></p></li>
+              <li value="4">For at ændre teksten på overlejringsknappen, skal du dobbeltklikke på teksten, overskrive den og så klikke på afkrydsningsfeltet <img src="../../../../Images/add_an_overlay_button_to_a.png" alt="" /> for at gemme. For at fortryde skal du klikke på annuller-knappen <img src="../../../../Images/add_an_overlay_button_to_a_1.png" alt="" />. Når du gemmer skalerer teksten til den højest mulige størrelse på knappen.</li>
+              <li value="5"> Klik på <span class="uitext">Opsætning</span> igen for at forlade opsætningstilstand. Dine ændringer bliver gemt.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <p>
+        <a name="SC_AssignAShortcutNumber.htm"></a>
+      </p>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Konceptinformation</p>
+        <p class="containerItem_container_0">
+          <a href="../sf_operation/sc_workingwithviews.htm">Administration af visninger</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

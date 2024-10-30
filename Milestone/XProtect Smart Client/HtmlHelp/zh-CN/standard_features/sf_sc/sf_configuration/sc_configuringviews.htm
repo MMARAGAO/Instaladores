@@ -1,0 +1,564 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="zh-CN" xml:lang="zh-CN" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="配置" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Configure views in XProtect Smart Client to view video from cameras and other types of content." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=管理员" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=整合商" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=操作员" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>视图（配置）</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#standard_features/sf_sc/sf_configuration/sc_configuringviews.htm">用导航打开主题</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="痕迹" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>视图（配置）</h1>
+      <p>在设置模式下，您可以创建视图并指定每个视图中应包含哪些摄像机或其他类型的内容。要组织您的视图，您必须至少创建一个视图组。这通常由您的系统管理员完成。</p>
+      <p class="note">能否编辑视图和组取决于您的用户权限。如果能创建视图或组，就能对其进行编辑。 </p>
+      <div>
+        <h2>
+          <a name="SC_ViewsExplained"></a>视图和视图组（已解释）</h2>
+        <p>在 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 中显示视频的方式称为视图。<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 可以处理的视图没有数量限制，因而可以在不同的摄像机组间切换视频。视图可以包含一到一百个摄像机，但也可以包含其他类型的内容，例如图像和文本。</p>
+        <p>视图必须包含在可帮助您组织视图的视图组中。</p>
+        <p>
+          <span class="uitext">实时</span>和<span class="uitext">播放</span>选项卡上提供了视图。视图可以是私有视图或共享视图：</p>
+        <div>
+          <ul>
+            <li>私有视图只能由创建它们的用户访问。若要将该视图设为私有，请在<span class="uitext">私有</span>文件夹内创建该视图</li>
+            <li>共享视图允许多个操作员共享相同的视图。根据您的 <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> 视频管理软件系统：<ul><li>命名为<span class="uitext">共享</span>或<span class="uitext">默认组</span>的共享视图可能有一个默认文件夹</li><li>根据监控系统类型的不同，可以将共享视图共享给所有操作员，也可以将选定共享视图的访问权限授予某些操作员。通常，组织中只有少数人可以创建和编辑共享视图，例如系统管理员</li></ul></li>
+          </ul>
+          <p class="note">并非所有用户都可以访问 <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> 视频管理软件系统上的所有摄像机。请注意，较早的 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 版本可能不支持共享视图中可能包含的某些功能。请始终确保要与其共享的用户有所需权限，并与自己运行相同的 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 版本。</p>
+        </div>
+        <p>您的用户设置（包括有关您视图的信息），都集中存储在 <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> 视频管理软件服务器上，这样您就可以在安装 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 的任意计算机上使用自己的视图。</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="关闭" data-mc-alt2="打开" />2x2 视图示例</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <img src="../../../../Images/views_explained.jpg" alt="2x2 view in XProtect Smart Client." />
+            </p>
+          </div>
+        </div>
+        <div>
+          <h2>
+            <a name="SC_ContentInsideViewsExp.htm"></a>视图可以包含什么？</h2>
+          <p>在<span class="uitext">系统总览</span>窗格的设置模式中，您可以看到可以添加到视图中的元素：</p>
+          <p>
+            <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_systemoverview.jpg" data-mc-popup-alt="What can views contain in XProtect Smart Client?">
+              <img class="MCPopupThumbnail img" data-mc-width="295" data-mc-height="609" src="../../../../Images/sc_systemoverview_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="What can views contain in XProtect Smart Client?" tabindex="" />
+            </a>
+          </p>
+          <table cellspacing="3">
+            <col />
+            <col />
+            <thead>
+              <tr>
+                <th>项目</th>
+                <th>说明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p>警报</p>
+                </td>
+                <td>
+                  <p>允许您显示警报列表或警报预览。这两个元素也可在<span class="uitext">警报管理器</span>选项卡上使用。</p>
+                </td>
+              </tr>
+              <tr>
+                <td>访问监视器</td>
+                <td>
+                  <p>访问监示器 – 安装 <span class="mc-variable flvar-product.ACMName_XPtm variable">XProtect® Access </span> 后，您可以在视图中显示访问监示器（如特定的门）。</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>摄像机</p>
+                </td>
+                <td>
+                  <p>允许您显示来自实时摄像机的视频馈送或播放视频。摄像机显示在站点名称下，该名称由系统管理员定义。</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>轮巡显示</p>
+                </td>
+                <td>
+                  <p>允许您用定义的速度在摄像机之间转换。</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>热点</p>
+                </td>
+                <td>
+                  <p>允许您以高分辨率或帧速率显示任何摄像机对焦。</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>HTML 页面</p>
+                </td>
+                <td>
+                  <p>允许您显示网页，例如在线新闻频道。</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>图像</p>
+                </td>
+                <td>
+                  <p>允许您显示图像，例如，如果您想分发嫌疑人的照片。</p>
+                </td>
+              </tr>
+              <tr data-mc-conditions="flcts-add-on.xp-lp-content">
+                <td>LPR</td>
+                <td>
+                  <p>安装 <span class="mc-variable flvar-product.LPRName_XPtm variable">XProtect® LPR</span> 后，您可以将牌照识别摄像机添加到视图中</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>地图</p>
+                </td>
+                <td>允许您显示平面图或地理区域。</td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="mc-variable flvar-brand-company.MMName_short variable">Matrix</span>
+                  </p>
+                </td>
+                <td>
+                  <p>允许您显示 <span class="mc-variable flvar-brand-company.MMName_short variable">Matrix</span> 位置。另请参阅 <a href="sc_workingwithmatrix_715_.htm#SC_MatrixExplained.htm" class="MCXref xref">Matrix（已作说明）</a>。</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>智能地图</p>
+                </td>
+                <td>
+                  <p>允许您根据以下在线地图服务之一在世界地理地图上导航您的摄像机：</p>
+                  <ul>
+                    <li>Bing Maps</li>
+                    <li>Google Maps</li>
+                    <li data-mc-conditions="flcts-features.oem-map-service-content">
+                      <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+                    </li>
+                    <li> OpenStreetMap </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="mc-variable flvar-product.SWName variable">Smart Wall</span> 控制</p>
+                </td>
+                <td>
+                  <p>如果您的系统管理员已配置 <span class="mc-variable flvar-product.SWName_XP variable">XProtect Smart Wall</span>，则 <span class="mc-variable flvar-product.SWName variable">Smart Wall</span> 控制允许您将摄像机和其他类型的内容推送到您的电视墙。</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>文本</p>
+                </td>
+                <td>
+                  <p>允许您显示文本，例如，如果您想为其他操作员提供说明。</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="mc-variable flvar-product.TName variable">Transact</span>
+                  <p> </p>
+                </td>
+                <td>
+                  <p>如果 <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span> 已安装在系统中，则可以添加销售点系统和摄像机。</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_CreateAViewGroup.htm"></a>创建视图组</h2>
+        <p>您的 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 可能已预先配置为显示可向其中添加视图的视图组。 但是，您可以创建自己的视图组来帮助您组织自己的视图。</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="关闭" data-mc-alt2="打开" />示例</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>假设您在一栋多层建筑物中的十个不同楼层上安装了摄像机。 您决定为每个楼层创建一个视图组，并相应地对其进行命名：<span class="uitext">地面层</span>、<span class="uitext">一楼</span>、<span class="uitext">二楼</span>，依此类推。</p>
+          </div>
+        </div>
+        <p>步骤：</p>
+        <ol>
+          <li value="1">在设置模式的<span class="uitext">视图</span>窗格中，选择您希望将组添加到其中的<span class="uitext">私有</span>或<span class="uitext">共享</span>顶层文件夹。</li>
+          <li value="2">单击<span class="uitext">新建组</span>：<p><img src="../../../../Images/create_a_view_group.png" alt="" /></p><p>将创建新组并命名为<span class="uitext">新建组</span>。</p></li>
+          <li value="3">选择并单击<span class="uitext">新建组</span>以改写名称。</li>
+          <li value="4">您现在可以在该组内创建视图。</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_CreateView.htm"></a>创建视图</h2>
+        <p>要在 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 中查看或播放视频，首先必须创建一个视图，并在其中添加所需的摄像机。</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="关闭" data-mc-alt2="打开" />要求 </a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>在创建视图之前，您需要一个可在其中添加视图的组。另请参阅 <a href="#SC_CreateAViewGroup.htm" class="MCXref xref">创建视图组</a>。</p>
+          </div>
+        </div>
+        <p>步骤：</p>
+        <ol>
+          <li value="1">单击右上角的<span class="uitext">设置</span>进入设置模式。</li>
+          <li value="2">在<span class="uitext">视图</span>窗格中，选择要添加视图的组。</li>
+          <li value="3">单击 <img src="../../../../Images/create_view.png" alt="" />“创建新视图”。</li>
+          <li value="4">选择布局。请根据其<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term2">纵横比<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>图像高度与宽度之间的比例关系。</span></a>以及是将其优化用于普通内容还是纵向模式（其中高度大于宽度）下的内容对布局进行分组。<p><img src="../../../../Images/create_view.jpg" alt="View layouts in XProtect Smart Client." /></p></li>
+          <li value="5">通过改写默认<span class="uitext">新视图</span>名称来为视图输入名称。</li>
+          <li value="6"> 再次单击 <span class="uitext">设置</span> 以退出设置模式。 您的更改已保存。</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_CopyRenameOrDeleteAVi.htm"></a>复制、重命名或删除视图或组</h2>
+        <p>如果有视图并且您希望重复使用它，则可以进行复制。您还可以将一组视图或私有视图复制到共享视图。</p>
+        <p>步骤：</p>
+        <ol>
+          <li value="1">在设置模式的导航窗格中，选择视图。</li>
+          <li value="2">单击<span class="uitext">复制</span>，或按 <span class="uitext">CTRL</span>+<span class="uitext">C</span>。<p><img src="../../../../Images/copy_rename_or_delete_a_view.png" alt="" /></p></li>
+          <li value="3">浏览到希望粘贴视图的地方，然后选择<span class="uitext">粘贴</span>，或按 <span class="uitext">CTRL</span>+<span class="uitext">V</span>。<p><img src="../../../../Images/copy_rename_or_delete_a_view_1.png" alt="" /></p><p class="tip">另外，您可以选择并将视图拖动到另一个文件夹。</p></li>
+          <li value="4">复制的视图默认的命名方式为初始视图名称加上 (2)。要更改名称，请右键单击并选择<span class="uitext">重命名</span>。<p><img src="../../../../Images/copy_rename_or_delete_a_view_2.png" alt="" /></p></li>
+          <li value="5">要删除视图，请右键单击并选择<span class="uitext">删除</span>。<p><img src="../../../../Images/copy_rename_or_delete_a_view_3.png" alt="" /></p></li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_AddingContentToViews.htm"></a>将摄像机和其他元素添加到视图</h2>
+        <p>您可以将不同类型的元素添加到您的视图中，例如摄像机。另请参阅 <a href="#SC_ContentInsideViewsExp.htm" class="MCXref xref">视图可以包含什么？</a></p>
+        <p>步骤：</p>
+        <ol>
+          <li value="1">打开要修改的视图。</li>
+          <li value="2"> 单击 <span class="uitext">设置</span> 进入设置模式。 </li>
+          <li value="3">
+            <p>在<span class="uitext">系统概览</span>窗格中，将所需的元素拖动入视图项目。</p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_systemoverview.jpg" data-mc-popup-alt="What can views contain in XProtect Smart Client?">
+                <img class="MCPopupThumbnail img" data-mc-width="295" data-mc-height="609" src="../../../../Images/sc_systemoverview_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="What can views contain in XProtect Smart Client?" tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="4">填写有关该元素的所有其他信息。</li>
+          <li value="5"> 再次单击 <span class="uitext">设置</span> 以退出设置模式。 您的更改已保存。</li>
+        </ol>
+      </div>
+      <p class="note">有关详细信息，请参阅 <a href="#SC_AddingContentToViewsDetailed" class="MCXref xref">将内容添加到视图（详细）</a>。</p>
+      <div>
+        <h2>
+          <a name="SC_AssignAShortcutNumber.htm"></a>为视图分配快捷键数字</h2>
+        <p>您可以为视图分配快捷键数字，使用户能够使用标准键盘快捷键（请参阅 <a href="../sf_operation/sc_workingwithnavelements.htm#SC_KeyboardShortcutsExpl.htm" class="MCXref xref">键盘快捷键（总览）</a>）选择视图。</p>
+        <ol>
+          <li value="1"> 单击 <span class="uitext">设置</span> 进入设置模式。 </li>
+          <li value="2">在<span class="uitext">视图</span>窗格中，选择您希望为其分配快捷键的视图。</li>
+          <li value="3">在<span class="uitext">快捷键</span>字段中，指定快捷键数字，然后按 ENTER。快捷键数字将显示在视图名称前面的括号中。</li>
+          <li value="4">根据需要，对其他视图重复上述操作。</li>
+          <li value="5"> 再次单击 <span class="uitext">设置</span> 以退出设置模式。 您的更改已保存。</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_AddingContentToViewsDetailed"></a>将内容添加到视图（详细）</h2>
+        <p>如 <a href="#SC_AddingContentToViews.htm" class="MCXref xref">将摄像机和其他元素添加到视图</a> 中所述，您可以将摄像机和其他类型的元素添加到视图中。本部分提供了更详细的方法：</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="关闭" data-mc-alt2="打开" />将警报添加到视图</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="../../../feature_flags/ff_managealarms/sc_configuringalarmsandevents.htm#SC_AddAlarmsToViews" class="MCXref xref">将警报添加到视图</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="关闭" data-mc-alt2="打开" />将摄像机添加到视图</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>要从摄像机查看视频，首先必须将摄像机添加到视图中。</p>
+            <ol>
+              <li value="1">在设置模式中，选择您希望将摄像机添加到的视图。</li>
+              <li value="2">
+                <span class="uitext">在</span>
+                <img src="../../../../Images/add_a_camera_to_a_view.png" alt="" />总览窗格中，展开所需的服务器以查看该服务器上的可用摄像机的列表。<p class="note">如果以红色图标列出服务器，则表明该服务器不可用，此时无法查看来自该服务器的摄像机。</p></li>
+              <li value="3">
+                <p>从列表中选择摄像机，并将其拖到视图中的某个视图项目。 此时摄像机的图像会出现在所选视图项目中。 </p>
+                <p class="note">如果视频中的区域模糊或变灰，这是因为系统管理员已使用<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term55">隐私屏蔽<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>覆盖摄像机视图中视频区域的模糊或纯色。定义的区域在客户端的实时、播放、热点、轮巡显示、智能地图、智能搜索和导出模式中模糊或覆盖。</span></a>（请参阅 <a href="../../../feature_flags/ff_extendedprivacymasking/sc_workingwithprivacymasking.htm#SC_PrivacyMaskingExplain.htm" class="MCXref xref">隐私屏蔽（已作说明）</a>）覆盖了这些区域。</p>
+              </li>
+              <li value="4">您可以在<span class="uitext">属性</span>窗格中指定摄像机属性（如质量、<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term14">帧速率<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>表示动态视频所含信息量大小的度量标准。通常以 FPS（每秒帧数）为单位。</span></a>等）。有关详细信息，请参阅 <a href="sc_configuringcamerasettings.htm#SC_CameraSettings.htm" class="MCXref xref">摄像机设置</a>。</li>
+              <li value="5">对于您想要添加的每个摄像机，重复上述步骤。</li>
+              <li value="6">要将多个摄像机添加到一个视图（例如，来自摄像机文件夹的所有摄像机），只需将文件夹拖到视图中即可。 应确保视图中有足够数量的可用视图项目。</li>
+            </ol>
+            <p class="tip">您可以通过将不同的摄像机拖到该视图项目，轻松更改视图中包含的摄像机。</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="关闭" data-mc-alt2="打开" />将轮巡显示添加到视图</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="sc_configuringcarousels.htm#SC_AddCarouselToViews.htm" class="MCXref xref">将轮巡显示添加到视图</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="关闭" data-mc-alt2="打开" />将图像添加到视图</a>
+            <a name="SC_AddImageToViews.htm"></a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>您可以在视图中显示静态图像。 例如，当您想要共享可疑人员的快照或紧急出口的示意图时，这很有用。</p>
+            <p>步骤：</p>
+            <ol>
+              <li value="1"> 单击 <span class="uitext">设置</span> 进入设置模式。 </li>
+              <li value="2">
+                <p>在<span class="uitext">系统总览</span>窗格中，将<span class="uitext">图像</span>项目拖到某个视图项目。 会显示一个窗口。</p>
+                <p>
+                  <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_addimagetoview.jpg" data-mc-popup-alt="Add images to views in XProtect Smart Client.">
+                    <img class="MCPopupThumbnail img" data-mc-width="306" data-mc-height="946" src="../../../../Images/sc_addimagetoview_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add images to views in XProtect Smart Client." tabindex="" />
+                  </a>
+                </p>
+              </li>
+              <li value="3">找到并选择要添加的图像文件。</li>
+              <li value="4">单击<span class="uitext">打开</span>。 图像现在会显示在视图项目中。</li>
+              <li value="5">如要将图像提供给无法访问图像文件位置的其他用户，请在<span class="uitext">属性</span>窗格上单击<span class="uitext">嵌入</span>。该文件存在在系统中。</li>
+              <li value="6"> 再次单击 <span class="uitext">设置</span> 以退出设置模式。 您的更改已保存。</li>
+            </ol>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="关闭" data-mc-alt2="打开" />将热点添加到视图</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="sc_configuringhotspots.htm#SC_AddHotspotToViews.htm" class="MCXref xref">将热点添加到视图</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="关闭" data-mc-alt2="打开" />将地图添加到视图</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="sc_configuringmaps.htm#SC_AddMapToViews.htm" class="MCXref xref">将地图添加到视图</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="关闭" data-mc-alt2="打开" />将智能地图添加到视图</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="../../../feature_flags/ff_map/sc_configuringmaps.htm#SC_AddSmartMapToView.htm" class="MCXref xref">将智能地图添加到视图</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="关闭" data-mc-alt2="打开" />将文本添加到视图</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>您可以将文本添加到视图中的一个或多个视图项目。 例如，当您要向操作员发送消息或说明时，或为安保人员张贴工作时间表时，这很有用。最多可使用 1,000 个字符。</p>
+            <p>步骤：</p>
+            <ol>
+              <li value="1"> 单击 <span class="uitext">设置</span> 进入设置模式。 </li>
+              <li value="2">在<span class="uitext">系统总览</span>窗格中，将<span class="uitext">文本</span>元素拖到要在其中显示文本的视图项目。会显示一个窗口。</li>
+              <li value="3">输入文本。</li>
+              <li value="4">单击 <span class="uitext">保存</span>。</li>
+              <li value="5">保存后更改文本，在设置模式下，单击<span class="uitext">属性</span>窗格中的<span class="uitext">编辑文本</span>。</li>
+            </ol>
+            <div>
+              <p class="note">您可以从 Microsoft Word 和 Microsoft Excel 等产品中插入表格，但无法更改表格。</p>
+            </div>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="关闭" data-mc-alt2="打开" />
+            </a>
+            <a name="Add"></a>
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">将网页添加到视图</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>您可以将网页添加到视图中，例如 HTML、PHP 或 ASP 页面。例如，这对于提供在线说明或结合摄像头或其他类型的内容显示公司网页非常有用。</p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/add_html_page_to_view_or_1.jpg" data-mc-popup-alt="Add webpages to views in XProtect Smart Client to display web context next to video feeds.">
+                <img class="MCPopupThumbnail img" data-mc-width="1320" data-mc-height="854" src="../../../../Images/add_html_page_to_view_or_1_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add webpages to views in XProtect Smart Client to display web context next to video feeds." tabindex="" />
+              </a>
+            </p>
+            <p>步骤：</p>
+            <ol>
+              <li value="1">打开要修改的视图。</li>
+              <li value="2"> 单击 <span class="uitext">设置</span> 进入设置模式。 </li>
+              <li value="3">在<span class="uitext">系统总览</span>窗格内，单击并将 <span class="uitext">HTML 页面</span>项目拖动到其中一个视图项目。会显示一个窗口。<p><img src="../../../../Images/add_html_page_to_view_or_1.png" alt="Enter URL when adding webpage to views in XProtect Smart Client." /></p></li>
+              <li value="4">
+                <p>在<span class="uitext">打开</span>字段中，输入网页的网址。</p>
+                <p class="important">要使用存储在本地计算机，网络或FTP服务器上的网页，请确保在网页属性中将显示模式设置为<span class="uitext">兼容性</span>。请参阅 <a href="#Web" class="MCXref xref">网页属性</a>。否则，您将收到错误消息。请参阅 <a href="../sf_troubleshooting/sc_troubleshootinghtmlpages.htm" class="MCXref xref">网页（故障排除）</a>。</p>
+              </li>
+              <li value="5">单击<span class="uitext">确定</span>。</li>
+              <li value="6">要设置属性，请展开<span class="uitext">属性</span>窗格。</li>
+              <li value="7"> 再次单击 <span class="uitext">设置</span> 以退出设置模式。 您的更改已保存。</li>
+            </ol>
+            <p class="note">您无法在设置模式下浏览网页。</p>
+            <h3>
+              <a name="Web"></a>网页属性</h3>
+            <table cellspacing="3">
+              <col />
+              <col style="width: 376px;" />
+              <thead>
+                <tr>
+                  <th>
+                    <p>名称</p>
+                  </th>
+                  <th>
+                    <p>说明</p>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">编辑</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>指定网页的新 URL 或文件位置。</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">显示模式</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>选择要呈现网页的浏览器引擎。有两个选项：</p>
+                    <ul>
+                      <li>
+                        <span class="uitext">标准</span> - 此设置使用 Microsoft Edge。如果网页位于 Web 服务器上，并且使用的网络协议是 HTTP 或 HTTPS，则选择“<span class="uitext">标准</span>”</li>
+                      <li>
+                        <span class="uitext">兼容性</span> - 此设置使用 Internet Explorer。如果该网页出现以下情况，则选择<span class="uitext">兼容性</span>：<ul><li>存储在本地</li><li>使用 HTTP 和 HTTPS 以外的其他网络协议</li><li>包含旨在与以下项交互的脚本：<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span></li><li>使用旧版 HTML</li></ul></li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">缩放</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>选择网页缩放比例。最佳的缩放比例取决于导入的网页的内容和您所希望的显示效果 </p>
+                    <p class="note">此设置仅在<span class="uitext">兼容性</span>模式下可用。</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">隐藏工具栏</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>选中复选框以隐藏导航工具栏，该工具栏将插入每个导入的网页上方。</p>
+                    <p>
+                      <img src="../../../../Images/set_properties_for_html_page.png" alt="" />
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="关闭" data-mc-alt2="打开" />将覆盖按钮添加到视图</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>在将鼠标移至<span class="uitext">实时</span>选项卡上的视图中单独摄像机位置上方时出现<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term34">覆盖按钮<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>在将鼠标光标移至实时选项卡上的视图中单独摄像机位置上方时，以图层形式显示在视频上的按钮。使用覆盖按钮时，可以触发扬声器、事件、输出，移动 PTZ 摄像机，开始记录，清除摄像机的信号等。</span></a> ，通过覆盖按钮可触发扬声器、事件、<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term33">输出<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>计算机输出的数据。在 IP 监控系统上，输出频繁用于触发各种设备，如门、警报、闪光灯等。</span></a>等。</p>
+            <p>可以根据需要添加任意数量的按钮。</p>
+            <ol>
+              <li value="1"> 单击 <span class="uitext">设置</span> 进入设置模式。 </li>
+              <li value="2">在<span class="uitext">覆盖按钮</span>窗格中，选择操作并将其拖到摄像机视图项目上。</li>
+              <li value="3">松开鼠标后，覆盖按钮出现。要调整按钮的大小，请拖动出现的手柄。<p><img src="../../../../Images/add_an_overlay_button_to_a.jpg" alt="" /></p></li>
+              <li value="4">要更改覆盖按钮的文本，请双击文本，覆盖文本，然后选中复选框 <img src="../../../../Images/add_an_overlay_button_to_a.png" alt="" /> 进行保存。 要取消操作，请单击取消按钮 <img src="../../../../Images/add_an_overlay_button_to_a_1.png" alt="" />。当您进行保存时，文本会在按钮上尽可能扩大到最大大小。</li>
+              <li value="5"> 再次单击 <span class="uitext">设置</span> 以退出设置模式。 您的更改已保存。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <p>
+        <a name="SC_AssignAShortcutNumber.htm"></a>
+      </p>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">概念信息</p>
+        <p class="containerItem_container_0">
+          <a href="../sf_operation/sc_workingwithviews.htm">管理视图</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

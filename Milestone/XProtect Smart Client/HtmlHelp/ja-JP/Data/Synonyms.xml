@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MadCapSynonyms xml:lang="ja-JP">
+    <!-- saved from url=(0016)http://localhost -->
+    <Groups>
+        <SynonymGroup Stem="true">
+            <Word Stem="イメージ">イメージ</Word>
+            <Word Stem="ビデオ">ビデオ</Word>
+        </SynonymGroup>
+    </Groups>
+    <Directional>
+        <DirectionalSynonym Stem="true" From="変更" To="alter=modify=customise=customize=edit" FromStem="変更" />
+    </Directional>
+</MadCapSynonyms>

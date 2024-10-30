@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LogMessages xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <version>0.0.0.1</version>
+  <culture>ko-KR</culture>
+  <userfields>
+    <userfield type="string" uname="ResourceId"/>
+    <userfield type="string" uname="ResourceName"/>
+    <userfield type="enum" uname="ResourceType"/>
+    <userfield type="string" uname="ResourceLocation"/>
+    <userfield type="enum" uname="AccessGranted"/>
+    <userfield type="enum" uname="AuditType"/>
+  </userfields>
+  <userEnums>
+    <userEnum fieldname="groupname" fieldtype="system" uname="group">
+      <enum uname="Audit" value="감사"/>
+    </userEnum>
+    <userEnum fieldname="severity" fieldtype="system" uname="severity">
+      <enum uname="Info" value="정보"/>
+    </userEnum>
+    <userEnum fieldname="status" fieldtype="system" uname="status">
+      <enum uname="Success" value="성공"/>
+    </userEnum>
+    <userEnum fieldname="AccessGranted" fieldtype="user" uname="AccessGranted">
+      <enum uname="Granted" value="승인됨"/>
+      <enum uname="Denied" value="거부됨"/>
+      <enum uname="Default" value="기본값"/>
+    </userEnum>
+    <userEnum fieldname="objecttype" fieldtype="system" uname="objecttype">
+      <enum uname="Alarms" value="알람"/>
+    </userEnum>
+    <userEnum fieldname="ResourceType" fieldtype="user" uname="ResourceType">
+      <enum uname="Alarms" value="알람"/>
+    </userEnum>
+    <userEnum fieldname="category" fieldtype="system" uname="category">
+      <enum uname="View_alarm" value="알람 보기"/>
+      <enum uname="Print_alarm" value="알람 인쇄"/>
+      <enum uname="View_alarm_list" value="알람 목록 보기"/>
+    </userEnum>
+    <userEnum fieldname="AuditType" fieldtype="user" uname="AuditType">
+      <enum uname="View_alarm" value="알람 보기"/>
+      <enum uname="Print_alarm" value="알람 인쇄"/>
+      <enum uname="View_alarm_list" value="알람 목록 보기"/>
+    </userEnum>
+  </userEnums>
+  <application uname="AlarmPlugin">
+    <component uname="Alarms">
+      <entries>
+        <group category="View alarm" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+          <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Alarms" severity="Info" status="Success" uname="ViewAlarmClient" value1="Granted" value2="Alarms" value3="View_alarm">알람을 확인함</entry>
+        </group>
+        <group category="Print alarm" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+          <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Alarms" severity="Info" status="Success" uname="PrintAlarmClient" value1="Granted" value2="Alarms" value3="Print_alarm">알람이 인쇄됨</entry>
+        </group>
+        <group category="View alarm list" field1="ResourceId" field2="ResourceName" field3="ResourceLocation" name="Audit" value1="@objId" value2="@objName" value3="@objLocationName">
+          <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Alarms" severity="Info" status="Success" uname="ViewAlarmListStartClient" value1="Granted" value2="Alarms" value3="View_alarm_list">다음 필터를 사용하여 알람 목록을 확인함: &apos;{filterSettings}&apos;</entry>
+          <entry field1="AccessGranted" field2="ResourceType" field3="AuditType" object_type="Alarms" severity="Info" status="Success" uname="ViewAlarmListStopClient" value1="Granted" value2="Alarms" value3="View_alarm_list">알람 목록 보기가 중지됨</entry>
+        </group>
+      </entries>
+    </component>
+  </application>
+</LogMessages>

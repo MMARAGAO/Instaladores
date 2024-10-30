@@ -1,0 +1,584 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="tr-TR" xml:lang="tr-TR" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="Yapılandırma" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Configure views in XProtect Smart Client to view video from cameras and other types of content." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Yönetici" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Entegratör" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Operatör" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Görünümler (yapılandırma)</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#standard_features/sf_sc/sf_configuration/sc_configuringviews.htm">Open topic with navigation</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>Görünümler (yapılandırma)</h1>
+      <p>Ayar modunda, görünümleri oluşturabilir ve her bir görünüme hangi kameraların veya diğer türlerdeki içeriğin dahil edilmesi gerektiğini belirlemelisiniz. Görünümlerinizi düzenlemek için, en az bir görünüm grubunu oluşturmalısınız. Bu sıklıkla sistem yöneticiniz tarafından yapılır.</p>
+      <p class="note">Görünümleri ve grupları düzenleyebilmeniz kullanıcı haklarınıza bağlıdır. Görünümü veya grubu oluşturabilirseniz, ayrıca bunu düzenleyebilirsiniz. </p>
+      <div>
+        <h2>
+          <a name="SC_ViewsExplained"></a>Görünümler ve görüntüleme grubu (açıklandı)</h2>
+        <p>Videoyu <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> uygulamasında görüntüleme şekli, bir görünüm olarak adlandırılır. <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> uygulaması, farklı kamera gruplarından toplanan çeşitli videoların arasında geçiş sağlayacak şekilde sınırlanmayan sayıda görünüm sağlayabilir. Görünümler bir ve yüz kamerayı tutabilirler, ancak örneğin görseller ve metin olmak üzere diğer türlerdeki içeriği de içerebilirler. </p>
+        <p>Görünümler, görünümlerinizi düzenlemeye yardımcı olan görünüm grupları içinde olmalıdır.</p>
+        <p>Görünümler <span class="uitext">Canlı</span> ve <span class="uitext">Oynatma</span> sekmelerinde mevcuttur. Görünümler özel veya paylaşılan olabilir:</p>
+        <div>
+          <ul>
+            <li>Özel görünümlere sadece bunları oluşturan kullanıcı tarafından erişilebilir. Görünümü özel yapmak için onu <span class="uitext">Özel</span> klasöründe oluşturun</li>
+            <li>Paylaşılan görünümler, operatörlerin aynı görünümleri paylaşmalarına izin verir. <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VYY sisteminize bağlı olarak: <ul><li>Paylaşılan görünümler için <span class="uitext">Paylaşılan </span>veya <span class="uitext">Varsayılan gurup</span> adında varsayılan bir klasör bulunabilir</li><li>Paylaşılan görünümler, tüm operatörler tarafından paylaşılabilir veya seçilen paylaşılan görünümlere erişim, belirli operatörlere sağlanabilir. Tipik olarak, bir organizasyonda sadece birkaç kişi örneğin sistem yöneticileri paylaşılan görünümleri oluşturabilir ve düzenleyebilir</li></ul></li>
+          </ul>
+          <p class="note">Tüm kullanıcıların <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VYY sistemindeki tüm kameralara erişimleri olmayabilir. Paylaşılan görünümünüze eklediğiniz özelliklerin bazıları önceki <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> sürümlerinde desteklenmiyor olabilir. Paylaşım yapmak istediğiniz kullanıcıların gerekli haklara sahip olmasına ve sizinki ile aynı <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> sürümünü kullanmalarına daima dikkat edin.</p>
+        </div>
+        <p>Görünümleriniz ile ilgili bilgileri içeren kullanıcı ayarlarınız merkezi olarak <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VYY sunucusunda tutulur, böylece <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> kurulu herhangi bir bilgisayarda görünümlerinizi kullanabilirsiniz.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />2x2 görünüm örneği</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <img src="../../../../Images/views_explained.jpg" alt="2x2 view in XProtect Smart Client." />
+            </p>
+          </div>
+        </div>
+        <div>
+          <h2>
+            <a name="SC_ContentInsideViewsExp.htm"></a>Görünümler neyi içerebilir?</h2>
+          <p>Kurulum modunda <span class="uitext">Sistem genel görünümü</span> bölmesinde, görünümlerinize ekleyebileceğiniz unsurları görebilirsiniz:</p>
+          <p>
+            <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_systemoverview.jpg" data-mc-popup-alt="What can views contain in XProtect Smart Client?">
+              <img class="MCPopupThumbnail img" data-mc-width="295" data-mc-height="609" src="../../../../Images/sc_systemoverview_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="What can views contain in XProtect Smart Client?" tabindex="" />
+            </a>
+          </p>
+          <table cellspacing="3">
+            <col />
+            <col />
+            <thead>
+              <tr>
+                <th>Öğe</th>
+                <th>Tanım</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p>Alarmlar</p>
+                </td>
+                <td>
+                  <p>Bir alarmlar listesini veya bir alarm ön izlemesini göstermenize izin verir. Her iki unsur <span class="uitext">Alarm Yöneticisi</span> sekmesinde de mevcuttur.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>Erişim Monitörü</td>
+                <td>
+                  <p>
+                    <span class="mc-variable flvar-product.ACMName_XPtm variable">XProtect® Access </span> kurulu erişim monitörü, erişim monitörlerini görünümlerinize gösterebilirsiniz, örneğin belirli bir kapı için.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Kameralar</p>
+                </td>
+                <td>
+                  <p>Canlı bir kameradan video yayını göstermenize veya videoyu oynatmanıza izin verir. Kameralar, sistem yöneticiniz tarafından tanımlanan site adı altında görünür.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Karuseller</p>
+                </td>
+                <td>
+                  <p>Tanımladığınız hızda kameralar arasında geçiş yapmanıza izin verir.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Etkin görüntüleme noktaları</p>
+                </td>
+                <td>
+                  <p>Yüksek çözünürlük veya kare hızında odakta istediğiniz kamerayı göstermenize izin verir.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>HTML sayfaları</p>
+                </td>
+                <td>
+                  <p> örneğin çevrimiçi haber kanalı gibi bir web sayfasını göstermenize izin verir.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Görüntüler</p>
+                </td>
+                <td>
+                  <p>Örneğin, bir şüphelinin bir resmini dağıtmak isterseniz, bir görseli göstermenize izin verir.</p>
+                </td>
+              </tr>
+              <tr data-mc-conditions="flcts-add-on.xp-lp-content">
+                <td>PTS</td>
+                <td>
+                  <p>
+                    <span class="mc-variable flvar-product.LPRName_XPtm variable">XProtect® LPR</span> kurulu olarak, görünümlere LPR kameraları ekleyebilirsiniz.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Haritalar</p>
+                </td>
+                <td>Bir zemin katını veya bir coğrafi alanı göstermenize izin verir.</td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="mc-variable flvar-brand-company.MMName_short variable">Matrix</span>
+                  </p>
+                </td>
+                <td>
+                  <p>Bir <span class="mc-variable flvar-brand-company.MMName_short variable">Matrix</span> pozisyonunu göstermenize izin verir. Ayrıca, bkz. <a href="sc_workingwithmatrix_715_.htm#SC_MatrixExplained.htm" class="MCXref xref">Matrix (açıklama)</a>.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Akıllı haritalar </p>
+                </td>
+                <td>
+                  <p>Bu çevrim içi harita hizmetlerinden birine dayalı olarak dünyanın bir coğrafi haritasında kameralarınızda gezinmenize izin verir:</p>
+                  <ul>
+                    <li>Bing Maps</li>
+                    <li>Google Maps</li>
+                    <li data-mc-conditions="flcts-features.oem-map-service-content">
+                      <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+                    </li>
+                    <li> OpenStreetMap </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="mc-variable flvar-product.SWName variable">Smart Wall</span> kontrolleri</p>
+                </td>
+                <td>
+                  <p>
+                    <span class="mc-variable flvar-product.SWName_XP variable">XProtect Smart Wall</span> sistem yöneticiniz tarafından yapılandırılmışsa, <span class="mc-variable flvar-product.SWName variable">Smart Wall</span> kontrolleri kameralarınızın ve video duvarlarınızın içeriklerini göndermenize izin verir.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Metin </p>
+                </td>
+                <td>
+                  <p>Metni göstermenize izin verir, örneğin diğer operatörlere talimatlar vermek isterseniz.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="mc-variable flvar-product.TName variable">Transact</span>
+                  <p> </p>
+                </td>
+                <td>
+                  <p>
+                    <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span> sisteminize kurulmuşsa, kameralarla birlikte satış noktası sistemlerini ekleyebilirsiniz.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_CreateAViewGroup.htm"></a>Görünüm grupları oluşturun</h2>
+        <p>
+          <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> öğeniz, görünümlerinizi ekleyebileceğiniz görünüm gruplarını görüntülemek için önceden yapılandırılabilir. Ancak, görünümlerinizi düzenlemenize yardımcı olmak için kendi görünüm gruplarınızı oluşturabilirsiniz.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Örnek</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Çok katlı bir binada on farklı kata kameralar kurduğunuzu düşünün. Her bir seviye için bir görünüm grubu oluşturmaya ve buna göre bunları adlandırmaya karar verirsiniz: <span class="uitext">Zemin kat</span>, <span class="uitext">Birinci kat</span>, <span class="uitext">İkinci kat</span> ve bunlara benzer.</p>
+          </div>
+        </div>
+        <p>Adımlar:</p>
+        <ol>
+          <li value="1">Ayarlar modundaki <span class="uitext">Görünümler</span> bölmesinde, gruba eklemek istediğiniz <span class="uitext">Özel</span> veya <span class="uitext">Paylaşımlı</span> üst düzey klasörü seçin.</li>
+          <li value="2">
+            <span class="uitext">Yeni grup oluştur</span> ögesine tıklayın: <p><img src="../../../../Images/create_a_view_group.png" alt="" /></p><p><span class="uitext">Yeni grup</span> adında yeni bir grup oluşturulur.</p></li>
+          <li value="3">Adın üzerine yazmak için <span class="uitext">Yeni grup</span> ögesini seçip tıklatın.</li>
+          <li value="4">Artık bu grup içerisinde görünüm oluşturabilirsiniz.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_CreateView.htm"></a>Görünümleri oluşturun</h2>
+        <p>
+          <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> içinde video görmek veya oynatmak için önce ihtiyaç duyduğunuz kameraları ekleyeceğiniz bir görünüm oluşturmanız gerekir.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Gereklilikler </a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Görünümü oluşturmadan önce görünümü ekleyebileceğiniz bir gurubun bulunması gerekir. Ayrıca, bkz. <a href="#SC_CreateAViewGroup.htm" class="MCXref xref">Görünüm grupları oluşturun</a>.</p>
+          </div>
+        </div>
+        <p>Adımlar:</p>
+        <ol>
+          <li value="1">Ayarlar moduna girmek için sağ köşedeki <span class="uitext">Ayarlar </span>seçeneğini tıklayın.</li>
+          <li value="2">
+            <span class="uitext">Görünümler</span> bölmesinde görünümü eklemek istediğiniz gurubu seçin.</li>
+          <li value="3">Yeni bir görünüm oluşturmak için <img src="../../../../Images/create_view.png" alt="" /> seçeneğine tıklayın.</li>
+          <li value="4">Bir yerleşim seçin. Yerleşimler <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term2">çerçeve oranına<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Bir resmin yükseklik/genişlik ilişkisi.</span></a> göre ve düzenli içerik için veya dikey modda (yüksekliğin genişlikten fazla olduğu mod) içerik için optimize edilmiş olduklarına göre gruplandırılır. <p><img src="../../../../Images/create_view.jpg" alt="View layouts in XProtect Smart Client." /></p></li>
+          <li value="5">Varsayılan <span class="uitext">Yeni Görünüm</span> adının üstüne yeni bir ad yazarak görünümü adlandırın.</li>
+          <li value="6"> Ayarlar modundan çıkmak için <span class="uitext">Ayarlar</span> seçeneğine tekrar tıklayın. Değişiklikleriniz kaydedilir.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_CopyRenameOrDeleteAVi.htm"></a>Görünümleri veya grupları kopyalayın, yeniden adlandırın veya silin</h2>
+        <p>Eğer bir görünümünüz varsa ve onu yeniden kullanmak istiyorsanız, görünümü kopyalayabilirsiniz. Görünümleri grup halinde de kopyalayabileceğiniz gibi, özel bir görünümü paylaşımlı bir görünüme de kopyalayabilirsiniz.</p>
+        <p>Adımlar:</p>
+        <ol>
+          <li value="1">Ayarlar modundaki navigasyon bölmesinde görünümü seçin.</li>
+          <li value="2">
+            <span class="uitext">Kopyala</span> ögesine tıklayın veya <span class="uitext">CTRL</span>+<span class="uitext">C</span> tuşuna basın. <p><img src="../../../../Images/copy_rename_or_delete_a_view.png" alt="" /></p></li>
+          <li value="3">Görünümü yapıştırmak istediğiniz yere göz atın ve <span class="uitext">Yapıştır</span> ögesini seçin veya <span class="uitext">CTRL</span>+<span class="uitext">V</span> tuşlarına basın. <p><img src="../../../../Images/copy_rename_or_delete_a_view_1.png" alt="" /></p><p class="tip">Ayrıca, görüntüyü seçip bir diğer klasöre de sürükleyebilirsiniz.</p></li>
+          <li value="4">Kopyalanmış olan görünüm varsayılan olarak orijinali ile aynı olur ve sonuna (2) eklenir. Adı değiştirmek için, sağ tıklayın ve <span class="uitext">Yeniden Adlandır</span> öğesini seçin.<p><img src="../../../../Images/copy_rename_or_delete_a_view_2.png" alt="" /></p></li>
+          <li value="5">Bir görünümü silmek için, sağ tıklayın ve <span class="uitext">Sil</span> öğesini seçin. <p><img src="../../../../Images/copy_rename_or_delete_a_view_3.png" alt="" /></p></li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_AddingContentToViews.htm"></a>Görünümlere kameraları ve diğer unsurları ekle</h2>
+        <p>Farklı türlerdeki unsurları görünümlere ekleyebilirsiniz, örneğin kameralar. Ayrıca, bkz. <a href="#SC_ContentInsideViewsExp.htm" class="MCXref xref">Görünümler neyi içerebilir?</a></p>
+        <p>Adımlar: </p>
+        <ol>
+          <li value="1">Değiştirmek istediğiniz görünümü açın.</li>
+          <li value="2"> Ayarlar moduna girmek için <span class="uitext">Ayarlar</span> seçeneğine tıklayın. </li>
+          <li value="3">
+            <p>
+              <span class="uitext">Sistem genel görünümü</span> bölmesinde, gerekli unsuru bir görüntü öğesine sürükleyin. </p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_systemoverview.jpg" data-mc-popup-alt="What can views contain in XProtect Smart Client?">
+                <img class="MCPopupThumbnail img" data-mc-width="295" data-mc-height="609" src="../../../../Images/sc_systemoverview_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="What can views contain in XProtect Smart Client?" tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="4">Unsur hakkında ek bilgiyi doldurun.</li>
+          <li value="5"> Ayarlar modundan çıkmak için <span class="uitext">Ayarlar</span> seçeneğine tekrar tıklayın. Değişiklikleriniz kaydedilir.</li>
+        </ol>
+      </div>
+      <p class="note">Ayrıntılı bilgi için, bkz.<a href="#SC_AddingContentToViewsDetailed" class="MCXref xref">İçeriği görünümlere ekleme (ayrıntılı)</a>.</p>
+      <div>
+        <h2>
+          <a name="SC_AssignAShortcutNumber.htm"></a>Görünümlere kısayol numaralarını atayın</h2>
+        <p>Standart klavye kısayollarını kullanarak kullanıcıların görünümleri seçmelerine izin vermek için kısayol numaralarını atayabilirsiniz (bkz. <a href="../sf_operation/sc_workingwithnavelements.htm#SC_KeyboardShortcutsExpl.htm" class="MCXref xref">Klavye kısayolları (genel bakış)</a>).</p>
+        <ol>
+          <li value="1"> Ayarlar moduna girmek için <span class="uitext">Ayarlar</span> seçeneğine tıklayın. </li>
+          <li value="2">
+            <span class="uitext">Görünümler</span> panosunda, bir kısayol atamak istediğiniz görünümü seçin.</li>
+          <li value="3">
+            <span class="uitext">Kısayol</span> alanında, bir kısayol numarasını belirleyin ve ardından ENTER öğesine basın. Kısayol numarası görünümün adının önünde parantezler içinde görünür.</li>
+          <li value="4">Diğer kullanıcılar için gerekli olduğu kadar tekrarlayın.</li>
+          <li value="5"> Ayarlar modundan çıkmak için <span class="uitext">Ayarlar</span> seçeneğine tekrar tıklayın. Değişiklikleriniz kaydedilir.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_AddingContentToViewsDetailed"></a>İçeriği görünümlere ekleme (ayrıntılı)</h2>
+        <p>
+          <a href="#SC_AddingContentToViews.htm" class="MCXref xref">Görünümlere kameraları ve diğer unsurları ekle</a> içinde açıklandığı gibi, kameraları veya diğeer türlerdeki unsurları görünümlerinize ekleyebilirsiniz. Bu bölümde daha ayrıntılı nasıl yapılır adımları verilmektedir:</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Görünümlere alarmlar ekleyin</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="../../../feature_flags/ff_managealarms/sc_configuringalarmsandevents.htm#SC_AddAlarmsToViews" class="MCXref xref">Görünümlere alarmları ekleyin</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Görünümlere kameralar ekleyin</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Bir kameradan videoyu görüntülemek için, önce kamerayı bir görünüme eklemelisiniz.</p>
+            <ol>
+              <li value="1">Ayarlar modunda, bir kamera eklemek istediğiniz görünümü seçin.</li>
+              <li value="2">
+                <span class="uitext">Genel Bakış </span>bölmesinde, o sunucudaki kullanılabilir kameraların bir listesini <img src="../../../../Images/add_a_camera_to_a_view.png" alt="" /> görüntülemek için gerekli sunucuyu genişletin. <p class="note">Sunucu kırmızı bir simgeyle listeleniyorsa, kullanılamaz ve bu durumda bu sunucudan kameraları görüntüleyemezsiniz.</p></li>
+              <li value="3">
+                <p>Listeden kamerayı seçin ve bunu görüntü içinde bir görünüm öğesine sürükleyin. Seçilen görüntü öğesinde kameradan gelen bir görüntü görünür. </p>
+                <p class="note">Videodaki alanlar bulanık veya gri hale getirilirse, bunun nedeni sistem yöneticinizin bu alanları <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term55">gizlilik maskeleri<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Kamera görünümünde videonun bir alanını kaplayan bulanık veya düz renk. Tanımlı alanlar, istemcilerde canlı, oynatma, etkin görüntüleme noktası, karusel, akıllı harita, akıllı arama ve dışa aktarma modlarında bulanıklaştırılmıştır.</span></a> ile kapamış olmasıdır (bkz. <a href="../../../feature_flags/ff_extendedprivacymasking/sc_workingwithprivacymasking.htm#SC_PrivacyMaskingExplain.htm" class="MCXref xref">Gizlilik maskelemesi (açıklama)</a>).</p>
+              </li>
+              <li value="4">
+                <span class="uitext">Özellikler</span> bölmesinde kamera özelliklerini belirtebilirsiniz (örneğin kalite, <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term14">çerçeve oranı<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Hareketli videoda kapsanan bilgi miktarını gösteren bir ölçümdür. Genellikle FPS (Saniyedeki Çerçeve Sayısı) cinsinden ölçülür.</span></a> ve daha fazlası). Ayrıntılı bilgi için, bkz.<a href="sc_configuringcamerasettings.htm#SC_CameraSettings.htm" class="MCXref xref">Kamera ayarları</a>.</li>
+              <li value="5">Eklemek istediğiniz her bir kamera için yukarı adımları tekrarlayın.</li>
+              <li value="6">Bir görünüme çok sayıda kamerayı, örneğin bir kamera klasöründen tüm kameraları eklemek için, görünüme klasörü sürükleyin. Görünümde yeterli sayıda görünüm öğesinin mevcut olduğundan emin olun.</li>
+            </ol>
+            <p class="tip">Farklı bir kamerayı görünüm öğesine sürükleyerek görünümünüze hangi kameraların dahil edildiğini kolaylıkla değiştirebilirsiniz.</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Görünümlere karuseller ekleyin</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="sc_configuringcarousels.htm#SC_AddCarouselToViews.htm" class="MCXref xref">Görünümlere karuselleri ekleyin</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Görünümlere görüntüleri ekleyin</a>
+            <a name="SC_AddImageToViews.htm"></a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Bir görünümde statik görüntüleri görüntüleyebilirsiniz. Bu örneğin bir şüphelinin bir anlık görüntüsünü veya acil durum çıkışlarının bir şemasını paylaşmak istediğinizde yararlıdır.</p>
+            <p>Adımlar:</p>
+            <ol>
+              <li value="1"> Ayarlar moduna girmek için <span class="uitext">Ayarlar</span> seçeneğine tıklayın. </li>
+              <li value="2">
+                <p>
+                  <span class="uitext">Sistem genel görünümü</span> bölmesinde, <span class="uitext">Resmi</span> bir görüntü öğesine sürükleyin. Bir pencere görünür.</p>
+                <p>
+                  <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_addimagetoview.jpg" data-mc-popup-alt="Add images to views in XProtect Smart Client.">
+                    <img class="MCPopupThumbnail img" data-mc-width="306" data-mc-height="946" src="../../../../Images/sc_addimagetoview_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add images to views in XProtect Smart Client." tabindex="" />
+                  </a>
+                </p>
+              </li>
+              <li value="3">Eklemek istediğiniz görüntü dosyasını bulun ve seçin.</li>
+              <li value="4">
+                <span class="uitext">Açık</span> öğesine tıklayın. Şimdi görüntü görünüm öğesi içinde görünür.</li>
+              <li value="5">Resmi resim dosyasının konumuna erişemeyen başka kişilerin kullanımına açmak için <span class="uitext">Özellikler</span> bölmesinde <span class="uitext">Katıştır</span> seçeneğine tıklayın. Dosya sistem içinde depolanmış ise.</li>
+              <li value="6"> Ayarlar modundan çıkmak için <span class="uitext">Ayarlar</span> seçeneğine tekrar tıklayın. Değişiklikleriniz kaydedilir.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Görünümlere etkin noktalar ekleyin</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="sc_configuringhotspots.htm#SC_AddHotspotToViews.htm" class="MCXref xref">Görünümlere etkin noktaları ekleyin</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Görünümlere haritalar ekleyin</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="sc_configuringmaps.htm#SC_AddMapToViews.htm" class="MCXref xref">Görünümlere haritalar ekleyin</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Görünümlere akıllı haritalar ekleyin</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="../../../feature_flags/ff_map/sc_configuringmaps.htm#SC_AddSmartMapToView.htm" class="MCXref xref">Görünümlere akıllı harita ekleyin</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Görünümlere metin ekleyin</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Bir görünümde bir veya daha fazla görünüm öğesine metin ekleyebilirsiniz. Bu, örneğin, operatörlere bir mesaj veya talimatlar göndermek veya güvenlik personeli için bir iş çizelgesi yayınlamak istediğinizde yararlıdır. En fazla 1.000 karakter kullanabilirsiniz.</p>
+            <p>Adımlar:</p>
+            <ol>
+              <li value="1"> Ayarlar moduna girmek için <span class="uitext">Ayarlar</span> seçeneğine tıklayın. </li>
+              <li value="2">
+                <span class="uitext">Sistem genel görünümü</span> bölmesinde, <span class="uitext">Metin</span> unsurunu metnin görünmesini istediğiniz görüntü öğesine sürükleyin. Bir pencere görünür.</li>
+              <li value="3">Metni yazın.</li>
+              <li value="4">
+                <span class="uitext">Kaydet</span> üzerine tıklayın.</li>
+              <li value="5">Metni kaydettikten sonra değiştirmek için ayarlar modunda <span class="uitext">Özellikler </span>bölmesinde <span class="uitext">Metni düzenle</span> seçeneğine tıklayın.</li>
+            </ol>
+            <div>
+              <p class="note">Microsoft Word ve Microsoft Excel gibi ürünlerdeki tabloları ekleyebilirsiniz, ancak tabloların üzerinde herhangi bir değişiklik yapamazsınız. </p>
+            </div>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />
+            </a>
+            <a name="Add"></a>
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">Görünümlere web sayfalarını ekleyin</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Görünümleri örneğin HTML, PHP veya ASP sayfalarını web sayfalarına ekleyebilirsiniz. Örneğin, bu çevrimiçi talimatları sağlamak veya kameralar veya diğer türlerdeki içerik ile birlikte şirket web sayfasını göstermek için faydalıdır.</p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/add_html_page_to_view_or_1.jpg" data-mc-popup-alt="Add webpages to views in XProtect Smart Client to display web context next to video feeds.">
+                <img class="MCPopupThumbnail img" data-mc-width="1320" data-mc-height="854" src="../../../../Images/add_html_page_to_view_or_1_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add webpages to views in XProtect Smart Client to display web context next to video feeds." tabindex="" />
+              </a>
+            </p>
+            <p>Adımlar:</p>
+            <ol>
+              <li value="1">Değiştirmek istediğiniz görünümü açın.</li>
+              <li value="2"> Ayarlar moduna girmek için <span class="uitext">Ayarlar</span> seçeneğine tıklayın. </li>
+              <li value="3">
+                <span class="uitext">Sistem genel görünümü</span> bölmesinde <span class="uitext">HTML Sayfası</span> öğesine tıklayıp görünüm ögelerinden birine sürükleyin. Bir pencere görünür.<p><img src="../../../../Images/add_html_page_to_view_or_1.png" alt="Enter URL when adding webpage to views in XProtect Smart Client." /></p></li>
+              <li value="4">
+                <p>
+                  <span class="uitext">Aç</span> alanına, web sayfasının web adresini girin.</p>
+                <p class="important">Yerel bilgisayarınıza, ağınıza veya bir FTP sunucunuza yüklü bir web sayfasını kullanmak için, web sayfasının özellikleri içinde ekran modunun <span class="uitext">Uyumluluk</span> olarak ayarlandığından emin olun. Bkz. <a href="#Web" class="MCXref xref">Web sayfası özellikleri </a>. Aksi halde, bir hata mesajı alacaksınız. Bkz. <a href="../sf_troubleshooting/sc_troubleshootinghtmlpages.htm" class="MCXref xref">Web sayfaları (sorun giderme)</a>.</p>
+              </li>
+              <li value="5">
+                <span class="uitext">Tamam</span> üzerine tıklayın.</li>
+              <li value="6">Özellikleri ayarlamak için, <span class="uitext">Özellikler</span> panosunu genişletin.</li>
+              <li value="7"> Ayarlar modundan çıkmak için <span class="uitext">Ayarlar</span> seçeneğine tekrar tıklayın. Değişiklikleriniz kaydedilir.</li>
+            </ol>
+            <p class="note">Ayar modunda web sayfasına gidemezsiniz. </p>
+            <h3>
+              <a name="Web"></a>Web sayfası özellikleri </h3>
+            <table cellspacing="3">
+              <col />
+              <col style="width: 376px;" />
+              <thead>
+                <tr>
+                  <th>
+                    <p>Ad</p>
+                  </th>
+                  <th>
+                    <p>Tanım</p>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">Düzenle</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>Web sayfasına ait yeni bir URL veya dosya konumu belirleyin.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">Ekran modu</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>Web sayfasını işlemek için tarayıcı motorunu seçin. İki seçenek bulunur:</p>
+                    <ul>
+                      <li>
+                        <span class="uitext">Standart</span> - bu ayar Microsoft Edge kullanır. Bir web sayfası web sunucuda bulunuyorsa ve ağ protokolü HTTP veya HTTPS olarak kullanılıyorsa, <span class="uitext">Standart</span> öğesini seçin</li>
+                      <li>
+                        <span class="uitext">Uyumluluk</span> - bu ayar Internet Explorer tarayıcısını kullanır. Web sayfası şu durumlardaysa, <span class="uitext">Uyumluluk</span> öğesini seçin:<ul><li> yerel olarak saklanır</li><li>HTTP ve HTTPS yerine diğer ağ protokollerini kullanır</li><li>şununla etkileşime geçmek için tasarlanan komut dizilerini içerir: <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span></li><li>daha eski bir HTML sürümü kullanır</li></ul></li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">Ölçeklendirme</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>Web sayfasının ölçeklendirmesini seçin. En uygun ölçeklendirme içe aktarılan web sayfasının içeriğine ve bunu nasıl görüntülemek istediğinize bağlıdır. </p>
+                    <p class="note">Bu ayar sadece <span class="uitext">Uyumluluk</span> modunda mevcuttur.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">Araç çubuğunu gizle</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>Her bir içe aktarılan web sayfasının üzerine yerleştirilen gezinim çubuğunu gizlemek için onay kutusunu seçin.</p>
+                    <p>
+                      <img src="../../../../Images/set_properties_for_html_page.png" alt="" />
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Görünümlere katman düğmeleri ekleyin</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Hoparlörleri, olayları, <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term33">çıkışı<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Bir bilgisayardan dışarı çıkan verilerdir. IP gözetim sistemlerinde çıkış çoğunlukla geçitler, sirenler, çakar lambalar ve daha birçoğu gibi cihazların etkinleştirilmesi için kullanılır.</span></a> ve daha birçoğunu farenizin imlecini <span class="uitext">Canlı</span> görüntü sekmesindeki görünümlerdeki kamera konumlarının üstüne getirdiğinizde beliren ayrıntılı <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term34">katman düğmelerini<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Fare imlecinizi Canlı sekmesindeki görünümlerde bağımsız kamera konumları üzerine götürdüğünüzde videonun üzerinde bir katman olarak görünen düğme. Katman düğmelerini hoparlörleri, olayları, çıkışı etkinleştirmek, PTZ kameralarını hareket ettirmek, kaydı başlatmak, kameralardan gelen sinyalleri temizlemek için kullanın.</span></a> etkinleştirebilirsiniz.</p>
+            <p>Gerektiği kadar düğme ekleyebilirsiniz.</p>
+            <ol>
+              <li value="1"> Ayarlar moduna girmek için <span class="uitext">Ayarlar</span> seçeneğine tıklayın. </li>
+              <li value="2">
+                <span class="uitext">Katman düğmeleri</span> bölmesinde eylemi seçip kamera konumunun üstüne sürükleyin.</li>
+              <li value="3">Farenin tuşunu bıraktığınızda katman düğmesi belirir. Düğmenin boyutunu değiştirmek için, beliren kolları sürükleyin. <p><img src="../../../../Images/add_an_overlay_button_to_a.jpg" alt="" /></p></li>
+              <li value="4">Katman düğmesinin metnini değiştirmek için, metne çift tıklayın, üzerine yazın ve ardından kaydetmek için <img src="../../../../Images/add_an_overlay_button_to_a.png" alt="" /> onay kutusunu seçin. Geri almak için, iptal düğmesini <img src="../../../../Images/add_an_overlay_button_to_a_1.png" alt="" /> tıklatın. Kaydettiğinizde, metin düğmedeki olabilecek en büyük boyuta ölçeklendirilir.</li>
+              <li value="5"> Ayarlar modundan çıkmak için <span class="uitext">Ayarlar</span> seçeneğine tekrar tıklayın. Değişiklikleriniz kaydedilir.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <p>
+        <a name="SC_AssignAShortcutNumber.htm"></a>
+      </p>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Concept Information</p>
+        <p class="containerItem_container_0">
+          <a href="../sf_operation/sc_workingwithviews.htm">Görünümleri yönetme</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

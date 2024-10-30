@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="zh-CN" xml:lang="zh-CN" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="配置" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Configure the camera settings in XProtect Smart Client and learn about overlay buttons and bounding boxes." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=管理员" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=整合商" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>摄像机（配置）</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script type="text/javascript">
+ function getAllUrlParams() {
+			 var queryString = window.location.href.split('?')[2].replace('.htm','');		 
+			 var replaceThis = window.location.href.substr(window.location.href.lastIndexOf('/') + 1);
+			 var urlString = window.location.href.replace(replaceThis, '') + "Default.htm#cshid=" + queryString;
+			 var a = document.getElementById('link'); 
+			 a.href = urlString;
+			 a.textContent = urlString;
+			 window.location.href=urlString;
+			}
+		</script>
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#standard_features/sf_sc/sf_configuration/sc_configuringcamerasettings.htm">用导航打开主题</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="痕迹" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>摄像机（配置）</h1>
+      <p>本节中的设置与<span class="uitext">覆盖按钮</span>和<span class="uitext">属性</span>窗格相关。 要访问这些窗格，请单击<span class="uitext">设置</span>按钮，并确保左侧的导航窗格可见。</p>
+      <p>
+        <img src="../../../../Images/sc_cameraproperties.jpg" alt="Access camera properties and overlay button properties in XProtect Smart Client." />
+      </p>
+      <div>
+        <h2>摄像机设置<a name="SC_CameraSettings.htm"></a></h2>
+        <p>在设<span class="uitext">置模</span>式中，可在<span class="uitext">属性</span>窗格中查看和编辑选定摄像机的属性（选中的摄像机以加粗的边线表示）。</p>
+        <table cellspacing="3">
+          <col />
+          <col />
+          <thead>
+            <tr>
+              <th>名称</th>
+              <th>说明</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="uitext">摄像机名称</span>
+              </td>
+              <td>
+                <p>显示选定摄像机的名称。</p>
+                <p>要更改摄像机，请单击省略号按钮打开<span class="uitext">选择摄像机</span>窗口并选择其他摄像机。如果您想更改摄像机但保持设置，则这样做很有用。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">实时数据流</span>
+              </td>
+              <td>
+                <p>如果可用，选择要在视图中显示的实时流。<span class="uitext">如果已经在服务器上设置了多个流</span>，则您可以选择默认或其中一个可用的流选项。<span class="uitext">如果选择</span><span class="uitext">默认</span><span class="uitext"><MadCap:glossaryTerm glossTerm="Glossary.Term14"></MadCap:glossaryTerm></span>之外的选项，您将不能编辑图像质量或帧速率设置。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">图像质量</span>
+              </td>
+              <td>
+                <p class="important">仅当您正在查看 JPEG 流时，指定观看的视频的图像质量 (<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>) 才有意义。如果查看 H264 和 H265 等其他编解码器并将质量设置为低于<span class="uitext">完全</span>，则在重新编码为 JPEG 时将增加带宽、CPU 和 GPU 使用率。</p>
+                <p>不仅决定视频的查看质量，而且还会影响带宽使用。<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 如果通过较慢的网络连接在互联网上使用<span class="uitext"></span><span class="uitext">，</span>或因为其他原因需要限制使用的带宽，可在服务器端选择低或中来降低图像质量。</p>
+                <p>选择降低的图像质量后，来自选定摄像机的图像将在监控系统服务器上重新编码为 <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term23">JPEG<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>一种图像压缩方法，也称为 JPG 或 Joint Photographic Experts Group（联合图像专家组）。此方法属于一种有损压缩，即压缩过程中将丢失部分图像细节。以此方法压缩的图像一般被称为 JPG 或 JPEG。</span></a> 格式，然后再发送到 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>。重新编码可以按以下方式进行：</p>
+                <p>
+                  <span class="uitext">全部</span>：默认设置，提供原始视频的完全质量。</p>
+                <p>
+                  <span class="uitext">超高（兆像素）</span>：重新编码后的输出宽度为 640 像素 (VGA)，JPEG 质量级别为 25%。</p>
+                <p>
+                  <span class="uitext">高</span>：重新编码后的输出宽度为 320 像素 (QVGA)，JPEG 质量级别为 25%。</p>
+                <p>
+                  <span class="uitext">中</span>：重新编码后的输出宽度为 200 像素，JPEG 质量级别为 25%。</p>
+                <p>
+                  <span class="uitext">低</span>：重新编码后的输出宽度为 160 像素，JPEG 质量级别为 20%。</p>
+                <p>高度按宽度和原始视频的<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term2">纵横比<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>图像高度与宽度之间的比例关系。</span></a>进行缩放。</p>
+                <p>选择的图像质量将应用于实时视频和已记录的视频，以及 JPEG 格式和 MPEG 格式。但对于 MPEG，查看实时视频时只对关键帧进行重新编码，而查看已记录的视频时是对所有帧进行重新编码。</p>
+                <p>尽管降低图像质量有利于限制带宽的使用，但需要对图像进行重新编码，因此将占用监控系统服务器上的额外资源。</p>
+                <p class="tip">可以迅速降低视图中所有摄像机的带宽使用，方法是降低一个摄像机的图像质量，然后单击<span class="uitext">应用到所有</span>按钮。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">最大时保持相同图像质量</span>
+              </td>
+              <td>
+                <p>查看实时视频或记录的视频时，可双击视图中的特定摄像机位置以将其放大。执行此操作后，该摄像机的视频将以默认的完全质量显示，而不考虑选择的图像质量。</p>
+                <p>如果要在放大视频时也应用选定的图像质量，请选中<span class="uitext">最大时保持相同图像质量</span>复选框，它紧靠在<span class="uitext">图像质量</span>设置的下方。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">帧速率</span>
+              </td>
+              <td>
+                <p>为选定摄像机选择帧速率。选项有<span class="uitext">无限制</span>（默认）、<span class="uitext">中</span>或<span class="uitext">低</span>。您选择的帧速率以及监控系统设置方式（请参阅 <a href="#SC_FrameRateEffectExplai.htm" class="MCXref xref">帧速率效果（已解释）</a>）的组合会影响视频质量。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">PTZ 单击模式</span>
+              </td>
+              <td>
+                <p>为 PTZ 摄像机选择默认 PTZ 单击模式。选项包括单击居中或虚拟操纵杆。您可以通过为摄像机选择其他默认 PTZ 单击模式来替换该设置。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">鱼眼镜头拆分模式</span>
+              </td>
+              <td>
+                <p>仅在选定摄像机为鱼眼镜头摄像机时可用。鱼眼镜头技术可以创建和观看 360º 度全景图像。<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 最多支持来自一台鱼眼镜头摄像机的四个不同视点。<span class="uitext">鱼眼镜头拆分模式</span>列表可用于选择所需的拆分模式：</p>
+                <p>
+                  <span class="uitext">不拆分</span>用于查看单个视点。</p>
+                <p>
+                  <span class="uitext">2 x 2</span> 用于同时查看四个不同的视点。</p>
+                <p>在<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>的任一选项卡上进行查看时，鱼眼镜头摄像机将根据指定值显示同一图像的一个视点或四个视点。</p>
+                <p class="tip">查看鱼眼镜头摄像机的不同视点时，可以通过在每个视点内单击，或使用摄像机工具栏上的 <span class="uitext">PTZ 预设位置</span>菜单来单独导航每个视点。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">保持图像纵横比</span>
+              </td>
+              <td>
+                <p>如果选中，将不会拉伸视频以适合摄像机位置的大小。而是按录制时的纵横比（高度/宽度的比例）显示视频。</p>
+                <p>对于某些摄像机，图像周围将出现水平或垂直的黑条。</p>
+                <p>如果清除该复选框，将拉伸视频以适合视图中的位置。这样做可能会使视频发生轻微扭曲，但可以避免视频周围出现黑条。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">发生移动时更新图像</span>
+              </td>
+              <td>
+                <p>
+                  <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 如果选中，仅在侦测到移<span class="uitext">动时</span>，才会在的实时选项卡上更新来自选定摄像机的视频。此功能由在监控系统服务器上为摄像机配置的移动侦测灵敏度决定，可以显著降低 CPU 的使用。</p>
+                <p>
+                  <span class="uitext">如果仅在发生移动时更新视频</span>，那么除非侦测到移动，否则用户将在视图中摄像机的位置看到无任何移动的消息和静态图像。静态图像具有灰色覆盖物，因此易于识别哪些摄像机无任何移动。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">侦测到移动时发出声音</span>
+              </td>
+              <td>
+                <p>
+                  <span class="uitext">在</span>实时选项卡上查看摄像机的视频时，如果侦测到移动，将会收到一个简单的声音通知。</p>
+                <p>声音通知仅当摄像机视频在 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 中实际显示时可用。因此，如果最小化的窗口中包含相应摄像机，则声音通知将<span class="specialbold">不</span>可用。同样，如果最大化视图中的摄像机以便仅显示该摄像机，将无法听到有关其他摄像机的声音通知。</p>
+                <p>
+                  <span class="uitext">始终关闭</span>：侦测到移动时不发出声音通知。</p>
+                <p>
+                  <span class="uitext">始终开启</span>：每次在摄像机上侦测到移动时都会播放声音通知。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">
+                  <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term11">发生事件时发出声音<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>在监控系统上发生的预定义事件；监控系统将其用于触发动作。根据监控系统的配置，外置传感器的输入信号、侦测到移动、收到其他应用程序的数据或用户的手动输入都可能会触发事件。事件的发生可能触发各种动作，例如让摄像机按特定的帧速率进行记录、触发输出、发送电子邮件或这些动作的组合。</span></a>
+                </span>：
+            </td>
+              <td>
+                <div>
+                  <p class="note">此功能仅适用于特定的 <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> 视频管理软件系统。有关系统中的功能的信息，请参阅 <a href="../sf_considerationsrequirements/sc_surveillancesystemdif.htm" class="MCXref xref">监控系统的差别</a>。</p>
+                </div>
+                <p>要使用此功能，要求事件通知已在监控系统服务器上配置。</p>
+                <p>声音通知仅当摄像机视频在 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 中实际显示时可用。因此，如果最小化的窗口中包含相应摄像机，则声音通知将不可用。同样，如果最大化视图中的摄像机以便仅显示该摄像机，将无法听到有关其他摄像机的声音通知。</p>
+                <p>在<span class="uitext">实时</span>选项卡上查看摄像机的视频时，如果发生与选定摄像机相关的事件，将会收到一个简单的声音警报。</p>
+                <p>
+                  <span class="uitext">始终关闭</span>：发生与摄像机相关的事件时不使用声音警报。</p>
+                <p>
+                  <span class="uitext">始终开启</span>：每次发生与摄像机相关的事件时都播放声音警报。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">显示设置</span>
+              </td>
+              <td>
+                <p>
+                  <span class="uitext">使用默认显示设置</span>：使用<span class="uitext">设置</span>窗口中定义的默认设置显示所选摄像机的标题栏和视频指示器。如果需要使用选定摄像机的非默认行为，请清除此复选框，并选择是否需要使用标题栏和/或视频指示器。</p>
+                <p>
+                  <span class="uitext">显示标题栏</span>：在每个摄像机位置的顶部显示标题栏。标题栏可帮助用户迅速识别摄像机。当标题栏显示在<span class="uitext">实时</span>选项卡上时，它会显示检测到的移动和事件、摄像机是否正在记录等信息。请参阅 <a href="../sf_operation/sc_viewinglivevideo.htm#SC_CameraNamesAndColored.htm" class="MCXref xref">摄像机指示器（已解释）</a>。</p>
+                <p class="note">如果选择不显示标题栏，则无法看到移动和事件的可视指示器。作为替代方法，可使用声音通知。</p>
+                <p>
+                  <span class="uitext">显示边界框层</span>：在各个摄像机上显示边界框。打开<span class="uitext">边界框提供商</span>（请参阅 <a href="#SC_BoundingBoxProvidersE(10147).htm" class="MCXref xref">边界框提供商（已解释）</a>)对话框以指定向摄像机提供数据的元数据设备。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">视频缓冲</span>
+              </td>
+              <td>
+                <p>
+                  <span class="uitext">这一部分的</span>属性窗格不可见。要查看它，请转到<span class="uitext">设置</span>窗口的（请参阅 <a href="sc_settingswindowexplain.htm" class="MCXref xref">XProtect Smart Client 中的设置</a>）<span class="uitext">功能</span>选项卡，并确保<span class="uitext">设置</span> &gt; <span class="uitext">编辑视频缓冲</span>设置为<span class="uitext">可用</span>。</p>
+                <p>如果需要非常流畅地显示实时视频，而不会出现抖动，可以设立视频缓冲时间。</p>
+                <p>如果可能，请避免使用视频缓冲。视频缓冲会显著增加视图中显示的各个摄像机的内存使用率。如果确实需要使用视频缓冲，请保持尽可能低的缓冲级别。</p>
+                <p>当实时视频存储在缓冲区后，可以流畅显示而不会出现抖动，不过设立缓冲时间会导致实时视频显示略有延迟。通常，对视频查看者而言，此类延迟不成问题。不过，如果摄像机是全景/倾斜/变焦 (PTZ) 摄像机，并且特别是在使用操纵杆操作摄像机时，延迟可能会变得非常明显。</p>
+                <p>借助对视频缓冲量的控制，用户可以确定是要优先考虑平稳显示的实时视频（需要缓冲，会导致略有延迟），还是要优先考虑即时 PTZ 和操纵杆操作（不需要缓冲，但可能会因无缓冲而导致实时视频出现轻微抖动）。</p>
+                <p>要使用视频缓冲，请选中<span class="uitext">使用默认视频缓冲时间</span>，然后选择所需缓冲时间（从<span class="uitext">无</span>到<span class="uitext">最大值 2 秒</span>）。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">应用到所有</span>
+              </td>
+              <td>
+                <p>
+                  <span class="uitext">应用到所有</span>按钮用于将选定摄像机的摄像机设置快速应用到视图中的所有摄像机。</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2>帧速率效果（已解释）<a name="SC_FrameRateEffectExplai.htm"></a></h2>
+        <p>
+          <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term14">帧速率<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>表示动态视频所含信息量大小的度量标准。通常以 FPS（每秒帧数）为单位。</span></a>选项的效果如下所示：</p>
+        <table cellspacing="3">
+          <col />
+          <col />
+          <col />
+          <col />
+          <thead>
+            <tr>
+              <th>
+                <p>效果</p>
+              </th>
+              <th>
+                <p>不受限制</p>
+              </th>
+              <th>
+                <p>中</p>
+              </th>
+              <th>
+                <p>低</p>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>JPEG </td>
+              <td>
+                <p>发送所有帧</p>
+              </td>
+              <td>
+                <p>每 4 帧发送 1 帧</p>
+              </td>
+              <td>
+                <p>每 20 帧发送 1 帧</p>
+              </td>
+            </tr>
+            <tr>
+              <td>MPEG/H.264/H.265 </td>
+              <td>
+                <p>发送所有帧</p>
+              </td>
+              <td>
+                <p>仅发送关键帧</p>
+              </td>
+              <td>
+                <p>仅发送关键帧</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="关闭" data-mc-alt2="打开" />示例：<br /></a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>如果在 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 中将<span class="uitext">帧速率</span>选项设置为<span class="uitext">低</span>，并且系统管理员已将摄像机配置为以每秒 20 帧的速率提供 JPEG 图像，您将看到平均速度为每秒 1 帧的摄像机视频。如果系统管理随后将摄像机配置为以每秒 4 帧的较慢速度提供图像，您将看到平均速度为每秒 0.2 帧的摄像机视频。</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2>边界框（已解释）<a name="SC_BoundingBoxes.htm"></a></h2>
+        <p>边界框是包围（例如）摄像机图像中的对象的矩形边框。在 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 中，边界框在视频中显示为黄色边框。</p>
+        <p>
+          <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_yellowboundingbox.jpg" data-mc-popup-alt="Example of a bounding box in XProtect Smart Client.">
+            <img class="MCPopupThumbnail img" data-mc-width="1201" data-mc-height="674" src="../../../../Images/sc_yellowboundingbox_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Example of a bounding box in XProtect Smart Client." tabindex="" />
+          </a>
+        </p>
+        <p class="note">颜色可能会有所不同，具体取决于 VMS 系统的配置。</p>
+        <p>可以在摄像机属性中的<span class="uitext">显示设置</span>中显示或隐藏各个摄像机的边界框。</p>
+        <p>如果边界框显示在您的屏幕上，它们也会在您执行以下操作时出现：</p>
+        <ul>
+          <li>
+            <p>以 <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> 格式导出视频。另请参阅 <a href="sc_exportsettings.htm" class="MCXref xref">导出设置</a>。</p>
+          </li>
+          <li>
+            <p>打印静态图像。另请参阅 <a href="../sf_operation/sc_exportingevidence.htm#SC_CreatingSurveillanceReports.htm" class="MCXref xref">打印或创建监控报告</a>。</p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>边界框提供商（已解释）<a name="SC_BoundingBoxProvidersE(10147).htm"></a></h2>
+        <p>
+          <span class="uitext">需要选择</span>显示边界框层。在该对话框中，启用要在该摄像机的视频中提供边界框数据的元数据设备。设备列表由系统管理员定义。</p>
+      </div>
+      <div>
+        <h2>覆盖按钮（已解释）<a name="SC_OverlayButtons.htm"></a></h2>
+        <p>您可以向视图中的摄像机位置添加覆盖按钮，以触发辅助命令（由摄像机定义的命令）。覆盖按钮可能因您的监控系统而异（请参阅 <a href="../sf_considerationsrequirements/sc_surveillancesystemdif.htm" class="MCXref xref">监控系统的差别</a>）。辅助命令因摄像机而异。 有关详细信息，请参阅摄像机文档。</p>
+      </div>
+      <div>
+        <h2>声音通知（已解释）<a name="SC_SoundNotifications.htm"></a></h2>
+        <p>您的 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 可能已经过配置，可以在出现以下情况时向您发出声音通知：</p>
+        <ul>
+          <li>在一个或多个特定摄像机上侦测到移动 </li>
+          <li>发生与一个或多个特定摄像机相关的事件（请参阅 <a href="../../../feature_flags/ff_managealarms/sc_workingwithalarms.htm#SC_Events.htm" class="MCXref xref">事件（已解释）</a>）</li>
+        </ul>
+        <p>听到声音通知时，需要引起特别的重视。如果对所在组织是否使用或如何使用声音通知有疑问，请联系您的系统管理员。</p>
+        <p>您可以暂时将特定摄像机的声音通知静音：在摄像机工具栏上，单击 <span class="uitext">更多</span> &gt; <span class="uitext">声音通知</span> &gt; <span class="uitext">静音</span>。</p>
+        <p class="note">最小化 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 窗口时，会禁用声音通知。</p>
+        <p>要再次打开摄像机的声音通知，请再次单击<span class="uitext">更多</span>&gt; <span class="uitext"> 声音通知</span> &gt;<span class="uitext"> 静音</span>。</p>
+        <p class="note">声音通知静音功能不适用于热点、轮巡显示或 <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term29">Matrix<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>XProtect 监控系统的附加产品。使用 XProtect Incident Manager，您可以记录和管理 XProtect Smart Client 中的事件。</span></a>（请参阅 <span class="mc-variable flvar-brand-company.MMName_short variable">Matrix</span>）位置。</p>
+      </div>
+    </div>
+    <p></p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="ja-JP" xml:lang="ja-JP" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="操作" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Decide what to export and where to create the export. Add privacy masks to your export and encrypt it with a password using the AES-256 standard." />
+    <meta class="addSearch product" content="product=Recording Server" data-type="text" name="addsearch-custom-field" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=Recording Server" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=オペレータ" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client – Player" class="addSearch product" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>エクスポート設定</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#standard_features/sf_sc/sf_configuration/sc_exportsettings.htm">ナビ付きでトピックを開く</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="パンくず" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>エクスポート設定</h1>
+      <p>[<span class="uitext">エクスポート</span>] タブでは、エクスポートに使用する形式を選択できます。また、各形式に対して [<span class="uitext">エクスポート設定</span>] を変更できます：</p>
+      <ul>
+        <li>
+          <p>
+            <a href="#format" class="MCXref xref"> XProtect形式の設定</a>
+          </p>
+        </li>
+        <li>
+          <p>
+            <a href="#SC_MediaPlayerFormat" class="MCXref xref">メディアプレーヤーのフォーマット設定</a>
+          </p>
+        </li>
+        <li>
+          <p>
+            <a href="#Still" class="MCXref xref">静止画像の設定</a>
+          </p>
+        </li>
+      </ul>
+      <p>
+        <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_exportstab_exportsettings_1.jpg" data-mc-popup-alt="The Export settings window in XProtect Smart Client. The window has tabs for each export format: XProtect format, Media player format, Still images.">
+          <img class="MCPopupThumbnail img" data-mc-width="1361" data-mc-height="821" src="../../../../Images/sc_exportstab_exportsettings_1_thumb_200_0.jpg" style="mc-thumbnail-max-height: auto;mc-thumbnail-max-width: 200px;mc-thumbnail: popup;" alt="The Export settings window in XProtect Smart Client. The window has tabs for each export format: XProtect format, Media player format, Still images." tabindex="" />
+        </a>
+      </p>
+      <div class="note">
+        <p>利用できるエクスポート形式とエクスポート設定はシステム管理者によって指定されています。</p>
+        <p>セキュリティ上の理由により、デフォルトでは<span class="mc-variable flvar-brand-company.XP variable">XProtect</span>形式のみ利用できる設定になっています。他のエクスポート形式を有効にするには、システム管理者にお問い合わせください。</p>
+      </div>
+      <p>選択した形式とエクスポート設定は保存され、次回のエクスポート時に表示されます。</p>
+      <p>設定がグレー表示されている場合は、システム管理者によって設定がロックされています。</p>
+      <div>
+        <h2>
+          <a name="format"></a>
+          <span class="mc-variable flvar-brand-company.XP variable">XProtect</span>形式の設定</h2>
+        <p>Windowsコンピューターの<span class="mc-variable flvar-product.SCplayer_XP variable">XProtect Smart Client – Player</span>でのみ開くことができるエクスポートを作成するには、<span class="mc-variable flvar-brand-company.XP variable">XProtect</span>形式を選択します。</p>
+        <p class="note">
+          <span class="mc-variable flvar-brand-company.XP variable">XProtect</span>の2020 R1以降のバージョンで作成されたエクスポートを開くには、<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>の2020 R1以降のバージョンを使用する必要があります。</p>
+        <table cellspacing="3">
+          <col />
+          <col />
+          <thead>
+            <tr>
+              <th>
+                <p>名前</p>
+              </th>
+              <th>
+                <p>説明</p>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <p>
+                  <span class="uitext">
+                    <span class="mc-variable flvar-product.SCplayer_XP variable">XProtect Smart Client – Player</span>
+                  </span>を含める
+              </p>
+              </td>
+              <td>
+                <p>エクスポートされたデータのある<span class="mc-variable flvar-product.SCplayer_XP variable">XProtect Smart Client – Player</span>アプリケーションを含めます。エクスポートされたデータは、<span class="mc-variable flvar-product.SCplayer_XP variable">XProtect Smart Client – Player</span>を使用してのみ再生できます。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>
+                  <span class="uitext">再エクスポートしない</span>
+                </p>
+              </td>
+              <td>
+                <p>形式を問わず受信者による再エクスポートを防止します。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>
+                  <span class="uitext">パスワードで暗号化</span>
+                </p>
+              </td>
+              <td>
+                <p>暗号化標準AES-256を使用してエクスポートを暗号化します。[<span class="uitext">エクスポート</span>] &gt; [<span class="uitext">エクスポートを作成</span>] を選択すると、8文字以上のパスワードの入力が求められます。</p>
+                <p>エクスポートされたデータを開くまたは表示するため、エクスポート受信者はパスワードを入力する必要があります。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>
+                  <span class="uitext">デジタル署名を含める</span>
+                </p>
+              </td>
+              <td>
+                <p>エクスポートしたデータベースにデジタル署名を含めます。監視システムの設定によって、ビデオや音声にすでに署名が含まれていることがあります。この場合は、これらの署名はエクスポート中に検証され、検証が成功するとエクスポートに含められます。検証に異常があると、そのエクスポートも完了しません。エクスポートされたファイルを開くと、受領者は<span class="mc-variable flvar-product.SCplayer_XP variable">XProtect Smart Client – Player</span>で署名を確認できます。「<a href="../sf_operation/sc_xprscpl_1.htm#SC_VerifyDigitalSignatur.htm" class="MCXref xref">デジタル署名の検証</a>」も参照してください。</p>
+                <p class="note">デジタル署名を含めない場合、サーバーからの署名もエクスポートも含められず、ビデオや音声が改ざんされていてもエクスポートが成功することになります。</p>
+                <p>エクスポート プロセス中、デジタル署名は2つの異なる状況で除外できます。</p>
+                <ul>
+                  <li>
+                    <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term55">プライバシー マスク<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>カメラビュー内のビデオの領域をカバーするぼかし、あるいは単色。定義されたエリアは、クライアントのライブ、再生、 ホットスポット、画面自動切替、スマートマップ、スマートサーチ、エクスポートモードで、ぼかされるか、隠されます。</span></a>のあるエリアでは、レコーディング サーバーのデジタル署名がエクスポートから削除されます。</li>
+                  <li>エクスポートしているデータが現在の日付および時刻と非常に近い場合、シーケンス全体でレコーディングサーバーの電子署名が含まれない可能性があります。この場合、電子署名はエクスポートの一部にのみ追加されます。</li>
+                </ul>
+                <p>エクスポートプロセスは完了しますが、署名を確認すると、レコーディングサーバーの電子署名が削除されているか、部分的にOKになっていることが分かります。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>
+                  <span class="uitext">コメント</span>
+                </p>
+              </td>
+              <td>
+                <p>[<span class="uitext">エクスポートにコメントを追加する</span>] ウィンドウを開きます。このウィンドウでは、個別のカメラやエクスポートプロジェクト全体にコメントを追加できます。</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_MediaPlayerFormat"></a>メディアプレーヤーのフォーマット設定</h2>
+        <p>標準のMedia Playerがインストールされているコンピューターで視聴できる標準的なビデオクリップや音声クリップをエクスポートするには、Media Player形式を選択してください。コンピュータには、エクスポートで使用するコーデックもインストールしておく必要があります。</p>
+        <p>エクスポートの容量を可能な限り抑えるには、Media Player形式のMKVを選択してください。有効化できない場合は、システム管理者までお問い合わせください。</p>
+        <table cellspacing="3">
+          <col />
+          <col />
+          <thead>
+            <tr>
+              <th>
+                <p>名前</p>
+              </th>
+              <th>
+                <p>説明</p>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="uitext">コンテンツのエクスポート</span>
+              </td>
+              <td>
+                <p>ビデオのみ、音声のみ、またはビデオと音声の両方をエクスポートします。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">エクスポートフォーマット</span>
+              </td>
+              <td>
+                <p>
+                  <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term3">AVI<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>ビデオでよく使用されるファイル形式。この形式のファイルには.aviというファイル拡張子が付いています。</span></a>形式または<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term69">MKV<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>「Matroska Video」ビデオの省略形です。MKVファイルは、Matroskaマルチメディアコンテナ形式で保存されているビデオファイルです。複数のタイプの音声およびビデオのコーデックに対応します。</span></a>形式でビデオをエクスポートします。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">コーデック</span>
+              </td>
+              <td>
+                <p>
+                  <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term7">コーデック<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>エクスポートされたAVIファイルなど、音声とビデオデータを圧縮および解凍するテクノロジー。</span></a>の選択は、AVIファイルの画質とサイズに影響します。</p>
+                <p>コーデックは変更できますが、変更する正当な理由がない限り、デフォルトのコーデック設定を維持するようお勧めします。</p>
+                <p class="note">使用するコーデックは、エクスポートしたビデオを再生するコンピューターと類似のコーデックである必要があります。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">タイムスタンプを含める</span>
+              </td>
+              <td>
+                <p>VMSシステムからの日時をエクスポートされた画像に追加します。タイムスタンプは、エクスポートされるビデオの最上部に表示されます。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">フレームレートの低減</span>
+              </td>
+              <td>
+                <p>エクスポートのフレームレートを下げます。画像は1枚おきになりますが、まだリアルタイムで再生できます。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">ビデオのテキスト</span>
+              </td>
+              <td>
+                <p>
+                  <span class="uitext">ビデオのテキスト</span>ウィンドウが開き、AVIファイルのプリテキストとポストテキストを作成できます。これらのテキストは、そのエキスポートですべてのカメラに追加され、ビデオの前（<span class="uitext">プリスライド</span>）または後（<span class="uitext">ポストスライド</span>）に静止画像として表示されます。</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="important">MKV形式：JPEGまたはMPEG-4/H.264/H.265形式で記録されたビデオでプライバシーマスキングを使用していない場合、エクスポートで記録されたビデオにトランスコーディングは行われません。録画されたビデオは元の品質に保たれます。対照的に、プライバシーマスクを使用した場合、または他のコーデックを使用してビデオを録画した場合、録画されたビデオはエクスポートでJPEGにトランスコードされます。</p>
+      </div>
+      <div>
+        <h2>
+          <a name="Still"></a>静止画像の設定</h2>
+        <p>各ビデオシーケンスの各フレームの静止画像をエクスポートするには、静止画像形式を選択してください。画像は<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term23">JPEG<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>画像圧縮方法の1つで、JPGまたはJoint Photographic Experts Groupとも呼ばれます。この方法はいわゆる不可逆圧縮で、画像詳細の一部が圧縮時に失われることを意味します。この方法で圧縮した画像は、通常JPGまたはJPEGと呼ばれます。</span></a>形式です。</p>
+        <table cellspacing="3">
+          <col />
+          <col />
+          <thead>
+            <tr>
+              <th>
+                <p>名前</p>
+              </th>
+              <th>
+                <p>説明</p>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="uitext">タイムスタンプを含める</span>
+              </td>
+              <td>
+                <p>VMSシステムからエクスポートされた画像に日付と時刻を追加します。タイムスタンプは、エクスポートされた画像の最上部に表示されます。</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2>
+          <a name="Exports"></a>[エクスポート] タブ（概要）</h2>
+        <table cellspacing="3">
+          <col />
+          <col />
+          <thead>
+            <tr>
+              <th>
+                <p>名前</p>
+              </th>
+              <th>
+                <p>説明</p>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="uitext">エクスポートリスト</span>
+              </td>
+              <td>
+                <p>たとえばビデオシーケンスなど、エクスポートで選択したアイテムをリストします。</p>
+                <p>アイテムごとに、開始時刻または終了時刻をクリックしてタイムスパンを変更できます。新しい日時を選択した後、<span class="uitext">[移動]</span>をクリックします。 プレビューエリアの下にあるハンドルをドラッグしてタイムスパンを変更することもできます。</p>
+                <p>アイテムをクリックすると、プレビュー エリアでエクスポート クリップのプレビューが表示されます。複数のアイテムを同時にプレビューするには、<span class="uitext">SHIFT</span>または<span class="uitext">CTRL</span>ボタンを押したまま、関連のあるアイテムをクリックします。</p>
+                <p>アイテムの横にある赤い <span class="uitext">x</span> をクリックすると、<span class="uitext">[アイテム]</span>リストからそのアイテムを削除できます。マウスをアイテムの上に移動させると、赤いxが表示されます。ひとつのアイテムを2つに分割したい場合は、プレビュー エリアで<span class="uitext">分割</span>アイコンをクリックします。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">アイテムを追加</span>
+              </td>
+              <td>
+                <p>
+                  <span class="uitext">アイテムの追加</span>ボタンを使用して、エクスポートに含めたい別のアイテムを選択します。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">すべて削除</span>
+              </td>
+              <td>[<span class="uitext">エクスポートリスト</span>] をクリアするには、[<span class="uitext">すべて削除</span>] ボタンを使用してください。</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">エクスポート名</span>
+              </td>
+              <td>プログラムが自動的にローカルの日付と時間を使って入力しますが、名前を変更することができます。</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">エクスポート先</span>
+              </td>
+              <td>
+                <p>
+                  <span class="uitext">パス</span> - パスを指定する際、指定するフォルダーは既存ののものでなくても構いません。既存でない場合は、自動的に作成されます。</p>
+                <p>このフィールドではパスがすでに入力されている可能性があります。</p>
+                <p>
+                  <span class="uitext">メディア バーナー</span> - エクスポートに送りたいバーナーを指定できます。この方法により、エクスポートを作成し、一度に光学メディアに直接書き込まれるようにします。</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">プライバシーマスク</span>
+              </td>
+              <td>
+                <p>クリックすると、ビデオにプライバシー マスクを追加できます。無地のブラックで選択された領域を、プラバシーマスクがカバーします。</p>
+                <p>ここで追加したプライバシーマスクは、現行のエクスポート、および選択されたビデオにのみ適応されます。エクスポートは、システム管理者によってプライバシーマスクが設定されたビデオをすでに含んでいる可能性があります。詳細については、「<a href="../../../feature_flags/ff_extendedprivacymasking/sc_workingwithprivacymasking.htm#SC_PrivacyMaskingExplain.htm" class="MCXref xref">プライバシーマスク（説明付き）</a>」を参照してください。</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">概念情報</p>
+        <p class="containerItem_container_0">
+          <a href="../../../feature_flags/ff_extendedprivacymasking/sc_workingwithprivacymasking.htm">プライバシーマスク（使用）</a>
+        </p>
+        <p class="containerItem_container_0">
+          <a href="../sf_operation/sc_exportingevidence.htm">エビデンスビデオの作成</a>
+        </p>
+        <p class="containerItem_container_0">
+          <a href="../../../feature_flags/ff_evidencelock/sc_workingwithevidencelocks.htm">ビデオエビデンスのロック</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

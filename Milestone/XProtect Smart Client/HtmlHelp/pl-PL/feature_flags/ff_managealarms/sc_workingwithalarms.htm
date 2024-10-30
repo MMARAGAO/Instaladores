@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="pl-PL" xml:lang="pl-PL" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="Obsługa" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Events are predefined incidents on the XProtect VMS system that can be set up to trigger an alarm. You can acknowledge and ignore alarms or print alarm reports." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Operator" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Alarmy i zdarzenia (użycie)</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#feature_flags/ff_managealarms/sc_workingwithalarms.htm">Open topic with navigation</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>Alarmy i zdarzenia (użycie)</h1>
+      <div>
+        <h2>Alarmy (objaśnienie)<a name="SC_AboutAlarms.htm"></a></h2>
+        <div>
+          <p class="note">Ta funkcja jest dostępna tylko w określonych systemach VMS <span class="mc-variable flvar-brand-company.XP variable">XProtect</span>. Informacje na temat funkcji systemu – patrz <a href="../../standard_features/sf_sc/sf_considerationsrequirements/sc_surveillancesystemdif.htm" class="MCXref xref">Różnice między systemami nadzoru</a>.</p>
+        </div>
+        <p>Na serwerze VMS <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> można skonfigurować praktycznie każdy rodzaj incydentu lub problemu technicznego – zdarzeń – w celu wyzwalania alarmu. Alarmy i zdarzenia można przeglądać na zakładce <span class="uitext">Menedżer alarmów</span>, która zapewnia centralny przegląd incydentów, statusu i ewentualnych problemów technicznych z VMS.</p>
+        <p>Nie można skonfigurować czynników wyzwalających alarmy w <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Administrator systemu robi to podczas konfiguracji systemu VMS <span class="mc-variable flvar-brand-company.XP variable">XProtect</span>.</p>
+        <p class="note">Zakładka <span class="uitext">Menadżer alarmów</span> jest wyświetlana lub ukryta, w zależności od ustawień określonych przez administratora systemu.</p>
+        <p>Karta <span class="uitext">Menedżer alarmów</span> zapewnia dedykowany widok do obsługi alarmów i zdarzeń. Na samej zakładce wyświetlana jest liczba aktywnych alarmów. Przedstawionych jest więcej niż dziewięć alarmów z <img src="../../../Images/about_alarms.png" alt="9+ alarmów" />. Zakładka <span class="uitext">Menedżer alarmów</span> obejmuje listę alarmów, podgląd alarmów umożliwiający wyświetlanie podglądu materiałów wideo powiązanych z poszczególnymi alarmami lub zdarzeniami oraz ewentualnie także mapę, na której widoczna jest geograficzna lokalizacja kamery powiązanej z alarmem. </p>
+      </div>
+      <div>
+        <h2>Lista alarmów (objaśnienie)<a name="SC_TheAlarmList.htm"></a></h2>
+        <p>W sekcji <span class="uitext">Lista alarmów</span> wyświetlane są domyślnie przychodzące alarmy, a na jej górze znajdują się najnowsze alarmy. Ewentualnie na liście alarmów może być wyświetlana lista wtyczek <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term17">MIP<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Skrót od "Milestone Integration Platform".</span></a> i zdarzeń analitycznych, na przykład, kontroli dostępu lub rozpoznawania numerów rejestracyjnych. </p>
+        <p>Alarmy lub zdarzenia z powiązanym wideo są wyświetlane z ikoną <img src="../../../Images/sc_alarmorevent_withvideo_icon.png" alt="" />. Aby wyświetlić podgląd obrazu nieruchomego z czasu alarmu lub zdarzenia, najedź kursorem myszy na ikonę. Aby wyświetlić zarejestrowane nagranie z kamer powiązanych z alarmem lub zdarzeniem, zaznacz alarm lub zdarzenie na liście. Aby zatrzymać powtarzający się dźwięk alarmu, wybierz alarm związany z dźwiękiem na liście.</p>
+        <p>Możesz zdecydować, jak lista ma wyglądać, możesz filtrować kolumny, możesz przeciągać kolumny do różnych pozycji i możesz kliknąć prawym przyciskiem myszy, aby wyświetlić lub ukryć określone kolumny.</p>
+        <p class="note">Lista zdarzeń nie wyświetla zdarzeń generowanych przez system lub użytkowników, takich jak wykrywanie ruchu czy awaria archiwum.</p>
+        <p>Lista ta aktualizowana jest co 3 sekundy.</p>
+        <p>
+          <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/the_alarm_list.png" data-mc-popup-alt="The alarm list in XProtect Smart Client.">
+            <img class="MCPopupThumbnail img" data-mc-width="500" data-mc-height="173" src="../../../Images/the_alarm_list_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="The alarm list in XProtect Smart Client." tabindex="" />
+          </a>
+        </p>
+        <p class="tip">Aby wyświetlić listę zdarzeń, wejdź do trybu konfiguracji i wybierz opcję <span class="uitext">Zdarzenie</span> w oknie <span class="uitext">Właściwości</span>. Zobacz także <a href="sc_configuringalarmsandevents.htm#SC_AlarmListSettings.htm" class="MCXref xref">Ustawienia listy alarmów</a>.</p>
+      </div>
+      <div>
+        <h2>Serwery na liście alarmów (objaśnienie)<a name="SC_Servers.htm"></a></h2>
+        <p>Po lewej stronie listy alarmów widać serwery, od których pochodzą alarmy. Wiele systemów VMS <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> posiada tylko jeden serwer, ale niektóre systemy mogą składać się z kilku serwerów w hierarchii. Wyszczególnione są wszystkie serwery, do których masz dostęp i masz możliwość filtrowania alarmów według serwerów.</p>
+      </div>
+      <div>
+        <h2>Statusy alarmów (objaśnienie)<a name="SC_Filters.htm"></a></h2>
+        <p>Alarmy mogą posiadać jeden z następujących stanów: Nowe, W toku, Wstrzymane lub Zamknięte. Status każdego alarmu można sprawdzić na <span class="uitext">Liście alarmów</span>, w kolumnie <span class="uitext">Nazwa statusu</span>. Okno <span class="uitext">Filtry</span> pozwala filtrować zgodnie z określonymi kryteriami. Początkowo wszystkie alarmy będą miały status <span class="uitext">Nowy</span>, lecz kiedy alarm będzie już obsługiwany, jego status zostanie uaktualniony.</p>
+      </div>
+      <div>
+        <h2>Filtruj alarmy<a name="SC_FilterAlarms.htm"></a></h2>
+        <p>Istnieje kilka sposobów zastosowania filtrów na liście zdarzeń, aby wyświetlała tylko interesujące nas alarmy lub zdarzenia.</p>
+        <p>Kroki: </p>
+        <ol>
+          <li value="1">
+            <p>Na pasku narzędzi listy alarmów kliknij tekst <span class="uitext">Niestandardowe (zastosowany filtr)</span> lub <span class="uitext">Brak filtra</span>. Tekst będzie różnił się w zależności od wybranego filtra.<br /></p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/filter_alarms.png" data-mc-popup-alt="Filter alarms in XProtect Smart Client.">
+                <img class="MCPopupThumbnail img" data-mc-width="1217" data-mc-height="286" src="../../../Images/filter_alarms_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Filter alarms in XProtect Smart Client." tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="2">Wprowadź kryteria filtrowania w dowolnej kolumnie, dla której chcesz zastosować filtr. Na przykład, jeśli wpiszesz ID użytkownika w polu <span class="uitext">ID</span>, lista będzie wyświetlać tylko alarmy przypisane temu konkretnemu użytkownikowi.</li>
+          <li value="3">Można łączyć filtry, np. <span class="uitext">Nazwa stanu</span> i <span class="uitext">Właściciel</span> (przypisano do).</li>
+          <li value="4">Aby powrócić do niefiltrowanej listy alarmów, kliknij przycisk <span class="uitext">Wyczyść filtr</span>.</li>
+          <li value="5">Kliknij tytuł kolumny, aby posortować zawartość listy alarmów.</li>
+        </ol>
+        <p class="tip">Jeśli widoki do obsługi alarmów zawierają zawartość map, listę alarmów można także filtrować poprzez kliknięcie eleemntu (kamera, serwer itp.) prawym przyciskiem myszy na mapie i wybranie opcji <span class="uitext">Pokaż alarmy</span>. Spowoduje to wyświetlenie na liście alarmów tylko alarmów dla wybranego elementu.</p>
+      </div>
+      <div>
+        <h2>Reagowanie na alarmy<a name="SC_ResponsdingToAlarms.htm"></a></h2>
+        <div>
+          <h3>Przeglądanie i edycja szczegółów alarmu<a name="SC_ViewingAndEditingDeta.htm"></a></h3>
+          <p>Na alarmy można reagować na różne sposoby. Możesz przejść do dowolnego widoku, do którego dodałeś <span class="uitext">Listę alarmów</span> i dwukrotnie kliknąć alarm. Alarm otworzy się w oddzielnym oknie, w którym zobaczyszcz podgląd incydentu będącego przyczyną alarmu oraz wideo na żywo. W ramach reakcji na alarm możesz także zmienić pola w poniższej tabeli. </p>
+        </div>
+      </div>
+      <p>W zależności od sposobu konfiguracji systemu <span class="mc-variable flvar-brand-company.XP variable">XProtect</span><a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term50">VMS<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Skrót od „Video Management Software”.</span></a> możesz także otrzymywać powiadomienia o alarmach wyświetlane na pulpicie. Powiadomienia te są wyświetlane przez 15 sekund. Po kliknięciu powiadomienia zostaniesz przeniesiony bezpośrednio na zakładkę <span class="uitext">Menadżer alarmów</span> i otwarte zostanie okno alarmów.</p>
+      <div>
+        <div>
+          <table cellspacing="3">
+            <col />
+            <col />
+            <thead>
+              <tr>
+                <th>Pole</th>
+                <th>Opis</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">Stan</span>
+                  </p>
+                </td>
+                <td>
+                  <p>Stan alarmu informuje, czy ktoś zajął się zdarzeniem. Stan alarmu można zmieniać. Zwykle zmienia się stan z <span class="uitext">Nowy</span> na <span class="uitext">W toku</span>, a następnie na <span class="uitext">Wstrzymanie</span> lub <span class="uitext">Zamknięty</span>. </p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">Priorytet</span>
+                  </p>
+                </td>
+                <td>
+                  <p>Umożliwia zmianę priorytetu danego alarmu.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">Przypisano do</span>
+                  </p>
+                </td>
+                <td>
+                  <p>Umożliwia przydzielenie alarmu użytkownikowi w ramach organizacji, nawet sobie samemu. Osoba, do której przydzielisz alarm, staje się jego właścicielem i pojawi się w kolumnie <span class="uitext">Właściciel</span> listy alarmów.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">Komentarz</span>
+                  </p>
+                </td>
+                <td>
+                  <p>Możesz wpisywać komentarze i uwagi dodawane do sekcji <span class="uitext">Działania</span>. Komentarze zazwyczaj odnoszą się do podjętych działań. Na przykład „Podejrzany zatrzymany przez ochronę”, „Podejrzany przekazany policji” lub „Fałszywy alarm”. Pole <span class="uitext">Komentarz</span> pojawia się u dołu okna.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">Czynności</span>
+                  </p>
+                </td>
+                <td>
+                  <p>Sekcja działań podsumowuje sposób obsługi danego alarmu. Wszelkie zmiany w zakresie stanu lub priorytetu alarmu, a także przenoszenie przypisania alarmów pomiędzy użytkownikami oraz dodane komentarze będą automatycznie umieszczane w sekcji <span class="uitext">Działania</span>.</p>
+                  <p class="note">W zależności od konfiguracj serwera VMS <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> alarm może zawierać wskazówki dotyczące tego, co zrobić w przypadku otrzymania alarmu. Instrukcje określa się po stronie serwera w ramach definicji alarmu. W takim przypadku działania zostaną automatycznie wyświetlone podczas edycji alarmu.</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="uitext">Drukuj</span>
+                  </p>
+                </td>
+                <td>
+                  <p>Umożliwia drukowanie raportu zawierającego informacje na temat danego alarmu, np. historii alarmu i jeśli jest to możliwe, <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term19">obrazu nieruchomego<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Pojedynczy statyczny obraz.</span></a> z chwili wystąpienia alarmu.</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h3>Potwierdzanie alarmów<a name="SC_AcknowledgeAnAlarm.htm"></a></h3>
+          <p>Gdy otrzymasz alarm, możesz potwierdzić, że chcesz coś z nim zrobić.</p>
+          <p>Kroki:</p>
+          <ol>
+            <li value="1">
+              <p>Na liście alarmów kliknij alarm prawym przyciskiem myszy i wybierz <span class="uitext">Zatwierdź</span>. Status alarmu zmienia się na <span class="uitext">W toku</span>.</p>
+              <p class="note">Możesz zatwierdzać tylko nowe alarmy.</p>
+            </li>
+            <li value="2">Aby zatwierdzać wiele alarmów jednocześnie, wciśnij i przytrzymaj klawisz <span class="uitext">CTRL</span>, a następnie zaznacz alarmy, które chcesz zatwierdzić.</li>
+            <li value="3">Kliknij dwukrotnie alarm, aby edytować jego szczegóły, na przykład przypisując go do kogoś i dodając instrukcje.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>
+            <a name="Disable"></a>Wyłącz wszystkie nowe alarmy w przypadku wybranych typów zdarzeń</h3>
+          <p>Jeśli zdarzenie powoduje wyzwalanie fałszywych alarmów, możesz wyłączyć wszystkie nowe alarmy w odniesieniu do tego rodzaju zdarzenia na pewien czas.</p>
+          <p>Jeżeli na przykład wokół kamery występuje duży ruch, który powoduje kilka fałszywych alarmów, możesz wyłączyć opcję zgłaszania alarmów po wykryciu ruchu dla tej kamery na 10 minut. Nastęonie funkcja wykrywania ruchu w kamerze nie będzie powodowała wyzwalania alarmów przez 10 minut. W ten sposób nie będziesz niepokojony przez fałszywe alarmy i będziesz mógł skoncentrować się na alarmach wymagających Twojej uwagi.</p>
+          <p class="important">Wyłączenie alarmów wpływa na wszystkich operatorów podłączonych do <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> systemu VMS, do którego Ty także jesteś podłączony. </p>
+          <p>Możesz wyłączyć wszystkie nowe alarmym korzystająć z mapy lub <span class="uitext">Menedżera alarmów</span>.</p>
+          <ol>
+            <li value="1">
+              <p>Korzystanie z <span class="uitext">Menedżera alarmów</span>: kliknij alarm na liście prawym przyciskiem myszy i wybierz opcję <span class="uitext">Wyłącz wszystkie nowe alarmy</span>.</p>
+              <p>Korzystanie z mapy: kliknij alarm prawym przyciskiem myszy i wybierz opcje <span class="uitext">Wyłącz wszystkie nowe alarmy</span> &gt; <span class="uitext">Wyłącz</span>.</p>
+              <p>Pojawi się okno <span class="uitext">Wyświetlanie wszystkich nowych alarmów</span>.</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_disablealarmsoneventtypes.png" data-mc-popup-alt="Disable alarms based on event types in XProtect Smart Client.">
+                  <img class="MCPopupThumbnail img" data-mc-width="459" data-mc-height="790" src="../../../Images/sc_disablealarmsoneventtypes_thumb_200_0.png" style="max-width: 400px;mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Disable alarms based on event types in XProtect Smart Client." tabindex="" />
+                </a>
+              </p>
+            </li>
+            <li value="2">Wybierz z listy <span class="uitext">Zdarzenia niepowodujące wyzwalania alarmów</span><img src="../../../Images/1.png" alt="" />, jakiego typu zdarzenia nie powinny powodować wyzwalania alarmów.</li>
+            <li value="3">Okreś, do kiedy lub przez jaki czas zdarzenia wybranego typu nie mają wyzwalać alarmów <img src="../../../Images/2.png" alt="" />.</li>
+            <li value="4">Opcjonalnie dodaj komentarz na temat tego, dlaczego wyłączasz alarmy dotyczące wybranych typów zdarzeń <img src="../../../Images/3.png" alt="" />.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Ignoruj alarmy na mapach<a name="SC_IgnoreAnAlarm.htm"></a></h3>
+          <p>Na mapie, możesz ignorować alarm dla danego elementu przez pewien czas. Na przykład, jeśli kamera jest naprawiana, a więc jest rozłączona, możesz zechcieć ignorować błąd widniejący na mapie w trakcie naprawy. Kiedy ignorujesz alarm na mapie, nie powoduje to usunięcia alarmu z listy alarmów, tylko z mapy.</p>
+          <p>
+            <img src="../../../Images/sc_ignorealarmonmap.png" alt="Ignore alarms on maps in XProtect Smart Client." />
+          </p>
+        </div>
+        <div>
+          <h3>Zamykanie alarmów<a name="SC_CloseAlarms.htm"></a></h3>
+          <p>Po potwierdzeniu alarmu zazwyczaj przypisujesz go osobie, która sprawdzi jego przyczynę. W tym czasie alarm będzie w stanie <span class="uitext">W toku</span>. Po obsłużeniu alarmu można go zamknąć.</p>
+          <p>Aby zamknąć alarm, należy wykonać jedną z poniższych czynności na <span class="uitext">Liście alarmów</span>:</p>
+          <ul>
+            <li>Kliknij prawym przyciskiem myszy alarm i wybierz opcję <span class="uitext">Zamknij</span>.</li>
+            <li>Kliknij dwukrotnie alarm i na liście <span class="uitext">Status</span> wybierz opcję <span class="uitext">Zamknięty</span>.</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <h2>Drukowanie raportów dotyczących alarmów<a name="SC_PrintAReportWithAlarm.htm"></a></h2>
+        <p>Umożliwia drukowanie raportu z informacjami na temat danego alarmu, w szczególności historii alarmu i jeśli jest to możliwe, obrazu nieruchomego z chwili wystąpienia alarmu. Jeśli wybranych jest kilka alarmów z listy, nie możesz używać tej funkcji.</p>
+        <p>Kroki:</p>
+        <ol>
+          <li value="1">Na liście alarmów kliknij alarm prawym przyciskiem myszy.</li>
+          <li value="2">Wybierz opcję <span class="uitext">Drukuj</span>. Wyświetlone zostanie okno.</li>
+          <li value="3">Aby dodać uwagę, wprowadź tekst w pole <span class="uitext">Uwaga</span>.</li>
+          <li value="4">Kliknij przycisk <span class="uitext">Drukuj</span>.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_GetAlarmStatistics"></a>Uzyskaj statystyki dotyczące alarmów</h2>
+        <p>Uzyskaj dane statystyczne na temat alarmów wyzwolonych w systemie VMS <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> przez:</p>
+        <ul>
+          <li>
+            <span class="uitext">Ostatnie 24 godziny</span>
+          </li>
+          <li>
+            <span class="uitext">Ostatnie 7 dni</span>
+          </li>
+          <li>
+            <span class="uitext">Ostatnie 30 dni</span>
+          </li>
+          <li>
+            <span class="uitext">Ostatnich 6 miesięcy</span>
+          </li>
+          <li>
+            <span class="uitext">Ostatni rąk</span>
+          </li>
+        </ul>
+        <p>W oknie <span class="uitext">Raport dotyczący alarmów</span> widoczne są dwa wykresy przedstawiające liczbę alarmów przefiltrowaną według kategorii, na przykład <span class="uitext">Priorytet</span> lub <span class="uitext">Stan</span>, dzięki czemu możesz porównać te dwa wykresy obok siebie. </p>
+        <p>Kroki:</p>
+        <ol>
+          <li value="1">W sekcji <span class="uitext">Lista alarmów</span> kliknij przycisk <span class="uitext">Raporty</span>. Wyświetlone zostanie okno.</li>
+          <li value="2">Nad wykresami wybierz zakres czasu, na przykład <span class="uitext">ostatnie 24 godziny</span>. </li>
+          <li value="3">Wybierz jedną z następujących kategorii z listy <span class="uitext">Wybierz raport</span>:<ul><li><span class="uitext">Kategoria</span></li><li><span class="uitext">Stan</span></li><li><span class="uitext">Priorytet</span></li><li><span class="uitext">Przyczyny zamknięcia</span></li><li><span class="uitext">Strona</span></li><li><span class="uitext">Czas reakcji</span></li></ul></li>
+          <li value="4">Wybierz filtr podrzędny dla każdego wykresu. W przypadku wybrania, na przykład, opcji <span class="uitext">Stan</span>, możesz wybrać opcję <span class="uitext">Nowy</span> na pierwszym wykresie oraz <span class="uitext">W toku</span> na drugim. Wykresy są wypełnione.</li>
+          <li value="5">Kliknij przycisk <img src="../../../Images/sc_printalarmstatisticsicon.png" alt="" />, aby wydrukować wykresy jako raport PDF.</li>
+        </ol>
+        <p>
+          <a name="SC_ViewAlarmReports.htm"></a>
+        </p>
+      </div>
+      <div>
+        <h2>Alarmy na mapach (objaśnienie)<a name="SC_AlarmsOnMaps.htm"></a></h2>
+        <p>Jeżeli widok obsługi alarmu zawiera co najmniej jedną pozycję, możesz przeglądać także alarmy na mapach. Mapy wyświetlają alarmy na podstawie geograficznej lokalizacji kamery, serwera lub innego urządzenia wywołującego alarmy, możesz więc natychmiast zobaczyć skąd pochodzi alarm. Możesz kliknąć prawym przyciskiem myszy i zatwierdzić, wyłączyć lub ukryć alarm bezpośrednio z poziomu mapy.</p>
+        <p>Elementy kamery wyświetlają wideo w formacie miniatury po najechaniu na nie kursorem myszy. Elementy graficzne na mapach, jeśli są używane wraz z alarmami, wyświetlają czerwone okręgi wokół tych elementów w przypadku wystąpienia alarmu. Jeśli na przykład wystąpi alarm powiązany z określoną kamerą, element graficzny odpowiadający tej kamerze zostanie niezwłocznie oznaczony czerwonym okręgiem. Wówczas możesz kliknąć ten element kamery i nie tylko obejrzeć wideo z tej kamery, ale także zająć się alarmem przy użyciu wyświetlonego menu.</p>
+        <p class="tip">Jeśli czerwony nie jest najlepszym kolorem do oznaczania alarmów na Twoich mapach, możesz zmienić ten kolor.</p>
+        <p>Powiedzmy, że kamera, z którą powiązany jest dany alarm, umieszczona jest na mapie poziomu ulicy, jednak w danym momencie oglądasz akurat mapę poziomu miejscowości. W jaki sposób wtedy można zauważyć alarm? Nie stanowi to problemu dzięki obszarom aktywnym - graficznym reprezentacjom wiążącym ze sobą różne poziomy hierarchii mapy. Jeżeli alarm zostanie wykryty na mapie poziomu ulicy, obszar aktywny na mapie poziomu miejscowości zmieni swój kolor na czerwony, wskazując, że na mapie niższego poziomu występuje alarm — nawet, jeśli pomiędzy występują poziomy mapy.</p>
+        <p>Aby powrócić do stanu listy alarmów, który powoduje wyświetlanie alarmów dla wielu elementów, kliknij żądany serwer, priorytet lub stan na liście alarmów.</p>
+      </div>
+      <div>
+        <h2>
+          <a name="Alarms"></a>Alarmy na mapach inteligentnych (objaśnienie)</h2>
+        <p>Alarmy są wyświetlane na mapie inteligentnej, jeśli zostaną wyzwolone przez urządzenie i jeśli to urządzenie będzie dodane do mapy inteligentnej. Zobacz także <a href="../ff_map/sc_configuringmaps.htm#SC_AddingDeletingOrEditi_1.htm" class="MCXref xref">Dodawanie, usuwanie lub edytowanie urządzeń na inteligentnej mapie</a>.</p>
+      </div>
+      <p>Więcej informacji na temat ikon mapy inteligentnej – patrz <a href="../../standard_features/sf_sc/sf_operation/sc_searchingadditionalinfo.htm#Camera" class="MCXref xref">Ikony kamer (objaśnienie)</a>.</p>
+      <div>
+        <h2>Zdarzenia (objaśnienie)<a name="SC_Events.htm"></a></h2>
+        <p>Zdarzenie to predefiniowany incydent w systemie VMS <span class="mc-variable flvar-brand-company.XP variable">XProtect</span>, który można tak skonfigurować, aby powodował wyzwolenie alarmu. Zdarzenia to predefiniowane incydenty systemowe lub zdarzenia definiowane przez użytkownika, na przykład zdarzenia związane z analityką albo ogólne. Zdarzenia mogą, lecz nie muszą być połączone z alarmami.</p>
+        <p>Zdarzenia są zwykle aktywowane automatycznie w tle, na przykład, w wyniku zadziałania czujników zewnętrznych, wykrycia ruchu lub otrzymania danych z innych aplikacji. Zdarzenia można jednak również aktywować ręcznie. Zdarzenia są wykorzystywane w systemie VMS to wyzwalania działań, takich jak rozpoczęcie i zakończenie nagrywania, zmiana ustawień wideo, włączenie <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term33">wyjścia<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Dane wychodzące z komputera. W systemach nadzoru pracujących w protokole IP dane wyjściowe często służą do aktywowania urządzeń takich jak bramy, syreny, światła stroboskopowe itp.</span></a> lub kombinacji działań. Włączenie zdarzenia z poziomu <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> powoduje automatyczne wyzwalanie działań w systemie VMS, na przykład nagrywanie z określonej kamery z określoną <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term14">częstotliwością klatek<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Miara ilości informacji zawartych w materiale wideo. Zwykle wyrażana w klatkach na sekundę.</span></a>, przez określony czas.</p>
+        <p>Administrator systemu określa, co dzieje się w przypadku ręcznego włączenia zdarzenia. </p>
+        <div>
+          <h3>Manualne aktywowanie zdarzeń<a name="SC_ManuallyActivateAnEve.htm"></a></h3>
+          <p>Lista dostępnych <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term11">zdarzeń<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Wstępnie zdefiniowana sytuacja, która występuje w systemie nadzoru i która służy w nim do wyzwalania czynności. W zależności od konfiguracji sytemu nadzoru zdarzenia mogą być powodowane przez dane wejściowe pochodzące z zewnętrznych czujników, przez wykryty ruch, przez dane otrzymane z innych aplikacji lub przez dane wprowadzone ręcznie przez użytkowników. Wystąpienie zdarzenia może na przykład posłużyć do uruchomienia w kamerze rejestrowania z określoną częstością klatek, aktywowania wyjść, wysłania alertów e-mail lub wykonania kombinacji tych czynności.</span></a> jest pogrupowana według serwerów i kamer lub urządzeń, z którymi są powiązane poszczególne zdarzenia. Zdarzenie można aktywować manualnie. Po aktywowaniu zdarzenia nie jest widoczne żadne potwierdzenie.</p>
+          <ol>
+            <li value="1">Na karcie <span class="uitext">Na żywo</span> rozwiń okienko <span class="uitext">Zdarzenie</span>.</li>
+            <li value="2">Kliknij <span class="uitext">Aktywuj</span>.</li>
+            <li value="3">Możesz też kliknąć <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term34">przycisk wyskakujący<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Przycisk wyświetlany jako warstwa nad obrazem, gdy kursor myszy jest umieszczany nad pozycjami poszczególnych kamer w widokach na karcie Na żywo. Przyciski wyskakujące umożliwiają uaktywnianie głośników, zdarzeń, wyjścia, przesuwanie kamer PTZ, rozpoczynanie rejestracji i czyszczenie sygnałów z kamer.</span></a> (jeśli jest dostępny dla kamery), który pojawia się po najechaniu kursorem myszy na obraz.</li>
+          </ol>
+          <p class="note">W hierarchii zdarzenia globalne są wyświetlane pod odpowiednim serwerem. Jeśli serwer znajduje się na liście z czerwoną ikoną, jest niedostępny i nie można go włączyć.</p>
+        </div>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Concept Information</p>
+        <p class="containerItem_container_0">
+          <a href="sc_configuringalarmsandevents.htm">Alarmy i zdarzenia (konfiguracja)</a>
+        </p>
+        <p class="referenceHeading_reference_0">Reference Materials</p>
+        <p class="referenceItem_reference_0">
+          <a href="sc_faq_alarms.htm">Często zadawane pytania: alarmy</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

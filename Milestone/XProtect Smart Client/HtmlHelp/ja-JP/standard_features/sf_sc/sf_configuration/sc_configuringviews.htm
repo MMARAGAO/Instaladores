@@ -1,0 +1,595 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="ja-JP" xml:lang="ja-JP" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="設定" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Configure views in XProtect Smart Client to view video from cameras and other types of content." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=管理者" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=インテグレーター" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=オペレータ" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>ビュー(設定)</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#standard_features/sf_sc/sf_configuration/sc_configuringviews.htm">ナビ付きでトピックを開く</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="パンくず" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>ビュー(設定)</h1>
+      <p>セットアップモードでは、ビューを作成し、各ビューに含めるカメラや他のタイプのコンテンツを指定できます。ビューを整理して表示するには、ビューグループを少なくとも1つ作成する必要があります。これは頻繁にシステム管理者が行います。</p>
+      <p class="note">ビューとグループを編集できるかどうかは、ユーザー権限によって異なります。ビューまたはグループを作成できる場合は、その編集も可能です。 </p>
+      <div>
+        <h2>
+          <a name="SC_ViewsExplained"></a>ビューおよびビューグループ（説明付き）</h2>
+        <p>
+          <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>でビデオを表示する方法をビューと呼びます。<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>では無制限の数のビューを取り扱うことが可能で、さまざまなグループのカメラからのビデオを切り替えることができます。ビューには1～100台のカメラを含められますが、他のタイプのコンテンツ（画像やテキストなど）を含めることも可能です。</p>
+        <p>ビューは、整理しやすいようビューグループに入れる必要があります。</p>
+        <p>ビューは<span class="uitext">ライブ</span>および<span class="uitext">再生</span>タブで利用できます。ビューには、プライベートビューと共有ビューがあります。</p>
+        <div>
+          <ul>
+            <li>プライベートビューは、そのビューを作成したユーザーだけがアクセスできます。ビューをプライベートにするには、<span class="uitext">プライベート</span>フォルダ内でビューを作成します。</li>
+            <li>共有ビューを使うと、複数のオペレータが同じビューを共有できます。お使いになっている<span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMSシステムによって以下が可能です：<ul><li><span class="uitext">共有</span>または<span class="uitext">デフォルトグループ</span>という名前のついた、共有ビューのデフォルトフォルダがある場合もあります</li><li>共有ビューは、すべてのオペレータで共有できる場合と、特定のオペレータのみが選択された共有ビューにアクセスできる場合があります。通常、組織内で、共有ビューを作成して編集できる権限を持つユーザーは限られています（システム管理者など）。</li></ul></li>
+          </ul>
+          <p class="note">ユーザー全員が、<span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMSシステムですべてのカメラにアクセスできるわけではありません。共有ビューに含める機能のうち、一部の機能は以前のバージョンの <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>ではサポートされていない場合があります。共有するユーザーに必要な権限があり、同じ<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>バージョンを実行していることを必ず確認してください。</p>
+        </div>
+        <p>ビューに関する情報などのユーザー設定は<span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMSサーバーに一元的に格納されるため、<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>がインストールされているどのコンピュータでもビューを使用できます。</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />2x2ビューの例</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <img src="../../../../Images/views_explained.jpg" alt="2x2 view in XProtect Smart Client." />
+            </p>
+          </div>
+        </div>
+        <div>
+          <h2>
+            <a name="SC_ContentInsideViewsExp.htm"></a>ビューの内容</h2>
+          <p>セットアップモードの [<span class="uitext">システム概要</span>] ペインには、ビューに追加できる要素が表示されます：</p>
+          <p>
+            <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_systemoverview.jpg" data-mc-popup-alt="What can views contain in XProtect Smart Client?">
+              <img class="MCPopupThumbnail img" data-mc-width="295" data-mc-height="609" src="../../../../Images/sc_systemoverview_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="What can views contain in XProtect Smart Client?" tabindex="" />
+            </a>
+          </p>
+          <table cellspacing="3">
+            <col />
+            <col />
+            <thead>
+              <tr>
+                <th>アイテム</th>
+                <th>説明</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <p>アラーム</p>
+                </td>
+                <td>
+                  <p>アラームのリストおよびアラームのプレビューを表示できます。いずれの要素も [<span class="uitext">アラームマネージャ</span>] タブで利用できます。</p>
+                </td>
+              </tr>
+              <tr>
+                <td>モニターにアクセス</td>
+                <td>
+                  <p>アクセスモニター - <span class="mc-variable flvar-product.ACMName_XPtm variable">XProtect® Access </span>がインストールされていれば、アクセスモニターを設定できます（特定のドア向けなど）。</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>カメラ</p>
+                </td>
+                <td>
+                  <p>ライブカメラからのビデオフィードを表示したり、ビデオを再生したりできます。システム 管理者により定義された名前の下にカメラが表示されます。</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>画面自動切替</p>
+                </td>
+                <td>
+                  <p>指定したペースでカメラを切り替えることができます。</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>ホットスポット</p>
+                </td>
+                <td>
+                  <p>フォーカスしたカメラを高解像度または高フレームレートで表示できます。</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>HTMLページ</p>
+                </td>
+                <td>
+                  <p>Webページを表示できます（オンラインニュースチャンネルなど）。</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>画像</p>
+                </td>
+                <td>
+                  <p>容疑者の写真を配布したい場合などに、画像を表示できます。</p>
+                </td>
+              </tr>
+              <tr data-mc-conditions="flcts-add-on.xp-lp-content">
+                <td>LPR</td>
+                <td>
+                  <p>
+                    <span class="mc-variable flvar-product.LPRName_XPtm variable">XProtect® LPR</span>をインストールすると、LPRカメラをビューに追加できます。</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>マップ</p>
+                </td>
+                <td>平面図または地理的なエリアを表示できます。</td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="mc-variable flvar-brand-company.MMName_short variable">Matrix</span>
+                  </p>
+                </td>
+                <td>
+                  <p>
+                    <span class="mc-variable flvar-brand-company.MMName_short variable">Matrix</span>の位置を表示できます。「<a href="sc_workingwithmatrix_715_.htm#SC_MatrixExplained.htm" class="MCXref xref">Matrix（説明付き）</a>」も参照してください。</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>スマートマップ</p>
+                </td>
+                <td>
+                  <p>以下のオンラインマップサービスのいずれかに基づき、世界地図上でカメラをナビゲートできます。</p>
+                  <ul>
+                    <li>Bing Maps</li>
+                    <li>Google Maps</li>
+                    <li data-mc-conditions="flcts-features.oem-map-service-content">
+                      <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+                    </li>
+                    <li> OpenStreetMap </li>
+                  </ul>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>
+                    <span class="mc-variable flvar-product.SWName variable">Smart Wall</span>コントロール</p>
+                </td>
+                <td>
+                  <p>
+                    <span class="mc-variable flvar-product.SWName_XP variable">XProtect Smart Wall</span>がシステム管理者によって設定されている場合、<span class="mc-variable flvar-product.SWName variable">Smart Wall</span>のコントロールを使用すると、カメラやその他の種類のコンテンツをビデオウォールにプッシュできます。</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>テキスト</p>
+                </td>
+                <td>
+                  <p>他のオペレータに指示を提供したい場合などにテキストを表示できます。</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="mc-variable flvar-product.TName variable">Transact</span>
+                  <p> </p>
+                </td>
+                <td>
+                  <p>
+                    <span class="mc-variable flvar-product.TName_XP variable">XProtect Transact</span>がシステムにインストールされたら、カメラとPOSシステムを一緒に追加できます。</p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_CreateAViewGroup.htm"></a>ビューグループの作成</h2>
+        <p>お使いの<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>は、（ビューを追加することのできる）ビューグループが表示できるように事前に設定されている可能性があります。 ただし、ビューを整理しやすいように独自のビューグループを作成できます。</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />例</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>高層ビルにおいてカメラが10階に設置されている状況を想像してみてください。 このような状況では、階ごとにビューグループを作成し、これらに適宜に名前を付けることになるでしょう：<span class="uitext">1階</span>、<span class="uitext">2階</span>、<span class="uitext">3階</span>など。</p>
+          </div>
+        </div>
+        <p>手順：</p>
+        <ol>
+          <li value="1">セットアップモードの<span class="uitext">ビュー</span>ペインで、グループを追加する<span class="uitext">個人</span>または<span class="uitext">共有</span>の第1階層フォルダを選択します。</li>
+          <li value="2">
+            <span class="uitext">新規グループを作成</span>をクリックします。<p><img src="../../../../Images/create_a_view_group.png" alt="" /></p><p><span class="uitext">新規グループ</span>という名前の新しいグループが作成されます。</p></li>
+          <li value="3">
+            <span class="uitext">新規グループ</span>を選択し、クリックして、名前を上書きします。</li>
+          <li value="4">これで、このグループ内でビューを作成できるようになりました。</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_CreateView.htm"></a>ビューの作成</h2>
+        <p>
+          <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>でビデオの表示または再生をするには、まず必要なカメラを追加するためにビューを作成する必要があります。</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />要件 </a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>ビューを作成する前に、ビューを追加できるグループが必要です。「<a href="#SC_CreateAViewGroup.htm" class="MCXref xref">ビューグループの作成</a>」も参照してください。</p>
+          </div>
+        </div>
+        <p>手順：</p>
+        <ol>
+          <li value="1">右隅の<span class="uitext">セットアップ</span>をクリックしてセットアップモードに移ります。</li>
+          <li value="2">
+            <span class="uitext">ビュー</span>ペイン内で、ビューを追加したいグループを選択します。</li>
+          <li value="3">新しいビューを作成するには、<img src="../../../../Images/create_view.png" alt="" />をクリックします。</li>
+          <li value="4">レイアウトを選択します。レイアウトは<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term2">アスペクト比<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>画像の高さと幅の関係。</span></a>、通常のコンテンツまたは縦長のコンテンツ（高さが幅より大きい場合）に対して最適化されているかどうかに基づいてグループ化されます。<p><img src="../../../../Images/create_view.jpg" alt="View layouts in XProtect Smart Client." /></p></li>
+          <li value="5">デフォルトの<span class="uitext">新規ビュー</span>の名前を上書きして、ビューの名前を入力します。</li>
+          <li value="6">
+            <span class="uitext">セットアップ</span>を再度クリックし、セットアップモードを解除します。 変更が保存されました。</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_CopyRenameOrDeleteAVi.htm"></a>ビューまたはグループのコピー、名前の変更、削除</h2>
+        <p>ビューがあり、それを再利用する場合、コピーすることができます。また、ビューのグループやプライベートビューを共有ビューにコピーすることもできます。</p>
+        <p>手順：</p>
+        <ol>
+          <li value="1">設定モードのナビゲーションペインで、ビューを選択します。</li>
+          <li value="2">
+            <span class="uitext">コピー</span>をクリックするか、<span class="uitext">CTRL</span>+<span class="uitext">C</span>を押します。<p><img src="../../../../Images/copy_rename_or_delete_a_view.png" alt="" /></p></li>
+          <li value="3">ビューを貼り付ける場所に移動して、<span class="uitext">貼り付け</span>を選択するか、<span class="uitext">CTRL</span>+<span class="uitext">V</span>を押します。<p><img src="../../../../Images/copy_rename_or_delete_a_view_1.png" alt="" /></p><p class="tip">代わりに、ビューを選択して、別のフォルダーへドラッグすることも可能です。</p></li>
+          <li value="4">コピーしたビューの名前は、デフォルトで、元の名前に (2) が付きます。名前を変更するには、右クリックして<span class="uitext">名前の変更</span>を選択します。<p><img src="../../../../Images/copy_rename_or_delete_a_view_2.png" alt="" /></p></li>
+          <li value="5">ビューを削除するには、右クリックして<span class="uitext">削除</span>を選択します。<p><img src="../../../../Images/copy_rename_or_delete_a_view_3.png" alt="" /></p></li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_AddingContentToViews.htm"></a>カメラと他のタイプの要素をビューに追加</h2>
+        <p>例えばカメラなど、異なるタイプの要素をビューに追加できます。<a href="#SC_ContentInsideViewsExp.htm" class="MCXref xref">ビューの内容</a></p>
+        <p>手順:</p>
+        <ol>
+          <li value="1">変更したいビューを開きます。</li>
+          <li value="2">
+            <span class="uitext">セットアップ</span>をクリックしてセットアップモードに移ります。 </li>
+          <li value="3">
+            <p>[<span class="uitext">システム概要</span>] ペインで、必要な要素をビューアイテムにドラッグします。</p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_systemoverview.jpg" data-mc-popup-alt="What can views contain in XProtect Smart Client?">
+                <img class="MCPopupThumbnail img" data-mc-width="295" data-mc-height="609" src="../../../../Images/sc_systemoverview_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="What can views contain in XProtect Smart Client?" tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="4">要素に関する追加情報をすべて入力します。</li>
+          <li value="5">
+            <span class="uitext">セットアップ</span>を再度クリックし、セットアップモードを解除します。 変更が保存されました。</li>
+        </ol>
+      </div>
+      <p class="note">詳細については、<a href="#SC_AddingContentToViewsDetailed" class="MCXref xref">コンテンツをビューに追加（詳細）</a>を参照してください。</p>
+      <div>
+        <h2>
+          <a name="SC_AssignAShortcutNumber.htm"></a>ショートカット番号をビューに割り当てる</h2>
+        <p>ショートカット番号をビューに割り当てると、標準的なキーボードショートカットを使用してビューを選択できるようになります（<a href="../sf_operation/sc_workingwithnavelements.htm#SC_KeyboardShortcutsExpl.htm" class="MCXref xref">キーボードショートカット（概要）</a>を参照）。</p>
+        <ol>
+          <li value="1">
+            <span class="uitext">セットアップ</span>をクリックしてセットアップモードに移ります。 </li>
+          <li value="2">
+            <span class="uitext">［ビュー］</span>ペインで、ショートカットを割り当てたいビューを選択します。</li>
+          <li value="3">
+            <span class="uitext">［ショートカット］</span>フィールドでショートカット番号を指定し、ENTERを押します。ビュー前面でショートカット番号が括弧内に示されます。</li>
+          <li value="4">必要に応じて、他のビューにも同じ操作を繰り返します。</li>
+          <li value="5">
+            <span class="uitext">セットアップ</span>を再度クリックし、セットアップモードを解除します。 変更が保存されました。</li>
+        </ol>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_AddingContentToViewsDetailed"></a>コンテンツをビューに追加（詳細）</h2>
+        <p>「<a href="#SC_AddingContentToViews.htm" class="MCXref xref">カメラと他のタイプの要素をビューに追加</a>」で説明されている通り、カメラや他のタイプの要素をビューに追加できます。このセクションでは詳細な方法を説明します。</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />アラームをビューに追加する</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="../../../feature_flags/ff_managealarms/sc_configuringalarmsandevents.htm#SC_AddAlarmsToViews" class="MCXref xref">アラームをビューに追加する</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />カメラをビューに追加</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>カメラからのビデオを表示するには、まずはカメラをビューに追加する必要があります。</p>
+            <ol>
+              <li value="1">セットアップモードで、カメラを追加するビューを選択します。</li>
+              <li value="2">
+                <span class="uitext">システム概要</span>ペインで、該当するサーバー<img src="../../../../Images/add_a_camera_to_a_view.png" alt="" />を展開して、そのサーバーで使用できるカメラを一覧表示します。<p class="note">サーバーが赤色のアイコンで表示されている場合は、利用できず、そのサーバーのカメラからは表示できません。</p></li>
+              <li value="3">
+                <p>リストからカメラを選択し、これをビュー内の表示アイテムにドラッグします。 カメラからの画像は、選択した表示アイテムに表示されます。 </p>
+                <p class="note">ビデオの領域がぼやけているか、グレーになっている場合は、システム管理者がその領域を<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term55">プライバシーマスク<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>カメラビュー内のビデオの領域をカバーするぼかし、あるいは単色。定義されたエリアは、クライアントのライブ、再生、 ホットスポット、画面自動切替、スマートマップ、スマートサーチ、エクスポートモードで、ぼかされるか、隠されます。</span></a>で保護したためです（<a href="../../../feature_flags/ff_extendedprivacymasking/sc_workingwithprivacymasking.htm#SC_PrivacyMaskingExplain.htm" class="MCXref xref">プライバシーマスク（説明付き）</a>を参照）。</p>
+              </li>
+              <li value="4">
+                <span class="uitext">プロパティ</span>ペインで、カメラのプロパティ(画質や<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term14">フレームレート<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>モーションビデオに含まれている情報量を示す単位。通常、FPS（秒当たりのフレーム数）で計算します。</span></a>など)を指定できます。詳細については、「<a href="sc_configuringcamerasettings.htm#SC_CameraSettings.htm" class="MCXref xref">カメラ設定</a>」を参照してください。</li>
+              <li value="5">追加したい各カメラに対して、上記のステップを繰り返します。</li>
+              <li value="6">複数のカメラをビューに追加するには（例：カメラフォルダー内の全カメラ）、フォルダーをビューにドラッグします。 ビュー内で、十分な数の表示アイテムが利用可能になっていることを確認してください。</li>
+            </ol>
+            <p class="tip">どのカメラをビューに表示するかは、さまざまなカメラを表示アイテムにドラッグすることで容易に変更できます。</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />画面自動切替をビューに追加</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="sc_configuringcarousels.htm#SC_AddCarouselToViews.htm" class="MCXref xref">画面自動切替をビューに追加</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />画像をビューに追加</a>
+            <a name="SC_AddImageToViews.htm"></a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>ビューには静止画像を表示することができます。 たとえば、不審者のスナップショットまたは緊急避難用出口の図を共有する場合に有用です。</p>
+            <p>手順：</p>
+            <ol>
+              <li value="1">
+                <span class="uitext">セットアップ</span>をクリックしてセットアップモードに移ります。 </li>
+              <li value="2">
+                <p>
+                  <span class="uitext">システム概要</span>ペインで、<span class="uitext">画像</span>アイテムをビューアイテムにドラッグします。 ウィンドウが表示されます。</p>
+                <p>
+                  <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_addimagetoview.jpg" data-mc-popup-alt="Add images to views in XProtect Smart Client.">
+                    <img class="MCPopupThumbnail img" data-mc-width="306" data-mc-height="946" src="../../../../Images/sc_addimagetoview_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add images to views in XProtect Smart Client." tabindex="" />
+                  </a>
+                </p>
+              </li>
+              <li value="3">追加したい画像ファイルを探し、これを選択します。</li>
+              <li value="4">
+                <span class="uitext">［開く］</span>をクリックします。 これで、画像が表示アイテム内に表示されます。</li>
+              <li value="5">イメージファイルの場所にアクセスできない他の人に対して、画像を使えるようにするには、<span class="uitext">プロパティ</span>ペインで、<span class="uitext">組み込み</span>をクリックします。ファイルはシステム内に保存されます。</li>
+              <li value="6">
+                <span class="uitext">セットアップ</span>を再度クリックし、セットアップモードを解除します。 変更が保存されました。</li>
+            </ol>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />ホットスポットをビューに追加</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="sc_configuringhotspots.htm#SC_AddHotspotToViews.htm" class="MCXref xref">ホットスポットをビューに追加</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />マップをビューに追加</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="sc_configuringmaps.htm#SC_AddMapToViews.htm" class="MCXref xref">マップをビューに追加</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />スマートマップをビューに追加</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <a href="../../../feature_flags/ff_map/sc_configuringmaps.htm#SC_AddSmartMapToView.htm" class="MCXref xref">スマートマップをビューに追加</a>
+            </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />テキストをビューに追加</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>テキストは、ビュー内の1つまたは複数の表示アイテムに追加できます。 たとえば、メッセージまたは運用手順をオペレータに送信したり、セキュリティ担当者の作業スケジュールを投稿する場合に有用です。最大1000文字まで入力できます。</p>
+            <p>手順：</p>
+            <ol>
+              <li value="1">
+                <span class="uitext">セットアップ</span>をクリックしてセットアップモードに移ります。 </li>
+              <li value="2">[<span class="uitext">システム概要</span>] ペインで、テキストを表示させるビューアイテムに [<span class="uitext">テキスト</span>] 要素をドラッグします。ウィンドウが表示されます。</li>
+              <li value="3">テキストを入力します。</li>
+              <li value="4">
+                <span class="uitext">保存</span>をクリックします。</li>
+              <li value="5">保存後にテキストを変更する場合は、セットアップモードで、<span class="uitext">プロパティ</span>ペインの<span class="uitext">テキストの編集</span> をクリックします。</li>
+            </ol>
+            <div>
+              <p class="note">Microsoft WordやMicrosoft Excelなどの製品から表を挿入することはできますが、表の変更はできません。</p>
+            </div>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />
+            </a>
+            <a name="Add"></a>
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_" aria-expanded="false">HTMLページをビューに追加</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Webページをビューに追加できます (HTML、PHP、ASPページなど)。これは、運用手順をオンラインで提供したり、カメラまたは他のタイプのコンテンツと共に会社のWebページを表示したりする際に役立ちます。</p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/add_html_page_to_view_or_1.jpg" data-mc-popup-alt="Add webpages to views in XProtect Smart Client to display web context next to video feeds.">
+                <img class="MCPopupThumbnail img" data-mc-width="1320" data-mc-height="854" src="../../../../Images/add_html_page_to_view_or_1_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add webpages to views in XProtect Smart Client to display web context next to video feeds." tabindex="" />
+              </a>
+            </p>
+            <p>手順：</p>
+            <ol>
+              <li value="1">変更したいビューを開きます。</li>
+              <li value="2">
+                <span class="uitext">セットアップ</span>をクリックしてセットアップモードに移ります。 </li>
+              <li value="3">
+                <span class="uitext">システム概要</span>ペインで<span class="uitext">HTMLページ</span>アイテムをクリックし、ビューアイテムのいずれかにドラッグします。ウィンドウが表示されます。<p><img src="../../../../Images/add_html_page_to_view_or_1.png" alt="Enter URL when adding webpage to views in XProtect Smart Client." /></p></li>
+              <li value="4">
+                <p>
+                  <span class="uitext">[開く]</span>フィールドで、WebページのWebアドレスを入力します。</p>
+                <p class="important">ローカル コンピュータ、ネットワーク、またはFTPサーバーに格納されているWebページを使用するには、そのWebページのプロパティで表示モードが<span class="uitext">[互換性]</span>に設定されていることを確認してください。<a href="#Web" class="MCXref xref">Webページのプロパティ</a>を参照してください。さもなければ、エラーメッセージが表示されます。<a href="../sf_troubleshooting/sc_troubleshootinghtmlpages.htm" class="MCXref xref">Webページ (トラブルシューティング)</a>を参照してください。</p>
+              </li>
+              <li value="5">
+                <span class="uitext">OK</span>をクリックします。</li>
+              <li value="6">プロパティを設定するには、<span class="uitext">［プロパティ］</span>ペインを展開します。</li>
+              <li value="7">
+                <span class="uitext">セットアップ</span>を再度クリックし、セットアップモードを解除します。 変更が保存されました。</li>
+            </ol>
+            <p class="note">セットアップモードではWebページをナビゲートできません。</p>
+            <h3>
+              <a name="Web"></a>Webページのプロパティ</h3>
+            <table cellspacing="3">
+              <col />
+              <col style="width: 376px;" />
+              <thead>
+                <tr>
+                  <th>
+                    <p>名前</p>
+                  </th>
+                  <th>
+                    <p>説明</p>
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">編集</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>新しいURLまたはWebページのファイルの場所を指定します。</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">表示モード</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>Webページを表示するブラウザー エンジンを選択します。2つのオプションがあります:</p>
+                    <ul>
+                      <li>
+                        <span class="uitext">標準</span> - この設定ではMicrosoft Edgeを使用します。WebページがWebサーバー上にあり、使用されているネットワーク プロトコルがHTTPまたはHTTPSのいずれかの場合に<span class="uitext">[標準]</span>を選択します。</li>
+                      <li>
+                        <span class="uitext">互換性</span> - この設定ではInternet Explorerを使用します。以下のWebページの場合は<span class="uitext">[互換性]</span>を選択します:<ul><li>ページがはローカルに保存されている場合</li><li>HTTPとHTTPS以外のネットワーク プロトコルを使用している</li><li>インタラクティブになるよう意図されたスクリプトが含まれている<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span></li><li>HTMLの古いバージョンを使用している</li></ul></li>
+                    </ul>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">スケーリング</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>Webページのスケーリングを選択します。最適なスケーリングは、インポートされたWebページのコンテンツと、その表示方法によって異なります。</p>
+                    <p class="note">この設定は、<span class="uitext">互換性</span>モードでのみ有効です。</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>
+                      <span class="uitext">ツールバーを非表示にする</span>
+                    </p>
+                  </td>
+                  <td>
+                    <p>チェックボックスを選択して、インポートされた各Webページの上に挿入されるナビゲーション ツールバーを非表示にします。</p>
+                    <p>
+                      <img src="../../../../Images/set_properties_for_html_page.png" alt="" />
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />オーバーレイボタンをビューに追加</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <span class="uitext">ライブ</span>タブのビュー内の個別のカメラ位置にマウスを移動させた時に表示される<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term34">オーバーレイボタン<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>ライブタブのビューの個別のカメラ位置にマウスのカーソルを移動させた際、ビデオにレイヤーとして表示されるボタンです。オーバーレイボタンは、スピーカーの起動、イベント、出力、PTZカメラの移動、録画開始、カメラからの信号の消去に使用します。</span></a>で、スピーカー、イベント、<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term33">出力<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>コンピュータから送られるデータ。 IP監視システムで、出力はゲートやサイレン、ストロボなどのデバイスを起動するため、頻繁に使用されます。</span></a>などを起動できます。</p>
+            <p>必要な数のボタンを追加できます。</p>
+            <ol>
+              <li value="1">
+                <span class="uitext">セットアップ</span>をクリックしてセットアップモードに移ります。 </li>
+              <li value="2">
+                <span class="uitext">オーバーレイボタン</span>ペインでアクションを選択し、カメラビューアイテムにドラッグします。</li>
+              <li value="3">マウスを離すと、オーバーレイボタンが表示されます。ボタンのサイズを変更する場合は、表示されるハンドルをドラッグします。<p><img src="../../../../Images/add_an_overlay_button_to_a.jpg" alt="" /></p></li>
+              <li value="4">オーバーレイボタンのテキストを変更するには、テキストをダブルクリックして上書きし、続いてチェックボックス<img src="../../../../Images/add_an_overlay_button_to_a.png" alt="" />を選択して保存します。 元に戻すには、キャンセルボタン<img src="../../../../Images/add_an_overlay_button_to_a_1.png" alt="" />をクリックします。保存するときに、テキストはボタンで最大限のサイズになります。</li>
+              <li value="5">
+                <span class="uitext">セットアップ</span>を再度クリックし、セットアップモードを解除します。 変更が保存されました。</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <p>
+        <a name="SC_AssignAShortcutNumber.htm"></a>
+      </p>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">概念情報</p>
+        <p class="containerItem_container_0">
+          <a href="../sf_operation/sc_workingwithviews.htm">ビューの管理</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

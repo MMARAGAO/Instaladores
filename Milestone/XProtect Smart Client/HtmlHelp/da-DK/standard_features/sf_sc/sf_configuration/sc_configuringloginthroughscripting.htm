@@ -1,0 +1,278 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="da-DK" xml:lang="da-DK" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="Konfiguration" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Create scripts to control the login procudure and switch between views in XProtect Smart Client." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Udvikler" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Udviklingschef" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Scripting</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#standard_features/sf_sc/sf_configuration/sc_configuringloginthroughscripting.htm">Åbn emne med navigation</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Brødkrummer" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>Scripting</h1>
+      <div>
+        <h2>Scripte for log på (forklaret)<a name="SC_StartupScripting.htm"></a></h2>
+        <p>Du kan bruge scripting til helt eller delvist at styre logon-proceduren i <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>.</p>
+        <ul>
+          <li>Hvis du bruger <span class="uitext">Basisgodkendelse</span> eller <span class="uitext">Windows-godkendelse</span>, kan du få logon-vinduet for <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> til at åbne med allerede angivne oplysninger om serveradresse og brugernavn, sådan at brugere blot skal angive en adgangskode for at logge på.</li>
+          <li>Hvis du bruger <span class="uitext">Windows-godkendelse (aktuelle bruger)</span>, kan du få <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> til at oprette forbindelse til overvågningssystemet automatisk ud fra oplysningerne om brugerens aktuelle Windows-logon.</li>
+        </ul>
+        <div class="important">
+          <p>Scripting af logon-proceduren baseret på <span class="uitext">Basisgodkendelse</span> eller <span class="uitext">Windows-godkendelse</span> kræver, at du føjer ikke-krypterede følsomme oplysninger til en SCS-fil, som du gemmer lokalt med <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>-programfilerne:</p>
+          <ul>
+            <li>Værtsnavn</li>
+            <li>Brugernavn</li>
+            <li>Adgangskode</li>
+          </ul>
+          <p>Hvis du gemmer ikke-krypterede oplysninger, kan det gå ud over sikkerheden på dit system eller overholdelsen af GDPR. Oplysningerne i SCS-filen kan læses:</p>
+          <ul>
+            <li>Af alle, som har adgang til filen</li>
+            <li>I fodaftrykket for hukommelsen for det <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>-program, der blev startet af SCS-filen eller af en kommando-linje, som leverer brugernavn og adgangskode</li>
+          </ul>
+          <p>
+            <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> anbefaler, at du bruger <span class="uitext">Windows-godkendelse (aktuelle bruger)</span>. Hvis du skal bruge <span class="uitext">Basisgodkendelse</span> eller <span class="uitext">Windows-godkendelse</span>, bør du begrænse adgangen til SCS-filen.</p>
+        </div>
+      </div>
+      <div>
+        <h2>Scripte for log på - parametre<a name="SC_Scripting_Parameters.htm"></a></h2>
+        <p>Du kan bruge disse parametre:</p>
+        <p>ServerAddress</p>
+        <p>Henviser til URL for den administrationsserver, som <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> forbinder til.</p>
+        <p>Det følgende eksempel viser logon-vinduet for <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> med <span class="citationtext">http://ourserver</span> i feltet <span class="uitext">Serveradresse</span>:</p>
+        <p class="codechunk">Client.exe -ServerAddress="http://ourserver"</p>
+        <p>Standardgodkendelsestype er <span class="uitext">Windows-godkendelse (aktuelle bruger)</span>. Medmindre du ændrer dette via parameteren <span class="uitext">AuthenticationType</span> (beskrevet i det følgende), viser logon-vinduet automatisk den aktuelle Windows-bruger i feltet <span class="uitext">Brugernavn</span>.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />UserName</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Refererer til et specifikt brugernavn.</p>
+            <p>Det følgende eksempel viser <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>s logon-vindue med <span class="citationtext">http://ourserver</span> i feltet <span class="uitext">Serveradresse</span> og <span class="specialbold">Tommy</span> i feltet <span class="uitext">Brugernavn</span>:</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -UserName="Tommy"</p>
+            <p class="note">Denne parameter er kun relevant for <span class="uitext">Windows-godkendelse</span> og <span class="uitext">Basis godkendelse</span>. Du bruger parameteren <span class="uitext">AuthenticationType</span> til at styre, hvilken godkendelsesmetode du vil bruge.</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Adgangskode</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Refererer til en specifik adgangskode.</p>
+            <p>Det følgende eksempel viser <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>s logon-vindue med <span class="citationtext">http://ourserver</span> i feltet <span class="uitext">Serveradresse</span> og <span class="specialbold">Tommy</span> i feltet <span class="uitext">Brugernavn</span> og <span class="specialbold">T0mMy5Pa55w0rD</span> i feltet <span class="uitext">Adgangskode</span>:</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -UserName="Tommy" -Password="T0mMy5Pa55w0rD"</p>
+            <p class="note">Denne parameter er kun relevant for <span class="uitext">Windows-godkendelse</span> og <span class="uitext">Basis godkendelse</span>. Du bruger parameteren <span class="uitext">AuthenticationType</span> til at styre, hvilken godkendelsesmetode du vil bruge.</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />AuthenticationType</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Refererer til en af de tre godkendelsesmetoder i <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>: <span class="uitext">Windows-godkendelse (aktuelle bruger)</span> (kaldet <span class="uitext">WindowsDefault</span> i startscripts), <span class="uitext">Windows-godkendelse</span> (kaldet <span class="uitext">Windows</span> i startscripts), eller <span class="uitext">Basisgodkendelse</span> (kaldet <span class="uitext">Simple</span> i startscripts).</p>
+            <p>Det følgende eksempel viser logon-vinduet for <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> med <span class="citationtext">http://ourserver</span> i feltet <span class="uitext">Serveradresse</span>, <span class="uitext">Basis godkendelse</span> valgt i feltet <span class="uitext">Godkendelse</span>, <span class="specialbold">Tommy</span> i feltet <span class="uitext">Brugernavn</span> og <span class="specialbold">T0mMy5Pa55w0rD</span> (erstattet med asterisk-tegn) i feltet <span class="uitext">Adgangskode</span>:</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -UserName="Tommy" -Password="T0mMy5Pa55w0rD" -AuthenticationType="Simple"</p>
+            <p>Hvis du bruger <span class="uitext">Windows-godkendelse</span>, er eksemplet:</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -UserName="Tommy" -Password="T0mMy5Pa55w0rD" -AuthenticationType="Windows"</p>
+            <p>Hvis du bruger <span class="uitext">Windows-godkendelse (aktuelle bruger)</span>, vil parametrene <span class="uitext">UserName</span> og <span class="uitext">Password</span> ikke være nødvendige, og eksemplet vil se således ud:</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -AuthenticationType="WindowsDefault"</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Script</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Refererer til en fuld sti til en .scs script (en scripttype, der bruges til at styre <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>).</p>
+            <p>Det følgende eksempel bruger et .scs script til logon:</p>
+            <p class="codechunk">Client.exe -Script=c:\startup.scs</p>
+            <p>Eksempel på et .scs-script til at logge på <span class="citationtext">http://ourserver</span> med den aktuelle Windows-bruger:</p>
+            <p class="codechunk">&lt;ScriptEngine&gt;</p>
+            <p class="codechunk"> &lt;Login&gt;</p>
+            <p class="codechunk">   &lt;ServerAddress&gt;http://ourserver&lt;/ServerAddress&gt;</p>
+            <p class="codechunk">   &lt;AuthenticationType&gt;WindowsDefault&lt;/AuthenticationType&gt;</p>
+            <p class="codechunk"> &lt;/Login&gt;</p>
+            <p class="codechunk">&lt;/ScriptEngine&gt;</p>
+            <p>Du kan bruge mange af funktionskaldene i <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> (se Liste med funktionskald) til at tilføje yderligere funktionalitet til .scs scripts. I det følgende eksempel har vi tilføjet en linje, så .scs-scriptet fra det tidligere eksempel også minimerer <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>-programmet:</p>
+            <p class="codechunk">&lt;ScriptEngine&gt;</p>
+            <p class="codechunk"> &lt;Login&gt;</p>
+            <p class="codechunk">   &lt;ServerAddress&gt;http://ourserver&lt;/ServerAddress&gt;</p>
+            <p class="codechunk">   &lt;AuthenticationType&gt;WindowsDefault&lt;/AuthenticationType&gt;</p>
+            <p class="codechunk"> &lt;/Login&gt;</p>
+            <p class="codechunk"> &lt;Script&gt;SCS. Application.Minimize();&lt;/Script&gt;</p>
+            <p class="codechunk">&lt;/ScriptEngine&gt;</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Format</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Gyldige formater for parametre er:</p>
+            <p class="codechunk">{-,/,--}param{ ,=,:}((".')value(",'))</p>
+            <p>Eksempler:</p>
+            <p class="codechunk">-UserName Tommy</p>
+            <p class="codechunk">--UserName Tommy /UserName:"Tommy" /UserName=Tommy -Password 'Tommy'</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_UseAnHTMLPageForNavig.htm"></a>Scripte HTML-side til navigation</h2>
+        <p>Du kan bruge scripting til at oprette HTML-sider, hvor du kan skifte mellem visninger. HTML-sider kan føjes til dine visninger, så de bliver vist sammen med video fra dine kameraer.</p>
+        <p>Eksempel: På en HTML-side kan du indsætte en klikbar plantegning over en bygning, som vil gøre det muligt for operatører blot at klikke på en del af plantegningen og så øjeblikkeligt skifte til en visning fra den del af bygningen. </p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Krav</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <ul>
+              <li>Hvis dit <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS-system understøtter <span class="mc-variable flvar-product.SC variable">Smart Client</span>-profiler, skal du aktivere HTML-scripting på de fornødne <span class="mc-variable flvar-product.SC variable">Smart Client</span>-profiler i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>.</li>
+              <li>Hvis dit <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS-system ikke understøtter <span class="mc-variable flvar-product.SC variable">Smart Client</span>-profiler, skal du aktivere HTML-scripting i <span class="uitext">Client.exe.config</span>-filen.</li>
+            </ul>
+          </div>
+        </div>
+        <p>I det følgende kan du se eksempler på HTML-sider til <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>-navigation:</p>
+        <ul>
+          <li> En simpel HTML-side med knapper</li>
+          <li>En mere avanceret HTML-side med et klikbart grafikobjekt</li>
+          <li>En tjekliste til systemadministratorer, der viser de opgaver, der er forbundet med oprettelse og distribution af HTML-sider til <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>-operatører</li>
+        </ul>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Eksempel på en HTML-side med knapnavigation</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Det er meget hurtigt at oprette en HTML-side med knapper, der kan bruges til navigation. Du kan oprette mange forskellige slags knapper på HTML-siden. I dette eksempel opretter vi blot to typer knapper:</p>
+            <ul>
+              <li>
+                <span class="specialbold">Knapper til at skifte mellem visningerne i <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span></span>
+                <p>Krævet HTML-syntaks:</p>
+                <p class="codechunk">&lt;input type="button" value=" Buttontext" onclick="SCS. Views.SelectView('Viewstatus.Groupname. Viewname');"&gt;</p>
+                <p>Hvor <span class="uitext">Viewstatus</span> indikerer om visningen er delt eller privat (hvis HTML-siden skal distribueres mellem flere brugere, <span class="specialbold">skal</span> visningen være delt).</p>
+                <p>Eksempel fra en rigtig knap:</p>
+                <p class="codechunk">&lt;input type="button" value="Go to Shared Group1 View2" onclick="SCS. Views.SelectView('Shared.Group1. View2');"&gt;</p>
+                <p>Denne knap giver brugerne mulighed for at gå til en visning kaldt <span class="uitext">View2</span> i en delt gruppe kaldt <span class="uitext">Group1</span>.</p>
+                <p>
+                  <span class="specialbold">Knapper til at skifte mellem faner</span>: <span class="uitext">Live</span> og <span class="uitext">Afspilning</span> Husk på, at nogle brugere måske ikke har rettigheder til at se alle faner.</p>
+                <p>Krævet HTML-syntaks:</p>
+                <p>
+                  <span class="uitext">Live-fanen</span>: <code class="codesnippet">&lt;input type="button" value="Buttontext" onclick="SCS. Application.ShowLive();"&gt;</code></p>
+                <p>
+                  <span class="uitext">Afspilning-fanen</span>: <span class="codesnippet">&lt;input type="button" value="Buttontext" onclick="SCS. Application.ShowBrowse();"&gt;</span></p>
+              </li>
+            </ul>
+            <p class="tip">Erfarne brugere kan oprette mange andre typer af knapper ved hjælp af de cirka 100 forskellige funktionskald, der findes i <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. </p>
+            <p>I det følgende har vi oprettet to delte grupper i <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Vi har kaldt dem <span class="uitext">Group1</span> og <span class="uitext">Group2</span>. Hver gruppe indeholder to visninger, som hedder <span class="uitext">View1</span> og <span class="uitext">View2</span>.</p>
+            <p>Vi har også oprettet en HTML-side med knapper, som sætter brugerne i stand til at skifte mellem fire forskellige visninger samt mellem to af fanerne i <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>: <span class="uitext">Live</span> og <span class="uitext">Afspilning</span>. Når siden vises i en browser, ser HTML-siden således ud:</p>
+            <p>
+              <img src="../../../../Images/use_an_html_page_for_navigation.png" alt="" />
+            </p>
+            <p>HTML-side med knapper til navigation mellem visninger og faner</p>
+            <p>Vi har gemt HTML-siden lokalt, i dette tilfælde på brugerens C: drev. Når HTML-siden skal bruges til navigation, skal HTML-siden gemmes lokalt for at åbne den i kompatibilitetstilstand. Se også <a href="sc_configuringviews.htm#Web" class="MCXref xref">Egenskaber for webside </a>.</p>
+            <p>Når du gemmer HTML-siden lokalt, gem den et sted, hvortil du kan definere en utvetydig sti, for eksempel i en mappe på brugerens C: drev (eksempelvis C:\minmappe\fil.htm). Du skal ikke gemme HTML-siden på brugerens skrivebord eller i mappen <span class="uitext">Dokumenter</span>, da det ikke vil virke, på grund af den måde Windows danner stien til disse placeringer.</p>
+            <p>Vi importerer derefter HTML-siden til de ønskede visninger i <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Eksempel på en HTML-side med navigation via kort</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Du kan også oprette en HTML-side med mere avanceret indhold, for eksempel et kort med hotspots, hvorfra brugerne kan skifte mellem visninger.</p>
+            <p>I det følgende eksempel har vi beholdt de to grupper og visninger fra forrige eksempel. I stedet for at bruge knapper har vi oprettet en HTML-side med et billede af en etageplan og oprettet et kort med etageplanen. Når siden vises i en browser, ser HTML-siden således ud:</p>
+            <p>
+              <img src="../../../../Images/use_an_html_page_for_navigation_2.png" alt="" />
+            </p>
+            <p>HTML-side med et kort til navigation mellem visninger</p>
+            <p>I dette eksempel har vi opdelt etageplanen i fire farvede zoner og defineret et område på kortet for hver zone. Brugere kan klikke på en zone for at gå til visningen, der viser kameraer fra den zone.</p>
+            <p>For eksempel svarer den røde zone på vores kort til knappen <span class="uitext">Go to Shared Group2 View2</span> fra forrige eksempel. Når du klikker i den røde zone, kommer du hen til <span class="uitext">View2</span> i <span class="uitext">Group2</span>.</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Importere en HTML-side</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Import af en HTML-side med navigation sker i princippet på samme måde som, når du importerer andre typer af HTML-sider ind i en visning i <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Se <a href="sc_configuringviews.htm#Add" class="MCXref xref">Føj websider til visninger</a>. </p>
+            <div class="note">
+              <ul>
+                <li>HTML-siden skal gemmes lokalt på operatørens computer</li>
+                <li>For at få navigation til at virke ordentligt bør du importere HTML-siden ind på flere visninger</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Systemadministratorens tjekliste</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>For at oprette og distribuere HTML-sider til navigation til <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>-operatorører skal man gøre følgende:</p>
+            <ol>
+              <li value="1">
+                <span class="specialbold">Opret</span> den ønskede HTML-side. Navigationselementerne i HTML-siden skal svare til de visninger, brugerne kan se i deres <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. For eksempel for at en knap, der skifter til <span class="uitext">View1</span>, skal kunne fungere, skal en visning med navnet <span class="uitext">View1</span> eksistere i brugernes <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>-installationer. Hvis du vil distribuere HTML-siden til en gruppe af brugere, skal visningerne, der henvises til på HTML-siden, være placeret i delte grupper.</li>
+              <li value="2">
+                <span class="specialbold">Gem</span> HTML-siden lokalt på hver computer, hvorpå den skal bruges. Når du gemmer HTML-siden lokalt, så gem den et sted, hvortil du kan definere en utvetydig sti, for eksempel i en mappe på brugerens C-drev (eksempelvis C:\minmappe\fil.htm). Du skal ikke gemme HTML-siden på brugerens skrivebord eller i mappen <span class="uitext">Dokumenter</span>, da det ikke vil virke, på grund af den måde Windows danner stien til disse placeringer.</li>
+              <li value="3">
+                <span class="specialbold">Importer</span> HTML-siden ind i fornødne visninger i <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Se <a href="sc_configuringviews.htm#Add" class="MCXref xref">Føj websider til visninger</a>. </li>
+              <li value="4">
+                <span class="specialbold">Test</span>, at navigationselementerne på den importerede HTML-side virker som beregnet.</li>
+            </ol>
+            <p class="note">For oplysninger om fejlfinding, se <a href="../sf_troubleshooting/sc_troubleshootinghtmlpages.htm" class="MCXref xref">Websider (fejlfinding)</a>.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Konceptinformation</p>
+        <p class="containerItem_container_0">
+          <a href="../sf_operation/sc_loggingin_366_.htm">Logge på</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

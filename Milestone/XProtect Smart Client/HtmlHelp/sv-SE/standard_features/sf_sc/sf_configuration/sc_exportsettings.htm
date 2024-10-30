@@ -1,0 +1,348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="sv-SE" xml:lang="sv-SE" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="Drift" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Avgör vad som ska exporteras och var exporten skall skapas. Lägg till integritetsmasker till din export och kryptera den med ett lösenord enligt AES-256-standard." />
+    <meta class="addSearch product" content="product=Recording Server" data-type="text" name="addsearch-custom-field" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=Recording Server" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Operatör" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client – Player" class="addSearch product" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Exportinställningar</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#standard_features/sf_sc/sf_configuration/sc_exportsettings.htm">Öppna ämne med navigering</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>Exportinställningar</h1>
+      <p>På fliken <span class="uitext">Exporter</span> kan du välja vilka format som ska användas för exporten, och för varje format kan du ändra <span class="uitext">Exportinställningar</span>:</p>
+      <ul>
+        <li>
+          <p>
+            <a href="#format" class="MCXref xref"> XProtect formatinställningar</a>
+          </p>
+        </li>
+        <li>
+          <p>
+            <a href="#SC_MediaPlayerFormat" class="MCXref xref">Mediaspelarformatinställningar</a>
+          </p>
+        </li>
+        <li>
+          <p>
+            <a href="#Still" class="MCXref xref">Stillbildsinställningar</a>
+          </p>
+        </li>
+      </ul>
+      <p>
+        <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_exportstab_exportsettings_1.jpg" data-mc-popup-alt="Fönstret Exportinställningar i XProtect Smart Client. Fönstret har flikar för vardera exportformat: XProtect-format, mediespelarformat, stillbilder.">
+          <img class="MCPopupThumbnail img" data-mc-width="1361" data-mc-height="821" src="../../../../Images/sc_exportstab_exportsettings_1_thumb_200_0.jpg" style="mc-thumbnail-max-height: auto;mc-thumbnail-max-width: 200px;mc-thumbnail: popup;" alt="Fönstret Exportinställningar i XProtect Smart Client. Fönstret har flikar för vardera exportformat: XProtect-format, mediespelarformat, stillbilder." tabindex="" />
+        </a>
+      </p>
+      <div class="note">
+        <p>Din systemadministratör anger vilka format och exportinställningar som är tillgängliga för dig.</p>
+        <p>Av säkerhetsskäl är bara <span class="mc-variable flvar-brand-company.XP variable">XProtect</span>-format tillgängligt som standard. För att aktivera andra exportformat, kontakta din systemadministratör.</p>
+      </div>
+      <p>De format- och exportinställningar du väljer sparas och visas nästa gång du exporterar.</p>
+      <p>Om en inställning är utgråad så har den låsts av din systemadministratör.</p>
+      <div>
+        <h2>
+          <a name="format"></a>
+          <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> formatinställningar</h2>
+        <p>Välj <span class="mc-variable flvar-brand-company.XP variable">XProtect</span>-format för att skapa en export som bara kan öppnas på en Windows-dator i <span class="mc-variable flvar-product.SCplayer_XP variable">XProtect Smart Client – Player</span>.</p>
+        <p class="note">För att se exporter skapade i <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> version 2020 R1 eller senare, måste du använda <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> version 2020 R1 eller senare.</p>
+        <table cellspacing="3">
+          <col />
+          <col />
+          <thead>
+            <tr>
+              <th>
+                <p>Namn</p>
+              </th>
+              <th>
+                <p>Beskrivning</p>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <p>
+                  <span class="uitext">Inkludera <span class="mc-variable flvar-product.SCplayer_XP variable">XProtect Smart Client – Player</span></span>
+                </p>
+              </td>
+              <td>
+                <p>Inkludera programmet <span class="mc-variable flvar-product.SCplayer_XP variable">XProtect Smart Client – Player</span> i exporterad data. Exporterad data kan endast visas med <span class="mc-variable flvar-product.SCplayer_XP variable">XProtect Smart Client – Player</span>.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>
+                  <span class="uitext">Förhindra återexport</span>
+                </p>
+              </td>
+              <td>
+                <p>Förhindra dina mottagare från att vidareexportera videon i andra format.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>
+                  <span class="uitext">Kryptera med lösenord</span>
+                </p>
+              </td>
+              <td>
+                <p>Kryptera exporten med krypteringsstandard AES-256. När du väljer <span class="uitext">Exportera</span> &gt; <span class="uitext">Starta export</span> blir du tillfrågad att ange ett lösenord bestående av minst åtta tecken.</p>
+                <p>För att öppna och visa exporterad data måste mottagaren av exporten ange lösenordet.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>
+                  <span class="uitext">Ta med digital signatur</span>
+                </p>
+              </td>
+              <td>
+                <p>Inkludera en digital signatur till din exporterade databas. Beroende på inställningarna i övervakningssystemet kan bild eller ljud redan innehålla en signatur. I så fall kommer signaturerna att verifieras vid export och, om verifieringen lyckas, läggas till i exporten. Om verifieringen misslyckas kommer exporten för enheten också att misslyckas. Mottagarna kan verifiera signaturen i <span class="mc-variable flvar-product.SCplayer_XP variable">XProtect Smart Client – Player</span> när de öppnar de exporterade filerna. Se även <a href="../sf_operation/sc_xprscpl_1.htm#SC_VerifyDigitalSignatur.htm" class="MCXref xref">Bekräfta digitala signaturer</a>.</p>
+                <p class="note">Om du inte tar med en digital signatur tas varken signaturen från servern eller exporten med, och exporten kommer att fungera även om bilden eller ljudet har manipulerats.</p>
+                <p>Digitala signaturer kan exkluderas under exportprocessen i två olika situationer:</p>
+                <ul>
+                  <li>Om det finns utrymmen med <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term55">integritetsmasker<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>En oskarp eller solid färg som täcker ett område av videon i kameravyn. De definierade områdena är oskarpa eller täckta i klienternas live-, uppspelnings-, hotspot-, karusell-, smartkarta-, smartsökning- och exportlägen.</span></a>, kommer digitala signaturer för inspelningsservern att tas bort från exporten</li>
+                  <li>Om de data du exporterar är väldigt nära det aktuella datumet och den aktuella tiden kan det hända att den digitala signaturen för inspelningsservern inte inkluderas i hela sekvensen. I detta fall kommer endast delar av exporten att ha digitala signaturer tillagda.</li>
+                </ul>
+                <p>Exportprocessen kommer att vara fullbordad, men när du verifierar signaturerna kommer du att se att de digitala signaturerna för inspelningsservern antingen är borttagna eller delvis OK.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>
+                  <span class="uitext">Kommentarer</span>
+                </p>
+              </td>
+              <td>
+                <p>Öppna fönstret <span class="uitext">Lägg till kommentarer till export</span> där du kan lägga till kommentarer till enskilda kameror eller till exportprojektet som helhet.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_MediaPlayerFormat"></a>Mediaspelarformatinställningar</h2>
+        <p>Välj mediespelarformat för export av standardvideoklipp eller -ljudklipp som kan ses eller avlyssnas från datorer med en standardmediaspelare installerad. Datorn måste även ha samma codec som du använt för exporten installerad.</p>
+        <p>För minsta möjliga exportstorlek, välj formatet MKV media player. On inte aktiverad, kontakta din systemadministratör.</p>
+        <table cellspacing="3">
+          <col />
+          <col />
+          <thead>
+            <tr>
+              <th>
+                <p>Namn</p>
+              </th>
+              <th>
+                <p>Beskrivning</p>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="uitext">Exportera innehåll</span>
+              </td>
+              <td>
+                <p>Exportera enbart video, enbart ljud, eller både video och ljud.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Exportformat</span>
+              </td>
+              <td>
+                <p>Exportera video i <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term3">AVI<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Ett populärt filformat för video. Filer i det här formatet har filändelsen .avi.</span></a>-format eller <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term69">MKV<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Kort för "Matroska Video". En MKV-fil är en videofil sparad i formatet Matroska multimedia container. Den stöder flera typer av ljud- och video-codecs.</span></a>-format.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Codec</span>
+              </td>
+              <td>
+                <p>Ditt val av <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term7">codec<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Teknik som används för att komprimera och dekomprimera ljud- och videodata, till exempel i en exporterad AVI-fil.</span></a> påverkar kvalitet och storlek på AVI-filen.</p>
+                <p>Du kan ändra codec, men vi rekommenderar att du behåller standardinställningarna för codec om du inte har en god anledning att ändra dessa.</p>
+                <p class="note">Den codec du använder måste vara samma på datorn där du vill spela upp den exporterade videon.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Ta med tidsstämplar</span>
+              </td>
+              <td>
+                <p>Lägg till datum och tid från VMS-systemet till den exporterade videon. Tidsstämpeln visas i överkant av den exporterade videon.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Minska bildfrekvens</span>
+              </td>
+              <td>
+                <p>Reducera bildfrekvens för exporten. Varannan bild inkluderas men uppspelas fortfarande i realtid.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Videotexter</span>
+              </td>
+              <td>
+                <p>Öppna fönstret <span class="uitext">Videotexter</span> där du kan skapa och för- och eftertexter för AVI-filen. Dessa texter läggs till i alla kameror i exporten och visas som stillbilder före (<span class="uitext">Förbilder</span>) eller efter (<span class="uitext">Efterbilder</span>) videon.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <p class="important">MKV-format: Om du inte har använt integritetsmaskning i video inspelad i formaten JPEG eller MPEG-4/H.264/H.265 sker ingen transkodning på inspelad video i exporten. Inspelad video behålls i ursprunglig kvalitet. Om du däremot har använt integritetsmasker eller har spelat in video med någon annan codec så transkodas videon till JPEG i exporten.</p>
+      </div>
+      <div>
+        <h2>
+          <a name="Still"></a>Stillbildsinställningar</h2>
+        <p>Välj formatet stillbild för att exportera en stillbild för varje bildruta i varje videosekvens. Bilderna är i <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term23">JPEG<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>En metod för bildkomprimering, också känd som JPG eller Joint Photographic Experts Group. Metoden är en så kallad lossy-komprimering, vilket innebär att vissa bilddetaljer går förlorade under komprimeringen. Bilder som komprimeras på detta sätt har blivit allmänt kända som JPG- eller JPEG-bilder.</span></a>-format.</p>
+        <table cellspacing="3">
+          <col />
+          <col />
+          <thead>
+            <tr>
+              <th>
+                <p>Namn</p>
+              </th>
+              <th>
+                <p>Beskrivning</p>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="uitext">Ta med tidsstämplar</span>
+              </td>
+              <td>
+                <p>Lägg till datum och tid från VMS-systemet till de exporterade bilderna. Tidsstämpeln kommer att visas i överkant av de exporterade bilderna.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2>
+          <a name="Exports"></a>Fliken Exporter (översikt)</h2>
+        <table cellspacing="3">
+          <col />
+          <col />
+          <thead>
+            <tr>
+              <th>
+                <p>Namn</p>
+              </th>
+              <th>
+                <p>Beskrivning</p>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="uitext">Exportlista</span>
+              </td>
+              <td>
+                <p>Listar de objekt som valts för export, t.ex. videosekvenser.</p>
+                <p>För varje objekt kan du ändra tidsspannet genom att klicka på start- eller sluttiden. Efter val av nytt datum och tid, klicka <span class="uitext">Gå till</span>. Du kan även ändra tidsspannet genom att dra handtagen under förhandsvisningsområdet.</p>
+                <p>Klicka på ett objekt för att se en förhandsvisning av exportklippet i förhandsvisningsområdet. För att förhandsvisa flera objekt samtidigt, tryck och håll ned knapparna <span class="uitext">SHIFT</span> eller <span class="uitext">CTRL</span> samtidigt som du klickar på de relevanta objekten. </p>
+                <p>Du tar bort ett objekt från listan <span class="uitext">Objekt</span> genom att klicka på det röda <span class="uitext">krysset</span> bredvid det. Det röda krysset visas när du hovrar över objektet. Om du vill dela objektet i två delar, klicka på ikonen <span class="uitext">Dela</span> i förhandsvisningområdet.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Lägg till objekt</span>
+              </td>
+              <td>
+                <p>Använd knappen <span class="uitext">Lägg till objekt</span> för att välja andra objekt du vill inkludera i exporten. </p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Ta bort allt</span>
+              </td>
+              <td>Använd knappen <span class="uitext">Ta bort allt</span> för att rensa <span class="uitext">Exportlistan</span>.</td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Exportnamn</span>
+              </td>
+              <td>Programmet fyller automatiskt i detta med lokalt datum och aktuell tid, men du kan byta namn. </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Exportmål</span>
+              </td>
+              <td>
+                <p>
+                  <span class="uitext">Sökväg</span> - när du anger en sökväg behöver inte mapparna du anger finnas. Om de inte redan existerar så kommer de att skapas automatiskt. </p>
+                <p>En sökväg kan redan föreslås i detta fält.</p>
+                <p>
+                  <span class="uitext">Mediabrännare</span> - du kan ange en brännare som du vill skicka exporten till. På så sätt kan du skapa exporten och se till att den skrivs direkt till ett optiskt media i ett svep.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Integritetsmask</span>
+              </td>
+              <td>
+                <p>Klicka för att lägga integritetsmasker på videon. Integritetsmasker täcker det valda området med ett svart heldraget område.</p>
+                <p>Integritetsmaskerna som du har lagt till här appliceras enbart på den befintliga exporten och för en valda videon. Exporten kanske redan inkluderar video med integritetsmasker konfigurerade av din systemadministratör. För mer information, se <a href="../../../feature_flags/ff_extendedprivacymasking/sc_workingwithprivacymasking.htm#SC_PrivacyMaskingExplain.htm" class="MCXref xref">Integritetsmaskning (förklaring)</a>.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Konceptinformation</p>
+        <p class="containerItem_container_0">
+          <a href="../../../feature_flags/ff_extendedprivacymasking/sc_workingwithprivacymasking.htm">Integritetsmaskning (användning)</a>
+        </p>
+        <p class="containerItem_container_0">
+          <a href="../sf_operation/sc_exportingevidence.htm">Skapar videobevis</a>
+        </p>
+        <p class="containerItem_container_0">
+          <a href="../../../feature_flags/ff_evidencelock/sc_workingwithevidencelocks.htm">Lås videobevis</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

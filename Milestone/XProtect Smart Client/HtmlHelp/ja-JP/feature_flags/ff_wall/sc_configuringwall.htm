@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="ja-JP" xml:lang="ja-JP" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="設定" data-mc-conditions="flcts-add-on.xp-wall-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Configure your Smart Wall in XProtect Smart Client to control the layout and what content to display." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Wall" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=管理者" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=インテグレーター" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=オペレータ" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>XProtect Smart Wall（設定）</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#feature_flags/ff_wall/sc_configuringwall.htm">ナビ付きでトピックを開く</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="パンくず" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>
+        <span class="mc-variable flvar-product.SWName_XP variable">XProtect Smart Wall</span>（設定）</h1>
+      <p>
+        <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>で初期設定を終えると、システムに接続されてる物理モニターに<span class="mc-variable flvar-product.SWName variable">Smart Wall</span>モニターを送信して、オペレータはビデオウォールの使用を開始できます。これには、これらのオプション両方が含まれる可能性があります：</p>
+      <ul>
+        <li>
+          <p>静的ビュー</p>
+        </li>
+        <li>
+          <p>ルールに応じて動的に変わるビュー</p>
+        </li>
+      </ul>
+      <p>次の操作を希望する場合、追加の設定が必要となります。</p>
+      <ul>
+        <li>オペレータが物理モニターに表示されているコンテンツを管理および手動変更することを可能にします。この場合、指定のビューに<span class="mc-variable flvar-product.SWName variable">Smart Wall</span>コントロールを追加する必要があります。 <MadCap:conditionalText data-mc-conditions="flcts-format.builtin-sc-manual-only">」と「<a href="#Wall_AddOverviewToViews" class="MCXref xref">ビューにSmart Wallコントロールを追加する</a></MadCap:conditionalText>」も参照してください。
+    </li>
+        <li>個別のモニターの既存のビューレイアウトを変更します。」と<MadCap:conditionalText data-mc-conditions="flcts-format.builtin-sc-manual-only">「<a href="#Wall_ChangeMonitorLayout" class="MCXref xref">Smart Wallモニターのレイアウトを変更</a></MadCap:conditionalText>」も参照してください。
+    </li>
+        <li>
+          <span class="mc-variable flvar-product.SWName variable">Smart Wall</span>の定義にすでに適用されている<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term38">プリセット<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>XProtect Smart Clientで1台以上のSmart Wallに対して事前に設定したレイアウトプリセットにより、ビデオウォールの各モニターに表示されるカメラとコンテンツのレイアウト（表示構成）が設定されます。</span></a>をリセットまたは変更します。 <MadCap:conditionalText data-mc-conditions="flcts-format.builtin-sc-manual-only">」と「<a href="#Wall_ChangePreset" class="MCXref xref">Smart Wallプリセットをリセットまたは変更</a></MadCap:conditionalText>」も参照してください。
+    </li>
+      </ul>
+      <h2>
+        <a name="Wall_AddOverviewToViews"></a>ビューに<span class="mc-variable flvar-product.SWName variable">Smart Wall</span>コントロールを追加する</h2>
+      <p>ビデオやその他のタイプのコンテンツをビデオウォールにプッシュする前に、1つ以上のビューに<span class="mc-variable flvar-product.SWName variable">Smart Wall</span>コントロールを追加する必要があります。コントロールは、ビデオウォールのグラフィック表現です。<a href="sc_workingwithwalle.htm#SC_ContentInWall.htm" class="MCXref xref">Smart Wallコントロール（説明付き）</a>.</p>
+      <ol>
+        <li value="1">
+          <span class="uitext">セットアップ</span>をクリックしてセットアップモードに移ります。 </li>
+        <li value="2">
+          <span class="mc-variable flvar-product.SWName variable">Smart Wall</span>コントロールを追加するビューを選択します。</li>
+        <li value="3">
+          <p>
+            <span class="uitext">システム概要</span>ペインで、<span class="uitext"><span class="mc-variable flvar-product.SWName variable">Smart Wall</span></span>を該当するビューアイテムにドラッグします。</p>
+          <p>
+            <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_addswoverviewtoview.jpg" data-mc-popup-alt="Add Smart Wall control to views in XProtect Smart Client.">
+              <img class="MCPopupThumbnail img" data-mc-width="1307" data-mc-height="846" src="../../../Images/sc_addswoverviewtoview_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add Smart Wall control to views in XProtect Smart Client." tabindex="" />
+            </a>
+          </p>
+        </li>
+        <li value="4">
+          <span class="uitext">セットアップ</span>を再度クリックし、セットアップモードを解除します。 変更が保存されました。</li>
+        <li value="5">これで、カメラや他のコンテンツタイプをビデオウォールにプッシュできるようになります。 </li>
+      </ol>
+      <h2>
+        <span class="mc-variable flvar-product.SWName variable">Smart Wall</span>モニターのレイアウトを変更<a name="Wall_ChangeMonitorLayout"></a></h2>
+      <p>
+        <span class="mc-variable flvar-product.SWName variable">Smart Wall</span>モニターの事前構成されたビューレイアウトを変更できます。これは、追加のカメラや他のコンテンツタイプを表示する必要がある場合に便利です。</p>
+      <div class="MCDropDown MCDropDown_Closed dropDown">
+        <span class="MCDropDownHead dropDownHead">
+          <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+            <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="閉じた" data-mc-alt2="開く" />例</a>
+        </span>
+        <div class="MCDropDownBody dropDownBody">
+          <p>インシデントが5台のカメラに記録され、容疑者の写真も確保しました。セキュリティスタッフがインシデントを閲覧して容疑者の身柄を確保できるよう、ビデオと画像をビデオウォールで表示することにします。ビデオウォールの現在のモニターは<span class="uitext">2x2</span>カメラしか表示できないよう事前構成されているため、ビューレイアウトを<span class="uitext">2x3</span>に変更することで5台目のカメラと画像を追加する必要があります。</p>
+        </div>
+      </div>
+      <p>手順：</p>
+      <ol>
+        <li value="1">
+          <span class="uitext">ライブ</span>タブまたは<span class="uitext">再生</span>タブでし、<span class="mc-variable flvar-product.SWName variable">Smart Wall</span>コントロールが含まれているビューを開きます。</li>
+        <li value="2">
+          <p>モニターの<img src="../../../Images/change_the_layout_of_a_1.png" alt="" />アイコンをクリックして、[<span class="uitext">ビューレイアウトの変更</span>] を選択し、表示形式（<span class="uitext">4:3</span>など）を選択します。</p>
+          <p>
+            <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/change_the_layout_of_a_1_1.jpg" data-mc-popup-alt="Change the view layout of a Smart Wall monitor.">
+              <img class="MCPopupThumbnail img" data-mc-width="1247" data-mc-height="736" src="../../../Images/change_the_layout_of_a_1_1_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Change the view layout of a Smart Wall monitor." tabindex="" />
+            </a>
+          </p>
+        </li>
+        <li value="3">
+          <p>ビューレイアウトを選択します。この例では<span class="uitext">2x3</span>を選択します。2つのグレー表示のアイテムがビューレイアウトに追加されます。 </p>
+          <p>
+            <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_wall_changedviewlayout.jpg" data-mc-popup-alt="2x3 view layout of a Smart Wall monitor.">
+              <img class="MCPopupThumbnail img" data-mc-width="758" data-mc-height="427" src="../../../Images/sc_wall_changedviewlayout_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="2x3 view layout of a Smart Wall monitor." tabindex="" />
+            </a>
+          </p>
+        </li>
+        <li value="4">これで、コンテンツを追加できます。<a href="sc_workingwithwalle.htm#SC_DisplayingContentOnSm.htm" class="MCXref xref">ビデオウォールにコンテンツを表示する</a>.</li>
+      </ol>
+      <h2>
+        <span class="mc-variable flvar-product.SWName variable">Smart Wall</span>プリセットをリセットまたは変更<a name="Wall_ChangePreset"></a></h2>
+      <p>
+        <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term38">プリセット<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>XProtect Smart Clientで1台以上のSmart Wallに対して事前に設定したレイアウトプリセットにより、ビデオウォールの各モニターに表示されるカメラとコンテンツのレイアウト（表示構成）が設定されます。</span></a>は、多くの場合ルールやタイムスケジュールによって変更されます。また、他のオペレーターもプリセットを変更できます。ただし、ビデオウォールをリセットしたい状況や、特定のイベントの過程で特定のプリセットを適用したい状況が生じる可能性があります。</p>
+      <p>手順：</p>
+      <ol>
+        <li value="1">
+          <span class="mc-variable flvar-product.SWName variable">Smart Wall</span>コントロールが含まれているビューを開きます。</li>
+        <li value="2">[<span class="uitext">プリセットの選択</span>] リストで、適用するプリセットにカーソルを置きます。</li>
+        <li value="3">
+          <p>
+            <span class="uitext">有効化</span>をクリックします。 ビデオウォール上の影響を受ける物理モニターもそれに応じて変更されます。</p>
+          <p>
+            <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_resetsw.jpg" data-mc-popup-alt="Activate or reset the preset of a Smart Wall monitor.">
+              <img class="MCPopupThumbnail img" data-mc-width="977" data-mc-height="387" src="../../../Images/sc_resetsw_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Activate or reset the preset of a Smart Wall monitor." tabindex="" />
+            </a>
+          </p>
+        </li>
+      </ol>
+      <div>
+        <a name="SC_ChangeTheLayoutOfASma.htm"></a>
+      </div>
+    </div>
+    <p></p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

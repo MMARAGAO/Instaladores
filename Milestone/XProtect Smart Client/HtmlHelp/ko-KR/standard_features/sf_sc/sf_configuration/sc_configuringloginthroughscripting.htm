@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="ko-KR" xml:lang="ko-KR" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="구성" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Create scripts to control the login procudure and switch between views in XProtect Smart Client." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=개발자" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=개발 관리자" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>스크립팅</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#standard_features/sf_sc/sf_configuration/sc_configuringloginthroughscripting.htm">탐색기로 항목 열기</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="브레드크럼즈" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>스크립팅</h1>
+      <div>
+        <h2>로그인 스크립팅(설명됨)<a name="SC_StartupScripting.htm"></a></h2>
+        <p>스크립팅을 사용하여 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 에서의 로그인 절차의 일부 또는 모두를 제어할 수 있습니다.</p>
+        <ul>
+          <li>
+            <span class="uitext">기본 인증</span> 또는 <span class="uitext">Windows 인증</span> 을 사용하는 경우 서버 주소 및 사용자 이름 필드가 미리 입력된 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 로그인 창을 열어 두면 로그인할 때 암호만 입력하면 됩니다.</li>
+          <li>
+            <span class="uitext">Windows 인증(현재 사용자)</span> 을 사용하는 경우 사용자의 현재 Windows 로그인에 따라 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 가 감시 시스템에 자동으로 연결되도록 할 수 있습니다.</li>
+        </ul>
+        <div class="important">
+          <p>
+            <span class="uitext">기본 인증</span> 또는 <span class="uitext">Windows 인증</span> 에 기반한 로그인 절차 스크립팅을 할 때에는 암호화되지 않은 민감한 정보를 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 프로그램 파일과 함께 로컬에 저장한 SCS 파일에 저장해야 합니다.</p>
+          <ul>
+            <li>호스트 이름</li>
+            <li>사용자 이름</li>
+            <li>암호</li>
+          </ul>
+          <p>암호화되지 않은 정보를 저장하는 것은 사용 중인 시스템 보안 또는 GDPR 규정 준수를 위반하는 것일 수도 있습니다. SCS 파일 내 정보는 다음과 같이 공개될 수 있습니다.</p>
+          <ul>
+            <li>이 파일에 액세스할 수 있는 누구나</li>
+            <li>SCS 파일에 의해 시작된 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 애플리케이션의 메모리 공간 또는 사용자 이름 및 암호를 전달하는 명령줄을 통해</li>
+          </ul>
+          <p>
+            <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> 은(는) <span class="uitext">Windows 인증(현재 사용자)</span> 를 사용할 것을 권장합니다. <span class="uitext">기본 인증</span> 또는 <span class="uitext">Windows 인증</span> 을 사용한다면, SCS 파일에 대한 액세스를 제한해야 합니다.</p>
+        </div>
+      </div>
+      <div>
+        <h2>로그인 스크립팅 - 매개 변수<a name="SC_Scripting_Parameters.htm"></a></h2>
+        <p>다음 매개변수를 사용할 수 있습니다.</p>
+        <p>ServerAddress</p>
+        <p>
+          <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>이(가) 연결하는 관리 서버의 URL을 참조합니다.</p>
+        <p>다음 예는 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 로그인 창의 <span class="uitext">서버 주소</span> 필드에 <span class="citationtext">http://ourserver</span> 가 입력된 상태를 보여줍니다.</p>
+        <p class="codechunk">Client.exe -ServerAddress="http://ourserver"</p>
+        <p>기본 인증 유형은 <span class="uitext">Windows 인증(현재 사용자)</span> 입니다. <span class="uitext">AuthenticationType</span> 매개변수(다음 섹션에 설명)를 사용하여 기본 인증 유형을 변경하지 않는 한 로그인 창의 <span class="uitext">사용자 이름</span> 필드에 현재 Windows 사용자의 이름이 자동으로 표시됩니다.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />사용자 이름</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>지정된 사용자 이름을 나타냅니다.</p>
+            <p>다음 예는 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 로그인 창의 <span class="citationtext">서버 주소</span> 필드에 <span class="uitext">http://ourserver</span> 가 입력되고 <span class="specialbold">사용자 이름</span> 필드에 <span class="uitext">Tommy</span> 가 입력된 상태를 보여줍니다.</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -UserName="Tommy"</p>
+            <p class="note">이 매개변수는 <span class="uitext">Windows 인증</span> 또는 <span class="uitext">기본 인증</span> 에만 관련이 있습니다. <span class="uitext">AuthenticationType</span> 매개변수를 사용하여 사용할 인증 방식을 제어할 수 있습니다.</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />암호</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>지정된 암호를 나타냅니다.</p>
+            <p>다음 예는 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 로그인 창의 <span class="citationtext">서버 주소</span> 필드에 <span class="uitext">http://ourserver</span> 가 입력되고 <span class="specialbold">사용자 이름</span> 필드에 <span class="uitext">Tommy</span> 가 입력되고, <span class="specialbold">암호</span> 필드에 <span class="uitext">T0mMy5Pa55w0rD</span> 가 입력된 상태를 보여줍니다:</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -UserName="Tommy" -Password="T0mMy5Pa55w0rD"</p>
+            <p class="note">이 매개변수는 <span class="uitext">Windows 인증</span> 또는 <span class="uitext">기본 인증</span> 에만 관련이 있습니다. <span class="uitext">AuthenticationType</span> 매개변수를 사용하여 사용할 인증 방식을 제어할 수 있습니다.</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />AuthenticationType</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>의 3가지 인증 방식 즉, <span class="uitext">Windows 인증(현재 사용자)</span> (시작 스크립트에서는 <span class="uitext">WindowsDefault</span> 라고 함), <span class="uitext">Windows 인증</span> (시작 스크립트에서는 <span class="uitext">Windows</span> 라고 함) 또는 <span class="uitext">기본 인증</span> (시작 스크립트에서는 <span class="uitext">Simple</span> 이라고 함) 중 하나를 나타냅니다.</p>
+            <p>다음 예는 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 로그인 창의 <span class="citationtext">서버 주소</span> 필드에 <span class="uitext">http://ourserver</span> 가 입력되고, <span class="uitext">인증</span> 필드에 <span class="uitext">기본 인증</span> 이 선택되고, <span class="specialbold">사용자 이름</span> 필드에 <span class="uitext">Tommy</span> 가 입력되고, <span class="specialbold">암호</span> 필드에 <span class="uitext">T0mMy5Pa55w0rD</span> (별표로 표시됨)가 입력된 상태를 보여줍니다:</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -UserName="Tommy" -Password="T0mMy5Pa55w0rD" -AuthenticationType="Simple"</p>
+            <p>
+              <span class="uitext">Windows 인증</span> 을 사용하는 경우 이 예는 다음과 같이 됩니다.</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -UserName="Tommy" -Password="T0mMy5Pa55w0rD" -AuthenticationType="Windows"</p>
+            <p>
+              <span class="uitext">Windows 인증(현재 사용자)</span> 을 사용하는 경우 <span class="uitext">UserName</span> 및 <span class="uitext">Password</span> 매개변수가 필요하지 않으며 이 예는 다음과 같이 됩니다.</p>
+            <p class="codechunk">Client.exe -ServerAddress="http://ourserver" -AuthenticationType="WindowsDefault"</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />Script</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>.scs 스크립트(<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 제어 시 대상으로 지정된 스크립트 유형)의 전체 경로를 나타냅니다.</p>
+            <p>다음 예에서는 .scs 스크립트를 사용하여 로그인합니다.</p>
+            <p class="codechunk">Client.exe -Script=c:\startup.scs</p>
+            <p>현재 Windows 사용자를 통해 <span class="citationtext">http://ourserver</span> 에 로그인하는 데 사용되는 .scs 스크립트의 예:</p>
+            <p class="codechunk">&lt;ScriptEngine&gt;</p>
+            <p class="codechunk"> &lt;Login&gt;</p>
+            <p class="codechunk">   &lt;ServerAddress&gt;http://ourserver&lt;/ServerAddress&gt;</p>
+            <p class="codechunk">   &lt;AuthenticationType&gt;WindowsDefault&lt;/AuthenticationType&gt;</p>
+            <p class="codechunk"> &lt;/Login&gt;</p>
+            <p class="codechunk">&lt;/ScriptEngine&gt;</p>
+            <p>
+              <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 의 여러 함수 호출(함수 호출 목록 보기 참조)을 사용하여 .scs 스크립트에 추가 기능을 추가할 수 있습니다. 다음 예에서는 이전 예의 .scs 스크립트가 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 응용 프로그램을 최소화하는 행이 추가되었습니다.</p>
+            <p class="codechunk">&lt;ScriptEngine&gt;</p>
+            <p class="codechunk"> &lt;Login&gt;</p>
+            <p class="codechunk">   &lt;ServerAddress&gt;http://ourserver&lt;/ServerAddress&gt;</p>
+            <p class="codechunk">   &lt;AuthenticationType&gt;WindowsDefault&lt;/AuthenticationType&gt;</p>
+            <p class="codechunk"> &lt;/Login&gt;</p>
+            <p class="codechunk"> &lt;Script&gt;SCS. Application.Minimize();&lt;/Script&gt;</p>
+            <p class="codechunk">&lt;/ScriptEngine&gt;</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />형식</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>올바른 매개변수 형식은 다음과 같습니다.</p>
+            <p class="codechunk">{-,/,--}param{ ,=,:}((".')value(",'))</p>
+            <p>예:</p>
+            <p class="codechunk">-UserName Tommy</p>
+            <p class="codechunk">--UserName Tommy /UserName:"Tommy" /UserName=Tommy -Password 'Tommy'</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2>
+          <a name="SC_UseAnHTMLPageForNavig.htm"></a>탐색을 위한 HTML 스크립팅 페이지</h2>
+        <p>스크립팅으로 뷰 사이를 전환하도록 해주는 HTML 페이지를 생성할 수 있습니다. HTML 페이지를 뷰에 추가하여 카메라의 비디오가 함께 나타나도록 할 수 있습니다.</p>
+        <p>예: HTML 페이지에서 클릭 가능한 건물 평면도를 삽입하여 운영자가 평면도의 일부를 클릭하기만 하면 해당 빌딩 부분을 비디오로 표시하는 뷰로 즉시 전환할 수 있게 할 수 있습니다. </p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />요구사항</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <ul>
+              <li>
+                <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS 시스템이 <span class="mc-variable flvar-product.SC variable">Smart Client</span> 프로필을 지원하지 않는 경우, <span class="mc-variable flvar-product.SC variable">Smart Client</span> 의 필수 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> 프로필에서 HTML 스크립팅을 활성화해야 합니다.</li>
+              <li>
+                <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> VMS 시스템이 <span class="mc-variable flvar-product.SC variable">Smart Client</span> 프로필을 지원하지 않는 경우, <span class="uitext">Client.exe.config</span> 파일에서 HTML 스크립팅을 활성화해야 합니다.</li>
+            </ul>
+          </div>
+        </div>
+        <p>아래에서 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 탐색을 위한 HTML 페이지의 예시를 확인할 수 있습니다:</p>
+        <ul>
+          <li> 버튼이 달린 단순 HTML 페이지</li>
+          <li>클릭할 수 있는 이미지 맵이 첨부된 더욱 고급화된 HTML 페이지</li>
+          <li>HTML 페이지를 생성하여 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 운영자에게 배포하는 것에 관련된 작업을 알려주는 시스템 관리자를 위한 체크 리스트</li>
+        </ul>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />버튼 탐색이 포함된 HTML 페이지의 예</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>가장 빠른 방법은 탐색에 사용할 수 있는 버튼이 포함된 HTML 페이지를 만드는 것입니다. HTML 페이지에 다양한 버튼을 만들 수 있습니다. 이 예에서는 두 가지 유형의 버튼만 만들겠습니다.</p>
+            <ul>
+              <li>
+                <span class="specialbold">
+                  <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 의 뷰 사이를 전환하기 위한 버튼</span>
+                <p>필요한 HTML 구문:</p>
+                <p class="codechunk">&lt;input type="button" value=" Buttontext" onclick="SCS. Views.SelectView('Viewstatus.Groupname. 뷰네임');"&gt;</p>
+                <p>여기서 <span class="uitext">Viewstatus</span> 는 뷰가 공유인지 개인인지를 나타냅니다(HTML 페이지가 여러 사용자에게 배포될 예정인 경우, 뷰는 <span class="specialbold">공유이어야</span> 합니다).</p>
+                <p>실제 버튼의 예:</p>
+                <p class="codechunk">&lt;input type="button" value="Go to Shared Group1 View2" onclick="SCS. Views.SelectView('Shared.Group1. View2');"&gt;</p>
+                <p>이 버튼을 사용하면 <span class="uitext">그룹1</span>이라고 하는 공유 그룹의 <span class="uitext">뷰2</span>라고 하는 뷰로 이동할 수 있습니다.</p>
+                <p>
+                  <span class="specialbold">탭 사이를 전환하기 위한 버튼</span>: <span class="uitext">라이브</span> 및 <span class="uitext">재생</span> 사용자 권한에 따라 일부 사용자는 모든 탭에 액세스하지 못할 수도 있음을 유의하십시오.</p>
+                <p>필요한 HTML 구문:</p>
+                <p>
+                  <span class="uitext">라이브 탭</span>: <code class="codesnippet">&lt;input type="button" value="Buttontext" onclick="SCS. Application.ShowLive();"&gt;</code></p>
+                <p>
+                  <span class="uitext">재생 탭</span>: <span class="codesnippet">&lt;input type="button" value="Buttontext" onclick="SCS. Application.ShowBrowse();"&gt;</span></p>
+              </li>
+            </ul>
+            <p class="tip">고급 사용자의 경우 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 에 사용 가능한 약 100개의 서로 다른 함수 호출을 사용하여 다른 유형의 버튼을 많이 만들 수 있습니다. </p>
+            <p>다음은 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 에 생성된 2개의 공유 그룹입니다. 이를 <span class="uitext">그룹1</span> 및 <span class="uitext">그룹2</span> 라고 합니다. 각 그룹에는 <span class="uitext">뷰1</span> 및 <span class="uitext">뷰2</span> 라고 하는 2개의 뷰가 있습니다.</p>
+            <p>
+              <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 의 2개 탭인 <span class="uitext">라이브</span> 및 <span class="uitext">재생</span> 은 물론 4개의 다른 뷰 사이를 전환할 수 있는 버튼이 포함된 HTML 페이지도 생성되어 있습니다. 이 HTML 페이지를 브라우저에서 보면 다음과 같습니다.</p>
+            <p>
+              <img src="../../../../Images/use_an_html_page_for_navigation.png" alt="" />
+            </p>
+            <p>뷰 및 탭 사이를 탐색하기 위한 버튼이 있는 HTML 페이지</p>
+            <p>HTML 페이지가 로컬에 저장되어 있으며 이 경우에는 사용자의 C: 드라입니다. HTML 페이지를 탐색에 사용할 경우 호환성 모드에서 열기 위해 HTML 페이지를 로컬로 저장해야 합니다. 또한 <a href="sc_configuringviews.htm#Web" class="MCXref xref">웹 페이지 속성 </a>를 참조하십시오.</p>
+            <p>HTML 페이지를 로컬로 저장할 때 사용자의 C: 드라이브에 있는 폴더와 같이 명확한 경로를 정의할 수 있는 위치에 저장합니다(예: C:\ myfolder\file.htm). 사용자의 바탕화면이나 <span class="uitext">내 문서</span> 폴더는 Windows에서 이러한 위치에 대한 경로를 생성하는 방법으로 인해 HTML 페이지가 올바르게 저장되지 않습니다.</p>
+            <p>그런 다음 필요한 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 뷰로 HTML 페이지를 가져옵니다. </p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />이미지 맵 탐색이 포함된 HTML 페이지의 예</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>사용자가 뷰 사이를 전환할 수 있는 이미지 맵 등과 같은 고급 콘텐츠를 사용하여 HTML 페이지를 만들 수도 있습니다.</p>
+            <p>다음 예에 있는 2개의 그룹 및 2개의 뷰는 이전 예와 동일한 것입니다. 버튼을 사용하지 않고 평면도 이미지가 있는 HTML 페이지를 생성한 다음 평면도를 기준으로 이미지 맵을 생성한 것입니다. 이 HTML 페이지를 브라우저에서 보면 다음과 같습니다.</p>
+            <p>
+              <img src="../../../../Images/use_an_html_page_for_navigation_2.png" alt="" />
+            </p>
+            <p>뷰 사이를 탐색하기 위한 이미지 맵이 있는 HTML 페이지</p>
+            <p>이 예에서는 평면도를 색상 지정된 4개 구역으로 나눈 다음 각 구역에 대해 이미지 맵 영역을 정의했습니다. 사용자가 구역을 클릭하여 해당 구역에서 뷰 표시 카메라로 이동할 수 있습니다.</p>
+            <p>예를 들어, 이미지 맵의 빨간색 구역은 이전 예의 <span class="uitext">공유 그룹2 뷰2로 이동</span> 버튼을 반영합니다. 빨간색 구역을 클릭하면 <span class="uitext">그룹2</span> 의 <span class="uitext">뷰2</span> 로 이동합니다.</p>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />HTML 페이지 가져오기</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>기본적으로 탐색 HTML 페이지를 뷰로 가져오는 것은 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 의 뷰로 다른 유형의 HTML 페이지를 가져오는 것과 차이가 없습니다. <a href="sc_configuringviews.htm#Add" class="MCXref xref">뷰에 웹 페이지 추가</a>를 참조하십시오. </p>
+            <div class="note">
+              <ul>
+                <li>운영자의 컴퓨터에 HTML 페이지를 로컬로 저장해야 합니다.</li>
+                <li>탐색이 제대로 작동하도록 하려면 HTML 페이지를 다수의 뷰에 가져오기를 해야 할 수도 있습니다.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="닫힘" data-mc-alt2="열림" />시스템 관리자의 검사 목록</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>탐색 HTML 페이지를 생성하여 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 운영자에게 배포하려면 다음을 수행하십시오:</p>
+            <ol>
+              <li value="1">
+              필요한 HTML 페이지를 <span class="specialbold">생성</span> 합니다. HTML 페이지의 탐색 제어는 해당 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 에서 사용자에게 표시되는 뷰와 일치해야 합니다. 예를 들어, 버튼이 <span class="uitext">View1</span> 로 이동하도록 작동하려면, <span class="uitext">View1</span> 이라는 뷰가 사용자의 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 설치에 존재해야 합니다. HTML 페이지를 사용자 그룹에 배포하려는 경우 HTML 페이지를 사용할 뷰를 공유 그룹에 배치해야 합니다.</li>
+              <li value="2">
+              HTML 페이지가 사용될 각 컴퓨터에 HTML 페이지를 로컬로 <span class="specialbold">저장</span> 합니다. HTML 페이지를 로컬로 저장할 때 사용자의 C: 드라이브에 있는 폴더와 같이 명확한 경로를 정의할 수 있는 위치에 저장합니다(예: C:\ myfolder\file.htm). 사용자의 바탕화면이나 <span class="uitext">내 문서</span> 폴더는 Windows에서 이러한 위치에 대한 경로를 생성하는 방법으로 인해 HTML 페이지가 올바르게 저장되지 않습니다.</li>
+              <li value="3">
+                <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 내 필요한 뷰로 HTML 페이지 <span class="specialbold">가져오기</span> 를 실행합니다. <a href="sc_configuringviews.htm#Add" class="MCXref xref">뷰에 웹 페이지 추가</a>를 참조하십시오. </li>
+              <li value="4">
+              가져온 HTML 페이지에서 탐색 제어가 올바르게 작동되는지 <span class="specialbold">테스트</span> 합니다.</li>
+            </ol>
+            <p class="note">문제 해결에 관한 정보는 <a href="../sf_troubleshooting/sc_troubleshootinghtmlpages.htm" class="MCXref xref">웹 페이지(문제 해결)</a>를 참조하십시오.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">컨셉트 정보</p>
+        <p class="containerItem_container_0">
+          <a href="../sf_operation/sc_loggingin_366_.htm">로그인</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

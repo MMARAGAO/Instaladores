@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="ru-RU" xml:lang="ru-RU" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../../" data-mc-toc-path="Конфигурация" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Configure the camera settings in XProtect Smart Client and learn about overlay buttons and bounding boxes." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Администратор" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Интегратор" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Камеры (настройка)</title>
+    <link href="../../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../../Skins/Favicons/milestone-favicon.ico" />
+    <script type="text/javascript">
+ function getAllUrlParams() {
+			 var queryString = window.location.href.split('?')[2].replace('.htm','');		 
+			 var replaceThis = window.location.href.substr(window.location.href.lastIndexOf('/') + 1);
+			 var urlString = window.location.href.replace(replaceThis, '') + "Default.htm#cshid=" + queryString;
+			 var a = document.getElementById('link'); 
+			 a.href = urlString;
+			 a.textContent = urlString;
+			 window.location.href=urlString;
+			}
+		</script>
+    <script src="../../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../../Default.htm#standard_features/sf_sc/sf_configuration/sc_configuringcamerasettings.htm">Открыть тему с навигацией</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Навигация" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>Камеры (настройка)</h1>
+      <p>Параметры, перечисленные в этом разделе, относятся к панелям <span class="uitext">Кнопки наложения</span> и <span class="uitext">Свойства</span>. Для доступа к этим панелям нажмите кнопку <span class="uitext">Настройка</span> и убедитесь в том, что видна панель навигации в левой части окна.</p>
+      <p>
+        <img src="../../../../Images/sc_cameraproperties.jpg" alt="Access camera properties and overlay button properties in XProtect Smart Client." />
+      </p>
+      <div>
+        <h2>Параметры камер<a name="SC_CameraSettings.htm"></a></h2>
+        <p>В режиме <span class="uitext">Настройки</span> на панели <span class="uitext">Свойства</span> можно просматривать и изменять свойства выбранной камеры (выбранная камера обозначена жирной рамкой в виде).</p>
+        <table cellspacing="3">
+          <col />
+          <col />
+          <thead>
+            <tr>
+              <th>Имя</th>
+              <th>Описание</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <span class="uitext">Имя камеры</span>
+              </td>
+              <td>
+                <p>Отображает полное название выбранной камеры.</p>
+                <p>Чтобы выбрать другую камеру, нажмите кнопку с многоточием для перехода в окно <span class="uitext">Выбор камеры</span>. Данная возможность особенно полезна в случае необходимости изменения камеры с сохранением настроек.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Динамический поток</span>
+              </td>
+              <td>
+                <p>Если доступно, позволяет выбрать динамический поток для отображения в виде. Если на сервере настроено многопоточное вещание, вы можете выбрать поток <span class="uitext">По умолчанию</span> или один из доступных потока. При выборе значения, отличного от значения <span class="uitext">По умолчанию</span>, изменение настроек <span class="uitext">Качество изображения</span> или <span class="uitext"><a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term14">Частота кадров<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Показатель количества информации, которая содержится в видео. Обычно измеряется в FPS (кадр/с).</span></a></span> будет невозможно.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Качество изображения</span>
+              </td>
+              <td>
+                <p class="important">Настройка качества изображения для видео в <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> имеет значение только при просмотре потоков JPEG. Если при просмотре других кодеков, например H264 или H265, будет задано качество ниже, чем <span class="uitext">Полное</span>, то перекодирование в JPEG потребует увеличенной пропускной способности и окажет дополнительную нагрузку на центральный процессор и графический процессор.</p>
+                <p>Определяет качество просматриваемого видео, но также влияет на использование полосы пропускания. Если приложение <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> подключено к Интернету по медленному соединению либо у вас есть другие причины для ограничения использования полосы пропускания, качество изображения можно понизить на стороне сервера, выбрав значение <span class="uitext">Низкое</span> или <span class="uitext">Среднее</span>.</p>
+                <p>Если выбрано пониженное качество изображения, видео с выбранной камеры перекодируется на сервере системы наблюдения в формат <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term23">JPEG<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Способ сжатия изображений, также известный как JPG — аббревиатура названия Joint Photographic Expert Group, Объединенная группа экспертов в области фотографии. Данный способ является так называемым сжатием с потерями, так как при сжатии некоторые детали изображения теряются. Сжатые таким образом изображения известны как файлы JPG или JPEG.</span></a>, а затем отправляется в <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Перекодирование выполняется следующим образом:</p>
+                <p>
+                  <span class="uitext">Полное</span>: Значение по умолчанию, при котором видео передается в максимальном качестве.</p>
+                <p>
+                  <span class="uitext">Сверхвысокое (для мегапикс.)</span>: Перекодирование с выходной шириной 640 пикселей (VGA) и уровнем качества JPEG 25%.</p>
+                <p>
+                  <span class="uitext">Высокое</span>: Перекодирование с выходной шириной 320 пикселей (QVGA) и уровнем качества JPEG 25%.</p>
+                <p>
+                  <span class="uitext">Среднее</span>: Перекодирование с выходной шириной 200 пикселей и уровнем качества JPEG 25%.</p>
+                <p>
+                  <span class="uitext">Низкое</span>: Перекодирование с выходной шириной 160 пикселей и уровнем качества JPEG 20 %.</p>
+                <p>Высота определяется по ширине и <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term2">пропорциям<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Соотношение высоты и ширины изображения.</span></a> исходного видео.</p>
+                <p>Выбор качества изображения будет применяться как для видео реального времени, так и для записанного видео; как для JPEG, так и для MPEG. Однако для MPEG при просмотре видео реального времени будут перекодированы только ключевые кадры, в то время как при просмотре записанного видео будут перекодированы все кадры.</p>
+                <p>Хотя использование пониженного качества изображения помогает снизить нагрузку на полосу пропускания, ввиду необходимости перекодирования изображений оно создает дополнительную нагрузку на сервер системы наблюдения.</p>
+                <p class="tip">Вы можете быстро уменьшить нагрузку на полосу пропускания для всех камер вида. Для этого нужно снизить качество изображения для одиночной камеры и нажать кнопку <span class="uitext">Применить ко всем</span>.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Сохранять при полноэкр. режиме</span>
+              </td>
+              <td>
+                <p>При просмотре видео реального времени или записанного видео можно дважды щелкнуть нужную позицию камеры в виде, чтобы развернуть его. При этом видео с этой камеры отображается по умолчанию в полном качестве, независимо от заданного качества изображения.</p>
+                <p>Чтобы выбранное качество изображения применялось и при увеличении, установите флажок <span class="uitext">Сохранять при полноэкранном выводе</span>, расположенный сразу под параметром <span class="uitext">Качество изображения</span>.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Частота кадров</span>
+              </td>
+              <td>
+                <p>Позволяет задать частоту кадров для выбранной камеры. Выберите одно из следующих значений: <span class="uitext">Без ограничений</span> (по умолчанию), <span class="uitext">Среднее</span> или <span class="uitext">Низкое</span>. Качество видео зависит от выбранной частоты кадров и конфигурации системы наблюдения (см. <a href="#SC_FrameRateEffectExplai.htm" class="MCXref xref">Выбор частоты кадров (объяснение)</a>).</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Режим PTZ</span>
+              </td>
+              <td>
+                <p>Позволяет выбрать режим PTZ по умолчанию для камер PTZ. Возможные варианты: центрирование щелчком мышью и виртуальный джойстик. Возможна установка индивидуальных значений режима PTZ для каждой камеры.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Режим разделения с камеры "рыбий глаз":</span>
+              </td>
+              <td>
+                <p>Доступно, только если выбрана камера с видом «рыбий глаз». Технология "рыбий глаз" позволяет создавать и просматривать панорамные изображения с углом обзора 360 градусов. <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> поддерживает до четырех различных точек обзора с одной камеры с объективом рыбий глаз. В списке <span class="uitext">Режим разделения изображения с камеры "рыбий глаз"</span> возможно выбрать необходимый режим разделения:</p>
+                <p>
+                В режиме <span class="uitext">По одному</span> видна только одна точка обзора.</p>
+                <p>
+                  <span class="uitext">По два</span> позволяет вам одновременно наблюдать четыре различных точек обзора.</p>
+                <p>При просмотре на любой из вкладок приложения <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> камера с технологией "рыбий глаз" будет показана заданным образом с одной или четырьмя точками обзора для одного изображения.</p>
+                <p class="tip">При просмотре различных точек обзора с камеры с технологией "рыбий глаз" возможно независимое управление каждой точкой обзора нажатием мыши внутри каждой точки обзора или с помощью меню <span class="uitext">PTZ-препозиции</span> панели инструментов камеры.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Сохранять пропорции изображения</span>
+              </td>
+              <td>
+                <p>Если флажок установлен, видео не будет растягиваться под размер позиции камеры. Вместо этого видео будет выводиться с теми пропорциями (отношение ширины к высоте), с которыми оно было записано.</p>
+                <p>В результате вверху или по бокам изображения могут появиться черные полосы.</p>
+                <p>Если флажок снят, видео будет растягиваться в соответствии с размером позиции в виде. Это может привести к небольшим искажениям передаваемого видео, но черные полосы появляться не будут.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Обновить при движении</span>
+              </td>
+              <td>
+                <p>Если будет поставлена отметка в этом поле, видео с выбранной камеры в <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> на вкладке <span class="uitext">Наблюдение</span> будет обновляться только при обнаружении движения. В зависимости от чувствительности обнаружения движения, выбранной для камеры на сервере системы наблюдения, эта возможность может значительно снизить нагрузку на процессор.</p>
+                <p>Если видео обновляется только при обнаружении движения, до тех пор пока оно не обнаружено пользователи будут видеть в позиции камеры сообщение <span class="uitext">Нет движения</span> и неподвижное изображение. На неподвижном изображении будет серая маска, чтобы было лучше видно, на каких камерах нет движения.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Звук при обнаружении движения</span>
+              </td>
+              <td>
+                <p>Если видео с камеры просматриваются на вкладке <span class="uitext">Наблюдение</span>, при обнаружении движения можно получать простое звуковое уведомление.</p>
+                <p>Звуковые уведомления доступны только если видео с камеры фактически отображается в приложении <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Звуковые уведомления <span class="specialbold">не</span> будут доступны при сворачивании окна с нужной камерой. Точно так же при раскрытии окна только с одной камерой звуковые уведомления для других камер будут недоступны.</p>
+                <p>
+                  <span class="uitext">Всегда откл.</span>: Не использовать звуковое уведомление при обнаружении движения.</p>
+                <p>
+                  <span class="uitext">Всегда вкл.</span>: каждый раз при обнаружении движения воспроизводить звуковое уведомление.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Звук при возникновении <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term11">события<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Предварительно заданное происшествие, которое происходит в системе наблюдения; используется системой наблюдения для запуска действий. В зависимости от настройки системы наблюдения, события могут быть вызваны данными с внешних датчиков, обнаружением движения, получением данных с других приложений или действиями пользователя. Событие может быть использовано, например, для начала записи с определенной частотой кадров, для активации выходов, для отправки электронной почты или для любых комбинаций этих действий.</span></a></span>
+              </td>
+              <td>
+                <div>
+                  <p class="note">Эта функция доступна только в некоторых <span class="mc-variable flvar-brand-company.XP variable">XProtect</span> системах VMS. Информация о возможностях системы приведена в разделе <a href="../sf_considerationsrequirements/sc_surveillancesystemdif.htm" class="MCXref xref">Различия систем наблюдения</a>.</p>
+                </div>
+                <p>Для использования данной функции необходимо выполнить настройку уведомлений о событиях на сервере системы наблюдения.</p>
+                <p>Звуковые уведомления доступны только если видео с камеры фактически отображается в приложении <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Звуковые уведомления не будут доступны при сворачивании окна с нужной камерой. Точно так же при раскрытии окна только с одной камерой звуковые уведомления для других камер будут недоступны.</p>
+                <p>Когда видео с камеры просматривается на вкладке <span class="uitext">Наблюдение</span>, при появлении связанных с этой камерой событий можно получать простое звуковое уведомление.</p>
+                <p>
+                  <span class="uitext">Всегда откл.</span>: Не использовать звуковые тревоги для связанных с камерой событий.</p>
+                <p>
+                  <span class="uitext">Всегда вкл.</span>: воспроизводить звуковую тревогу каждый раз при появлении связанного с этой камерой события.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Отобразить настройки</span>
+              </td>
+              <td>
+                <p>
+                  <span class="uitext">Настройки отображения по умолч.</span>: Воспользуйтесь параметрами по умолчанию в окне <span class="uitext">Параметры</span>, чтобы отобразить строку заголовка и индикатор видео для выбранной камеры. Если необходим специальный режим работы для выбранной камеры, снимите флажок и выберите необходимую строку заголовка и/или индикатор видео.</p>
+                <p>
+                  <span class="uitext">Показать строку заголовка</span>: Отображает панели заголовка над соответствующими позициями камер. Панель заголовка позволяет быстро идентифицировать камеры. При отображении на вкладке <span class="uitext">Наблюдение</span> в панели заголовка также отображается информация об обнаружении движения и событиях, записывает ли камера и т. д. См. раздел <a href="../sf_operation/sc_viewinglivevideo.htm#SC_CameraNamesAndColored.htm" class="MCXref xref">Индикаторы камеры (описание)</a>.</p>
+                <p class="note">Если отключить отображение панели заголовка, пользователи не смогут видеть визуальные индикаторы движения и событий. В качестве альтернативы можно использовать звуковое оповещение.</p>
+                <p>
+                  <span class="uitext">Показать слой периметра</span>: Отображение границ периметра на отдельных камерах. Откройте окно <span class="uitext">Поставщики границ периметра</span> (см. <a href="#SC_BoundingBoxProvidersE(10147).htm" class="MCXref xref">Поставщики рамок (описание)</a>), чтобы указать, какие устройства метаданных должны направлять данные в камеру.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Буферизация видео</span>
+              </td>
+              <td>
+                <p>Эта часть панели <span class="uitext">Свойства</span> может быть не видна. Для просмотра этой информации откройте окно <span class="uitext">Параметры</span> (см. <a href="sc_settingswindowexplain.htm" class="MCXref xref">Параметры в XProtect Smart Client</a>), перейдите на вкладку <span class="uitext">Функции</span> и убедитесь в том, что параметру <span class="uitext">Настройка</span> &gt; <span class="uitext">Изменение параметров буферизации</span> присвоено значение <span class="uitext">Доступно</span>.</p>
+                <p>Если требуется очень плавное отображение видео в реальном времени без каких-либо искажений, для видео можно создать буфер.</p>
+                <p>По возможности избегайте использования буферизации видео. Буферизация видео может значительно увеличить объем памяти, выделяемой на каждую камеру в виде. Если использование буферизации видео не требуется, задайте максимально низкий уровень буферизации.</p>
+                <p>Если видео в реальном времени хранится в буфере, оно будет отображаться плавно без каких-либо искажений, однако увеличение буфера приведет к небольшой задержке отображения видео. Такая задержка часто не оказывает заметного влияния на просмотр видео. Однако задержка может стать очень заметной, если используется PTZ-камера (поворотная камера с трансфокатором), особенно если для управления такой камерой используется джойстик.</p>
+                <p>Возможность управлять размером буфера для видеоданных позволяет решить, предпочитаете ли вы плавное отображение видео в реальном времени (требует буферизации и поэтому приводит к некоторой задержке) или мгновенное действие PTZ и джойстика (не требует буферизации, но может из-за отсутствия буфера привести к небольшому искажению при отображении видео в реальном времени).</p>
+                <p>Чтобы использовать буферизацию видео, выберите параметр <span class="uitext">Использовать буфер видео по умолчанию</span>, а затем укажите нужный размер буфера (от <span class="uitext">Нет</span> до <span class="uitext">Макс. 2 секунды</span>).</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <span class="uitext">Применить ко всем</span>
+              </td>
+              <td>
+                <p>Кнопка <span class="uitext">Применить ко всем</span> позволяет быстро применить параметры выбранной камеры ко всем камерам вида.</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2>Выбор частоты кадров (объяснение)<a name="SC_FrameRateEffectExplai.htm"></a></h2>
+        <p>Результаты выбора <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term14">частоты кадров<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Показатель количества информации, которая содержится в видео. Обычно измеряется в FPS (кадр/с).</span></a> можно проиллюстрировать следующим образом:</p>
+        <table cellspacing="3">
+          <col />
+          <col />
+          <col />
+          <col />
+          <thead>
+            <tr>
+              <th>
+                <p>Эффект</p>
+              </th>
+              <th>
+                <p>Без ограничений</p>
+              </th>
+              <th>
+                <p>Среднее</p>
+              </th>
+              <th>
+                <p>Низкий</p>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>JPEG </td>
+              <td>
+                <p>Отправлять все кадры</p>
+              </td>
+              <td>
+                <p>Отправлять каждый 4-й кадр</p>
+              </td>
+              <td>
+                <p>Отправлять каждый 20-й кадр</p>
+              </td>
+            </tr>
+            <tr>
+              <td>MPEG/H.264/H.265 </td>
+              <td>
+                <p>Отправлять все кадры</p>
+              </td>
+              <td>
+                <p>Отправлять только ключевые кадры</p>
+              </td>
+              <td>
+                <p>Отправлять только ключевые кадры</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Закрыто" data-mc-alt2="Открыто" />Пример: <br /></a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Если в приложении <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> для параметра <span class="uitext">Частота кадров</span> выбрать значение <span class="uitext">Низкая</span>, а администратор системы настроил камеру передавать JPEG-изображения с частотой 20 кадров в секунду, при просмотре видео с этой камеры вы будете получать видео со средней частотой 1 кадр в секунду. Если администратор системы настроил камеру на передачу изображения с частотой 4 кадра в секунду, при просмотре видео с этой камеры вы будете получать видео со средней частотой 0,2 кадра в секунду.</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2>Границы (объяснение)<a name="SC_BoundingBoxes.htm"></a></h2>
+        <p>Граница периметра представляет собой прямоугольную границу, которая, к примеру, охватывает объект на изображении от камеры. В <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> границы периметра показаны в виде желтой рамки на видео.</p>
+        <p>
+          <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../../Images/sc_yellowboundingbox.jpg" data-mc-popup-alt="Example of a bounding box in XProtect Smart Client.">
+            <img class="MCPopupThumbnail img" data-mc-width="1201" data-mc-height="674" src="../../../../Images/sc_yellowboundingbox_thumb_200_0.jpg" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Example of a bounding box in XProtect Smart Client." tabindex="" />
+          </a>
+        </p>
+        <p class="note">Цвет может зависеть от конфигурации системы управления видео.</p>
+        <p>Границы периметра отдельных камер можно показать или скрыть в меню <span class="uitext">Настройки отображения</span> в свойствах камеры.</p>
+        <p>Если на экране отображаются границы, они также отображаются в следующих случаях:</p>
+        <ul>
+          <li>
+            <p> Экспортируйте видео в формате <span class="mc-variable flvar-brand-company.XP variable">XProtect</span>. См. также <a href="sc_exportsettings.htm" class="MCXref xref">Параметры экспорта</a>.</p>
+          </li>
+          <li>
+            <p>Напечатайте кадры. См. также <a href="../sf_operation/sc_exportingevidence.htm#SC_CreatingSurveillanceReports.htm" class="MCXref xref">Печать и создание отчетов о наблюдении</a>.</p>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h2>Поставщики рамок (описание)<a name="SC_BoundingBoxProvidersE(10147).htm"></a></h2>
+        <p>Для этого параметра необходимо установить флажок <span class="uitext">Показать слои периметра</span>. Выберите в меню устройства метаданных, которые будут предоставлять данные для границ периметров в видео от данной камеры. Список устройств задается вашим системным администратором.</p>
+      </div>
+      <div>
+        <h2>Кнопки наложения (объяснение)<a name="SC_OverlayButtons.htm"></a></h2>
+        <p>Можно добавить кнопки наложения к позициям камеры в виде для активации вспомогательных команд (команд, определяемых камерой). Кнопки наложения зависят от типа системы наблюдения (см. <a href="../sf_considerationsrequirements/sc_surveillancesystemdif.htm" class="MCXref xref">Различия систем наблюдения</a>). Вспомогательные команды зависят от камеры. Дополнительные сведения приведены в документации по камере.</p>
+      </div>
+      <div>
+        <h2>Звуковые уведомления (объяснение)<a name="SC_SoundNotifications.htm"></a></h2>
+        <p>В приложение <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> можно настроить звуковых уведомлений, если:</p>
+        <ul>
+          <li>Обнаружено движение на одной или нескольких конкретных камерах </li>
+          <li>Происходят события (см. <a href="../../../feature_flags/ff_managealarms/sc_workingwithalarms.htm#SC_Events.htm" class="MCXref xref">События (объяснение)</a>), связанные с одной или несколькими камерами</li>
+        </ul>
+        <p>Если раздается звуковое уведомление, возможно, требуется выполнить какие-то действия. Если вы не знаете, используются ли звуковые уведомления в вашей организации, а если используются, то каким образом, обратитесь к администратору.</p>
+        <p>Звуковые уведомления для конкретной камеры можно временно отключить. На панели инструментов камеры нажмите кнопку <span class="uitext">Дополнительно</span> &gt; <span class="uitext">Звуковые уведомления</span> &gt; <span class="uitext">Без звука</span>.</p>
+        <p class="note">Если свернуть окно <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>, звуковые уведомления будут отключены.</p>
+        <p>Чтобы повторно включить звуковые уведомления для камеры, повторно выберите команду <span class="uitext">Дополнительно</span> &gt; <span class="uitext">Звуковые уведомления</span> &gt; <span class="uitext">Без звука</span>.</p>
+        <p class="note">Возможность отключения звука не предусмотрена для областей внимания, каруселей и позиций <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term29">Matrix<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Продукт, доступный в качестве дополнения к системам наблюдения XProtect. С XProtect Incident Manager вы можете документировать и управлять инциденты в XProtect Smart Client.</span></a> (см. <span class="mc-variable flvar-brand-company.MMName_short variable">Matrix</span>).</p>
+      </div>
+    </div>
+    <p></p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

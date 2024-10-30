@@ -1,0 +1,811 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="zh-TW" xml:lang="zh-TW" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="設定" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Configure smart map in XProtect Smart Client to get a geographical overview of your cameras, devices, and plug-in elements - in a one world experience." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=Recording Server" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=管理員" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=整合商" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=操作員" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>智慧地圖 (配置)</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#feature_flags/ff_map/sc_configuringmaps.htm">使用瀏覽打開主題</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="階層連結" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>智慧地圖 (配置)</h1>
+      <p>在利用智慧地圖功能之前，您必須在 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 中執行某些配置工作。</p>
+      <p>您必須將智慧地圖新增到檢視中，才能查看此智慧地圖。另請參閱<a href="#SC_AddSmartMapToView.htm" class="MCXref xref">將智慧地圖新增到檢視</a>。</p>
+      <p class="note">如需更多資訊，請參閱<a href="sc_workingwithmap.htm#SC_SmartMapExplained.htm" class="MCXref xref">智慧地圖（已說明）</a>。</p>
+      <div>
+        <h2>地圖和智慧地圖之間的差別（已說明）<a name="SC_DifferencesBetweenMap.htm"></a></h2>
+        <p>
+          <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 所提供的地圖功能可協助您將監視系統視覺化，並且快速回應事件。</p>
+        <ul>
+          <li>
+            <span class="uitext">地圖</span> - 這些地圖是根據不含地理參考的靜態影像而建立。您可以新增裝置，例如攝影機、麥克風和錄影伺服器。您也可以新增警報、事件和讓您直接從地圖與監視系統互動的存取控制。您必須在地圖上手動定位裝置與功能元件。如需更多資訊，請參閱 <a href="../../standard_features/sf_sc/sf_operation/sc_workingwithmaps.htm#SC_IntroductionToMaps(796).htm" class="MCXref xref">地圖（說明）</a></li>
+          <li>
+            <span class="uitext">智慧地圖</span> - 此地圖類型使用地理資訊系統準確反映真實世界中的地理位置。如此將可為多個位置的攝影機提供更準確的概觀。您也可以：<ul><li>使用 Bing Maps 和 Google Maps 服務</li><li data-mc-conditions="flcts-features.oem-map-service-content">使用 <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> 作為地理背景</li><li>使用 OpenStreetMap 地圖專案作為地理背景</li><li>新增電腦輔助設計 (CAD) 繪圖、形狀檔和影像作為覆蓋</li></ul><p> 如需更多資訊，請參閱<a href="sc_workingwithmap.htm#SC_SmartMapExplained.htm" class="MCXref xref">智慧地圖（已說明）</a></p></li>
+        </ul>
+        <p class="note">地圖與智慧地圖無法互換。如果您使用的是地圖，您可以使用影像檔作為智慧地圖，但是您必須再次新增裝置。您無法將帶有裝置的地圖傳送至智慧地圖。但是您可以將智慧地圖與地圖連結。如需更多資訊，請參閱<a href="#SC_AddingDeletingOrEditi_2.htm" class="MCXref xref">在智慧地圖上新增、刪除、或編輯連結</a>。</p>
+      </div>
+      <div>
+        <h2>將智慧地圖新增到檢視<a name="SC_AddSmartMapToView.htm"></a></h2>
+        <p>將<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">智慧地圖<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>一種地圖功能，利用地理資訊系統將監視系統的裝置 (例如攝影機和麥克風)、建築和地形元件視覺化，在現實世界的影像中的精確位置上呈現。利用此功能呈現各項元件的地圖，稱為智慧地圖。</span></a>新增至檢視以開始使用。根據預設，會顯示基本世界地圖。在新增智慧地圖之後，您可以變更地理背景。</p>
+        <p>步驟：</p>
+        <ol>
+          <li value="1">在<span class="uitext">即時</span>或<span class="uitext">播放</span>標籤中，選取想要新增智慧地圖的檢視。</li>
+          <li value="2"> 按一下<span class="uitext">設定</span>以進入設定模式。 </li>
+          <li value="3">展開<span class="uitext">系統概觀</span>窗格，然後將<span class="uitext">智慧地圖</span>項目拖曳至檢視內的相關位置。</li>
+          <li value="4"> 再次按一下<span class="uitext">設定</span>以離開設定模式。 您的變更已儲存。</li>
+          <li value="5">您現在可以變更地理背景。</li>
+        </ol>
+      </div>
+      <div>
+        <h2>變更智慧地圖上的地理背景<a name="SC_ChangeTheGeographicBa.htm"></a></h2>
+        <p>預設情況下，將智慧地圖新增至檢視時，會顯示基本世界地圖。將智慧地圖新增至檢視之後，可以選擇其他地理背景。使用智慧地圖的每個使用者下次在顯示此檢視時將看見新的背景。</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="關閉" data-mc-alt2="開啟" />需求</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>只有在系統管理員已在 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> 中設定的情況下，才可使用 Bing Maps 和 Google Maps 地理背景。</p>
+          </div>
+        </div>
+        <p>步驟：</p>
+        <ol>
+          <li value="1">選取包含智慧地圖的檢視。</li>
+          <li value="2">按一下工具列中的<img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">顯示或隱藏圖層和自訂覆蓋</span>。</li>
+          <li value="3">在<span class="uitext">地理背景</span>底下，選取您要顯示的背景和細節類型。例如，如果您要查看地形資訊，選取<span class="uitext">地形</span>。如果您要查看道路，選取<span class="uitext">道路</span>。</li>
+        </ol>
+      </div>
+      <div>
+        <h2>地理背景（已說明）<a name="SC_GeographicBackgrounds.htm"></a></h2>
+        <p>您可以使用以下服務作為<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">智慧地圖<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>一種地圖功能，利用地理資訊系統將監視系統的裝置 (例如攝影機和麥克風)、建築和地形元件視覺化，在現實世界的影像中的精確位置上呈現。利用此功能呈現各項元件的地圖，稱為智慧地圖。</span></a>的地理背景：</p>
+        <ul>
+          <li>Bing Maps</li>
+          <li>Google Maps</li>
+          <li data-mc-conditions="flcts-features.oem-map-service-content">
+            <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+          </li>
+          <li> OpenStreetMap </li>
+        </ul>
+        <p>選擇地理背景後，新增裝置（例如相機）和自訂覆蓋（例如形狀檔案）。如需更多資訊，請參閱<a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">自訂覆蓋（已說明）</a>。</p>
+      </div>
+      <div data-mc-conditions="">
+        <h2>地理背景的類型（已說明）<a name="SC_TypesOfGeographicBack.htm"></a></h2>
+        <p>將<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">智慧地圖<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>一種地圖功能，利用地理資訊系統將監視系統的裝置 (例如攝影機和麥克風)、建築和地形元件視覺化，在現實世界的影像中的精確位置上呈現。利用此功能呈現各項元件的地圖，稱為智慧地圖。</span></a>新增至檢視之後，可以選擇下列其中一個地理背景：</p>
+        <ul>
+          <li>
+            <span class="uitext">基本世界地圖</span> - 使用<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>中提供的標準地理背景。本地圖的用途是作為一般參考，並未包含國家/地區邊界、城市或其他詳細資料等功能。但是和其他地理背景一樣，它包含地理參考資料</li>
+          <li>
+            <span class="uitext">Bing Maps</span> - 連接 Bing Maps</li>
+          <li>
+            <span class="uitext">Google Maps</span> - 連接 Google Maps <p class="note">Bing Maps 和 Google Maps 選項需要存取網際網路，而您必須透過 Microsoft 或 Google 購買金鑰。</p></li>
+          <div data-mc-conditions="flcts-features.oem-map-service-content">
+            <li>
+              <span class="uitext">
+                <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+              </span> - 連接至免費的地圖供應商。啟用 <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> 後，需要進一步設定。</li>
+            <p>請參閱<a href="#Enable">啟用 Milestone Map Service</a></p>
+          </div>
+          <div>
+            <li>
+              <p>
+                <span class="uitext">OpenStreetMap</span> - 連接至：</p>
+              <ul>
+                <li>您自選的商業動態磚伺服器</li>
+                <li>
+                  <p>您自己的線上或本機動態磚伺服器</p>
+                </li>
+              </ul>
+              <p>請參閱<a href="#SC_ChangeOpenstreetmapTi.htm">Change OpenStreetMap tile servers</a></p>
+            </li>
+          </div>
+          <li>
+            <span class="uitext">無</span> - 此選項用於隱藏地理背景。請注意，地理參考資料仍然維持在該處。另請參閱<a href="#SC_LayersOnSmartMapExpla.htm" class="MCXref xref">智慧地圖上的圖層（已說明）</a></li>
+        </ul>
+        <p>預設情況下，Bing Maps 和 Google Maps 顯示衛星圖像。您可以變更圖像 (例如，變更為空照圖或地形圖) 來查看不同的細節。</p>
+      </div>
+      <div data-mc-conditions="flcts-features.oem-map-service-content">
+        <h2>
+          <a name="Enable"></a>啟用 <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span></h2>
+        <p>
+          <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>是一項線上服務，您可以使用它連接到 <span class="mc-variable flvar-brand-company.CompanyLong variable">Milestone Systems</span> 磚伺服器。該動態磚伺服器使用免費的商業可用地圖服務。</p>
+        <p>在您的智慧地圖上啟用 <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span><span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> 後，智慧地圖會作為其地理背景使用。</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="關閉" data-mc-alt2="開啟" />需求</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>如果 <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> 欄位呈灰色顯示，則您沒有啟用或停用服務所需的使用者權限。請聯絡您的系統管理員以協助您啟用 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> 中的這項功能。</p>
+            <p class="important">
+              <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> 要求網際網路存取。</p>
+          </div>
+        </div>
+        <p>步驟：</p>
+        <ol>
+          <li value="1">
+            <p>在右上角，依次按一下 <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> 與 <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">設定</span> 以開啟<span class="uitext">設定</span>視窗。</p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_configuringmaps_mmapserv.png" data-mc-popup-alt="Enable Milestone Map Service.">
+                <img class="MCPopupThumbnail img" data-mc-width="786" data-mc-height="593" src="../../../Images/sc_configuringmaps_mmapserv_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Enable Milestone Map Service." tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="2">在左側區段中，按一下 <span class="uitext">智慧地圖</span>。</li>
+          <li value="3">在 <span class="uitext mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> 欄位，選取<span class="uitext">可用</span>。</li>
+          <li value="4">按一下<span class="uitext">關閉</span>。下次載入智慧地圖時，它將使用 <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> 作為地理背景。</li>
+        </ol>
+      </div>
+      <div>
+        <h2>OpenStreetMap 動態磚伺服器 (說明)<a name="SC_ChangingOpenstreetmap.htm"></a></h2>
+        <p>如果您使用 OpenStreetMap 作為智慧地圖的地理背景，您需要指定一個動態磚伺服器。您可以指定一個本機動態磚伺服器 (例如您的組織針對機場或港口等區域擁有其自身的地圖時)，也可以使用商業動態磚伺服器。</p>
+        <p class="note">要使用本機動態磚伺服器，您無需網際網路存取。</p>
+        <p>動態磚伺服器位址可以透過兩種方式來指定：</p>
+        <ul>
+          <li>在 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> 中 - 您可以在 <span class="mc-variable flvar-product.SC variable">Smart Client</span> 設定檔上設定動態磚伺服器位址。伺服器位址會套用到所有指定至 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 設定檔的 <span class="mc-variable flvar-product.SC variable">Smart Client</span> 使用者。</li>
+          <li>在 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 中 - 您可在<span class="uitext">設定</span>對話方塊中設定動態磚伺服器位址。 伺服器位址僅會套用到該安裝上</li>
+        </ul>
+        <div>
+          <h2>變更 OpenStreetMap 動態磚伺服器<a name="SC_ChangeOpenstreetmapTi.htm"></a></h2>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="關閉" data-mc-alt2="開啟" />需求</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>如果伺服器端指定的動態磚伺服器已被鎖定無法編輯，則該欄位將呈現灰色，您也無法變更伺服器位址。 請聯絡您的系統管理員以協助您啟用 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> 中的這項功能。</p>
+            </div>
+          </div>
+          <p>步驟：</p>
+          <ol>
+            <li value="1">
+              <p>在右上角，依次按一下 <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> 與 <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">設定</span> 以開啟<span class="uitext">設定</span>視窗。</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_mapsettings.png" data-mc-popup-alt="Specify alternative tile server for the smart map.">
+                  <img class="MCPopupThumbnail img" data-mc-width="786" data-mc-height="593" src="../../../Images/sc_mapsettings_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Specify alternative tile server for the smart map." tabindex="" />
+                </a>
+                <br />
+              </p>
+            </li>
+            <li value="2">在左側區段中，按一下 <span class="uitext">智慧地圖</span>。</li>
+            <li value="3">在<span class="uitext">OpenStreetMap 伺服器</span>欄位，執行下列任一操作：<ul><li>輸入伺服器位址。如果欄位呈灰色，說明該欄位已在伺服器端被鎖定</li><li>要使用伺服器端指定的伺服器 (如有)，請選取<span class="uitext">遵循伺服器</span>核取方塊</li></ul></li>
+            <li value="4">按一下<span class="uitext">關閉</span>。下次載入智慧地圖時，它將使用您指定的 OpenStreetMap 伺服器。</li>
+          </ol>
+          <p class="important">若未指定任何伺服器位址，或伺服器位址無效，則 OpenStreetMap 將無法作為地理背景使用。</p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>在智慧地圖上顯示或隱藏圖層<a name="SC_ShowingOrHidingLayers.htm"></a></h2>
+        <p>您可以根據要查看的內容，在智慧地圖上打開和關閉圖層。</p>
+        <div>
+          <h3>智慧地圖上的圖層（已說明）<a name="SC_LayersOnSmartMapExpla.htm"></a></h3>
+          <p>使用圖層以篩選<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">智慧地圖<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>一種地圖功能，利用地理資訊系統將監視系統的裝置 (例如攝影機和麥克風)、建築和地形元件視覺化，在現實世界的影像中的精確位置上呈現。利用此功能呈現各項元件的地圖，稱為智慧地圖。</span></a>顯示的資訊。智慧地圖上有三種圖層類型：</p>
+          <ul>
+            <li>
+              <span class="uitext">系統元素</span> - 包括攝影機、連結和位置</li>
+            <li>
+              <span class="uitext">自訂覆蓋</span> - 點陣圖影像、CAD 繪圖和形狀檔</li>
+            <li>
+              <span class="uitext">地理背景</span> - 基本世界地圖或以下服務之一：<ul><li>Bing Maps</li><li>Google Maps</li><li data-mc-conditions="flcts-features.oem-map-service-content"><span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span></li><li> OpenStreetMap </li></ul></li>
+          </ul>
+          <p class="note">只有在您的系統管理員已經在 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> 中啟用 Bing Maps 和 Google Maps 後，它們才能作為地理背景。如需更多資訊，請參閱<a href="#SC_GeographicBackgrounds.htm" class="MCXref xref">地理背景（已說明）</a>。</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>圖層的順序（已說明）<a name="SC_OrderOfLayersExplaine.htm"></a></h3>
+          <p>每種類型的所有系統元素會位於相同<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term26">圖層<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>一个智能地图的地理背景，一个自定义覆盖，或者一个系统元素，例如摄像头。图层是智能地图上存在的所有图形元素。</span></a>。例如，所有攝影機會位於相同圖層。如果您隱藏相機圖層，將會隱藏所有相機。系統元素的圖層由上至下以下列順序排列：位置、攝影機、連結、以及地理背景。您不能夠改變這個順序。</p>
+          <p>地理背景始終是智慧地圖中最低的圖層。您可以在地理背景之間切換，但是您一次只能選取一個地理背景。</p>
+          <p>自訂覆蓋會新增為個別圖層，並且以它們新增至智慧地圖的順序堆疊。設定地圖的預設設定即可重新排列順序。</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="關閉" data-mc-alt2="開啟" />範例</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>城市規劃師擁有可顯示城市邊界的形狀檔，以及包括市內所有主要道路的形狀檔。規劃師可以排列圖層的順序，讓道路顯示在城市邊界的上面。如此將提供城市中攝影機所在位置的一般檢視，並且能夠拉近以查看特殊攝影機所在街道的名稱。</p>
+            </div>
+          </div>
+        </div>
+        <div data-mc-conditions="">
+          <h3>顯示或隱藏智慧地圖上的圖層<a name="SC_ShowOrHideLayersOnSma.htm"></a></h3>
+          <p>您可以顯示或隱藏智慧地圖上的圖層，包括地理背景。例如，當您希望專注於特殊元素，或者只是要簡化智慧地圖所顯示的內容時，這就很有用。</p>
+          <p>步驟：</p>
+          <ol>
+            <li value="1">按一下工具列中的<img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">顯示或隱藏圖層和自訂覆蓋</span>。</li>
+            <li value="2">若要顯示或隱藏系統元素與自訂覆蓋，請選取或清除核取方塊。</li>
+            <li value="3">若要隱藏地理背景，請選擇<span class="uitext">無</span>。</li>
+          </ol>
+          <p class="note">選擇<span class="uitext">無</span>將會隱藏地理背景，但是地理參考仍然會套用至智慧地圖。例如，如果您新增包含空間參考的新形狀檔，系統仍將使用空間參考將檔案置於地圖上。</p>
+          <p class="note">隱藏麥克風將對目前取消靜音的麥克風設為靜音，直到您再次顯示麥克風為止。</p>
+        </div>
+        <div>
+          <h3>指定智慧地圖的預設設定<a name="SC_ManageDefaultSettings(65803).htm"></a></h3>
+          <p>在新增智慧地圖到檢視之後，而且已新增了覆蓋、攝影機、以及連結，您可以指定自訂覆蓋的預設設定。您也可以刪除自訂覆蓋以進行清理。</p>
+          <p>步驟：</p>
+          <ol>
+            <li value="1">按一下<span class="uitext">設定</span>。</li>
+            <li value="2">按一下<img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">管理預設設定</span>。</li>
+            <li value="3">執行下列任何一個動作：<ul><li>若要顯示或隱藏自訂覆蓋，請選取或清除核取方塊</li><li>如果要重新排列順序，請使用覆蓋前面的拖曳處置，將其拖曳到清單中的新位置。圖層在清單中由上到下排列</li><li>如果要刪除覆蓋，將指標停留在覆蓋上，然後按一下<span class="uitext">刪除</span>。</li></ul></li>
+            <li value="4">按一下<span class="uitext">儲存</span>。</li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>新增、刪除、或編輯自訂覆蓋<a name="SC_AddingDeletingOrEditi.htm"></a></h2>
+        <div>
+          <h3>自訂覆蓋（已說明）<a name="SC_CustomOverlaysExplain.htm"></a></h3>
+          <p>您可以新增以下檔案類型作為 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 中智慧地圖上的自訂覆蓋：</p>
+          <ul>
+            <li>
+              <span class="uitext">形狀檔</span> - 可以包含地理空間向量資料 (例如點、線、多邊形)，以及代表地圖上的物件的屬性 (例如圍牆或道路) 或者像是河流或湖泊的地理特色。例如，城市規劃與管理局經常使用形狀檔，因為不管如何放大和縮小，它們都能維持正確的比例，而且檔案大小經常小於 CAD 繪圖或點陣圖影像</li>
+            <li>
+              <span class="uitext">CAD</span> - 電腦輔助設計 (CAD) 繪圖作為覆蓋非常有用，因為和形狀檔一樣，CAD 資料也可以使用座標系統和空間參考，提供精確的地理環境。例如，您可以使用詳細的航空圖或是位置的道路地圖</li>
+            <li>
+              <span class="uitext">影像</span> - 如果您有影像檔 (例如建築物的平面圖)，可以加入該檔作為智慧地圖上的覆蓋。您可以使用下列影像檔類型：PNG、BMP、GIF、JPG、JPEG、PHG、TIF 和 TIFF</li>
+          </ul>
+          <p class="note">若要將焦點放在自訂覆蓋，可以臨時隱藏其他圖層類型。請參閱<a href="#SC_LayersOnSmartMapExpla.htm" class="MCXref xref">智慧地圖上的圖層（已說明）</a>。</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>自訂覆蓋和位置（已說明）<a name="SC_CustomOverlaysAndLoca.htm"></a></h3>
+          <p>您可以快速跳轉至您新增至智慧地圖的自訂覆蓋，如<a href="sc_workingwithmap.htm#SC_FindLocationOfCustomO.htm" class="MCXref xref">跳轉至智慧地圖上的自訂覆蓋</a>所述。但在設定中，您可以在自訂覆蓋與位置之間建立連線。這表示每當增加新的自訂覆蓋時，<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 會在地圖上完全相同的地點，建立與覆蓋名稱相同的位置。自訂覆蓋的位置現在可以在<span class="uitext">選取位置</span>清單中取得。</p>
+          <p>
+            <img src="../../../Images/custom_overlays_and_locations.jpg" alt="" />
+          </p>
+          <p>覆蓋和位置不會連結。例如，您可以刪除或重新命名位置，但不變更覆蓋，反之亦然。</p>
+          <p class="note">如需開啟此功能，請參閱<a href="#SC_AddLocationsToCustomO.htm" class="MCXref xref">新增位置到自訂覆蓋（智慧地圖）</a>。</p>
+        </div>
+        <div>
+          <h3>在智慧地圖上新增自訂覆蓋<a name="SC_AddCustomOverlayOnSma.htm"></a></h3>
+          <p>新增自訂覆蓋，以在智慧地圖上新增細節層級。當您新增<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term8">自訂覆蓋<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>由使用者定義的圖形元素，使用者可以為了諸如說明建築內的樓層平面圖或標記區域間的邊界等目的而將自訂覆蓋新增至智慧地圖。自訂覆蓋可以是影像、CAD 繪圖或形狀檔。</span></a>時，<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 會建立與覆蓋名稱相同的位置。</p>
+          <p>步驟：</p>
+          <ol>
+            <li value="1">選取包含智慧地圖的檢視，然後按一下<span class="uitext">設定</span>。</li>
+            <li value="2">按一下<img src="../../../Images/add_custom_overlay_on_1.png" alt="" /><span class="uitext">新增自訂覆蓋</span>：<ul><li>如果覆蓋為參考地理的，在智慧地圖上的任意處按一下。<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 使用參考地理的資訊，放置覆蓋於正確的地理位置。此外，智慧地圖將會在覆蓋上，以預設的變焦等級置中。</li><li>如果覆蓋沒有參照地理位置，請前往地圖上您要新增元素所在的點，然後在智慧地圖上按一下該點。</li><p class="tip">新增覆蓋之前，拉近地圖上您要放置該覆蓋的位置是不錯的作法。如此將使得精確定位覆蓋更加容易。</p></ul></li>
+            <li value="3">輸入覆蓋名稱。</li>
+            <li value="4">根據您選取的檔案類型：<ul><li><span class="uitext">影像</span> - 選取影像檔，然後按一下<span class="uitext">確定</span></li><li><span class="uitext">形狀檔</span> - 選取 SHP 檔。<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 會自動搜尋您的 PRJ 檔（若適用），因此您只要按一下<span class="uitext">確定</span>即可。如果您沒有 PRJ 檔，可以在新增該檔案之後，手動重新放置覆蓋。您也可以套用一個色彩。例如，加入色彩可讓形狀檔在智慧地圖上更突出</li><li><span class="uitext">CAD</span> - 選取 DWG 檔。如果您有 PRJ 檔，按一下<span class="uitext">確定</span>。如果您沒有 PRJ 檔，而且您希望使用地理參考，將檔案放置在智慧地圖上，請輸入空間參考識別碼 (SRID)，然後按一下<span class="uitext">確定</span>。如果您沒有 PRJ 檔或 SRID，可以在新增該檔案之後，手動重新放置覆蓋</li><p class="note">如需更多有關覆蓋類型的資訊，請參閱<a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">自訂覆蓋（已說明）</a>。</p></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>新增位置到自訂覆蓋（智慧地圖）<a name="SC_AddLocationsToCustomO.htm"></a></h3>
+          <p>您可以設定 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 以將位置自動新增至您智慧地圖上的<a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term8">自訂覆蓋<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>由使用者定義的圖形元素，使用者可以為了諸如說明建築內的樓層平面圖或標記區域間的邊界等目的而將自訂覆蓋新增至智慧地圖。自訂覆蓋可以是影像、CAD 繪圖或形狀檔。</span></a>。 它允許您透過<span class="uitext">選取位置</span>清單跳轉至自訂覆蓋。 </p>
+          <p>步驟：</p>
+          <ol>
+            <li value="1">在應用程式工具列中，依次按下 <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> 與 <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">設定</span>以開啟<span class="uitext">設定</span>視窗。</li>
+            <li value="2">移至<span class="uitext">智慧地圖</span>標籤。</li>
+            <li value="3">在<span class="uitext">當圖層增加時建立位置</span>清單中，選取<span class="uitext">是</span>。</li>
+            <li value="4">關閉對話方塊以儲存變更。</li>
+          </ol>
+          <p class="note">如需更多資訊，請參閱<a href="#SC_CustomOverlaysAndLoca.htm" class="MCXref xref">自訂覆蓋和位置（已說明）</a>。</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>刪除智慧地圖上的自訂覆蓋<a name="SC_DeleteCustomOverlayOn.htm"></a></h3>
+          <ol>
+            <li value="1">選取包含智慧地圖的檢視，然後按一下<span class="uitext">設定</span>。</li>
+            <li value="2">按一下工具列中的<img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">管理預設設定</span>。</li>
+            <li value="3">將指標停留在自訂覆蓋上，然後按一下<span class="uitext">刪除</span>。</li>
+            <li value="4">按一下<span class="uitext">儲存</span>，刪除自訂覆蓋。</li>
+            <li value="5">選用：如果某個位置是針對自訂覆蓋而建立，您可能也需要刪除該位置。如需更多資訊，請參閱<a href="#SC_AddingDeletingOrEditi_3.htm" class="MCXref xref">在智慧地圖上新增、刪除、或編輯位置</a>。</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>使形狀檔更清楚可見（智慧地圖）<a name="SC_MakeAreasInShapefiles.htm"></a></h3>
+          <p class="note">只有當您使用多邊形形狀檔時，本主題才係為相關。</p>
+          <p>如果要在智慧地圖上使用由多邊形組成的形狀檔，則必須區分每一個多邊形。您可以藉由降低為形狀檔選擇顏色的不透明度來達成。多邊形的邊界將明顯呈現。</p>
+          <p>步驟：</p>
+          <ol>
+            <li value="1">請遵循<a href="#SC_AddCustomOverlayOnSma.htm" class="MCXref xref">在智慧地圖上新增自訂覆蓋</a>中所示的步驟。</li>
+            <li value="2">
+              <p>當選擇顏色時，向左拖動<span class="uitext">不透明度</span>滑桿，直到您確定透明度水平為止。</p>
+              <p>
+                <img src="../../../Images/make_areas_in_shapefiles_more.jpg" alt="" />
+              </p>
+            </li>
+            <li value="3">按一下<span class="uitext">儲存</span>。</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>調整自訂覆蓋的位置、大小或對齊<a name="SC_AdjustPositionSizeOrA.htm"></a></h3>
+          <p>您可以將覆蓋移至地圖上的其他位置、使其變得更大或更小，並加以旋轉。例如，如果您的覆蓋不是參考地理的，或者覆蓋是參考地理的，但是因為特定原因而沒有與地理背景完全對齊，則此方式相當實用。</p>
+          <p>步驟：</p>
+          <ol>
+            <li value="1">選取包含智慧地圖的檢視，然後按一下<span class="uitext">設定</span>。</li>
+            <li value="2">用滑鼠右鍵按一下覆蓋，並選取<span class="uitext">編輯位置</span>。</li>
+            <li value="3">調整覆蓋大小或選轉覆蓋：<ul><li>按一下並拖曳角落控點</li><li><p>如果要圍繞特定點旋轉覆蓋，請將定軸點移動到地圖上的該位置。接著按一下並拖曳角落控點。</p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/adjust_position_size_or_alignment.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="273" data-mc-height="261" src="../../../Images/adjust_position_size_or_alignment_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="" tabindex="" /></a></p></li></ul></li>
+            <li value="4">若要在地圖上移動覆蓋，按一下並拖曳該覆蓋。</li>
+            <li value="5">若要儲存變更，按一下<span class="uitext">儲存</span>。</li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>在智慧地圖上新增、刪除或編輯裝置<a name="SC_AddingDeletingOrEditi_1.htm"></a></h2>
+        <p>您可以在自己環境中裝置的實際位置將裝置新增至智慧地圖。如此可提供監視系統極佳的概覽，並且協助您針對狀況做出回應。例如，如果您想要在正在進行的事件期間追蹤某個嫌犯，可以按一下地圖上的攝影機查看他們的影片內容。</p>
+        <p>將攝影機新增至智慧地圖之後，您可以調整攝影機圖示的視野，讓它能夠反映實際攝影機的視野。如此將可輕易發現涵蓋特殊區域的攝影機。此外，您可以選擇圖示來代表地圖上的攝影機，協助您識別地圖上的攝影機類型。</p>
+        <p>您可以在智慧地圖上處理以下裝置類型：</p>
+        <ul>
+          <li>攝影機</li>
+          <li>輸入裝置</li>
+          <li>麥克風</li>
+        </ul>
+        <div data-mc-conditions="">
+          <h3>將裝置新增至智慧地圖<a name="SC_AddCamerasToSmartMap.htm"></a></h3>
+          <p>如果系統管理員在 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> 中指定裝置的地理座標，當您新增裝置時，其會自動地被放置到智慧地圖上。如果沒有，則您必須自己將裝置放置到確切的地理位置上。</p>
+          <ol>
+            <li value="1">選取包含智慧地圖的檢視，然後按一下<span class="uitext">設定</span>。</li>
+            <li value="2">新增裝置或裝置群組：<p class="tip">在您新增裝置之前，拉近地圖上的位置是不錯的作法。如此將使得精確定位裝置更加容易。</p><ul><li>展開<span class="uitext">系統概觀</span>窗格，找到裝置或裝置群組，然後將其拖曳至您希望在智慧地圖上顯示它的點。您可以在隨後拖曳裝置以便將它們重新定位</li><li>在智慧地圖上，選取 <img src="../../../Images/add-a-device-to-smart-map.png" alt="" /><span class="uitext">新增裝置</span> &gt; 選取裝置類型。<ul><li>範例： 對於攝影機，選取 <img src="../../../Images/add_cameras_to_map.png" alt="" /><span class="uitext">新增攝影機</span>，然後選取攝影機。</li></ul></li><li>將裝置拖曳至智慧地圖</li><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_adddevice.png" data-mc-popup-alt="Add a device to your smart map."><img class="MCPopupThumbnail img" data-mc-width="709" data-mc-height="823" src="../../../Images/sc_smap_adddevice_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add a device to your smart map." tabindex="" /></a><br /></ul></li>
+            <li value="3">若要儲存變更，請按一下<span class="uitext">設定</span>以結束設定模式。</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>變更攝影機的視野和方向<a name="SC_ChangeFieldOfViewAndD.htm"></a></h3>
+          <p>新增相機到智慧地圖後，您可以藉由調整攝影機圖示來變更視野和方向。</p>
+          <p class="tip">如果您在地圖上推遠，可能必須拉近直到顯示視野為止。</p>
+          <ol>
+            <li value="1">選擇包含您想要使用的智慧地圖的檢視。</li>
+            <li value="2">按一下<span class="uitext">設定</span>以編輯攝影機圖示。</li>
+            <li value="3">
+              <p>按一下攝影機圖示 。</p>
+              <p>
+                <img src="../../../Images/change_field_of_view_and_direction.png" alt="" />
+              </p>
+            </li>
+            <li value="4">使用旋轉控點沿正確方向指向攝影機。</li>
+            <li value="5">若要調整視野的寬度、長度與角度，請按一下並拖曳視野前緣的控點。</li>
+            <li value="6">若要儲存您的變更，請按一下<span class="uitext">設定</span>以結束設定模式。</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>選取或變更裝置圖示<a name="SC_SelectOrChangeTheIcon.htm"></a></h3>
+          <p>可以選擇與您使用裝置類型匹配的裝置圖示。</p>
+          <ol>
+            <li value="1">選擇包含您想要使用的智慧地圖的檢視。</li>
+            <li value="2">
+              <p>按一下<span class="uitext">設定</span>，然後按兩下地圖上的裝置圖示。</p>
+              <p>
+                <img src="../../../Images/select_or_change_the_icon.png" alt="" />
+              </p>
+            </li>
+            <li value="3">按一下<span class="uitext">揀選圖示</span>，然後選取裝置的圖示。</li>
+            <li value="4">再次按一下<span class="uitext">設定</span>以儲存變更。</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>顯示或隱藏裝置資訊<a name="SC_ShowOrHideInformation.htm"></a></h3>
+          <p>您可以在智慧地圖上顯示或隱藏有關裝置的資訊。例如，如果您想要新增或減少地圖上的內容量，這就很有用。</p>
+          <ol>
+            <li value="1">選擇包含您想要使用的智慧地圖的檢視。</li>
+            <li value="2">按一下<img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">顯示或隱藏圖層和自訂覆蓋</span>。</li>
+            <li value="3">選取或清除核取方塊以顯示或隱藏資訊。</li>
+          </ol>
+        </div>
+        <div>
+          <h3>在智慧地圖上聆聽麥克風中的音訊</h3>
+          <p>將麥克風新增至智慧地圖後，您可以在<span class="uitext">即時</span>標籤上一次聆聽一個麥克風中的音訊。</p>
+          <p>步驟：</p>
+          <ol>
+            <li value="1">
+              <p>在<span class="uitext">即時</span>標籤上，導覽至麥克風在智慧地圖上所處的位置。</p>
+            </li>
+            <li value="2">
+              <p>按兩下麥克風以將其靜音或取消靜音。</p>
+              <p class="tip">或者，使用右鍵按一下麥克風，然後選擇<span class="uitext">靜音麥克風</span>或<span class="uitext">取消靜音</span>。</p>
+            </li>
+          </ol>
+        </div>
+        <div>
+          <h3>從智慧地圖中移除裝置<a name="SC_DeletingCamerasOnSmar.htm"></a></h3>
+          <p>您可以移除裝置，例如已經移除實體的裝置或錯誤新增的裝置。移除裝置後，裝置的位置資訊 (例如地理座標) 將從您的 VMS 系統中移除。</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="關閉" data-mc-alt2="開啟" />需求</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>這些使用者權限必須在 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> 中啟用：</p>
+              <ul>
+                <li>編輯智慧地圖</li>
+                <li>編輯裝置</li>
+              </ul>
+            </div>
+          </div>
+          <p>步驟：</p>
+          <ol>
+            <li value="1">導覽至您要移除的裝置。</li>
+            <li value="2"> 按一下<span class="uitext">設定</span>以進入設定模式。 </li>
+            <li value="3">
+              <p>若要移除單一裝置，請以右鍵按一下該裝置並按一下<span class="uitext">移除</span>。</p>
+              <p>範例： 對於攝影機，請按一下<span class="uitext">移除攝影機</span>。</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_removecamera.png" data-mc-popup-alt="Remove camera from your smart map.">
+                  <img class="MCPopupThumbnail img" data-mc-width="284" data-mc-height="209" src="../../../Images/sc_smap_removecamera_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: 0;" alt="Remove camera from your smart map." tabindex="" />
+                </a>
+              </p>
+            </li>
+            <li value="4">移除多部相機的步驟：<ol><li value="1"><p>在智慧地圖工具列中，按一下 <img src="../../../Images/preview_videos_from_several.png" alt="" /><span class="uitext">選取多部相機</span>。</p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_cluster_multiselect.png" data-mc-popup-alt="Select multipe cameras on your smart map."><img class="MCPopupThumbnail img" data-mc-width="1056" data-mc-height="672" src="../../../Images/sc_smap_cluster_multiselect_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: 0;" alt="Select multipe cameras on your smart map." tabindex="" /></a><br /></p></li><li value="2">按一下並拖曳以選取多個攝影機。輸入裝置等其他類型的裝置不包含在選取範圍中。</li><li value="3">以右鍵按一下並選取<span class="uitext">移除攝影機</span>。</li></ol></li>
+            <li value="5">移除不是攝影機的多個裝置：<ol><li value="1">在智慧地圖上，按住 Ctrl。</li><li value="2">按住 Ctrl 時，按一下您要移除的裝置。</li><li value="3">以右鍵按一下所選裝置之一，並選取移除。</li></ol></li>
+            <li value="6"> 再次按一下<span class="uitext">設定</span>以離開設定模式。 您的變更已儲存。</li>
+          </ol>
+          <p class="tip">您也可以透過選擇單個裝置，然後按鍵盤上的 <span class="uitext">DELETE</span> 鍵來刪除該裝置。</p>
+        </div>
+      </div>
+      <div>
+        <h2>在智慧地圖上新增、刪除、或編輯連結<a name="SC_AddingDeletingOrEditi_2.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>智慧地圖上的連結（已說明）<a name="SC_LinksOnSmartMapExplai.htm"></a></h3>
+          <p>您可以新增移至智慧地圖上的位置或是移至地圖的連結，或移至 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 中的靜態地圖。如此一來，您可以快速造訪位置，或是顯示其他地圖類型，而不需要變更為其他檢視。您不能連結到另一智慧地圖。如需更多資訊，請參閱<a href="#SC_DifferencesBetweenMap.htm" class="MCXref xref">地圖和智慧地圖之間的差別（已說明）</a>。</p>
+          <p>連結顯示位置和地圖的方式如下：</p>
+          <ul>
+            <li>位置的連結會顯示目前檢視中的位置。若要返回先前曾經檢視過的位置，請按一下智慧地圖工具列上的<img src="../../../Images/backtracking_to_previous_locations.png" alt="" /><span class="uitext">後退</span></li>
+            <li>地圖的連結會顯示浮動視窗中的地圖。如此可讓您同時存取兩種地圖類型。您可以檢視地圖並且與地圖互動，但是無法在浮動視窗中進行變更，例如新增攝影機</li>
+          </ul>
+          <p class="note">如果您將連結以顏色編碼，或者希望連結在地圖上更加明顯，可以指定連結的顏色。根據預設，與智慧地圖位置的連結為藍色，而與舊版地圖的連結則為紅色。如果您使用不同的顏色，可以為每種連結類型使用相同的顏色。例如，在您使用圖層來篩選地圖上的項目時，這樣可使得連結的區分更加容易。</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>新增連結至智慧地圖位置或是地圖<a name="SC_AddLinkToSmartMapLoca.htm"></a></h3>
+          <p>新增連結到智慧地圖能讓您快速造訪位置，或是顯示其他地圖類型，而不需要變更為其他檢視。</p>
+          <p>步驟：</p>
+          <ol>
+            <li value="1">選取包含智慧地圖的檢視，然後按一下<span class="uitext">設定</span>。</li>
+            <li value="2">移至地圖中您想要在該處新增連結的點。</li>
+            <li value="3">在地圖工具列中，按一下<img src="../../../Images/add_link_to_map_location.png" alt="" /><span class="uitext">新增連結</span>，然後按一下地圖上您想要在該處新增連結的點。</li>
+            <li value="4">指定您是希望連結至智慧地圖位置或是地圖，然後按一下<span class="uitext">新增</span>。</li>
+            <li value="5">
+              <p>輸入連結的名稱。</p>
+              <p class="tip">如果您選擇<span class="uitext">圖示與文字</span>作為顯示樣式，可以在智慧地圖中顯示連結的標題。一般而言，名稱會指出連結會將您帶至的位置。</p>
+            </li>
+            <li value="6">在<span class="uitext">目的地</span>欄位中，選取連結前往的地圖或位置。</li>
+            <li value="7">在<span class="uitext">顯示樣式</span>欄位中，指定是要在地圖上顯示名稱與連結圖示，或者只顯示連結圖示。</li>
+            <li value="8">選用：按一下<span class="uitext">色彩</span>以指定連結的色彩。</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>編輯或刪除智慧地圖上的連結<a name="SC_EditOrDeleteLinkOnSma.htm"></a></h3>
+          <p>一旦在智慧地圖上新增連結後，您可以編輯或刪除它。</p>
+          <p>步驟：</p>
+          <ol>
+            <li value="1"> 按一下<span class="uitext">設定</span>以進入設定模式。 </li>
+            <li value="2">如果要編輯連結，用滑鼠右鍵按一下連結並選取<span class="uitext">編輯連結</span>。</li>
+            <li value="3">如果要刪除連結，請執行以下一項操作：<ul><li>用滑鼠右鍵按一下連結，並選取<span class="uitext">刪除連結</span></li><li>選擇連結，然後按鍵盤上的 <span class="uitext">DELETE</span> 鍵</li></ul></li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>在智慧地圖上新增、刪除、或編輯位置<a name="SC_AddingDeletingOrEditi_3.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>智慧地圖上的位置（已說明）<a name="SC_LocationsOnSmartMapEx.htm"></a></h3>
+          <p>您可以在智慧地圖上感興趣的點建立位置。例如，您可以為您的家庭辦公室和衛星辦公室建立位置。建立位置不僅可讓您瞭解環境的全貌，而且在導覽智慧地圖時也很有用。</p>
+          <p class="note">取決於配置，當您新增自訂覆蓋時，<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 會新增與覆蓋名稱相同的位置。例如，如此可在您被推遠時，更容易前往智慧地圖上的覆蓋。但是不會連結覆蓋和位置。例如，您可以刪除或重新命名位置，但不變更覆蓋，反之亦然。如需更多資訊，請參閱<a href="#SC_AddingDeletingOrEditi.htm" class="MCXref xref">新增、刪除、或編輯自訂覆蓋</a>。</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>智慧地圖上的初始位置（已說明）<a name="SC_HomeLocationsForSmart.htm"></a></h3>
+          <p>初始位置特定於設置在其中的檢視項目。您可以在不同檢視項目中有不同的初始位置。如果沒有為檢視項目指定初始位置，檢視項目將顯示整個世界，無論您所使用的背景類型為何。萬一您刪除初始位置，也會出現一樣的情況。</p>
+          <p>在您使用智慧地圖時，可以按一下<img src="../../../Images/home_locations_for_map.png" alt="" /><span class="uitext">初始位置</span>以返回初始位置。這類似於重設檢視中的智慧地圖。您恢復檢視項目的預設設定，而系統則刪除您造訪過的位置的歷史記錄。</p>
+          <p class="note">如果選擇新的初始位置，使用檢視項目的所有人都會受到影響。如果某人已經將其他位置設定為初始位置，您將會變更他們的設定。</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>新增位置到智慧地圖<a name="SC_AddLocationToSmartMap.htm"></a></h3>
+          <p>如果要保持追蹤感興趣的地方，您可以新增位置，以允許您快速地在智慧地圖上導航到該些地方。</p>
+          <p>步驟：</p>
+          <ol>
+            <li value="1">選取包含智慧地圖的檢視，然後按一下<span class="uitext">設定</span>。</li>
+            <li value="2">如果需要，可以平移並且拉近至智慧地圖上想要新增位置的點。</li>
+            <li value="3">按一下工具列上的<img src="../../../Images/add_location_to_map.png" alt="" /><span class="uitext">新增位置</span>，然後按一下智慧地圖上的點。</li>
+            <li value="4">為位置命名，然後新增下列詳細資訊 (選用)：<ul><li>指定當某人移至智慧地圖上的位置時要套用的縮放層級</li><li>選擇位置圖示的色彩。顏色編碼的位置非常有用，例如，可用於區分不同的位置類型。這可以根據位置或其類型的作用，或指出位置的優先權</li><li>選用：將位置設定成您的初始位置。當您按一下<img src="../../../Images/home_locations_for_map.png" alt="" /><span class="uitext">初始位置</span>時，智慧地圖會移動置中至此位置，並套用預設的變焦等級設定。</li></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>編輯或刪除智慧地圖上的位置<a name="SC_EditOrDeleteLocationO.htm"></a></h3>
+          <p>在智慧地圖上新增位置之後，您可以刪除或編輯設定，例如刪除初始位置。</p>
+          <p>步驟：</p>
+          <ol>
+            <li value="1"> 按一下<span class="uitext">設定</span>以進入設定模式。 </li>
+            <li value="2">如果要編輯位置，請用滑鼠右鍵按一下位置並選取<span class="uitext">編輯位置</span>。</li>
+            <li value="3">如果要刪除位置，請執行以下一項操作：<ul><li>用滑鼠右鍵按一下位置並選取<span class="uitext">刪除位置</span></li><li>選擇位置，然後按鍵盤上的 <span class="uitext">DELETE</span> 鍵</li></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>連結位置（已說明）<a name="SC_LinkingBetweenLocatio.htm"></a></h3>
+          <p>例如，在位置間建立一系列連結即可建立巡弋路線。建立從位置 A 移至位置 B 的連結，以及從位置 B 移至位置 C 的連結等。如需更多資訊，請參閱<a href="#SC_AddingDeletingOrEditi_2.htm" class="MCXref xref">在智慧地圖上新增、刪除、或編輯連結</a>。</p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>在智慧地圖上新增、刪除或編輯建築<a name="SC_AddingDeletingOrEditi_4.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>智慧地圖上的建築 (已解釋)<a name="SC_BuildingsOnSmartMapEx.htm"></a></h3>
+          <p>
+            <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">智慧地圖<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>一種地圖功能，利用地理資訊系統將監視系統的裝置 (例如攝影機和麥克風)、建築和地形元件視覺化，在現實世界的影像中的精確位置上呈現。利用此功能呈現各項元件的地圖，稱為智慧地圖。</span></a>上的建築將描述為具有四條邊的多邊形。新增後，您可以調整尺寸、角度及大小，以便與建築的實際形狀和位置相符。</p>
+          <p>若該建築是多層建築，您可以開始新增層級，並新增攝影機至個別層級。您藉此可以在建築內逐層導覽攝影機。</p>
+          <p>若要協助說明層級的內部，您可以將自訂覆蓋 (例如展示樓層平面圖的影像) 新增至層級。如需更多資訊，請參閱<a href="#SC_AddFloorPlansToLevels.htm" class="MCXref xref">新增樓層平面圖至層級 (智慧地圖)</a>。</p>
+          <p>建築會自動取得名稱，例如 <span class="uitext">Building 4</span>。<span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> 建議您更改此名稱。如此，您可以更輕鬆地區分建築。</p>
+          <p>
+            <img src="../../../Images/buildings_on_map_explained.jpg" alt="" />
+          </p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>新增建築至智慧地圖<a name="SC_AddBuildingsToSmartMa.htm"></a></h3>
+          <p>您不是使用影像或形狀檔來展示建築，而是能新增建築的輪廓。此後，您可以變更尺寸、角度及大小，以便與實際建築的形狀和位置相符。</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="關閉" data-mc-alt2="開啟" />需求</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> 您 <span class="mc-variable flvar-product.SC variable">Smart Client</span> 的 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> 設定檔已啟用智慧地圖編輯。</p>
+            </div>
+          </div>
+          <p>步驟：</p>
+          <ol>
+            <li value="1"> 按一下<span class="uitext">設定</span>以進入設定模式。 </li>
+            <li value="2">導覽至智慧地圖上希望放置建築的位置。</li>
+            <li value="3">在智慧地圖上按一下 <img src="../../../Images/add_buildings_to_map.jpg" alt="" />，然後將游標置於相關位置。</li>
+            <li value="4">再次按一下。此時會將矩形新增至智慧地圖。若已縮小，則會自動提高縮放層級。</li>
+            <li value="5">若需要，請使用角部的控點調整實際建築的形狀和位置。</li>
+            <li value="6"> 再次按一下<span class="uitext">設定</span>以離開設定模式。 您的變更已儲存。</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>在智慧地圖上編輯建築<a name="SC_EditBuildingsOnSmartM.htm"></a></h3>
+          <p>新增建築至智慧地圖後，您可以變更建築的名稱，並調整位置、大小、尺寸及角度。您也可以對層級進行新增、移除或重新排序。</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="關閉" data-mc-alt2="開啟" />需求</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> 您 <span class="mc-variable flvar-product.SC variable">Smart Client</span> 的 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> 設定檔已啟用智慧地圖編輯。</p>
+            </div>
+          </div>
+          <p>步驟：</p>
+          <ol>
+            <li value="1">導覽至智慧地圖上的建築。若需要，請放大。</li>
+            <li value="2"> 按一下<span class="uitext">設定</span>以進入設定模式。 </li>
+            <li value="3">
+              <p>按一下建築內的任意位置。藍色立體浮凸邊界表示您可以編輯建築。<br /></p>
+              <p>
+                <img src="../../../Images/buildings_on_map_explained.jpg" alt="" />
+              </p>
+            </li>
+            <li value="4">若要重新命名建築，請移至右側窗格的頂部，然後按一下 <img src="../../../Images/edit_buildings_on_map.jpg" alt="" />。變更名稱，然後按一下 <img src="../../../Images/edit_buildings_on_map_1.jpg" alt="" />。若要取消，請按下 <span class="uitext">Esc</span>。</li>
+            <li value="5">若要調整角部，請按一下並將其拖至新位置。</li>
+            <li value="6">要新增或移除層級，請參閱<a href="#SC_AddOrRemoveLevelsFrom.htm" class="MCXref xref">在建築中新增或移除層級 (智慧地圖)</a>。</li>
+            <li value="7"> 再次按一下<span class="uitext">設定</span>以離開設定模式。 您的變更已儲存。</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>在智慧地圖上刪除建築<a name="SC_DeleteBuildingsOnSmar.htm"></a></h3>
+          <p>若不再需要建築，您可以將其刪除。下次某人登入 <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 或重新載入時，該建築將消失。</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="關閉" data-mc-alt2="開啟" />需求</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> 您 <span class="mc-variable flvar-product.SC variable">Smart Client</span> 的 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> 設定檔已啟用智慧地圖編輯。</p>
+            </div>
+          </div>
+          <p>步驟：</p>
+          <ol>
+            <li value="1">開啟智慧地圖。</li>
+            <li value="2"> 按一下<span class="uitext">設定</span>以進入設定模式。 </li>
+            <li value="3">執行下列其中一個動作：</li>
+            <ul>
+              <li>用滑鼠右鍵按一下建築，並選取<span class="uitext">刪除</span></li>
+              <li>選取一個建築，並按下鍵盤上的 <span class="uitext">DELETE</span></li>
+            </ul>
+          </ol>
+          <p class="tip">刪除建築的另一種方法：在<img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">管理預設設定</span>中，向下捲動至<span class="uitext">建築</span> 區段，將游標懸停在建築上，按一下<span class="uitext">刪除</span>，然後按一下<span class="uitext">儲存</span>。</p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>在建築中管理層級與裝置 (智慧地圖)<a name="SC_ManagingLevelsAndCame.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>建築中的裝置與層級 (說明)<a name="SC_CamerasAndLevelsInBui.htm"></a></h3>
+          <p>新增裝置至建築時，依預設，裝置會與預設層級 (若已指定預設層級) 關聯。否則，會將裝置指派至第一層級。不過，您可以變更此設定，將裝置與其他任何層級關聯，或同時與多個層級關聯。</p>
+          <p>更多事實：</p>
+          <ul>
+            <li>若未選取層級，則裝置在所有層級皆可見</li>
+            <li>在已放置裝置的頂部新增建築，依預設，裝置會與所有層級關聯</li>
+            <li>若您擴展建築的邊界，以便讓其涵蓋已放置的裝置，則該裝置僅會與選取的層級關聯</li>
+          </ul>
+          <p class="note">若您調整建築的邊界，以便讓其不再涵蓋裝置，則該裝置將不再與建築關聯。</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>
+            <a name="SC_FloorPlansDevicesInBuildings"></a>建築中的樓層平面圖與裝置 (說明)</h3>
+          <p>若要協助看到建築中層級的內部，您可以新增樓層平面圖作為自訂覆蓋。使用樓層平面圖，可以更輕鬆地精確放置裝置。如需更多資訊，請參閱<a href="#SC_AddFloorPlansToLevels.htm" class="MCXref xref">新增樓層平面圖至層級 (智慧地圖)</a>。</p>
+          <p>您放置的裝置將與層級關聯，而不是與自訂覆蓋關聯。若在具有裝置與自訂覆蓋的建築內刪除層級，則裝置會保留在其地理位置，但不再與層級關聯。但是，自訂覆蓋會與層級一併遭到刪除。</p>
+          <p>若對層級重新排序，則裝置與自訂覆蓋仍與層級在一起。裝置將保留在其地理位置。</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>在建築中新增或移除層級 (智慧地圖)<a name="SC_AddOrRemoveLevelsFrom.htm"></a></h3>
+          <p>新增建築至智慧地圖後，您可以新增任意數量的層級。會為第一個層級指派數字 <span class="uitext">1</span>，為第二個層級指派數字 <span class="uitext">2</span>，以此類推。此後，您可對個別層級進行重新命名及重新排序。</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="關閉" data-mc-alt2="開啟" />需求</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> 您 <span class="mc-variable flvar-product.SC variable">Smart Client</span> 的 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> 設定檔已啟用智慧地圖編輯。</p>
+            </div>
+          </div>
+          <p>步驟：</p>
+          <ol>
+            <li value="1">導覽至智慧地圖上的建築。若需要，請放大。</li>
+            <li value="2">選取建築。此時右側將顯示某窗格。</li>
+            <li value="3">按一下<span class="uitext">設定</span>按鈕以進入設定模式。</li>
+            <li value="4">按一下<span class="uitext">新增層級</span><img src="../../../Images/add_or_remove_levels_from.jpg" alt="" />。</li>
+            <li value="5">編輯層級名稱：<ol><li value="1">按一下點 <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" />，然後選取<span class="uitext">重新命名</span>。</li><li value="2">輸入新名稱。</li></ol></li>
+            <li value="6">若要刪除層級，請按一下點 <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" />，然後選取<span class="uitext">刪除</span>。此層級上的裝置會保留在其地理位置，但不再與層級關聯。</li>
+            <li value="7">按一下<span class="uitext">設定</span>以離開設定模式。</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>更改建築物的層級順序（智慧地圖）<a name="SC_ChangeOrderOfLevels.htm"></a></h3>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="關閉" data-mc-alt2="開啟" />需求</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> 您 <span class="mc-variable flvar-product.SC variable">Smart Client</span> 的 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> 設定檔已啟用智慧地圖編輯。</p>
+            </div>
+          </div>
+          <p>步驟：</p>
+          <ol>
+            <li value="1">導覽至智慧地圖上的建築。若需要，請放大。</li>
+            <li value="2">選取建築。此時右側將顯示某窗格，為您展示建築的層級。</li>
+            <li value="3"> 按一下<span class="uitext">設定</span>以進入設定模式。 </li>
+            <li value="4">按一下並將有點的區域 <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> 拖至正確位置。任何關聯的裝置及自訂覆蓋始終與層級在一起。</li>
+            <li value="5"> 再次按一下<span class="uitext">設定</span>以離開設定模式。 您的變更已儲存。</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>設定建築的預設層級 (智慧地圖)<a name="SC_SetDefaultLevelForBui.htm"></a></h3>
+          <p>若建築內的特定層級 (例如底層) 較其他層級的相關性更高， 您可將其設定為預設層級。開啟智慧地圖並移至該建築時，會自動選取預設層級。</p>
+          <p>若在導覽建築時離開，然後返回，<span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> 會將您引領至離開時的層級。</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="關閉" data-mc-alt2="開啟" />需求</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> 您 <span class="mc-variable flvar-product.SC variable">Smart Client</span> 的 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> 設定檔已啟用智慧地圖編輯。</p>
+            </div>
+          </div>
+          <p>步驟：</p>
+          <ol>
+            <li value="1">導覽至智慧地圖上的建築。若需要，請放大。</li>
+            <li value="2">選取建築。此時右側將顯示某窗格，為您展示建築的層級。此時預設層級將亮顯。</li>
+            <li value="3">按一下<span class="uitext">設定</span>以進入設定模式。請注意星號 <img src="../../../Images/set_default_level_for_buildings.jpg" alt="" />。它會指出目前預設層級的位置。</li>
+            <li value="4">在您希望設定為預設層級的層級上，按一下點 <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" />。</li>
+            <li value="5">選取<span class="uitext">設為預設值</span>。</li>
+            <li value="6"> 再次按一下<span class="uitext">設定</span>以離開設定模式。 您的變更已儲存。</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>新增樓層平面圖至層級 (智慧地圖)<a name="SC_AddFloorPlansToLevels.htm"></a></h3>
+          <p>在建築中，您可以新增自訂覆蓋 (例如樓層平面圖影像) 至層級，以協助說明建築中層級的內部。在您導覽層級時，會自動顯示關聯的樓層平面圖。</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="關閉" data-mc-alt2="開啟" />需求</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> 您 <span class="mc-variable flvar-product.SC variable">Smart Client</span> 的 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> 設定檔已啟用智慧地圖編輯。</p>
+            </div>
+          </div>
+          <p>步驟：</p>
+          <ol>
+            <li value="1">導覽至智慧地圖上的建築。若需要，請放大。</li>
+            <li value="2">選取建築。此時右側將顯示某窗格，為您展示建築的層級。</li>
+            <li value="3"> 按一下<span class="uitext">設定</span>以進入設定模式。 </li>
+            <li value="4">選取您希望新增自訂覆蓋的層級。</li>
+            <li value="5">在左上角按一下<img src="../../../Images/add_custom_overlay_on_1.png" alt="" /><span class="uitext">新增自訂覆蓋</span>，然後在建築輪廓內的任意位置按一下。 畫面上會出現視窗。</li>
+            <li value="6">選取自訂覆蓋的類型。如需更多資訊，請參閱<a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">自訂覆蓋（已說明）</a>。</li>
+            <li value="7">
+              <p>在您的電腦中選取檔案的儲存位置，然後按一下<span class="uitext">繼續</span>。自訂覆蓋將顯示為藍色輪廓。<br /></p>
+              <p>
+                <img src="../../../Images/add_floorplans_to_levels.jpg" alt="" />
+              </p>
+            </li>
+            <li value="8">將其拖至建築的輪廓上，並使用樞紐點與角部控點對自訂覆蓋進行旋轉與重新定位。</li>
+            <li value="9">在頂部的列中，按一下<span class="uitext">儲存</span>。</li>
+            <li value="10"> 再次按一下<span class="uitext">設定</span>以離開設定模式。 您的變更已儲存。</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>刪除層級上的樓層平面圖 (智慧地圖)<a name="SC_DeleteFloorPlansOnLev.htm"></a></h3>
+          <p>若建築內層級上的樓層平面圖已變更，您可能需要更換對樓層平面圖進行展示的自訂覆蓋。<span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> 建議您先刪除舊的樓層平面圖，然後新增新的樓層平面圖。</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="關閉" data-mc-alt2="開啟" />需求</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> 您 <span class="mc-variable flvar-product.SC variable">Smart Client</span> 的 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> 設定檔已啟用智慧地圖編輯。</p>
+            </div>
+          </div>
+          <p>步驟：</p>
+          <ol>
+            <li value="1">導覽至智慧地圖上的建築。若需要，請放大。</li>
+            <li value="2">選取建築。此時右側將顯示某窗格，為您展示建築的層級。</li>
+            <li value="3"> 按一下<span class="uitext">設定</span>以進入設定模式。 </li>
+            <li value="4">選取自訂覆蓋所在的層級。</li>
+            <li value="5">在自訂覆蓋上的任意位置按一下右鍵，然後選取<span class="uitext">刪除自訂覆蓋</span>。</li>
+            <li value="6"> 再次按一下<span class="uitext">設定</span>以離開設定模式。 您的變更已儲存。</li>
+          </ol>
+          <p class="tip">若要編輯樓層平面圖的位置或大小，請在自訂覆蓋上按一下右鍵，然後選取<span class="uitext">編輯位置</span>。現在，您可以移動、旋轉及變更自訂覆蓋的大小。</p>
+        </div>
+        <div>
+          <h3>將裝置新增至建築 (智慧地圖)<a name="SC_AddCamerasToBuildings.htm"></a></h3>
+          <p>建立建築並新增層級後，您可以將裝置新增至建築。若已指定預設層級，則裝置會與該層級關聯。否則，裝置會與第一個層級關聯。您可以變更此設定，將裝置與建築內的任何層級關聯。</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="關閉" data-mc-alt2="開啟" />需求</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> 您 <span class="mc-variable flvar-product.SC variable">Smart Client</span> 的 <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> 設定檔已啟用智慧地圖編輯。</p>
+            </div>
+          </div>
+          <p>步驟：</p>
+          <ol>
+            <li value="1">導覽至智慧地圖上的建築。若需要，請放大。</li>
+            <li value="2"> 按一下<span class="uitext">設定</span>以進入設定模式。 </li>
+            <li value="3">若要新增裝置，請按一下其圖示。<p>範例： 對於攝影機，請按一下 <img src="../../../Images/add_cameras_to_buildings.jpg" alt="" /><span class="uitext">新增攝影機</span>。</p></li>
+            <li value="4">再次按一下您希望放置裝置的位置。此時將顯示對話方塊。</li>
+            <li value="5">選取裝置並按一下<span class="uitext">確定</span>。對於您要新增的每個裝置，請重複步驟 3-5。</li>
+            <li value="6">若要將裝置與一或多個層級關聯，請在裝置上按一下右鍵，然後選取所需的層級。</li>
+            <li value="7"> 再次按一下<span class="uitext">設定</span>以離開設定模式。 您的變更已儲存。</li>
+          </ol>
+          <p class="note">若未選取層級，則裝置在所有層級皆可見。</p>
+        </div>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">概念資訊</p>
+        <p class="containerItem_container_0">
+          <a href="sc_workingwithmap.htm">智慧地圖 (使用量)</a>
+        </p>
+        <p class="referenceHeading_reference_0">交叉參考資料</p>
+        <p class="referenceItem_reference_0">
+          <a href="sc_map_faq.htm">常見問題集：智慧地圖</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

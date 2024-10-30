@@ -1,0 +1,810 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="de-DE" xml:lang="de-DE" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="Konfiguration" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Configure smart map in XProtect Smart Client to get a geographical overview of your cameras, devices, and plug-in elements - in a one world experience." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=Recording Server" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Administrator" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Integrator" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Bediener" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Smart Map (Konfiguration)</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#feature_flags/ff_map/sc_configuringmaps.htm">Topic mit Navigation öffnen</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>Smart Map (Konfiguration)</h1>
+      <p>Bevor Sie die Smart-Map-Funktionen nutzen können, müssen Sie in <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> bestimmte Konfigurationsaufgaben ausführen.</p>
+      <p>Sie können Ihre Smart Map nur dann anschauen, wenn sie zu Ihrer Ansicht zugefügt wurde. Siehe auch <a href="#SC_AddSmartMapToView.htm" class="MCXref xref">Hinzufügen einer Smart Map zu Ansichten</a>. </p>
+      <p class="note">Weitere Informationen finden Sie unter <a href="sc_workingwithmap.htm#SC_SmartMapExplained.htm" class="MCXref xref">Smart Map (Erklärung)</a>.</p>
+      <div>
+        <h2>Unterschiede zwischen Karten und Smart Maps (Erklärung)<a name="SC_DifferencesBetweenMap.htm"></a></h2>
+        <p>
+          <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> bietet Kartenfunktionen, die Ihnen beim Visualisieren Ihres Überwachungssystems und beim schnellen Reagieren auf Vorfälle helfen.</p>
+        <ul>
+          <li>
+            <span class="uitext">Karten</span> – Diese Karten basieren auf Standbildern, die keine geografischen Angaben enthalten. Sie können Geräte wie Kameras, Mikrofone und Aufzeichnungsserver hinzufügen. Sie können auch Alarme, Ereignisse und Zutrittskontrollen hinzufügen, über die Sie mit Ihrem Überwachungssystem direkt von der Karte aus interagieren können. Sie müssen Geräte- und Funktionselemente manuell auf der Karte positionieren. Weitere Informationen finden Sie unter <a href="../../standard_features/sf_sc/sf_operation/sc_workingwithmaps.htm#SC_IntroductionToMaps(796).htm" class="MCXref xref">Karten (Erklärung)</a></li>
+          <li>
+            <span class="uitext">Smart Map</span> - Diese Art von Karte nutzt ein geografisches Informationssystem, um die Geografie der realen Welt akkurat widerzuspiegeln. Dies kann Ihnen eine genauere Übersicht über Ihre Kameras an mehreren Standorten bieten. Sie können außerdem:<ul><li>Verwendung der Dienste Bing Maps und Google Maps</li><li data-mc-conditions="flcts-features.oem-map-service-content">Verwendung der <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> als geographische Hintergründe</li><li>Verwendung des Kartenprojekts OpenStreetMap als geographische Hintergründe</li><li>Computer-aided Design (CAD)-Zeichnungen, Shapefiles und Bilder als Overlays hinzufügen</li></ul><p> Weitere Informationen finden Sie unter <a href="sc_workingwithmap.htm#SC_SmartMapExplained.htm" class="MCXref xref">Smart Map (Erklärung)</a></p></li>
+        </ul>
+        <p class="note">Die Funktionen Karten und Smart Map sind nicht austauschbar. Wenn Sie Karten verwenden, können Sie die Bilddatei als Smart Map verwenden, müssen die Geräte jedoch erneut hinzufügen. Sie können keine Karten mitsamt der Geräte zu einer Smart Map zufügen. Sie können jedoch eine Smart Map mit Karten verknüpfen. Weitere Informationen finden Sie unter <a href="#SC_AddingDeletingOrEditi_2.htm" class="MCXref xref">Hinzufügen, Löschen oder Bearbeiten von Links auf einer Smart Map</a>.</p>
+      </div>
+      <div>
+        <h2>Hinzufügen einer Smart Map zu Ansichten<a name="SC_AddSmartMapToView.htm"></a></h2>
+        <p>Beginnen Sie, indem Sie einer Ansicht eine <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">Smart Map<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Eine Kartenfunktion, die mithilfe eines geographischen Informationssystems Geräte sichtbar macht (z.B. Kameras und Mikrofone), Bauwerke und topographische Elemente eines Überwachungssystems in geografisch genauer, realistischer Darstellung. Karten, die Elemente dieser Funktion nutzen, werden als Smart Maps bezeichnet.</span></a> hinzufügen. Standardmäßig wird die grundlegende Weltkarte angezeigt. Nach dem Hinzufügen der Smart Map können Sie den geografischen Hintergrund ändern.</p>
+        <p>Schritte:</p>
+        <ol>
+          <li value="1">Wählen Sie auf der Registerkarte <span class="uitext">Live</span> oder <span class="uitext">Abspielen</span> die Ansicht aus, die Sie zur Smart Map hinzufügen wollen.</li>
+          <li value="2"> Klicken Sie auf <span class="uitext">Setup</span>, um in den Setup-Modus zu wechseln. </li>
+          <li value="3">Erweitern Sie den Bereich <span class="uitext">Systemübersicht</span> und ziehen Sie dann das Element <span class="uitext">Smart Map</span> an die entsprechende Position in der Ansicht.</li>
+          <li value="4"> Klicken Sie erneut auf <span class="uitext">Einrichtung</span>, um den Setup-Modus zu verlassen. Ihre Änderungen werden gespeichert.</li>
+          <li value="5">Jetzt können Sie den geographischen Hintergrund ändern. </li>
+        </ol>
+      </div>
+      <div>
+        <h2>Ändern von geografischen Hintergründen auf Smart Maps<a name="SC_ChangeTheGeographicBa.htm"></a></h2>
+        <p>Standardmäßig wird die Basisweltkarte angezeigt, wenn Sie eine Smart Map zu einer Ansicht hinzufügen. Wenn Sie die Smart Map zu einer Ansicht hinzugefügt haben, können Sie einen anderen geographischen Hintergrund auswählen. Jeder Benutzer, der die Smart Map verwendet, sieht beim nächsten Mal, wenn er diese Ansicht öffnet, den neuen Hintergrund.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Geschlossen" data-mc-alt2="Öffnen" />Voraussetzungen</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Die geographischen Hintergründe Bing Maps und Google Maps stehen nur zur Verfügung, wenn Ihr Systemadministrator diese in <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> verfügbar gemacht hat.</p>
+          </div>
+        </div>
+        <p>Schritte:</p>
+        <ol>
+          <li value="1">Wählen Sie die Ansicht mit der Smart Map aus.</li>
+          <li value="2">Klicken Sie in der Symbolleiste auf <img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">Ebenen und benutzerdefinierte Overlays anzeigen oder ausblenden</span>.</li>
+          <li value="3">Unter <span class="uitext">geografische Hintergründe</span> wählen Sie den Hintergrund und den Grad an Details, den Sie anzeigen möchten. Wenn Sie beispielsweise topographische Informationen sehen möchten, wählen Sie <span class="uitext">Terrain</span>. Wenn Sie Straßen sehen wollen, wählen Sie <span class="uitext">Straße</span>.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>Geographische Hintergründe (Erklärung)<a name="SC_GeographicBackgrounds.htm"></a></h2>
+        <p>Sie können die folgenden Dienste als geographische Hintergründe für Ihre <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">Smart Map<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Eine Kartenfunktion, die mithilfe eines geographischen Informationssystems Geräte sichtbar macht (z.B. Kameras und Mikrofone), Bauwerke und topographische Elemente eines Überwachungssystems in geografisch genauer, realistischer Darstellung. Karten, die Elemente dieser Funktion nutzen, werden als Smart Maps bezeichnet.</span></a>verwenden:</p>
+        <ul>
+          <li>Bing Maps</li>
+          <li>Google Maps</li>
+          <li data-mc-conditions="flcts-features.oem-map-service-content">
+            <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+          </li>
+          <li> OpenStreetMap </li>
+        </ul>
+        <p>Wenn Sie den geografischen Hintergrund ausgewählt haben, fügen Sie die Geräte hinzu, z. B. Kameras, und benutzerdefinierte Overlays, z. B. Shapefiles. Weitere Informationen finden Sie unter <a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">Benutzerdefinierte Overlays (Erklärung)</a>.</p>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Arten der geografischen Hintergründe (Erklärung)<a name="SC_TypesOfGeographicBack.htm"></a></h2>
+        <p>Wenn Sie eine <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">Smart Map<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Eine Kartenfunktion, die mithilfe eines geographischen Informationssystems Geräte sichtbar macht (z.B. Kameras und Mikrofone), Bauwerke und topographische Elemente eines Überwachungssystems in geografisch genauer, realistischer Darstellung. Karten, die Elemente dieser Funktion nutzen, werden als Smart Maps bezeichnet.</span></a> zu einer Ansicht hinzugefügt haben, können Sie einen der folgenden geographischen Hintergründe verwenden:</p>
+        <ul>
+          <li>
+            <span class="uitext">Einfache Weltkarte</span> – Verwenden des standardmäßigen geografischen Hintergrunds, der in <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> zur Verfügung steht. Diese Karte ist als allgemeine Referenz gedacht und enthält keine Funktionen wie Ländergrenzen, Städte oder sonstige Einzelheiten. Aber wie die anderen geografischen Hintergründe auch, enthält sie georeferenzierte Daten</li>
+          <li>
+            <span class="uitext">Bing Maps</span> – Verbinden mit Bing Maps</li>
+          <li>
+            <span class="uitext">Google Maps</span> – Verbinden mit Google Maps <p class="note">Die Bing Maps- und Google Maps-Optionen benötigen Zugriff zum Internet, und Sie müssen einen Schlüssel von Microsoft oder Google kaufen.</p></li>
+          <div data-mc-conditions="flcts-features.oem-map-service-content">
+            <li>
+              <span class="uitext">
+                <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+              </span> - Stellen Sie eine Verbindung zu einem Anbieter für kostenlose Karten her. Wenn Sie <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> aktiviert haben, ist keine weitere Einrichtung erforderlich.</li>
+            <p>Siehe <a href="#Enable">Milestone Map Service aktivieren</a></p>
+          </div>
+          <div>
+            <li>
+              <p>
+                <span class="uitext">OpenStreetMap</span> - verbinden mit:</p>
+              <ul>
+                <li>Ein kommerzieller Kachelserver Ihrer Wahl</li>
+                <li>
+                  <p>Ihr eigener, ein Online- oder ein lokaler Kachelserver</p>
+                </li>
+              </ul>
+              <p>Siehe <a href="#SC_ChangeOpenstreetmapTi.htm">OpenStreetMap-Kachelserver ändern</a></p>
+            </li>
+          </div>
+          <li>
+            <span class="uitext">Keine(r)</span> - diese Option verbirgt den geographischen Hintergrund. Beachten Sie jedoch, dass die geographischen Bezugsdaten dort bleiben. Siehe auch <a href="#SC_LayersOnSmartMapExpla.htm" class="MCXref xref">Ebenen auf einer Smart Map (Erklärung)</a></li>
+        </ul>
+        <p>Bing Maps und Google Maps zeigen standardmäßig Satellitenbilder. Sie können die Bilder ndern, z.B. in Luft- oder Bodenaufnahmen, um verschiedene Einzelheiten sehen zu können.</p>
+      </div>
+      <div data-mc-conditions="flcts-features.oem-map-service-content">
+        <h2>
+          <a name="Enable"></a>Aktivieren <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span></h2>
+        <p>
+          <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> ist ein Online-Dienst, mit dem Sie eine Verbindung zu einem Kachelserver von <span class="mc-variable flvar-brand-company.CompanyLong variable">Milestone Systems</span> herstellen können. Dieser Kachelserver verwendet einen kostenlosen, kommerziell erhältlichen Kartendienst. </p>
+        <p>Wenn Sie auf Ihrer Smart Map <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> aktiviert haben, verwendet die Smart Map <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> als geographischen Hintergrund.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Geschlossen" data-mc-alt2="Öffnen" />Voraussetzungen</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Wenn das Feld <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> ausgegraut ist, verfügen Sie nicht über die erforderlichen Benutzerrechte, um den Dienst zu aktivieren oder zu deaktivieren. Wenden Sie sich an Ihren Systemadministrator, damit er Ihnen hilft, die Funktion in <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> zu aktivieren.</p>
+            <p class="important">
+              <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> erfordert einen Internetzugang.</p>
+          </div>
+        </div>
+        <p>Schritte:</p>
+        <ol>
+          <li value="1">
+            <p>Klicken Sie in der oberen rechten Ecke auf <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> und dann auf <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">Einstellungen</span>, um das Fenster <span class="uitext">Einstellungen</span> zu öffnen.</p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_configuringmaps_mmapserv.png" data-mc-popup-alt="Enable Milestone Map Service.">
+                <img class="MCPopupThumbnail img" data-mc-width="786" data-mc-height="593" src="../../../Images/sc_configuringmaps_mmapserv_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Enable Milestone Map Service." tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="2">Klicken Sie im linken Abschnitt auf <span class="uitext">Smart Map</span>.</li>
+          <li value="3">Wählen Sie in dem Feld <span class="uitext mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span><span class="uitext">Verfügbar</span>.</li>
+          <li value="4">Klicken Sie auf <span class="uitext">Schließen</span>. Das nächste Mal, wenn Sie Ihre Smart Map laden, verwendet diese <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> als geographischen Hintergrund.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>OpenStreetMap-Kachelserver (Erläuterung)<a name="SC_ChangingOpenstreetmap.htm"></a></h2>
+        <p>Falls Sie OpenStreetMap als geographischen Hintergrund für Ihre Smart Map verwenden, müssen Sie einen Tile Server angeben. Sie können einen lokalen Kachelserver angeben, z. B. wenn Ihre Organisation über eigene Karten für Bereiche wie Flughäfen oder Häfen verfügt, oder Sie können einen kommerziellen Kachelserver verwenden.</p>
+        <p class="note">Um einen lokalen Kachelserver zu verwenden brauchen Sie keinen Internetzugang.</p>
+        <p>Die Adresse des Kachelservers kann auf zwei Arten festgelegt werden:</p>
+        <ul>
+          <li>In <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> legen Sie die Adresse des Kachelservers in den <span class="mc-variable flvar-product.SC variable">Smart Client</span>-Profilen fest. Die Serveradresse gilt für alle <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> Benutzer, die den <span class="mc-variable flvar-product.SC variable">Smart Client</span>-Profilen zugeordnet sind</li>
+          <li>In <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> – Sie legen die Adresse des Kachelservers im Dialogfeld <span class="uitext">Einstellungen</span> fest. Die Serveradresse gilt nur für diese Installation</li>
+        </ul>
+        <div>
+          <h2>Ändern des OpenStreetMap-Kachel-Servers<a name="SC_ChangeOpenstreetmapTi.htm"></a></h2>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Geschlossen" data-mc-alt2="Öffnen" />Voraussetzungen</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>Wenn der serverseitig angegebene Tile Server zur Bearbeitung gesperrt wurde, ist das Feld ausgegraut und Sie können die Adresse des Servers nicht ändern. Wenden Sie sich bitte an Ihren Systemadministrator, damit er ihnen dabei hilft, die Funktion in <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> zu aktivieren.</p>
+            </div>
+          </div>
+          <p>Schritte:</p>
+          <ol>
+            <li value="1">
+              <p>Klicken Sie in der oberen rechten Ecke auf <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> und dann auf <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">Einstellungen</span>, um das Fenster <span class="uitext">Einstellungen</span> zu öffnen.</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_mapsettings.png" data-mc-popup-alt="Specify alternative tile server for the smart map.">
+                  <img class="MCPopupThumbnail img" data-mc-width="786" data-mc-height="593" src="../../../Images/sc_mapsettings_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Specify alternative tile server for the smart map." tabindex="" />
+                </a>
+                <br />
+              </p>
+            </li>
+            <li value="2">Klicken Sie im linken Abschnitt auf <span class="uitext">Smart Map</span>.</li>
+            <li value="3">Führen Sie in dem Feld <span class="uitext">OpenStreetMap-Server</span> einen der folgenden Schritte aus: <ul><li>Geben Sie die Server-Adresse ein. Falls das Feld ausgegraut ist, wurde es serverseitig gesperrt</li><li>Aktivieren Sie das Kontrollkästchen <span class="uitext">Server folgen</span>, um den serverseitig ggf. angegebenen Server zu verwenden.</li></ul></li>
+            <li value="4">Klicken Sie auf <span class="uitext">Schließen</span>. Das nächste Mal, wenn Sie Ihre Smart Map laden, verwendet diese den OpenStreetMap-Server, den Sie angegeben haben.</li>
+          </ol>
+          <p class="important">Wird keine Serveradresse angegeben, oder ist die Serveradresse ungültig, so steht OpenStreetMap als geographischer Hintergrund nicht zur Verfügung.</p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Ein- und Ausblenden von Ebenen auf einer Smart Map<a name="SC_ShowingOrHidingLayers.htm"></a></h2>
+        <p>Sie können Ebenen auf Ihrer Smart Map ein- und ausschalten, abhängig davon, was Sie sehen möchten.</p>
+        <div>
+          <h3>Ebenen auf einer Smart Map (Erklärung)<a name="SC_LayersOnSmartMapExpla.htm"></a></h3>
+          <p>Verwenden Sie Ebenen, um die angezeigten Informationen der <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">Smart Map<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Eine Kartenfunktion, die mithilfe eines geographischen Informationssystems Geräte sichtbar macht (z.B. Kameras und Mikrofone), Bauwerke und topographische Elemente eines Überwachungssystems in geografisch genauer, realistischer Darstellung. Karten, die Elemente dieser Funktion nutzen, werden als Smart Maps bezeichnet.</span></a> zu filtern. Es gibt drei Arten von Ebenen auf einer Smart Map:</p>
+          <ul>
+            <li>
+              <span class="uitext">Systemelemente</span> – diese beinhalten Kameras, Links und Standorte</li>
+            <li>
+              <span class="uitext">Benutzerdefinierte Overlays</span> – Bitmaps, CAD-Zeichnungen und Shapefiles</li>
+            <li>
+              <span class="uitext">Geographische Hintergründe</span> - die Basisweltkarte oder einer der folgenden Dienste:<ul><li>Bing Maps</li><li>Google Maps</li><li data-mc-conditions="flcts-features.oem-map-service-content"><span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span></li><li> OpenStreetMap </li></ul></li>
+          </ul>
+          <p class="note">Die Bing Maps und Google Maps sind nur als geografische Hintergründe verfügbar, wenn Ihr Systemadministrator sie in <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> aktiviert hat. Weitere Informationen finden Sie unter <a href="#SC_GeographicBackgrounds.htm" class="MCXref xref">Geographische Hintergründe (Erklärung)</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Reihenfolge der Ebenen (Erklärung)<a name="SC_OrderOfLayersExplaine.htm"></a></h3>
+          <p>Alle Systemelemente des gleichen Typs befinden sich auf derselben <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term26">Ebene<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Der geografische Hintergrund auf einer Smart Map, ein benutzerdefiniertes Overlay oder ein Systemelement, z. B. eine Kamera. Schichten sind alle grafischen Elemente, die auf der Smart Map vorhanden sind.</span></a>. Alle Kameras befinden sich zum Beispiel auf derselben Ebene. Wenn Sie die Kameraebene verbergen, so werden alle Kameras verborgen. Ebenen der Systemelemente sind von oben nach unten in folgender Reihenfolge angeordnet: Standorte, Kameras, Links und geografischer Hintergrund. Sie können diese Reihenfolge nicht ändern.</p>
+          <p>Der geografische Hintergrund ist immer die unterste Ebene auf einer Smart Map. Sie können zwischen geografischen Hintergründen wechseln, aber Sie können nur einen geografischen Hintergrund gleichzeitig wählen.</p>
+          <p>Benutzerdefinierte Overlays werden als separate Schichten hinzugefügt und in der Reihenfolge gestapelt, in der sie zur Smart Map zugefügt wurden. Sie können die Anordnung durch das Konfigurieren der Standardeinstellungen der Karte ändern. </p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Geschlossen" data-mc-alt2="Öffnen" />Beispiel</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>Ein Stadtplaner hat eine Shapefile, die die Stadtgrenzen aufzeigt sowie eine Shapefile, die alle wichtigen Straßen innerhalb der Stadt umfasst. Der Stadtplaner kann die Reihenfolge der Ebenen so anordnen, dass die Straßen über die Stadtgrenzen hinaus angezeigt werden. Dies verschafft einen allgemeinen Überblick über die Standorte der Kameras in der Stadt und ermöglicht das Heranzoomen, um den Namen der Straße zu sehen, in der sich eine bestimmte Kamera befindet.</p>
+            </div>
+          </div>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Anzeigen oder Ausblenden von Ebenen auf einer Smart Map<a name="SC_ShowOrHideLayersOnSma.htm"></a></h3>
+          <p>Sie können Ebenen auf einer Smart Map anzeigen oder ausblenden, einschließlich des geografischen Hintergrundes. Dies ist beispielsweise sinnvoll, wenn Sie sich auf ein bestimmtes Element konzentrieren oder einfach nur die auf der Smart Map angezeigten Inhalte vereinfachen möchten.</p>
+          <p>Schritte:</p>
+          <ol>
+            <li value="1">Klicken Sie auf der Symbolleiste auf <img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">Ebenen und benutzerdefinierte Overlays anzeigen oder ausblenden</span>.</li>
+            <li value="2">Aktivieren oder deaktivieren Sie die Kontrollkästchen, um Systemelemente und benutzerdefinierte Overlays anzuzeigen oder auszublenden.</li>
+            <li value="3">Zum Ausblenden des geografischen Hintergrunds wählen Sie <span class="uitext">Keine</span>.</li>
+          </ol>
+          <p class="note">Die Auswahl <span class="uitext">Keine</span> blendet den geografischen Hintergrund aus, aber die georeferenzierten Daten gelten immer noch für die Smart Map. Wenn Sie z. B. eine neue Shapefile hinzufügen, die einen räumlichen Bezug enthält, so verwendet das System trotzdem den räumlichen Bezug, um die Datei auf der Karte zu platzieren.</p>
+          <p class="note">Wenn Mikrofone verborgen werden, werden diese abgeschaltet, wenn ihr Ton aktuell eingeschaltet ist, bis die Mikrofone wieder angezeigt werden.</p>
+        </div>
+        <div>
+          <h3>Geben Sie die Standardeinstellungen für Smart Map an<a name="SC_ManageDefaultSettings(65803).htm"></a></h3>
+          <p>Nach dem Hinzufügen einer Smart Map zu einer Ansicht, und Sie die Overlays, Kameras und Links hinzugefügt haben, können Sie die Standardeinstellungen für die benutzerdefinierten Overlays angeben. Sie können auch benutzerdefinierte Overlays löschen.</p>
+          <p>Schritte:</p>
+          <ol>
+            <li value="1">Klicken Sie auf <span class="uitext">Einrichten</span>.</li>
+            <li value="2">Klicken Sie auf <img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">Verwalten von Standardeinstellungen</span>.</li>
+            <li value="3">Gehen Sie wie folgt vor: <ul><li>Aktivieren oder deaktivieren Sie das Kontrollkästchen, um ein Overlay anzuzeigen oder auszublenden</li><li>Verwenden Sie zur Änderung der Reihenfolge den Ziehgriff vor einem Overlay, um es an eine neue Position in der Liste zu ziehen. Ebenen in der Liste werden von oben nach unten sortiert</li><li>Zum Löschen eines Overlays fahren Sie mit dem Mauszeiger über das Overlay und klicken Sie dann auf <span class="uitext">Löschen</span></li></ul></li>
+            <li value="4">Klicken Sie auf <span class="uitext">Speichern</span>.</li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Hinzufügen, Löschen oder Bearbeiten von benutzerdefinierten Overlays<a name="SC_AddingDeletingOrEditi.htm"></a></h2>
+        <div>
+          <h3>Benutzerdefinierte Overlays (Erklärung)<a name="SC_CustomOverlaysExplain.htm"></a></h3>
+          <p>Sie können die folgenden Dateitypen als benutzerdefinierte Overlays auf einer Smart Map in <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> hinzufügen:</p>
+          <ul>
+            <li>
+              <span class="uitext">Shapefile</span> - Kann geo-spatiale Vektordaten wie Punkte, Linien, Polygone und Attribute enthalten, die Objekte auf einer Karte darstellen, wie z.B. Wände, Straßen oder geographische Merkmale wie Flüsse oder Seen. Die Stadtplanung und Verwaltungen verwenden zum Beispiel häufig Shapefiles, da sie beim heran- und herauszoomen gut skalieren und die Dateigröße häufig kleiner ist als CAD-Zeichnungen oder Bitmap-Bilder</li>
+            <li>
+              <span class="uitext">CAD</span> - Eine computergestützte (CAD) Zeichnung ist als Overlay sinnvoll, da CAD-Daten wie Formdateien ein Koordinatensystem und eine räumliche Referenz verwenden können, um einen genauen geographischen Kontext zu liefern. Sie können beispielsweise detaillierte Luftaufnahmen oder die Straßenkarte eines Standortes verwenden</li>
+            <li>
+              <span class="uitext">Bild</span> – Falls Sie eine Bilddatei haben, wie zum Beispiel den Grundriss eines Gebäudes, können Sie diese als Overlay auf der Smart Map einsetzen. Sie können die folgenden Arten von Bilddateien verwenden: PNG, BMP, GIF, JPG, JPEG, PHG, TIF, und TIFF</li>
+          </ul>
+          <p class="note">Um benutzerdefinierte Overlays in den Fokus zu rücken, können Sie andere Ebenentypen vorübergehend verbergen. Siehe <a href="#SC_LayersOnSmartMapExpla.htm" class="MCXref xref">Ebenen auf einer Smart Map (Erklärung)</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Benutzerdefinierte Overlays und Standorte (Erklärung)<a name="SC_CustomOverlaysAndLoca.htm"></a></h3>
+          <p>Sie können schnell zu benutzerdefinierten Overlays springen, die Sie zu Ihrer Smart Map hinzugefügt haben, wie in <a href="sc_workingwithmap.htm#SC_FindLocationOfCustomO.htm" class="MCXref xref">Springen Sie zu benutzerdefinierten Overlays auf einer Smart Map</a> beschrieben. In den Einstellungen können Sie jedoch eine Verbindung zwischen benutzerdefinierten Overlays und Standorten herstellen. Dies bedeutet, dass, wenn Sie ein neues benutzerdefiniertes Overlay hinzufügen, schafft <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> einen Ort mit dem gleichen Namen wie die Auflage auf der exakt gleichen Stelle auf der Karte. Der Standort des benutzerdefinierten Overlays wird nun in der <span class="uitext">Ortsauswahl</span> liste verfügbar.</p>
+          <p>
+            <img src="../../../Images/custom_overlays_and_locations.jpg" alt="" />
+          </p>
+          <p>Ort und das Overlay sind nicht miteinander verknüpft. Sie können beispielsweise den Ort löschen oder umbenennen, ohne das Overlay zu ändern und umgekehrt.</p>
+          <p class="note">Zum Einschalten dieser Funktion siehe <a href="#SC_AddLocationsToCustomO.htm" class="MCXref xref">Hinzufügen von Standorten zu benutzerdefinierten Overlays (Smart Map)</a>.</p>
+        </div>
+        <div>
+          <h3>Hinzufügen benutzerdefinierter Overlays auf eine Smart Map<a name="SC_AddCustomOverlayOnSma.htm"></a></h3>
+          <p>Erhöhe Sie den Detaillierungsgrad Ihrer Smart Map durch Hinzufügen von benutzerdefinierten Overlays. Beim Hinzufügen eines <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term8">benutzerdefinierten Overlays<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Ein benutzerdefiniertes grafisches Element, das der Benutzer zu einer Smart Map hinzufügen kann, z.B. um einen Grundriss in einem Gebäude zu illustrieren oder Grenzen zwischen Regionen einzuzeichnen. Ein benutzerdefiniertes Overlay kann ein Bild, eine CAD-Zeichnung oder eine Shape-Datei sein.</span></a> erstellt <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> einen Ort mit dem gleichen Namen wie das Overlay.</p>
+          <p>Schritte:</p>
+          <ol>
+            <li value="1">Wählen Sie die Ansicht mit der Smart Map aus und klicken Sie dann auf <span class="uitext">Setup</span>.</li>
+            <li value="2">Klicken Sie auf <img src="../../../Images/add_custom_overlay_on_1.png" alt="" /><span class="uitext">Benutzerdefiniertes Overlay hinzufügen</span>: <ul><li>Wenn das Overlay georeferenziert ist, klicken Sie auf eine beliebige Stelle auf der Smart Map. <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> nutzt die Geo-Referenzinformationen, um das Overlay am richtigen geografischen Standort zu platzieren. Zusätzlich zentriert sich die Smart Map über dem Overlay auf der Standardzoomstufe</li><li>Wenn das Overlay nicht georeferenziert ist, gehen Sie zu dem Punkt auf der Karte, wo Sie das Element hinzufügen möchten, und klicken Sie dann auf den Punkt auf der Smart Map</li><p class="tip">Es ist sinnvoll, den gewünschten Standort auf der Karte zu vergrößern, bevor das Overlay hinzugefügt wird. Auf diese Weise lässt sich das Overlay leichter akkurat positionieren.</p></ul></li>
+            <li value="3">Geben Sie einen Namen für das Overlay ein.</li>
+            <li value="4">Je nach Dateityp wählen Sie: <ul><li><span class="uitext">Bild</span> – Wählen Sie das Bild aus, und klicken Sie dann auf <span class="uitext">OK</span></li><li><span class="uitext">Shapefile</span> - Wählen Sie die SHP-Datei aus. Wenn Sie eine PRJ-Datei haben, wird <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> sie finden, und Sie können einfach auf <span class="uitext">OK</span> klicken. Wenn Sie nicht über eine PRJ-Datei verfügen, können Sie das Overlay manuell installieren, nachdem Sie es hinzufügen. Sie können auch eine Farbe einsetzen. Beispielsweise durch das Hinzufügen einer Farbe kann sich das Shapefile besser auf der Smart Map abheben</li><li><span class="uitext">CAD</span> - Wählen Sie die DWG-Datei aus. Wenn Sie eine PRJ-Datei haben, klicken Sie auf <span class="uitext">OK</span>. Wenn Sie nicht über eine PRJ-Datei verfügen und Sie möchten die Georeferenzierung verwenden, um die Datei auf der Smart Map zu positionieren, geben Sie den Spatial Reference Identifier (SRID) ein, und klicken Sie dann auf <span class="uitext">OK</span>. Wenn Sie nicht über eine PRJ-Datei oder eine SRID verfügen, können Sie das Overlay manuell installieren, nachdem Sie es hinzufügen</li><p class="note">Weitere Informationen zu den Arten von Overlays finden Sie unter <a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">Benutzerdefinierte Overlays (Erklärung)</a>.</p></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Hinzufügen von Standorten zu benutzerdefinierten Overlays (Smart Map)<a name="SC_AddLocationsToCustomO.htm"></a></h3>
+          <p>Sie können <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> so konfigurieren, dass auf Ihrer Smart Map Standorte automatisch zu <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term8">benutzerdefinierten Overlays<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Ein benutzerdefiniertes grafisches Element, das der Benutzer zu einer Smart Map hinzufügen kann, z.B. um einen Grundriss in einem Gebäude zu illustrieren oder Grenzen zwischen Regionen einzuzeichnen. Ein benutzerdefiniertes Overlay kann ein Bild, eine CAD-Zeichnung oder eine Shape-Datei sein.</span></a> hinzugefügt werden. Somit können Sie über die Liste <span class="uitext">Standort auswählen</span> zu dem benutzerdefinierten Overlay springen. </p>
+          <p>Schritte:</p>
+          <ol>
+            <li value="1">Klicken Sie in der Anwendungssymbolleiste auf <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> und dann auf <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">Einstellungen</span>, um das Fenster <span class="uitext">Einstellungen</span> zu öffnen.</li>
+            <li value="2">Gehen Sie zur Registerkarte <span class="uitext">Smart map</span>.</li>
+            <li value="3">In der <span class="uitext">Ort erstellen, wenn Layer hinzugefügt wird</span> Liste, wählen Sie <span class="uitext">Ja</span>.</li>
+            <li value="4">Schließen Sie den Dialog, um die Änderungen zu speichern.</li>
+          </ol>
+          <p class="note">Weitere Informationen finden Sie unter <a href="#SC_CustomOverlaysAndLoca.htm" class="MCXref xref">Benutzerdefinierte Overlays und Standorte (Erklärung)</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Entfernen von benutzerdefinierten Overlays auf einer Smart Map<a name="SC_DeleteCustomOverlayOn.htm"></a></h3>
+          <ol>
+            <li value="1">Wählen Sie die Ansicht mit der Smart Map aus und klicken Sie dann auf <span class="uitext">Setup</span>.</li>
+            <li value="2">In der Symbolleiste klicken Sie auf <img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">Verwalten der Standardeinstellungen</span>.</li>
+            <li value="3">Bewegen Sie den Mauszeiger über das benutzerdefinierte Overlay, und klicken Sie dann auf <span class="uitext">Löschen</span>.</li>
+            <li value="4">Klicken Sie <span class="uitext">auf Speichern,</span> um das benutzerdefinierte Overlay zu löschen.</li>
+            <li value="5">Optional: Wenn ein Ort für ein benutzerdefiniertes Overlay erstellt wurde, sollten Sie eventuell diesen zuerst löschen. Weitere Informationen finden Sie unter <a href="#SC_AddingDeletingOrEditi_3.htm" class="MCXref xref">Hinzufügen, Löschen oder Bearbeiten von Standorten auf einer Smart Map</a>.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Machen Sie Bereiche in Shapefiles sichtbarer (Smart Map)<a name="SC_MakeAreasInShapefiles.htm"></a></h3>
+          <p class="note">Dieses Thema ist nur relevant, wenn Sie Shapefiles mit Polygonen verwenden.</p>
+          <p>Wenn Sie ein Shapefile auf Ihrer Smart Map verwenden möchten, das aus Polygonen in unmittelbarer Nähe besteht, müssen Sie eventuell die einzelnen Polygone voneinander unterscheiden. Sie tun das, indem Sie die Deckkraft der Farbe verringern, die Sie für das Shapefile auswählen. Die Grenzen der Polygone werden herausstechen.</p>
+          <p>Schritte:</p>
+          <ol>
+            <li value="1">Folgen Sie den in <a href="#SC_AddCustomOverlayOnSma.htm" class="MCXref xref">Hinzufügen benutzerdefinierter Overlays auf eine Smart Map</a> beschriebenen Schritten.</li>
+            <li value="2">
+              <p>Wenn Sie die Farbe auswählen, ziehen Sie den Schieberegler <span class="uitext">Deckkraft</span> nach links, bis Sie mit der Transparenz zufrieden sind.</p>
+              <p>
+                <img src="../../../Images/make_areas_in_shapefiles_more.jpg" alt="" />
+              </p>
+            </li>
+            <li value="3">Klicken Sie auf <span class="uitext">Speichern</span>.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Passen Sie die Position, Größe oder Ausrichtung eines benutzerdefinierten Overlays an<a name="SC_AdjustPositionSizeOrA.htm"></a></h3>
+          <p>Sie können ein Overlay an einen anderen Ort auf der Karte bewegen, um es zu vergrößern, zu verkleinern und zu drehen. Dies ist beispielsweise sinnvoll, wenn Ihr Overlay nicht georeferenziert ist oder das Overlay ist georeferenziert, sich aber aus irgendeinem Grund nicht exakt mit dem geografischen Hintergrund ausrichten lässt.</p>
+          <p>Schritte:</p>
+          <ol>
+            <li value="1">Wählen Sie die Ansicht mit der Smart Map aus und klicken Sie dann auf <span class="uitext">Setup</span>.</li>
+            <li value="2">Klicken Sie mit der rechten Maustaste auf das Overlay und wählen Sie <span class="uitext">Position bearbeiten</span>.</li>
+            <li value="3">So Ändern Sie die Größe zu ändern oder drehen es: <ul><li>Klicken und ziehen Sie auf eine Ecke, die sie ändern möchten</li><li><p>Um das Overlay um einen bestimmten Punkt zu drehen, verschieben Sie den Pivotpunkt zu dieser Stelle auf der Karte. Klicken und ziehen Sie dann auf einer Ecke, die sie ändern möchten </p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/adjust_position_size_or_alignment.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="273" data-mc-height="261" src="../../../Images/adjust_position_size_or_alignment_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="" tabindex="" /></a></p></li></ul></li>
+            <li value="4">Um Overlay zu bewegen, klicken und ziehen Sie das Overlay.</li>
+            <li value="5">Um die Änderung zu speichern, klicken Sie auf <span class="uitext">Speichern</span>.</li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Hinzufügen, Löschen oder Bearbeiten von Geräten auf einer Smart Map<a name="SC_AddingDeletingOrEditi_1.htm"></a></h2>
+        <p>Sie können Geräte zu einer Smart Map in ihren tatsächlichen Positionen in Ihrer Umgebung hinzufügen. Dies gibt Ihnen einen guten Überblick über Ihr Überwachungssystem und hilft Ihnen, auf eine bestimmte Situation zu reagieren. Wenn Sie beispielsweise einer verdächtigen Person bei einem laufenden Vorfall folgen möchten, können Sie die Kameras auf der Karte anklicken, um die entsprechenden Aufnahmen zu betrachten.</p>
+        <p>Nachdem Sie einer Smart Map eine Kamera hinzugefügt haben, können Sie das Sichtfeld der Kamera über das Kamerasymbol anpassen, sodass es das Sichtfeld der aktuellen Kamera darstellt. Auf diese Weise lässt sich leicht eine Kamera finden, die einen bestimmten Bereich abdeckt. Zudem können Sie ein Symbol für die Kamera auf der Karte auswählen, sodass Sie leichter die Art der Kamera auf der Karte identifizieren können.</p>
+        <p>Sie können auf Smart Maps mit den folgenden Gerätetypen arbeiten:</p>
+        <ul>
+          <li>Kameras</li>
+          <li>Eingabegeräte</li>
+          <li>Mikrofone</li>
+        </ul>
+        <div data-mc-conditions="">
+          <h3>Geräte zu einer Smart Map hinzufügen<a name="SC_AddCamerasToSmartMap.htm"></a></h3>
+          <p>Wenn die Geokoordinaten des Gerätes von Ihrem Systemadministrator in <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> angegeben wurden, wird das Gerät automatisch auf der Smart Map positioniert, wenn Sie es hinzufügen. Wenn nicht, müssen Sie das Gerät an seinem exakten geographischen Standort selbst positionieren.</p>
+          <ol>
+            <li value="1">Wählen Sie die Ansicht mit der Smart Map aus und klicken Sie dann auf <span class="uitext">Setup</span>.</li>
+            <li value="2">Zum Hinzufügen eines Gerätes oder einer Gruppe von Geräten: <p class="tip">Bevor Sie das Gerät hinzufügen ist es eine gute Idee, den Standort auf der Karte zu vergrößern. So kann das Gerät leichter genau positioniert werden.</p><ul><li>Erweitern Sie den Bereich <span class="uitext">Systemübersicht</span>, suchen Sie das Gerät oder die Gerätegruppe und ziehen Sie es/sie dann an den Punkt auf der Smart Map, an dem es/sie angezeigt werden soll. Sie können Geräte hinterher in eine andere Position ziehen</li><li>Wählen Sie auf dem Smart Map Toolbar <img src="../../../Images/add-a-device-to-smart-map.png" alt="" /><span class="uitext">Gerät hinzufügen</span> &gt; Gerätetyp auswählen.<ul><li>Beispiel: Wenn es sich um eine Kamera handelt, wählen Sie <img src="../../../Images/add_cameras_to_map.png" alt="" /><span class="uitext">Kamera hinzufügen</span> und wählen Sie dann die Kamera aus.</li></ul></li><li>Ziehen Sie das Gerät auf die Smart Map</li><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_adddevice.png" data-mc-popup-alt="Add a device to your smart map."><img class="MCPopupThumbnail img" data-mc-width="709" data-mc-height="823" src="../../../Images/sc_smap_adddevice_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add a device to your smart map." tabindex="" /></a><br /></ul></li>
+            <li value="3">Um die Änderung zu speichern und den Setup-Modus zu verlassen, klicken Sie auf <span class="uitext">Einrichtung</span>.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Ändern Sie das Sichtfeld und die Richtung der Kamera<a name="SC_ChangeFieldOfViewAndD.htm"></a></h3>
+          <p>Sobald die Kamera der Smart Map hinzugefügt wurde, können Sie das Sichtfeld und die Richtung ändern, indem Sie das Kamerasymbol anpassen.</p>
+          <p class="tip">Wenn Sie auf der Karte herausgezoomt haben, müssen Sie vielleicht reinzoomen, bis die Ansicht angezeigt wird.</p>
+          <ol>
+            <li value="1">Wählen Sie die Ansicht mit der Smart Map aus, mit der Sie arbeiten wollen.</li>
+            <li value="2">Klicken Sie auf <span class="uitext">Setup</span>, um das Kamerasymbol zu bearbeiten.</li>
+            <li value="3">
+              <p>Klicken Sie auf das Kamerasymbol.</p>
+              <p>
+                <img src="../../../Images/change_field_of_view_and_direction.png" alt="" />
+              </p>
+            </li>
+            <li value="4">Verwenden Sie den Dreh-Griff, um die Kamera in die richtige Richtung zeigen zu lassen.</li>
+            <li value="5">Zum Anpassen von Breite, Länge und Winkel des Sichtfelds, klicken und ziehen Sie die Griffe an der Vorderkante des Sichtfeldes.</li>
+            <li value="6">Um die Änderungen zu speichern, klicken Sie auf <span class="uitext">Einrichtung</span>, um den Setup-Modus zu verlassen.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Wählen Sie das Gerätesymbol aus oder ändern Sie es<a name="SC_SelectOrChangeTheIcon.htm"></a></h3>
+          <p>Sie können ein Gerätesymbol auswählen, das dem Gerätetyp entspricht, den Sie verwenden.</p>
+          <ol>
+            <li value="1">Wählen Sie die Ansicht mit der Smart Map aus, mit der Sie arbeiten wollen.</li>
+            <li value="2">
+              <p>Klicken Sie auf <span class="uitext">Einrichtung</span> und klicken Sie dann doppelt auf das Gerätesymbol auf der Karte.</p>
+              <p>
+                <img src="../../../Images/select_or_change_the_icon.png" alt="" />
+              </p>
+            </li>
+            <li value="3">Klicken Sie auf <span class="uitext">Symbol auswählen</span> und wählen Sie dann ein Symbol für das Gerät aus.</li>
+            <li value="4">Klicken Sie nochmals auf <span class="uitext">Setup</span>, um die Änderungen zu speichern.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Geräteinformationen anzeigen oder verbergen<a name="SC_ShowOrHideInformation.htm"></a></h3>
+          <p>Sie können Angaben zu Geräten auf einer Smart Map anzeigen oder verbergen. Dies ist z.B. dann hilfreich, wenn Sie die Menge der Inhalte auf Ihrer Smart Map erhöhen oder reduzieren wollen.</p>
+          <ol>
+            <li value="1">Wählen Sie die Ansicht mit der Smart Map aus, mit der Sie arbeiten wollen.</li>
+            <li value="2">Klicken Sie auf <img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">Ebenen und benutzerdefinierte Overlays ein- oder ausblenden</span>.</li>
+            <li value="3">Aktivieren oder deaktivieren Sie die Kontrollkästchen für die Informationen, die angezeigt oder ausgeblendet werden sollen.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Hören Sie den Ton von einem Mikrofon auf der Smart Map ab</h3>
+          <p>Wenn Sie zu einer Smart Map Mikrofone hinzufügen, können Sie auf der Registerkarte <span class="uitext">Live</span> den Ton von einem Mikrofon auf einmal abhören. </p>
+          <p>Schritte:</p>
+          <ol>
+            <li value="1">
+              <p>Navigieren Sie auf der Registerkarte <span class="uitext">Live</span> zu dem Ort auf der Smart Map, wo sich das Mikrofon befindet.</p>
+            </li>
+            <li value="2">
+              <p>Klicken Sie doppelt auf das Mikrofon, um dessen Ton ein- oder auszuschalten.</p>
+              <p class="tip">Alternativ klicken Sie mit der rechten Maustaste auf das Mikrofon und wählen Sie <span class="uitext">Mikrofon stummschalten </span> oder <span class="uitext">Einschalten</span>.</p>
+            </li>
+          </ol>
+        </div>
+        <div>
+          <h3>Geräte von der Smart Map entfernen<a name="SC_DeletingCamerasOnSmar.htm"></a></h3>
+          <p>Sie können Geräte entfernen, z.B. wenn ein Gerät physisch entfernt oder irrtümlich hinzugefügt wurde. Wenn Sie ein Gerät entfernen, werden die Positionsangaben des Gerätes, z.B. die Geokoordinaten, aus Ihrem VMS-System entfernt.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Geschlossen" data-mc-alt2="Öffnen" />Voraussetzungen</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>Diese Benutzerberechtigungen müssen in <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> aktiviert werden:</p>
+              <ul>
+                <li>Bearbeiten von Smart Maps</li>
+                <li>Geräte bearbeiten</li>
+              </ul>
+            </div>
+          </div>
+          <p>Schritte:</p>
+          <ol>
+            <li value="1">Navigieren Sie zu dem Gerät, das Sie entfernen wollen.</li>
+            <li value="2"> Klicken Sie auf <span class="uitext">Setup</span>, um in den Setup-Modus zu wechseln. </li>
+            <li value="3">
+              <p>Um ein einzelnes Gerät zu entfernen, klicken Sie mit der rechten Maustaste auf das Gerät und klicken Sie auf <span class="uitext">Entfernen</span>.</p>
+              <p>Beispiel: Wenn es sich um eine Kamera handelt, klicken Sie auf <span class="uitext">Kamera entfernen</span>.</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_removecamera.png" data-mc-popup-alt="Remove camera from your smart map.">
+                  <img class="MCPopupThumbnail img" data-mc-width="284" data-mc-height="209" src="../../../Images/sc_smap_removecamera_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: 0;" alt="Remove camera from your smart map." tabindex="" />
+                </a>
+              </p>
+            </li>
+            <li value="4">Zum Entfernen von mehreren Kameras:<ol><li value="1"><p>Klicken Sie in der Werkzeugleiste Smart Maps auf <img src="../../../Images/preview_videos_from_several.png" alt="" /><span class="uitext">Mehrere Kameras auswählen</span>.</p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_cluster_multiselect.png" data-mc-popup-alt="Select multipe cameras on your smart map."><img class="MCPopupThumbnail img" data-mc-width="1056" data-mc-height="672" src="../../../Images/sc_smap_cluster_multiselect_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: 0;" alt="Select multipe cameras on your smart map." tabindex="" /></a><br /></p></li><li value="2">Klicken und ziehen Sie, um mehrere Kameras auszuwählen. Geräte sonstiger Typen, z.B. Eingabegeräte, werden in die Auswahl nicht eingeschlossen.</li><li value="3">Klicken Sie mit der rechten Maustaste und wählen Sie <span class="uitext">Kameras entfernen</span>.</li></ol></li>
+            <li value="5">Um mehrere Geräte zu entfernen, bei denen es sich nicht um Kameras handelt:<ol><li value="1">Drücken Sie auf der Smart Map die Taste Strg und halten Sie sie gedrückt. </li><li value="2">Klicken Sie mit gedrückter Strg-Taste auf die Geräte, die Sie entfernen wollen.</li><li value="3">Klicken Sie mit der rechten Maustaste auf eines der ausgewählten Geräte und wählen Sie Entfernen aus.</li></ol></li>
+            <li value="6"> Klicken Sie erneut auf <span class="uitext">Einrichtung</span>, um den Setup-Modus zu verlassen. Ihre Änderungen werden gespeichert.</li>
+          </ol>
+          <p class="tip">Sie können auch einzelne Geräte deaktivieren, indem Sie diese auswählen und dann auf Ihrer Tastatur die Taste <span class="uitext">LÖSCHEN</span> drücken.</p>
+        </div>
+      </div>
+      <div>
+        <h2>Hinzufügen, Löschen oder Bearbeiten von Links auf einer Smart Map<a name="SC_AddingDeletingOrEditi_2.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Links auf einer Smart Map (Erklärung)<a name="SC_LinksOnSmartMapExplai.htm"></a></h3>
+          <p>Sie können Links zu Standorten auf Ihrer Smart Map hinzufügen oder zur statischen Karten in <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> wechseln. Auf diese Weise können Sie schnell zu Standorten wechseln oder andere Kartentypen ohne das Ändern der Ansicht anzeigen. Sie können nicht mit einer anderen Smart Map verknüpfen. Weitere Informationen finden Sie unter <a href="#SC_DifferencesBetweenMap.htm" class="MCXref xref">Unterschiede zwischen Karten und Smart Maps (Erklärung)</a>.</p>
+          <p>Links zeigen Standorte und Karten wie folgt an:</p>
+          <ul>
+            <li>Ein Link zu einem Standort zeigt den Standort in der aktuellen Ansicht an. Um an einen Standort zurückzukehren, den Sie zuvor betrachtet haben, klicken auf der Smart Map-Symbolleiste auf <img src="../../../Images/backtracking_to_previous_locations.png" alt="" /><span class="uitext">Zurück</span>.</li>
+            <li>Ein Link zu einer Karte zeigt die Karte in einem beweglichen Fenster an. Auf diese Weise können Sie gleichzeitig auf beide Kartentypen zugreifen. Sie können die Karte betrachten und mit ihr interagieren, aber Sie können im beweglichen Fenster keine Änderungen, wie zum Beispiel das Hinzufügen von Kameras, vornehmen</li>
+          </ul>
+          <p class="note">Wenn Sie Links mit Farbcodes versehen oder die Links auf der Karte deutlicher hervorheben möchten, können Sie eine Farbe für den Link festlegen. Standardmäßig sind Links auf der Smart Map in Blau und Links zu Legacy-Karten in Rot dargestellt. Wenn Sie eine andere Farbe verwenden, ist es sinnvoll, für jeden Linktyp die gleiche Farbe zu verwenden. Dies kann beispielsweise das Unterscheiden von Links vereinfachen, wenn Sie Ebenen zum Filtern von Objekten auf der Karte verwenden.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Fügen Sie einen Link einem Smart map Standort oder Karte hinzu<a name="SC_AddLinkToSmartMapLoca.htm"></a></h3>
+          <p>Wenn Sie Links zu Ihrer Smart Map hinzufügen, können Sie schnell Orte aufrufen oder eine andere Art von Karte anzeigen, ohne in eine andere Ansicht zu wechseln.</p>
+          <p>Schritte:</p>
+          <ol>
+            <li value="1">Wählen Sie die Ansicht mit der Smart Map aus und klicken Sie dann auf <span class="uitext">Setup</span>.</li>
+            <li value="2">Wechseln Sie zu dem Punkt auf der Karte, an dem Sie einen Link hinzufügen möchten.</li>
+            <li value="3">Klicken Sie in der Karten-Symbolleiste auf <img src="../../../Images/add_link_to_map_location.png" alt="" /><span class="uitext">Einen Link hinzufügen</span> und klicken Sie dann auf den Punkt auf der Karte, wo der Link platziert werden soll.</li>
+            <li value="4">Legen Sie fest, ob der Link auf einen Standort der Smart Map oder einer Karte verweisen soll, und klicken Sie dann auf <span class="uitext">Hinzufügen</span>.</li>
+            <li value="5">
+              <p>Geben Sie einen Namen für den Link ein.</p>
+              <p class="tip">Sie können die Titel des Links auf der Smart Map anzeigen lassen, wenn Sie <span class="uitext">Symbol und Text</span> als Anzeigestil wählen. In der Regel geben Titel an, wohin der Link führt.</p>
+            </li>
+            <li value="6">Wählen Sie im Feld <span class="uitext">Ziel</span> die Karte oder den Speicherort, auf das/den der Link verweist.</li>
+            <li value="7">Im Feld <span class="uitext">Anzeigestil</span> legen Sie fest, ob der Titel und das Symbol des Links oder nur das Linksymbol auf der Karte angezeigt werden soll.</li>
+            <li value="8">Optional: Klicken Sie auf <span class="uitext">Farbe</span>, um eine Farbe für Ihren Link festzulegen.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Bearbeiten oder Löschen von Links auf einer Smart Map<a name="SC_EditOrDeleteLinkOnSma.htm"></a></h3>
+          <p>Sobald Sie einen Link auf Ihrer Smart Map hinzugefügt haben, können Sie ihn bearbeiten oder löschen.</p>
+          <p>Schritte:</p>
+          <ol>
+            <li value="1"> Klicken Sie auf <span class="uitext">Setup</span>, um in den Setup-Modus zu wechseln. </li>
+            <li value="2">Um den Link zu bearbeiten, klicken Sie mit der rechten Maustaste auf den Link und wählen <span class="uitext">Link bearbeiten</span>.</li>
+            <li value="3">Um den Link zu löschen, führen Sie einen der folgenden Schritte aus:<ul><li>Klicken Sie mit der rechten Maustaste auf den Link und wählen Sie <span class="uitext">Link löschen</span></li><li>Wählen Sie das Link aus und drücken Sie die Taste <span class="uitext">LÖSCHEN</span> auf Ihrer Tastatur</li></ul></li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Hinzufügen, Löschen oder Bearbeiten von Standorten auf einer Smart Map<a name="SC_AddingDeletingOrEditi_3.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Standorte auf einer Smart Map (Erklärung)<a name="SC_LocationsOnSmartMapEx.htm"></a></h3>
+          <p>Sie können an den für Sie interessanten Punkten einer Smart Map Standorte erstellen. Sie können zum Beispiel Standorte für Ihr Heimbüro und Zweigstellen erstellen. Standorte bieten Ihnen nicht nur ein vollständiges Bild Ihrer Umgebung, sondern sind auch hilfreich beim Navigieren auf der Smart Map. </p>
+          <p class="note">Beim Hinzufügen eines benutzerdefinierten Overlays fügt <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> einen Ort mit dem gleichen Namen wie der des Overlays hinzu. Dies macht es z. B. einfacher auf der Smart Map zum Overlay zu wechseln, wenn Sie heraus gezoomt haben. Allerdings sind der Ort und das Overlay nicht miteinander verknüpft. Sie können beispielsweise den Ort löschen oder umbenennen, ohne das Overlay zu ändern und umgekehrt. Weitere Informationen finden Sie unter <a href="#SC_AddingDeletingOrEditi.htm" class="MCXref xref">Hinzufügen, Löschen oder Bearbeiten von benutzerdefinierten Overlays</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Heimatort für Smart Map (Erklärung)<a name="SC_HomeLocationsForSmart.htm"></a></h3>
+          <p>Heimatort sind spezifisch für das Ansichtselement, in dem sie eingestellt sind. Sie können verschiedene Standorte in verschiedenen Ansichtselementen haben. Wenn ein Heimatort nicht für ein Ansichtselement angegeben ist, wird im Ansichtselement die gesamte Welt angezeigt, unabhängig von der Art des Hintergrunds, den Sie verwenden. Dies ist auch der Fall, wenn Sie den Heimatort löschen.</p>
+          <p>Beim Arbeiten mit der Smart Map können Sie auf <img src="../../../Images/home_locations_for_map.png" alt="" /><span class="uitext">Home</span> klicken, um zum Ausgangsort zurückzukehren. Das ist vergleichbar mit dem Zurücksetzen der Smart Map in der Ansicht. Sie kehren zur Standardeinstellung für das Ansichtselement zurück und das System löscht den Verlauf Ihrer besuchten Standorte.</p>
+          <p class="note">Die Auswahl eines neuen Heimstandorts betrifft alle, die das Ansichtselement verwenden. Wenn jemand anderes einen anderen Heimatstandort gewählt hat, ändern Sie seine Einstellungen.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Einen Standort einer Smart Map hinzufügen<a name="SC_AddLocationToSmartMap.htm"></a></h3>
+          <p>Um die Orte zu verfolgen, die für Sie interessant sind, können Sie Orte hinzufügen, mit denen Sie schnell zu diesen Orten auf der Smart Map navigieren können.</p>
+          <p>Schritte:</p>
+          <ol>
+            <li value="1">Wählen Sie die Ansicht mit der Smart Map aus und klicken Sie auf <span class="uitext">Setup</span>.</li>
+            <li value="2">Wechseln Sie durch Schwenken und Heranzoomen zu dem Punkt auf der Smart Map, an dem Sie einen Standort hinzufügen möchten.</li>
+            <li value="3">Klicken Sie in der Symbolleiste auf <img src="../../../Images/add_location_to_map.png" alt="" /><span class="uitext">Einen Standort hinzufügen</span> und klicken Sie dann auf den Punkt auf der Smart Map.</li>
+            <li value="4">Geben Sie einen Namen für den Standort ein und fügen Sie folgende optionale Angaben hinzu: <ul><li>Legen Sie eine Zoomstufe fest, die verwendet wird, wenn jemand zu dem Standort auf der Smart Map wechselt</li><li>Wählen Sie eine Farbe für das Standortsymbol aus. Die Farbcodierung von Standorten ist beispielsweise beim Unterscheiden von Standorttypen nützlich. Diese Farbcodes könnten auf der Funktion oder dem Standort dieses Typs basieren oder die Priorität für den Standort angeben</li><li>Optional: Legen Sie den Standort als Ihren Heimstandort fest. Die Smart Map zentriert sich auf diesen Standort und wendet die eingestellte Standard-Zoomstufe an, wenn Sie auf <img src="../../../Images/home_locations_for_map.png" alt="" /><span class="uitext">Home</span> klicken.</li></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Standort auf einer Smart Map bearbeiten oder löschen<a name="SC_EditOrDeleteLocationO.htm"></a></h3>
+          <p>Sobald Sie Standorte auf Ihrer Smart Map hinzugefügt haben, können Sie sie löschen oder die Einstellungen bearbeiten, z. B. das Löschen des Heimartortes.</p>
+          <p>Schritte:</p>
+          <ol>
+            <li value="1"> Klicken Sie auf <span class="uitext">Setup</span>, um in den Setup-Modus zu wechseln. </li>
+            <li value="2">Um einen Standort zu bearbeiten, klicken Sie mit der rechten Maustaste auf den Ort und wählen Sie <span class="uitext">Ort bearbeiten</span>.</li>
+            <li value="3">Um einen Standort zu löschen, führen Sie einen der folgenden Schritte aus:<ul><li>Klicken Sie mit der rechten Maustaste auf den Ort und wählen Sie <span class="uitext">Ort löschen</span></li><li>Wählen Sie den Standort aus und drücken Sie die Taste <span class="uitext">LÖSCHEN</span> auf Ihrer Tastatur</li></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Verknüpfungen zwischen Standorten (Erklärung)<a name="SC_LinkingBetweenLocatio.htm"></a></h3>
+          <p>Sie können beispielsweise eine Route für einen Wachrundgang erstellen, indem Sie eine Reihe von Links zwischen Standorten erstellen. Erstellen Sie einen Link, der von Standort A zu Standort B führt und einen Link von Standort B zu Standort C und so weiter. Weitere Informationen finden Sie unter <a href="#SC_AddingDeletingOrEditi_2.htm" class="MCXref xref">Hinzufügen, Löschen oder Bearbeiten von Links auf einer Smart Map</a>.</p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Hinzufügen, Löschen oder Bearbeiten von Gebäuden auf einer Smart Map<a name="SC_AddingDeletingOrEditi_4.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Gebäude auf einer Smart Map (Erklärung)<a name="SC_BuildingsOnSmartMapEx.htm"></a></h3>
+          <p>Gebäude auf der <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">Smart Map<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Eine Kartenfunktion, die mithilfe eines geographischen Informationssystems Geräte sichtbar macht (z.B. Kameras und Mikrofone), Bauwerke und topographische Elemente eines Überwachungssystems in geografisch genauer, realistischer Darstellung. Karten, die Elemente dieser Funktion nutzen, werden als Smart Maps bezeichnet.</span></a> werden als Polygone mit vier Kanten dargestellt. Sobald Sie es hinzugefügt haben, können Sie die Abmessungen, Winkel und Größe an die tatsächliche Form und Position des Gebäudes anpassen.</p>
+          <p>Wenn das Gebäude ein mehrstöckiges Gebäude ist, können Sie anfangen, Ebenen hinzuzufügen und Kameras zu den einzelnen Ebenen hinzuzufügen. Dies ermöglicht Ihnen, die Kameras innerhalb des Gebäudes Ebene für Ebene zu navigieren.</p>
+          <p>Um das Innere einer Ebene zu illustrieren, können Sie zu den Ebenen benutzerdefinierte Overlays hinzufügen, z. B. ein Bild mit einem Grundriss. Weitere Informationen finden Sie unter <a href="#SC_AddFloorPlansToLevels.htm" class="MCXref xref">Grundrisse zu Ebenen hinzufügen (Smart Map)</a>.</p>
+          <p>Gebäuden wird automatisch ein Name gegeben, zum Beispiel <span class="uitext">Gebäude 4</span>. <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> empfiehlt, den Namen zu ändern. Dies erleichtert Ihnen die Unterscheidung zwischen verschiedenen Gebäuden.</p>
+          <p>
+            <img src="../../../Images/buildings_on_map_explained.jpg" alt="" />
+          </p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Gebäude der Smart Map hinzufügen<a name="SC_AddBuildingsToSmartMa.htm"></a></h3>
+          <p>Anstatt Bilder oder Shape-Dateien zur Veranschaulichung von Gebäuden zu verwenden, können Sie einen Umriss eines Gebäudes hinzufügen. Anschließend können Sie die Abmessungen, Winkel und Größe ändern, um sie an die Form und Position des eigentlichen Gebäudes anzupassen.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Geschlossen" data-mc-alt2="Öffnen" />Voraussetzungen</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Die Bearbeitung der Smart Map wurde in Ihrem <span class="mc-variable flvar-product.SC variable">Smart Client</span> Profil in <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> aktiviert. </p>
+            </div>
+          </div>
+          <p>Schritte:</p>
+          <ol>
+            <li value="1"> Klicken Sie auf <span class="uitext">Setup</span>, um in den Setup-Modus zu wechseln. </li>
+            <li value="2">Navigieren Sie zu dem Ort auf der Smart Map, wo Sie das Gebäude platzieren möchten.</li>
+            <li value="3">Klicken Sie auf <img src="../../../Images/add_buildings_to_map.jpg" alt="" /> und stellen Sie den Cursor an die entsprechende Position auf der Smart Map.</li>
+            <li value="4">Erneut klicken. Ein Rechteck wird zur Smart Map hinzugefügt. Wenn herausgezoomt, erhöht sich die Zoomstufe automatisch.</li>
+            <li value="5">Verwenden Sie ggf. die Eck-Identifikatoren, um die Form und Position des Gebäudes anzupassen.</li>
+            <li value="6"> Klicken Sie erneut auf <span class="uitext">Einrichtung</span>, um den Setup-Modus zu verlassen. Ihre Änderungen werden gespeichert.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Gebäude auf Smart Map bearbeiten<a name="SC_EditBuildingsOnSmartM.htm"></a></h3>
+          <p>Sobald ein Gebäude zur Smart Map hinzugefügt wurde, können Sie den Namen des Gebäudes ändern und die Position, die Größe, die Abmessungen und die Winkel anpassen. Sie können außerdem Ebenen hinzufügen, entfernen oder neu anordnen.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Geschlossen" data-mc-alt2="Öffnen" />Voraussetzungen</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Die Bearbeitung der Smart Map wurde in Ihrem <span class="mc-variable flvar-product.SC variable">Smart Client</span> Profil in <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> aktiviert. </p>
+            </div>
+          </div>
+          <p>Schritte:</p>
+          <ol>
+            <li value="1">Navigieren Sie zu dem Gebäude auf Ihrer Smart Map. Zoomen Sie heran falls notwendig.</li>
+            <li value="2"> Klicken Sie auf <span class="uitext">Setup</span>, um in den Setup-Modus zu wechseln. </li>
+            <li value="3">
+              <p>Klicken Sie irgendwo innerhalb des Gebäudes. Eine blaukantige Umrandung weist darauf hin, dass Sie das Gebäude bearbeiten können.<br /></p>
+              <p>
+                <img src="../../../Images/buildings_on_map_explained.jpg" alt="" />
+              </p>
+            </li>
+            <li value="4">Um das Gebäude umzubenennen, gehen Sie zum oberen Rand des rechten Fensters und klicken auf <img src="../../../Images/edit_buildings_on_map.jpg" alt="" />. Ändern Sie den Namen und klicken auf <img src="../../../Images/edit_buildings_on_map_1.jpg" alt="" />. Zum Abbrechen drücken Sie <span class="uitext">Esc</span>.</li>
+            <li value="5">Um die Ecken anzupassen, klicken und ziehen Sie sie an eine neue Position.</li>
+            <li value="6">Um Ebenen hinzuzufügen oder zu entfernen, siehe <a href="#SC_AddOrRemoveLevelsFrom.htm" class="MCXref xref">Hinzufügen oder Entfernen von Ebenen aus Gebäuden (Smart Map)</a>.</li>
+            <li value="7"> Klicken Sie erneut auf <span class="uitext">Einrichtung</span>, um den Setup-Modus zu verlassen. Ihre Änderungen werden gespeichert.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Gebäude auf Smart Map löschen<a name="SC_DeleteBuildingsOnSmar.htm"></a></h3>
+          <p>Wenn ein Gebäude nicht mehr benötigt wird, können Sie es löschen. Das nächste Mal, wenn jemand sich bei <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> anmeldet oder neu lädt, ist das Gebäude nicht mehr vorhanden.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Geschlossen" data-mc-alt2="Öffnen" />Voraussetzungen</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Die Bearbeitung der Smart Map wurde in Ihrem <span class="mc-variable flvar-product.SC variable">Smart Client</span> Profil in <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> aktiviert. </p>
+            </div>
+          </div>
+          <p>Schritte:</p>
+          <ol>
+            <li value="1">Öffnen Sie Smart Map.</li>
+            <li value="2"> Klicken Sie auf <span class="uitext">Setup</span>, um in den Setup-Modus zu wechseln. </li>
+            <li value="3">Gehen Sie wie folgt vor:</li>
+            <ul>
+              <li>Klicken Sie mit der rechten Maustaste auf das Gebäude und wählen Sie <span class="uitext">Löschen</span></li>
+              <li>Wählen Sie das Gebäude aus und drücken Sie die Taste <span class="uitext">LÖSCHEN</span> auf Ihrer Tastatur </li>
+            </ul>
+          </ol>
+          <p class="tip">Eine alternative Methode zum Löschen eines Gebäudes: Scrollen Sie unter <img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">Standardeinstellungen verwalten</span> bis zum Abschnitt <span class="uitext">Gebäude</span>, bewegen Sie den Mauszeiger über das Gebäude, klicken Sie auf <span class="uitext">Löschen</span> und dann auf <span class="uitext">Speichern</span>. </p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Verwaltung von Ebenen und Geräten in Gebäuden (Smart Map)<a name="SC_ManagingLevelsAndCame.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Geräte und Ebenen in Gebäuden (Erklärung)<a name="SC_CamerasAndLevelsInBui.htm"></a></h3>
+          <p>Wenn Sie zu einem Gebäude ein Gerät hinzufügen, wird das Gerät standardmäßig mit der Standardebene verknüpft, wenn eine angegeben wurde. Andernfalls wird das Gerät mit der ersten Ebene verknüpft. Sie können dies jedoch ändern und das Gerät mit einer beliebigen anderen Ebene verknüpfen, oder mehrere Ebenen gleichzeitig.</p>
+          <p>Weitere Fakten:</p>
+          <ul>
+            <li>Wenn keine Ebenen ausgewählt werden, ist das Gerät auf allen Ebenen sichtbar</li>
+            <li>Wenn Sie ein Gebäude auf ein Gerät setzen, das bereits positioniert ist, wird das Gerät standardmäßig mit allen Ebenen verknüpft</li>
+            <li>Wenn Sie die Grenzen eines Gebäudes so erweitern, dass es ein bereits positioniertes Gerät abdeckt, so wird das Gerät nur mit der ausgewählten Ebene verknüpft</li>
+          </ul>
+          <p class="note">Wenn Sie die Gebäudegrenzen ändern, so dass diese das Gerät nicht mehr abdecken, so ist das Gerät nicht mehr mit dem Gebäude verknüpft.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>
+            <a name="SC_FloorPlansDevicesInBuildings"></a>Grundrisse und Geräte in Gebäuden (Erklärung)</h3>
+          <p>Um das Innere der Ebenen in einem Gebäude zu visualisieren, können Sie als benutzerdefinierte Overlays Grundrisse hinzufügen. Mit einem Grundriss ist das Gerät einfacher genau zu positionieren. Weitere Informationen finden Sie unter <a href="#SC_AddFloorPlansToLevels.htm" class="MCXref xref">Grundrisse zu Ebenen hinzufügen (Smart Map)</a>.</p>
+          <p>Die Geräte, die Sie positionieren, sind mit den Ebenen verknüpft, nicht mit benutzerdefinierten Overlays. Wenn Sie ein Geschoss in einem Gebäude mit Geräten und einem benutzerdefinierten Overlay löschen, verbleiben die Geräte in ihren geographischen Positionen, sind jedoch nicht mehr mit dem Geschoss verknüpft. Das benutzerdefinierte Overlay wird jedoch zusammen mit dem Level gelöscht.</p>
+          <p>Wenn Sie ein Geschoss umgruppieren, bleiben sowohl die Geräte als auch das benutzerdefinierte Overlay mit diesem Geschoss verknüpft. Die Geräte behalten ihre geographischen Positionen.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Hinzufügen oder Entfernen von Ebenen aus Gebäuden (Smart Map)<a name="SC_AddOrRemoveLevelsFrom.htm"></a></h3>
+          <p>Nachdem Sie Ihrer Smart Map ein Gebäude hinzugefügt haben, können Sie beliebig viele Ebenen hinzufügen. Die erste Ebene erhält die Nummer <span class="uitext">1</span>, die nächste <span class="uitext">2</span> und so weiter. Anschließend können Sie die einzelnen Ebenen umbenennen und neu anordnen.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Geschlossen" data-mc-alt2="Öffnen" />Voraussetzungen</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Die Bearbeitung der Smart Map wurde in Ihrem <span class="mc-variable flvar-product.SC variable">Smart Client</span> Profil in <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> aktiviert. </p>
+            </div>
+          </div>
+          <p>Schritte:</p>
+          <ol>
+            <li value="1">Navigieren Sie zu dem Gebäude auf Ihrer Smart Map. Zoomen Sie heran falls notwendig.</li>
+            <li value="2">Wählen Sie das Gebäude aus. Ein Fenster erscheint auf der rechten Seite.</li>
+            <li value="3">Klicken Sie auf die Taste <span class="uitext">Einrichtung</span>, um in den Setup-Modus zu wechseln.</li>
+            <li value="4">Klicken Sie auf <span class="uitext">Ebene hinzufügen</span><img src="../../../Images/add_or_remove_levels_from.jpg" alt="" />.</li>
+            <li value="5">Um den Namen der Ebene zu ändern: <ol><li value="1">Klicken Sie auf die Punkte <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> und wählen <span class="uitext">Umbenennen</span> aus.</li><li value="2">Neuen Namen eingeben.</li></ol></li>
+            <li value="6">Um eine Ebene zu löschen, klicken Sie auf die Punkte <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> und wählen <span class="uitext">Löschen</span>. Geräte auf diesem Geschoss verbleiben in ihren geographischen Positionen, sind jedoch nicht mehr mit diesem Geschoss verknüpft.</li>
+            <li value="7">Klicken Sie auf <span class="uitext">Einrichten</span>, um den Setup-Modus zu verlassen.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Ändern der Reihenfolge der Ebenen in Gebäuden (Smart Map)<a name="SC_ChangeOrderOfLevels.htm"></a></h3>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Geschlossen" data-mc-alt2="Öffnen" />Voraussetzungen</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Die Bearbeitung der Smart Map wurde in Ihrem <span class="mc-variable flvar-product.SC variable">Smart Client</span> Profil in <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> aktiviert. </p>
+            </div>
+          </div>
+          <p>Schritte:</p>
+          <ol>
+            <li value="1">Navigieren Sie zu dem Gebäude auf Ihrer Smart Map. Zoomen Sie heran falls notwendig.</li>
+            <li value="2">Wählen Sie das Gebäude aus. Ein Fenster erscheint auf der rechten Seite, welches Ihnen die Gebäudeebenen anzeigt.</li>
+            <li value="3"> Klicken Sie auf <span class="uitext">Setup</span>, um in den Setup-Modus zu wechseln. </li>
+            <li value="4">Klicken und ziehen Sie den gepunkteten Bereich <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> in die korrekte Position. Alle mit dem Geschoss verknüpften Geräte und benutzerdefinierten Overlays verbleiben bei dem Geschoss.</li>
+            <li value="5"> Klicken Sie erneut auf <span class="uitext">Einrichtung</span>, um den Setup-Modus zu verlassen. Ihre Änderungen werden gespeichert.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Standardstufe für Gebäude festlegen (Smart Map)<a name="SC_SetDefaultLevelForBui.htm"></a></h3>
+          <p>Wenn eine bestimmte Ebene in einem Gebäude zutreffender ist als andere, z. B. das Erdgeschoss, können Sie diese Ebene als Standardstufe festlegen. Wenn Sie Ihre Smart Map öffnen und zum Gebäude gehen, wird automatisch die Standardstufe ausgewählt.</p>
+          <p>Wenn Sie vom Gebäude weg und zurück navigieren, bringt Sie <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> auf die Ebene, auf der Sie zuvor waren.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Geschlossen" data-mc-alt2="Öffnen" />Voraussetzungen</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Die Bearbeitung der Smart Map wurde in Ihrem <span class="mc-variable flvar-product.SC variable">Smart Client</span> Profil in <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> aktiviert. </p>
+            </div>
+          </div>
+          <p>Schritte:</p>
+          <ol>
+            <li value="1">Navigieren Sie zu dem Gebäude auf Ihrer Smart Map. Zoomen Sie heran falls notwendig.</li>
+            <li value="2">Wählen Sie das Gebäude aus. Ein Fenster erscheint auf der rechten Seite, welches Ihnen die Gebäudeebenen anzeigt. Die Standardstufe ist hervorgehoben.</li>
+            <li value="3">Klicken Sie auf <span class="uitext">Setup</span>, um in den Setup-Modus zu wechseln. Beachten Sie das Sternchen <img src="../../../Images/set_default_level_for_buildings.jpg" alt="" />. Es zeigt an, wo die aktuelle Standardstufe ist.</li>
+            <li value="4">Klicken Sie auf der Ebene, die Sie als Standardstufe festlegen möchten, auf die Punkte <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" />.</li>
+            <li value="5">Wählen Sie <span class="uitext">Als Standard einstellen</span>.</li>
+            <li value="6"> Klicken Sie erneut auf <span class="uitext">Einrichtung</span>, um den Setup-Modus zu verlassen. Ihre Änderungen werden gespeichert.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Grundrisse zu Ebenen hinzufügen (Smart Map)<a name="SC_AddFloorPlansToLevels.htm"></a></h3>
+          <p>Um das Innere einer Ebene in einem Gebäude zu illustrieren, können Sie benutzerdefinierte Overlays hinzufügen, z. B. Bilder mit Grundrissen. Während Sie durch die Ebenen navigieren, werden die zugehörigen Grundrisse automatisch angezeigt.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Geschlossen" data-mc-alt2="Öffnen" />Voraussetzungen</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Die Bearbeitung der Smart Map wurde in Ihrem <span class="mc-variable flvar-product.SC variable">Smart Client</span> Profil in <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> aktiviert. </p>
+            </div>
+          </div>
+          <p>Schritte:</p>
+          <ol>
+            <li value="1">Navigieren Sie zu dem Gebäude auf Ihrer Smart Map. Zoomen Sie heran falls notwendig.</li>
+            <li value="2">Wählen Sie das Gebäude aus. Ein Fenster erscheint auf der rechten Seite, welches Ihnen die Gebäudeebenen anzeigt.</li>
+            <li value="3"> Klicken Sie auf <span class="uitext">Setup</span>, um in den Setup-Modus zu wechseln. </li>
+            <li value="4">Wählen Sie die Ebene, auf der Sie das benutzerdefinierte Overlay hinzufügen möchten.</li>
+            <li value="5">Klicken Sie in der oberen linken Ecke auf<img src="../../../Images/add_custom_overlay_on_1.png" alt="" /><span class="uitext">Benutzerdefiniertes Overlay hinzufügen </span> und anschließend auf eine beliebige Stelle innerhalb des Gebäudeumrisses. Ein Fenster wird angezeigt.</li>
+            <li value="6">Wählen Sie den Typ des benutzerdefinierten Overlays. Weitere Informationen finden Sie unter <a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">Benutzerdefinierte Overlays (Erklärung)</a>.</li>
+            <li value="7">
+              <p>Wählen Sie den Ort auf Ihrem Computer aus, auf dem die Datei gespeichert ist, und klicken Sie auf <span class="uitext">Fortfahren</span>. Das benutzerdefinierte Overlay wird als blauer Umriss angezeigt.<br /></p>
+              <p>
+                <img src="../../../Images/add_floorplans_to_levels.jpg" alt="" />
+              </p>
+            </li>
+            <li value="8">Ziehen Sie es auf den Umriss des Gebäudes, und verwenden Sie den Drehpunkt und die Eckpunkte, um das benutzerdefinierte Overlay zu drehen und neu zu positionieren.</li>
+            <li value="9">Klicken Sie oben in der Leiste auf <span class="uitext">Speichen</span>.</li>
+            <li value="10"> Klicken Sie erneut auf <span class="uitext">Einrichtung</span>, um den Setup-Modus zu verlassen. Ihre Änderungen werden gespeichert.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Grundrisse aus Ebenen löschen (Smart Map)<a name="SC_DeleteFloorPlansOnLev.htm"></a></h3>
+          <p>Wenn sich ein Grundriss auf einer Ebene innerhalb eines Gebäudes geändert hat, müssen Sie ggf. das benutzerdefinierte Overlay ersetzen, das den Grundriss illustriert. <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> empfiehlt Ihnen, den alten Grundriss zu löschen, bevor Sie einen neuen hinzufügen.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Geschlossen" data-mc-alt2="Öffnen" />Voraussetzungen</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Die Bearbeitung der Smart Map wurde in Ihrem <span class="mc-variable flvar-product.SC variable">Smart Client</span> Profil in <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> aktiviert. </p>
+            </div>
+          </div>
+          <p>Schritte:</p>
+          <ol>
+            <li value="1">Navigieren Sie zu dem Gebäude auf Ihrer Smart Map. Zoomen Sie heran falls notwendig.</li>
+            <li value="2">Wählen Sie das Gebäude aus. Ein Fenster erscheint auf der rechten Seite, welches Ihnen die Gebäudeebenen anzeigt.</li>
+            <li value="3"> Klicken Sie auf <span class="uitext">Setup</span>, um in den Setup-Modus zu wechseln. </li>
+            <li value="4">Wählen Sie die Ebene, auf der sich das benutzerdefinierte Overlay befindet.</li>
+            <li value="5">Klicken Sie mit der rechten Maustaste irgendwo auf das benutzerdefinierte Overlay und wählen Sie <span class="uitext">Benutzerdefiniertes Overlay löschen</span>.</li>
+            <li value="6"> Klicken Sie erneut auf <span class="uitext">Einrichtung</span>, um den Setup-Modus zu verlassen. Ihre Änderungen werden gespeichert.</li>
+          </ol>
+          <p class="tip">Um die Position oder die Größe des Grundrisses zu bearbeiten, klicken Sie mit der rechten Maustaste auf das benutzerdefinierte Overlay und wählen Sie <span class="uitext">Position bearbeiten</span>. Jetzt können Sie das benutzerdefinierte Overlay verschieben, drehen oder dessen Größe ändern.</p>
+        </div>
+        <div>
+          <h3>Geräte zu Gebäuden hinzufügen (Smart Map)<a name="SC_AddCamerasToBuildings.htm"></a></h3>
+          <p>Wenn Sie ein Gebäude erstellt und Geschosse hinzugefügt haben, können Sie zu dem Gebäude Geräte hinzufügen. Wenn ein Standardgeschoss angegeben wurde, werden die Geräte mit diesem verknüpft. Andernfalls werden die Geräte mit der ersten Ebene verknüpft. Dies können Sie ändern und die Geräte mit irgendeinem der anderen Geschosse des Gebäudes verknüpfen.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Geschlossen" data-mc-alt2="Öffnen" />Voraussetzungen</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Die Bearbeitung der Smart Map wurde in Ihrem <span class="mc-variable flvar-product.SC variable">Smart Client</span> Profil in <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> aktiviert. </p>
+            </div>
+          </div>
+          <p>Schritte:</p>
+          <ol>
+            <li value="1">Navigieren Sie zu dem Gebäude auf Ihrer Smart Map. Zoomen Sie heran falls notwendig.</li>
+            <li value="2"> Klicken Sie auf <span class="uitext">Setup</span>, um in den Setup-Modus zu wechseln. </li>
+            <li value="3">Um ein Gerät hinzuzufügen, klicken Sie auf dessen Symbol. <p>Beispiel: Wenn es sich um eine Kamera handelt, klicken Sie auf <img src="../../../Images/add_cameras_to_buildings.jpg" alt="" /><span class="uitext">Kamera hinzufügen</span>.</p></li>
+            <li value="4">Klicken Sie erneut auf den Ort, wo Sie das Gerät positionieren wollen. Ein Dialog wird angezeigt.</li>
+            <li value="5">Wählen Sie das Gerät aus und klicken Sie auf <span class="uitext">OK</span>. Wiederholen Sie die Schritte 3-5 für jedes Gerät, das Sie hinzufügen wollen.</li>
+            <li value="6">Um ein Gerät mit einem oder mehreren Geschossen zu verknüpfen klicken Sie mit der rechten Maustaste auf das Gerät und wählen Sie die erforderlichen Geschosse aus.</li>
+            <li value="7"> Klicken Sie erneut auf <span class="uitext">Einrichtung</span>, um den Setup-Modus zu verlassen. Ihre Änderungen werden gespeichert.</li>
+          </ol>
+          <p class="note">Wenn keine Geschosse ausgewählt werden, ist das Gerät auf allen Geschossen sichtbar.</p>
+        </div>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Konzept-Informationen</p>
+        <p class="containerItem_container_0">
+          <a href="sc_workingwithmap.htm">Smart Map (Verwendung)</a>
+        </p>
+        <p class="referenceHeading_reference_0">Referenzmaterialien</p>
+        <p class="referenceItem_reference_0">
+          <a href="sc_map_faq.htm">FAQ: Smart Map</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

@@ -1,0 +1,158 @@
+/*<meta />*/
+
+/* Light */
+
+@font-face 
+{
+	font-family: 'Noto Sans Arabic UI Lt';
+	font-style: normal;
+	font-weight: 300;
+	src: url('../../../Fonts/notosans-ar-sa-ui-light.ttf');
+}
+
+/* Regular */
+
+@font-face 
+{
+	font-family: 'Noto Sans Arabic UI';
+	font-style: normal;
+	font-weight: 400;
+	src: url('../../../Fonts/notosans-ar-sa-ui-regular.ttf');
+}
+
+/* Semibold */
+
+@font-face 
+{
+	font-family: 'Noto Sans Arabic UI SmBd';
+	font-style: normal;
+	font-weight: 600;
+	src: url('../../../Fonts/notosans-ar-sa-ui-semibold.ttf');
+}
+
+/* ExtraBold */
+
+@font-face 
+{
+	font-family: 'Noto Sans Arabic UI XBd';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../../../Fonts/notosans-ar-sa-ui-bold.ttf');
+}
+
+/* Black */
+
+@font-face 
+{
+	font-family: 'Noto Sans Arabic UI Bk';
+	font-style: normal;
+	font-weight: 800;
+	src: url('../../../Fonts/notosans-ar-sa-ui-black.ttf');
+}
+
+body,
+input,
+button,
+textarea
+{
+	font-family: "Noto Sans Arabic UI", "Noto Sans", "Arial", sans-serif;
+}
+
+@media print
+{
+	body
+	{
+		font-family: "Arial", sans-serif;
+	}
+
+	body .citationtext,
+	body .docRef,
+	body .uservoice
+	{
+		font-style: normal !important;
+	}
+}
+
+@media screen and (min-width: 1255px)
+{
+	[lang|=ar-sa] .landing-page-header
+	{
+		background: url('../img/portal-banner-documents.svg') 10% 58% no-repeat, linear-gradient(90deg, #035D88 0%, #0099DA 100%);
+	}
+}
+
+[lang|=ar-sa] .docs-container .card a img
+{
+	transform: rotate(180deg);
+}
+
+[lang|=ar-sa] .docs-container .card a:hover img
+{
+	transform: rotate(540deg);
+}
+
+[lang|=ar-sa] .docs-container .expanded-card a div.card-logo-background img
+{
+	right: 25%;
+}
+
+[lang|=ar-sa] .docs-container .expanded-card a:nth-of-type(2) div.card-logo-background img
+{
+	right: 32.5%;
+}
+
+/* Topic page */
+
+[lang|=ar-sa] .topic-page .topic .MCHelpControl-Related .MCHelpControl-RelatedHotSpot_::before
+{
+	padding-right: 0;
+	padding-left: 0.8rem;
+}
+
+[lang|=ar-sa] .topic-page ul.document-outline > li a[href="javascript:void(0);"]
+{
+	padding-left: 2rem !important;
+	padding-right: 2.8rem !important;
+}
+
+[lang|=ar-sa] .topic-page ul.document-outline > li a[href="javascript:void(0);"]::before
+{
+	padding-right: 0;
+	margin-left: 2rem;
+	transform: scale(-1,1);
+	right: 8px;
+	left: initial;
+}
+
+[lang|=ar-sa] .topic-page ul.document-outline > li a.down-arrow[href="javascript:void(0);"]::before
+{
+	transform: rotate(90deg);
+	padding: 0;
+	margin-right: 0;
+	transition: all .2s ease-in-out;
+}
+
+[lang|=ar-sa] .topic-page .topic .codechunk
+{
+	border-right: 8px solid rgb(166, 166, 166);
+	border-left: none;
+}
+
+[lang|=ar-sa] .topic-page .topic .important
+{
+	border-right: 8px solid rgb(196, 89, 17);
+	border-left: none;
+}
+
+[lang|=ar-sa] .topic-page .topic .note
+{
+	border-right: 8px solid rgb(0, 153, 218);
+	border-left: none;
+}
+
+[lang|=ar-sa] .topic-page .topic .tip
+{
+	border-right: 8px solid rgb(83, 129, 53);
+	border-left: none;
+}
+

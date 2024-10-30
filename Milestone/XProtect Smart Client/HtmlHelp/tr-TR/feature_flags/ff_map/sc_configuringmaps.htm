@@ -1,0 +1,849 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="tr-TR" xml:lang="tr-TR" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="Yapılandırma" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Configure smart map in XProtect Smart Client to get a geographical overview of your cameras, devices, and plug-in elements - in a one world experience." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=Recording Server" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Yönetici" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Entegratör" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Operatör" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Akıllı harita (yapılandırma)</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#feature_flags/ff_map/sc_configuringmaps.htm">Open topic with navigation</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>Akıllı harita (yapılandırma)</h1>
+      <p>Akıllı harita özelliklerinden yararlanmadan önce, <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> içinde belirli yapılandırma görevlerinden geçmelisiniz.</p>
+      <p>Akıllı haritanızı yalnızca bir görünüme eklendiyse görüntüleyebilirsiniz. Ayrıca, bkz. <a href="#SC_AddSmartMapToView.htm" class="MCXref xref">Görünümlere akıllı harita ekleyin</a>. </p>
+      <p class="note">Ayrıntılı bilgi için, bkz.<a href="sc_workingwithmap.htm#SC_SmartMapExplained.htm" class="MCXref xref">Akıllı harita (açıklama)</a>.</p>
+      <div>
+        <h2>Haritalar ile akıllı haritalar arasındaki farklar (açıklama)<a name="SC_DifferencesBetweenMap.htm"></a></h2>
+        <p>
+          <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>, gözetim sisteminizi görüntülemenize ve olaylara hızlı bir şekilde müdahale etmenize yardımcı olabilecek harita özellikleri sağlar.</p>
+        <ul>
+          <li>
+            <span class="uitext">Haritalar</span> - bu haritalar, coğrafi referanslar içermeyen hareketsiz görüntülere dayanır. Kameralar, mikrofonlar ve kayıt sunucuları gibi aygıtlar ekleyebilirsiniz. Doğrudan haritadan gözetim sisteminizle etkileşiminize olanak veren alarmları, olayları ve erişim kontrollerini de ekleyebilirsiniz. Aygıt ve özellik elemanlarını haritada manuel olarak konumlandırmanız gerekir. Daha fazla bilgi için, bkz. <a href="../../standard_features/sf_sc/sf_operation/sc_workingwithmaps.htm#SC_IntroductionToMaps(796).htm" class="MCXref xref">Haritalar (açıklandı)</a></li>
+          <li>
+            <span class="uitext">Akıllı Harita</span> - Bu harita tipi, gerçek dünyadaki coğrafyayı doğru bir şekilde yansıtmak için bir coğrafi bilgi sistemi kullanır. Bunlar size birden fazla konumdaki kameralarınıza daha kesin bir genel bakış sunabilir. Ayrıca:<ul><li>Bing Maps ve Google Maps hizmetlerini kullanın</li><li data-mc-conditions="flcts-features.oem-map-service-content">Coğrafi arka planlar olarak <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> öğesini kullanın</li><li>Coğrafi arka planlar olarak OpenStreetMap harita projesini kullanın</li><li>Katmanlar olarak bilgisayar yardımlı tasarım (CAD) çizimleri, şekil dosyaları ve görselleri kullanın</li></ul><p> Daha fazla bilgi için, bkz. <a href="sc_workingwithmap.htm#SC_SmartMapExplained.htm" class="MCXref xref">Akıllı harita (açıklama)</a></p></li>
+        </ul>
+        <p class="note">Haritalar ve akıllı haritalar birbirleriyle değiştirilemez. Haritaları kullanıyorsanız, görsel dosyasını bir akıllı harita olarak kullanabilirsiniz, ancak aygıtları yeniden eklemelisiniz. Aygıtları bir akıllı haritaya aktaramazsınız. Ama bir akıllı haritayı haritalarla ilişkilendirebilirsiniz. Ayrıntılı bilgi için, bkz.<a href="#SC_AddingDeletingOrEditi_2.htm" class="MCXref xref">Akıllı haritada bağlantıların eklenmesi, silinmesi veya düzenlenmesi</a>.</p>
+      </div>
+      <div>
+        <h2>Görünümlere akıllı harita ekleyin<a name="SC_AddSmartMapToView.htm"></a></h2>
+        <p>Bir <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">akıllı haritayı<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Coğrafi olarak kesin, gerçek dünya görüntülerinde aygıtları (örneğin, kameralar ve mikrofonlar), yapılar ve bir gözetim sisteminin topografik unsurlarını görselleştirmek için bir coğrafi bilgi kullanan bir harita işlevi. Bu işlevin unsurlarını kullanan haritalara, akıllı haritalar denir.</span></a> bir görünüme ekleyerek onu kullanmaya başlayın. Varsayılan olarak temel dünya haritası gösterilir. Akıllı haritaya ekledikten sonra, coğrafi arkaplanı değiştirebilirsiniz.</p>
+        <p>Adımlar:</p>
+        <ol>
+          <li value="1">
+            <span class="uitext">Canlı</span> veya <span class="uitext">Oynatma</span> sekmesinde, akıllı haritaya eklemek istediğiniz görünümü seçin.</li>
+          <li value="2"> Ayarlar moduna girmek için <span class="uitext">Ayarlar</span> seçeneğine tıklayın. </li>
+          <li value="3">
+            <span class="uitext">Sistem genel görünümü</span> bölmesini genişletin, sonra <span class="uitext">Akıllı harita</span> öğesini görünümdeki ilgili pozisyona sürükleyin.</li>
+          <li value="4"> Ayarlar modundan çıkmak için <span class="uitext">Ayarlar</span> seçeneğine tekrar tıklayın. Değişiklikleriniz kaydedilir.</li>
+          <li value="5">Şimdi, coğrafi arka planı değiştirebilirsiniz. </li>
+        </ol>
+      </div>
+      <div>
+        <h2>Akıllı haritalarda coğrafi arka planı değiştirin<a name="SC_ChangeTheGeographicBa.htm"></a></h2>
+        <p>Varsayılan olarak, bir görünüme bir akıllı harita eklendiğinde temel dünya haritası görüntülenir. Akıllı haritayı bir görünüme ekledikten sonra, farklı bir coğrafi arkaplanı seçebilirsiniz. Akıllı haritayı kullanan her kullanıcı, yeni arka planı bu görünümü sonraki sefer görüntülemesinde görür.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Gereklilikler</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Ancak sistem yöneticisi bunları <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> içinde etkinleştirdiyse Bing Maps ve Google Maps coğrafi arka planlar olarak kullanılabilir.</p>
+          </div>
+        </div>
+        <p>Adımlar:</p>
+        <ol>
+          <li value="1">Akıllı haritayı içeren görünümü seçin.</li>
+          <li value="2">Araç çubuğunda <img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">Katmanları ve özel katmanları göster veya gizle</span> tuşuna tıklayın.</li>
+          <li value="3">
+            <span class="uitext">Coğrafi arka planlar</span> altında göstermek istediğiniz arka planı ve detay türünü seçin. Örneğin topoğrafik bilgiler görmek istediğiniz zaman <span class="uitext">Arazi</span> seçeneğini seçin. Yolları görmek istediğiniz zaman <span class="uitext">Yol</span> seçeneğini seçin.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>Coğrafi arka planlar (açıklama)<a name="SC_GeographicBackgrounds.htm"></a></h2>
+        <p>Siz <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">akıllı haritanızın<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Coğrafi olarak kesin, gerçek dünya görüntülerinde aygıtları (örneğin, kameralar ve mikrofonlar), yapılar ve bir gözetim sisteminin topografik unsurlarını görselleştirmek için bir coğrafi bilgi kullanan bir harita işlevi. Bu işlevin unsurlarını kullanan haritalara, akıllı haritalar denir.</span></a> coğrafi arka planları olarak aşağıdaki hizmetleri kullanabilirsiniz:</p>
+        <ul>
+          <li>Bing Maps</li>
+          <li>Google Maps</li>
+          <li data-mc-conditions="flcts-features.oem-map-service-content">
+            <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+          </li>
+          <li> OpenStreetMap </li>
+        </ul>
+        <p>Coğrafi arkaplanı seçtiyseniz, cihazları eklersiniz, örneğin kameralar ve özel katmanlar, örneğin şekil dosyaları. Ayrıntılı bilgi için, bkz.<a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">Özel katmanlar (açıklama)</a>.</p>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Coğrafi arka plan tipleri (açıklama)<a name="SC_TypesOfGeographicBack.htm"></a></h2>
+        <p>Bir görünüme bir <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">akıllı harita<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Coğrafi olarak kesin, gerçek dünya görüntülerinde aygıtları (örneğin, kameralar ve mikrofonlar), yapılar ve bir gözetim sisteminin topografik unsurlarını görselleştirmek için bir coğrafi bilgi kullanan bir harita işlevi. Bu işlevin unsurlarını kullanan haritalara, akıllı haritalar denir.</span></a> eklemenizden sonra, aşağıdaki coğrafi arka planlardan birini seçebilirsiniz:</p>
+        <ul>
+          <li>
+            <span class="uitext">Temel dünya haritası</span> - <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> ’de sağlanan standart coğrafi arka planı kullanın. Bu harita genel başvuru için tasarlanmştır ve ülke sınırları, şehirler ve diğer ayrıntılar gibi özellikler içermez. Ancak diğer coğrafi arka planlar gibi, coğrafi referans verileri içerir</li>
+          <li>
+            <span class="uitext">Bing Maps</span> - Bing Maps’e bağlanın</li>
+          <li>
+            <span class="uitext">Google Maps</span> - Google Maps’e bağlanın <p class="note">Bing Maps ve Google Maps seçenekleri internete erişim gerektirir ve Microsoft veya Google'dan bir anahtar satın almalısınız.</p></li>
+          <div data-mc-conditions="flcts-features.oem-map-service-content">
+            <li>
+              <span class="uitext">
+                <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+              </span> -ücretsiz harita sağlayıcıya bağlanın. <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> etkinleştirdikten sonra, ilave kurulum gerekmez.</li>
+            <p>Bkz. <a href="#Enable">Milestone Map Service öğesini etkinleştir</a></p>
+          </div>
+          <div>
+            <li>
+              <p>
+                <span class="uitext">OpenStreetMap</span> - bağlanın:</p>
+              <ul>
+                <li>Kendi seçtiğiniz bir ticari sunucu</li>
+                <li>
+                  <p>Kendi, çevrimiçi yerel karo sunucunuz</p>
+                </li>
+              </ul>
+              <p>Bkz. <a href="#SC_ChangeOpenstreetmapTi.htm">OpenStreetMap karo sunucularını değiştir</a></p>
+            </li>
+          </div>
+          <li>
+            <span class="uitext">Yok</span> - bu seçenek coğrafi arka planı gizler. Coğrafi verinin burada kaldığını dikkate alın. Ayrıca, bkz. <a href="#SC_LayersOnSmartMapExpla.htm" class="MCXref xref">Akıllı haritadaki katmanlar (açıklama)</a></li>
+        </ul>
+        <p>Varsayılan olarak, Bing Maps ve Google Maps uydu görüntülerini görüntüler. Görüntüleri, farklı ayrıntıları görmek için örneğin hava veya bölge olarak değiştirebilirsiniz.</p>
+      </div>
+      <div data-mc-conditions="flcts-features.oem-map-service-content">
+        <h2>
+          <a name="Enable"></a>etkinleştir <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span></h2>
+        <p>
+          <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> birlikte bir <span class="mc-variable flvar-brand-company.CompanyLong variable">Milestone Systems</span> karo sunucusuna bağlanabileceğiniz bir çevrimiçi hizmettir. Bu karo sunucusu ücretsiz, ticari olarak mevcut bir harita hizmetini kullanır. </p>
+        <p>Akıllı haritanızda <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> öğesini etkinleştirdikten sonra, akıllı harita <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> öğesini coğrafi arka plan olarak kullanır.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Gereklilikler</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>
+              <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> alanı grileştirilirse, hizmeti etkinleştirmek veya devre dışı bırakmak için gerekli kullanıcı haklarına sahip değilsiniz. <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> içinde özelliği etkinleştirmenize yardımcı olmak için sistem yöneticiniz ile iletişime geçin.</p>
+            <p class="important">
+              <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> internet erişimi gerektirir.</p>
+          </div>
+        </div>
+        <p>Adımlar:</p>
+        <ol>
+          <li value="1">
+            <p>
+              <span class="uitext">Ayarlar</span> penceresini açmak için, sağ üst köşede <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> öğesine ve ardından <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">Ayarlar</span> öğesine tıklayın.</p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_configuringmaps_mmapserv.png" data-mc-popup-alt="Enable Milestone Map Service.">
+                <img class="MCPopupThumbnail img" data-mc-width="786" data-mc-height="593" src="../../../Images/sc_configuringmaps_mmapserv_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Enable Milestone Map Service." tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="2">Sol kısımda, <span class="uitext">Akıllı harita</span> tuşuna tıklayın.</li>
+          <li value="3">
+            <span class="uitext mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> alanında, <span class="uitext">Mevcut</span> öğesini seçin.</li>
+          <li value="4">
+            <span class="uitext">Kapat</span> öğesine tıklayın. Akıllı haritanızı sonraki sefer yüklediğinizde, coğrafi arkaplan olarak <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> öğesini kullanır.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>OpenStreetMap karo sunucu (açıklandı)<a name="SC_ChangingOpenstreetmap.htm"></a></h2>
+        <p>Akıllı haritanız için coğrafi arkaplan olarak OpenStreetMap'i kullanırsanız, bir karo sunucu belirlemeniz gerekir. Yerel karo sunucusunu belirleyebilirsiniz, örneğin, kuruluşunuz havaalanı veya limanlar gibi alanlar için kendine özgü haritalara sahipse veya ticari bir karo sunucusu kullanabilirsiniz.</p>
+        <p class="note">Yerel bir karo sunucu kullanmak için, internet erişimine ihtiyacınız olmaz.</p>
+        <p>Kare sunucusu adresi iki şekilde belirtilebilir:</p>
+        <ul>
+          <li>
+            <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>’de - <span class="mc-variable flvar-product.SC variable">Smart Client</span> profilleri üzerinde kare sunucu adresini ayarlarsınız. Sunucu adresi <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> profillerine atanan tüm <span class="mc-variable flvar-product.SC variable">Smart Client</span> kullanıcılar için geçerlidir.</li>
+          <li>
+            <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> içinde - <span class="uitext">Ayarlar</span> iletişim kutusunda karo sunucu adresini ayarlarsınız. Sunucu adresi sadece bu kurulum için geçerlidir</li>
+        </ul>
+        <div>
+          <h2>OpenStreetMap kare sunucusunu değiştirin<a name="SC_ChangeOpenstreetmapTi.htm"></a></h2>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Gereklilikler</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>Karo sunucusu tarafından belirlenen sunucu tarafı düzenleme için kilitlenmişse, alan grileşir ve sunucu adresini değiştiremezsiniz. <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> içinde özelliği etkinleştirmenize yardımcı olmak için, lütfen sistem yöneticiniz ile iletişime geçin.</p>
+            </div>
+          </div>
+          <p>Adımlar:</p>
+          <ol>
+            <li value="1">
+              <p>
+                <span class="uitext">Ayarlar</span> penceresini açmak için, sağ üst köşede <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> öğesine ve ardından <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">Ayarlar</span> öğesine tıklayın.</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_mapsettings.png" data-mc-popup-alt="Specify alternative tile server for the smart map.">
+                  <img class="MCPopupThumbnail img" data-mc-width="786" data-mc-height="593" src="../../../Images/sc_mapsettings_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Specify alternative tile server for the smart map." tabindex="" />
+                </a>
+                <br />
+              </p>
+            </li>
+            <li value="2">Sol kısımda, <span class="uitext">Akıllı harita</span> tuşuna tıklayın.</li>
+            <li value="3">
+              <span class="uitext">OpenStreetMap sunucusu</span> alanında, aşağıdakilerden birini yapın: <ul><li>Sunucu adresini girin. Alan grileşirse, sunucu tarafında kilitlenmiştir</li><li>Varsa, sunucu tarafından belirlenen sunucu tarafını kullanmak için, <span class="uitext">Sunucuyu izle</span> onay kutusunu seçin</li></ul></li>
+            <li value="4">
+              <span class="uitext">Kapat</span> öğesine tıklayın. Akıllı haritanızı sonraki sefer yüklediğinizde, belirtmiş olduğunuz OpenStreetMap sunucusunu kullanacaktır.</li>
+          </ol>
+          <p class="important">Hiçbir sunucu adresi belirlenmezse veya sunucu adresi geçersizse, OpenStreetMap coğrafi bir arka plan olarak kullanılamaz.</p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Akıllı haritada katmanların katmanları gösterilmesi veya gizlenmesi<a name="SC_ShowingOrHidingLayers.htm"></a></h2>
+        <p>Görmek istediğinize bağlı olarak akıllı haritanızdaki katmanları açıp kapatabilirsiniz.</p>
+        <div>
+          <h3>Akıllı haritadaki katmanlar (açıklama)<a name="SC_LayersOnSmartMapExpla.htm"></a></h3>
+          <p>
+            <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">Akıllı haritanın<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Coğrafi olarak kesin, gerçek dünya görüntülerinde aygıtları (örneğin, kameralar ve mikrofonlar), yapılar ve bir gözetim sisteminin topografik unsurlarını görselleştirmek için bir coğrafi bilgi kullanan bir harita işlevi. Bu işlevin unsurlarını kullanan haritalara, akıllı haritalar denir.</span></a> görüntülediği bilgileri filtre etmek için katmanlar kullanın. Bir akıllı haritada üç katman tipi vardır:</p>
+          <ul>
+            <li>
+              <span class="uitext">Sistem elemanları</span> - bunlara kameralar, bağlantılar ve konumlar dâhildir</li>
+            <li>
+              <span class="uitext">Özel katmanlar</span> - bit eşlem resimleri, CAD çizimleri ve şekil dosyaları</li>
+            <li>
+              <span class="uitext">Coğrafi arka planlar</span> - temel dünya haritası veya aşağıdaki hizmetlerden biri:<ul><li>Bing Maps</li><li>Google Maps</li><li data-mc-conditions="flcts-features.oem-map-service-content"><span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span></li><li> OpenStreetMap </li></ul></li>
+          </ul>
+          <p class="note">Bing Maps ve Google Maps ancak sistem yöneticisi bunları <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> ’de etkinleştirdiyse coğrafi arka planlar olarak kullanılabilir. Ayrıntılı bilgi için, bkz.<a href="#SC_GeographicBackgrounds.htm" class="MCXref xref">Coğrafi arka planlar (açıklama)</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Katmanların sırası (açıklama)<a name="SC_OrderOfLayersExplaine.htm"></a></h3>
+          <p>Her tipin tüm sistem elemanları aynı <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term26">katmandadır<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Akıllı haritada, özel katmanda, kamera gibi bir sistem öğesinde coğrafi arkaplan. Katmanlar, akıllı haritada var olan tüm grafik öğelerdir.</span></a>. Örneğin tüm kameralar aynı katmandadır. Kamera katmanını gizlerseniz, tüm kameralar gizlidir. Sistem elemanlarının katmanları yukarıdan aşağıya doğru şu sıra ile sıralanmıştır: konumlar, kameralar, bağlantılar ve coğrafi arka plan. Bu sırayı değiştiremezsiniz.</p>
+          <p>Coğrafi arka plan her zaman bir akıllı haritadaki en alt katmandır. Coğrafi arka planlar arasında geçiş yapabilirsiniz, ancak aynı anda sadece bir coğrafi arka plan seçebilirsiniz.</p>
+          <p>Özel katmanlar ayrı katmanlar olarak eklenir ve akıllı haritaya eklendikleri sırada istiflenirler. Haritanın varsayılan ayarlarını yapılandırarak, sırayı yeniden düzenlersiniz. </p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Örnek</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>Bir şehir planlayıcısının, şehir sınırlarını gösteren bir şekil dosyası ve şehir içindeki tüm büyük yolları içeren bir şekil dosyası vardır. Planlayıcı, katmanların sırasını, yollar şehir sınırlarının üstünde görüntülenecek şekilde düzenleyebilir. Bu size, kameraların şehirde nerede olduğu hakkında bir genel fikir verir ve belli bir kameranın bulunduğu sokağın adını görmek için oraya yaklaştırma imkânı sunar.</p>
+            </div>
+          </div>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Akıllı haritadaki katmanları gösterin veya gizleyin<a name="SC_ShowOrHideLayersOnSma.htm"></a></h3>
+          <p>Coğrafi arka plan da dâhil, akıllı haritanızdaki katmanları gösterebilir veya gizleyebilirsiniz. Örneğin bu, belli bir elemana odaklanmak veya sadece akıllı haritanın görüntülediği içeriği basitleştirmek istediğinizde yararlıdır.</p>
+          <p>Adımlar:</p>
+          <ol>
+            <li value="1">Araç çubuğundaki <img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">Katmanları ve özel katmanları göster veya gizle</span> tuşuna tıklayın.</li>
+            <li value="2">Sistem elemanlarını ve özel katmanları göstermek veya gizlemek için, onay kutularını işaretleyin veya işaretlerini silin.</li>
+            <li value="3">Coğrafi arka planı gizlemek için, <span class="uitext">Yok</span> seçeneğini seçin.</li>
+          </ol>
+          <p class="note">
+            <span class="uitext">Yok</span> seçeneği seçildiğinde coğrafi arka plan gizlenir, ancak akıllı harita için coğrafi referanslar geçerli olmaya devam eder. Örneğin, uzamsal referans içeren yeni bir shapefile eklerseniz, sistem hâlen haritaya dosyayı yerleştirmek için uzamsal referansı kullanır.</p>
+          <p class="note">Mikrofonları gizlemek, mikrofonları tekrar gösterinceye kadar şu anda sessize alınmamış mikrofonu sessize alacaktır.</p>
+        </div>
+        <div>
+          <h3>Akıllı haritanız için varsayılan ayarları belirleyin<a name="SC_ManageDefaultSettings(65803).htm"></a></h3>
+          <p>Bir görünüme bir akıllı harita ekledikten ve katmanları, kameraları ve bağlantıları ekledikten sonra, özel katmanlar için varsayılan ayarları belirtebilirsiniz. Ayrıca temizlemek için özel katmanları silebilirsiniz.</p>
+          <p>Adımlar:</p>
+          <ol>
+            <li value="1">
+              <span class="uitext">Ayarlar</span> seçeneğine tıklayın.</li>
+            <li value="2">
+              <img src="../../../Images/manage_default_settings_for.png" alt="" />
+              <span class="uitext">Varsayılan ayarları yönet</span> seçeneğine tıklayın.</li>
+            <li value="3">Aşağıdakilerden birini gerçekleştirin: <ul><li>Bir katmanı göstermek veya gizlemek için, onay kutusunu işaretleyin veya işareti kaldırın</li><li>Sırayı yeniden ayarlamak için, katmanın önündeki çekme kolunu kullanarak, onu listedeki yeni bir konuma çekin. Katmanlar listede yukarıdan aşağıya doğru sıralanmıştır</li><li>Bir katmanı silmek için, imleci katmanın üzerinde bekletin, sonra <span class="uitext">Sil</span> tuşuna tıklayın</li></ul></li>
+            <li value="4">
+              <span class="uitext">Kaydet</span> üzerine tıklayın.</li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Özel katmanların eklenmesi, silinmesi veya düzenlenmesi<a name="SC_AddingDeletingOrEditi.htm"></a></h2>
+        <div>
+          <h3>Özel katmanlar (açıklama)<a name="SC_CustomOverlaysExplain.htm"></a></h3>
+          <p>Aşağıdaki dosya tiplerini <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>’deki bir akıllı haritaya özel kaymanlar olarak ekleyebilirsiniz:</p>
+          <ul>
+            <li>
+              <span class="uitext">Şekil dosyası</span> - örneğin noktalar, satırlar, poligonlar ve haritadaki örneğin duvarlar veya yollar gibi nesneleri veya nehirler veya göller gibi coğrafi özellikleri temsil eden öznitelikler gibi coğrafi-uzamsal vektör verileri içerebilir. Örneğin yaklaştırma ve uzaklaştırma yaptığınızda iyi ölçeklendikleri ve dosya boyutları çoğu zaman CAD çizimlerinden veya bit eşlem görüntülerinden daha küçük olduğundan, şehir planlaması ve idare daireleri çoğu zaman şekil dosyaları kullanır</li>
+            <li>
+              <span class="uitext">CAD</span> – Bir bilgisayar destekli tasarım (CAD) çizimi bir katman olarak yararlıdır çünkü şekil dosyaları gibi CAD verileri de doğru coğrafi bağlamı sunmak için bir koordinat sistemini ve uzamsal referans kullanabilir. Örneğin bir konumun ayrıntılı bir hava haritasını veya yol haritasını kullanabilirsiniz</li>
+            <li>
+              <span class="uitext">Resim</span> - Bir binanın zemin planı gibi bir resim dosyanız varsa, onu akıllı haritada bir katman olarak ekleyebilirsiniz. Aşağıdaki tip resim dosyalarını kullanabilirsiniz: PNG, BMP, GIF, JPG, JPEG, PHG, TIF ve TIFF</li>
+          </ul>
+          <p class="note">Odağa özel katmanları yerleştirmek için, geçici olarak diğer türlerdeki katmanları gizleyebilirsiniz. Bkz. <a href="#SC_LayersOnSmartMapExpla.htm" class="MCXref xref">Akıllı haritadaki katmanlar (açıklama)</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Özel katmanlar ve konumlar (açıklama)<a name="SC_CustomOverlaysAndLoca.htm"></a></h3>
+          <p>
+            <a href="sc_workingwithmap.htm#SC_FindLocationOfCustomO.htm" class="MCXref xref">Akıllı haritada özel katmanlara atlayın</a> kapsamında açıklanan şekilde akıllı haritanıza eklediğiniz özel katmanlara çabucak atlayabilirsiniz. Ancak, ayarlarda, özel katmanlar ve konumlar arasında bir bağlantı kurabilirsiniz. Yani ne zaman yeni bir özel katman ekleseniz <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> haritada tam aynı noktada katman ile aynı adı taşıyan bir konum oluşturur. Özel katmanın konumu artık <span class="uitext">Bir konum seçin</span> listesinde kullanılabilir.</p>
+          <p>
+            <img src="../../../Images/custom_overlays_and_locations.jpg" alt="" />
+          </p>
+          <p>Katman ile konum birbirine bağlı değildir. Örneğin katmanı değiştirmeden konumu silebilir veya yeniden adlandırabilirsiniz veya bunun tersini yapabilirsiniz.</p>
+          <p class="note">Bu özelliği açmak için, bkz. <a href="#SC_AddLocationsToCustomO.htm" class="MCXref xref">Özel katmanlara konumlar ekleyin (akıllı harita)</a>.</p>
+        </div>
+        <div>
+          <h3>Akıllı haritada özel katmanlar ekleyin<a name="SC_AddCustomOverlayOnSma.htm"></a></h3>
+          <p>Özel katmanlar ekleyerek akıllı haritanızdaki ayrıntı seviyesini artırın. <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term8">Özel katman<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Kullanıcıların bir akıllı haritaya ekleyebildikleri bir kullanıcı tanımlı grafik unsuru, örneğin bir binada bir zemin planını tasvir etmek veya bölgeler arasında sınırları işaretlemek. Bir özel katman, bir görüntü, bir CAD çizimi veya bir şekil dosyası olabilir.</span></a> eklediğinizde, <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> aynı adda bir konumu yer paylaşımı olarak oluşturur.</p>
+          <p>Adımlar:</p>
+          <ol>
+            <li value="1">Akıllı haritayı içeren görünümü seçin, sonra <span class="uitext">Ayarlar</span> seçeneğine tıklayın.</li>
+            <li value="2">
+              <img src="../../../Images/add_custom_overlay_on_1.png" alt="" />
+              <span class="uitext">Bir özel katman ekle</span> seçeneğine tıklayın: <ul><li>Katman dünya referanslı ise akıllı harita üzerinde herhangi bir yere tıklayın. <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>, katmanı doğru coğrafi konuma yerleştirmek için dünya referans bilgilerini kullanır. Ayrıca akıllı harita, varsayılan bir yaklaştırma seviyesi ile katmana odaklanır</li><li>Katman dünya referanslı değil ise, haritada unsuru eklemek istediğiniz noktaya gidin, sonra o noktaya akıllı harita üzerinde tıklayın</li><p class="tip">Bir katman eklemeden önce, haritada onu koymak istediğiniz konuma yaklaştırmak iyi bir fikirdir. Bu, katmanı düzgün bir şekilde konumlandırmanızı kolaylaştırır.</p></ul></li>
+            <li value="3">Katman için bir isim girin.</li>
+            <li value="4">Seçtiğiniz dosya türüne bağlı olarak: <ul><li><span class="uitext">Resim</span> - resim dosyasını seçin ve sonra <span class="uitext">Tamam</span> tuşuna tıklayın</li><li><span class="uitext">Şekil dosyası</span> - SHP dosyasını seçin. Bir PRJ dosyanız varsa, <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> onu bulur ve sadece <span class="uitext">Tamam</span> tuşuna tıklamanız yeterli olur. Bir PRJ dosyanız yoksa, katmanı ekledikten sonra onu manuel olarak yeniden yerleştirebilirsiniz. Ayrıca bir renk de uygulayabilirsiniz. Örneğin bir renk eklenmesi, şekil dosyasını akıllı haritada daha fazla belli edebilir</li><li><span class="uitext">CAD</span> - DWG dosyasını seçin. Bir PRJ dosyanız varsa, <span class="uitext">Tamam</span> tuşuna tıklayın. Bir PRJ dosyanız yoksa ve dosyayı akıllı harita üzerine yerleştirmek için dünya referansını kullanmak istiyorsanız, uzamsal referans kimliğini (SRID) kullanın, sonra <span class="uitext">Tamam</span> tuşuna tıklayın. Bir PRJ dosyanız veya bir SRID’niz yoksa, katmanı ekledikten sonra onu manuel olarak yeniden yerleştirebilirsiniz</li><p class="note">Katmanların türleri hakkında daha fazla bilgi için, bkz. <a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">Özel katmanlar (açıklama)</a>.</p></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Özel katmanlara konumlar ekleyin (akıllı harita)<a name="SC_AddLocationsToCustomO.htm"></a></h3>
+          <p>Akıllı haritanızda <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term8">özel katmanlara<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Kullanıcıların bir akıllı haritaya ekleyebildikleri bir kullanıcı tanımlı grafik unsuru, örneğin bir binada bir zemin planını tasvir etmek veya bölgeler arasında sınırları işaretlemek. Bir özel katman, bir görüntü, bir CAD çizimi veya bir şekil dosyası olabilir.</span></a> konumları otomatik olarak eklemek için <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> öğesini yapılandırabilirsiniz. Bu, <span class="uitext">Bir konum seçin</span> listesi yoluyla özel katmanlara atlamanıza izin verir. </p>
+          <p>Adımlar:</p>
+          <ol>
+            <li value="1">
+              <span class="uitext">Ayarlar</span> penceresini açmak için uygulama araç çubuğunda <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> ve ardından <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">Ayarlar</span> düğmesine tıklayın.</li>
+            <li value="2">
+              <span class="uitext">Akıllı harita</span> sekmesine gidin.</li>
+            <li value="3">
+              <span class="uitext">Katmanın eklendiği yerde konum oluştur</span> listesinde <span class="uitext">Evet</span> seçeneğine tıklayın.</li>
+            <li value="4">Değişiklikleri kaydetmek için diyalog kutusunu kapatın.</li>
+          </ol>
+          <p class="note">Ayrıntılı bilgi için, bkz.<a href="#SC_CustomOverlaysAndLoca.htm" class="MCXref xref">Özel katmanlar ve konumlar (açıklama)</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Akıllı haritada özel katman silin<a name="SC_DeleteCustomOverlayOn.htm"></a></h3>
+          <ol>
+            <li value="1">Akıllı haritayı içeren görünümü seçin, sonra <span class="uitext">Ayarlar</span> seçeneğine tıklayın.</li>
+            <li value="2">Araç çubuğunda <img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">Varsayılan ayarları yönet</span> tuşuna tıklayın.</li>
+            <li value="3">İmleci özel katmanın üzerinde bekletin ve sonra <span class="uitext">Sil</span> tuşuna tıklayın.</li>
+            <li value="4">Özel katmanı silmek için <span class="uitext">Kaydet</span> tuşuna tıklayın.</li>
+            <li value="5">İsteğe Bağlı: Özel katman için bir konum oluşturulmuş ise onu da silmek isteyebilirsiniz. Ayrıntılı bilgi için, bkz.<a href="#SC_AddingDeletingOrEditi_3.htm" class="MCXref xref">Akıllı haritada konumların eklenmesi, silinmesi veya düzenlenmesi</a>.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Şekil dosyalarındaki bölgeleri daha görünür yapın (akıllı harita)<a name="SC_MakeAreasInShapefiles.htm"></a></h3>
+          <p class="note">Bu konu yalnızca şekil dosyalarını poligonlar ile kullandığınız zaman ilgilidir.</p>
+          <p>Akıllı haritanızda birbirine çok yakın poligonlardan oluşan şekilde bir şekil dosyası kullanmak istediğiniz zaman münferit poligonları birbirinden ayırt etmek isteyebilirsiniz. Bunu yapmak için, şekil dosyası için seçtiğiniz rengin matlığını azaltırsınız. Poligonların sınırları belirginleşir.</p>
+          <p>Adımlar:</p>
+          <ol>
+            <li value="1">
+              <a href="#SC_AddCustomOverlayOnSma.htm" class="MCXref xref">Akıllı haritada özel katmanlar ekleyin</a> içinde açıklanan adımları izleyin.</li>
+            <li value="2">
+              <p>Renk seçildiğinde, <span class="uitext">Bulanıklık</span> kaydırıcısını şeffaflık seviyesi sizin için normal oluncaya kadar sola sürükleyin.</p>
+              <p>
+                <img src="../../../Images/make_areas_in_shapefiles_more.jpg" alt="" />
+              </p>
+            </li>
+            <li value="3">
+              <span class="uitext">Kaydet</span> üzerine tıklayın.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Özel katmanın konumunu, boyutunu veya hizasını ayarlayın<a name="SC_AdjustPositionSizeOrA.htm"></a></h3>
+          <p>Bir katmanı haritadaki farklı bir yere taşıyabilir, büyütüp küçültebilir ve döndürebilirsiniz. Örneğin bu, katmanınızın dünya referansı olmadığı veya katmanın dünya referansı olduğu ancak bir nedenden dolayı coğrafya arka planı ile tam hizalanmadığı zaman yararlı olur.</p>
+          <p>Adımlar:</p>
+          <ol>
+            <li value="1">Akıllı haritayı içeren görünümü seçin, sonra <span class="uitext">Ayarlar</span> seçeneğine tıklayın.</li>
+            <li value="2">Katmanı sağ tıklayın ve <span class="uitext">Konumu düzenle</span> seçeneğini seçin.</li>
+            <li value="3">Katmanın boyutunu değiştirmek veya döndürmek için: <ul><li>Bir köşe koluna tıklayın ve sürükleyin</li><li><p>Katmanı belli bir noktanın çevresinde döndürmek için dönme noktasını haritadaki o yere getirin. Sonra bir köşe koluna tıklayın ve sürükleyin </p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/adjust_position_size_or_alignment.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="273" data-mc-height="261" src="../../../Images/adjust_position_size_or_alignment_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="" tabindex="" /></a></p></li></ul></li>
+            <li value="4">Katmanı haritada taşımak için katmana tıklayın ve sürükleyin.</li>
+            <li value="5">Değişikliği kaydetmek için, <span class="uitext">Kaydet</span> tuşuna tıklayın.</li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Akıllı haritaya aygıtların eklenmesi, silinmesi veya düzenlenmesi<a name="SC_AddingDeletingOrEditi_1.htm"></a></h2>
+        <p>Aygıtları çevrenizdeki fiili konumlarında bir akıllı haritaya ekleyebilirsiniz. Bu size gözetim sisteminizin iyi bir genel bakışını sunar ve bir olaya cevap vermenize yardımcı olabilir. Örneğin bir olay devam ettiği sırada bir şüpheliyi takip etmek istediğinizde, kayıtlarını görüntülemek için haritadaki kameralara tıklayabilirsiniz.</p>
+        <p>Bir akıllı haritaya bir kamera ekledikten sonra, kamera simgesinin görüş alanını, gerçek kameranın görüş alanını yansıtacak şekilde ayarlayabilirsiniz. Bu, belli bir alanı kapsayan kamerayı bulmanızı kolaylaştırır. Ayrıca haritada kamerayı temsil edecek ve haritada kamera tipini tanımanıza yardımcı olabilecek bir simge de seçebilirsiniz.</p>
+        <p>Akıllı haritalarda aşağıdaki aygıtlarla çalışabilirsiniz:</p>
+        <ul>
+          <li>Kameralar</li>
+          <li>Giriş cihazları</li>
+          <li>Mikrofonlar</li>
+        </ul>
+        <div data-mc-conditions="">
+          <h3>Akıllı haritaya aygıtlar ekle<a name="SC_AddCamerasToSmartMap.htm"></a></h3>
+          <p>Aygıtınızın coğrafi koordinatları <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> içinde sistem yöneticiniz tarafından belirlenmişse, aygıt bunu eklediğinizde otomatik olarak akıllı haritanız üzerinde konumlandırılacaktır. Aksi halde, aygıtınızı kesin coğrafi konumuna kendiniz yerleştirmelisiniz.</p>
+          <ol>
+            <li value="1">Akıllı haritayı içeren görünümü seçin, sonra <span class="uitext">Ayarlar</span> seçeneğine tıklayın.</li>
+            <li value="2">Bir aygıt veya bir aygıtlar grubu eklemek için: <p class="tip">Aygıtı eklemeden önce, haritada konuma yakınlaştırmak iyi bir fikirdir. Bu, aygıtı düzgün bir şekilde konumlandırmanızı kolaylaştırır.</p><ul><li><span class="uitext">Sistem genel görünümü</span> bölmesini genişletin, cihazı veya cihazı grubunu bulun, sonra onu akıllı haritada görüntülemek istediğiniz noktaya sürükleyin. Daha sonra bunları yeniden konumlandırmak için aygıtları sürükleyebilirsiniz</li><li>Akıllı harita araç çubuğunda <img src="../../../Images/add-a-device-to-smart-map.png" alt="" /><span class="uitext">Bir aygıt ekle</span> &gt; aygıt türü seç öğesini seçin.<ul><li>Örnek: Bir kamera durumunda, <img src="../../../Images/add_cameras_to_map.png" alt="" /><span class="uitext">Bir kamera ekle</span> öğesini seçin ve ardından, kamerayı seçin.</li></ul></li><li>Aygıtı akıllı haritaya sürükleyin</li><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_adddevice.png" data-mc-popup-alt="Add a device to your smart map."><img class="MCPopupThumbnail img" data-mc-width="709" data-mc-height="823" src="../../../Images/sc_smap_adddevice_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add a device to your smart map." tabindex="" /></a><br /></ul></li>
+            <li value="3">Değişikliği kaydetmek için, ayarlar modundan çıkmak üzere <span class="uitext">Ayarlar</span> seçeneğine tıklayın.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Kameranın görüş alanını ve yönünü değiştirin<a name="SC_ChangeFieldOfViewAndD.htm"></a></h3>
+          <p>Kamera akıllı haritaya eklendikten sonra kamera simgesini ayarlayarak görüş alanını ve yönünü değiştirebilirsiniz.</p>
+          <p class="tip">Haritada uzaklaştırma yaptığınızda görüş alanı gösterilinceye kadar yaklaştırma yapmanız gerekebilir.</p>
+          <ol>
+            <li value="1">Çalışmak istediğiniz akıllı haritayı içeren görünümü seçin.</li>
+            <li value="2">Kamera simgesini düzenlemek için <span class="uitext">Ayarlar</span> seçeneğine tıklayın.</li>
+            <li value="3">
+              <p>Kamera simgesine tıklayın.</p>
+              <p>
+                <img src="../../../Images/change_field_of_view_and_direction.png" alt="" />
+              </p>
+            </li>
+            <li value="4">Kamerayı doğru yöne çevirmek için, döndürme kolunu kullanın.</li>
+            <li value="5">Görünümdeki alanın genişlik, uzunluk ve açısını ayarlamak için, görünüm alanının ön kenarındaki kollara tıklayıp sürükleyin.</li>
+            <li value="6">Değişikliklerinizi kaydetmek için, ayarlar modundan çıkmak üzere <span class="uitext">Ayarlar</span> seçeneğine tıklayın.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Aygıt simgesini seçin veya değiştirin.<a name="SC_SelectOrChangeTheIcon.htm"></a></h3>
+          <p>Kullandığınız aygıtın türü ile eşleşen bir aygıt simgesini seçebilirsiniz.</p>
+          <ol>
+            <li value="1">Çalışmak istediğiniz akıllı haritayı içeren görünümü seçin.</li>
+            <li value="2">
+              <p>
+                <span class="uitext">Ayar</span> öğesine tıklayın ve ardından, haritadaki aygıt simgesine çift tıklayın.</p>
+              <p>
+                <img src="../../../Images/select_or_change_the_icon.png" alt="" />
+              </p>
+            </li>
+            <li value="3">
+              <span class="uitext">Simge seç</span> öğesine tıklayın ve ardından aygıt için simgeyi seçin.</li>
+            <li value="4">Değişikliği kaydetmek için tekrar <span class="uitext">Ayarlar </span>seçeneğine tıklayın.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Aygıt bilgisini göster veya gizle<a name="SC_ShowOrHideInformation.htm"></a></h3>
+          <p>Bir akıllı haritadaki aygıtlar hakkındaki bilgiyi gösterebilir veya gizleyebilirsiniz. Bu, örneğin akıllı haritanızda içeriğin miktarını artırmak veya azaltmak istediğinizde kullanışlıdır.</p>
+          <ol>
+            <li value="1">Çalışmak istediğiniz akıllı haritayı içeren görünümü seçin.</li>
+            <li value="2">
+              <img src="../../../Images/change_the_geographic_background.png" alt="" />
+              <span class="uitext">Katmanları ve özel katmanları göster veya gizle</span> seçeneğine tıklayın.</li>
+            <li value="3">Gösterilecek veya gizlenecek bilgiler için işaret kutularını seçin ve temizleyin.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Akıllı haritada mikrofondan gelen sesi dinleyin</h3>
+          <p>Bir akıllı haritaya mikrofonları ekledikten sonra, <span class="uitext">Canlı</span> sekmesinde her seferinde bir mikrofondan gelen sesi dinleyebilirsiniz. </p>
+          <p>Adımlar:</p>
+          <ol>
+            <li value="1">
+              <p>
+                <span class="uitext">Canlı</span> sekmesinde, akıllı haritada mikrofonun yerleştirildiği yere gidin.</p>
+            </li>
+            <li value="2">
+              <p>Sesi kapamak veya açmak için mikrofona çift tıklayın.</p>
+              <p class="tip">Alternatif olarak, mikrofona sağ tıklayın ve <span class="uitext">Mikrofonu sessize al</span> veya <span class="uitext">Sesi aç</span> öğesini seçin.</p>
+            </li>
+          </ol>
+        </div>
+        <div>
+          <h3>Aygıtları akıllı haritadan kaldır<a name="SC_DeletingCamerasOnSmar.htm"></a></h3>
+          <p>Örneğin aygıtlar fiziksel olarak kaldırılmışsa veya hatayla eklenmişse, aygıtları kaldırabilirsiniz. Bir aygıtı kaldırarak, aygıtın konumlandırma bilgisi örneğin coğrafi koordinatlar VMS sisteminizden kaldırılır.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Gereklilikler</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>Bu kullanıcı hakları <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> içinde etkinleştirilmelidir:</p>
+              <ul>
+                <li>Akıllı haritaların düzenlenmesi</li>
+                <li>Aygıtları düzenleme</li>
+              </ul>
+            </div>
+          </div>
+          <p>Adımlar:</p>
+          <ol>
+            <li value="1">Kaldırmak istediğiniz aygıta gidin.</li>
+            <li value="2"> Ayarlar moduna girmek için <span class="uitext">Ayarlar</span> seçeneğine tıklayın. </li>
+            <li value="3">
+              <p>Tek bir aygıtı kaldırmak için, aygıta sağ tıklayın ve <span class="uitext">Kaldır</span> öğesine tıklayın.</p>
+              <p>Örnek: Bir kamera durumunda, <span class="uitext">Kamerayı kaldır</span> öğesine tıklayın.</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_removecamera.png" data-mc-popup-alt="Remove camera from your smart map.">
+                  <img class="MCPopupThumbnail img" data-mc-width="284" data-mc-height="209" src="../../../Images/sc_smap_removecamera_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: 0;" alt="Remove camera from your smart map." tabindex="" />
+                </a>
+              </p>
+            </li>
+            <li value="4">Çok sayıda kamerayı kaldırmak için:<ol><li value="1"><p>Akıllı harita araç çubuğunda, <img src="../../../Images/preview_videos_from_several.png" alt="" /><span class="uitext">Çok sayıda kamera seç</span> öğesine tıklayın.</p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_cluster_multiselect.png" data-mc-popup-alt="Select multipe cameras on your smart map."><img class="MCPopupThumbnail img" data-mc-width="1056" data-mc-height="672" src="../../../Images/sc_smap_cluster_multiselect_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: 0;" alt="Select multipe cameras on your smart map." tabindex="" /></a><br /></p></li><li value="2">Çok sayıda kamera seçmek için tıklayın ve sürükleyin. Diğer türlerdeki aygıtlar, örneğin giriş aygıtları seçime dâhil değildir.</li><li value="3">Sağ tıklayın ve <span class="uitext">Kameraları kaldır</span> öğesini seçin.</li></ol></li>
+            <li value="5">Kamera olmayan çok sayıda aygıtı kaldırmak için:<ol><li value="1">Akıllı haritada, Ctrl tuşuna basın ve tutun. </li><li value="2">Ctrl tuşunu basılı tuturken, kaldırmak istediğiniz aygıtlara tıklayın.</li><li value="3">Seçilen aygıtlardan birine sağ tıklayın ve Kaldır öğesini seçin.</li></ol></li>
+            <li value="6"> Ayarlar modundan çıkmak için <span class="uitext">Ayarlar</span> seçeneğine tekrar tıklayın. Değişiklikleriniz kaydedilir.</li>
+          </ol>
+          <p class="tip">Ayrıca, tek cihazı seçerek ve ardından klavyenizde <span class="uitext">SİL</span> düğmesine basarak onu silebilirsiniz.</p>
+        </div>
+      </div>
+      <div>
+        <h2>Akıllı haritada bağlantıların eklenmesi, silinmesi veya düzenlenmesi<a name="SC_AddingDeletingOrEditi_2.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Akıllı haritadaki bağlantılar (açıklama)<a name="SC_LinksOnSmartMapExplai.htm"></a></h3>
+          <p>Akıllı haritanızdaki konumlara veya <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> içindeki akıllı haritalara giden bağlantılar ekleyebilirsiniz. Bu, başka bir görünüme geçmeden hızlı bir şekilde konumları ziyaret etmenizi veya haritanın başka bir tipini görüntülemenizi sağlar. Başka bir akıllı haritaya bağlantı kuramazsınız. Ayrıntılı bilgi için, bkz.<a href="#SC_DifferencesBetweenMap.htm" class="MCXref xref">Haritalar ile akıllı haritalar arasındaki farklar (açıklama)</a>.</p>
+          <p>Bağlantılar, konumları ve haritaları aşağıdaki şekilde gösterir:</p>
+          <ul>
+            <li>Bir konumun bir bağlantısı, konumu geçerli görünümde gösterir. Daha önce görüntülediğiniz bir konuma geri dönmek için, akıllı harita araç çubuğundaki <img src="../../../Images/backtracking_to_previous_locations.png" alt="" /><span class="uitext">Geri</span> tuşuna tıklayın.</li>
+            <li>Bir haritanın bir bağlantısı haritayı bağımsız bir pencerede gösterir. Bu aynı anda her iki harita tipine de erişmenizi sağlar. Haritayı görüntüleyebilir ve onunla etkileşimde bulunabilir, ancak bağımsız pencerede, örneğin kameraları ekleme gibi değişiklikler yapamazsınız</li>
+          </ul>
+          <p class="note">Bağlantıları renk koduyla kodladığınızda veya bunları haritada görünür hale getirmek istediğinizde, bağlantı için bir renk belirtebilirsiniz. Varsayılan olarak, akıllı harita konumlarına bağlantılar mavidir, eski haritalara bağlantılar ise kırmızıdır. Farklı bir renk kullanıyorsanız, her bağlantı tipi için aynı rengi kullanmak iyi bir fikirdir. Örneğin bu, haritadaki öğeleri süzmek için katmanlar kullandığınızda bağlantıları ayırt etmenizi kolaylaştırır.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Akıllı harita konumuna veya haritaya bağlantı ekleyin<a name="SC_AddLinkToSmartMapLoca.htm"></a></h3>
+          <p>Akıllı haritanıza bağlantılar eklemek, başka bir görünüme geçmeden hızlı bir şekilde konumları ziyaret etmenizi veya başka bir harita tipini görüntülemenizi sağlar.</p>
+          <p>Adımlar:</p>
+          <ol>
+            <li value="1">Akıllı haritayı içeren görünümü seçin, sonra <span class="uitext">Ayarlar</span> seçeneğine tıklayın.</li>
+            <li value="2">Haritada bağlantıyı eklemek istediğiniz noktaya gidin.</li>
+            <li value="3">Harita araç çubuğunda <img src="../../../Images/add_link_to_map_location.png" alt="" /><span class="uitext">Bir bağlantı ekle</span> tuşuna tıklayın, sonra haritada, bağlantının olmasını istediğiniz noktaya tıklayın.</li>
+            <li value="4">Bir akıllı harita konumuna veya bir haritaya bağlantı oluşturmak isteyip istemediğinizi belirtin, sonra <span class="uitext">Ekle</span> tuşuna tıklayın.</li>
+            <li value="5">
+              <p>Bağlantı için bir ad girin.</p>
+              <p class="tip">Gösterme stili olarak <span class="uitext">Simge ve metin</span> seçeneğini seçtiğinizde, bağlantının başlığını akıllı haritada gösterebilirsiniz. Genellikle adlar, bağlantının sizi götüreceği yeri belirtir.</p>
+            </li>
+            <li value="6">
+              <span class="uitext">Hedef</span> alanında, bağlantının işaret ettiği harita veya konumu seçin.</li>
+            <li value="7">
+              <span class="uitext">Gösterge stili</span> alanında, haritada ad veya bağlantı simgesinin mi, yoksa sadece bağlantı simgesinin mi görüntüleneceğini belirtin.</li>
+            <li value="8">İsteğe Bağlı: Bağlantınızın rengini belirlemek için <span class="uitext">Renk </span>seçeneğine tıklayın.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Akıllı haritadaki bağlantıyı düzenleyin veya silin<a name="SC_EditOrDeleteLinkOnSma.htm"></a></h3>
+          <p>Akıllı haritanıza bir bağlantı ekledikten sonra bunu düzenleyebilir veya silebilirsiniz.</p>
+          <p>Adımlar:</p>
+          <ol>
+            <li value="1"> Ayarlar moduna girmek için <span class="uitext">Ayarlar</span> seçeneğine tıklayın. </li>
+            <li value="2">Bağlantıyı düzenlemek için bağlantıya sağ tıklayın ve <span class="uitext">Bağlantıyı düzenle</span> seçeneğini seçin.</li>
+            <li value="3">Bağlantıyı silmek için aşağıdakilerden birisini yapın:<ul><li>Bağlantıya sağ tıklayın ve <span class="uitext">Bağlantıyı sil</span> seçeneğini seçin</li><li>Bağlantıyı seçin ve klavyenizde <span class="uitext">SİL</span> tuşuna basın</li></ul></li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Akıllı haritada konumların eklenmesi, silinmesi veya düzenlenmesi<a name="SC_AddingDeletingOrEditi_3.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Akıllı haritadaki konumlar (açıklama)<a name="SC_LocationsOnSmartMapEx.htm"></a></h3>
+          <p>Akıllı haritada sizin için önemli olan noktalarda konumlar oluşturabilirsiniz. Örneğin merkez ofisiniz ve uydu ofisler için konumlar oluşturabilirsiniz. Konumlar size sadece ortamınızın tam bir resmini vermekle kalmaz, akıllı haritada gezinmek için de yararlıdırlar. </p>
+          <p class="note">Yapılandırmanıza bağlı olarak, bir özel katman eklediğiniz zaman <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>, katman ile aynı adı taşıyan bir konum ekleyebilir. Bu örneğin, uzaklaştırma yaptığınız zaman akıllı haritadaki özel katmana gitmeyi kolaylaştırır. Ancak katman ile konum birbirine bağlı değildir. Örneğin katmanı değiştirmeden konumu silebilir veya yeniden adlandırabilirsiniz veya bunun tersini yapabilirsiniz. Ayrıntılı bilgi için, bkz.<a href="#SC_AddingDeletingOrEditi.htm" class="MCXref xref">Özel katmanların eklenmesi, silinmesi veya düzenlenmesi</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Akıllı haritadaki başlangıç konumları (açıklama)<a name="SC_HomeLocationsForSmart.htm"></a></h3>
+          <p>Başlangıç konumları, ayarlandıkları görüntü öğesine özgüdür. Farklı görüntü öğelerinde farklı başlangıç konumları bulunabilir. Bir görüntü öğesi için bir başlangıç konumu belirlenmemiş ise kullanmakta olduğunuz arka plan türüne bakılmaksızın görüntü öğesi tüm dünyayı gösterir. Başlangıç konumunu sildiğiniz zaman da böyle olur.</p>
+          <p>Akıllı harita ile çalışırken, başlangıç konumuna geri dönmek için <img src="../../../Images/home_locations_for_map.png" alt="" /><span class="uitext">Ana sayfa</span> tuşuna tıklayabilirsiniz. Bu, akıllı haritayı görünümün içinde sıfırlamaya benzer. Görüntü öğesi için varsayılan ayarlara geri dönersiniz ve sistem, ziyaret ettiğiniz konumların geçmişini siler.</p>
+          <p class="note">Yeni bir başlangıç konumu seçmek, görüntü öğesini kullanan herkesi etkiler. Başka birisi başka herhangi bir konumu başlangıç olarak ayarladıysa, onun ayarını değiştiriyorsunuzdur.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Akıllı haritaya konum ekleyin<a name="SC_AddLocationToSmartMap.htm"></a></h3>
+          <p>Sizin ilginizi çeken yerlerin izini sürmek için akıllı haritada o yerlere hızla gitmenizi sağlayan konumlar ekleyebilirsiniz.</p>
+          <p>Adımlar:</p>
+          <ol>
+            <li value="1">Akıllı haritayı içeren görünümü seçin ve <span class="uitext">Ayarlar</span> tuşuna tıklayın.</li>
+            <li value="2">Gerekirse yatay kaydırın ve akıllı haritada konumu eklemek istediğiniz noktaya yaklaştırın.</li>
+            <li value="3">Araç çubuğunda <img src="../../../Images/add_location_to_map.png" alt="" /><span class="uitext">Bir konum ekle</span> tuşuna tıklayın, sonra akıllı haritadaki noktaya tıklayın.</li>
+            <li value="4">Konuma bir ad verin, sonra aşağıdaki isteğe bağlı ayrıntıları ekleyin: <ul><li>Birisi akıllı haritadaki konuma gittiğinde uygulanacak olan bir yaklaştırma seviyesi belirtin</li><li>Konum simgesi için bir renk seçin. Konumları renkle kodlamak, örneğin konum tiplerini ayırt etmek için yararlıdır. Bu, konumun işlevine veya tipine bağlı olabilir veya konumun önceliğini belirtebilir</li><li>İsteğe Bağlı: Konumu başlangıç konumunuz yapın. <img src="../../../Images/home_locations_for_map.png" alt="" /><span class="uitext">Ana Sayfa</span> tuşuna tıkladığınızda, Akıllı Harita bu konumda odaklanır ve ona varsayılan yaklaştırma seviyesi ayarını uygular</li></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Akıllı haritada konumu düzenleyin veya silin<a name="SC_EditOrDeleteLocationO.htm"></a></h3>
+          <p>Akıllı haritanıza konumlar ekledikten sonra bunları silebilir veya ayarları düzenleyebilirsiniz, örneğin başlangıç konumunun silinmesi gibi.</p>
+          <p>Adımlar:</p>
+          <ol>
+            <li value="1"> Ayarlar moduna girmek için <span class="uitext">Ayarlar</span> seçeneğine tıklayın. </li>
+            <li value="2">Bir konumu düzenlemek için konuma sağ tıklayın ve <span class="uitext">Konumu düzenle</span> seçeneğini seçin.</li>
+            <li value="3">Bir konumu silmek için aşağıdakilerden birisini yapın:<ul><li>Konuma sağ tıklayın ve <span class="uitext">Konumu sil</span> seçeneğini seçin</li><li>Konumu seçin ve klavyenizde <span class="uitext">SİL</span> tuşuna basın</li></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Konumlar arasında bağlantı kurmak (açıklama)<a name="SC_LinkingBetweenLocatio.htm"></a></h3>
+          <p>Örneğin konumlar arasında bir dizi bağlantı oluşturarak bir gözlem rotası oluşturabilirsiniz. A konumunda B konumuna giden bir bağlantı oluşturun, B konumuna C konumuna giden bir bağlantı oluşturun ve saire. Ayrıntılı bilgi için, bkz.<a href="#SC_AddingDeletingOrEditi_2.htm" class="MCXref xref">Akıllı haritada bağlantıların eklenmesi, silinmesi veya düzenlenmesi</a>.</p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Akıllı haritaya binaların eklenmesi, silinmesi veya düzenlenmesi<a name="SC_AddingDeletingOrEditi_4.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Akıllı haritadaki binalar (açıklama)<a name="SC_BuildingsOnSmartMapEx.htm"></a></h3>
+          <p>
+            <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">Akıllı haritadaki<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Coğrafi olarak kesin, gerçek dünya görüntülerinde aygıtları (örneğin, kameralar ve mikrofonlar), yapılar ve bir gözetim sisteminin topografik unsurlarını görselleştirmek için bir coğrafi bilgi kullanan bir harita işlevi. Bu işlevin unsurlarını kullanan haritalara, akıllı haritalar denir.</span></a> binalar dört kenarlı poligonlar olarak gösterilir. Eklendiğinde, binanın fiili şeklini ve pozisyonunu eşleştirmek için boyutları, açıları ve ölçekleri ayarlayabilirsiniz.</p>
+          <p>Bina çok katlı ise seviyeleri eklemeye başlayabilir ve bağımsız seviyelere kameralar ekleyebilirsiniz. Bu, bina içinde seviye seviye kameralar arasında gezinebilmenize olanak sağlar.</p>
+          <p>Bir seviyenin içini göstermeye yardımcı olmak için, seviyelere özel katmanları ekleyebilirsiniz, örneğin, zemin planını gösteren bir görüntü. Ayrıntılı bilgi için, bkz.<a href="#SC_AddFloorPlansToLevels.htm" class="MCXref xref">Seviyelere zemin planları ekle (akıllı harita)</a>.</p>
+          <p>Binalara otomatik olarak bir ad verilir, örneğin <span class="uitext">Bina 4</span>. <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> adı değiştirmenizi önerir. Bu, binaları birbirlerinden ayırt etmenizi kolaylaştırabilir.</p>
+          <p>
+            <img src="../../../Images/buildings_on_map_explained.jpg" alt="" />
+          </p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Akıllı haritaya binalar ekleme<a name="SC_AddBuildingsToSmartMa.htm"></a></h3>
+          <p>Binaları görüntülemek için görüntüler veya şekil dosyalarını kullanmak yerine, bir binanın dış hatlarını ekleyebilirsiniz. Daha sonra, asıl binanın şeklini ve pozisyonunu eşleştirmek için boyutları, açıları ve ölçekleri değiştirebilirsiniz.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Gereklilikler</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Akıllı harita düzenleme, <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> içinde <span class="mc-variable flvar-product.SC variable">Smart Client</span> profilinizde etkinleştirilmiştir. </p>
+            </div>
+          </div>
+          <p>Adımlar:</p>
+          <ol>
+            <li value="1"> Ayarlar moduna girmek için <span class="uitext">Ayarlar</span> seçeneğine tıklayın. </li>
+            <li value="2">Akıllı haritada binayı konumlandırmak istediğiniz yere gidin.</li>
+            <li value="3">
+              <img src="../../../Images/add_buildings_to_map.jpg" alt="" /> üzerine tıklayın ve akıllı harita üzerinde imleci ilgili pozisyona yerleştirin.</li>
+            <li value="4">Tekrar tıklayın. Akıllı haritaya bir dikdörtgen eklenir. Uzaklaştırılırsa, yaklaştırma seviyesi otomatik olarak artar.</li>
+            <li value="5">Gerekirse, asıl binanın şeklini ve pozisyonunu ayarlamak için köşe kollarını kullanın.</li>
+            <li value="6"> Ayarlar modundan çıkmak için <span class="uitext">Ayarlar</span> seçeneğine tekrar tıklayın. Değişiklikleriniz kaydedilir.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Akıllı haritadaki binaları düzenleme<a name="SC_EditBuildingsOnSmartM.htm"></a></h3>
+          <p>Akıllı haritaya bir bina eklendiğinde, binanın adını değiştirebilir ve pozisyonu, ölçüyü, boyutları ve açıları ayarlayabilirsiniz. Ayrıca, seviyeleri ekleyebilir, kaldırabilir veya yeniden sıralayabilirsiniz.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Gereklilikler</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Akıllı harita düzenleme, <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> içinde <span class="mc-variable flvar-product.SC variable">Smart Client</span> profilinizde etkinleştirilmiştir. </p>
+            </div>
+          </div>
+          <p>Adımlar:</p>
+          <ol>
+            <li value="1">Akıllı haritanızda binanıza gidin. Gerekirse, yaklaştırın.</li>
+            <li value="2"> Ayarlar moduna girmek için <span class="uitext">Ayarlar</span> seçeneğine tıklayın. </li>
+            <li value="3">
+              <p>Bina içinde herhangi bir yere tıklayın. Mavi şeritli kenar, binayı düzenleyebileceğinizi gösterir.<br /></p>
+              <p>
+                <img src="../../../Images/buildings_on_map_explained.jpg" alt="" />
+              </p>
+            </li>
+            <li value="4">Binayı yeniden adlandırmak için bölmenin sağ üst tarafına gidin ve <img src="../../../Images/edit_buildings_on_map.jpg" alt="" /> üzerine tıklayın. Adı değiştirin ve <img src="../../../Images/edit_buildings_on_map_1.jpg" alt="" /> üzerine tıklayın. İptal etmek için <span class="uitext">Esc</span> üzerine tıklayın.</li>
+            <li value="5">Köşeleri ayarlamak için tıklayıp yeni bir pozisyona sürükleyin.</li>
+            <li value="6">Seviyeleri eklemek veya çıkarmak için, bkz. <a href="#SC_AddOrRemoveLevelsFrom.htm" class="MCXref xref">Binalara seviyeler ekleme veya kaldırma (akıllı harita)</a>.</li>
+            <li value="7"> Ayarlar modundan çıkmak için <span class="uitext">Ayarlar</span> seçeneğine tekrar tıklayın. Değişiklikleriniz kaydedilir.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Akıllı haritada binaları silme<a name="SC_DeleteBuildingsOnSmar.htm"></a></h3>
+          <p>Bir binaya artık ihtiyaç duyulmuyorsa silebilirsiniz. Daha sonra <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>‘de oturum açıldığında veya yeniden yüklendiğinde bina gider.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Gereklilikler</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Akıllı harita düzenleme, <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> içinde <span class="mc-variable flvar-product.SC variable">Smart Client</span> profilinizde etkinleştirilmiştir. </p>
+            </div>
+          </div>
+          <p>Adımlar:</p>
+          <ol>
+            <li value="1">Akıllı haritayı açın.</li>
+            <li value="2"> Ayarlar moduna girmek için <span class="uitext">Ayarlar</span> seçeneğine tıklayın. </li>
+            <li value="3">Aşağıdakilerden birini seçin:</li>
+            <ul>
+              <li>Binaya sağ tıklayın ve <span class="uitext">Sil</span> öğesini seçin</li>
+              <li>Binayı seçin ve klavyenizde <span class="uitext">SİL</span> tuşuna basın </li>
+            </ul>
+          </ol>
+          <p class="tip">Bir binayı silmenin alternatif bir yolu: <img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">Varsayılan ayarları yönet</span> içinde, <span class="uitext">Binalar</span> bölümüne kaydırın, binanın üzerine getirin, önce <span class="uitext">Sil</span> tuşuna ve ardından <span class="uitext">Kaydet</span> öğesine tıklayın. </p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Binalardaki seviyeleri ve aygıtları yönetme (akıllı harita)<a name="SC_ManagingLevelsAndCame.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Binalardaki aygıtlar ve seviyeler (açıklandı)<a name="SC_CamerasAndLevelsInBui.htm"></a></h3>
+          <p>Bir binaya bir aygıt eklediğinizde, aygıt bir seviye belirlenmişse, varsayılan seviye ile ilişkilidir. Aksi halde, aygıt birinci seviyeye atanır. Ancak, bunu değiştirebilir ve aygıtı aynı anda diğer seviye veya çok sayıda seviyeler ile ilişkilendirebilirsiniz.</p>
+          <p>Daha fazla bilgi:</p>
+          <ul>
+            <li>Hiçbir seviye seçilmezse, aygıt tüm seviyelerde görünür.</li>
+            <li>Varsayılan olarak zaten konumlandırılmış bir aygıtın üzerine bir bina eklerseniz, aygıt tüm seviyeler ile ilişkilendirilir</li>
+            <li>Bir binanın sınırlarını zaten konumlandırılmış olan bir aygıtı kapsayacak şekilde genişletirseniz, aygıt sadece seçilen seviye ile ilişkilendirilir</li>
+          </ul>
+          <p class="note">Binanın sınırlarını aygıtı artık kapsamayacağı şekilde yeniden ayarlarsanız, aygıt artık bina ile ilişkilendirilmez.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>
+            <a name="SC_FloorPlansDevicesInBuildings"></a>Binalardaki zemin planları ve aygıtlar (açıklandı)</h3>
+          <p>Bir binadaki seviyelerin iç kısmını görselleştirmeye yardımcı olmak için, özel katmanlar olarak zemin planları ekleyebilirsiniz. Bir kat planı uygulamadaysa, aygıtı kesin olarak konumlandırmak daha kolaydır. Ayrıntılı bilgi için, bkz.<a href="#SC_AddFloorPlansToLevels.htm" class="MCXref xref">Seviyelere zemin planları ekle (akıllı harita)</a>.</p>
+          <p>Konumlandırdığınız aygıtlar özel katmanlar ile değil, seviyelerle ilişkilidir. Aygıtlara ve özel bir katmana sahip bir bina içinde bir seviyeyi silerseniz, aygıtlar coğrafi konumda kalırlar, ancak artık seviye ile ilişkili değildirler. Ancak, özel katman seviye ile birlikte silinir.</p>
+          <p>Bir seviyeyi yeniden sıralarsanız, hem aygıt hem de özel katman aynı seviyede kalır. Aygıtlar coğrafi pozisyonlarında kalırlar.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Binalara seviyeler ekleme veya kaldırma (akıllı harita)<a name="SC_AddOrRemoveLevelsFrom.htm"></a></h3>
+          <p>Akıllı haritanıza bir bina ekledikten sonra istediğiniz seviye sayısını ekleyebilirsiniz. Birinci seviye <span class="uitext">1</span> numaraya, sonraki <span class="uitext">2</span> numaraya atanır ve böyle devam eder. Ardından bağımsız seviyeleri yeniden adlandırabilir ve yeniden sıralayabilirsiniz.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Gereklilikler</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Akıllı harita düzenleme, <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> içinde <span class="mc-variable flvar-product.SC variable">Smart Client</span> profilinizde etkinleştirilmiştir. </p>
+            </div>
+          </div>
+          <p>Adımlar:</p>
+          <ol>
+            <li value="1">Akıllı haritanızda binanıza gidin. Gerekirse, yaklaştırın.</li>
+            <li value="2">Binayı seçin. Sağ tarafta bir bölme görünür.</li>
+            <li value="3">Ayarlar moduna girmek için, <span class="uitext">Ayarlar </span>düğmesine tıklayın.</li>
+            <li value="4">
+              <span class="uitext">Seviye ekle</span>
+              <img src="../../../Images/add_or_remove_levels_from.jpg" alt="" /> düğmesine tıklayın.</li>
+            <li value="5">Seviye adını düzenlemek için: <ol><li value="1">Noktalara <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> tıklayın ve <span class="uitext">Yeniden Adlandır</span> öğesini seçin.</li><li value="2">Yeni bir ad girin.</li></ol></li>
+            <li value="6">Bir seviyeyi silmek için noktalara <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> tıklayın ve <span class="uitext">Sil</span> öğesini seçin. Bu seviyedeki aygıtlar coğrafi konumlarındadır, ancak artık seviyeyle ilişkili değildir.</li>
+            <li value="7">Ayarlar modundan çıkmak için <span class="uitext">Ayarlar</span> seçeneğine tıklayın.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Binalarda seviye sırasını değiştir (akıllı harita)<a name="SC_ChangeOrderOfLevels.htm"></a></h3>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Gereklilikler</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Akıllı harita düzenleme, <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> içinde <span class="mc-variable flvar-product.SC variable">Smart Client</span> profilinizde etkinleştirilmiştir. </p>
+            </div>
+          </div>
+          <p>Adımlar:</p>
+          <ol>
+            <li value="1">Akıllı haritanızda binanıza gidin. Gerekirse, yaklaştırın.</li>
+            <li value="2">Binayı seçin. Sağ tarafta binanın seviyelerini gösteren bir bölme görünür.</li>
+            <li value="3"> Ayarlar moduna girmek için <span class="uitext">Ayarlar</span> seçeneğine tıklayın. </li>
+            <li value="4">
+              <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> noktalı alanı tıklayıp doğru pozisyona sürükleyin. İlişkili aygıtlar ve özel katmanlar aynı seviyede kalır.</li>
+            <li value="5"> Ayarlar modundan çıkmak için <span class="uitext">Ayarlar</span> seçeneğine tekrar tıklayın. Değişiklikleriniz kaydedilir.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Binalar için varsayılan seviyeyi ayarlama (akıllı harita)<a name="SC_SetDefaultLevelForBui.htm"></a></h3>
+          <p>Bir binadaki belirli bir seviye, diğerlerinden daha ilgilidir, örneğin zemin kat, bu seviyeyi varsayılan seviye olarak ayarlayabilirsiniz. Akıllı haritanızı açıp, binaya gittiğinizde, varsayılan seviye otomatik olarak seçilir.</p>
+          <p>Binadan uzaklaşıp, geri dönerseniz <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> sizi kaldığınız seviyeye getirir.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Gereklilikler</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Akıllı harita düzenleme, <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> içinde <span class="mc-variable flvar-product.SC variable">Smart Client</span> profilinizde etkinleştirilmiştir. </p>
+            </div>
+          </div>
+          <p>Adımlar:</p>
+          <ol>
+            <li value="1">Akıllı haritanızda binanıza gidin. Gerekirse, yaklaştırın.</li>
+            <li value="2">Binayı seçin. Sağ tarafta binanın seviyelerini gösteren bir bölme görünür. Varsayılan seviye vurgulanır.</li>
+            <li value="3">Ayarlar moduna girmek için <span class="uitext">Ayarlar</span> seçeneğine tıklayın. Yıldıza <img src="../../../Images/set_default_level_for_buildings.jpg" alt="" /> dikkat edin. Mevcut varsayılan seviyenin olduğu yeri belirtir.</li>
+            <li value="4">Varsayılan seviye olarak belirlemek istediğiniz seviyede, <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> noktalar üzerine tıklayın.</li>
+            <li value="5">
+              <span class="uitext">Varsayılan olarak ayarla</span> öğesini seçin.</li>
+            <li value="6"> Ayarlar modundan çıkmak için <span class="uitext">Ayarlar</span> seçeneğine tekrar tıklayın. Değişiklikleriniz kaydedilir.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Seviyelere zemin planları ekle (akıllı harita)<a name="SC_AddFloorPlansToLevels.htm"></a></h3>
+          <p>Özel katmanları, bir binadaki seviyenin içini göstermenize yardımcı olmak için binanızdaki seviyelere ekleyebilirsiniz; örneğin zemin planı görüntüleri. Katlarda gezinirken, ilişkili zemin planları otomatik olarak görüntülenir.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Gereklilikler</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Akıllı harita düzenleme, <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> içinde <span class="mc-variable flvar-product.SC variable">Smart Client</span> profilinizde etkinleştirilmiştir. </p>
+            </div>
+          </div>
+          <p>Adımlar:</p>
+          <ol>
+            <li value="1">Akıllı haritanızda binanıza gidin. Gerekirse, yaklaştırın.</li>
+            <li value="2">Binayı seçin. Sağ tarafta binanın seviyelerini gösteren bir bölme görünür.</li>
+            <li value="3"> Ayarlar moduna girmek için <span class="uitext">Ayarlar</span> seçeneğine tıklayın. </li>
+            <li value="4">Özel katmana eklemek istediğiniz seviyeyi seçin.</li>
+            <li value="5">Sol üst köşede, <img src="../../../Images/add_custom_overlay_on_1.png" alt="" /><span class="uitext">Bir özel katman ekle</span> üzerine tıklayın ve ardından binanın anahattında herhangi bir yere tıklayın. Bir pencere görünür.</li>
+            <li value="6">Özel katmanın türünü seçin. Ayrıntılı bilgi için, bkz.<a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">Özel katmanlar (açıklama)</a>.</li>
+            <li value="7">
+              <p>Dosyanın saklandığı yerde bilgisayarınızdaki konumu seçin ve <span class="uitext">Devam</span> üzerine tıklayın. Özel katman, bir mavi anahat olarak görüntülenir.<br /></p>
+              <p>
+                <img src="../../../Images/add_floorplans_to_levels.jpg" alt="" />
+              </p>
+            </li>
+            <li value="8">Bunu, binanın anahattına sürükleyin ve destek noktasını ve köşe kollarını özel katmanı döndürmek ve yeniden konumlandırmak için kullanın.</li>
+            <li value="9">Üstteki çubukta, <span class="uitext">Kaydet</span> üzerine tıklayın.</li>
+            <li value="10"> Ayarlar modundan çıkmak için <span class="uitext">Ayarlar</span> seçeneğine tekrar tıklayın. Değişiklikleriniz kaydedilir.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Katlarda zemin planları silme (akıllı harita)<a name="SC_DeleteFloorPlansOnLev.htm"></a></h3>
+          <p>Bir binanın içindeki bir seviyede bir zemin planı değişmişse, zemin planını gösteren özel katmanı değiştirmeniz gerekebilir. <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> Yeni birini eklemeden önce eski zemin planını silmenizi önerir.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Gereklilikler</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Akıllı harita düzenleme, <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> içinde <span class="mc-variable flvar-product.SC variable">Smart Client</span> profilinizde etkinleştirilmiştir. </p>
+            </div>
+          </div>
+          <p>Adımlar:</p>
+          <ol>
+            <li value="1">Akıllı haritanızda binanıza gidin. Gerekirse, yaklaştırın.</li>
+            <li value="2">Binayı seçin. Sağ tarafta binanın seviyelerini gösteren bir bölme görünür.</li>
+            <li value="3"> Ayarlar moduna girmek için <span class="uitext">Ayarlar</span> seçeneğine tıklayın. </li>
+            <li value="4">Özel katmanın olduğu seviyeyi seçin.</li>
+            <li value="5">Özel katmanın herhangi bir yerine sağ tıklayın ve <span class="uitext">Özel katmanı sil</span> öğesini seçin.</li>
+            <li value="6"> Ayarlar modundan çıkmak için <span class="uitext">Ayarlar</span> seçeneğine tekrar tıklayın. Değişiklikleriniz kaydedilir.</li>
+          </ol>
+          <p class="tip">Zemin planının pozisyonunu veya ölçüsünü düzenlemek için özel katmana sağ tıklayın ve <span class="uitext">Konumu düzenle</span> öğesini seçin. Şimdi, özel katmanı taşıyabilir, döndürebilir ve ölçüsünü değiştirebilirsiniz.</p>
+        </div>
+        <div>
+          <h3>Binalara aygıtlar ekle (akıllı harita)<a name="SC_AddCamerasToBuildings.htm"></a></h3>
+          <p>Bir bina oluşturduktan ve seviyeler eklendikten sonra, binaya aygıtları ekleyebilirsiniz. Varsayılan bir seviye belirtilmişse, aygıtlar bununla ilişkilendirilir. Aksi halde, aygıtlar birinci seviye ile ilişkilendirilir. Bunu değiştirebilir ve aygıtı binadaki seviyelerle ilişkilendirebilirsiniz.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Closed" data-mc-alt2="Open" />Gereklilikler</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Akıllı harita düzenleme, <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> içinde <span class="mc-variable flvar-product.SC variable">Smart Client</span> profilinizde etkinleştirilmiştir. </p>
+            </div>
+          </div>
+          <p>Adımlar:</p>
+          <ol>
+            <li value="1">Akıllı haritanızda binanıza gidin. Gerekirse, yaklaştırın.</li>
+            <li value="2"> Ayarlar moduna girmek için <span class="uitext">Ayarlar</span> seçeneğine tıklayın. </li>
+            <li value="3">Bir aygıt eklemek için, simgesine tıklayın. <p>Örnek: Bir kamera durumunda, <img src="../../../Images/add_cameras_to_buildings.jpg" alt="" /><span class="uitext">Kamera ekle</span> öğesine tıklayın.</p></li>
+            <li value="4">Aygıtı konumlandırmak istediğiniz konuma tekrar tıklayın. Bir iletişim kutusu görünür.</li>
+            <li value="5">Aygıtı seçin ve <span class="uitext">TAMAM</span> öğesine tıklayın. Eklemek istediğiniz her bir aygıt için, 3-5. adımları tekrarlayın.</li>
+            <li value="6">Bir aygıtı bir veya daha fazla seviye ile ilişkilendirmek için, aygıta sağ tıklayın ve gerekli seviyeleri seçin.</li>
+            <li value="7"> Ayarlar modundan çıkmak için <span class="uitext">Ayarlar</span> seçeneğine tekrar tıklayın. Değişiklikleriniz kaydedilir.</li>
+          </ol>
+          <p class="note">Hiçbir seviye seçilmezse, aygıt tüm seviyelerde görünür.</p>
+        </div>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Concept Information</p>
+        <p class="containerItem_container_0">
+          <a href="sc_workingwithmap.htm">Akıllı harita (kullanım)</a>
+        </p>
+        <p class="referenceHeading_reference_0">Reference Materials</p>
+        <p class="referenceItem_reference_0">
+          <a href="sc_map_faq.htm">SSS: akıllı harita</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

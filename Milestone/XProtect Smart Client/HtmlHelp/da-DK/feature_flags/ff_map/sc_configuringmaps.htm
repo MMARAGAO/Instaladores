@@ -1,0 +1,810 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="da-DK" xml:lang="da-DK" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="Konfiguration" data-mc-conditions="flcts-alias.sc-alias-content" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Configure smart map in XProtect Smart Client to get a geographical overview of your cameras, devices, and plug-in elements - in a one world experience." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=Recording Server" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Administrator" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Integrator" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Operatør" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Smart kort (konfiguration)</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#feature_flags/ff_map/sc_configuringmaps.htm">Åbn emne med navigation</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Brødkrummer" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>Smart kort (konfiguration)</h1>
+      <p>Før du kan drage fordel af smart kort-funktionerne, skal du foretage noget konfiguration i <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>.</p>
+      <p>Du kan kun se dit smart kort, hvis det er blevet føjet til en visning. Se også <a href="#SC_AddSmartMapToView.htm" class="MCXref xref">Føj smart kort til visninger</a>. </p>
+      <p class="note">For yderligere oplysninger, se <a href="sc_workingwithmap.htm#SC_SmartMapExplained.htm" class="MCXref xref">Smart kort (forklaret)</a>.</p>
+      <div>
+        <h2>Forskelle mellem kort og smart kort (forklaret)<a name="SC_DifferencesBetweenMap.htm"></a></h2>
+        <p>
+          <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> giver dig kort-funktioner, som kan hjælpe dig med at visualisere dine overvågningssystemer og hurtigt reagere på begivenheder.</p>
+        <ul>
+          <li>
+            <span class="uitext">Kort</span> - disse kort er baseret på stillbilleder, som ikke indeholder geografiske referencer. Du kan tilføje enheder såsom kameraer, mikrofoner og optagelsesservere. Du kan også tilføje alarmer, hændelser og adgangskontroller, som lader dig interagere med dit overvågningssystem direkte fra kortet. Du skal manuelt positionere enheder og funktionselementer på kortet. For yderligere oplysninger, se <a href="../../standard_features/sf_sc/sf_operation/sc_workingwithmaps.htm#SC_IntroductionToMaps(796).htm" class="MCXref xref">Kort (forklaret)</a></li>
+          <li>
+            <span class="uitext">Smart kort</span> - denne type kort bruger et geografisk informationssystem til akkurat gengivelse af geografien i den virkelige verden. Det kan give dig et mere præcist overblik over dine kameraer på flere placeringer. Du kan også:<ul><li>Brug tjenesterne Bing Maps og Google Maps</li><li data-mc-conditions="flcts-features.oem-map-service-content">Brug <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> som geografiske baggrunde</li><li>Brug OpenStreetMap kort-projektet som geografiske baggrunde</li><li>Add CAD-tegninger (computer-aided design), shapefiles og billeder som overlejringer</li></ul><p> For yderligere oplysninger, se <a href="sc_workingwithmap.htm#SC_SmartMapExplained.htm" class="MCXref xref">Smart kort (forklaret)</a></p></li>
+        </ul>
+        <p class="note">Kort og smart kort kan ikke bare erstatte hinanden. Hvis du bruger kort, kan du bruge billedfilen som et smart kort, men du skal tilføje enhederne igen. Du kan ikke overføre kort med enheder til et smart kort. Men du kan linke et smart kort til kort. For yderligere oplysninger, se <a href="#SC_AddingDeletingOrEditi_2.htm" class="MCXref xref">Tilføj, slet eller rediger links på et smart kort</a>.</p>
+      </div>
+      <div>
+        <h2>Føj smart kort til visninger<a name="SC_AddSmartMapToView.htm"></a></h2>
+        <p>Start med at bruge et <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">smart kort<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>En kort-funktionalitet, der bruger geografisk information til at visualisere enheder (for eksempel kameraer og mikrofoner), strukturer og topografiske elementer i et overvågningssystem i en geografisk nøjagtig og virkelighedstro visualisering. Kort der bruger elementer af denne funktionalitet kaldes smart kort.</span></a> ved at føje det til en visning. Det simple verdenskort vises som standard. Efter at du har tilføjet smart kortet, kan du ændre den geografiske baggrund.</p>
+        <p>Trin:</p>
+        <ol>
+          <li value="1">På fanen <span class="uitext">Live</span> eller <span class="uitext">Afspilning</span> skal du vælge den visning, hvor du vil tilføje smart kortet.</li>
+          <li value="2"> Klik på <span class="uitext">Opsætning</span> for at komme til opsætningstilstand. </li>
+          <li value="3">Udvid ruden <span class="uitext">Systemoversigt</span> og træk herefter <span class="uitext">Smart kort</span>-elementet ind i den relevante position i visningen.</li>
+          <li value="4"> Klik på <span class="uitext">Opsætning</span> igen for at forlade opsætningstilstand. Dine ændringer bliver gemt.</li>
+          <li value="5">Du kan nu ændre den geografiske baggrund. </li>
+        </ol>
+      </div>
+      <div>
+        <h2>Skift den geografiske baggrund på smart kort<a name="SC_ChangeTheGeographicBa.htm"></a></h2>
+        <p>Det enkle verdenskort vises som standard, når du føjer et smart kort til en visning. Når du har føjet smart kortet til en visning, kan du vælge en anden geografisk baggrund. Alle brugere, der anvender smart kortet, kommer til at se den nye baggrund næste gang, de ser på denne visning.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Krav</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>De geografiske baggrunde Bing Maps og Google Maps er kun tilgængelige, hvis din systemadministrator har gjort dem tilgængelige i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>.</p>
+          </div>
+        </div>
+        <p>Trin:</p>
+        <ol>
+          <li value="1">Vælg den visning, som indeholder smart kortet.</li>
+          <li value="2">I værktøjslinjen skal du klikke på <img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">Vis eller skjul lag og brugerdefinerede overlejringer</span>.</li>
+          <li value="3">Under <span class="uitext">Geografiske baggrunde</span> skal du vælge den baggrund og den type detaljer, du ønsker at vise. Hvis du for eksempel ønsker at se topografiske oplysninger, skal du vælge <span class="uitext">Terræn</span>. Hvis du ønske at se veje, så vælg <span class="uitext">Vejkort</span>.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>Geografiske baggrunde (forklaret)<a name="SC_GeographicBackgrounds.htm"></a></h2>
+        <p>Du kan bruge de følgende tjenester som de geografiske baggrunde på dine <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">smart kort<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>En kort-funktionalitet, der bruger geografisk information til at visualisere enheder (for eksempel kameraer og mikrofoner), strukturer og topografiske elementer i et overvågningssystem i en geografisk nøjagtig og virkelighedstro visualisering. Kort der bruger elementer af denne funktionalitet kaldes smart kort.</span></a>:</p>
+        <ul>
+          <li>Bing Maps</li>
+          <li>Google Maps</li>
+          <li data-mc-conditions="flcts-features.oem-map-service-content">
+            <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+          </li>
+          <li> OpenStreetMap </li>
+        </ul>
+        <p>Når du har valgt den geografiske baggrund, kan du tilføje enhederne, for eksempel kameraer og brugerdefinerede overlejringer, for eksempel shapefiler. For yderligere oplysninger, se <a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">Brugerdefinerede overlejringer (forklaret)</a>.</p>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Typer af geografiske baggrunde (forklaret)<a name="SC_TypesOfGeographicBack.htm"></a></h2>
+        <p>Når du har føjet et <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">smart kort<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>En kort-funktionalitet, der bruger geografisk information til at visualisere enheder (for eksempel kameraer og mikrofoner), strukturer og topografiske elementer i et overvågningssystem i en geografisk nøjagtig og virkelighedstro visualisering. Kort der bruger elementer af denne funktionalitet kaldes smart kort.</span></a> til en visning, kan du bruge en af de følgende geografiske baggrunde:</p>
+        <ul>
+          <li>
+            <span class="uitext">Enkelt verdenskort</span> - brug den geografiske standardbaggrund i <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Dette kort er tænkt som en generel reference, og det indeholder ikke elementer som landegrænser, byer eller andre detaljer. Men ligesom andre geografiske baggrunde indeholder det geo-reference data</li>
+          <li>
+            <span class="uitext">Bing Maps</span> - forbind til Bing Maps</li>
+          <li>
+            <span class="uitext">Google Maps</span> - forbind til Google Maps <p class="note">Mulighederne i Bing Maps og Google Maps kræver internetadgang, og du skal købe en nøgle af Microsoft eller Google.</p></li>
+          <div data-mc-conditions="flcts-features.oem-map-service-content">
+            <li>
+              <span class="uitext">
+                <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>
+              </span> - opret forbindelse til en gratis kort-leverandør. Når du har aktiveret <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>, er det ikke nødvendigt med yderligere opsætning.</li>
+            <p>Se <a href="#Enable">Aktiver Milestone Map Service</a></p>
+          </div>
+          <div>
+            <li>
+              <p>
+                <span class="uitext">OpenStreetMap</span> - forbind til:</p>
+              <ul>
+                <li>En kommerciel fliseserver efter eget valg</li>
+                <li>
+                  <p>Din egen, online eller lokal fliseserver</p>
+                </li>
+              </ul>
+              <p>Se <a href="#SC_ChangeOpenstreetmapTi.htm">Skift OpenStreetMap-fliseservere</a></p>
+            </li>
+          </div>
+          <li>
+            <span class="uitext">Ingen</span> - denne indstilling skjuler den geografiske baggrund. Bemærk, at de geografiske reference-data bliver der. Se også <a href="#SC_LayersOnSmartMapExpla.htm" class="MCXref xref">Lag på et smart kort (forklaret)</a></li>
+        </ul>
+        <p>Som standard viser Bing Maps og Google Maps satellit-billeder. Du kan ændre billedtype, for eksempel til luftfoto eller billeder af terrænet, for at se forskellige detaljer.</p>
+      </div>
+      <div data-mc-conditions="flcts-features.oem-map-service-content">
+        <h2>
+          <a name="Enable"></a>Aktiver <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span></h2>
+        <p>
+          <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> er en online-tjeneste, som du kan oprette forbindelse til en fliseserver fra <span class="mc-variable flvar-brand-company.CompanyLong variable">Milestone Systems</span> med. Denne fliseserver bruger en gratis, kommercielt tilgængelig kort-tjeneste. </p>
+        <p>Når du har aktiveret <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> på dit smart kort, bruger smart kortet <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> som dets geografiske baggrund.</p>
+        <div class="MCDropDown MCDropDown_Closed dropDown">
+          <span class="MCDropDownHead dropDownHead">
+            <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+              <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Krav</a>
+          </span>
+          <div class="MCDropDownBody dropDownBody">
+            <p>Hvis <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span>-feltet er grået ud, har du ikke de nødvendige rettigheder til at aktivere eller deaktivere tjenesten. Kontakt din systemadministrator for at få hjælp til at aktivere funktionen i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>.</p>
+            <p class="important">
+              <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> kræver internetadgang.</p>
+          </div>
+        </div>
+        <p>Trin:</p>
+        <ol>
+          <li value="1">
+            <p>Oppe til højre skal du klikke på <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> og så på <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">Indstillinger</span> for at åbne vinduet <span class="uitext">Indstillinger</span>.</p>
+            <p>
+              <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_configuringmaps_mmapserv.png" data-mc-popup-alt="Enable Milestone Map Service.">
+                <img class="MCPopupThumbnail img" data-mc-width="786" data-mc-height="593" src="../../../Images/sc_configuringmaps_mmapserv_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Enable Milestone Map Service." tabindex="" />
+              </a>
+            </p>
+          </li>
+          <li value="2">I den venstre del skal du klikke på <span class="uitext">Smart kort</span>.</li>
+          <li value="3">I feltet <span class="uitext mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> skal du vælge <span class="uitext">Tilgængelig</span>.</li>
+          <li value="4">Klik på <span class="uitext">Luk</span>. Næste gang du indlæser dit smart kort, vil det bruge <span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span> som den geografiske baggrund.</li>
+        </ol>
+      </div>
+      <div>
+        <h2>OpenStreetMap-fliseserver (forklaret)<a name="SC_ChangingOpenstreetmap.htm"></a></h2>
+        <p>Hvis du bruger OpenStreetMap som den geografiske baggrund for dit smart kort, skal du angive en fliseserver. Du kan angive en lokal fliseserver, hvis for eksempel din organisation har egne kort over områder som en havn eller lufthavn, eller du kan bruge en kommerciel fliseserver.</p>
+        <p class="note">Hvis du anvender en lokal fliseserver, har du ikke brug for internetadgang.</p>
+        <p>Fliseserverens adresse kan angives på to måder:</p>
+        <ul>
+          <li>I <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> - indstiller du fliseserveradressen på <span class="mc-variable flvar-product.SC variable">Smart Client</span>-profilerne. Serveradressen gælder for alle <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>-brugere, der tilknyttet <span class="mc-variable flvar-product.SC variable">Smart Client</span>-profilerne</li>
+          <li>I <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> - du angiver fliseserverens adresse i dialogen <span class="uitext">Indstillinger</span>. Serveradressen gælder kun for den pågældende installation</li>
+        </ul>
+        <div>
+          <h2>Skift OpenStreetMap-fliseserver<a name="SC_ChangeOpenstreetmapTi.htm"></a></h2>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Krav</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>Hvis den fliseserver, der er angivet på serverside, er blevet lukket for redigering, er feltet blevet grået ud og du kan ikke ændre serveradressen. Kontakt din systemadministrator for at få hjælp til at aktivere funktionen i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>.</p>
+            </div>
+          </div>
+          <p>Trin:</p>
+          <ol>
+            <li value="1">
+              <p>Oppe til højre skal du klikke på <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> og så på <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">Indstillinger</span> for at åbne vinduet <span class="uitext">Indstillinger</span>.</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_mapsettings.png" data-mc-popup-alt="Specify alternative tile server for the smart map.">
+                  <img class="MCPopupThumbnail img" data-mc-width="786" data-mc-height="593" src="../../../Images/sc_mapsettings_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Specify alternative tile server for the smart map." tabindex="" />
+                </a>
+                <br />
+              </p>
+            </li>
+            <li value="2">I den venstre del skal du klikke på <span class="uitext">Smart kort</span>.</li>
+            <li value="3">I feltet <span class="uitext">OpenStreetMap-server</span> skal du gøre en af følgende: <ul><li>Angiv serveradressen. Hvis feltet er grået ud, er det blevet låst fra serversiden</li><li>Hvis du vil bruge den server, der er måtte være angivet på serversiden, skal du markere afkrydsningsfeltet <span class="uitext">Benyt serverværdi</span></li></ul></li>
+            <li value="4">Klik på <span class="uitext">Luk</span>. Næste gang du indlæser dit smart kort, vil det bruge den OpenStreetMap-server, du har angivet.</li>
+          </ol>
+          <p class="important">Hvis der ikke er angivet en serveradresse, eller hvis serveradressen er ugyldig, så er OpenStreetMap ikke tilgængelig som en geografisk baggrund.</p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Vis eller skjul lag på et smart kort<a name="SC_ShowingOrHidingLayers.htm"></a></h2>
+        <p>Du kan slå lag til og fra på dit smart kort, afhængigt af hvad du ønsker at se.</p>
+        <div>
+          <h3>Lag på et smart kort (forklaret)<a name="SC_LayersOnSmartMapExpla.htm"></a></h3>
+          <p>Brug lag til at filtrere de informationer, som <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">smart kortet<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>En kort-funktionalitet, der bruger geografisk information til at visualisere enheder (for eksempel kameraer og mikrofoner), strukturer og topografiske elementer i et overvågningssystem i en geografisk nøjagtig og virkelighedstro visualisering. Kort der bruger elementer af denne funktionalitet kaldes smart kort.</span></a> viser. Der er tre typer af lag i et smart kort:</p>
+          <ul>
+            <li>
+              <span class="uitext">Systemelementer</span> - herunder kameraer, links og placeringer</li>
+            <li>
+              <span class="uitext">Brugerdefinerede overlejringer</span> - bitmap-billeder, CAD-tegninger og shapefiler</li>
+            <li>
+              <span class="uitext">Geografiske baggrunde</span> - det enkle verdenskort eller en af følgende tjenester:<ul><li>Bing Maps</li><li>Google Maps</li><li data-mc-conditions="flcts-features.oem-map-service-content"><span class="mc-variable flvar-sw-component.Mil_mapS variable">Milestone Map Service</span></li><li> OpenStreetMap </li></ul></li>
+          </ul>
+          <p class="note">Bing Maps og Google Maps er kun tilgængelige som geografiske baggrunde, hvis din systemadministrator har konfigureret dem i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. For yderligere oplysninger, se <a href="#SC_GeographicBackgrounds.htm" class="MCXref xref">Geografiske baggrunde (forklaret)</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Rækkefølge på lag (forklaret)<a name="SC_OrderOfLayersExplaine.htm"></a></h3>
+          <p>Alle systemelementer af hver type findes på det samme <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term26">lag<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Den geografiske baggrund på et smart kort, en brugerdefineret overlejring eller et systemelement, for eksempel et kamera. Lagene er alle de grafiske elementer, der eksisterer på smart kortet.</span></a>. For eksempel er alle kameraer på det samme lag. Hvis du skjuler kameralaget, bliver alle kameraer skjult. Lag til systemelementer lægges i denne rækkefølge (fra top til bund): placeringer, kameraer, links og geografiske baggrunde. Du kan ikke ændre denne rækkefølge.</p>
+          <p>Den geografiske baggrund er altid det nederste lag i et smart kort. Du kan ændre den geografiske baggrund, men du kan kun vælge en geografisk baggrund ad gangen.</p>
+          <p>Brugerdefinerede overlejringer tilføjes som separate lag og lægges i den rækkefølge, de blev tilføjet til smart kortet. Du laver om på rækkefølgen ved at konfigurere standardindstillingerne for kortet. </p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Eksempel</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>En byplanlægger har en shapefil, der viser bygrænserne, og en shapefil, der indeholder alle større veje i byen. Byplanlæggeren kan arrangere rækkefølgen af lag, så vejene vises oven på bygrænserne. Dette giver et overblik over, hvor i byen kameraerne er, og muligheden for at zoome ind for at se navnet på en gade, som et bestemt kamera befinder sig på.</p>
+            </div>
+          </div>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Vis eller skjul lag på et smart kort<a name="SC_ShowOrHideLayersOnSma.htm"></a></h3>
+          <p>Du kan få vist eller skjult lag på et smart kort, herunder den geografiske baggrund. Dette er for eksempel nyttigt, når du vil fokusere på et bestemt element eller blot forenkle det indhold, som smart kortet viser.</p>
+          <p>Trin:</p>
+          <ol>
+            <li value="1">På værktøjslinjen skal du klikke på <img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">Vis eller skjul lag og brugerdefinerede overlejringer</span>.</li>
+            <li value="2">For at vise eller skjule systemelementer og brugerdefinerede overlejringer skal du markere afkrydsningsfelterne eller fjerne markeringen.</li>
+            <li value="3">For at skjule den geografiske baggrund skal du vælge <span class="uitext">Ingen</span>.</li>
+          </ol>
+          <p class="note">Når du vælger <span class="uitext">Ingen</span>, skjules den geografiske baggrund, men geo-referencerne gælder stadig for smart kortet. Hvis du for eksempel tilføjer en ny shapefil, der indeholder rumlige referencer, bruger systemet stadig de rumlige referencer til at placere filen på kortet.</p>
+          <p class="note">Hvis du skjuler mikrofoner, vil de mikrofoner, som aktuelt er slået til, blive slået fra, indtil du viser mikrofoner igen.</p>
+        </div>
+        <div>
+          <h3>Angiv standardindstillingerne for smart kort<a name="SC_ManageDefaultSettings(65803).htm"></a></h3>
+          <p>Efter at du har tilføjet et smart kort til en visning og har tilføjet overlejringer, kameraer og links, kan du angive standardindstillingerne for de brugerdefinerede overlejringer. Du kan også slette brugerdefinerede overlejringer for at holde orden.</p>
+          <p>Trin:</p>
+          <ol>
+            <li value="1">Klik <span class="uitext">Opsætning</span>.</li>
+            <li value="2">Klik på <img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">Administrer standardindstillinger</span>.</li>
+            <li value="3">Der er følgende muligheder: <ul><li>For at vise eller skjule en overlejring skal du markere afkrydsningsfeltet eller fjerne markeringen</li><li>For at ændre rækkefølgen skal du bruge håndtaget foran overlejringen og trække den til en ny placering i listen. Overlejringer ligger i en top-til-bund rækkefølge i listen</li><li>For at slette en overlejring skal du føre musen hen over den overlejringen og så klikke på <span class="uitext">Slet</span></li></ul></li>
+            <li value="4">Klik på <span class="uitext">Gem</span>.</li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Tilføj, slet eller rediger brugerdefinerede overlejringer<a name="SC_AddingDeletingOrEditi.htm"></a></h2>
+        <div>
+          <h3>Brugerdefinerede overlejringer (forklaret)<a name="SC_CustomOverlaysExplain.htm"></a></h3>
+          <p>Du kan tilføje disse typer af filer som brugertilpassede overlejringer i et smart kort i <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>:</p>
+          <ul>
+            <li>
+              <span class="uitext">Shapefile</span> - dette format indeholder geo-spatiale vektordata, for eksempel punkter, linjer, polygoner og attributter, der repræsenterer objekter på et kort, så som vægge, veje og geografiske træk som floder og søer. For eksempel bruger byplanlægnings- og administrationskontorer ofte shapefiler, fordi de skalerer godt, når du zoomer ind og ud, og deres filstørrelse er ofte mindre end CAD-tegninger eller bitmap-billeder</li>
+            <li>
+              <span class="uitext">CAD</span> - en CAD-tegning (Computer-Aided Design) er brugbar som en smart kort-overlejring, fordi CAD-data kan bruge et koordinatsystem og spatial reference til at skabe en nøjagtig geografisk kontekst ligesom shapefiler kan. For eksempel kan du bruge et detaljeret luftkort eller et vejkort over en placering</li>
+            <li>
+              <span class="uitext">Billede</span> - hvis du har en billedfil, for eksempel en plantegning over en bygning, kan du tilføje den som en overlejring på smart kortet. Du kan bruge følgende typer af billedfiler: PNG, BMP, GIF, JPG, JPEG, PHG, TIF og TIFF</li>
+          </ul>
+          <p class="note">For bedre at kunne fokusere på brugerdefinerede overlejringer kan du midlertidigt skjule andre typer lag. Se <a href="#SC_LayersOnSmartMapExpla.htm" class="MCXref xref">Lag på et smart kort (forklaret)</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Brugerdefinerede overlejringer og placeringer (forklaret)<a name="SC_CustomOverlaysAndLoca.htm"></a></h3>
+          <p>Du kan hurtigt springe til brugerdefinerede overlejringer, som du har føjet til det smart kort som beskrevet i <a href="sc_workingwithmap.htm#SC_FindLocationOfCustomO.htm" class="MCXref xref">Spring til brugerdefinerede overlejringer på smart kort</a>. I indstillingerne kan du imidlertid oprette forbindelse mellem brugerdefinerede overlejringer og placeringer. Det betyder, at når du tilføjer en brugerdefineret overlejring, så opretter <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> en placering med det samme navn som overlejringen på præcis det samme sted på kortet. Den brugerdefinerede overlejrings placering bliver nu tilgængelig i listen <span class="uitext">Vælg en placering</span>.</p>
+          <p>
+            <img src="../../../Images/custom_overlays_and_locations.jpg" alt="" />
+          </p>
+          <p>Overlejringen og placeringen er ikke sammenkædet. Du kan for eksempel slette eller omdøbe placeringen uden at ændre overlejringen og omvendt.</p>
+          <p class="note">For at slå denne funktion til, se <a href="#SC_AddLocationsToCustomO.htm" class="MCXref xref">Føj placeringer til brugerdefinerede overlejringer (smart kort)</a>.</p>
+        </div>
+        <div>
+          <h3>Føj en brugerdefineret overlejring til et smart kort<a name="SC_AddCustomOverlayOnSma.htm"></a></h3>
+          <p>Du kan forøge mængden af detaljer på dit smart kort ved at tilføje brugerdefinerede overlejringer. Når du tilføjer en <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term8">brugerdefineret overlejring<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Et brugerdefineret grafisk element, som brugere kan føje til et smart kort, for eksempel for at illustrere en plantegning i en bygning eller for at markere grænser mellem regioner. En brugerdefineret overlejring kan være et billede, en CAD-tegning eller en shapefil.</span></a>, opretter <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> en placering med det samme navn som overlejringen.</p>
+          <p>Trin:</p>
+          <ol>
+            <li value="1">Vælg den visning, som indeholder smart kortet, og klik så på <span class="uitext">Opsætning</span>.</li>
+            <li value="2">Klik på <img src="../../../Images/add_custom_overlay_on_1.png" alt="" /><span class="uitext">Tilføj en brugerdefineret overlejring</span>: <ul><li>Hvis overlejringen har en geo-reference, kan du klikke hvor som helst på smart kortet. <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> bruger de geografiske oplysninger til at placere overlejringen på den korrekte geografiske placering. Desuden vil smart kortet blive centreret på overlejringen på et standard zoom-niveau</li><li>Hvis overlejringen ikke har en geo-reference, skal du gå til det sted på kortet, hvor du ønsker at tilføje elementet, og så klikke på punktet på smart kortet</li><p class="tip">Før du tilføjer en overlejring, er det en god ide at zoome ind til det sted på kortet, hvor overlejringen skal være. Det gør det nemmere at positionere overlejringen præcist.</p></ul></li>
+            <li value="3">Angiv et navn til overlejringen.</li>
+            <li value="4">Afhængigt af hvilken type fil du vælger: <ul><li><span class="uitext">Billede</span> - vælg billedfilen og klik så <span class="uitext">OK</span></li><li><span class="uitext">Shapefile</span> - vælg SHP-filen. Hvis du har en PRJ-fil, vil <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> finde den, og du kan bare klikke på <span class="uitext">OK</span>. Hvis du ikke har en PRJ-fil, kan du flytte overlejringen manuelt efter at have filføjet den. Du kan også tilføje en farve. Hvis du bruger en farve, så vil shapefilen fremstå tydeligere på smart kortet</li><li><span class="uitext">CAD</span> - vælg DWG-filen. Hvis du har en PRJ-fil, så klik på <span class="uitext">OK</span>. Hvis du ikke har en PRJ-fil, og du ønsker at bruge en geo-reference til at placere filen på smart kortet, så skal du angive SRID (spatial reference identifier), og derpå klikke på <span class="uitext">OK</span>. Hvis du ikke har en PRJ-fil eller en SRID, kan du flytte overlejringen manuelt efter at have tilføjet den</li><p class="note">For yderligere oplysninger om overlejringstyper, se <a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">Brugerdefinerede overlejringer (forklaret)</a>.</p></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Føj placeringer til brugerdefinerede overlejringer (smart kort)<a name="SC_AddLocationsToCustomO.htm"></a></h3>
+          <p>Du kan konfigurere <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> til automatisk at tilføje placeringer til <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term8">brugerdefinerede overlejringer<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>Et brugerdefineret grafisk element, som brugere kan føje til et smart kort, for eksempel for at illustrere en plantegning i en bygning eller for at markere grænser mellem regioner. En brugerdefineret overlejring kan være et billede, en CAD-tegning eller en shapefil.</span></a> på dit smart kort. Så kan du springe til de brugerdefinerede overlejringer via listen <span class="uitext">Vælg en placering</span>. </p>
+          <p>Trin:</p>
+          <ol>
+            <li value="1">På programværktøjslinjen skal du klikke på <img src="../../../Images/add_or_edit_views_in_simplified.jpg" alt="" /> og så på <img src="../../../Images/change_openstreetmap_tile.png" alt="" /><span class="uitext">Indstillinger</span> for at åbne vinduet <span class="uitext">Indstillinger</span>.</li>
+            <li value="2">Gå til fanen <span class="uitext">Smart kort</span>.</li>
+            <li value="3">I listen <span class="uitext">Opret placering, når overlejring er tilføjet</span> vælger du <span class="uitext">Ja</span>.</li>
+            <li value="4">Luk dialogen for at gemme ændringerne.</li>
+          </ol>
+          <p class="note">For yderligere oplysninger, se <a href="#SC_CustomOverlaysAndLoca.htm" class="MCXref xref">Brugerdefinerede overlejringer og placeringer (forklaret)</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Slet en brugerdefineret overlejring fra et smart kort<a name="SC_DeleteCustomOverlayOn.htm"></a></h3>
+          <ol>
+            <li value="1">Vælg den visning, som indeholder smart kortet, og klik så på <span class="uitext">Opsætning</span>.</li>
+            <li value="2">På værktøjslinjen skal du klikke på <img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">Administrer standardindstillinger</span>.</li>
+            <li value="3">Før musen hen over den brugerdefinerede overlejring og klik på <span class="uitext">Slet</span>.</li>
+            <li value="4">Klik på <span class="uitext">Gem</span> for slette den brugerdefinerede overlejring.</li>
+            <li value="5">Valgfrit: Hvis der blev oprettet en placering til den brugerdefinerede overlejring, så vil du måske også gerne slette den. For yderligere oplysninger, se <a href="#SC_AddingDeletingOrEditi_3.htm" class="MCXref xref">Tilføj, slet eller rediger placeringer på et smart kort</a>.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Gør områder i shapefiler mere synlige (smart kort)<a name="SC_MakeAreasInShapefiles.htm"></a></h3>
+          <p class="note">Dette emne er kun relevant, hvis du bruger shapefiler med polygoner.</p>
+          <p>Hvis du på dit smart kort bruger en shapefil, der består af polygoner tæt på hinanden, kan du være nødt til at skelne mellem de enkelte polygoner. Det gør du ved at formindske uigennemsigtigheden af den farve, du vælger til shapefilen. Polygonens kanter vil blive tydeligere.</p>
+          <p>Trin:</p>
+          <ol>
+            <li value="1">Følg trinene beskrevet i <a href="#SC_AddCustomOverlayOnSma.htm" class="MCXref xref">Føj en brugerdefineret overlejring til et smart kort</a>.</li>
+            <li value="2">
+              <p>Når du vælger farven, skal du trække skyderen <span class="uitext">Uigennemsigtighed</span> til venstre, indtil du er tilfreds med gennemsigtigheden.</p>
+              <p>
+                <img src="../../../Images/make_areas_in_shapefiles_more.jpg" alt="" />
+              </p>
+            </li>
+            <li value="3">Klik på <span class="uitext">Gem</span>.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Tilpas position, størrelse osv. for en brugerdefineret overlejring<a name="SC_AdjustPositionSizeOrA.htm"></a></h3>
+          <p>Du kan flytte en overlejring til et andet sted på kortet, gøre den større eller mindre og dreje den. Det er for eksempel nyttigt, hvis din overlejring ikke har en geo-reference eller hvis overlejringen har en geo-reference, men af en eller anden årsag ikke passer præcist til den geografiske baggrund.</p>
+          <p>Trin:</p>
+          <ol>
+            <li value="1">Vælg den visning, som indeholder smart kortet, og klik så på <span class="uitext">Opsætning</span>.</li>
+            <li value="2">Højreklik på overlejringen og vælg <span class="uitext">Rediger position</span>.</li>
+            <li value="3">For at tilpasse størrelsen eller rotere overlejringen: <ul><li>Klik og træk i et hjørnehåndtag</li><li><p>For at rotere overlejringen om et bestemt punkt skal du flytte omdrejningspunktet til dét sted på kortet. Derefter skal du klikke og trække i et hjørnehåndtag </p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/adjust_position_size_or_alignment.png" data-mc-popup-alt=""><img class="MCPopupThumbnail img" data-mc-width="273" data-mc-height="261" src="../../../Images/adjust_position_size_or_alignment_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="" tabindex="" /></a></p></li></ul></li>
+            <li value="4">For at flytte overlejringen på kortet skal du klikke og trække overlejringen.</li>
+            <li value="5">Klik på <span class="uitext">Gem</span> for at gemme dine ændringer.</li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Tilføj, slet eller rediger enheder på et smart kort<a name="SC_AddingDeletingOrEditi_1.htm"></a></h2>
+        <p>Du kan føje enheder til et smart kort med deres faktiske positioner i dine omgivelser. Det giver dig et godt overblik over dit overvågningssystem, og det kan hjælpe dig med at reagere på en situation. Hvis du, for eksempel, vil følge en mistænkt under en begivenhed, der stadig er under udvikling, kan du klikke på kortets kameraer for at få vist deres optagelser.</p>
+        <p>Når du har føjet et kamera til et smart kort, kan du justere synsfeltet for kamera-ikonet, så det svarer til synsfeltet for det faktiske kamera. Det gør det nemt at finde det kamera, der dækker et bestemt område. Derudover kan du vælge mellem forskellige kameraikoner, så du på kortet kan se hvilken type kamera det er.</p>
+        <p>Du kan arbejde med følgende typer af enheder på smart kort:</p>
+        <ul>
+          <li>Kameraer</li>
+          <li>Input-enheder</li>
+          <li>Mikrofoner</li>
+        </ul>
+        <div data-mc-conditions="">
+          <h3>Føj enheder til smart kort<a name="SC_AddCamerasToSmartMap.htm"></a></h3>
+          <p>Hvis enhedenes geo-koordinater er blevet angivet i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> af din systemadministrator, vil den automatisk blive placeret på smart kortet, når du tilføjer den. Hvis ikke, så skal du selv placere enheden på dens præcise geografiske placering.</p>
+          <ol>
+            <li value="1">Vælg den visning, som indeholder smart kortet, og klik så på <span class="uitext">Opsætning</span>.</li>
+            <li value="2">Tilføj en enhed eller en gruppe enheder: <p class="tip">Før du tilføjer enheden, er det en god ide at zoome ind på stedet på kortet. Det gør det nemmere at positionere enheden præcist.</p><ul><li>Udvid ruden <span class="uitext">Systemoversigt</span>, find enheden eller enhedsgruppen, og træk den til det sted på smart kortet, hvor du vil have den vist. Bagefter kan du trække i enhederne for at ændre deres position</li><li>På smart kortets værktøjslinje skal du vælge <img src="../../../Images/add-a-device-to-smart-map.png" alt="" /><span class="uitext">Tilføj en enhed</span> &gt; vælge enhedstypen.<ul><li>Eksempel: Hvis det er et kamera, skal du vælge <img src="../../../Images/add_cameras_to_map.png" alt="" /><span class="uitext">Tilføj et kamera</span> og så vælge kameraet.</li></ul></li><li>Tæk enheden til smart kortet</li><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_adddevice.png" data-mc-popup-alt="Add a device to your smart map."><img class="MCPopupThumbnail img" data-mc-width="709" data-mc-height="823" src="../../../Images/sc_smap_adddevice_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Add a device to your smart map." tabindex="" /></a><br /></ul></li>
+            <li value="3">For at gemme ændringen skal du klikke på <span class="uitext">Opsætning</span>. Så kommer du ud af opsætningstilstand.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Skift synsfelt og retning på et kamera<a name="SC_ChangeFieldOfViewAndD.htm"></a></h3>
+          <p>Når kameraet er blevet føjet til smart kortet, kan du ændre synsfeltet og retningen ved at justere kameraikonet.</p>
+          <p class="tip">Hvis du har zoomet væk fra kortet, skal du zoome ind, indtil synsfeltet vises.</p>
+          <ol>
+            <li value="1">Vælg den visning, som indeholder det smart kort, du vil arbejde med.</li>
+            <li value="2">Klik på <span class="uitext">Opsætning</span> for at rediger kameraikonet.</li>
+            <li value="3">
+              <p>Klik på kameraikonet.</p>
+              <p>
+                <img src="../../../Images/change_field_of_view_and_direction.png" alt="" />
+              </p>
+            </li>
+            <li value="4">Brug rotationshåndtaget til at pege kameraet i den rigtige retning.</li>
+            <li value="5">For at justere synsfeltets vidde, længde og vinkel skal du klikke på og trække håndtagene på forkanten af synsfeltet.</li>
+            <li value="6">For at gemme dine ændringer skal du klikke på <span class="uitext">Opsætning</span>. Så kommer du ud af opsætningstilstand.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Vælg eller skift enhedens ikon<a name="SC_SelectOrChangeTheIcon.htm"></a></h3>
+          <p>Du kan vælge en enhedsikon, som passer til den type enhed, du bruger.</p>
+          <ol>
+            <li value="1">Vælg den visning, som indeholder det smart kort, du vil arbejde med.</li>
+            <li value="2">
+              <p>Klik på <span class="uitext">Opsætning</span>, og dobbeltklik på enhedsikonet på kortet.</p>
+              <p>
+                <img src="../../../Images/select_or_change_the_icon.png" alt="" />
+              </p>
+            </li>
+            <li value="3">Klik på <span class="uitext">Vælg ikon</span>, og vælg så ikonet til enheden.</li>
+            <li value="4">Klik på <span class="uitext">Opsætning</span> igen for at gemme ændringen.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Vis eller skjul enhedsoplysninger<a name="SC_ShowOrHideInformation.htm"></a></h3>
+          <p>Du kan vise eller skjule oplysninger om enheder på et smart kort. Dette er nyttigt, for eksempel, når du vil forøge eller formindske mængden af indhold på dit smart kort.</p>
+          <ol>
+            <li value="1">Vælg den visning, som indeholder det smart kort, du vil arbejde med.</li>
+            <li value="2">Klik på <img src="../../../Images/change_the_geographic_background.png" alt="" /><span class="uitext">Vis eller skjul lag og brugerdefinerede overlejringer</span>.</li>
+            <li value="3">Vælg eller ryd afkrydsningsfelterne for de oplysninger, der skal vises eller skjules.</li>
+          </ol>
+        </div>
+        <div>
+          <h3>Lyt til lyd fra mikrofon på smart kort</h3>
+          <p>Når du har føjet mikrofoner til et smart kot, kan du lytte til lyden fra en mikrofon ad gangen på fanen <span class="uitext">Live</span>. </p>
+          <p>Trin:</p>
+          <ol>
+            <li value="1">
+              <p>På fanen <span class="uitext">Live</span> skal du navigere til det ste på smart kortet, hvor mikrofonen er placeret.</p>
+            </li>
+            <li value="2">
+              <p>Dobbeltklik på mikrofonen for at slå den fra eller til.</p>
+              <p class="tip">Du kan også højreklikke på mikrofonen og vælge <span class="uitext">Slå mikrofon fra</span> eller <span class="uitext">Slå lyd til</span>.</p>
+            </li>
+          </ol>
+        </div>
+        <div>
+          <h3>Fjern enheder fra smart kort<a name="SC_DeletingCamerasOnSmar.htm"></a></h3>
+          <p>Du kan fjerne enheder, for eksempel hvis enheder er blevet fjernet fysisk eller er blevet tilføjet ved en fejl. Når du fjerner en enhed, vil oplysninger om enhedens placering, for eksempel geo-koordinaterne, blive fuldstændig fjernet fra dit VMS-system.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Krav</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p>Disse brugerrettigheder skal være aktiveret i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>:</p>
+              <ul>
+                <li>Redigering af smart kort</li>
+                <li>Redigering af enheder</li>
+              </ul>
+            </div>
+          </div>
+          <p>Trin:</p>
+          <ol>
+            <li value="1">Naviger til den enhed, du ønsker at fjerne.</li>
+            <li value="2"> Klik på <span class="uitext">Opsætning</span> for at komme til opsætningstilstand. </li>
+            <li value="3">
+              <p>For at fjerne en enkelt enhed skal du højreklikke på enheden og vælge <span class="uitext">Fjern</span>.</p>
+              <p>Eksempel: Hvis det er et kamera, skal du klikke på <span class="uitext">Fjern kamera</span>.</p>
+              <p>
+                <a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_removecamera.png" data-mc-popup-alt="Remove camera from your smart map.">
+                  <img class="MCPopupThumbnail img" data-mc-width="284" data-mc-height="209" src="../../../Images/sc_smap_removecamera_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: 0;" alt="Remove camera from your smart map." tabindex="" />
+                </a>
+              </p>
+            </li>
+            <li value="4">Sådan fjerner man flere kameraer:<ol><li value="1"><p>På smart kortets værktøjslinje skal du klikke på <img src="../../../Images/preview_videos_from_several.png" alt="" /><span class="uitext">Vælg flere kameraer</span>.</p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_smap_cluster_multiselect.png" data-mc-popup-alt="Select multipe cameras on your smart map."><img class="MCPopupThumbnail img" data-mc-width="1056" data-mc-height="672" src="../../../Images/sc_smap_cluster_multiselect_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: 0;" alt="Select multipe cameras on your smart map." tabindex="" /></a><br /></p></li><li value="2">Klik og træk for at vælge flere kameraer. Andre typer af enheder, for eksempel input-enheder, bliver ikke indeholdt i valget.</li><li value="3">Højreklik og vælg <span class="uitext">Fjern kameraer</span>.</li></ol></li>
+            <li value="5">Sådan fjerner man flere enheder, som ikke er kameraer:<ol><li value="1">Tryk og hold Ctrl på smart kortet. </li><li value="2">Mens du holder Ctrl nede skal du klikke på de enheder, du ønsker at fjerne.</li><li value="3">Højreklik på en af de valgte enheder og vælg Fjern.</li></ol></li>
+            <li value="6"> Klik på <span class="uitext">Opsætning</span> igen for at forlade opsætningstilstand. Dine ændringer bliver gemt.</li>
+          </ol>
+          <p class="tip">Du kan også slette en enkelt enhed ved at vælge den og så trykke <span class="uitext">DELETE</span> på dit tastatur.</p>
+        </div>
+      </div>
+      <div>
+        <h2>Tilføj, slet eller rediger links på et smart kort<a name="SC_AddingDeletingOrEditi_2.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Links på et smart kort (forklaret)<a name="SC_LinksOnSmartMapExplai.htm"></a></h3>
+          <p>Du kan tilføje links, som fører til placeringer på dit smart kort, eller gå til det statiske kort i <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. Dermed kan du hurtigt gå til dine placeringer eller få vist en anden type kort uden at skifte visning. Du kan ikke linke til et andet smart kort. For yderligere oplysninger, se <a href="#SC_DifferencesBetweenMap.htm" class="MCXref xref">Forskelle mellem kort og smart kort (forklaret)</a>.</p>
+          <p>Links viser placeringer og kort på denne måde:</p>
+          <ul>
+            <li>Et link til en placering viser placeringen i den nuværende visning. For at vende tilbage til en placering, du tidligere har set, skal du klikke <img src="../../../Images/backtracking_to_previous_locations.png" alt="" /><span class="uitext">Tilbage</span> i smart kort-værktøjslinjen</li>
+            <li>Et link til et kort viser kortet i et flydende vindue. Dermed har du adgang til begge typer af kort på samme tid. Du kan se og arbejde med kortet, men du kan ikke lave ændringer i det flydende vindue, såsom at tilføje kameraer</li>
+          </ul>
+          <p class="note">Hvis du bruger farvekoder til links, eller du vil gøre dem mere synlige på kortet, kan du angive en farve til linket. Som standard er links til smart kort-placeringer blå, og links til ældre kort er røde. Hvis du bruger en anden farve, er det en god ide at bruge den samme farve til hver type af link. For eksempel kan dette gøre det nemmere at skelne mellem links, når du bruger lag til at filtrere elementer på kortet.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Føj et link til en smart kort-placering eller til et kort<a name="SC_AddLinkToSmartMapLoca.htm"></a></h3>
+          <p>Ved at føje links til dit smart kort kan du hurtigt gå til dine placeringer eller få vist en anden type kort uden at skifte visning.</p>
+          <p>Trin:</p>
+          <ol>
+            <li value="1">Vælg den visning, som indeholder smart kortet, og klik så på <span class="uitext">Opsætning</span>.</li>
+            <li value="2">Gå til det sted på kortet, hvor du vil tilføje linket.</li>
+            <li value="3">I kortets værktøjslinje, klik <img src="../../../Images/add_link_to_map_location.png" alt="" /><span class="uitext">Tilføj et link</span>, og klik så det sted på kortet, hvor linket skal være.</li>
+            <li value="4">Angiv, om du vil linke til en smart kort-placering, og klik så <span class="uitext">Tilføj</span>.</li>
+            <li value="5">
+              <p>Angiv et navn til linket.</p>
+              <p class="tip">Du kan få vist linkets titel på smart kortet, hvis du vælger <span class="uitext">Ikon og tekst</span> som visningsstilen. Typisk indikerer navne, hvor linket fører dig hen.</p>
+            </li>
+            <li value="6">I feltet <span class="uitext">Destination</span>, vælg kortet eller placeringen, som linket fører hen til.</li>
+            <li value="7">I feltet <span class="uitext">Visningsstil</span>, angiv, om navnet og linkikonet skal vises, eller kun linkikonet, på kortet.</li>
+            <li value="8">Valgfrit: Klik <span class="uitext">Farve</span> for at angive en farve til dit link.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Rediger eller fjern link på et smart kort<a name="SC_EditOrDeleteLinkOnSma.htm"></a></h3>
+          <p>Når du har tilføjet et link på dit smart kort, kan du redigere eller slette det.</p>
+          <p>Trin:</p>
+          <ol>
+            <li value="1"> Klik på <span class="uitext">Opsætning</span> for at komme til opsætningstilstand. </li>
+            <li value="2">For at redigere linket skal du højreklikke på det og vælge <span class="uitext">Rediger link</span>.</li>
+            <li value="3">For at slette linket skal du gøre en af de følgende:<ul><li>Højreklik på linket og vælg <span class="uitext">Slet link</span></li><li>Vælg linket og tryk <span class="uitext">DELETE</span> på dit tastatur</li></ul></li>
+          </ol>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Tilføj, slet eller rediger placeringer på et smart kort<a name="SC_AddingDeletingOrEditi_3.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Placeringer på et smart kort (forklaret)<a name="SC_LocationsOnSmartMapEx.htm"></a></h3>
+          <p>Du kan oprette placeringer de steder på smart kortet, som du er interesseret i. For eksempel kan du oprette placeringer for dit hjemmekontor og fjernkontorer. Placeringer giver dig ikke bare et overblik over dine omgivelser, de hjælper dig også med at navigere i smart kortet. </p>
+          <p class="note">Når du opretter en brugerdefineret overlejring, vil <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>, afhængigt af din konfiguration, tilføje en placering med det samme navn som overlejringen. Det vil for eksempel gøre det lettere at gå til overlejringen på smart kortet, når du har zoomet ud. Overlejringen og placeringen er imidlertid ikke sammenkædet. Du kan for eksempel slette eller omdøbe placeringen uden at ændre overlejringen og omvendt. For yderligere oplysninger, se <a href="#SC_AddingDeletingOrEditi.htm" class="MCXref xref">Tilføj, slet eller rediger brugerdefinerede overlejringer</a>.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Udgangspositioner på smart kort (forklaret)<a name="SC_HomeLocationsForSmart.htm"></a></h3>
+          <p>Udgangspositioner er specifikke for visningselementet, som de er defineret i. Du kan have forskellige placeringer af dine udgangspositioner i forskellige visningselementer. Hvis der ikke er angivet en udgangsposition til et visningselement, så viser visningselementet hele verdenskortet, uanset hvilken baggrund du bruger. Det gælder også, hvis du sletter udgangspositionen.</p>
+          <p>Mens du arbejder med smart kortet, kan du klikke på <img src="../../../Images/home_locations_for_map.png" alt="" /><span class="uitext">Udgangsposition</span> for at vende tilbage til udgangspositionen. Dette svarer til at nulstille smart kortet i visningen. Du vender tilbage til visningselementets standardindstillinger, og systemet sletter historikken over de placeringer, du har besøgt.</p>
+          <p class="note">At vælge en ny udgangsposition påvirker alle, der bruger visningselementet. Hvis en anden person havde angivet en anden udgangsposition, så ændrer du denne indstilling.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Føj en placering til et smart kort<a name="SC_AddLocationToSmartMap.htm"></a></h3>
+          <p>For at holde styr på de steder, du er interesseret i, kan du tilføje placeringer, så du hurtigt kan navigere til de steder på smart kortet.</p>
+          <p>Trin:</p>
+          <ol>
+            <li value="1">Vælg den visning, som indeholder smart kortet, og klik så på <span class="uitext">Opsætning</span>.</li>
+            <li value="2">Om nødvendigt må du panorere og zoome ind på det punkt på smart kortet, hvor du vil tilføje din placering.</li>
+            <li value="3">I værktøjslinjen, klik på <img src="../../../Images/add_location_to_map.png" alt="" /><span class="uitext">Tilføj placering</span>, og klik derefter på det rette sted på smart kortet.</li>
+            <li value="4">Giv placeringen et navn, og tilføj så eventuelt disse valgfrie oplysninger: <ul><li>Angiv det zoom-niveau, der skal anvendes, når nogen går til placeringen på smart kortet</li><li>Vælg en farve til placeringsikonet. Det er nyttigt at farvekode placeringer, for eksempel for at skelne mellem typer af placeringer. Farven kan være baseret på placeringens funktion, type eller prioritet</li><li>Valgfrit: Gør placeringen til din startplacering. Smart kortet centreres efter denne placering og bruger det angivne standard zoom-niveau, når du klikker på <img src="../../../Images/home_locations_for_map.png" alt="" /><span class="uitext">Udgangsposition</span></li></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Rediger eller fjern en placering på et smart kort<a name="SC_EditOrDeleteLocationO.htm"></a></h3>
+          <p>Når du har tilføjet placeringer på dit smart kort, kan du slette dem eller redigere indstillingerne, for eksempel kan du slette udgangspositionen.</p>
+          <p>Trin:</p>
+          <ol>
+            <li value="1"> Klik på <span class="uitext">Opsætning</span> for at komme til opsætningstilstand. </li>
+            <li value="2">For at redigere en placering skal du højreklikke på den og vælge <span class="uitext">Rediger placering</span>.</li>
+            <li value="3">For at slette en placering skal du gøre en af de følgende:<ul><li>Højreklik på placeringen og vælg <span class="uitext">Slet placering</span></li><li>Vælg placeringen og tryk <span class="uitext">DELETE</span> på dit tastatur</li></ul></li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Links mellem placeringer (forklaret)<a name="SC_LinkingBetweenLocatio.htm"></a></h3>
+          <p>Du kan for eksempel oprette en patruljerings-rute ved at oprette en række af links mellem placeringer. Opret et link fra placering A, som går til placering B, og et link fra placering B, som går til placering C og så videre. For yderligere oplysninger, se <a href="#SC_AddingDeletingOrEditi_2.htm" class="MCXref xref">Tilføj, slet eller rediger links på et smart kort</a>.</p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Tilføj, slet eller rediger bygninger på smart kort<a name="SC_AddingDeletingOrEditi_4.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Bygninger på smart kort (forklaret)<a name="SC_BuildingsOnSmartMapEx.htm"></a></h3>
+          <p>Bygninger på <a href="javascript:void(0)" class="MCTextPopup MCTextPopupHotSpot MCTextPopup_Open glossaryTerm glossaryTermPopup MCTextPopupHotSpot_ MCTextPopupHotSpot_Popup" glossTerm="Glossary.Term18">smart kort<span class="MCTextPopupBody popupBody"><span class="MCTextPopupArrow"></span>En kort-funktionalitet, der bruger geografisk information til at visualisere enheder (for eksempel kameraer og mikrofoner), strukturer og topografiske elementer i et overvågningssystem i en geografisk nøjagtig og virkelighedstro visualisering. Kort der bruger elementer af denne funktionalitet kaldes smart kort.</span></a> bliver afbildet som polygoner med fire kanter. Når en bygning er blevet tilføjet, kan du tilpasse dimensioner, vinkler og størrelse, så de passer til bygningens faktiske form og placering.</p>
+          <p>Hvis en bygning har flere etager, kan du starte med at tilføje niveauer og så tilføje kameraer på de enkelte niveauer. På denne måde kan du navigere mellem kameraerne inde i bygningen, niveau for niveau.</p>
+          <p>Som en hjælp til at illustrere, hvordan der ser ud på et niveau, kan du tilføje en brugerdefineret overlejring, for eksempel et billede, der viser en plantegning. For yderligere oplysninger, se <a href="#SC_AddFloorPlansToLevels.htm" class="MCXref xref">Føj plantegninger til niveauer (smart kort)</a>.</p>
+          <p>Bygninger får automatisk et navn, for eksempel <span class="uitext">Bygning 4</span>. <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> anbefaler, at du ændrer navnet. Dette gør det lettere for dig at skelne bygningerne fra hinanden.</p>
+          <p>
+            <img src="../../../Images/buildings_on_map_explained.jpg" alt="" />
+          </p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Føj bygninger til smart kort<a name="SC_AddBuildingsToSmartMa.htm"></a></h3>
+          <p>I stedet for at bruge billeder eller shapefiler til at illustrere bygninger kan du tilføje en kontur af en bygning. Derefter kan du tilpasse dimensioner, vinkler og størrelse, så de passer til bygningens faktiske form og placering.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Krav</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Redigering af smart kort er blevet aktiveret på din <span class="mc-variable flvar-product.SC variable">Smart Client</span>-profil i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Trin:</p>
+          <ol>
+            <li value="1"> Klik på <span class="uitext">Opsætning</span> for at komme til opsætningstilstand. </li>
+            <li value="2">Naviger til det sted på smart kortet, hvor du vil placere bygningen.</li>
+            <li value="3">Klik på <img src="../../../Images/add_buildings_to_map.jpg" alt="" /> og placer markøren på det rigtige sted på smart kortet.</li>
+            <li value="4">Klik igen. Der bliver tilføjet et rektangel på smart kortet. Hvis der er zoomet ud, bliver zoom-niveauet automatisk forøget.</li>
+            <li value="5">Hvis det er nødvendigt, kan du bruge håndtagene i hjørnerne til at tilpasse form og placering til den faktiske bygning.</li>
+            <li value="6"> Klik på <span class="uitext">Opsætning</span> igen for at forlade opsætningstilstand. Dine ændringer bliver gemt.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Rediger bygninger på smart kort<a name="SC_EditBuildingsOnSmartM.htm"></a></h3>
+          <p>Når en bygning: er blevet føjet til et smart kort, kan du ændre bygningens navn og justere dens placering, størrelse, dimensioner og vinkler. Du kan også tilføje, fjerne eller omorganisere niveauerne.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Krav</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Redigering af smart kort er blevet aktiveret på din <span class="mc-variable flvar-product.SC variable">Smart Client</span>-profil i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Trin:</p>
+          <ol>
+            <li value="1">Naviger til bygningen på smart kortet. Zoom ind, hvis du har brug for det.</li>
+            <li value="2"> Klik på <span class="uitext">Opsætning</span> for at komme til opsætningstilstand. </li>
+            <li value="3">
+              <p>Klik hvor som helst inde i bygningen. En rillet blå kant angiver, at du kan redigere bygningen.<br /></p>
+              <p>
+                <img src="../../../Images/buildings_on_map_explained.jpg" alt="" />
+              </p>
+            </li>
+            <li value="4">For at omdøbe bygningen skal du gå til den øverste del af ruden til højre og klikke på <img src="../../../Images/edit_buildings_on_map.jpg" alt="" />. Udskift navnet og klik på <img src="../../../Images/edit_buildings_on_map_1.jpg" alt="" />. For at annullere skal du trykke på <span class="uitext">Esc</span>.</li>
+            <li value="5">For at tilpasse hjørnerne skal du klikke og trække dem til en ny placering.</li>
+            <li value="6">For at tilføje eller fjerne niveauer, se <a href="#SC_AddOrRemoveLevelsFrom.htm" class="MCXref xref">Tilføj eller fjern niveauer fra bygninger (smart kort)</a>.</li>
+            <li value="7"> Klik på <span class="uitext">Opsætning</span> igen for at forlade opsætningstilstand. Dine ændringer bliver gemt.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Slet bygninger på smart kort<a name="SC_DeleteBuildingsOnSmar.htm"></a></h3>
+          <p>Hvis en bygning ikke længere er nødvendig, kan du slette den. Næste gang nogen logger på <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> eller genindlæser, vil bygningen være forsvundet.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Krav</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Redigering af smart kort er blevet aktiveret på din <span class="mc-variable flvar-product.SC variable">Smart Client</span>-profil i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Trin:</p>
+          <ol>
+            <li value="1">Åbn smart kortet.</li>
+            <li value="2"> Klik på <span class="uitext">Opsætning</span> for at komme til opsætningstilstand. </li>
+            <li value="3">Gør et af følgende:</li>
+            <ul>
+              <li>Højreklik på bygningen og vælg <span class="uitext">Slet</span></li>
+              <li>Vælg bygningen og tryk på tasten <span class="uitext">DELETE</span> på dit tastatur </li>
+            </ul>
+          </ol>
+          <p class="tip">En alternativ måde at slette en bygning: I <img src="../../../Images/manage_default_settings_for.png" alt="" /><span class="uitext">Administrer standardindstillinger</span> skal du rulle ned til afdelingen <span class="uitext">Bygninger</span> pege på bygningen, klikke <span class="uitext">Slet</span> og så <span class="uitext">Gem</span>. </p>
+        </div>
+      </div>
+      <div data-mc-conditions="">
+        <h2>Administration af niveauer og enheder i bygninger (smart kort)<a name="SC_ManagingLevelsAndCame.htm"></a></h2>
+        <div data-mc-conditions="">
+          <h3>Enheder og niveauer i bygninger (forklaret)<a name="SC_CamerasAndLevelsInBui.htm"></a></h3>
+          <p>Når du føjer en enhed til en bygning, vil enheden som standard blive forbundet med standardniveauet, hvis et sådant er blevet defineret. Eller bliver enhedeerne tildelt første niveau. Du kan imidlertid ændre dette og forbinde enheden med et hvilket som helst niveau eller flere niveauer samtidig.</p>
+          <p>Flere oplysninger:</p>
+          <ul>
+            <li>Hvis der ikke er valgt niveauer, er enheden synlig på alle niveauer</li>
+            <li>Hvis du tilføjer en bygning oven på en allerede placeret enhed, bliver enheden som standard forbundet med alle niveauer</li>
+            <li>Hvis du udvider en bygnings grænser, så den dækker en allerede placeret enhed, bliver enheden kun forbundet med det valgte niveau</li>
+          </ul>
+          <p class="note">Hvis du tilpasser grænserne for en bygning, så den ikke længere dækker enheden, så er enheden ikke længere forbundet med bygningen.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>
+            <a name="SC_FloorPlansDevicesInBuildings"></a>Plantegninger og enheder i bygninger (forklaret)</h3>
+          <p>For at gøre det lettere at visualisere det indre af en bygning på forskellige niveauer kan du tilføje plantegninger som brugerdefinerede overlejringer. Når en plantegning er på plads, er det lettere at placere enheden præcist. For yderligere oplysninger, se <a href="#SC_AddFloorPlansToLevels.htm" class="MCXref xref">Føj plantegninger til niveauer (smart kort)</a>.</p>
+          <p>De enheder, du placerer, er forbundet med niveauer, ikke med brugerdefinerede overlejringer. Hvis du sletter et niveau inde i bygning med enheder og en brugerdefineret overlejring, vil enhederne blive på deres geografiske placering, men de er ikke længere forbundet med niveauet. Den brugerdefinerede overlejring bliver derimod slettet sammen med niveauet.</p>
+          <p>Hvis du ændrer på et niveaus placering i rækkefølgen, vil både enheder og den brugerdefinerede overlejring blive sammen med niveauet. Enhederne beholder deres geografiske placering.</p>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Tilføj eller fjern niveauer fra bygninger (smart kort)<a name="SC_AddOrRemoveLevelsFrom.htm"></a></h3>
+          <p>Når du har tilføjet en bygning til dit smart kort, kan du tilføje så mange niveauer, du har lyst til. Første niveau får tildelt nummeret <span class="uitext">1</span>, det næste får <span class="uitext">2</span>, og så videre. Bagefter kan du omdøbe de enkelte niveauer og ændre deres rækkefølge.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Krav</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Redigering af smart kort er blevet aktiveret på din <span class="mc-variable flvar-product.SC variable">Smart Client</span>-profil i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Trin:</p>
+          <ol>
+            <li value="1">Naviger til bygningen på smart kortet. Zoom ind, hvis du har brug for det.</li>
+            <li value="2">Vælg bygningen. En rude bliver vist til højre.</li>
+            <li value="3">Klik på knappen <span class="uitext">Opsætning</span> for at gå ind i opsætningstilstand.</li>
+            <li value="4">Klik op <span class="uitext">Tilføj niveau</span><img src="../../../Images/add_or_remove_levels_from.jpg" alt="" />.</li>
+            <li value="5">For at redigere niveauets navn: <ol><li value="1">Klik på prikkerne <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> og vælg <span class="uitext">Omdøb</span>.</li><li value="2">Angiv et nyt navn.</li></ol></li>
+            <li value="6">For at slette et niveau skal du klikke på prikkerne <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> og vælge <span class="uitext">Slet</span>. Enheder på dette niveau bliver på deres geografiske placering, men de er ikke længere forbundet med niveauet.</li>
+            <li value="7">Klik på <span class="uitext">Opsætning</span> for at forlade opsætningstilstand.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Ændring af rækkefølgen af niveauer i bygninger (smart kort)<a name="SC_ChangeOrderOfLevels.htm"></a></h3>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Krav</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Redigering af smart kort er blevet aktiveret på din <span class="mc-variable flvar-product.SC variable">Smart Client</span>-profil i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Trin:</p>
+          <ol>
+            <li value="1">Naviger til bygningen på smart kortet. Zoom ind, hvis du har brug for det.</li>
+            <li value="2">Vælg bygningen. En rude, som viser dig niveauerne i bygningen, bliver vist til højre.</li>
+            <li value="3"> Klik på <span class="uitext">Opsætning</span> for at komme til opsætningstilstand. </li>
+            <li value="4">Klik og træk det prikkede område <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" /> til den rigtige placering. Alle forbundne enheder og brugerdefinerede overlejringer forbliver på niveauet.</li>
+            <li value="5"> Klik på <span class="uitext">Opsætning</span> igen for at forlade opsætningstilstand. Dine ændringer bliver gemt.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Indstil standardniveau for bygninger (smart kort)<a name="SC_SetDefaultLevelForBui.htm"></a></h3>
+          <p>Hvis et bestemt niveau i en bygning er mere vigtigt end andre, for eksempel stueetagen, kan du indstille dette til at være standardniveauet. Når du åbner et smart kort og går til bygningen, bliver standardniveauet automatisk valgt.</p>
+          <p>Hvis du navigerer væk fra bygningen og tilbage igen, vil <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> bringe dig ind på det niveau, du forlod.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Krav</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Redigering af smart kort er blevet aktiveret på din <span class="mc-variable flvar-product.SC variable">Smart Client</span>-profil i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Trin:</p>
+          <ol>
+            <li value="1">Naviger til bygningen på smart kortet. Zoom ind, hvis du har brug for det.</li>
+            <li value="2">Vælg bygningen. En rude, som viser dig niveauerne i bygningen, bliver vist til højre. Standardniveauet er markeret op.</li>
+            <li value="3">Klik på <span class="uitext">Opsætning</span> for at komme til opsætningstilstand. Bemærk stjernen <img src="../../../Images/set_default_level_for_buildings.jpg" alt="" />. Den angiver hvor det aktuelle standardniveau er.</li>
+            <li value="4">På niveauet, du vil vælge som standardniveau, skal du klikke på prikkerne <img src="../../../Images/add_or_remove_levels_from_1.jpg" alt="" />.</li>
+            <li value="5">Vælg <span class="uitext">Benyt som standard</span>.</li>
+            <li value="6"> Klik på <span class="uitext">Opsætning</span> igen for at forlade opsætningstilstand. Dine ændringer bliver gemt.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Føj plantegninger til niveauer (smart kort)<a name="SC_AddFloorPlansToLevels.htm"></a></h3>
+          <p>Du kan føje brugerdefinerede overlejringer, for eksempel billeder af plantegninger, til niveauerne i din bygning for at få en bedre visning af hvordan et niveau inde i en bygning ser ud. Når du navigerer mellem niveauerne, bliver de tilknyttede plantegninger automatisk vist.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Krav</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Redigering af smart kort er blevet aktiveret på din <span class="mc-variable flvar-product.SC variable">Smart Client</span>-profil i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Trin:</p>
+          <ol>
+            <li value="1">Naviger til bygningen på smart kortet. Zoom ind, hvis du har brug for det.</li>
+            <li value="2">Vælg bygningen. En rude, som viser dig niveauerne i bygningen, bliver vist til højre.</li>
+            <li value="3"> Klik på <span class="uitext">Opsætning</span> for at komme til opsætningstilstand. </li>
+            <li value="4">Vælg det niveau, hvor du vil tilføje den brugerdinerede overlejring.</li>
+            <li value="5">Øverst til venstre skal du klikke <img src="../../../Images/add_custom_overlay_on_1.png" alt="" /><span class="uitext">Tilføj en brugerdefineret overlejring</span> og så klikke et hvilket som helst sted inde i bygningens kontur. Et vindue åbnes.</li>
+            <li value="6">Vælg typen af brugerdefineret overlejring. For yderligere oplysninger, se <a href="#SC_CustomOverlaysExplain.htm" class="MCXref xref">Brugerdefinerede overlejringer (forklaret)</a>.</li>
+            <li value="7">
+              <p>Vælg den placering på din computer, hvor filen ligger, og klik på <span class="uitext">Fortsæt</span>. Den brugerdefinerede overlejring bliver vist med en blå kontur.<br /></p>
+              <p>
+                <img src="../../../Images/add_floorplans_to_levels.jpg" alt="" />
+              </p>
+            </li>
+            <li value="8">Træk det hen på bygningens kontur og brug omdrejningspunktet og hjørnehåndtagene til at rotere og omplacere den brugerdefinerede overlejring.</li>
+            <li value="9">På linjen for oven skal du klikke på <span class="uitext">Gem</span>.</li>
+            <li value="10"> Klik på <span class="uitext">Opsætning</span> igen for at forlade opsætningstilstand. Dine ændringer bliver gemt.</li>
+          </ol>
+        </div>
+        <div data-mc-conditions="">
+          <h3>Slet plantegninger på niveauer (smart kort)<a name="SC_DeleteFloorPlansOnLev.htm"></a></h3>
+          <p>Hvis en plantegning på et niveau inde i en bygning er blevet ændret, kan det være nødvendigt at erstatte den brugerdefinerede overlejring, der illustrerer grundplanen. <span class="mc-variable flvar-brand-company.CompanyShort variable">Milestone</span> anbefaler, at du sletter den gamle plantegning, før du tilføjer en ny.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Krav</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Redigering af smart kort er blevet aktiveret på din <span class="mc-variable flvar-product.SC variable">Smart Client</span>-profil i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Trin:</p>
+          <ol>
+            <li value="1">Naviger til bygningen på smart kortet. Zoom ind, hvis du har brug for det.</li>
+            <li value="2">Vælg bygningen. En rude, som viser dig niveauerne i bygningen, bliver vist til højre.</li>
+            <li value="3"> Klik på <span class="uitext">Opsætning</span> for at komme til opsætningstilstand. </li>
+            <li value="4">Vælg det niveau, hvor den brugerdefinerede overlejring er.</li>
+            <li value="5">Højreklik på den brugerdefinerede overlejring og vælg <span class="uitext">Slet brugerdefineret overlejring</span>.</li>
+            <li value="6"> Klik på <span class="uitext">Opsætning</span> igen for at forlade opsætningstilstand. Dine ændringer bliver gemt.</li>
+          </ol>
+          <p class="tip">For at redigere placeringen eller størrelse på plantegningen skal du højreklikke den brugerdefinerede overlejring og vælge <span class="uitext">Rediger position</span>. Nu kan du flytte, dreje og ændre på størrelsen af den brugerdefinerede overlejring.</p>
+        </div>
+        <div>
+          <h3>Føj enheder til bygninger (smart kort)<a name="SC_AddCamerasToBuildings.htm"></a></h3>
+          <p>Efter at have oprettet en bygning og tilføjet niveauer kan du føje enheder til bygningen. Hvis et standardniveau er blevet angivet, er enhederne forbundet med det. Ellers er enhederne forbundet med det første niveau. Du kan ændre dette og forbinde enheden med et andet niveau i bygningen.</p>
+          <div class="MCDropDown MCDropDown_Closed dropDown">
+            <span class="MCDropDownHead dropDownHead">
+              <a href="javascript:void(0)" class="MCDropDownHotSpot dropDownHotspot MCDropDownHotSpot_ MCHotSpotImage" aria-expanded="false">
+                <img class="MCDropDown_Image_Icon" src="../../Skins/Default/Stylesheets/Images/transparent.gif" height="11" width="16" alt="Lukket" data-mc-alt2="Åben" />Krav</a>
+            </span>
+            <div class="MCDropDownBody dropDownBody">
+              <p> Redigering af smart kort er blevet aktiveret på din <span class="mc-variable flvar-product.SC variable">Smart Client</span>-profil i <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span>. </p>
+            </div>
+          </div>
+          <p>Trin:</p>
+          <ol>
+            <li value="1">Naviger til bygningen på smart kortet. Zoom ind, hvis du har brug for det.</li>
+            <li value="2"> Klik på <span class="uitext">Opsætning</span> for at komme til opsætningstilstand. </li>
+            <li value="3">For at tilføje en enhed skal du klikke på dens ikon. <p>Eksempel: Hvis det er et kamera, skal du klikke på <img src="../../../Images/add_cameras_to_buildings.jpg" alt="" /><span class="uitext">Tilføj et kamera</span>.</p></li>
+            <li value="4">Klik igen på det sted, hvor du vil have enheden placeret. Der bliver vist en dialogboks.</li>
+            <li value="5">Vælg enheden og klik på <span class="uitext">OK</span>. For hver enhed, du ønsker at tilføje, skal du gentage trin 3-5.</li>
+            <li value="6">For at forbinde en enhed med et eller flere niveauer skal du højreklikke på enheden og vælge de ønskede niveauer.</li>
+            <li value="7"> Klik på <span class="uitext">Opsætning</span> igen for at forlade opsætningstilstand. Dine ændringer bliver gemt.</li>
+          </ol>
+          <p class="note">Hvis der ikke er valgt niveauer, er enheden synlig på alle niveauer.</p>
+        </div>
+      </div>
+    </div>
+    <p>
+      <div class="MCRelationshipsProxy_0">
+        <p class="containerHeading_container_0">Konceptinformation</p>
+        <p class="containerItem_container_0">
+          <a href="sc_workingwithmap.htm">Smart kort (anvendelse)</a>
+        </p>
+        <p class="referenceHeading_reference_0">Referencematerialer</p>
+        <p class="referenceItem_reference_0">
+          <a href="sc_map_faq.htm">Ofte stillede spørgsmål: smart kort</a>
+        </p>
+      </div>
+    </p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>

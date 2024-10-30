@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html []>
+<html xmlns:MadCap="http://www.madcapsoftware.com/Schemas/MadCap.xsd" lang="cs-CZ" xml:lang="cs-CZ" data-mc-search-type="Stem" data-mc-help-system-file-name="Default.xml" data-mc-path-to-help-system="../../" data-mc-toc-path="Optimalizace" data-mc-target-type="WebHelp2" data-mc-runtime-file-type="Topic" data-mc-preload-images="false" data-mc-in-preview-mode="false">
+  <!-- saved from url=(0016)http://localhost -->
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="msapplication-config" content="../../Skins/Favicons/browserconfig.xml" />
+    <meta name="description" content="Get familiar with and read how to set up adaptive streaming to improve the performance of computers running XProtect Smart Client." />
+    <meta name="addsearch-custom-field" data-type="text" content="product=XProtect Smart Client" class="addSearch product" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Správce" class="addSearch role" />
+    <meta name="addsearch-custom-field" data-type="text" content="role=Integrátor" class="addSearch role" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <title>Aktivace adaptivného streamování</title>
+    <link href="../../Skins/Default/Stylesheets/Slideshow.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/TextEffects.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Topic.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Styles.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Tablet.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../Skins/Default/Stylesheets/Components/Mobile.css" rel="stylesheet" type="text/css" data-mc-generated="True" />
+    <link href="../../resources/styles/mil/mil__en-us.css" rel="stylesheet" type="text/css" />
+    <link rel="apple-touch-icon" sizes="616x616" href="../../Skins/Favicons/milestone-favicon.png" />
+    <link rel="shortcut icon" href="../../Skins/Favicons/milestone-favicon.ico" />
+    <script src="../../resources/Scripts/jquery.min.js" type="text/javascript"></script>
+    <script src="../../resources/Scripts/require.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/require.config.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/foundation.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/plugins.min.js" type="text/javascript" defer="defer"></script>
+    <script src="../../resources/Scripts/MadCapAll.js" type="text/javascript" defer="defer"></script>
+  </head>
+  <body>
+    <p class="MCWebHelpFramesetLink MCWebHelpFramesetLinkTop">
+      <a href="../../Default.htm#feature_flags/ff_adaptivestreaming/sc_enablingadaptivestreaming.htm">Open topic with navigation</a>
+    </p>
+    <div class="nocontent">
+      <div class="MCBreadcrumbsBox_0 breadcrumbs" role="navigation" aria-label="Breadcrumbs" data-mc-breadcrumbs-divider=" / " data-mc-breadcrumbs-count="3" data-mc-toc="True">
+        <span class="MCBreadcrumbsPrefix">/ </span>
+      </div>
+    </div>
+    <div role="main" id="mc-main-content">
+      <h1>Aktivace adaptivného streamování</h1>
+      <h2>Adaptivní streamování (vysvětlení)<a name="SC_AdaptiveStreamingExplained"></a></h2>
+      <p>Adaptivní streamování vylepšuje schopnosti dekódování a výkon počítače s aplikací <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>. To je užitečné v případě, že zobrazujete více živých video datových toků ve stejném náhledu.</p>
+      <p>Pokud chcete využívat adaptivní streamování, musí mít vaše kamery více datových toků definovaných s různými rozlišeními. Díky tomu aplikace <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> automaticky vybírá nejbližší shodu s rozlišením požadovaným položkou zobrazení. Nyní aplikace <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span> nemusí zmenšovat výchozí datové toky se zbytečně vysokým rozlišením. Tím se sníží zatížení dekódovacích zdrojů CPU a GPU.</p>
+      <p>Aby byla zajištěna kvalita videa, je nejbližší shoda definována jako rovná nebo vyšší než rozlišení požadované položkou náhledu, je-li to možné. Tím se předejde eskalaci datových toků. Tabulka níže ukazuje video datové toky, které adaptivní streamování vybírá na základě požadavků položky náhledu z <span class="mc-variable flvar-product.SC_XP variable">XProtect Smart Client</span>.</p>
+      <table cellspacing="3">
+        <col style="width: 40%;" />
+        <col />
+        <col />
+        <thead>
+          <tr>
+            <th>Rozlišení vyžadované položkou náhledu</th>
+            <th colspan="2">Nejbližší shoda dostupných video datových toků</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>636 x 477</td>
+            <td style="text-align: left;">Proud videa 1</td>
+            <td>640 x 480 (VGA)</td>
+          </tr>
+          <tr>
+            <td>644 x 483</td>
+            <td style="text-align: left;">Proud videa 2</td>
+            <td>1280 x 720 (WXGA-H)</td>
+          </tr>
+          <tr>
+            <td>1920 x 1080</td>
+            <td style="text-align: left;">Proud videa 3</td>
+            <td>1920 x 1080 (FHD)</td>
+          </tr>
+          <tr>
+            <td>1920 x 1440</td>
+            <td style="text-align: left;">Proud videa 4</td>
+            <td>3840 x 2160 (4K UHD-1)</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="note">
+        <p>Při přibližování nebo oddalování je požadovaný živý video datový proud vždy ten s největším rozlišením.</p>
+        <p>Využití šířky pásma se často sníží, když se sníží rozlišení požadovaných datových proudů. Využití šířky pásma také závisí na dalších nastaveních v konfiguracích definovaných datových proudů.</p>
+      </div>
+      <h2>Kontrola nastavení pro adaptivní streamování<a name="SC_CheckAdaptiveStreamingSettings"></a></h2>
+      <ol>
+        <li value="1">Přejděte na <span class="uitext">Nastavení</span> &gt; <span class="uitext">Pokročilé</span> &gt; <span class="uitext">Adaptivní streamování</span>.</li>
+        <li value="2">Existují dvě nastavení pro adaptivní streamování: <span class="uitext">Deaktivováno</span> a <span class="uitext">Aktivováno</span>. <p>Vyberte <span class="uitext"><span class="uitext">Aktivováno</span></span>.</p><p><a class="MCPopupThumbnailLink MCPopupThumbnailPopup" href="../../../Images/sc_settings_advanced_adaptivestreamingdiagnosticsoverlaycut.png" data-mc-popup-alt="Adaptive streaming settings in XProtect Smart Client."><img class="MCPopupThumbnail img" data-mc-width="800" data-mc-height="480" src="../../../Images/sc_settings_advanced_adaptivestreamingdiagnosticsoverlaycut_thumb_200_0.png" style="mc-thumbnail: popup;mc-thumbnail-max-width: 200px;mc-thumbnail-max-height: auto;" alt="Adaptive streaming settings in XProtect Smart Client." tabindex="" /></a></p></li>
+        <li value="3">Přejděte na <span class="uitext">Překrytí diagnostiky videa</span>.</li>
+        <li value="4">Pokud chcete, aby bylo rozlišení datového toku aktuálního videa viditelné, vyberte <span class="uitext">Úroveň 2</span>.</li>
+        <p class="note">Toto nastavení platí pro všechny položky zobrazení. Výchozí nastavení je <span class="uitext">Skrýt</span>.</p>
+        <li value="5">Překrytí diagnostiky videa by nyní měl být <span class="uitext">Aktivován</span>. </li>
+        <p>Zkuste změnit velikost okna náhledu z malé na velkou a z velké na malou a zkontrolujte, zda se hodnota <span class="uitext">Rozlišení videa</span> změní.</p>
+        <p>
+          <img src="../../../Images/sc_viewitem_diagnosticsoverlay_resolution320x180.png" alt="" />
+          <img src="../../../Images/sc_viewitem_diagnosticsoverlay_resolution480x270.png" alt="" />
+          <img src="../../../Images/sc_viewitem_diagnosticsoverlay_resolution1280x720.png" alt="" />
+        </p>
+        <p>Pokud se hodnota nezmění, pokračujte dále a zkontrolujte vaše dostupné živé video datové toky z kamer, abyste mohli aktivovat adaptivní streamování, je-li to možné.</p>
+      </ol>
+      <h2>Kontrola dostupných živých video datových toků<a name="SC_CheckAvailableLiveVideoStreams"></a></h2>
+      <p>Pokud chcete využívat adaptivní streamování, musíte v nastavení kamery nakonfigurovat dva nebo více živých video datových toků s různým rozlišením.</p>
+      <p class="note"> Jediný podporovaný formát rozlišení videa pro adaptivní streamování je <span class="inputtext">šířka x výška</span>. Formáty rozlišení videa z kamer jako jsou 720p, režim2, VGA nebo podobné nejsou podporovány.</p>
+      <p class="note">Ne všechny kamery podporují mutlistreamování.</p>
+      <p>Multistreamování umožňuje použití konfiguraci více datových toků na server na jedno zařízení. Pokud je nakonfigurováno více datových toků a je povoleno adaptivní streamování, můžete vybrat <span class="uitext">Adaptivní streamování</span> nebo jeden z dalších dostupných datových toků.</p>
+      <p>Pokud se chcete ujistit, že je možnost <span class="uitext">Adaptivní streamování</span> konfigurována v náhledu:</p>
+      <ol>
+        <li value="1">Kliknutím na <span class="uitext">Nastavení</span> nakonfigurujte náhled.</li>
+        <li value="2">V části <span class="uitext">Vlastnosti</span> klikněte na rozbalovací seznam <span class="uitext">Živý datový proud</span> a objeví se vám seznam dostupných živých video datových toků.</li>
+        <li value="3">
+          <p>Zkontrolujte dvě nebo více video streamování a vyberte možnost <span class="uitext">Adaptivní streamování</span>.</p>
+          <p>
+            <img src="../../../Images/sc_viewitem_setup_properties_livestream_adaptivestreamingselect.png" alt="Verify that adaptive streaming is selected in the camera properties." />
+          </p>
+          <p class="note">Pokud je k dispozici jen jeden video datový proud, přidejte pro kameru v aplikaci <span class="mc-variable flvar-sw-component.MC_XP variable">XProtect Management Client</span> více živých video datových proudů.</p>
+        </li>
+        <li value="4">Kliknutím na <span class="uitext">Nastavení</span> zavřete konfigurace náhledu.</li>
+      </ol>
+      <p>Pokud se chcete ujistit, že je vybrána možnost <span class="uitext">Adaptivní streamování</span> v položce náhledu <span class="uitext">Živý obraz</span>:</p>
+      <ol>
+        <li value="1">Klikněte na rozbalovací seznam <span class="uitext">Více</span>.</li>
+        <li value="2">Vyberte <span class="uitext">Živý datový proud</span> a objeví se seznam dostupných živých video datových proudů.</li>
+        <li value="3">
+          <p>Zkontrolujte dvě nebo více video streamování a vyberte možnost <span class="uitext">Adaptivní streamování</span>.</p>
+          <p>
+            <img src="../../../Images/sc_viewitem_more_livestream_adaptivestreaming.png" alt="Verify that adaptive streaming is selected in the camera view item." />
+          </p>
+        </li>
+      </ol>
+    </div>
+    <p></p>
+    <p style="margin-top: 6rem; color: #a9a9a9;font-size: 8pt;">© <span class="mc-variable flvar-publishing.Copyrightyear variable">2022</span><span class="mc-variable flvar-brand-company.CompanyOfficial variable">Milestone Systems A/S</span></p>
+  </body>
+</html>
