@@ -1,4 +1,0 @@
-﻿<plugin>
-   <file name="VideoOS.Transact.ClientPlugin.dll"/>
-   <load env="SmartClient"/>
-</plugin>

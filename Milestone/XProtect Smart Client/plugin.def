@@ -1,4 +1,0 @@
-<plugin>
-  <file name="VideoOS.RemoteClient.Application.dll"/>
-  <file name="VideoOS.RemoteClient.API.dll"/>
-</plugin>
